@@ -83,6 +83,9 @@ Resources
 * Source code and design files (`Download <https://github.com/Tinkerforge/industrial-digital-out-4-v2-bricklet/zipball/master>`__)
 * 3D model (`View online <TBD>`__ | Download: `STEP <http://download.tinkerforge.com/3d/TBD/TBD.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/TBD/TBD.FCStd>`__)
 
+
+.. _industrial_digital_out_4_v2_bricklet_connectivity:
+
 Connectivity
 ------------
 
@@ -97,6 +100,18 @@ TODO: Update image
    :align: center
    :target: ../../_images/Bricklets/bricklet_industrial_digital_out_4_caption_1200.jpg
 
+
+.. _industrial_digital_out_4_v2_bricklet_leds:
+
+Channel Status LEDs
+-------------------
+
+The Bricklet has the standard status LED with four additional LEDs (one
+for each output).
+
+By default the channel status LEDs are on if the corresponding channel
+is high and off otherwise. You can also turn each LED individually on/off
+and show other status information through the API.
 
 .. _industrial_digital_out_4_v2_bricklet_test:
 

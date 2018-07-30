@@ -85,6 +85,8 @@ Ressourcen
 * 3D Modell (`Online ansehen <TBD>`__ | Download: `STEP <http://download.tinkerforge.com/3d/TBD/TBD.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/TBD/TBD.FCStd>`__)
 
 
+.. _industrial_digital_out_4_v2_bricklet_connectivity:
+
 Anschlussmöglichkeit
 --------------------
 
@@ -98,6 +100,18 @@ TODO: Update image
    :alt: Industrial Digital Out 4 Bricklet Steckerbelegung
    :align: center
    :target: ../../_images/Bricklets/bricklet_industrial_digital_out_4_caption_1200.jpg
+
+
+.. _industrial_digital_in_4_v2_bricklet_leds:
+
+Kanal Status LEDs
+-------------------
+
+Das Bricklet verfügt über eine standard Status-LED und vier weitere LEDs
+(jeweils eine für jeden Ausgang).
+
+Standardmäßig zeigen die Status-LEDs den jeweiligen Zustand des Eingangs an.
+Die Funktion der LEDs kann auch per API geändert werden.
 
 
 .. _industrial_digital_out_4_v2_bricklet_test:
