@@ -31,8 +31,7 @@ UV Light Bricklet 2.0
 Features
 --------
 
-* TBD
-* TBD
+* Misst UV-A, UV-B UV Index
 
 
 .. _uv_light_v2_bricklet_description:
@@ -40,8 +39,17 @@ Features
 Beschreibung
 ------------
 
-TBD
+Das UV Light :ref:`Bricklet <primer_bricklets>` 2.0 misst UV-A sowie UV-B
+und berechnet aus diesen Messungen den `UV-Index <https://de.wikipedia.org/wiki/UV-Index>`__.
 
+Mit konfigurierbaren Events ist es möglich auf Intensitätsänderungen zu
+reagieren ohne die Werte laufend abzufragen (kein Polling notwendig).
+
+Dieses Bricklet kann z.B. als UV Warner und zur Umweltdatenmessung
+genutzt werden.
+
+Das UV Light Bricklet 2.0 hat einen 7 Pol Bricklet Stecker und wird
+mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
 
 Technische Spezifikation
 ------------------------
@@ -49,20 +57,23 @@ Technische Spezifikation
 ================================  ============================================================
 Eigenschaft                       Wert
 ================================  ============================================================
-Stromverbrauch                    TBDmA
+Sensor                            VEML6076
+Stromverbrauch                    35mW (7mA bei 5V)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-E TBD                             W TBD
+UV-A Auflösung                    0,93 µW/cm²
+UV-B Auflösung                    2,1 µW/cm²
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Abmessungen (B x T x H)           TBD x TBD x TBDmm (TBD x TBD x TBD")
-Gewicht                           TBDg
+Abmessung (W x D x H)             25 x 15 x 5mm (0.98 x 0.59 x 0.19")
+Gewicht                           2.1g
 ================================  ============================================================
 
 
 Ressourcen
 ----------
 
+* VEML6075 Datenblatt (`Download <https://github.com/Tinkerforge/uv-light-v2-bricklet/raw/master/datasheets/veml6075.pdf>`__)
 * Schaltplan (`Download <https://github.com/Tinkerforge/uv-light-v2-bricklet/raw/master/hardware/uv-light-v2-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/uv_light_v2_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/uv-light-v2-bricklet/zipball/master>`__)
@@ -79,7 +90,10 @@ Erster Test
 |test_connect|.
 
 |test_tab|
-Wenn alles wie erwartet funktioniert ... TBD.
+Wenn alles wie erwartet funktioniert wird der UV-A und UV-B Messwert sowie der
+UV-Index angezeigt. Der Graph gibt den zeitlichen Verlauf wieder.
+
+TODO: Neuer Screenshot mit UV-Index!
 
 .. image:: /Images/Bricklets/bricklet_uv_light_v2_brickv.jpg
    :scale: 100 %
