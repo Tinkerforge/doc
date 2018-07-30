@@ -115,10 +115,10 @@ Kanal Status LEDs
 -------------------
 
 Das Bricklet verfügt über eine standard Status-LED und vier weitere LEDs
-(jeweils eine für jeden Eingang)
+(jeweils eine für jeden Eingang).
 
 Standardmäßig zeigen die Status-LEDs den jeweiligen Zustand des Eingangs an.
-Die Funktion der LEDs können aber auch per API geändert werden.
+Die Funktion der LEDs kann auch per API geändert werden.
 
 .. _industrial_digital_in_4_v2_bricklet_test:
 
