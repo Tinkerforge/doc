@@ -31,8 +31,8 @@ OLED 128x64 Bricklet 2.0
 Features
 --------
 
-* TBD
-* TBD
+* Black/white OLED
+* Size of 3.3cm (1.3") with a resolution of 128x64
 
 
 .. _oled_128x64_v2_bricklet_description:
@@ -40,8 +40,32 @@ Features
 Description
 -----------
 
-TBD
+The OLED 128x64 :ref:`Bricklet <primer_bricklets>` 2.0 can be used to
+extend the features of :ref:`Bricks <primer_bricks>` with the
+capability to display information on a small 128x64
+`OLED display <https://en.wikipedia.org/wiki/OLED>`__.
 
+Because each pixel can be set individually, the display can do graphics. This
+allows for more versatile and detailed drawings on the display, compared to
+the :ref:`LCD 20x4 Bricklet <lcd_20x4_bricklet>` with its fixed character
+display.
+
+Additionally, text can easily be drawn onto the display with the embedded
+:ref:`font <oled_128x64_v2_bricklet_font>` of the Bricklet.
+
+High update rates of up to 60Hz are possible.
+
+The Bricklet is 40 x 40 mm in size and can be mounted directly on top of any
+Brick.
+
+A demo with a Servo Brick and a Rotary Poti Bricklet is available on Youtube:
+
+.. raw:: html
+
+ <iframe class="youtube" width="640" height="360" src="https://www.youtube-nocookie.com/embed/8RSEs6cKwXc" frameborder="0" allowfullscreen></iframe>
+
+The OLED 128x64 Bricklet 2.0 has a 7 pole Bricklet connector and is connected to a
+Brick with a ``7p-10p`` Bricklet cable.
 
 Technical Specifications
 ------------------------
@@ -49,20 +73,24 @@ Technical Specifications
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
-Current Consumption               TBDmA
+Current Consumption               | 35mW (7mA at 5V, all pixels black)
+                                  | 160mW (32mA at 5V, all pixels white)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-P TBD                             V TBD
+Resolution                        128x64 pixel, 26x8 characters
+Size                              3.3cm (1.3")
+Colors                            Black/White
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Dimensions (W x D x H)            TBD x TBD x TBDmm (TBD x TBD x TBD")
-Weight                            TBDg
+Dimensions (W x D x H)            40 x 40 x 7mm (1.58 x 1.58 x 0.28")
+Weight                            8.2g
 ================================  ============================================================
 
 
 Resources
 ---------
 
+* Display datasheet (`Download <https://github.com/Tinkerforge/oled-128x64-v2-bricklet/raw/master/datasheets/OLED_128X64_Datasheet.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/oled-128x64-v2-bricklet/raw/master/hardware/oled-128x64-v2-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/oled_128x64_v2_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/oled-128x64-v2-bricklet/zipball/master>`__)
@@ -79,7 +107,11 @@ Test your OLED 128x64 Bricklet 2.0
 |test_connect|.
 
 |test_tab|
-If everything went as expected ... TBD.
+If everything went as expected the Brick Viewer should look as
+depicted below.
+
+You can draw and write text to the display. With the slider it is
+also possible to show the available character set on the OLED.
 
 .. image:: /Images/Bricklets/bricklet_oled_128x64_v2_brickv.jpg
    :scale: 100 %
@@ -89,6 +121,46 @@ If everything went as expected ... TBD.
 
 |test_pi_ref|
 
+
+Usage
+-----
+
+To draw to the display we recommend that you use an image library that is
+native to your programming language (for example PIL for Python). This
+way you can use all of the available drawing primitives and fonts of the
+library and then copy the image buffer to the Bricklet.
+
+We provide examples for (TODO: FIXME V2!)
+
+* `C/C++ <https://raw.githubusercontent.com/Tinkerforge/oled-128x64-bricklet/master/software/examples/c/example_scribble.c>`__
+  (with `libgd <https://libgd.github.io/>`__),
+* `C# <https://raw.githubusercontent.com/Tinkerforge/oled-128x64-bricklet/master/software/examples/csharp/ExampleScribble.cs>`__,
+* `Java <https://raw.githubusercontent.com/Tinkerforge/oled-128x64-bricklet/master/software/examples/java/ExampleScribble.java>`__,
+* `JavaScript (Node.js) <https://raw.githubusercontent.com/Tinkerforge/oled-128x64-bricklet/master/software/examples/javascript/ExampleScribble.js>`__
+  (with `gm <https://www.npmjs.com/package/gm>`__ and `get-pixels <https://www.npmjs.com/package/get-pixels>`__),
+* `Perl <https://raw.githubusercontent.com/Tinkerforge/oled-128x64-bricklet/master/software/examples/perl/example_scribble.pl>`__
+  (with `GD <http://search.cpan.org/~lds/GD-2.56/lib/GD.pm>`__),
+* `PHP <https://raw.githubusercontent.com/Tinkerforge/oled-128x64-bricklet/master/software/examples/php/ExampleScribble.php>`__
+  (with `GD <http://php.net/manual/en/book.image.php>`__),
+* `Python <https://raw.githubusercontent.com/Tinkerforge/oled-128x64-bricklet/master/software/examples/python/example_scribble.py>`__
+  (with `PIL <http://python-pillow.org/>`__),
+* `Ruby <https://raw.githubusercontent.com/Tinkerforge/oled-128x64-bricklet/master/software/examples/ruby/example_scribble.rb>`__
+  (with `rgd <http://www.rubydoc.info/gems/rgd>`__) and
+* `Visual Basic .NET <https://raw.githubusercontent.com/Tinkerforge/oled-128x64-bricklet/master/software/examples/vbnet/ExampleScribble.vb>`__.
+
+.. _oled_128x64_v2_bricklet_font:
+
+Font
+----
+
+The Bricklet has an embedded font (ASCII subset in green) that allows fast and
+easy text rendering (up to 26x8 characters):
+
+.. image:: /Images/Bricklets/bricklet_oled_font.png
+   :scale: 100 %
+   :alt: OLED 128x64 Bricklet font
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_oled_font.png
 
 .. _oled_128x64_v2_bricklet_case:
 
