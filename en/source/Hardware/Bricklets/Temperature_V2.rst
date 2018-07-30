@@ -63,13 +63,16 @@ Current Consumption               28mW (5.6mA at 5V)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Ambient Temperature               -40°C to 125°C in 0.01°C steps
-Accuracy                          typical 0.2°C in the range of 0°C to 65°C
+Accuracy                          typical 0.2°C in the range of 0°C to 65°C*
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)            25 x 15 x 5 mm (0.98 x 0.59 x 0.19")
 Weight                            2g
 ================================  ============================================================
 
+\*: This is the temperature at the exact posisiton of the sensor. If the Bricklet is used inside
+of an enclosure, the air around the Bricklet may heat up more than the ambient air. The Bricklet
+does have API to calibrate this kind of offset.
 
 Resources
 ---------
