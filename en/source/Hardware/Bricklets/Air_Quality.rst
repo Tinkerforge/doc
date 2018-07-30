@@ -31,8 +31,9 @@ Air Quality Bricklet
 Features
 --------
 
-* TBD
-* TBD
+* Measures air quality (IAQ index), humidity, air pressure and temperature
+* IAQ index and humidity values are temperature compensated
+* Configurable temperature compensation for use cases in enclosures
 
 
 .. _air_quality_bricklet_description:
@@ -40,8 +41,30 @@ Features
 Description
 -----------
 
-TBD
+The Air Quality Bricklet :ref:`Bricklet <primer_bricklets>` can measure
 
+* IAQ (indoor air quality) Index,
+* Air Pressure in hPa,
+* Humidity in %RH and
+* Temperature in °C.
+
+The IAQ Index is a measurement for the quality of air. To calculate the IAQ Index the
+Bricklet is sensitive to Ethane, Isoprene/2-methyl-1,3 Butadiene, Ethanol, Acetone and
+Carbon Monoxide. These gas measurements are combined with the measurements of
+air pressure, humidity and temperature to calculate the air IAQ Index. The index has
+a range of 0-500:
+
+.. image:: /Images/Misc/bricklet_air_quality_iaq_index.png
+   :scale: 100 %
+   :alt: Air Quality Index description
+   :align: center
+   :target: ../../_images/Misc/bricklet_air_quality_iaq_index.png
+
+Typical applications for this Bricklet are the monitoring of air quality, environmental 
+statistics, home automation and similar.
+
+The Air Quality Bricklet has a 7 pole Bricklet connector and is connected to a
+Brick with a ``7p-10p`` Bricklet cable.
 
 Technical Specifications
 ------------------------
@@ -49,20 +72,38 @@ Technical Specifications
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
-Current Consumption               TBDmA
+Sensor                            BME680
+Current Consumption               100mW (20mA at 5V)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-P TBD                             V TBD
+IAQ Index resolution              1
+Air Pressure resolution           0.18Pa
+Humidity resolution               0.008%RH
+Temperature resolution            0.01°C
+--------------------------------  ------------------------------------------------------------
+IAQ Index accuracy                ±15 and ±15% of reading
+Air Pressure accuracy             ±0.12hPa (700-900hPa at 25-40°C), ±0.6hPa (full range)
+Humidity accuracy                 ±3%RH (20-80%RH at 25°C)
+Temperature accuracy              ±0.5°C (at 25°C), ±1.0°C (0-65°C)*
+--------------------------------  ------------------------------------------------------------
+Measurement frequency             1 measurement per second
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Dimensions (W x D x H)            TBD x TBD x TBDmm (TBD x TBD x TBD")
-Weight                            TBDg
+Dimensions (W x D x H)            25 x 20 x 5mm (0.98 x 0.79 x 0.19")
+Weight                            2.1g
 ================================  ============================================================
 
+\*: This is the temperature at the exact posisiton of the sensor. If the Bricklet is used inside
+of an enclosure, the air around the Bricklet may heat up more than the ambient air. The Bricklet
+does have API to calibrate this kind of offset.
+
+Calibration of the temperature value is recommended, since the temperature value is used
+to compensate the IAQ index and humidity values.
 
 Resources
 ---------
 
+* BME680 datasheet (`Download <https://github.com/Tinkerforge/air-quality-bricklet/raw/master/datasheets/BME680.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/air-quality-bricklet/raw/master/hardware/air-quality-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/air_quality_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/air-quality-bricklet/zipball/master>`__)
@@ -79,7 +120,8 @@ Test your Air Quality Bricklet
 |test_connect|.
 
 |test_tab|
-If everything went as expected ... TBD.
+If everything went as expected you can now see the values for
+IAQ index, air pressure, humidity and temperature.
 
 .. image:: /Images/Bricklets/bricklet_air_quality_brickv.jpg
    :scale: 100 %
