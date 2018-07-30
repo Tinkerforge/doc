@@ -49,10 +49,12 @@ The Air Quality Bricklet :ref:`Bricklet <primer_bricklets>` can measure
 * Temperature in °C.
 
 The IAQ Index is a measurement for the quality of air. To calculate the IAQ Index the
-Bricklet is sensitive to Ethane, Isoprene/2-methyl-1,3 Butadiene, Ethanol, Acetone and
-Carbon Monoxide. These gas measurements are combined with the measurements of
-air pressure, humidity and temperature to calculate the air IAQ Index. The index has
-a range of 0-500:
+Bricklet detects Ethane, Isoprene/2-methyl-1,3 Butadiene, Ethanol, Acetone and
+Carbon Monoxide (often called VOC, volatile components) by adsorption. These gas 
+measurements are combined with the measurements of air pressure, humidity and 
+temperature to calculate the air IAQ Index. 
+
+The index has a range of 0-500:
 
 .. image:: /Images/Misc/bricklet_air_quality_iaq_index.png
    :scale: 100 %
@@ -108,6 +110,17 @@ Resources
 * Outline and drilling plan (`Download <../../_images/Dimensions/air_quality_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/air-quality-bricklet/zipball/master>`__)
 * 3D model (`View online <TBD>`__ | Download: `STEP <http://download.tinkerforge.com/3d/TBD/TBD.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/TBD/TBD.FCStd>`__)
+
+
+IAQ Index accuracy
+------------------
+
+The Bricklet is building a database of measurements and uses this data to calculate an accurate
+IAQ Index over time. It will take 1-2 days until the IAQ Index has a high reliability. The API
+of the Bricklet returns a best guess about the accuracy (ranging from unreliable to high).
+
+The current database of values and calculated coefficients are saved to the flash of the Bricklet
+every 12 hours, so if you loose power it will not take as long to receive reliable data again.
 
 
 .. _air_quality_bricklet_test:
