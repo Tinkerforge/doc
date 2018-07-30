@@ -31,8 +31,9 @@ IO-16 Bricklet 2.0
 Features
 --------
 
-* TBD
-* TBD
+* 16 digitale Ein- und Ausgänge
+* Umschaltbare Logikspannung 3,3V oder 5V*
+* Konfigurierbare Pull-Ups und Interrupts
 
 
 .. _io16_v2_bricklet_description:
@@ -40,29 +41,56 @@ Features
 Beschreibung
 ------------
 
-TBD
+Mit dem IO-16 :ref:`Bricklet <primer_bricklets>` 2.0 können
+:ref:`Bricks <primer_bricks>` um externe digitale Ein- und Ausgänge
+(I/Os) erweitert werden.
 
+Das Bricklet besitzt 2x 8 I/O Pins die unabhängig voneinander als Ein- oder Ausgänge
+konfiguriert werden können. Jeder Eingang kann zusätzlich einem Pull-Up oder als
+Interrupt-Quelle konfiguriert werden. Die I/O Spannung kann manuell zwischen 3,3V und
+5V* umgeschaltet werden. Die I/O Pins sind über Schraubklemmen mit zusätzlichen GND
+Verbindungen nach außen geführt. Eine zusätzliche Schraubklemme führt die
+gewählte Spannung nach außen.
+
+In typischen Anwendungen können Schalter, Taster und LEDs angeschlossen werden.
+
+Das IO-16 Bricklet 2.0 hat einen 7 Pol Bricklet Stecker und wird
+mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
 
 Technische Spezifikation
 ------------------------
 
-================================  ============================================================
+================================  =================================================================
 Eigenschaft                       Wert
-================================  ============================================================
-Stromverbrauch                    TBDmA
---------------------------------  ------------------------------------------------------------
---------------------------------  ------------------------------------------------------------
-E TBD                             W TBD
---------------------------------  ------------------------------------------------------------
---------------------------------  ------------------------------------------------------------
-Abmessungen (B x T x H)           TBD x TBD x TBDmm (TBD x TBD x TBD")
-Gewicht                           TBDg
-================================  ============================================================
+================================  =================================================================
+I/O Pins                          16
+Stromverbrauch                    36mW (7.2mA at 5V)
+--------------------------------  -----------------------------------------------------------------
+--------------------------------  -----------------------------------------------------------------
+I/O Spannung                      Umschaltbar zwischen 3,3V und 5V*
+Maximaler Ausgangsstrom (high)    10mA (pro Kanal)
+Maximaler Ausgangsstrom (low)     25mA (pro Kanal) mit 160mA absolutes Maximum (pro Port)
+Maximale API Aufrufe**            ``set-port`` (1kHz), ``get-port`` (> 0,25kHz), Callbacks (1kHz)
+--------------------------------  -----------------------------------------------------------------
+--------------------------------  -----------------------------------------------------------------
+Abmessungen (B x T x H)           35 x 75 x 14mm (1,38 x 2,95 x 0,55")
+Gewicht                           30g
+================================  =================================================================
+
+\* Die maximale Spannung hängt von der Versorgungsspannung des Bricks ab.
+Wird dieses über USB versorgt, so kann es sein, dass 5V nicht erreicht werden
+können. Der Grund für diesen Spannungsabfall um 0,5V sind Schutzdioden auf den
+Bricks. Wenn 5V Ausgangsspannung benötigt werden kann der Stapel mit einer
+zusätzlichen Stromversorgung, wie der :ref:`Step-Down Power Supply
+<step_down_power_supply>`, erweitert werden.
+
+\** abhängig vom jeweiligen System (Betriebssystem, CPU etc.)
 
 
 Ressourcen
 ----------
 
+* PCAL6416A Datenblatt (`Download <https://github.com/Tinkerforge/io16-v2-bricklet/raw/master/datasheets/PCAL6416A.pdf>`__)
 * Schaltplan (`Download <https://github.com/Tinkerforge/io16-v2-bricklet/raw/master/hardware/io16-v2-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/io16_v2_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/io16-v2-bricklet/zipball/master>`__)
@@ -79,7 +107,9 @@ Erster Test
 |test_connect|.
 
 |test_tab|
-Wenn alles wie erwartet funktioniert ... TBD.
+Wenn alles wie erwartet funktioniert sollte es jetzt möglich sein
+die Werte der Kanäle zu ändern, diese als Ein-/Ausgabe zu definieren,
+Pullups ein/auszustellen und Monoflops auszuprobieren.
 
 .. image:: /Images/Bricklets/bricklet_io16_v2_brickv.jpg
    :scale: 100 %

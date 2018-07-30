@@ -31,8 +31,9 @@ IO-16 Bricklet 2.0
 Features
 --------
 
-* TBD
-* TBD
+* 16-channel digital input/output
+* Switchable logic voltage 3.3V or 5V*
+* Configurable pull-ups and interrupts
 
 
 .. _io16_v2_bricklet_description:
@@ -40,29 +41,55 @@ Features
 Description
 -----------
 
-TBD
+The IO-16 :ref:`Bricklet <primer_bricklets>` 2.0 can be used to extend
+the features of :ref:`Bricks <primer_bricks>` by external digital
+inputs and outputs.
 
+The Bricklet features 2x 8 I/O channels that can be independently configured as
+digital inputs or outputs. Each input channel can additionally be configured with
+a pull-up or as interrupt source. The input/output voltages can be switched
+manually between 3.3V and 5V*. Via terminal blocks all signals
+and GND can be accessed. An additional terminal block
+delivers the switched output voltage.
+
+Human interfaces, such as switches, push-buttons and LEDs are typical
+applications of this Bricklet.
+
+The IO-16 Bricklet 2.0 has a 7 pole Bricklet connector and is connected to a
+Brick with a ``7p-10p`` Bricklet cable.
 
 Technical Specifications
 ------------------------
 
-================================  ============================================================
+================================  =================================================================
 Property                          Value
-================================  ============================================================
-Current Consumption               TBDmA
---------------------------------  ------------------------------------------------------------
---------------------------------  ------------------------------------------------------------
-P TBD                             V TBD
---------------------------------  ------------------------------------------------------------
---------------------------------  ------------------------------------------------------------
-Dimensions (W x D x H)            TBD x TBD x TBDmm (TBD x TBD x TBD")
-Weight                            TBDg
-================================  ============================================================
+================================  =================================================================
+I/O Channels                      16
+Current Consumption               36mW (7.2mA at 5V)
+--------------------------------  -----------------------------------------------------------------
+--------------------------------  -----------------------------------------------------------------
+I/O Voltages                      Switchable between 3.3V and 5V*
+Maximum Output Current (high)     10mA (per output channel)
+Maximum Output Current (low)      25mA (per output channel) with 160mA absolute maximum (per port)
+Maximum API Calls**               ``set-port`` (1kHz), ``get-port`` (> 0.25kHz), callbacks (1kHz)
+--------------------------------  -----------------------------------------------------------------
+--------------------------------  -----------------------------------------------------------------
+Dimensions (W x D x H)            35 x 75 x 14mm (1.38 x 2.95 x 0.55")
+Weight                            30g
+================================  =================================================================
 
+\* The maximum output voltage depends on supply voltage. If the connected Brick is
+powered over USB, 5V may not be reached. The reason for this is a voltage
+drop about 0.5V caused by protection diodes on our products.
+If you need to reach 5V, you have to use a stack supply,
+e.g. the :ref:`Step-Down Power Supply <step_down_power_supply>`.
+
+\** depends on your system (OS, CPU etc.)
 
 Resources
 ---------
 
+* PCAL6416A datasheet (`Download <https://github.com/Tinkerforge/io16-v2-bricklet/raw/master/datasheets/PCAL6416A.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/io16-v2-bricklet/raw/master/hardware/io16-v2-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/io16_v2_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/io16-v2-bricklet/zipball/master>`__)
@@ -79,7 +106,11 @@ Test your IO-16 Bricklet 2.0
 |test_connect|.
 
 |test_tab|
-If everything went as expected ... TBD.
+
+If everything went as expected the Brick Viewer should look as
+depicted below. You can change the values of the channels, use
+them as input or output, enable/disable pull-ups and try out
+monoflops.
 
 .. image:: /Images/Bricklets/bricklet_io16_v2_brickv.jpg
    :scale: 100 %
