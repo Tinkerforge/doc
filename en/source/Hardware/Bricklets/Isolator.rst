@@ -112,7 +112,7 @@ Test your Isolator Bricklet
 
 |test_intro|
 
-|test_connect|.
+|test_connect| and the Bricklet that you want to isolate to the Isolator Bricklet.
 
 |test_tab|
 If everything went as expected you can now see the Isolator Bricklet
