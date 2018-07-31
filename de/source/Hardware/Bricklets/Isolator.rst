@@ -66,7 +66,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/isolator-bricklet/raw/master/hardware/isolator-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/isolator_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/isolator-bricklet/zipball/master>`__)
-* 3D Modell (`Online ansehen <TBD>`__ | Download: `STEP <http://download.tinkerforge.com/3d/TBD/TBD.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/TBD/TBD.FCStd>`__)
+* 3D Modell (`Online ansehen <https://autode.sk/2NYVE9E>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/isolator/isolator.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/isolator/isolator.FCStd>`__)
 
 
 .. _isolator_bricklet_test:

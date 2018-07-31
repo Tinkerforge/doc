@@ -101,7 +101,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/distance-ir-v2-bricklet/raw/master/hardware/distance-ir-v2-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/distance_ir_v2_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/distance-ir-v2-bricklet/zipball/master>`__)
-* 3D Modell (`Online ansehen <TBD>`__ | Download: `STEP <http://download.tinkerforge.com/3d/TBD/TBD.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/TBD/TBD.FCStd>`__)
+* 3D Modell (`Online ansehen <https://autode.sk/2LPlBes>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/distance_ir_v2/distance-ir-v2.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/distance_ir_v2/distance-ir-v2.FCStd>`__)
 
 
 .. _distance_ir_v2_bricklet_test:

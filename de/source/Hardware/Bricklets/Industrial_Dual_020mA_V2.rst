@@ -66,7 +66,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/industrial-dual-0-20ma-v2-bricklet/raw/master/hardware/industrial-dual-0-20ma-v2-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/industrial_dual_0_20ma_v2_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/industrial-dual-0-20ma-v2-bricklet/zipball/master>`__)
-* 3D Modell (`Online ansehen <TBD>`__ | Download: `STEP <http://download.tinkerforge.com/3d/TBD/TBD.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/TBD/TBD.FCStd>`__)
+* 3D Modell (`Online ansehen <https://autode.sk/2LQMbnm>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/industrial_dual_0_20ma_v2/industrial-dual-0-20ma-v2.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/industrial_dual_0_20ma_v2/industrial-dual-0-20ma-v2.FCStd>`__)
 
 
 .. _industrial_dual_0_20ma_v2_bricklet_test:
