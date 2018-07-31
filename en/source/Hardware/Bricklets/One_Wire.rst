@@ -31,8 +31,10 @@ One Wire Bricklet
 Features
 --------
 
-* TBD
-* TBD
+* 1-wire communication with any 1-wire capable device
+* Uses high-level commands (bus search, reset, write, read)
+* Supports 3.3V, 5V and external supply voltage
+* Supports up to 64 1-wire devices simultaneously
 
 
 .. _one_wire_bricklet_description:
@@ -40,7 +42,22 @@ Features
 Description
 -----------
 
-TBD
+The One-Wire Bricklet can be used to communicate with any `1-wire <https://en.wikipedia.org/wiki/1-Wire>`__
+capable device. 
+
+The API uses a set of high-level commands (bus search, reset, write, read, write command). Each
+command will give immediat status feedback for easy error detection
+
+Up to 64 devices can be connected to the bus and used at the same time.
+
+A jumper can be used to switch between 3.3V, 5V or an external supply voltage for the
+connected 1-wire devices.
+
+An example application would be to read the temperature of a MAX31820
+1-wire ambient temperature sensor.
+
+The One Wire Bricklet has a 7 pole Bricklet connector and is connected to a
+Brick with a ``7p-10p`` Bricklet cable.
 
 
 Technical Specifications
@@ -49,14 +66,16 @@ Technical Specifications
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
-Current Consumption               TBDmA
+Current Consumption               35mW (7mA at 5V)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-P TBD                             V TBD
+Number of simultaneous devices    64
+Supported voltage                 3.3V, 5V and external supply
+Commands                          bus search, reset, write, read, write command
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Dimensions (W x D x H)            TBD x TBD x TBDmm (TBD x TBD x TBD")
-Weight                            TBDg
+Dimensions (W x D x H)            30 x 30 x 14mm (1.18 x 1.18 x 0.55")
+Weight                            6.5g
 ================================  ============================================================
 
 
@@ -69,6 +88,34 @@ Resources
 * 3D model (`View online <TBD>`__ | Download: `STEP <http://download.tinkerforge.com/3d/TBD/TBD.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/TBD/TBD.FCStd>`__)
 
 
+Connectivity
+------------
+
+TODO
+
+
+Example: MAX31820
+-----------------
+
+The following example uses Python to read the temperature of a MAX31820
+with the API of the One Wire Bricklet::
+
+	ow.write_command(0, 0x4E)     # WRITE SCRATCHPAD
+	ow.write(0x00)                # ALARM H (unused)
+	ow.write(0x00)                # ALARM L (unused)
+	ow.write(0x7F)                # COFIGURATION: 12 bit mode
+
+	while True:
+	    ow.write_command(0, 0x44) # CONVERT T (start temperature conversion)
+	    time.sleep(1)             # Wait for conversion to finish
+
+	    ow.write_command(0, 0xBE) # READ SCRATCHPAD
+
+	    t_low = ow.read().data    # Read LSB
+	    t_high = ow.read().data   # Read MSB
+	    print('Temperature: {0} °C'.format((t_low | (t_high << 8))/16.0))
+
+
 .. _one_wire_bricklet_test:
 
 Test your One Wire Bricklet
@@ -79,7 +126,8 @@ Test your One Wire Bricklet
 |test_connect|.
 
 |test_tab|
-If everything went as expected ... TBD.
+If everything went as expected you can now use the
+Brick Viewer to communicate with a connected 1-wire device.
 
 .. image:: /Images/Bricklets/bricklet_one_wire_brickv.jpg
    :scale: 100 %
