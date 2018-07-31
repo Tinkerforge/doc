@@ -31,8 +31,11 @@ Industrial Dual Analog In Bricklet 2.0
 Features
 --------
 
-* TBD
-* TBD
+* Independently measures two voltages between -35V and +35V (DC)
+* 24bit ADC for high resolution
+* Individually calibrated
+* Full-scale accuracy of 0.1% / ±4mV
+* Up to 976 samples per second
 
 
 .. _industrial_dual_analog_in_v2_bricklet_description:
@@ -40,7 +43,14 @@ Features
 Description
 -----------
 
-TBD
+The Industrial Dual Analog In :ref:`Bricklet <primer_bricklets>` 2.0 can be used to
+extend the features of :ref:`Bricks <primer_bricks>` by the
+capability to precisely measure voltages.
+Both channels of the Bricklet are calibrated. The voltage measurement can
+used with an extremely high level of confidence.
+
+With configurable events it is possible to react on changing
+voltages without polling.
 
 
 Technical Specifications
@@ -49,13 +59,18 @@ Technical Specifications
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
-Current Consumption               TBDmA
+ADC                               MCP3911
+Current Consumption               TBDmW (TBDmA at 5V)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-P TBD                             V TBD
+Channels                          2
+Measurement Range                 -35V to +35V (DC)
+Resolution                        24bit
+Accuracy                          0.1% / ±4mV full scale
+Maximum Output Current            150mA (3.3V), 150mA (5V)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Dimensions (W x D x H)            TBD x TBD x TBDmm (TBD x TBD x TBD")
+Dimensions (W x D x H)            40 x 40 x 11mm (1.57 x 1.57 x 0.43")
 Weight                            TBDg
 ================================  ============================================================
 
@@ -63,10 +78,26 @@ Weight                            TBDg
 Resources
 ---------
 
+* MCP3911 datasheet (`Download <https://github.com/Tinkerforge/industrial-dual-analog-in-v2-bricklet/raw/master/datasheets/MCP3911.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/industrial-dual-analog-in-v2-bricklet/raw/master/hardware/industrial-dual-analog-in-v2-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/industrial_dual_analog_in_v2_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/industrial-dual-analog-in-v2-bricklet/zipball/master>`__)
 * 3D model (`View online <https://autode.sk/2M5t3iv>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/industrial_dual_analog_in_v2/industrial-dual-analog-in-v2.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/industrial_dual_analog_in_v2/industrial-dual-analog-in-v2.FCStd>`__)
+
+
+Connectivity
+------------
+
+The Industrial Dual Analog In Bricklet 2.0 has an 8 pole terminal.
+Please see the picture below for the pinout.
+
+TODO: Update image?
+
+.. image:: /Images/Bricklets/bricklet_industrial_dual_analog_in_caption_600.jpg
+   :scale: 100 %
+   :alt: Industrial Dual Analog In Bricklet pinout
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_industrial_dual_analog_in_caption_1200.jpg
 
 
 .. _industrial_dual_analog_in_v2_bricklet_test:
@@ -77,9 +108,15 @@ Test your Industrial Dual Analog In Bricklet 2.0
 |test_intro|
 
 |test_connect|.
+Additionally connect a DC voltage you want to measure to the Bricklet. For
+testing purposes connect the 3.3V output pin to the IN0- pin and connect the
+GND pin to the IN0+ pin.
 
 |test_tab|
-If everything went as expected ... TBD.
+If everything went as expected you can now see the voltage in Volt
+and a graph that shows the voltage over time.
+
+TODO: Make screenshot
 
 .. image:: /Images/Bricklets/bricklet_industrial_dual_analog_in_v2_brickv.jpg
    :scale: 100 %
@@ -95,27 +132,26 @@ If everything went as expected ... TBD.
 Case
 ----
 
-..
-	A `laser-cut case for the Industrial Dual Analog In Bricklet 2.0
-	<https://www.tinkerforge.com/en/shop/cases/case-industrial-dual-analog-in-v2-bricklet.html>`__ is available.
+A `laser-cut case for the Industrial Dual Analog In Bricklet 2.0
+<https://www.tinkerforge.com/en/shop/cases/case-industrial-bricklet.html>`__ is available.
 
-	.. image:: /Images/Cases/bricklet_industrial_dual_analog_in_v2_case_350.jpg
-	   :scale: 100 %
-	   :alt: Case for Industrial Dual Analog In Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_industrial_dual_analog_in_v2_case_1000.jpg
+.. image:: /Images/Cases/bricklet_industrial_case_350.jpg
+   :scale: 100 %
+   :alt: Case for Industrial Dual Analog In Bricklet 2.0
+   :align: center
+   :target: ../../_images/Cases/bricklet_industrial_case_1000.jpg
 
-	.. include:: Industrial_Dual_Analog_In_V2.substitutions
-	   :start-after: >>>bricklet_case_steps
-	   :end-before: <<<bricklet_case_steps
+.. include:: Industrial_Dual_Analog_In_V2.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
 
-	.. image:: /Images/Exploded/industrial_dual_analog_in_v2_exploded_350.png
-	   :scale: 100 %
-	   :alt: Exploded assembly drawing for Industrial Dual Analog In Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Exploded/industrial_dual_analog_in_v2_exploded.png
+.. image:: /Images/Exploded/industrial_exploded_350.png
+   :scale: 100 %
+   :alt: Exploded assembly drawing for Industrial Dual Analog In Bricklet 2.0
+   :align: center
+   :target: ../../_images/Exploded/industrial_exploded.png
 
-	|bricklet_case_hint|
+|bricklet_case_hint|
 
 
 .. _industrial_dual_analog_in_v2_bricklet_programming_interface:
