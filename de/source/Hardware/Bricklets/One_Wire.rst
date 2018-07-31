@@ -66,7 +66,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/one-wire-bricklet/raw/master/hardware/one-wire-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/one_wire_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/one-wire-bricklet/zipball/master>`__)
-* 3D Modell (`Online ansehen <TBD>`__ | Download: `STEP <http://download.tinkerforge.com/3d/TBD/TBD.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/TBD/TBD.FCStd>`__)
+* 3D Modell (`Online ansehen <https://autode.sk/2KdKuf1>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/one_wire/one-wire.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/one_wire/one-wire.FCStd>`__)
 
 
 .. _one_wire_bricklet_test:

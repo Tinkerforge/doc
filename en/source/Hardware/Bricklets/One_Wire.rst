@@ -85,7 +85,8 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/one-wire-bricklet/raw/master/hardware/one-wire-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/one_wire_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/one-wire-bricklet/zipball/master>`__)
-* 3D model (`View online <TBD>`__ | Download: `STEP <http://download.tinkerforge.com/3d/TBD/TBD.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/TBD/TBD.FCStd>`__)
+* 3D model (`View online <https://autode.sk/2KdKuf1>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/one_wire/one-wire.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/one_wire/one-wire.FCStd>`__)
+
 
 
 Connectivity
