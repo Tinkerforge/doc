@@ -115,7 +115,8 @@ Test your Isolator Bricklet
 |test_connect|.
 
 |test_tab|
-If everything went as expected ... TBD.
+If everything went as expected you can now see the Isolator Bricklet
+as well as the isolated Bricklet in Brick Viewer.
 
 .. image:: /Images/Bricklets/bricklet_isolator_brickv.jpg
    :scale: 100 %
