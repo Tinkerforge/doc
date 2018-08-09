@@ -115,7 +115,7 @@ Gehäuse
 -------
 
 Ein `laser-geschnittenes Gehäuse für das IO-4 Bricklet 2.0
-<https://www.tinkerforge.com/de/shop/cases/case-io-4-bricklet.html>`__ ist verfügbar.
+<https://www.tinkerforge.com/de/shop/cases/case-io4-bricklet.html>`__ ist verfügbar.
 
 .. image:: /Images/Cases/bricklet_io4_case_350.jpg
    :scale: 100 %
