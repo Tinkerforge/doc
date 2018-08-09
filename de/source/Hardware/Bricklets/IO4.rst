@@ -1,6 +1,4 @@
 
-:shoplink: ../../../shop/bricklets/io4-bricklet.html
-
 .. include:: IO4.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
@@ -26,9 +24,10 @@ IO-4 Bricklet
 
 .. note::
 
- Das IO-4 Bricklet ist abgekündigt.
+ Das IO-4 Bricklet ist abgekündigt und wird nicht mehr verkauft.
  Als Ersatz wird das :ref:`IO-4 Bricklet 2.0 <io4_v2_bricklet>`
  empfohlen.
+
 
 Features
 --------
