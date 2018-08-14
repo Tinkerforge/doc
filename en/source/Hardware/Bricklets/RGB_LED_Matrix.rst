@@ -1,6 +1,4 @@
 
-:shoplink: ../../../shop/bricklets/rgb-led-matrix-bricklet.html
-
 .. include:: RGB_LED_Matrix.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
