@@ -23,6 +23,10 @@ RGB LED Matrix Bricklet
 
 	{% tfgalleryend %}
 
+.. note::
+
+ The RGB LED Matrix Bricklet is discontinued and is no longer sold.
+
 
 Features
 --------

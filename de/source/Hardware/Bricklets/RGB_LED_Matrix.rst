@@ -23,6 +23,10 @@ RGB LED Matrix Bricklet
 
 	{% tfgalleryend %}
 
+.. note::
+
+ Das RGB LED Matrix Bricklet ist abgekündigt und wird nicht mehr verkauft.
+
 
 Features
 --------
