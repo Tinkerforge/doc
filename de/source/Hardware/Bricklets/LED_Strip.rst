@@ -1,6 +1,4 @@
 
-:shoplink: ../../../shop/bricklets/led-strip-bricklet.html
-
 
 .. role:: led-strip-red
 
@@ -49,7 +47,7 @@ LED Strip Bricklet
 
 .. note::
 
- Das LED Strip Bricklet ist abgekündigt.
+ Das LED Strip Bricklet ist abgekündigt und wird nicht mehr verkauft.
  Als Ersatz wird das :ref:`LED Strip Bricklet 2.0 <led_strip_v2_bricklet>`
  empfohlen.
 

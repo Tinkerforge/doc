@@ -1,7 +1,4 @@
 
-:shoplink: ../../../shop/bricklets/led-strip-bricklet.html
-
-
 .. role:: led-strip-red
 
 .. role:: led-strip-green
@@ -49,7 +46,7 @@ LED Strip Bricklet
 
 .. note::
 
- The LED Strip Bricklet is discontinued. The
+ The LED Strip Bricklet is discontinued and is no longer sold. The
  :ref:`LED Strip Bricklet 2.0 <led_strip_v2_bricklet>` is the recommended
  replacement.
 
