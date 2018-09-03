@@ -25,7 +25,7 @@ Analog In Bricklet 2.0
 
 .. note::
 
- Das Analog In Bricklet 2.0 ist abgekündigt.
+ Das Analog In Bricklet 2.0 ist abgekündigt und wird nicht mehr verkauft.
  Als Ersatz wird das :ref:`Analog In Bricklet 3.0 <analog_in_v3_bricklet>`
  empfohlen.
 

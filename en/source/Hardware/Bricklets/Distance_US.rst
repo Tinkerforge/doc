@@ -26,6 +26,13 @@ Distance US Bricklet
 
 	{% tfgalleryend %}
 
+.. note::
+
+ The Distance US Bricklet is discontinued and is no longer sold. The
+ Distance US Bricklet 2.0 is still in development. For now, the
+ :ref:`Distance IR Bricklet <distance_ir_bricklet>` and the
+ :ref:`Laser Range Finder Bricklet <laser_range_finder_bricklet>` are possible
+ replacements.
 
 Features
 --------
