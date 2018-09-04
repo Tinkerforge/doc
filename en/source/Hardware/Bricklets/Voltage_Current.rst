@@ -1,6 +1,4 @@
 
-:shoplink: ../../../shop/bricklets/voltage-current-bricklet.html
-
 .. include:: Voltage_Current.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
@@ -24,6 +22,11 @@ Voltage/Current Bricklet
 
 	{% tfgalleryend %}
 
+.. note::
+
+ The Voltage/Current Bricklet is discontinued and is no longer sold. The
+ :ref:`Voltage/Current Bricklet 2.0 <voltage_current_v2_bricklet>` is the recommended
+ replacement.
 
 Features
 --------

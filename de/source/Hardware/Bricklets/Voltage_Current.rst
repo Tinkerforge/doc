@@ -1,6 +1,4 @@
 
-:shoplink: ../../../shop/bricklets/voltage-current-bricklet.html
-
 .. include:: Voltage_Current.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
@@ -23,6 +21,12 @@ Voltage/Current Bricklet
 	Dimensions/voltage_current_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
 
 	{% tfgalleryend %}
+
+.. note::
+
+ Das Voltage/Current Bricklet ist abgekündigt und wird nicht mehr verkauft.
+ Als Ersatz wird das :ref:`Voltage/Current Bricklet 2.0 <voltage_current_v2_bricklet>`
+ empfohlen.
 
 
 Features
