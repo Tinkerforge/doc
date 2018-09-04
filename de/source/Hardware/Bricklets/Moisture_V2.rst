@@ -81,11 +81,12 @@ Erster Test
 |test_tab|
 Wenn alles wie erwartet funktioniert ... TBD.
 
-.. image:: /Images/Bricklets/bricklet_moisture_v2_brickv.jpg
-   :scale: 100 %
-   :alt: Moisture Bricklet 2.0 im Brick Viewer
-   :align: center
-   :target: ../../_images/Bricklets/bricklet_moisture_v2_brickv.jpg
+..
+	.. image:: /Images/Bricklets/bricklet_moisture_v2_brickv.jpg
+	   :scale: 100 %
+	   :alt: Moisture Bricklet 2.0 im Brick Viewer
+	   :align: center
+	   :target: ../../_images/Bricklets/bricklet_moisture_v2_brickv.jpg
 
 |test_pi_ref|
 

@@ -1,14 +1,14 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/pressure-bricklet.html
+:DISABLED_shoplink: ../../../shop/bricklet/hat-bricklet.html
 
-.. include:: Pressure.substitutions
+.. include:: HAT.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
 
-.. _pressure_bricklet:
+.. _hat_bricklet:
 
-Pressure Bricklet
-=================
+HAT Bricklet
+============
 
 .. note::
   Dieses Bricklet befindet sich aktuell noch in der Entwicklung!
@@ -18,12 +18,12 @@ Pressure Bricklet
 
 	{% tfgallery %}
 
-	Bricklets/bricklet_pressure_tilted_[?|?].jpg           Pressure Bricklet
-	Bricklets/bricklet_pressure_horizontal_[?|?].jpg       Pressure Bricklet
-	Bricklets/bricklet_pressure_master_[100|600].jpg       Pressure Bricklet mit Master Brick
-	Cases/bricklet_pressure_case_[100|600].jpg             Pressure Bricklet im Gehäuse
-	Bricklets/bricklet_pressure_brickv_[100|].jpg          Pressure Bricklet im Brick Viewer
-	Dimensions/pressure_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
+	Bricklets/bricklet_hat_tilted_[?|?].jpg           HAT Bricklet
+	Bricklets/bricklet_hat_horizontal_[?|?].jpg       HAT Bricklet
+	Bricklets/bricklet_hat_master_[100|600].jpg       HAT Bricklet mit Master Brick
+	Cases/bricklet_hat_case_[100|600].jpg             HAT Bricklet im Gehäuse
+	Bricklets/bricklet_hat_brickv_[100|].jpg          HAT Bricklet im Brick Viewer
+	Dimensions/hat_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
 
 	{% tfgalleryend %}
 
@@ -35,7 +35,7 @@ Features
 * TBD
 
 
-.. _pressure_bricklet_description:
+.. _hat_bricklet_description:
 
 Beschreibung
 ------------
@@ -63,13 +63,13 @@ Gewicht                           TBDg
 Ressourcen
 ----------
 
-* Schaltplan (`Download <https://github.com/Tinkerforge/pressure-bricklet/raw/master/hardware/pressure-schematic.pdf>`__)
-* Umriss und Bohrplan (`Download <../../_images/Dimensions/pressure_bricklet_dimensions.png>`__)
-* Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/pressure-bricklet/zipball/master>`__)
+* Schaltplan (`Download <https://github.com/Tinkerforge/hat-bricklet/raw/master/hardware/hat-schematic.pdf>`__)
+* Umriss und Bohrplan (`Download <../../_images/Dimensions/hat_bricklet_dimensions.png>`__)
+* Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/hat-bricklet/zipball/master>`__)
 * 3D Modell (`Online ansehen <TBD>`__ | Download: `STEP <http://download.tinkerforge.com/3d/TBD/TBD.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/TBD/TBD.FCStd>`__)
 
 
-.. _pressure_bricklet_test:
+.. _hat_bricklet_test:
 
 Erster Test
 -----------
@@ -82,44 +82,44 @@ Erster Test
 Wenn alles wie erwartet funktioniert ... TBD.
 
 ..
-	.. image:: /Images/Bricklets/bricklet_pressure_brickv.jpg
+	.. image:: /Images/Bricklets/bricklet_hat_brickv.jpg
 	   :scale: 100 %
-	   :alt: Pressure Bricklet im Brick Viewer
+	   :alt: HAT Bricklet im Brick Viewer
 	   :align: center
-	   :target: ../../_images/Bricklets/bricklet_pressure_brickv.jpg
+	   :target: ../../_images/Bricklets/bricklet_hat_brickv.jpg
 
 |test_pi_ref|
 
 
-.. _pressure_bricklet_case:
+.. _hat_bricklet_case:
 
 Gehäuse
 -------
 
 ..
-	Ein `laser-geschnittenes Gehäuse für das Pressure Bricklet
-	<https://www.tinkerforge.com/de/shop/cases/case-pressure-bricklet.html>`__ ist verfügbar.
+	Ein `laser-geschnittenes Gehäuse für das HAT Bricklet
+	<https://www.tinkerforge.com/de/shop/cases/case-hat-bricklet.html>`__ ist verfügbar.
 
-	.. image:: /Images/Cases/bricklet_pressure_case_350.jpg
+	.. image:: /Images/Cases/bricklet_hat_case_350.jpg
 	   :scale: 100 %
-	   :alt: Gehäuse für Pressure Bricklet
+	   :alt: Gehäuse für HAT Bricklet
 	   :align: center
-	   :target: ../../_images/Cases/bricklet_pressure_case_1000.jpg
+	   :target: ../../_images/Cases/bricklet_hat_case_1000.jpg
 
-	.. include:: Pressure.substitutions
+	.. include:: HAT.substitutions
 	   :start-after: >>>bricklet_case_steps
 	   :end-before: <<<bricklet_case_steps
 
-	.. image:: /Images/Exploded/pressure_exploded_350.png
+	.. image:: /Images/Exploded/hat_exploded_350.png
 	   :scale: 100 %
-	   :alt: Explosionszeichnung für Pressure Bricklet
+	   :alt: Explosionszeichnung für HAT Bricklet
 	   :align: center
-	   :target: ../../_images/Exploded/pressure_exploded.png
+	   :target: ../../_images/Exploded/hat_exploded.png
 
 	|bricklet_case_hint|
 
 
-.. _pressure_bricklet_programming_interface:
+.. _hat_bricklet_programming_interface:
 
 Programmierschnittstelle
 ------------------------
@@ -127,4 +127,4 @@ Programmierschnittstelle
 Siehe :ref:`Programmierschnittstelle <programming_interface>` für eine detaillierte
 Beschreibung.
 
-.. include:: Pressure_hlpi.table
+.. include:: HAT_hlpi.table

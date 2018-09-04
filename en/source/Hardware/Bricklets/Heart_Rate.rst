@@ -81,11 +81,12 @@ Test your Heart Rate Bricklet
 |test_tab|
 If everything went as expected ... TBD.
 
-.. image:: /Images/Bricklets/bricklet_heart_rate_brickv.jpg
-   :scale: 100 %
-   :alt: Heart Rate Bricklet in Brick Viewer
-   :align: center
-   :target: ../../_images/Bricklets/bricklet_heart_rate_brickv.jpg
+..
+	.. image:: /Images/Bricklets/bricklet_heart_rate_brickv.jpg
+	   :scale: 100 %
+	   :alt: Heart Rate Bricklet in Brick Viewer
+	   :align: center
+	   :target: ../../_images/Bricklets/bricklet_heart_rate_brickv.jpg
 
 |test_pi_ref|
 

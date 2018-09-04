@@ -81,11 +81,12 @@ Erster Test
 |test_tab|
 Wenn alles wie erwartet funktioniert ... TBD.
 
-.. image:: /Images/Bricklets/bricklet_heart_rate_brickv.jpg
-   :scale: 100 %
-   :alt: Heart Rate Bricklet im Brick Viewer
-   :align: center
-   :target: ../../_images/Bricklets/bricklet_heart_rate_brickv.jpg
+..
+	.. image:: /Images/Bricklets/bricklet_heart_rate_brickv.jpg
+	   :scale: 100 %
+	   :alt: Heart Rate Bricklet im Brick Viewer
+	   :align: center
+	   :target: ../../_images/Bricklets/bricklet_heart_rate_brickv.jpg
 
 |test_pi_ref|
 

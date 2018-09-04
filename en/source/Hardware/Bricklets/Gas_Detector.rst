@@ -81,11 +81,12 @@ Test your Gas Detector Bricklet
 |test_tab|
 If everything went as expected ... TBD.
 
-.. image:: /Images/Bricklets/bricklet_gas_detector_brickv.jpg
-   :scale: 100 %
-   :alt: Gas Detector Bricklet in Brick Viewer
-   :align: center
-   :target: ../../_images/Bricklets/bricklet_gas_detector_brickv.jpg
+..
+	.. image:: /Images/Bricklets/bricklet_gas_detector_brickv.jpg
+	   :scale: 100 %
+	   :alt: Gas Detector Bricklet in Brick Viewer
+	   :align: center
+	   :target: ../../_images/Bricklets/bricklet_gas_detector_brickv.jpg
 
 |test_pi_ref|
 

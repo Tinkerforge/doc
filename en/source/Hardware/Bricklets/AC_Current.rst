@@ -81,11 +81,12 @@ Test your AC Current Bricklet
 |test_tab|
 If everything went as expected ... TBD.
 
-.. image:: /Images/Bricklets/bricklet_ac_current_brickv.jpg
-   :scale: 100 %
-   :alt: AC Current Bricklet in Brick Viewer
-   :align: center
-   :target: ../../_images/Bricklets/bricklet_ac_current_brickv.jpg
+..
+	.. image:: /Images/Bricklets/bricklet_ac_current_brickv.jpg
+	   :scale: 100 %
+	   :alt: AC Current Bricklet in Brick Viewer
+	   :align: center
+	   :target: ../../_images/Bricklets/bricklet_ac_current_brickv.jpg
 
 |test_pi_ref|
 

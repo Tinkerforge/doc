@@ -81,11 +81,12 @@ Test your Distance US Bricklet 2.0
 |test_tab|
 If everything went as expected ... TBD.
 
-.. image:: /Images/Bricklets/bricklet_distance_us_v2_brickv.jpg
-   :scale: 100 %
-   :alt: Distance US Bricklet 2.0 in Brick Viewer
-   :align: center
-   :target: ../../_images/Bricklets/bricklet_distance_us_v2_brickv.jpg
+..
+	.. image:: /Images/Bricklets/bricklet_distance_us_v2_brickv.jpg
+	   :scale: 100 %
+	   :alt: Distance US Bricklet 2.0 in Brick Viewer
+	   :align: center
+	   :target: ../../_images/Bricklets/bricklet_distance_us_v2_brickv.jpg
 
 |test_pi_ref|
 

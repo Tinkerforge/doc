@@ -81,11 +81,12 @@ Erster Test
 |test_tab|
 Wenn alles wie erwartet funktioniert ... TBD.
 
-.. image:: /Images/Bricklets/bricklet_distance_us_v2_brickv.jpg
-   :scale: 100 %
-   :alt: Distance US Bricklet 2.0 im Brick Viewer
-   :align: center
-   :target: ../../_images/Bricklets/bricklet_distance_us_v2_brickv.jpg
+..
+	.. image:: /Images/Bricklets/bricklet_distance_us_v2_brickv.jpg
+	   :scale: 100 %
+	   :alt: Distance US Bricklet 2.0 im Brick Viewer
+	   :align: center
+	   :target: ../../_images/Bricklets/bricklet_distance_us_v2_brickv.jpg
 
 |test_pi_ref|
 

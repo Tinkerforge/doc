@@ -81,11 +81,12 @@ Test your Moisture Bricklet 2.0
 |test_tab|
 If everything went as expected ... TBD.
 
-.. image:: /Images/Bricklets/bricklet_moisture_v2_brickv.jpg
-   :scale: 100 %
-   :alt: Moisture Bricklet 2.0 in Brick Viewer
-   :align: center
-   :target: ../../_images/Bricklets/bricklet_moisture_v2_brickv.jpg
+..
+	.. image:: /Images/Bricklets/bricklet_moisture_v2_brickv.jpg
+	   :scale: 100 %
+	   :alt: Moisture Bricklet 2.0 in Brick Viewer
+	   :align: center
+	   :target: ../../_images/Bricklets/bricklet_moisture_v2_brickv.jpg
 
 |test_pi_ref|
 
