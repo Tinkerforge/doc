@@ -156,7 +156,7 @@ Case
 ----
 
 A `laser-cut case for the IO-16 Bricklet
-<https://www.tinkerforge.com/en/shop/cases/case-io-16-bricklet.html>`__ is available.
+<https://www.tinkerforge.com/en/shop/cases/case-io16-bricklet.html>`__ is available.
 
 .. image:: /Images/Cases/bricklet_io16_case_350.jpg
    :scale: 100 %

@@ -155,7 +155,7 @@ Gehäuse
 -------
 
 Ein `laser-geschnittenes Gehäuse für das IO-16 Bricklet
-<https://www.tinkerforge.com/de/shop/cases/case-io-16-bricklet.html>`__ ist verfügbar.
+<https://www.tinkerforge.com/de/shop/cases/case-io16-bricklet.html>`__ ist verfügbar.
 
 .. image:: /Images/Cases/bricklet_io16_case_350.jpg
    :scale: 100 %
