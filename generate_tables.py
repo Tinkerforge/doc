@@ -1178,8 +1178,13 @@ def make_hardware_devices_toctree(device_infos, discontinued):
     lines = []
 
     for device_info in sorted(device_infos, key=lambda x: x.long_display_name.lower()):
-        if device_info.is_documented and device_info.is_discontinued == discontinued:
-            lines.append(line.format(device_info.long_display_name, device_info.hardware_doc_name))
+        long_display_name = device_info.long_display_name
+
+        if not device_info.is_documented:
+            long_display_name = '~' + long_display_name
+
+        if device_info.is_discontinued == discontinued:
+            lines.append(line.format(long_display_name, device_info.hardware_doc_name))
 
     return prefix + '\n'.join(lines) + '\n'
 
@@ -1217,8 +1222,13 @@ def make_software_devices_toctree(bindings_info, device_infos, category, ref_pre
     lines = []
 
     for device_info in sorted(device_infos, key=lambda x: x.short_display_name.lower()):
-        if device_info.has_bindings and device_info.is_documented and device_info.is_discontinued == discontinued:
-            lines.append(line.format(device_info.long_display_name, ref_prefix, category, device_info.software_doc_prefix, bindings_info.software_doc_suffix))
+        long_display_name = device_info.long_display_name
+
+        if not device_info.is_documented:
+            long_display_name = '~' + long_display_name
+
+        if device_info.has_bindings and device_info.is_discontinued == discontinued:
+            lines.append(line.format(long_display_name, ref_prefix, category, device_info.software_doc_prefix, bindings_info.software_doc_suffix))
 
     return prefix + '\n'.join(lines) + '\n'
 

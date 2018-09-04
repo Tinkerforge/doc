@@ -455,6 +455,9 @@ def setup(app):
             refs = [(e[0], e[1]) for e in toctreenode['entries']]
             entries = []
             for (title, ref) in refs:
+                if title != None and title.startswith('~'):
+                    continue
+
                 try:
                     refdoc = None
                     if url_re.match(ref):
@@ -708,6 +711,9 @@ def setup(app):
             refs = [(e[0], e[1]) for e in toctreenode['entries']]
             entries = []
             for (title, ref) in refs:
+                if title != None and title.startswith('~'):
+                    continue
+
                 try:
                     refdoc = None
                     if url_re.match(ref):
