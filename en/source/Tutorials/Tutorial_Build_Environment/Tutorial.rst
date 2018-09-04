@@ -243,7 +243,7 @@ Before using the script a few things have to be adapted:
 4. Copy the `script <https://github.com/Tinkerforge/kicad-libraries/blob/master/3d/Scripts/kicad-StepUp-tools.FCMacro>`__ into the folder where the ``*.kicad-pcb`` is you would convert to 3d.
 5. Run the script once with::
 
- freecad kicad-StepUp-tools.FCMacro \#brick(let)name\#
+    freecad kicad-StepUp-tools.FCMacro <brick(let)-name>
 
 6. Adapt the ``prefix3D`` path in ``ksu-config.ini`` file to ``$HOME/tf/kicad-libraries/3d/`` (absolute again!)
 7. Run the script again
