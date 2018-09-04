@@ -1073,7 +1073,7 @@ def make_index_api():
     'de': 'Es gibt einen extra Abschnitt für abgekündigte {0} und {1}.'
     }
 
-    discontinued_a = '<a class="reference internal" href="Software/{0}_{1}_Discontinued.html">{0}</a>'
+    discontinued_a = '<a class="reference internal" href="{0}/{1}_{2}_Discontinued.html">{1}</a>'
 
     html = '<div class="category_api_outer">'
     first = True
@@ -1086,6 +1086,11 @@ def make_index_api():
             else:
                 style = ' style="display: none;"'
 
+            if bindings_info.is_programming_language:
+                directory = 'Software'
+            else:
+                directory = 'Low_Level_Protocols'
+
             html += index_html.format(make_index_api_device(brick_infos, 'Bricks', bindings_info.software_doc_suffix),
                                       make_index_api_misc(bindings_info, lang),
                                       make_index_api_device(bricklet_infos, 'Bricklets', bindings_info.software_doc_suffix),
@@ -1093,8 +1098,8 @@ def make_index_api():
                                       bindings_info.url_part,
                                       style,
                                       misc[lang],
-                                      discontinued_p[lang].format(discontinued_a.format('Bricks', bindings_info.software_doc_suffix),
-                                                                  discontinued_a.format('Bricklets', bindings_info.software_doc_suffix)))
+                                      discontinued_p[lang].format(discontinued_a.format(directory, 'Bricks', bindings_info.software_doc_suffix),
+                                                                  discontinued_a.format(directory, 'Bricklets', bindings_info.software_doc_suffix)))
 
     return html + '</div>' + script_html
 
