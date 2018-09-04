@@ -102,7 +102,7 @@ TODO: Update image
    :target: ../../_images/Bricklets/bricklet_industrial_digital_out_4_caption_1200.jpg
 
 
-.. _industrial_digital_in_4_v2_bricklet_leds:
+.. _industrial_digital_out_4_v2_bricklet_leds:
 
 Kanal Status LEDs
 -------------------

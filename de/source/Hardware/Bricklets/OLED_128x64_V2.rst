@@ -152,7 +152,7 @@ Wir haben Beispiele für (TODO: Make V2 examples!)
   (mit `rgd <http://www.rubydoc.info/gems/rgd>`__) und
 * `Visual Basic .NET <https://raw.githubusercontent.com/Tinkerforge/oled-128x64-bricklet/master/software/examples/vbnet/ExampleScribble.vb>`__.
 
-.. _oled_128x64_bricklet_font:
+.. _oled_128x64_v2_bricklet_font:
 
 Zeichensatz
 -----------

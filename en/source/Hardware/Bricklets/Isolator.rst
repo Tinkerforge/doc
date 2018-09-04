@@ -52,8 +52,8 @@ isolation, for example:
 * :ref:`DMX <dmx_bricklet>`
 * :ref:`Industrial Analog Out 2.0 <industrial_analog_out_v2_bricklet>`
 * :ref:`Industrial Counter <industrial_counter_bricklet>`
-* :ref:`Industrial Dual 0-20mA 2.0 <industrial_dual_020ma_v2_bricklet>`
-* :ref:`Industrial Analog In 2.0 <industrial_analog_in_v2_bricklet>`
+* :ref:`Industrial Dual 0-20mA 2.0 <industrial_dual_0_20ma_v2_bricklet>`
+* :ref:`Industrial Dual Analog In 2.0 <industrial_dual_analog_in_v2_bricklet>`
 * :ref:`Industrial Dual Relay <industrial_dual_relay_bricklet>`
 * :ref:`IO-16 2.0 <io16_v2_bricklet>`
 * :ref:`IO-4 2.0 <io4_v2_bricklet>`
