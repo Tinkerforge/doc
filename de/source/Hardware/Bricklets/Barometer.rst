@@ -41,13 +41,13 @@ Mit dem Barometer :ref:`Bricklet <primer_bricklets>` können
 :ref:`Bricks <primer_bricks>` den Luftdruck im Bereich von 10 bis
 1200mbar mit einer Auflösung von 0,012mbar messen. Die Messung ist intern
 temperaturkompensiert.
+
 Das Bricklet ist mit einem MS5611-01BA01 Sensor ausgestattet der auch als
 Altimeter (Höhenmesser) genutzt werden kann. Da der Luftdruck sich schon über
 kurze Zeiträume signifikant ändern kann ist die erreichbare Genauigkeit begrenzt.
 Eine mögliche Lösung um die Genauigkeit und Stabilität der Höhenmessung zu
 steigern ist Sensorfusion mit den Sensordaten eines :ref:`IMU Bricks <imu_brick>`
-durchzuführen (siehe 
-`Youtube Video <https://www.youtube.com/watch?v=TaqtzG7lyp0>`__).
+durchzuführen (siehe `Youtube Video <https://www.youtube.com/watch?v=TaqtzG7lyp0>`__).
 
 
 Technische Spezifikation
@@ -128,7 +128,7 @@ Wert aus QFE Wert approximiert werden::
 
 * ``Tg`` ist der Temperaturgradient, dieser gibt an, wie schnell die Temperatur
   mit steigender Höhe fällt (eine gute Schätzung bei normalem Wetter ist
-  0,0065 °C/Meter)
+  0,0065 °C/m)
 * ``Tfe`` ist die Temperatur am Messort in °C
 * ``H`` ist die Höhe des Messortes in Metern
 
