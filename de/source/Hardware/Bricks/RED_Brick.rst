@@ -547,7 +547,7 @@ Die Beschreibung des Tabs befindet auf einer
 Console Tab (Konsole, Fernsteuerung)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Wenn der RED Brick mittels `Mini-USB Anschluss <red_brick_mini_usb>`__ mit einem
+Wenn der RED Brick mittels :ref:`Mini-USB Anschluss <red_brick_mini_usb>` mit einem
 PC verbunden ist, registriert er eine serielle Schnittstelle. Diese Schnittstelle
 kann dazu genutzt werden um auf die Linux Shell des RED Bricks zuzugreifen. Dazu
 muss nur die entsprechende Schnittstelle gewählt werden und *Connect* geklickt

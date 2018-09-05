@@ -534,7 +534,7 @@ Console Tab (Remote Access)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 If you have attached the RED Brick over its
-`Mini-USB connector <red_brick_mini_usb>`__ to your PC it will also register
+:ref:`Mini-USB connector <red_brick_mini_usb>` to your PC it will also register
 a USB serial interface. This serial interface can be used to access the Linux
 shell of the Brick. Select the serial port of the Brick and press *Connect*.
 Under Linux the typical interface is ``/dev/ttyACMX`` (X is number) under
