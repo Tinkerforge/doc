@@ -1,6 +1,4 @@
 
-:shoplink: ../../../shop/bricklets/industrial-quad-relay-bricklet.html
-
 .. include:: Industrial_Quad_Relay.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
