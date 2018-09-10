@@ -61,26 +61,30 @@ connected to a Brick with a ``7p-10p`` Bricklet cable.
 Technical Specifications
 ------------------------
 
-..
-  TODO: Fill in table
-
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
-Current Consumption               TBDmA
+Sensor                            MCP3423
+Current Consumption               50mw (10mA at 5V)
+Maximum Input Voltage             48V
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-P TBD                             V TBD
+Measurement Range                 0mA - 22.5mA
+Supported Sensors                 IEC 60381-1 type 2 and type 3
+Accuracy                          0.15% with 40ppm/°C
+Resolution                        up to 0.172µA (18bit)
+Sample Rate                       up to 240 samples per second
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Dimensions (W x D x H)            TBD x TBD x TBDmm (TBD x TBD x TBD")
-Weight                            TBDg
+Dimensions (W x D x H)            40 x 40 x 11mm (1.57 x 1.57 x 0.43")
+Weight                            8g
 ================================  ============================================================
 
 
 Resources
 ---------
 
+* MCP3423 datasheet (`Download <https://github.com/Tinkerforge/industrial-dual-0-20ma-bricklet/raw/master/datasheets/mcp3423.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/industrial-dual-0-20ma-v2-bricklet/raw/master/hardware/industrial-dual-0-20ma-v2-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/industrial_dual_0_20ma_v2_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/industrial-dual-0-20ma-v2-bricklet/zipball/master>`__)

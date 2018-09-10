@@ -60,26 +60,30 @@ mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
 Technische Spezifikation
 ------------------------
 
-..
-  TODO: Fill in table
-
 ================================  ============================================================
 Eigenschaft                       Wert
 ================================  ============================================================
-Stromverbrauch                    TBDmA
+Sensor                            MCP3423
+Stromverbrauch                    50mw (10mA bei 5V)
+Maximale Versorgungsspannung      48V
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-E TBD                             W TBD
+Messbereich                       0mA - 22,5mA
+Unterstützte Sensoren             IEC 60381-1 Typ 2 und Typ 3
+Genauigkeit                       0,15% mit 40ppm/°C
+Auflösung                         bis zu 0,172µA (18Bit)
+Abtastrate                        bis zu 240 Samples pro Sekunde
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Abmessungen (B x T x H)           TBD x TBD x TBDmm (TBD x TBD x TBD")
-Gewicht                           TBDg
+Abmessungen (B x T x H)           40 x 40 x 11mm (1,57 x 1,57 x 0,43")
+Gewicht                           8g
 ================================  ============================================================
 
 
 Ressourcen
 ----------
 
+* MCP3423 Datenblatt (`Download <https://github.com/Tinkerforge/industrial-dual-0-20ma-bricklet/raw/master/datasheets/mcp3423.pdf>`__)
 * Schaltplan (`Download <https://github.com/Tinkerforge/industrial-dual-0-20ma-v2-bricklet/raw/master/hardware/industrial-dual-0-20ma-v2-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/industrial_dual_0_20ma_v2_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/industrial-dual-0-20ma-v2-bricklet/zipball/master>`__)
