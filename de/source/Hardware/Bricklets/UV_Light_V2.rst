@@ -31,7 +31,7 @@ UV Light Bricklet 2.0
 Features
 --------
 
-* Misst UV-A, UV-B UV Index
+* Misst UV-A, UV-B und UV Index
 
 
 .. _uv_light_v2_bricklet_description:
@@ -65,8 +65,8 @@ UV-A Auflösung                    0,93 µW/cm²
 UV-B Auflösung                    2,1 µW/cm²
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Abmessung (W x D x H)             25 x 15 x 5mm (0.98 x 0.59 x 0.19")
-Gewicht                           2.1g
+Abmessung (W x D x H)             25 x 15 x 5mm (0,98 x 0,59 x 0,19")
+Gewicht                           2,1g
 ================================  ============================================================
 
 
@@ -93,7 +93,8 @@ Erster Test
 Wenn alles wie erwartet funktioniert wird der UV-A und UV-B Messwert sowie der
 UV-Index angezeigt. Der Graph gibt den zeitlichen Verlauf wieder.
 
-TODO: Neuer Screenshot mit UV-Index!
+..
+  TODO: Neuer Screenshot mit UV-Index!
 
 .. image:: /Images/Bricklets/bricklet_uv_light_v2_brickv.jpg
    :scale: 100 %

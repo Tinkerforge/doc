@@ -31,8 +31,10 @@ One Wire Bricklet
 Features
 --------
 
-* TBD
-* TBD
+* 1-Wire Kommunikation mit allen 1-wire kompatiblen Geräten
+* Bietet High-Level-Befehle (Bus Search, Reset, Write, Read, Write Command)
+* Unterstützt 3,3V, 5V und externe Versorgungsspannung
+* Bis zu 64 1-Wire Geräte gleichzeitig anschließbar
 
 
 .. _one_wire_bricklet_description:
@@ -40,7 +42,23 @@ Features
 Beschreibung
 ------------
 
-TBD
+Das One-Wire Bricklet ermöglicht die Kommunikation mit
+`1-wire <https://de.wikipedia.org/wiki/1-Wire>`__ kompatiblen Geräten .
+
+Die API stellt verschiedene High-Level-Befehle (Bus Search, Reset, Write, Read,
+Write Command) bereit, die direkt den Status zurückmelden und einfache
+Fehlererkennung ermöglichen.
+
+Bis zu 64 1-Wire Geräte können gleichzeitig angeschlossen und genutzt werden.
+
+A jumper can be used to switch between 3.3V, 5V or an external supply voltage
+for the connected 1-wire devices.
+
+An example application would be to read the temperature of a MAX31820
+1-wire ambient temperature sensor.
+
+The One Wire Bricklet has a 7 pole Bricklet connector and is connected to a
+Brick with a ``7p-10p`` Bricklet cable.
 
 
 Technische Spezifikation
@@ -49,14 +67,16 @@ Technische Spezifikation
 ================================  ============================================================
 Eigenschaft                       Wert
 ================================  ============================================================
-Stromverbrauch                    TBDmA
+Stromverbrauch                    35mW (7mA bei 5V)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-E TBD                             W TBD
+Maximale Busgröße                 64
+Unterstüzte Spannungen            3,3V, 5V und externe Versorgung
+Befehle                           Bus Search, Reset, Write, Read, Write Command
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Abmessungen (B x T x H)           TBD x TBD x TBDmm (TBD x TBD x TBD")
-Gewicht                           TBDg
+Abmessungen (B x T x H)           30 x 30 x 14mm (1,18 x 1,18 x 0,55")
+Gewicht                           6,5g
 ================================  ============================================================
 
 
@@ -69,6 +89,38 @@ Ressourcen
 * 3D Modell (`Online ansehen <https://autode.sk/2KdKuf1>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/one_wire/one-wire.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/one_wire/one-wire.FCStd>`__)
 
 
+Anschlussmöglichkeit
+--------------------
+
+..
+  TODO
+
+
+Beispiel: MAX31820
+------------------
+
+Das folgende Python Beispiel ließt über das One Wire Bricklet die Temperatur
+eines angeschlossenen MAX31820 Temperatursensors aus:
+
+.. code-block:: python
+
+    ow.write_command(0, 0x4E)     # WRITE SCRATCH PAD
+    ow.write(0x00)                # ALARM H (unused)
+    ow.write(0x00)                # ALARM L (unused)
+    ow.write(0x7F)                # CONFIGURATION: 12 bit mode
+
+    while True:
+        ow.write_command(0, 0x44) # CONVERT T (start temperature conversion)
+        time.sleep(1)             # Wait for conversion to finish
+
+        ow.write_command(0, 0xBE) # READ SCRATCH PAD
+
+        t_low = ow.read().data    # Read LSB
+        t_high = ow.read().data   # Read MSB
+
+        print('Temperature: {0} °C'.format((t_low | (t_high << 8)) / 16.0))
+
+
 .. _one_wire_bricklet_test:
 
 Erster Test
@@ -76,10 +128,11 @@ Erster Test
 
 |test_intro|
 
-|test_connect|.
+|test_connect| und ein 1-Wire Gerät an das Bricklet angeschlossen werden.
 
 |test_tab|
-Wenn alles wie erwartet funktioniert ... TBD.
+Wenn alles wie erwartet funktioniert kann jetzt mit dem angeschlossenen
+1-Wire Gerät kommuniziert werden.
 
 .. image:: /Images/Bricklets/bricklet_one_wire_brickv.jpg
    :scale: 100 %

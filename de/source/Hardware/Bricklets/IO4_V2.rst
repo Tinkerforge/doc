@@ -94,7 +94,8 @@ Erster Test
 
 |test_tab|
 
-TODO: Screenshot machen
+..
+  TODO: Screenshot machen
 
 .. image:: /Images/Bricklets/bricklet_io4_v2_brickv.jpg
    :scale: 100 %

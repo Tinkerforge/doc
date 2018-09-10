@@ -43,7 +43,7 @@ Beschreibung
 
 Mit dem Barometer :ref:`Bricklet <primer_bricklets>` 2.0 können 
 :ref:`Bricks <primer_bricks>` den Luftdruck im Bereich von 260 bis
-1260mbar mit einer Auflösung von 0,0065mbar messen. Die Messung ist intern
+1260mbar mit einer Auflösung von 0,0075mbar messen. Die Messung ist intern
 temperaturkompensiert.
 
 Das Bricklet ist mit einem LPS22HB Sensor ausgestattet der auch als
@@ -51,8 +51,7 @@ Altimeter (Höhenmesser) genutzt werden kann. Da der Luftdruck sich schon über
 kurze Zeiträume signifikant ändern kann ist die erreichbare Genauigkeit begrenzt.
 Eine mögliche Lösung um die Genauigkeit und Stabilität der Höhenmessung zu
 steigern ist Sensorfusion mit den Sensordaten eines :ref:`IMU Bricks <imu_brick>`
-durchzuführen (siehe 
-`Youtube Video <https://www.youtube.com/watch?v=TaqtzG7lyp0>`__).
+durchzuführen (siehe `Youtube Video <https://www.youtube.com/watch?v=TaqtzG7lyp0>`__).
 
 Das Barometer Bricklet 2.0 hat einen 7 Pol Bricklet Stecker und wird
 mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
@@ -79,7 +78,7 @@ Genauigkeit                       ± 1,5°C
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Abmessungen (B x T x H)           25 x 15 x 5mm (0,98 x 0,59 x 0,19")
-Gewicht                           1.6g
+Gewicht                           1,6g
 ================================  ============================================================
 
 \* OPC = One-Point Calibration, siehe TODO
@@ -107,7 +106,8 @@ Erster Test
 Wenn alles wie erwartet funktioniert wird der Luftdruck in mbar angezeigt.
 Der Graph gibt den zeitlichen Verlauf des Luftdrucks wieder.
 
-TODO: Screenshot machen
+..
+  TODO: Screenshot machen
 
 .. image:: /Images/Bricklets/bricklet_barometer_v2_brickv.jpg
    :scale: 100 %
@@ -144,7 +144,7 @@ Wert aus QFE Wert approximiert werden::
 
 * ``Tg`` ist der Temperaturgradient, dieser gibt an, wie schnell die Temperatur
   mit steigender Höhe fällt (eine gute Schätzung bei normalem Wetter ist
-  0,0065 °C/Meter)
+  0,0065°C/m)
 * ``Tfe`` ist die Temperatur am Messort in °C
 * ``H`` ist die Höhe des Messortes in Metern
 
@@ -156,7 +156,7 @@ Höhenangabe
 ^^^^^^^^^^^
 
 Die Höhenangabe des Barometer Bricklets bezieht sich standardmäßig auf einen
-Referenzluftdruck von 1013,25 mbar und wird mittels einer Approximation
+Referenzluftdruck von 1013,25mbar und wird mittels einer Approximation
 des `International Standard Atmosphere <https://de.wikipedia.org/wiki/Normatmosph%C3%A4re>`__
 Modells berechnet. Eine so bestimmte Höhe ist in der Luftfahrt als `QNE
 <https://de.wikipedia.org/wiki/Barometrische_H%C3%B6henmessung_in_der_Luftfahrt#QNE>`__

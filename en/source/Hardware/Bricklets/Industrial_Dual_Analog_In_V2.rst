@@ -52,6 +52,9 @@ used with an extremely high level of confidence.
 With configurable events it is possible to react on changing
 voltages without polling.
 
+The Industrial Dual Analog In Bricklet 2.0 has a 7 pole Bricklet connector and
+is connected to a Brick with a ``7p-10p`` Bricklet cable.
+
 
 Technical Specifications
 ------------------------
@@ -91,11 +94,12 @@ Connectivity
 The Industrial Dual Analog In Bricklet 2.0 has an 8 pole terminal.
 Please see the picture below for the pinout.
 
-TODO: Update image?
+..
+  TODO: Update image?
 
 .. image:: /Images/Bricklets/bricklet_industrial_dual_analog_in_caption_600.jpg
    :scale: 100 %
-   :alt: Industrial Dual Analog In Bricklet pinout
+   :alt: Industrial Dual Analog In Bricklet 2.0 pinout
    :align: center
    :target: ../../_images/Bricklets/bricklet_industrial_dual_analog_in_caption_1200.jpg
 
@@ -116,7 +120,8 @@ GND pin to the IN0+ pin.
 If everything went as expected you can now see the voltage in Volt
 and a graph that shows the voltage over time.
 
-TODO: Make screenshot
+..
+  TODO: Make screenshot
 
 .. image:: /Images/Bricklets/bricklet_industrial_dual_analog_in_v2_brickv.jpg
    :scale: 100 %

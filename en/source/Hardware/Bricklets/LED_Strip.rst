@@ -137,7 +137,8 @@ If everything went as expected you can now control a LED strip.
 WS2801, WS2811 and WS2812
 -------------------------
 
-.. FIXME: add SK6812 (NeoPixel RGB), SK6812RGBW (NeoPixel RGBW), LPD8806 and APA102 (DotStar)
+..
+  FIXME: add SK6812 (NeoPixel RGB), SK6812RGBW (NeoPixel RGBW), LPD8806 and APA102 (DotStar)
 
 The LED Strip Bricklet supports LED strips and pixels equipped with the
 WS2801, WS2811 or WS2812 driver chip. WS28xy refers to any of these chips.
@@ -175,7 +176,8 @@ clock signal.
 Connectivity
 ------------
 
-.. FIXME: add SK6812 (NeoPixel RGB), SK6812RGBW (NeoPixel RGBW), LPD8806 and APA102 (DotStar)
+..
+  FIXME: add SK6812 (NeoPixel RGB), SK6812RGBW (NeoPixel RGBW), LPD8806 and APA102 (DotStar)
 
 The following image depicts the interfaces of the LED Strip Bricklet.
 

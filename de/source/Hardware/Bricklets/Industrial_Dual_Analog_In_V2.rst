@@ -50,6 +50,9 @@ Bricklets sind kalibriert, so dass die Spannungsmessung sehr verlässlich ist.
 Mit konfigurierbaren Events ist es möglich auf Spannungsänderungen zu
 reagieren ohne die Werte laufend abzufragen (kein Polling notwendig).
 
+Das Industrial Digital Out 4 Bricklet 2.0 hat einen 7 Pol Bricklet Stecker und wird
+mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
+
 
 Technische Spezifikation
 ------------------------
@@ -89,7 +92,8 @@ Anschlussmöglichkeit
 Das Industrial Dual Analog In Bricklet 2.0 besitzt eine 8 Pol Anschlussklemme.
 Das folgende Bild stellt die Anschlussmöglichkeiten dar:
 
-TODO: Neues Bild?
+..
+  TODO: Neues Bild?
 
 .. image:: /Images/Bricklets/bricklet_industrial_dual_analog_in_caption_600.jpg
    :scale: 100 %
@@ -113,7 +117,8 @@ GND Pin mit dem IN0+ Eingang verbunden werden.
 Wenn alles wie erwartet funktioniert wird die gemessene Spannung angezeigt.
 Der Graph gibt den zeitlichen Verlauf der Spannung wieder.
 
-TODO: Screenshot machen
+..
+  TODO: Screenshot machen
 
 .. image:: /Images/Bricklets/bricklet_industrial_dual_analog_in_v2_brickv.jpg
    :scale: 100 %

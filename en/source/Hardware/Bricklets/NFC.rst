@@ -264,7 +264,8 @@ consist of one or more NDEF Records. Many of the predefined
 NDEF Records can be understood by any smart phone that is capable
 of NFC communication.
 
-TODO: Add link to examples using NDEF message.
+..
+  TODO: Add link to examples using NDEF message.
 
 
 .. _nfc_bricklet_test:

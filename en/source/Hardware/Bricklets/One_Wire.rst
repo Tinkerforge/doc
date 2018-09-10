@@ -32,7 +32,7 @@ Features
 --------
 
 * 1-wire communication with any 1-wire capable device
-* Uses high-level commands (bus search, reset, write, read)
+* Offers high-level commands (bus search, reset, write, read, write command)
 * Supports 3.3V, 5V and external supply voltage
 * Supports up to 64 1-wire devices simultaneously
 
@@ -42,16 +42,17 @@ Features
 Description
 -----------
 
-The One-Wire Bricklet can be used to communicate with any `1-wire <https://en.wikipedia.org/wiki/1-Wire>`__
-capable device. 
+The One-Wire Bricklet can be used to communicate with any
+`1-wire <https://en.wikipedia.org/wiki/1-Wire>`__ capable device.
 
-The API uses a set of high-level commands (bus search, reset, write, read, write command). Each
-command will give immediat status feedback for easy error detection
+The API uses a set of high-level commands (bus search, reset, write, read,
+write command). Each command will give immediate status feedback for easy error
+detection.
 
 Up to 64 devices can be connected to the bus and used at the same time.
 
-A jumper can be used to switch between 3.3V, 5V or an external supply voltage for the
-connected 1-wire devices.
+A jumper can be used to switch between 3.3V, 5V or an external supply voltage
+for the connected 1-wire devices.
 
 An example application would be to read the temperature of a MAX31820
 1-wire ambient temperature sensor.
@@ -69,8 +70,8 @@ Property                          Value
 Current Consumption               35mW (7mA at 5V)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Number of simultaneous devices    64
-Supported voltage                 3.3V, 5V and external supply
+Maximum Bus Size                  64
+Supported Voltage                 3.3V, 5V and external supply
 Commands                          bus search, reset, write, read, write command
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
@@ -88,33 +89,36 @@ Resources
 * 3D model (`View online <https://autode.sk/2KdKuf1>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/one_wire/one-wire.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/one_wire/one-wire.FCStd>`__)
 
 
-
 Connectivity
 ------------
 
-TODO
+..
+  TODO
 
 
 Example: MAX31820
 -----------------
 
 The following example uses Python to read the temperature of a MAX31820
-with the API of the One Wire Bricklet::
+temperature sensor with the API of the One Wire Bricklet:
 
-	ow.write_command(0, 0x4E)     # WRITE SCRATCHPAD
-	ow.write(0x00)                # ALARM H (unused)
-	ow.write(0x00)                # ALARM L (unused)
-	ow.write(0x7F)                # COFIGURATION: 12 bit mode
+.. code-block:: python
 
-	while True:
-	    ow.write_command(0, 0x44) # CONVERT T (start temperature conversion)
-	    time.sleep(1)             # Wait for conversion to finish
+    ow.write_command(0, 0x4E)     # WRITE SCRATCH PAD
+    ow.write(0x00)                # ALARM H (unused)
+    ow.write(0x00)                # ALARM L (unused)
+    ow.write(0x7F)                # CONFIGURATION: 12 bit mode
 
-	    ow.write_command(0, 0xBE) # READ SCRATCHPAD
+    while True:
+        ow.write_command(0, 0x44) # CONVERT T (start temperature conversion)
+        time.sleep(1)             # Wait for conversion to finish
 
-	    t_low = ow.read().data    # Read LSB
-	    t_high = ow.read().data   # Read MSB
-	    print('Temperature: {0} °C'.format((t_low | (t_high << 8))/16.0))
+        ow.write_command(0, 0xBE) # READ SCRATCH PAD
+
+        t_low = ow.read().data    # Read LSB
+        t_high = ow.read().data   # Read MSB
+
+        print('Temperature: {0} °C'.format((t_low | (t_high << 8)) / 16.0))
 
 
 .. _one_wire_bricklet_test:
@@ -124,10 +128,10 @@ Test your One Wire Bricklet
 
 |test_intro|
 
-|test_connect|.
+|test_connect| and connect a 1-wire device to the Bricklet.
 
 |test_tab|
-If everything went as expected you can now use the
+If everything went as expected you can now use
 Brick Viewer to communicate with a connected 1-wire device.
 
 .. image:: /Images/Bricklets/bricklet_one_wire_brickv.jpg

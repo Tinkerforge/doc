@@ -31,7 +31,7 @@ Air Quality Bricklet
 Features
 --------
 
-* Measures air quality (IAQ index), humidity, air pressure and temperature
+* Measures IAQ (indoor air quality) index, air pressure, humidity and temperature
 * IAQ index and humidity values are temperature compensated
 * Configurable temperature compensation for use cases in enclosures
 
@@ -41,29 +41,29 @@ Features
 Description
 -----------
 
-The Air Quality Bricklet :ref:`Bricklet <primer_bricklets>` can measure
+The Air Quality :ref:`Bricklet <primer_bricklets>` can measure
 
-* IAQ (indoor air quality) Index,
-* Air Pressure in hPa,
+* IAQ (indoor air quality) index,
+* Air pressure in mbar,
 * Humidity in %RH and
 * Temperature in °C.
 
-The IAQ Index is a measurement for the quality of air. To calculate the IAQ Index the
-Bricklet detects Ethane, Isoprene/2-methyl-1,3 Butadiene, Ethanol, Acetone and
-Carbon Monoxide (often called VOC, volatile components) by adsorption. These gas 
-measurements are combined with the measurements of air pressure, humidity and 
-temperature to calculate the air IAQ Index. 
+The IAQ index is a measurement for the quality of air. To calculate the IAQ
+index the Bricklet detects ethane, isoprene (2-methylbuta-1,3-diene), ethanol,
+acetone and carbon monoxide (often called VOC, volatile organic components) by
+adsorption. These gas measurements are combined with the measurements of air
+pressure, humidity and temperature to calculate the final IAQ index.
 
-The index has a range of 0-500:
+The IAQ index has a range of 0-500:
 
 .. image:: /Images/Misc/bricklet_air_quality_iaq_index.png
    :scale: 100 %
-   :alt: Air Quality Index description
+   :alt: IAQ index scale
    :align: center
    :target: ../../_images/Misc/bricklet_air_quality_iaq_index.png
 
-Typical applications for this Bricklet are the monitoring of air quality, environmental 
-statistics, home automation and similar.
+Typical applications for this Bricklet are the monitoring of air quality,
+environmental statistics, home automation and similar.
 
 The Air Quality Bricklet has a 7 pole Bricklet connector and is connected to a
 Brick with a ``7p-10p`` Bricklet cable.
@@ -78,24 +78,24 @@ Sensor                            BME680
 Current Consumption               100mW (20mA at 5V)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-IAQ Index resolution              1
-Air Pressure resolution           0.18Pa
-Humidity resolution               0.008%RH
-Temperature resolution            0.01°C
+IAQ Index Resolution              1
+Air Pressure Resolution           0.0018mbar
+Humidity Resolution               0.008%RH
+Temperature Resolution            0.01°C
 --------------------------------  ------------------------------------------------------------
-IAQ Index accuracy                ±15 and ±15% of reading
-Air Pressure accuracy             ±0.12hPa (700-900hPa at 25-40°C), ±0.6hPa (full range)
-Humidity accuracy                 ±3%RH (20-80%RH at 25°C)
-Temperature accuracy              ±0.5°C (at 25°C), ±1.0°C (0-65°C)*
+IAQ Index Accuracy                ±15 and ±15% of reading
+Air Pressure Accuracy             ±0.12mbar (700-900mbar at 25-40°C), ±0.6mbar (full scale)
+Humidity Accuracy                 ±3%RH (20-80%RH at 25°C)
+Temperature Accuracy              ±0.5°C (at 25°C), ±1.0°C (0-65°C)*
 --------------------------------  ------------------------------------------------------------
-Measurement frequency             1 measurement per second
+Measurement Frequency             1 measurement per second
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)            25 x 20 x 5mm (0.98 x 0.79 x 0.19")
 Weight                            2.1g
 ================================  ============================================================
 
-\*: This is the temperature at the exact posisiton of the sensor. If the Bricklet is used inside
+\* This is the temperature at the exact position of the sensor. If the Bricklet is used inside
 of an enclosure, the air around the Bricklet may heat up more than the ambient air. The Bricklet
 does have API to calibrate this kind of offset.
 
@@ -112,15 +112,17 @@ Resources
 * 3D model (`View online <https://autode.sk/2NTYEnR>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/air_quality/air-quality.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/air_quality/air-quality.FCStd>`__)
 
 
-IAQ Index accuracy
+IAQ Index Accuracy
 ------------------
 
-The Bricklet is building a database of measurements and uses this data to calculate an accurate
-IAQ Index over time. It will take 1-2 days until the IAQ Index has a high reliability. The API
-of the Bricklet returns a best guess about the accuracy (ranging from unreliable to high).
+The Bricklet is building a database of measurements and uses this data to
+calculate an accurate IAQ index over time. It will take 1-2 days until the IAQ
+index has a high reliability. The API of the Bricklet returns a best guess about
+the accuracy (ranging from unreliable to high).
 
-The current database of values and calculated coefficients are saved to the flash of the Bricklet
-every 12 hours, so if you loose power it will not take as long to receive reliable data again.
+The Bricklet saves the current database of values and calculated coefficients
+every 12 hours in its internal flash memory. If the Bricklet loses power it will
+not take as long to receive reliable data again.
 
 
 .. _air_quality_bricklet_test:

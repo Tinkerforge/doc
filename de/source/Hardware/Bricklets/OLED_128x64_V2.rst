@@ -84,7 +84,7 @@ Größe                             3,3cm (1,3")
 Farben                            Schwarz/Weiß
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Abmessungen (W x D x H)           40 x 40 x 7mm (1.58 x 1.58 x 0.28")
+Abmessungen (W x D x H)           40 x 40 x 7mm (1,58 x 1,58 x 0,28")
 Gewicht                           8,2g
 ================================  ============================================================
 
@@ -134,23 +134,23 @@ zu nutzen die für eine spezifische Programmiersprache entwickelt wurde
 und Schriftarten der Library verwendet werden und das fertig gezeichnete
 Bild kann dann zum Bricklet übertragen werden.
 
-Wir haben Beispiele für (TODO: Make V2 examples!)
+Wir haben Beispiele für:
 
-* `C/C++ <https://raw.githubusercontent.com/Tinkerforge/oled-128x64-bricklet/master/software/examples/c/example_scribble.c>`__
+* `C/C++ <https://raw.githubusercontent.com/Tinkerforge/oled-128x64-v2-bricklet/master/software/examples/c/example_scribble.c>`__
   (mit `libgd <https://libgd.github.io/>`__),
-* `C# <https://raw.githubusercontent.com/Tinkerforge/oled-128x64-bricklet/master/software/examples/csharp/ExampleScribble.cs>`__,
-* `Java <https://raw.githubusercontent.com/Tinkerforge/oled-128x64-bricklet/master/software/examples/java/ExampleScribble.java>`__,
-* `JavaScript (Node.js) <https://raw.githubusercontent.com/Tinkerforge/oled-128x64-bricklet/master/software/examples/javascript/ExampleScribble.js>`__
+* `C# <https://raw.githubusercontent.com/Tinkerforge/oled-128x64-v2-bricklet/master/software/examples/csharp/ExampleScribble.cs>`__,
+* `Java <https://raw.githubusercontent.com/Tinkerforge/oled-128x64-v2-bricklet/master/software/examples/java/ExampleScribble.java>`__,
+* `JavaScript (Node.js) <https://raw.githubusercontent.com/Tinkerforge/oled-128x64-v2-bricklet/master/software/examples/javascript/ExampleScribble.js>`__
   (mit `gm <https://www.npmjs.com/package/gm>`__ und `get-pixels <https://www.npmjs.com/package/get-pixels>`__),
-* `Perl <https://raw.githubusercontent.com/Tinkerforge/oled-128x64-bricklet/master/software/examples/perl/example_scribble.pl>`__
+* `Perl <https://raw.githubusercontent.com/Tinkerforge/oled-128x64-v2-bricklet/master/software/examples/perl/example_scribble.pl>`__
   (mit `GD <http://search.cpan.org/~lds/GD-2.56/lib/GD.pm>`__),
-* `PHP <https://raw.githubusercontent.com/Tinkerforge/oled-128x64-bricklet/master/software/examples/php/ExampleScribble.php>`__
+* `PHP <https://raw.githubusercontent.com/Tinkerforge/oled-128x64-v2-bricklet/master/software/examples/php/ExampleScribble.php>`__
   (mit `GD <http://php.net/manual/de/book.image.php>`__),
-* `Python <https://raw.githubusercontent.com/Tinkerforge/oled-128x64-bricklet/master/software/examples/python/example_scribble.py>`__
+* `Python <https://raw.githubusercontent.com/Tinkerforge/oled-128x64-v2-bricklet/master/software/examples/python/example_scribble.py>`__
   (mit `PIL <http://python-pillow.org/>`__),
-* `Ruby <https://raw.githubusercontent.com/Tinkerforge/oled-128x64-bricklet/master/software/examples/ruby/example_scribble.rb>`__
+* `Ruby <https://raw.githubusercontent.com/Tinkerforge/oled-128x64-v2-bricklet/master/software/examples/ruby/example_scribble.rb>`__
   (mit `rgd <http://www.rubydoc.info/gems/rgd>`__) und
-* `Visual Basic .NET <https://raw.githubusercontent.com/Tinkerforge/oled-128x64-bricklet/master/software/examples/vbnet/ExampleScribble.vb>`__.
+* `Visual Basic .NET <https://raw.githubusercontent.com/Tinkerforge/oled-128x64-v2-bricklet/master/software/examples/vbnet/ExampleScribble.vb>`__.
 
 .. _oled_128x64_v2_bricklet_font:
 

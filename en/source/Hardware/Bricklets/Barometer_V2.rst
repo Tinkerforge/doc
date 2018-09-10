@@ -44,7 +44,7 @@ Description
 The Barometer :ref:`Bricklet <primer_bricklets>` 2.0 can be used to extend the 
 features of :ref:`Bricks <primer_bricks>` by the
 capability to measure air pressure in range of 260 to 1260mbar with a resolution
-of 0.0065mbar. The measurement is temperature compensated internally.
+of 0.0075mbar. The measurement is temperature compensated internally.
 
 The Bricklet is equipped with a LPS22HB sensor which can be used
 as an altimeter. Since the air pressure is changing significantly
@@ -68,12 +68,12 @@ Current Consumption               30mW (6mA at 5V)
 --------------------------------  ------------------------------------------------------------
 Pressure Range                    260 - 1260mbar
 Resolution                        0.0075mbar / 6.25cm
-Accuracy (0-65°C before OPC*)     ± 1.1mbar
-Accuracy (0-65°C after OPC*)      ± 0.2mbar
+Accuracy (0-65°C before OPC*)     ±1.1mbar
+Accuracy (0-65°C after OPC*)      ±0.2mbar
 
-Temperature Range                 -40 - 85°C
+Temperature Range                 -40 - +85°C
 Resolution                        0.01°C
-Accuracy                          ± 1.5°C
+Accuracy                          ±1.5°C
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)            25 x 15 x 5mm (0.98 x 0.59 x 0.19")
@@ -105,7 +105,8 @@ Test your Barometer Bricklet 2.0
 If everything went as expected you can now see the air pressure in mbar
 and a graph that shows the air pressure over time.
 
-TODO: Make screenshot
+..
+  TODO: Make screenshot
 
 .. image:: /Images/Bricklets/bricklet_barometer_v2_brickv.jpg
    :scale: 100 %
@@ -120,7 +121,7 @@ Understanding Air Pressure
 --------------------------
 
 Air pressure is a complex topic. Two frequently asked questions are: Why does
-the air pressure value of the Barometer Bricklet differs from the value in the
+the air pressure value of the Barometer Bricklet 2.0 differs from the value in the
 weather forecast and why does the altitude value differ from the actual altitude
 of the measuring location?
 
@@ -140,7 +141,7 @@ the QFF value can be approximated based on the the QFE value::
 
 * ``Tg`` is the temperature lapse rate, that specifies how fast the temperature
   drops with increasing altitude (a common approximation under normal conditions
-  is 0.0065 °C/Meter)
+  is 0.0065°C/m)
 * ``Tfe`` is the temperature at the measuring location in °C
 * ``H`` is the altitude of the measuring location in Meters
 
@@ -152,7 +153,7 @@ Altitude Reading
 ^^^^^^^^^^^^^^^^
 
 The altitude value for the Barometer Bricklets is by default calculated for a
-reference air pressure of 1013.25 mbar using an approximation of the
+reference air pressure of 1013.25mbar using an approximation of the
 `International Standard Atmosphere <https://en.wikipedia.org/wiki/International_Standard_Atmosphere>`__
 model. An altitude value calculated like this is known as `QNE
 <https://en.wikipedia.org/wiki/Pressure_altitude>`__ value in aviation.

@@ -70,7 +70,7 @@ Dimensions (W x D x H)            25 x 15 x 5 mm (0.98 x 0.59 x 0.19")
 Weight                            2g
 ================================  ============================================================
 
-\*: This is the temperature at the exact posisiton of the sensor. If the Bricklet is used inside
+\* This is the temperature at the exact position of the sensor. If the Bricklet is used inside
 of an enclosure, the air around the Bricklet may heat up more than the ambient air. The Bricklet
 does have API to calibrate this kind of offset.
 

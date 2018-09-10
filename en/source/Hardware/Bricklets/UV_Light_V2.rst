@@ -31,7 +31,7 @@ UV Light Bricklet 2.0
 Features
 --------
 
-* Measures UV-A, UV-B and UV Index
+* Measures UV-A, UV-B and UV index
 
 
 .. _uv_light_v2_bricklet_description:
@@ -41,7 +41,7 @@ Description
 
 The UV Light :ref:`Bricklet <primer_bricklets>` 2.0 measures
 UV-A as well as UV-B and uses the measurements to calculate 
-the `UV Index <https://en.wikipedia.org/wiki/Ultraviolet_index>`__.
+the `UV index <https://en.wikipedia.org/wiki/Ultraviolet_index>`__.
 
 With configurable events it is possible to react on changing 
 values without polling.
@@ -92,9 +92,10 @@ Test your UV Light Bricklet 2.0
 
 |test_tab|
 If everything went as expected the Brick Viewer should show UV-A and
-UV-B measurements as well as the UV Index.
+UV-B measurements as well as the UV index.
 
-TODO: New screenshot with UV index!
+..
+  TODO: New screenshot with UV index!
 
 .. image:: /Images/Bricklets/bricklet_uv_light_v2_brickv.jpg
    :scale: 100 %

@@ -93,7 +93,8 @@ Anschlussmöglichkeit
 Das Industrial Digital Out 4 Bricklet 2.0 besitzt eine 8 Pol Anschlussklemme.
 Das folgende Bild stellt die Anschlussmöglichkeiten dar:
 
-TODO: Update image
+..
+  TODO: Update image
 
 .. image:: /Images/Bricklets/bricklet_industrial_digital_out_4_caption_600.jpg
    :scale: 100 %
@@ -105,9 +106,9 @@ TODO: Update image
 .. _industrial_digital_out_4_v2_bricklet_leds:
 
 Kanal Status LEDs
--------------------
+-----------------
 
-Das Bricklet verfügt über eine standard Status-LED und vier weitere LEDs
+Das Bricklet verfügt über eine Standard-Status-LED und vier weitere LEDs
 (jeweils eine für jeden Ausgang).
 
 Standardmäßig zeigen die Status-LEDs den jeweiligen Zustand des Eingangs an.
@@ -126,9 +127,12 @@ Verbinde zusätzlich eine Spannungsquelle mit dem Bricklet um es zu Versorgen
 und eine Last. Für diesen Test schließen wir eine Batterie und eine LED an
 (siehe nachfolgendes Bild).
 
+..
+  TODO: Neues Bild?
+
 .. image:: /Images/Bricklets/bricklet_industrial_digital_out_4_setup_600.jpg
    :scale: 100 %
-   :alt: Industrial Digital Out 4 Bricklet Setup
+   :alt: Industrial Digital Out 4 Bricklet 2.0 Setup
    :align: center
    :target: ../../_images/Bricklets/bricklet_industrial_digital_out_4_setup_1200.jpg
 

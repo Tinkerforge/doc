@@ -42,8 +42,8 @@ Description
 
 The Analog Out :ref:`Bricklet <primer_bricklets>` 3.0 can be used to
 extend the features of :ref:`Bricks <primer_bricks>` by the
-capability to generate voltages between 0V and 12V*. It is the successor of the
-:ref:`analog_out_bricklet` with a bigger output voltage range.
+capability to generate voltages between 0V and 12V*. It is the second successor
+of the :ref:`analog_out_bricklet` with a bigger output voltage range.
 The voltage can be configured directly in `Volt
 <https://en.wikipedia.org/wiki/Volt>`__ without any conversion.
 The device is equipped with a 12bit `Digital-to-Analog Converter (DAC)
@@ -102,7 +102,8 @@ you can use to power things. It can also be connected to the VIN terminal to
 produce output voltages up to 5V at the VOUT terminal without the need for an
 additional external power supply.
 
-TODO: Update image?
+..
+  TODO: Update image?
 
 .. image:: /Images/Bricklets/bricklet_analog_out_v2_horizontal_350.jpg
     :scale: 100 %

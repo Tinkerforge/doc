@@ -31,16 +31,35 @@ LCD 128x64 Bricklet
 Features
 --------
 
-* TBD
-* TBD
-
+* 7,1cm (2,8") LCD mit 128x64 Pixel Auflösung
+* Eingebetter Zeichensatz für einfache Textdarstellung
+* Touchscreen mit Callback für x/y-Koordinaten und Anpressdruck
+* Automatische Wischgestenerkennung (links, rechts, rauf und runter)
 
 .. _lcd_128x64_bricklet_description:
 
 Beschreibung
 ------------
 
-TBD
+Das LCD 128x64 :ref:`Bricklet <primer_bricklets>` ist eine LC Display mit einer
+Auflösung von 128/64 Pixel und resistivem Touchscreen.
+
+Jedes Pixel kann einzeln angesteuert werden, dadurch ist der Display grafikfähig.
+Dadurch sind ein vielseitiger Einsatz und detailreiche Darstellungen möglich,
+verglichen zum alphanumerisches :ref:`LCD 20x4 Bricklet <lcd_20x4_bricklet>` mit
+seinem festen Zeichensatz. Die Größe des Displays ist sehr ähnlich zum alten
+LCD 20x4 Bricklet, so dass es als direkter Ersatz verwendet werden kann,
+
+Mittels des eingebetteten :ref:`Zeichensatzes <lcd_128x64_bricklet_font>` können
+schnell und einfach Texte auf dem Display dargestellt werden
+
+Der Touchscreen hat einen einfach zu verwendende Callback für x/y-Koordinaten
+und Anpressdruck. Zusätzlich erkennt das Bricklet automatisch Wischgesten.
+
+Hohe Update-Raten bis uz 60Hz sind möglich.
+
+Das LCD 128x64 Bricklet hat einen 7 Pol Bricklet Stecker und wird
+mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
 
 
 Technische Spezifikation
@@ -49,14 +68,21 @@ Technische Spezifikation
 ================================  ============================================================
 Eigenschaft                       Wert
 ================================  ============================================================
-Stromverbrauch                    TBDmA
+Stromverbrauch                    | 40mW (8mA bei 5V, Hintergrundbeleuchtung aus)
+                                  | 545mW (107mA bei 5V, Hintergrundbeleuchtung 100%)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-E TBD                             W TBD
+Display-Auflösung                 128x64 Pixel, 26x8 Zeichen
+Display-Größe                     7,1cm (2,8")
+Display-Farben                    Schwarz/Weiß
+--------------------------------  ------------------------------------------------------------
+Touchscreen-Typ                   Resistiv
+Touchscreen-Auflösung             128x64
+Touchscreen-Anpressdruck          0-300
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Abmessungen (B x T x H)           TBD x TBD x TBDmm (TBD x TBD x TBD")
-Gewicht                           TBDg
+Abmessungen (B x T x H)           55 x 85 x 8mm (2,17 x 3,35 x 0,32")
+Gewicht                           55g
 ================================  ============================================================
 
 
@@ -79,7 +105,14 @@ Erster Test
 |test_connect|.
 
 |test_tab|
-Wenn alles wie erwartet funktioniert ... TBD.
+Wenn alles wie erwartet funktioniert sollte der Tab wie im folgenden Bild
+aussehen.
+
+Auf dem Display kann gezeichnet und Text angezeigt werden. Mit dem Schieberegler
+können alle verfügbaren Zeichen auf dem Display angezeigt werden.
+
+Drücken mit Finger oder Stylus auf dem Touchscreen werden mit roten Kreisen
+angezeigt. Die Anzahl der Kreis zeigt den Anpressdruck an.
 
 .. image:: /Images/Bricklets/bricklet_lcd_128x64_brickv.jpg
    :scale: 100 %
@@ -88,6 +121,64 @@ Wenn alles wie erwartet funktioniert ... TBD.
    :target: ../../_images/Bricklets/bricklet_lcd_128x64_brickv.jpg
 
 |test_pi_ref|
+
+Benutzung
+---------
+
+Um auf das Display zu zeichnen empfehlen wir eine Image Library
+zu nutzen die für eine spezifische Programmiersprache entwickelt wurde
+(zum Beispiel PIL für Python). Dadurch können die Zeichen-Primitiven der
+und Schriftarten der Library verwendet werden und das fertig gezeichnete
+Bild kann dann zum Bricklet übertragen werden.
+
+Wir haben Beispiele für:
+
+* `C/C++ <https://raw.githubusercontent.com/Tinkerforge/lcd-128x64-bricklet/master/software/examples/c/example_scribble.c>`__
+  (mit `libgd <https://libgd.github.io/>`__),
+* `C# <https://raw.githubusercontent.com/Tinkerforge/lcd-128x64-bricklet/master/software/examples/csharp/ExampleScribble.cs>`__,
+* `Java <https://raw.githubusercontent.com/Tinkerforge/lcd-128x64-bricklet/master/software/examples/java/ExampleScribble.java>`__,
+* `JavaScript (Node.js) <https://raw.githubusercontent.com/Tinkerforge/lcd-128x64-bricklet/master/software/examples/javascript/ExampleScribble.js>`__
+  (mit `gm <https://www.npmjs.com/package/gm>`__ und `get-pixels <https://www.npmjs.com/package/get-pixels>`__),
+* `Perl <https://raw.githubusercontent.com/Tinkerforge/lcd-128x64-bricklet/master/software/examples/perl/example_scribble.pl>`__
+  (mit `GD <http://search.cpan.org/~lds/GD-2.56/lib/GD.pm>`__),
+* `PHP <https://raw.githubusercontent.com/Tinkerforge/lcd-128x64-bricklet/master/software/examples/php/ExampleScribble.php>`__
+  (mit `GD <http://php.net/manual/de/book.image.php>`__),
+* `Python <https://raw.githubusercontent.com/Tinkerforge/lcd-128x64-bricklet/master/software/examples/python/example_scribble.py>`__
+  (mit `PIL <http://python-pillow.org/>`__),
+* `Ruby <https://raw.githubusercontent.com/Tinkerforge/lcd-128x64-bricklet/master/software/examples/ruby/example_scribble.rb>`__
+  (mit `rgd <http://www.rubydoc.info/gems/rgd>`__) und
+* `Visual Basic .NET <https://raw.githubusercontent.com/Tinkerforge/lcd-128x64-bricklet/master/software/examples/vbnet/ExampleScribble.vb>`__.
+
+.. _lcd_128x64_bricklet_font:
+
+Zeichensatz
+-----------
+
+Das Bricklet beinhaltet folgenden Zeichensatz (ASCII ist grün markiert), mit
+dem schnell und einfach Text (bis zu 26x8 Zeichen) auf dem Display angezeigt
+werden kann:
+
+.. image:: /Images/Bricklets/bricklet_lcd_128x64_font.png
+   :scale: 100 %
+   :alt: LCD 128x64 Bricklet Zeichensatz
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_lcd_128x64_font.png
+
+
+.. _lcd_128x64_bricklet_touchscreen:
+
+Touchscreen
+-----------
+
+Das Bricklet hat einen resistiven Touchscreen, der nicht so leichtgängig ist wie
+die kapazitiven Touchscreens moderner Smartphones und mit etwas mehr Druck
+bedient werden muss. Anstelle des Fingers kann auch ein Stylus verwendet werden.
+
+Über die API des Bricklets kann die x/y-Position und der Anpressdruck der letzten
+Berührung abgefragt werden. Darüber können "Klicks" und Gesten erkannt werden.
+
+Wischgesten (links, rechts, rauf und runter) mit Start- und Endposition werden
+vom Bricklet selbst erkannt und mittels API Callback übermittelt.
 
 
 .. _lcd_128x64_bricklet_case:

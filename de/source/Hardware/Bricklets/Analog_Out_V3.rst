@@ -103,7 +103,8 @@ können z.B. genutzt werden, um die VIN Anschlussklemme zu versorgen, so dass
 Ausgangsspannung bis zu 5V an VOUT ausgegeben werden können, ohne zusätzliche
 externe Spannungsquelle.
 
-TODO: Update image?
+..
+  TODO: Update image?
 
 .. image:: /Images/Bricklets/bricklet_analog_out_v2_horizontal_350.jpg
     :scale: 100 %

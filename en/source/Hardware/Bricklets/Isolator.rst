@@ -79,21 +79,21 @@ Property                          Value
 Current Consumption               280mW (56mA at 5V)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Isolation Voltage Power Supply    3kV (1s), 60V (continous)*
-Isolation Voltage Data            2.5kV (ESD), 600V (60s), 200V (continous)*
+Isolation Voltage Power Supply    3kV (1s), 60V (continuous)*
+Isolation Voltage Data            2.5kV (ESD), 600V (60s), 200V (continuous)*
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)            30 x 40 x 15 (1.18 x 1.58 x 0.59")
 Weight                            7.1g
 ================================  ============================================================
 
-\*: See datasheet of MAX14850 for details of data isolation and of CRE1S0505S3C for details of power isolation.
+\* See datasheet of MAX14850 for details of data isolation and of CRE1S0505S3C for details of power isolation.
 
 Resources
 ---------
 
-* MAX14850 datasheet (`Download <https://github.com/Tinkerforge/barometer-v2-bricklet/raw/master/datasheets/MAX14850.pdf>`__)
-* CRE1S0505S3C datasheet (`Download <https://github.com/Tinkerforge/barometer-v2-bricklet/raw/master/datasheets/CRE1S0505S3C.pdf>`__)
+* MAX14850 datasheet (`Download <https://github.com/Tinkerforge/isolator-bricklet/raw/master/datasheets/MAX14850.pdf>`__)
+* CRE1S0505S3C datasheet (`Download <https://github.com/Tinkerforge/isolator-bricklet/raw/master/datasheets/CRE1S0505S3C.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/isolator-bricklet/raw/master/hardware/isolator-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/isolator_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/isolator-bricklet/zipball/master>`__)
@@ -103,7 +103,9 @@ Resources
 Example
 -------
 
-TODO: Image of example application
+..
+  TODO: Image of example application
+
 
 .. _isolator_bricklet_test:
 

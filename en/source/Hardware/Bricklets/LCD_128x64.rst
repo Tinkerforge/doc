@@ -34,7 +34,7 @@ Features
 * 7.1cm (2.8") LCD with a resolution of 128x64 pixel
 * Embedded font for easy text drawing
 * Touchscreen with x/y-coordinate and touch pressure callback
-* Automatic touch gesture recognition (swipe left/right etc)
+* Automatic swipe gesture recognition (left, right, up and down)
 
 
 .. _lcd_128x64_bricklet_description:
@@ -43,18 +43,18 @@ Description
 -----------
 
 The LCD 128x64 :ref:`Bricklet <primer_bricklets>` is a LC Display with a resolution
-of 128x64 pixel and touchscreen.
+of 128x64 pixel and resistive touchscreen.
 
 Each pixel can be set individually, so the display can show graphics. This
 allows for more versatile and detailed drawings on the display, compared to
-the :ref:`LCD 20x4 Bricklet <lcd_20x4_bricklet>` with its fixed character
-display. The screen size is very similar to the screen size of the
-old LCD 20x4 Bricklet, so it can be used as a replacement.
+the alphanumeric :ref:`LCD 20x4 Bricklet <lcd_20x4_bricklet>` with its fixed
+character display. The screen size is very similar to the screen size of the
+old LCD 20x4 Bricklet, so it can be used as a direct replacement.
 
 Text can easily be drawn onto the display with the embedded
 :ref:`font <lcd_128x64_bricklet_font>` of the Bricklet.
 
-The touch screen has easy to use callbacks with x/y coordinates and touch 
+The touch screen has easy to use callbacks with x/y coordinates and touch
 pressure. The Bricklet can automatically detect standard swipe gestures.
 
 High update rates of up to 60Hz are possible.
@@ -76,6 +76,7 @@ Display Resolution                128x64 pixel, 26x8 characters
 Display Size                      7.1cm (2.8")
 Display Colors                    Black/White
 --------------------------------  ------------------------------------------------------------
+Touchscreen Type                  Resistive
 Touchscreen Resolution            128x64
 Touchscreen Pressure              0-300
 --------------------------------  ------------------------------------------------------------
@@ -108,11 +109,11 @@ If everything went as expected the Brick Viewer should look as
 depicted below.
 
 You can draw and write text to the display. With the slider it is
-also possible to show the available character set on the OLED.
+also possible to show the available character set on the LCD.
 
-If you press with your finger or a stick on the display you can
-a red circile at the press-position in Brick Viewer. The number
-of circiles corresponds to the touch pressure.
+If you press with your finger or a stylus on the display you can see
+a red circle at the press-position in Brick Viewer. The number
+of circles corresponds to the touch pressure.
 
 .. image:: /Images/Bricklets/bricklet_lcd_128x64_brickv.jpg
    :scale: 100 %
@@ -131,23 +132,23 @@ native to your programming language (for example PIL for Python). This
 way you can use all of the available drawing primitives and fonts of the
 library and then copy the image buffer to the Bricklet.
 
-We provide examples for (TODO: FIXME)
+We provide examples for:
 
-* `C/C++ <https://raw.githubusercontent.com/Tinkerforge/oled-128x64-bricklet/master/software/examples/c/example_scribble.c>`__
+* `C/C++ <https://raw.githubusercontent.com/Tinkerforge/lcd-128x64-bricklet/master/software/examples/c/example_scribble.c>`__
   (with `libgd <https://libgd.github.io/>`__),
-* `C# <https://raw.githubusercontent.com/Tinkerforge/oled-128x64-bricklet/master/software/examples/csharp/ExampleScribble.cs>`__,
-* `Java <https://raw.githubusercontent.com/Tinkerforge/oled-128x64-bricklet/master/software/examples/java/ExampleScribble.java>`__,
-* `JavaScript (Node.js) <https://raw.githubusercontent.com/Tinkerforge/oled-128x64-bricklet/master/software/examples/javascript/ExampleScribble.js>`__
+* `C# <https://raw.githubusercontent.com/Tinkerforge/lcd-128x64-bricklet/master/software/examples/csharp/ExampleScribble.cs>`__,
+* `Java <https://raw.githubusercontent.com/Tinkerforge/lcd-128x64-bricklet/master/software/examples/java/ExampleScribble.java>`__,
+* `JavaScript (Node.js) <https://raw.githubusercontent.com/Tinkerforge/lcd-128x64-bricklet/master/software/examples/javascript/ExampleScribble.js>`__
   (with `gm <https://www.npmjs.com/package/gm>`__ and `get-pixels <https://www.npmjs.com/package/get-pixels>`__),
-* `Perl <https://raw.githubusercontent.com/Tinkerforge/oled-128x64-bricklet/master/software/examples/perl/example_scribble.pl>`__
+* `Perl <https://raw.githubusercontent.com/Tinkerforge/lcd-128x64-bricklet/master/software/examples/perl/example_scribble.pl>`__
   (with `GD <http://search.cpan.org/~lds/GD-2.56/lib/GD.pm>`__),
-* `PHP <https://raw.githubusercontent.com/Tinkerforge/oled-128x64-bricklet/master/software/examples/php/ExampleScribble.php>`__
+* `PHP <https://raw.githubusercontent.com/Tinkerforge/lcd-128x64-bricklet/master/software/examples/php/ExampleScribble.php>`__
   (with `GD <http://php.net/manual/en/book.image.php>`__),
-* `Python <https://raw.githubusercontent.com/Tinkerforge/oled-128x64-bricklet/master/software/examples/python/example_scribble.py>`__
+* `Python <https://raw.githubusercontent.com/Tinkerforge/lcd-128x64-bricklet/master/software/examples/python/example_scribble.py>`__
   (with `PIL <http://python-pillow.org/>`__),
-* `Ruby <https://raw.githubusercontent.com/Tinkerforge/oled-128x64-bricklet/master/software/examples/ruby/example_scribble.rb>`__
+* `Ruby <https://raw.githubusercontent.com/Tinkerforge/lcd-128x64-bricklet/master/software/examples/ruby/example_scribble.rb>`__
   (with `rgd <http://www.rubydoc.info/gems/rgd>`__) and
-* `Visual Basic .NET <https://raw.githubusercontent.com/Tinkerforge/oled-128x64-bricklet/master/software/examples/vbnet/ExampleScribble.vb>`__.
+* `Visual Basic .NET <https://raw.githubusercontent.com/Tinkerforge/lcd-128x64-bricklet/master/software/examples/vbnet/ExampleScribble.vb>`__.
 
 
 .. _lcd_128x64_bricklet_font:
@@ -158,11 +159,11 @@ Font
 The Bricklet has an embedded font (ASCII subset in green) that allows fast and
 easy text rendering (up to 26x8 characters):
 
-.. image:: /Images/Bricklets/bricklet_oled_font.png
+.. image:: /Images/Bricklets/bricklet_lcd_128x64_font.png
    :scale: 100 %
-   :alt: OLED 128x64 Bricklet font
+   :alt: LCD 128x64 Bricklet font
    :align: center
-   :target: ../../_images/Bricklets/bricklet_oled_font.png
+   :target: ../../_images/Bricklets/bricklet_lcd_128x64_font.png
 
 
 .. _lcd_128x64_bricklet_touchscreen:
@@ -171,15 +172,15 @@ Touchscreen
 -----------
 
 The Bricklet has a resistive touchscreen. This means that you may have to touch
-with a little bit more pressure then you are used to with your phone, but you can 
-also use a stick or similar instead of your finger.
+with a little bit more pressure then you are used to with your smart phone, but
+you can also use a stylus or similar instead of your finger.
 
-With the API you can get the currently pressed coordinate (x, y) as well as the
+With the API you can get the currently pressed x/y coordinate as well as the
 touch pressure. You can use this for detection of "clicks" or gestures.
 
-Some gestures (swipe left, right, down, up with the start- and end-position of 
+Some gestures (swipe left, right, up, down with the start- and end-position of
 the swipe) are calculated by the Bricklet and can be received directly through
-the API with callbacks. 
+the API with callbacks.
 
 
 .. _lcd_128x64_bricklet_case:

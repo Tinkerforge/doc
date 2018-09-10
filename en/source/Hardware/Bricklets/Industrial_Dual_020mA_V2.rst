@@ -31,8 +31,11 @@ Industrial Dual 0-20mA Bricklet 2.0
 Features
 --------
 
-* TBD
-* TBD
+* Precision current sensor, measures `currents between 0 and 22.5mA
+  <https://en.wikipedia.org/wiki/Current_loop>`__
+* Can read out any IEC 60381-1 type 2 and type 3 sensor
+* High accuracy (0.15%), resolution (up to 0.172µA) and sample rate (up to 240 SPS)
+* It is possible to detect if a sensor is connected/faulty
 
 
 .. _industrial_dual_0_20ma_v2_bricklet_description:
@@ -40,11 +43,26 @@ Features
 Description
 -----------
 
-TBD
+The Industrial Dual 0-20mA :ref:`Bricklet <primer_bricklets>` 2.0
+can be used to extend the features of :ref:`Bricks <primer_bricks>`
+by the capability to measure currents between 0 and 22.5mA.
+
+This Bricklet can be used to read out up to two IEC 60381-1 type 2 and
+type 3 sensor.
+
+The measured current can be read out in nA.
+With configurable events it is possible to react on changing
+currents without polling.
+
+The Industrial Dual 0-20mA Bricklet 2.0 has a 7 pole Bricklet connector and is
+connected to a Brick with a ``7p-10p`` Bricklet cable.
 
 
 Technical Specifications
 ------------------------
+
+..
+  TODO: Fill in table
 
 ================================  ============================================================
 Property                          Value
@@ -69,6 +87,26 @@ Resources
 * 3D model (`View online <https://autode.sk/2LQMbnm>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/industrial_dual_0_20ma_v2/industrial-dual-0-20ma-v2.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/industrial_dual_0_20ma_v2/industrial-dual-0-20ma-v2.FCStd>`__)
 
 
+Connectivity
+------------
+
+See below for connection diagrams for type 2/3 sensor.
+
+..
+  TODO: Update image?
+
+.. image:: /Images/Bricklets/bricklet_industrial_dual_0_20ma_connectivity_600.jpg
+   :scale: 100 %
+   :alt: Connection diagram for type 2/3 sensor
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_industrial_dual_0_20ma_connectivity_1200.jpg
+
+Both sensor ports ("Sensor 0" and "Sensor 1") can be used independently.
+Notice the battery symbol in the picture above.
+Over the external power supply input of the Bricklet (up to 48V) the sensors can
+be powered.
+
+
 .. _industrial_dual_0_20ma_v2_bricklet_test:
 
 Test your Industrial Dual 0-20mA Bricklet 2.0
@@ -76,16 +114,29 @@ Test your Industrial Dual 0-20mA Bricklet 2.0
 
 |test_intro|
 
-|test_connect|.
+|test_connect| and attach a current source (see picture below).
+In this example we use a 4-20mA ambient light sensor.
+
+..
+  TODO: Update image?
+
+.. image:: /Images/Bricklets/bricklet_industrial_dual_0_20ma_sensor_600.jpg
+   :scale: 100 %
+   :alt: Industrial Dual 0-20mA Bricklet connected to ambient light sensor
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_industrial_dual_0_20ma_sensor_1200.jpg
 
 |test_tab|
-If everything went as expected ... TBD.
+If everything went as expected the Brick Viewer should look as
+depicted below.
 
 .. image:: /Images/Bricklets/bricklet_industrial_dual_0_20ma_v2_brickv.jpg
    :scale: 100 %
    :alt: Industrial Dual 0-20mA Bricklet 2.0 in Brick Viewer
    :align: center
    :target: ../../_images/Bricklets/bricklet_industrial_dual_0_20ma_v2_brickv.jpg
+
+Interact with the sensor to see the current changing in the Brick Viewer.
 
 |test_pi_ref|
 
@@ -95,27 +146,26 @@ If everything went as expected ... TBD.
 Case
 ----
 
-..
-	A `laser-cut case for the Industrial Dual 0-20mA Bricklet 2.0
-	<https://www.tinkerforge.com/en/shop/cases/case-industrial-dual-0-20ma-v2-bricklet.html>`__ is available.
+A `laser-cut case for the Industrial Dual 0-20mA Bricklet 2.0
+<https://www.tinkerforge.com/en/shop/cases/case-industrial-bricklet.html>`__ is available.
 
-	.. image:: /Images/Cases/bricklet_industrial_dual_0_20ma_v2_case_350.jpg
-	   :scale: 100 %
-	   :alt: Case for Industrial Dual 0-20mA Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_industrial_dual_0_20ma_v2_case_1000.jpg
+.. image:: /Images/Cases/bricklet_industrial_case_350.jpg
+   :scale: 100 %
+   :alt: Case for Industrial Dual 0-20mA Bricklet 2.0
+   :align: center
+   :target: ../../_images/Cases/bricklet_industrial_case_1000.jpg
 
-	.. include:: Industrial_Dual_020mA_V2.substitutions
-	   :start-after: >>>bricklet_case_steps
-	   :end-before: <<<bricklet_case_steps
+.. include:: Industrial_Dual_020mA_V2.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
 
-	.. image:: /Images/Exploded/industrial_dual_0_20ma_v2_exploded_350.png
-	   :scale: 100 %
-	   :alt: Exploded assembly drawing for Industrial Dual 0-20mA Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Exploded/industrial_dual_0_20ma_v2_exploded.png
+.. image:: /Images/Exploded/industrial_exploded_350.png
+   :scale: 100 %
+   :alt: Exploded assembly drawing for Industrial Dual 0-20mA Bricklet 2.0
+   :align: center
+   :target: ../../_images/Exploded/industrial_exploded.png
 
-	|bricklet_case_hint|
+|bricklet_case_hint|
 
 
 .. _industrial_dual_0_20ma_v2_bricklet_programming_interface:

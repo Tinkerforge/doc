@@ -46,8 +46,9 @@ The outputs have to be supplied externally with a voltage of up to
 Output isolation permits the usage without a direct electric connection, 
 such that ground loops can be prevented and an additional degree of safety is added.
 
-Typical applications are the interfacing of industrial controllers, such as PLC's or frequency converters,
-or the usage in environments were electrical ground levels can not be connected.
+Typical applications are the interfacing of industrial controllers, such as PLC's or
+frequency converters, or the usage in environments were electrical ground levels can
+not be connected.
 
 If you need more then four outputs, you can add another Industrial Digital Out 4
 Bricklet and group these together. If you do this, you have eight outputs which can

@@ -137,7 +137,8 @@ Wenn alles wie erwartet funktioniert, kann nun ein LED Steifen gesteuert werden.
 WS2801, WS2811 und WS2812
 -------------------------
 
-.. FIXME: add SK6812 (NeoPixel RGB), SK6812RGBW (NeoPixel RGBW), LPD8806 and APA102 (DotStar)
+..
+  FIXME: add SK6812 (NeoPixel RGB), SK6812RGBW (NeoPixel RGBW), LPD8806 and APA102 (DotStar)
 
 Es werden LED Streifen und Pixel unterstützt, die mit dem WS2801, WS2811 oder
 WS2812 Treiber ausgestattet sind. Im Weiteren bezieht sich WS28xy auf alle
@@ -178,7 +179,8 @@ Im Gegensatz zum WS2801 haben die WS2811 und WS2812 Treiber keine Taktleitung.
 Anschlussmöglichkeit
 --------------------
 
-.. FIXME: add SK6812 (NeoPixel RGB), SK6812RGBW (NeoPixel RGBW), LPD8806 and APA102 (DotStar)
+..
+  FIXME: add SK6812 (NeoPixel RGB), SK6812RGBW (NeoPixel RGBW), LPD8806 and APA102 (DotStar)
 
 Das nachfolgende Bild stellt die Schnittstellen des LED Strip Bricklets dar:
 

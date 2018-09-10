@@ -46,11 +46,12 @@ The Industrial Digital Out 4 :ref:`Bricklet <primer_bricklets>` 2.0 can be used 
 extend :ref:`Bricks <primer_bricks>` by four galvanically isolated digital outputs.
 The outputs have to be supplied externally with a voltage of up to
 36 `Volt <https://en.wikipedia.org/wiki/Volt>`__.
-Output isolation permits the usage without a direct electric connection, 
+Output isolation permits the usage without a direct electric connection,
 such that ground loops can be prevented and an additional degree of safety is added.
 
-Typical applications are the interfacing of industrial controllers, such as PLC's or frequency converters,
-or the usage in environments were electrical ground levels can not be connected.
+Typical applications are the interfacing of industrial controllers, such as PLC's or
+frequency converters, or the usage in environments were electrical ground levels can
+not be connected.
 
 The Industrial Digital Out 4 Bricklet 2.0 has a 7 pole Bricklet connector and is connected to a
 Brick with a ``7p-10p`` Bricklet cable.
@@ -92,7 +93,8 @@ Connectivity
 The Industrial Digital Out 4 Bricklet 2.0 has an 8 pole terminal.
 Please see the picture below for the pinout.
 
-TODO: Update image
+..
+  TODO: Update image
 
 .. image:: /Images/Bricklets/bricklet_industrial_digital_out_4_caption_600.jpg
    :scale: 100 %
