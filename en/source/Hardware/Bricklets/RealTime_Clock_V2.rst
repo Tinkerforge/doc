@@ -61,7 +61,7 @@ Current Consumption               | 40mW (8mA at 5V)
 --------------------------------  ------------------------------------------------------------
 Date Format                       2000-01-01 to 2099-12-31 including weekday and leap years
 Time Format                       24h with hundredths of a second
-Accuracy                          | ±20ppm (±52.6 seconds per month) non-calibrated
+Accuracy                          | ±20ppm (±52.6 seconds per month) uncalibrated
                                   | down to ±1ppm (±2.6 seconds per month) calibrated*
 Battery Type                      SR621SW / 364 / SR60 / S621 / SG1 or LR60 / L621 / AG1
 Battery Dimensions                6.8 x 2.2mm (0.27 x 0.09")
