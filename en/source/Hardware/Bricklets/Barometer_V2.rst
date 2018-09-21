@@ -105,9 +105,6 @@ Test your Barometer Bricklet 2.0
 If everything went as expected you can now see the air pressure in mbar
 and a graph that shows the air pressure over time.
 
-..
-  TODO: Make screenshot
-
 .. image:: /Images/Bricklets/bricklet_barometer_v2_brickv.jpg
    :scale: 100 %
    :alt: Barometer Bricklet 2.0 in Brick Viewer
