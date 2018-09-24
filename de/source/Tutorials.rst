@@ -10,5 +10,6 @@ Tutorials
    Authentifizierung <Tutorials/Tutorial_Authentication/Tutorial>
    RED Brick <Tutorials/Tutorial_RED_Brick/Tutorial>
    Build-Umgebung aufsetzen <Tutorials/Tutorial_Build_Environment/Tutorial>
+   Bricklet Kabel (7-Pol vs 10-Pol) <Tutorials/Tutorial_Cables/Tutorial>
 
 .. include:: Tutorials.content

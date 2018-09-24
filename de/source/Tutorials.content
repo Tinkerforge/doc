@@ -7,3 +7,4 @@ Konzepte ein:
 * :ref:`Authentifizierung <tutorial_authentication>`
 * :ref:`RED Brick <tutorial_red_brick>`
 * :ref:`Build-Umgebung aufsetzen <tutorial_build_environment_setup>` (für Firmware-Entwicklung)
+* :ref:`Bricklet Kabel (7-Pol vs 10-Pol) <tutorial_bricklet_cables>`
