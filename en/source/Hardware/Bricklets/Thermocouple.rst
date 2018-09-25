@@ -1,6 +1,4 @@
 
-:shoplink: ../../../shop/bricklets/thermocouple-bricklet.html
-
 .. include:: Thermocouple.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
@@ -25,7 +23,7 @@ Thermocouple Bricklet
 
 .. note::
 
- The Thermocouple Bricklet is discontinued. The
+ The Thermocouple Bricklet is discontinued and is no longer sold. The
  :ref:`Thermocouple Bricklet 2.0 <thermocouple_v2_bricklet>` is the recommended
  replacement.
 
