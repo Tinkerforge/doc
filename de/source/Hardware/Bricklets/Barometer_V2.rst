@@ -50,7 +50,7 @@ Das Bricklet ist mit einem LPS22HB Sensor ausgestattet der auch als
 Altimeter (Höhenmesser) genutzt werden kann. Da der Luftdruck sich schon über
 kurze Zeiträume signifikant ändern kann ist die erreichbare Genauigkeit begrenzt.
 Eine mögliche Lösung um die Genauigkeit und Stabilität der Höhenmessung zu
-steigern ist Sensorfusion mit den Sensordaten eines :ref:`IMU Bricks <imu_brick>`
+steigern ist Sensorfusion mit den Sensordaten eines :ref:`IMU Brick 2.0 <imu_v2_brick>`
 durchzuführen (siehe `Youtube Video <https://www.youtube.com/watch?v=TaqtzG7lyp0>`__).
 
 Das Barometer Bricklet 2.0 hat einen 7 Pol Bricklet Stecker und wird
@@ -67,14 +67,14 @@ Sensor                            LPS22HB
 Stromverbrauch                    30mW (6mA bei 5V)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Luftdruckbereich                  260 - 1260mbar
+Luftdruckbereich                  260 bis 1260mbar
 Auflösung                         0,0075mbar / 6,25cm
-Genauigkeit (0-65°C vor OPC)      ± 1,1mbar
-Genauigkeit (0-65°C nach OPC)     ± 0,2mbar
-
-Temperaturbereich                 -40 - 85°C
+Genauigkeit (0-65°C)              ±1,1mbar unkalibriert, ±0,2mbar kalibriert
+--------------------------------  ------------------------------------------------------------
+--------------------------------  ------------------------------------------------------------
+Temperaturbereich                 -40 bis +85°C
 Auflösung                         0,01°C
-Genauigkeit                       ± 1,5°C
+Genauigkeit                       ±1,5°C
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Abmessungen (B x T x H)           25 x 15 x 5mm (0,98 x 0,59 x 0,19")

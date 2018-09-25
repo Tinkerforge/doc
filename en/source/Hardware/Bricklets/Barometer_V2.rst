@@ -50,7 +50,7 @@ The Bricklet is equipped with a LPS22HB sensor which can be used
 as an altimeter. Since the air pressure is changing significantly
 even over a short period of time the achievable accuracy is limited. One possible
 solution to achieve higher accuracy and stability of the altitude measurement is
-to perform sensor fusion with the sensor data of an :ref:`IMU Brick <imu_brick>`
+to perform sensor fusion with the sensor data of an :ref:`IMU Brick 2.0 <imu_v2_brick>`
 (see `Youtube video <https://www.youtube.com/watch?v=TaqtzG7lyp0>`__).
 
 The Barometer Bricklet 2.0 has a 7 pole Bricklet connector and is connected to a
@@ -66,12 +66,12 @@ Sensor                            LPS22HB
 Current Consumption               30mW (6mA at 5V)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Pressure Range                    260 - 1260mbar
+Pressure Range                    260 to 1260mbar
 Resolution                        0.0075mbar / 6.25cm
-Accuracy (0-65°C before OPC*)     ±1.1mbar
-Accuracy (0-65°C after OPC*)      ±0.2mbar
-
-Temperature Range                 -40 - +85°C
+Accuracy (0-65°C)                 ±1.1mbar uncalibrated, ±0.2mbar calibrated
+--------------------------------  ------------------------------------------------------------
+--------------------------------  ------------------------------------------------------------
+Temperature Range                 -40 to +85°C
 Resolution                        0.01°C
 Accuracy                          ±1.5°C
 --------------------------------  ------------------------------------------------------------
@@ -79,8 +79,6 @@ Accuracy                          ±1.5°C
 Dimensions (W x D x H)            25 x 15 x 5mm (0.98 x 0.59 x 0.19")
 Weight                            1.6g
 ================================  ============================================================
-
-\* OPC = One-Point Calibration, see TODO
 
 Resources
 ---------
