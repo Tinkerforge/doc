@@ -26,12 +26,26 @@ Kabeltypen an:
 * 7-Pol - 10-Pol (7p-10p) und
 * 7-Pol - 7-Pol (7p-7p).
 
+Altes Bricklet mit 10p Stecker und neues Bricklet mit 7p Stecker:
+
+.. image:: /Images/Misc/cable_10p10p_and_7p10p_connect_800.jpg
+   :scale: 100 %
+   :alt: Bricklet mit 10p/7p Stecker
+   :align: center
+   :target: ../../_images/Misc/cable_10p10p_and_7p10p_connect_1200.jpg
+
 Im weiteren beschreiben wir wie die einzelnen Kabeltypen benutzt werden
 können.
 
 
 Bricklet Kabel 10-Pol - 10-Pol (10p-10p)
 ----------------------------------------
+
+.. image:: /Images/Misc/cable_10p10p_front_350.jpg
+   :scale: 100 %
+   :alt: Front- und Rückseite eines 10p-10p Kabels
+   :align: center
+   :target: ../../_images/Misc/cable_10p10p_front_1000.jpg
 
 Das 10p-10p Kabel kann genutzt werden um Bricks mit
 
@@ -58,6 +72,12 @@ Verfügbare Kabel:
 Bricklet Kabel 7-Pol - 10-Pol (7p-10p)
 --------------------------------------
 
+.. image:: /Images/Misc/cable_7p10p_connector_backfront_600.jpg
+   :scale: 100 %
+   :alt: Front- und Rückseite eines 7p-10p Kabels
+   :align: center
+   :target: ../../_images/Misc/cable_7p10p_connector_backfront_1000.jpg
+
 Die 7p-10p Kabel können genutzt werden um Bricks mit
 
 * neuen Bricklets mit 7-Pol Stecker
@@ -73,7 +93,13 @@ zu verbinden. Verfügbare Kabel:
 Bricklet Kabel 7-Pol - 7-Pol (7p-7p)
 ------------------------------------
 
-Die 7p-7p Kael können genutz werden um die neuem Bricklets mit 7-Pol
+.. image:: /Images/Misc/cable_7p7p_connector_350.jpg
+   :scale: 100 %
+   :alt: Front- und Rückseite eines 7p-7p Kabel
+   :align: center
+   :target: ../../_images/Misc/cable_7p7p_connector_1000.jpg
+
+Die 7p-7p Kabel können genutz werden um die neuem Bricklets mit 7-Pol
 Stecker mit
 
 * Isolator Bricklet (noch nicht veröffentlicht),

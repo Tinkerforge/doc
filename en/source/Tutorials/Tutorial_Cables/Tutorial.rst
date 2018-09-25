@@ -25,11 +25,25 @@ cables:
 * 7 pole - 10 pole (7p-10p) and
 * 7 pole - 7 pole (7p-7p).
 
+Old Bricklet with 10p connector and new Bricklet with 7p connector:
+
+.. image:: /Images/Misc/cable_10p10p_and_7p10p_connect_800.jpg
+   :scale: 100 %
+   :alt: Bricklet with 10p/7p connector
+   :align: center
+   :target: ../../_images/Misc/cable_10p10p_and_7p10p_connect_1200.jpg
+
 Below we will describe the different kinds of cables and their use cases. 
 
 
 Bricklet Cable 10 pole - 10 pole (10p-10p)
 ------------------------------------------
+
+.. image:: /Images/Misc/cable_10p10p_front_350.jpg
+   :scale: 100 %
+   :alt: Front and back of 10p-10p cable
+   :align: center
+   :target: ../../_images/Misc/cable_10p10p_front_1000.jpg
 
 The 10p-10p cables can be used to connect Bricks with 
 
@@ -54,6 +68,12 @@ Available cables:
 Bricklet Cable 7 pole - 10 pole (7p-10p)
 ----------------------------------------
 
+.. image:: /Images/Misc/cable_7p10p_connector_backfront_600.jpg
+   :scale: 100 %
+   :alt: Front and back of 7p-10p cable
+   :align: center
+   :target: ../../_images/Misc/cable_7p10p_connector_backfront_1000.jpg
+
 The 7p-10p cables can be used to connect Bricks with 
 
 * New Bricklets with 7 pole connector.
@@ -68,6 +88,12 @@ Available cables:
 
 Bricklet Cable 7 pole - 7 pole (7p-7p)
 --------------------------------------
+
+.. image:: /Images/Misc/cable_7p7p_connector_350.jpg
+   :scale: 100 %
+   :alt: Front and back of 7p-7p cable
+   :align: center
+   :target: ../../_images/Misc/cable_7p7p_connector_1000.jpg
 
 The 7p-7p cables can be used to connect new Bricklets with 7 pole
 connectors with
