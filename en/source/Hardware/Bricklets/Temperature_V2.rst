@@ -77,7 +77,7 @@ does have API to calibrate this kind of offset.
 Resources
 ---------
 
-* STS3x datasheet (`Download <https://github.com/Tinkerforge/temperature-bricklet/raw/master/datasheets/STS3x.pdf>`__)
+* STS3x datasheet (`Download <https://github.com/Tinkerforge/temperature-v2-bricklet/raw/master/datasheets/STS3x.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/temperature-v2-bricklet/raw/master/hardware/temperature-v2-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/temperature_v2_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/temperature-v2-bricklet/zipball/master>`__)
