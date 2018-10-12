@@ -135,7 +135,7 @@ A `laser-cut case for the Distance IR Bricklet 2.0
    :scale: 100 %
    :alt: Case for Distance IR Bricklet 2.0
    :align: center
-   :target: ../../_images/Cases/bricklet_distance_case_1000.jpg
+   :target: ../../_images/Cases/bricklet_distance_ir_case_1000.jpg
 
 .. include:: Distance_IR_V2.substitutions
    :start-after: >>>bricklet_case_steps

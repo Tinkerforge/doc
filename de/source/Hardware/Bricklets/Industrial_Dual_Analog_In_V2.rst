@@ -134,7 +134,7 @@ Ein `laser-geschnittenes Gehäuse für das Industrial Dual Analog In Bricklet 2.
    :scale: 100 %
    :alt: Gehäuse für Industrial Dual Analog In Bricklet 2.0
    :align: center
-   :target: ../../_images/Cases/bricklet_industria.jpg
+   :target: ../../_images/Cases/bricklet_industrial_case_1000.jpg
 
 .. include:: Industrial_Dual_Analog_In_V2.substitutions
    :start-after: >>>bricklet_case_steps

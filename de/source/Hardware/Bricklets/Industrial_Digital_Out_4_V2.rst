@@ -167,7 +167,7 @@ Ein `laser-geschnittenes Gehäuse für das Industrial Digital Out 4 Bricklet 2.0
    :scale: 100 %
    :alt: Explosionszeichnung für Industrial Digital Out 4 Bricklet 2.0
    :align: center
-   :target: ../../_images/Exploded/industrial_exploded_exploded.png
+   :target: ../../_images/Exploded/industrial_exploded.png
 
 |bricklet_case_hint|
 
