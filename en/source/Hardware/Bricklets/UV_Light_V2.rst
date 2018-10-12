@@ -13,15 +13,12 @@ UV Light Bricklet 2.0
 .. note::
   This Bricklet is currently work-in-progress!
 
-..
-    .. raw:: html
+.. raw:: html
 
 	{% tfgallery %}
 
 	Bricklets/bricklet_uv_light_v2_tilted_[?|?].jpg           UV Light Bricklet 2.0
-	Bricklets/bricklet_uv_light_v2_horizontal_[?|?].jpg       UV Light Bricklet 2.0
-	Bricklets/bricklet_uv_light_v2_master_[100|600].jpg       UV Light Bricklet 2.0 with Master Brick
-	Cases/bricklet_uv_light_v2_case_[100|600].jpg             UV Light Bricklet 2.0 with case
+	Bricklets/bricklet_uv_light_v2_top_[?|?].jpg              UV Light Bricklet 2.0
 	Bricklets/bricklet_uv_light_v2_brickv_[100|].jpg          UV Light Bricklet 2.0 in Brick Viewer
 	Dimensions/uv_light_v2_bricklet_dimensions_[100|600].png  Outline and drilling plan
 
@@ -94,9 +91,6 @@ Test your UV Light Bricklet 2.0
 If everything went as expected the Brick Viewer should show UV-A and
 UV-B measurements as well as the UV index.
 
-..
-  TODO: New screenshot with UV index!
-
 .. image:: /Images/Bricklets/bricklet_uv_light_v2_brickv.jpg
    :scale: 100 %
    :alt: UV Light Bricklet 2.0 in Brick Viewer
@@ -105,33 +99,6 @@ UV-B measurements as well as the UV index.
 
 |test_pi_ref|
 
-
-.. _uv_light_v2_bricklet_case:
-
-Case
-----
-
-..
-	A `laser-cut case for the UV Light Bricklet 2.0
-	<https://www.tinkerforge.com/en/shop/cases/case-uv-light-v2-bricklet.html>`__ is available.
-
-	.. image:: /Images/Cases/bricklet_uv_light_v2_case_350.jpg
-	   :scale: 100 %
-	   :alt: Case for UV Light Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_uv_light_v2_case_1000.jpg
-
-	.. include:: UV_Light_V2.substitutions
-	   :start-after: >>>bricklet_case_steps
-	   :end-before: <<<bricklet_case_steps
-
-	.. image:: /Images/Exploded/uv_light_v2_exploded_350.png
-	   :scale: 100 %
-	   :alt: Exploded assembly drawing for UV Light Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Exploded/uv_light_v2_exploded.png
-
-	|bricklet_case_hint|
 
 
 .. _uv_light_v2_bricklet_programming_interface:

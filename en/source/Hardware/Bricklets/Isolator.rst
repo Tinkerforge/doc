@@ -13,15 +13,15 @@ Isolator Bricklet
 .. note::
   This Bricklet is currently work-in-progress!
 
-..
-    .. raw:: html
+.. raw:: html
 
 	{% tfgallery %}
 
 	Bricklets/bricklet_isolator_tilted_[?|?].jpg           Isolator Bricklet
-	Bricklets/bricklet_isolator_horizontal_[?|?].jpg       Isolator Bricklet
-	Bricklets/bricklet_isolator_master_[100|600].jpg       Isolator Bricklet with Master Brick
-	Cases/bricklet_isolator_case_[100|600].jpg             Isolator Bricklet with case
+	Bricklets/bricklet_isolator_tilted2_[?|?].jpg          Isolator Bricklet
+	Bricklets/bricklet_isolator_top_[?|?].jpg              Isolator Bricklet
+	Cases/bricklet_isolator_case_left_[100|600].jpg        Isolator Bricklet with case
+	Cases/bricklet_isolator_case_right_[100|600].jpg       Isolator Bricklet with case
 	Bricklets/bricklet_isolator_brickv_[100|].jpg          Isolator Bricklet in Brick Viewer
 	Dimensions/isolator_bricklet_dimensions_[100|600].png  Outline and drilling plan
 
@@ -134,27 +134,26 @@ as well as the isolated Bricklet in Brick Viewer.
 Case
 ----
 
-..
-	A `laser-cut case for the Isolator Bricklet
-	<https://www.tinkerforge.com/en/shop/cases/case-isolator-bricklet.html>`__ is available.
+A `laser-cut case for the Isolator Bricklet
+<https://www.tinkerforge.com/en/shop/cases/case-isolator-bricklet.html>`__ is available.
 
-	.. image:: /Images/Cases/bricklet_isolator_case_350.jpg
-	   :scale: 100 %
-	   :alt: Case for Isolator Bricklet
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_isolator_case_1000.jpg
+.. image:: /Images/Cases/bricklet_isolator_case_left_350.jpg
+   :scale: 100 %
+   :alt: Case for Isolator Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_isolator_case_left_1000.jpg
 
-	.. include:: Isolator.substitutions
-	   :start-after: >>>bricklet_case_steps
-	   :end-before: <<<bricklet_case_steps
+.. include:: Isolator.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
 
-	.. image:: /Images/Exploded/isolator_exploded_350.png
-	   :scale: 100 %
-	   :alt: Exploded assembly drawing for Isolator Bricklet
-	   :align: center
-	   :target: ../../_images/Exploded/isolator_exploded.png
+.. image:: /Images/Exploded/isolator_exploded_350.png
+   :scale: 100 %
+   :alt: Exploded assembly drawing for Isolator Bricklet
+   :align: center
+   :target: ../../_images/Exploded/isolator_exploded.png
 
-	|bricklet_case_hint|
+|bricklet_case_hint|
 
 
 .. _isolator_bricklet_programming_interface:

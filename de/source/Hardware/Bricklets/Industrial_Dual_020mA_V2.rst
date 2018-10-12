@@ -13,15 +13,14 @@ Industrial Dual 0-20mA Bricklet 2.0
 .. note::
   Dieses Bricklet befindet sich aktuell noch in der Entwicklung!
 
-..
-    .. raw:: html
+.. raw:: html
 
 	{% tfgallery %}
 
 	Bricklets/bricklet_industrial_dual_0_20ma_v2_tilted_[?|?].jpg           Industrial Dual 0-20mA Bricklet 2.0
-	Bricklets/bricklet_industrial_dual_0_20ma_v2_horizontal_[?|?].jpg       Industrial Dual 0-20mA Bricklet 2.0
-	Bricklets/bricklet_industrial_dual_0_20ma_v2_master_[100|600].jpg       Industrial Dual 0-20mA Bricklet 2.0 mit Master Brick
-	Cases/bricklet_industrial_dual_0_20ma_v2_case_[100|600].jpg             Industrial Dual 0-20mA Bricklet 2.0 im Gehäuse
+	Bricklets/bricklet_industrial_dual_0_20ma_v2_tilted2_[?|?].jpg          Industrial Dual 0-20mA Bricklet 2.0
+	Bricklets/bricklet_industrial_dual_0_20ma_v2_top_[?|?].jpg              Industrial Dual 0-20mA Bricklet 2.0
+	Bricklets/bricklet_industrial_dual_0_20ma_v2_w_connector_[?|?].jpg      Industrial Dual 0-20mA Bricklet 2.0
 	Bricklets/bricklet_industrial_dual_0_20ma_v2_brickv_[100|].jpg          Industrial Dual 0-20mA Bricklet 2.0 im Brick Viewer
 	Dimensions/industrial_dual_0_20ma_v2_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
 
@@ -96,14 +95,11 @@ Anschlussmöglichkeit
 Die folgenden Verbindungsdiagramme zeigen wie Sensoren
 vom Typ 2/3 angeschlossen werden können:
 
-..
-  TODO: Update image?
-
-.. image:: /Images/Bricklets/bricklet_industrial_dual_0_20ma_connectivity_600.jpg
+.. image:: /Images/Bricklets/bricklet_industrial_dual_0_20ma_v2_connectivity_600.jpg
    :scale: 100 %
    :alt: Verbindungsdiagramm für Typ 2/3 Sensoren
    :align: center
-   :target: ../../_images/Bricklets/bricklet_industrial_dual_0_20ma_connectivity_1200.jpg
+   :target: ../../_images/Bricklets/bricklet_industrial_dual_0_20ma_v2_connectivity_1200.jpg
 
 
 Beide Sensorports ("Sensor 0" und "Sensor 1") können unabhängig

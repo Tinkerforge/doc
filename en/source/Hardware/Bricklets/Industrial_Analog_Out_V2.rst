@@ -13,15 +13,14 @@ Industrial Analog Out Bricklet 2.0
 .. note::
   This Bricklet is currently work-in-progress!
 
-..
-    .. raw:: html
+.. raw:: html
 
 	{% tfgallery %}
 
 	Bricklets/bricklet_industrial_analog_out_v2_tilted_[?|?].jpg           Industrial Analog Out Bricklet 2.0
-	Bricklets/bricklet_industrial_analog_out_v2_horizontal_[?|?].jpg       Industrial Analog Out Bricklet 2.0
-	Bricklets/bricklet_industrial_analog_out_v2_master_[100|600].jpg       Industrial Analog Out Bricklet 2.0 with Master Brick
-	Cases/bricklet_industrial_analog_out_v2_case_[100|600].jpg             Industrial Analog Out Bricklet 2.0 with case
+	Bricklets/bricklet_industrial_analog_out_v2_tilted2_[?|?].jpg          Industrial Analog Out Bricklet 2.0
+	Bricklets/bricklet_industrial_analog_out_v2_top_[?|?].jpg              Industrial Analog Out Bricklet 2.0
+	Bricklets/bricklet_industrial_analog_out_v2_w_connector_[?|?].jpg      Industrial Analog Out Bricklet 2.0
 	Bricklets/bricklet_industrial_analog_out_v2_brickv_[100|].jpg          Industrial Analog Out Bricklet 2.0 in Brick Viewer
 	Dimensions/industrial_analog_out_v2_bricklet_dimensions_[100|600].png  Outline and drilling plan
 
@@ -93,17 +92,14 @@ Resources
 Connectivity
 ------------
 
-..
-  TODO: Update image?
-
 The Industrial Analog Out Bricklet 2.0 has an 8 pole terminal.
 Please see the picture below for the pinout.
 
-.. image:: /Images/Bricklets/bricklet_industrial_analog_out_caption_600.jpg
+.. image:: /Images/Bricklets/bricklet_industrial_analog_out_v2_caption_600.jpg
    :scale: 100 %
    :alt: Industrial Analog Out Bricklet pinout
    :align: center
-   :target: ../../_images/Bricklets/bricklet_industrial_analog_out_caption_1200.jpg
+   :target: ../../_images/Bricklets/bricklet_industrial_analog_out_v2_caption_1200.jpg
 
 .. _industrial_analog_out_v2_bricklet_test:
 

@@ -13,15 +13,13 @@ Analog Out Bricklet 3.0
 .. note::
   This Bricklet is currently work-in-progress!
 
-..
-    .. raw:: html
+.. raw:: html
 
 	{% tfgallery %}
 
 	Bricklets/bricklet_analog_out_v3_tilted_[?|?].jpg           Analog Out Bricklet 3.0
-	Bricklets/bricklet_analog_out_v3_horizontal_[?|?].jpg       Analog Out Bricklet 3.0
-	Bricklets/bricklet_analog_out_v3_master_[100|600].jpg       Analog Out Bricklet 3.0 with Master Brick
-	Cases/bricklet_analog_out_v3_case_[100|600].jpg             Analog Out Bricklet 3.0 with case
+	Bricklets/bricklet_analog_out_v3_tilted2_[?|?].jpg          Analog Out Bricklet 3.0
+	Bricklets/bricklet_analog_out_v3_top_[?|?].jpg              Analog Out Bricklet 3.0
 	Bricklets/bricklet_analog_out_v3_brickv_[100|].jpg          Analog Out Bricklet 3.0 in Brick Viewer
 	Dimensions/analog_out_v3_bricklet_dimensions_[100|600].png  Outline and drilling plan
 
@@ -102,14 +100,12 @@ you can use to power things. It can also be connected to the VIN terminal to
 produce output voltages up to 5V at the VOUT terminal without the need for an
 additional external power supply.
 
-..
-  TODO: Update image?
 
-.. image:: /Images/Bricklets/bricklet_analog_out_v2_horizontal_350.jpg
+.. image:: /Images/Bricklets/bricklet_analog_out_v3_top_350.jpg
     :scale: 100 %
     :alt: Analog Out Bricklet 3.0 Terminals
     :align: center
-    :target: ../../_images/Bricklets/bricklet_analog_out_v2_horizontal_1200.jpg
+    :target: ../../_images/Bricklets/bricklet_analog_out_v3_top_1200.jpg
 
 .. _analog_out_v3_bricklet_test:
 
@@ -144,27 +140,26 @@ you have configured should be identical.
 Case
 ----
 
-..
-	A `laser-cut case for the Analog Out Bricklet 3.0
-	<https://www.tinkerforge.com/en/shop/cases/case-analog-out-v3-bricklet.html>`__ is available.
+A `laser-cut case for the Analog Out Bricklet 3.0
+<https://www.tinkerforge.com/en/shop/cases/case-analog-in-out-v2-bricklet.html>`__ is available.
 
-	.. image:: /Images/Cases/bricklet_analog_out_v3_case_350.jpg
-	   :scale: 100 %
-	   :alt: Case for Analog Out Bricklet 3.0
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_analog_out_v3_case_1000.jpg
+.. image:: /Images/Cases/bricklet_analog_in_v2_case_built_up_350.jpg
+   :scale: 100 %
+   :alt: Case for Analog Out Bricklet 3.0
+   :align: center
+   :target: ../../_images/Cases/bricklet_analog_in_v2_case_built_up_1000.jpg
 
-	.. include:: Analog_Out_V3.substitutions
-	   :start-after: >>>bricklet_case_steps
-	   :end-before: <<<bricklet_case_steps
+.. include:: Analog_Out_V3.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
 
-	.. image:: /Images/Exploded/analog_out_v3_exploded_350.png
-	   :scale: 100 %
-	   :alt: Exploded assembly drawing for Analog Out Bricklet 3.0
-	   :align: center
-	   :target: ../../_images/Exploded/analog_out_v3_exploded.png
+.. image:: /Images/Exploded/analog_in_v2_exploded_350.png
+   :scale: 100 %
+   :alt: Exploded assembly drawing for Analog Out Bricklet 3.0
+   :align: center
+   :target: ../../_images/Exploded/analog_in_v2_exploded.png
 
-	|bricklet_case_hint|
+|bricklet_case_hint|
 
 
 .. _analog_out_v3_bricklet_programming_interface:

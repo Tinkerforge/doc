@@ -13,15 +13,13 @@ One Wire Bricklet
 .. note::
   Dieses Bricklet befindet sich aktuell noch in der Entwicklung!
 
-..
-    .. raw:: html
+.. raw:: html
 
 	{% tfgallery %}
 
 	Bricklets/bricklet_one_wire_tilted_[?|?].jpg           One Wire Bricklet
-	Bricklets/bricklet_one_wire_horizontal_[?|?].jpg       One Wire Bricklet
-	Bricklets/bricklet_one_wire_master_[100|600].jpg       One Wire Bricklet mit Master Brick
-	Cases/bricklet_one_wire_case_[100|600].jpg             One Wire Bricklet im Gehäuse
+	Bricklets/bricklet_one_wire_tilted2_[?|?].jpg          One Wire Bricklet
+	Bricklets/bricklet_one_wire_top_[?|?].jpg              One Wire Bricklet
 	Bricklets/bricklet_one_wire_brickv_[100|].jpg          One Wire Bricklet im Brick Viewer
 	Dimensions/one_wire_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
 
@@ -51,15 +49,14 @@ Fehlererkennung ermöglichen.
 
 Bis zu 64 1-Wire Geräte können gleichzeitig angeschlossen und genutzt werden.
 
-A jumper can be used to switch between 3.3V, 5V or an external supply voltage
-for the connected 1-wire devices.
+Ein Jumper kann genutzt werden um zwischen 3,3V, 5V und einer externen
+Stromversorgung für das 1-Wire Gerät zu wechseln.
 
-An example application would be to read the temperature of a MAX31820
-1-wire ambient temperature sensor.
+Eine Beispielanwendung für das Bricklet wäre z.B. das Bestimmen der
+Temperatur mit einem MAX31820 1-Wire Temperatursensors.
 
-The One Wire Bricklet has a 7 pole Bricklet connector and is connected to a
-Brick with a ``7p-10p`` Bricklet cable.
-
+Das One Wire Bricklet hat einen 7 Pol Bricklet Stecker und wird
+mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
 
 Technische Spezifikation
 ------------------------
@@ -92,8 +89,18 @@ Ressourcen
 Anschlussmöglichkeit
 --------------------
 
-..
-  TODO
+Ein 1-Wire Gerät kann mit VCC/DAT/GND (Spannung, Daten, Masse) verbunden werden
+
+Der Jumper kann genutzt werden um die Stromversorgung auf der VCC-Klemme zwischen 3,3
+und 5V zu wechseln. Wenn der Jumper auf NC gesetzt wird, kann eine externe Stromversorgung
+an VCC angeschlossen werden. Wenn eine externe Stromversorgung verwendet wird darf
+der Jumper nicht auf 3,3V/5V gesetzt werden.
+
+.. image:: /Images/Bricklets/bricklet_one_wire_top_350.jpg
+   :scale: 100 %
+   :alt: One Wire Bricklet Anschlussmöglichkeiten
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_one_wire_top_1200.jpg
 
 
 Beispiel: MAX31820
@@ -148,27 +155,26 @@ Wenn alles wie erwartet funktioniert kann jetzt mit dem angeschlossenen
 Gehäuse
 -------
 
-..
-	Ein `laser-geschnittenes Gehäuse für das One Wire Bricklet
-	<https://www.tinkerforge.com/de/shop/cases/case-one-wire-bricklet.html>`__ ist verfügbar.
+Ein `laser-geschnittenes Gehäuse für das One Wire Bricklet
+<https://www.tinkerforge.com/de/shop/cases/case-load-cell-bricklet.html>`__ ist verfügbar.
 
-	.. image:: /Images/Cases/bricklet_one_wire_case_350.jpg
-	   :scale: 100 %
-	   :alt: Gehäuse für One Wire Bricklet
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_one_wire_case_1000.jpg
+.. image:: /Images/Cases/bricklet_load_cell_case_built_up1_350.jpg
+   :scale: 100 %
+   :alt: Gehäuse für One Wire Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_load_cell_case_built_up1_1000.jpg
 
-	.. include:: One_Wire.substitutions
-	   :start-after: >>>bricklet_case_steps
-	   :end-before: <<<bricklet_case_steps
+.. include:: One_Wire.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
 
-	.. image:: /Images/Exploded/one_wire_exploded_350.png
-	   :scale: 100 %
-	   :alt: Explosionszeichnung für One Wire Bricklet
-	   :align: center
-	   :target: ../../_images/Exploded/one_wire_exploded.png
+.. image:: /Images/Exploded/one_wire_exploded_350.png
+   :scale: 100 %
+   :alt: Explosionszeichnung für One Wire Bricklet
+   :align: center
+   :target: ../../_images/Exploded/one_wire_exploded.png
 
-	|bricklet_case_hint|
+|bricklet_case_hint|
 
 
 .. _one_wire_bricklet_programming_interface:

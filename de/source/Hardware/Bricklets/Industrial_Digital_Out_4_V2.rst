@@ -13,15 +13,14 @@ Industrial Digital Out 4 Bricklet 2.0
 .. note::
   Dieses Bricklet befindet sich aktuell noch in der Entwicklung!
 
-..
-    .. raw:: html
+.. raw:: html
 
 	{% tfgallery %}
 
 	Bricklets/bricklet_industrial_digital_out_4_v2_tilted_[?|?].jpg           Industrial Digital Out 4 Bricklet 2.0
-	Bricklets/bricklet_industrial_digital_out_4_v2_horizontal_[?|?].jpg       Industrial Digital Out 4 Bricklet 2.0
-	Bricklets/bricklet_industrial_digital_out_4_v2_master_[100|600].jpg       Industrial Digital Out 4 Bricklet 2.0 mit Master Brick
-	Cases/bricklet_industrial_digital_out_4_v2_case_[100|600].jpg             Industrial Digital Out 4 Bricklet 2.0 im Gehäuse
+	Bricklets/bricklet_industrial_digital_out_4_v2_tilted2_[?|?].jpg          Industrial Digital Out 4 Bricklet 2.0
+	Bricklets/bricklet_industrial_digital_out_4_v2_top_[?|?].jpg              Industrial Digital Out 4 Bricklet 2.0
+	Bricklets/bricklet_industrial_digital_out_4_v2_w_connector_[?|?].jpg      Industrial Digital Out 4 Bricklet 2.0
 	Bricklets/bricklet_industrial_digital_out_4_v2_brickv_[100|].jpg          Industrial Digital Out 4 Bricklet 2.0 im Brick Viewer
 	Dimensions/industrial_digital_out_4_v2_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
 
@@ -93,14 +92,11 @@ Anschlussmöglichkeit
 Das Industrial Digital Out 4 Bricklet 2.0 besitzt eine 8 Pol Anschlussklemme.
 Das folgende Bild stellt die Anschlussmöglichkeiten dar:
 
-..
-  TODO: Update image
-
-.. image:: /Images/Bricklets/bricklet_industrial_digital_out_4_caption_600.jpg
+.. image:: /Images/Bricklets/bricklet_industrial_digital_out_4_v2_caption_600.jpg
    :scale: 100 %
    :alt: Industrial Digital Out 4 Bricklet Steckerbelegung
    :align: center
-   :target: ../../_images/Bricklets/bricklet_industrial_digital_out_4_caption_1200.jpg
+   :target: ../../_images/Bricklets/bricklet_industrial_digital_out_4_v2_caption_1200.jpg
 
 
 .. _industrial_digital_out_4_v2_bricklet_leds:

@@ -13,15 +13,15 @@ OLED 128x64 Bricklet 2.0
 .. note::
   Dieses Bricklet befindet sich aktuell noch in der Entwicklung!
 
-..
-    .. raw:: html
+.. raw:: html
 
 	{% tfgallery %}
 
 	Bricklets/bricklet_oled_128x64_v2_tilted_[?|?].jpg           OLED 128x64 Bricklet 2.0
-	Bricklets/bricklet_oled_128x64_v2_horizontal_[?|?].jpg       OLED 128x64 Bricklet 2.0
-	Bricklets/bricklet_oled_128x64_v2_master_[100|600].jpg       OLED 128x64 Bricklet 2.0 mit Master Brick
-	Cases/bricklet_oled_128x64_v2_case_[100|600].jpg             OLED 128x64 Bricklet 2.0 im Gehäuse
+	Bricklets/bricklet_oled_128x64_v2_top_[?|?].jpg              OLED 128x64 Bricklet 2.0
+	Bricklets/bricklet_oled_128x64_v2_bottom_[?|?].jpg           OLED 128x64 Bricklet 2.0
+	Cases/bricklet_oled_128x64_v2_case_[?|?].jpg                 OLED 128x64 Bricklet 2.0 im Gehäuse
+	Cases/bricklet_oled_128x64_v2_case_back_[?|?].jpg            OLED 128x64 Bricklet 2.0 im Gehäuse
 	Bricklets/bricklet_oled_128x64_v2_brickv_[100|].jpg          OLED 128x64 Bricklet 2.0 im Brick Viewer
 	Dimensions/oled_128x64_v2_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
 
@@ -173,27 +173,30 @@ werden kann:
 Gehäuse
 -------
 
-..
-	Ein `laser-geschnittenes Gehäuse für das OLED 128x64 Bricklet 2.0
-	<https://www.tinkerforge.com/de/shop/cases/case-oled-128x64-v2-bricklet.html>`__ ist verfügbar.
+Ein `laser-geschnittenes Gehäuse für das OLED 128x64 Bricklet 2.0
+<https://www.tinkerforge.com/de/shop/cases/case-oled-128x64-v2-bricklet.html>`__ ist verfügbar.
 
-	.. image:: /Images/Cases/bricklet_oled_128x64_v2_case_350.jpg
-	   :scale: 100 %
-	   :alt: Gehäuse für OLED 128x64 Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_oled_128x64_v2_case_1000.jpg
+.. image:: /Images/Cases/bricklet_oled_128x64_v2_case_350.jpg
+   :scale: 100 %
+   :alt: Gehäuse für OLED 128x64 Bricklet 2.0
+   :align: center
+   :target: ../../_images/Cases/bricklet_oled_128x64_v2_case_1000.jpg
 
-	.. include:: OLED_128x64_V2.substitutions
-	   :start-after: >>>bricklet_case_steps
-	   :end-before: <<<bricklet_case_steps
+Der Aufbau ist am einfachsten wenn die folgenden Schritte befolgt werden:
 
-	.. image:: /Images/Exploded/oled_128x64_v2_exploded_350.png
-	   :scale: 100 %
-	   :alt: Explosionszeichnung für OLED 128x64 Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Exploded/oled_128x64_v2_exploded.png
+* Schraube Frontplatte an Bricklet,
+* baue Seitenteile und Unter-/Rückteil auf,
+* schraube Frontplatte an Seitenteile.
 
-	|bricklet_case_hint|
+Im Folgenden befindet sich eine Explosionszeichnung des OLED 128x64 Bricklet 2.0 Gehäuses:
+
+.. image:: /Images/Exploded/oled_128x64_v2_exploded_350.png
+   :scale: 100 %
+   :alt: Explosionszeichnung für OLED 128x64 Bricklet 2.0
+   :align: center
+   :target: ../../_images/Exploded/oled_128x64_v2_exploded.png
+
+|bricklet_case_hint|
 
 
 .. _oled_128x64_v2_bricklet_programming_interface:

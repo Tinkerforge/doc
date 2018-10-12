@@ -13,15 +13,13 @@ Analog Out Bricklet 3.0
 .. note::
   Dieses Bricklet befindet sich aktuell noch in der Entwicklung!
 
-..
-    .. raw:: html
+.. raw:: html
 
 	{% tfgallery %}
 
 	Bricklets/bricklet_analog_out_v3_tilted_[?|?].jpg           Analog Out Bricklet 3.0
-	Bricklets/bricklet_analog_out_v3_horizontal_[?|?].jpg       Analog Out Bricklet 3.0
-	Bricklets/bricklet_analog_out_v3_master_[100|600].jpg       Analog Out Bricklet 3.0 mit Master Brick
-	Cases/bricklet_analog_out_v3_case_[100|600].jpg             Analog Out Bricklet 3.0 im Gehäuse
+	Bricklets/bricklet_analog_out_v3_tilted2_[?|?].jpg          Analog Out Bricklet 3.0
+	Bricklets/bricklet_analog_out_v3_top_[?|?].jpg              Analog Out Bricklet 3.0
 	Bricklets/bricklet_analog_out_v3_brickv_[100|].jpg          Analog Out Bricklet 3.0 im Brick Viewer
 	Dimensions/analog_out_v3_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
 
@@ -103,14 +101,11 @@ können z.B. genutzt werden, um die VIN Anschlussklemme zu versorgen, so dass
 Ausgangsspannung bis zu 5V an VOUT ausgegeben werden können, ohne zusätzliche
 externe Spannungsquelle.
 
-..
-  TODO: Update image?
-
-.. image:: /Images/Bricklets/bricklet_analog_out_v2_horizontal_350.jpg
+.. image:: /Images/Bricklets/bricklet_analog_out_v3_top_350.jpg
     :scale: 100 %
     :alt: Analog Out Bricklet 3.0 Anschlussklemmen
     :align: center
-    :target: ../../_images/Bricklets/bricklet_analog_out_v2_horizontal_1200.jpg
+    :target: ../../_images/Bricklets/bricklet_analog_out_v3_top_1200.jpg
 
 .. _analog_out_v3_bricklet_test:
 
@@ -148,25 +143,24 @@ mit der Messung des Voltmeters übereinstimmen.
 Gehäuse
 -------
 
-..
 	Ein `laser-geschnittenes Gehäuse für das Analog Out Bricklet 3.0
-	<https://www.tinkerforge.com/de/shop/cases/case-analog-out-v3-bricklet.html>`__ ist verfügbar.
+	<https://www.tinkerforge.com/de/shop/cases/case-analog-in-out-v2-bricklet.html>`__ ist verfügbar.
 
-	.. image:: /Images/Cases/bricklet_analog_out_v3_case_350.jpg
+	.. image:: /Images/Cases/bricklet_analog_in_v2_case_built_up_350.jpg
 	   :scale: 100 %
 	   :alt: Gehäuse für Analog Out Bricklet 3.0
 	   :align: center
-	   :target: ../../_images/Cases/bricklet_analog_out_v3_case_1000.jpg
+	   :target: ../../_images/Cases/bricklet_analog_in_v2_case_built_up_1000.jpg
 
 	.. include:: Analog_Out_V3.substitutions
 	   :start-after: >>>bricklet_case_steps
 	   :end-before: <<<bricklet_case_steps
 
-	.. image:: /Images/Exploded/analog_out_v3_exploded_350.png
+	.. image:: /Images/Exploded/analog_in_v2_exploded_350.png
 	   :scale: 100 %
 	   :alt: Explosionszeichnung für Analog Out Bricklet 3.0
 	   :align: center
-	   :target: ../../_images/Exploded/analog_out_v3_exploded.png
+	   :target: ../../_images/Exploded/analog_in_v2_exploded.png
 
 	|bricklet_case_hint|
 

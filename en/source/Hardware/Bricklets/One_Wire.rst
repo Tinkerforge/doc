@@ -13,15 +13,13 @@ One Wire Bricklet
 .. note::
   This Bricklet is currently work-in-progress!
 
-..
-    .. raw:: html
+.. raw:: html
 
 	{% tfgallery %}
 
 	Bricklets/bricklet_one_wire_tilted_[?|?].jpg           One Wire Bricklet
-	Bricklets/bricklet_one_wire_horizontal_[?|?].jpg       One Wire Bricklet
-	Bricklets/bricklet_one_wire_master_[100|600].jpg       One Wire Bricklet with Master Brick
-	Cases/bricklet_one_wire_case_[100|600].jpg             One Wire Bricklet with case
+	Bricklets/bricklet_one_wire_tilted2_[?|?].jpg          One Wire Bricklet
+	Bricklets/bricklet_one_wire_top_[?|?].jpg              One Wire Bricklet
 	Bricklets/bricklet_one_wire_brickv_[100|].jpg          One Wire Bricklet in Brick Viewer
 	Dimensions/one_wire_bricklet_dimensions_[100|600].png  Outline and drilling plan
 
@@ -92,8 +90,17 @@ Resources
 Connectivity
 ------------
 
-..
-  TODO
+You can connect any 1-Wire device to the VCC/DAT/GND (voltage, data, ground) pins.
+
+The jumper can be used to switch the supply voltage applied to VCC between 3.3V and 5V.
+If the jumper is set to NC, you can connect an external power supply to VCC. If you want
+to use an external power supply, you can not put the jumper on the 3.3V/5V pin headers.
+
+.. image:: /Images/Bricklets/bricklet_one_wire_top_350.jpg
+   :scale: 100 %
+   :alt: One Wire Bricklet connectivity
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_one_wire_top_1200.jpg
 
 
 Example: MAX31820
@@ -148,27 +155,26 @@ Brick Viewer to communicate with a connected 1-wire device.
 Case
 ----
 
-..
-	A `laser-cut case for the One Wire Bricklet
-	<https://www.tinkerforge.com/en/shop/cases/case-one-wire-bricklet.html>`__ is available.
+A `laser-cut case for the One Wire Bricklet
+<https://www.tinkerforge.com/en/shop/cases/case-load-cell-bricklet.html>`__ is available.
 
-	.. image:: /Images/Cases/bricklet_one_wire_case_350.jpg
-	   :scale: 100 %
-	   :alt: Case for One Wire Bricklet
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_one_wire_case_1000.jpg
+.. image:: /Images/Cases/bricklet_load_cell_case_built_up1_350.jpg
+   :scale: 100 %
+   :alt: Case for One Wire Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_load_cell_case_built_up1_1000.jpg
 
-	.. include:: One_Wire.substitutions
-	   :start-after: >>>bricklet_case_steps
-	   :end-before: <<<bricklet_case_steps
+.. include:: One_Wire.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
 
-	.. image:: /Images/Exploded/one_wire_exploded_350.png
-	   :scale: 100 %
-	   :alt: Exploded assembly drawing for One Wire Bricklet
-	   :align: center
-	   :target: ../../_images/Exploded/one_wire_exploded.png
+.. image:: /Images/Exploded/one_wire_exploded_350.png
+   :scale: 100 %
+   :alt: Exploded assembly drawing for One Wire Bricklet
+   :align: center
+   :target: ../../_images/Exploded/one_wire_exploded.png
 
-	|bricklet_case_hint|
+|bricklet_case_hint|
 
 
 .. _one_wire_bricklet_programming_interface:

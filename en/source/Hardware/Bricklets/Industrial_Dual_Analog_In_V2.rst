@@ -13,15 +13,14 @@ Industrial Dual Analog In Bricklet 2.0
 .. note::
   This Bricklet is currently work-in-progress!
 
-..
-    .. raw:: html
+.. raw:: html
 
 	{% tfgallery %}
 
 	Bricklets/bricklet_industrial_dual_analog_in_v2_tilted_[?|?].jpg           Industrial Dual Analog In Bricklet 2.0
-	Bricklets/bricklet_industrial_dual_analog_in_v2_horizontal_[?|?].jpg       Industrial Dual Analog In Bricklet 2.0
-	Bricklets/bricklet_industrial_dual_analog_in_v2_master_[100|600].jpg       Industrial Dual Analog In Bricklet 2.0 with Master Brick
-	Cases/bricklet_industrial_dual_analog_in_v2_case_[100|600].jpg             Industrial Dual Analog In Bricklet 2.0 with case
+	Bricklets/bricklet_industrial_dual_analog_in_v2_tilted2_[?|?].jpg          Industrial Dual Analog In Bricklet 2.0
+	Bricklets/bricklet_industrial_dual_analog_in_v2_top_[?|?].jpg              Industrial Dual Analog In Bricklet 2.0
+	Bricklets/bricklet_industrial_dual_analog_in_v2_w_connector_[?|?].jpg      Industrial Dual Analog In Bricklet 2.0
 	Bricklets/bricklet_industrial_dual_analog_in_v2_brickv_[100|].jpg          Industrial Dual Analog In Bricklet 2.0 in Brick Viewer
 	Dimensions/industrial_dual_analog_in_v2_bricklet_dimensions_[100|600].png  Outline and drilling plan
 
@@ -94,14 +93,11 @@ Connectivity
 The Industrial Dual Analog In Bricklet 2.0 has an 8 pole terminal.
 Please see the picture below for the pinout.
 
-..
-  TODO: Update image?
-
-.. image:: /Images/Bricklets/bricklet_industrial_dual_analog_in_caption_600.jpg
+.. image:: /Images/Bricklets/bricklet_industrial_dual_analog_in_v2_caption_600.jpg
    :scale: 100 %
    :alt: Industrial Dual Analog In Bricklet 2.0 pinout
    :align: center
-   :target: ../../_images/Bricklets/bricklet_industrial_dual_analog_in_caption_1200.jpg
+   :target: ../../_images/Bricklets/bricklet_industrial_dual_analog_in_v2_caption_1200.jpg
 
 
 .. _industrial_dual_analog_in_v2_bricklet_test:
@@ -119,9 +115,6 @@ GND pin to the IN0+ pin.
 |test_tab|
 If everything went as expected you can now see the voltage in Volt
 and a graph that shows the voltage over time.
-
-..
-  TODO: Make screenshot
 
 .. image:: /Images/Bricklets/bricklet_industrial_dual_analog_in_v2_brickv.jpg
    :scale: 100 %

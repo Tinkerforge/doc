@@ -13,15 +13,12 @@ Barometer Bricklet 2.0
 .. note::
   Dieses Bricklet befindet sich aktuell noch in der Entwicklung!
 
-..
-    .. raw:: html
+.. raw:: html
 
 	{% tfgallery %}
 
 	Bricklets/bricklet_barometer_v2_tilted_[?|?].jpg           Barometer Bricklet 2.0
-	Bricklets/bricklet_barometer_v2_horizontal_[?|?].jpg       Barometer Bricklet 2.0
-	Bricklets/bricklet_barometer_v2_master_[100|600].jpg       Barometer Bricklet 2.0 mit Master Brick
-	Cases/bricklet_barometer_v2_case_[100|600].jpg             Barometer Bricklet 2.0 im Gehäuse
+	Bricklets/bricklet_barometer_v2_top_[?|?].jpg              Barometer Bricklet 2.0
 	Bricklets/bricklet_barometer_v2_brickv_[100|].jpg          Barometer Bricklet 2.0 im Brick Viewer
 	Dimensions/barometer_v2_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
 
@@ -106,9 +103,6 @@ Erster Test
 Wenn alles wie erwartet funktioniert wird der Luftdruck in mbar angezeigt.
 Der Graph gibt den zeitlichen Verlauf des Luftdrucks wieder.
 
-..
-  TODO: Screenshot machen
-
 .. image:: /Images/Bricklets/bricklet_barometer_v2_brickv.jpg
    :scale: 100 %
    :alt: Barometer Bricklet 2.0 im Brick Viewer
@@ -176,27 +170,26 @@ aber typischerweise dem QNH Wert ähnlich.
 Gehäuse
 -------
 
-..
-	Ein `laser-geschnittenes Gehäuse für das Barometer Bricklet 2.0
-	<https://www.tinkerforge.com/de/shop/cases/case-barometer-v2-bricklet.html>`__ ist verfügbar.
+Ein `laser-geschnittenes Gehäuse für das Barometer Bricklet 2.0
+<https://www.tinkerforge.com/de/shop/cases/case-ambient-light-barometer-humidity-temperature-bricklet.html>`__ ist verfügbar.
 
-	.. image:: /Images/Cases/bricklet_barometer_v2_case_350.jpg
-	   :scale: 100 %
-	   :alt: Gehäuse für Barometer Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_barometer_v2_case_1000.jpg
+.. image:: /Images/Cases/bricklet_ambient_light_case_built_up_350.jpg
+   :scale: 100 %
+   :alt: Gehäuse für Barometer Bricklet 2.0
+   :align: center
+   :target: ../../_images/Cases/bricklet_ambient_light_case_built_up_1000.jpg
 
-	.. include:: Barometer_V2.substitutions
-	   :start-after: >>>bricklet_case_steps
-	   :end-before: <<<bricklet_case_steps
+.. include:: Barometer_V2.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
 
-	.. image:: /Images/Exploded/barometer_v2_exploded_350.png
-	   :scale: 100 %
-	   :alt: Explosionszeichnung für Barometer Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Exploded/barometer_v2_exploded.png
+.. image:: /Images/Exploded/ambient_light_exploded_350.png
+   :scale: 100 %
+   :alt: Explosionszeichnung für Barometer Bricklet 2.0
+   :align: center
+   :target: ../../_images/Exploded/ambient_light_exploded.png
 
-	|bricklet_case_hint|
+|bricklet_case_hint|
 
 
 .. _barometer_v2_bricklet_programming_interface:

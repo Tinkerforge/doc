@@ -13,14 +13,12 @@ Air Quality Bricklet
 .. note::
   This Bricklet is currently work-in-progress!
 
-..
-    .. raw:: html
+.. raw:: html
 
 	{% tfgallery %}
 
 	Bricklets/bricklet_air_quality_tilted_[?|?].jpg           Air Quality Bricklet
-	Bricklets/bricklet_air_quality_horizontal_[?|?].jpg       Air Quality Bricklet
-	Bricklets/bricklet_air_quality_master_[100|600].jpg       Air Quality Bricklet with Master Brick
+	Bricklets/bricklet_air_quality_top_[?|?].jpg              Air Quality Bricklet
 	Cases/bricklet_air_quality_case_[100|600].jpg             Air Quality Bricklet with case
 	Bricklets/bricklet_air_quality_brickv_[100|].jpg          Air Quality Bricklet in Brick Viewer
 	Dimensions/air_quality_bricklet_dimensions_[100|600].png  Outline and drilling plan
@@ -152,27 +150,26 @@ IAQ index, air pressure, humidity and temperature.
 Case
 ----
 
-..
-	A `laser-cut case for the Air Quality Bricklet
-	<https://www.tinkerforge.com/en/shop/cases/case-air-quality-bricklet.html>`__ is available.
+A `laser-cut case for the Air Quality Bricklet
+<https://www.tinkerforge.com/en/shop/cases/case-air-quality-bricklet.html>`__ is available.
 
-	.. image:: /Images/Cases/bricklet_air_quality_case_350.jpg
-	   :scale: 100 %
-	   :alt: Case for Air Quality Bricklet
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_air_quality_case_1000.jpg
+.. image:: /Images/Cases/bricklet_air_quality_case_350.jpg
+   :scale: 100 %
+   :alt: Case for Air Quality Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_air_quality_case_1000.jpg
 
-	.. include:: Air_Quality.substitutions
-	   :start-after: >>>bricklet_case_steps
-	   :end-before: <<<bricklet_case_steps
+.. include:: Air_Quality.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
 
-	.. image:: /Images/Exploded/air_quality_exploded_350.png
-	   :scale: 100 %
-	   :alt: Exploded assembly drawing for Air Quality Bricklet
-	   :align: center
-	   :target: ../../_images/Exploded/air_quality_exploded.png
+.. image:: /Images/Exploded/air_quality_exploded_350.png
+   :scale: 100 %
+   :alt: Exploded assembly drawing for Air Quality Bricklet
+   :align: center
+   :target: ../../_images/Exploded/air_quality_exploded.png
 
-	|bricklet_case_hint|
+|bricklet_case_hint|
 
 
 .. _air_quality_bricklet_programming_interface:

@@ -13,14 +13,13 @@ Dual Button Bricklet 2.0
 .. note::
   This Bricklet is currently work-in-progress!
 
-..
-    .. raw:: html
+.. raw:: html
 
 	{% tfgallery %}
 
 	Bricklets/bricklet_dual_button_v2_tilted_[?|?].jpg           Dual Button Bricklet 2.0
-	Bricklets/bricklet_dual_button_v2_horizontal_[?|?].jpg       Dual Button Bricklet 2.0
-	Bricklets/bricklet_dual_button_v2_master_[100|600].jpg       Dual Button Bricklet 2.0 with Master Brick
+	Bricklets/bricklet_dual_button_v2_tilted2_[?|?].jpg          Dual Button Bricklet 2.0
+	Bricklets/bricklet_dual_button_v2_top_[?|?].jpg              Dual Button Bricklet 2.0
 	Cases/bricklet_dual_button_v2_case_[100|600].jpg             Dual Button Bricklet 2.0 with case
 	Bricklets/bricklet_dual_button_v2_brickv_[100|].jpg          Dual Button Bricklet 2.0 in Brick Viewer
 	Dimensions/dual_button_v2_bricklet_dimensions_[100|600].png  Outline and drilling plan
@@ -109,27 +108,26 @@ change the state of the LED.
 Case
 ----
 
-..
-	A `laser-cut case for the Dual Button Bricklet 2.0
-	<https://www.tinkerforge.com/en/shop/cases/case-dual-button-v2-bricklet.html>`__ is available.
+A `laser-cut case for the Dual Button Bricklet 2.0
+<https://www.tinkerforge.com/en/shop/cases/case-dual-button-v2-bricklet.html>`__ is available.
 
-	.. image:: /Images/Cases/bricklet_dual_button_v2_case_350.jpg
-	   :scale: 100 %
-	   :alt: Case for Dual Button Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_dual_button_v2_case_1000.jpg
+.. image:: /Images/Cases/bricklet_dual_button_v2_case_350.jpg
+   :scale: 100 %
+   :alt: Case for Dual Button Bricklet 2.0
+   :align: center
+   :target: ../../_images/Cases/bricklet_dual_button_v2_case_1000.jpg
 
-	.. include:: Dual_Button_V2.substitutions
-	   :start-after: >>>bricklet_case_steps
-	   :end-before: <<<bricklet_case_steps
+.. include:: Dual_Button_V2.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
 
-	.. image:: /Images/Exploded/dual_button_v2_exploded_350.png
-	   :scale: 100 %
-	   :alt: Exploded assembly drawing for Dual Button Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Exploded/dual_button_v2_exploded.png
+.. image:: /Images/Exploded/dual_button_v2_exploded_350.png
+   :scale: 100 %
+   :alt: Exploded assembly drawing for Dual Button Bricklet 2.0
+   :align: center
+   :target: ../../_images/Exploded/dual_button_v2_exploded.png
 
-	|bricklet_case_hint|
+|bricklet_case_hint|
 
 
 .. _dual_button_v2_bricklet_programming_interface:

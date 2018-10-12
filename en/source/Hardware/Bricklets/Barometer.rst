@@ -15,9 +15,7 @@ Barometer Bricklet
 	{% tfgallery %}
 
 	Bricklets/bricklet_barometer_tilted_[?|?].jpg           Barometer Bricklet
-	Bricklets/bricklet_barometer_vertical_[?|?].jpg         Barometer Bricklet
-	Bricklets/bricklet_barometer_horizontal_[?|?].jpg       Barometer Bricklet
-	Cases/bricklet_ambient_light_case_built_up_[?|?].jpg    Barometer Bricklet in Case
+	Bricklets/bricklet_barometer_top_[?|?].jpg              Barometer Bricklet
 	Bricklets/bricklet_barometer_brickv_[100|].jpg          Barometer Bricklet in Brick Viewer
 	Dimensions/barometer_bricklet_dimensions_[100|600].png  Outline and drilling plan
 

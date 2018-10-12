@@ -13,15 +13,12 @@ UV Light Bricklet 2.0
 .. note::
   Dieses Bricklet befindet sich aktuell noch in der Entwicklung!
 
-..
-    .. raw:: html
+.. raw:: html
 
 	{% tfgallery %}
 
 	Bricklets/bricklet_uv_light_v2_tilted_[?|?].jpg           UV Light Bricklet 2.0
-	Bricklets/bricklet_uv_light_v2_horizontal_[?|?].jpg       UV Light Bricklet 2.0
-	Bricklets/bricklet_uv_light_v2_master_[100|600].jpg       UV Light Bricklet 2.0 mit Master Brick
-	Cases/bricklet_uv_light_v2_case_[100|600].jpg             UV Light Bricklet 2.0 im Gehäuse
+	Bricklets/bricklet_uv_light_v2_top_[?|?].jpg              UV Light Bricklet 2.0
 	Bricklets/bricklet_uv_light_v2_brickv_[100|].jpg          UV Light Bricklet 2.0 im Brick Viewer
 	Dimensions/uv_light_v2_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
 
@@ -93,9 +90,6 @@ Erster Test
 Wenn alles wie erwartet funktioniert wird der UV-A und UV-B Messwert sowie der
 UV-Index angezeigt. Der Graph gibt den zeitlichen Verlauf wieder.
 
-..
-  TODO: Neuer Screenshot mit UV-Index!
-
 .. image:: /Images/Bricklets/bricklet_uv_light_v2_brickv.jpg
    :scale: 100 %
    :alt: UV Light Bricklet 2.0 im Brick Viewer
@@ -104,33 +98,6 @@ UV-Index angezeigt. Der Graph gibt den zeitlichen Verlauf wieder.
 
 |test_pi_ref|
 
-
-.. _uv_light_v2_bricklet_case:
-
-Gehäuse
--------
-
-..
-	Ein `laser-geschnittenes Gehäuse für das UV Light Bricklet 2.0
-	<https://www.tinkerforge.com/de/shop/cases/case-uv-light-v2-bricklet.html>`__ ist verfügbar.
-
-	.. image:: /Images/Cases/bricklet_uv_light_v2_case_350.jpg
-	   :scale: 100 %
-	   :alt: Gehäuse für UV Light Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_uv_light_v2_case_1000.jpg
-
-	.. include:: UV_Light_V2.substitutions
-	   :start-after: >>>bricklet_case_steps
-	   :end-before: <<<bricklet_case_steps
-
-	.. image:: /Images/Exploded/uv_light_v2_exploded_350.png
-	   :scale: 100 %
-	   :alt: Explosionszeichnung für UV Light Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Exploded/uv_light_v2_exploded.png
-
-	|bricklet_case_hint|
 
 
 .. _uv_light_v2_bricklet_programming_interface:
