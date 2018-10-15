@@ -86,7 +86,7 @@ Air Pressure Accuracy             ±0.12mbar (700-900mbar at 25-40°C), ±0.6mba
 Humidity Accuracy                 ±3%RH (20-80%RH at 25°C)
 Temperature Accuracy              ±0.5°C (at 25°C), ±1.0°C (0-65°C)*
 --------------------------------  ------------------------------------------------------------
-Measurement Frequency             1 measurement per second
+Measurement Frequency             0.3 measurements per second
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)            25 x 20 x 5mm (0.98 x 0.79 x 0.19")
