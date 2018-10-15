@@ -18,6 +18,7 @@ OLED 128x64 Bricklet 2.0
 	{% tfgallery %}
 
 	Bricklets/bricklet_oled_128x64_v2_tilted_[?|?].jpg           OLED 128x64 Bricklet 2.0
+	Bricklets/bricklet_oled_128x64_v2_active_[?|?].jpg           OLED 128x64 Bricklet 2.0
 	Bricklets/bricklet_oled_128x64_v2_top_[?|?].jpg              OLED 128x64 Bricklet 2.0
 	Bricklets/bricklet_oled_128x64_v2_bottom_[?|?].jpg           OLED 128x64 Bricklet 2.0
 	Cases/bricklet_oled_128x64_v2_case_[?|?].jpg                 OLED 128x64 Bricklet 2.0 im Gehäuse

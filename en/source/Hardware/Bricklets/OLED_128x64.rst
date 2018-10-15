@@ -15,7 +15,6 @@ OLED 128x64 Bricklet
 	{% tfgallery %}
 
 	Bricklets/bricklet_oled_128x64_tilted_[?|?].jpg             OLED 128x64 Bricklet
-	Bricklets/bricklet_oled_128x64_active_[?|?].jpg             OLED 128x64 Bricklet
 	Bricklets/bricklet_oled_128x64_front_[?|?].jpg              OLED 128x64 Bricklet
 	Bricklets/bricklet_oled_128x64_horizontal_[?|?].jpg         OLED 128x64 Bricklet
 	Bricklets/bricklet_oled_128x64_bottom_[?|?].jpg             OLED 128x64 Bricklet
