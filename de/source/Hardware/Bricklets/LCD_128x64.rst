@@ -18,6 +18,7 @@ LCD 128x64 Bricklet
 	{% tfgallery %}
 
 	Bricklets/bricklet_lcd_128x64_tilted_[?|?].jpg           LCD 128x64 Bricklet
+	Bricklets/bricklet_lcd_128x64_active_[?|?].jpg           LCD 128x64 Bricklet
 	Bricklets/bricklet_lcd_128x64_top_[?|?].jpg              LCD 128x64 Bricklet
 	Bricklets/bricklet_lcd_128x64_bottom_[?|?].jpg           LCD 128x64 Bricklet
 	Cases/bricklet_lcd_128x64_case_front_master_[?|?].jpg    LCD 128x64 Bricklet im Gehäuse
