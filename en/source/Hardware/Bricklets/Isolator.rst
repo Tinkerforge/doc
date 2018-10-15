@@ -103,8 +103,21 @@ Resources
 Example
 -------
 
-..
-  TODO: Image of example application
+Below you can see an Isolator Bricklet that is connected to a Master Brick on one side
+and to a Voltage/Current Bricklet 2.0 on the other side.
+
+.. image:: /Images/Bricklets/bricklet_isolator_action_800.jpg
+   :scale: 100 %
+   :alt: Isolator Bricklet with connected Master Brick and Voltage/Current Bricklet 2.0
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_isolator_action_1200.jpg
+
+The Voltage/Current Bricklet 2.0 is now galvanically isolated from the Master Brick
+and thus from the USB port or other Bricks/Bricklets that may be connected to the Master Brick.
+
+You can now use this Voltage/Current Bricklet 2.0 to measure the voltage and current
+without having to pay attention to the ground potential. As an example, you could connect
+it to any cell of a multi cell battery. Even if the battery is powering the Master Brick!
 
 
 .. _isolator_bricklet_test:

@@ -104,9 +104,24 @@ Ressourcen
 Beispiel
 --------
 
-..
-  TODO: Image of example application
+Im foglenden Bild ist ein Isolator Bricklet zu sehen welches auf einer Seite mit
+einem Master Brick und auf der anderen Seite mit einem Voltage/Current Bricklet 2.0
+verbunden ist.
 
+.. image:: /Images/Bricklets/bricklet_isolator_action_800.jpg
+   :scale: 100 %
+   :alt: Isolator Bricklet verbunden mit Master Brick und Voltage/Current Bricklet 2.0
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_isolator_action_1200.jpg
+
+Das Voltage/Current Bricklet 2.0 ist in diesem Beispiel vom Master Brick galvanisch
+isoliert. Dadurch ist es auch von anderen Bricks/Bricklets die mit dem Master Brick
+verbunden werden können sowie dem USB-Anschluss isoliert.
+
+Es kann jetzt Spannung und Strom gemessen werden ohne das auf das Masse-Potential
+geachtet werden muss. Zum Beispiel könnte das Voltage/Current Bricklet 2.0 mit
+einer beliebigen Zelle einer Multizellen-Batterie verbunden werden, sogar wenn
+die Batterie den Master Brick mit Strom versorgt!
 
 .. _isolator_bricklet_test:
 
