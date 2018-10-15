@@ -65,6 +65,14 @@ other applications, such as a finding out if a door is opened or closed.
 The Distance IR Bricklet 2.0 has a 7 pole Bricklet connector and is connected to a
 Brick with a ``7p-10p`` Bricklet cable.
 
+.. raw:: html
+
+	<video class="align-center" max-width="100%" width="100%" height="auto" controls autoplay loop>
+	  <source src="../../_images/Videos/bricklet_distance_ir_v2_video.mp4" type="video/mp4">
+	  <source src="../../_images/Videos/bricklet_distance_ir_v2_video.ogg" type="video/ogg">
+	  <source src="../../_images/Videos/bricklet_distance_ir_v2_video.webm" type="video/webm">
+	</video>
+
 Technical Specifications
 ------------------------
 
