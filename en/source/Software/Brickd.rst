@@ -173,21 +173,3 @@ installed with the `--version` commandline argument:
 * macOS::
 
    /usr/libexec/brickd.app/Contents/MacOS/brickd --version
-
-
-Commandline Options
--------------------
-
-Common:
-
-* ``--help`` shows help and exits
-* ``--version`` shows version number and exits
-* ``--check-config`` checks config file for errors
-* ``--debug`` sets all log levels to debug
-
-Windows only:
-
-* ``--install`` registers Brick Daemon as service and start it
-* ``--uninstall`` stops service and unregister it
-* ``--console`` forces start as console application
-* ``--log-to-file`` writes log messages to a file
