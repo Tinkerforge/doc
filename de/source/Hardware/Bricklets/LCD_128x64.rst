@@ -43,7 +43,7 @@ Beschreibung
 ------------
 
 Das LCD 128x64 :ref:`Bricklet <primer_bricklets>` ist eine LC Display mit einer
-Auflösung von 128/64 Pixel und resistivem Touchscreen.
+Auflösung von 128x64 Pixel und resistivem Touchscreen.
 
 Jedes Pixel kann einzeln angesteuert werden, dadurch ist der Display grafikfähig.
 Dadurch sind ein vielseitiger Einsatz und detailreiche Darstellungen möglich,
