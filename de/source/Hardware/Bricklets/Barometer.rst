@@ -23,6 +23,12 @@ Barometer Bricklet
 
 	{% tfgalleryend %}
 
+.. note::
+
+ Das Barometer Bricklet ist abgekündigt. Wir verkaufen noch unseren restlichen Lagerbestand.
+ Als Ersatz wird das :ref:`Barometer Bricklet 2.0 <barometer_v2_bricklet>`
+ empfohlen.
+
 
 Features
 --------

@@ -25,6 +25,11 @@ Industrial Dual 0-20mA Bricklet
 
 	{% tfgalleryend %}
 
+.. note::
+
+ Das Industrial Dual 0-20mA Bricklet ist abgekündigt. Wir verkaufen noch unseren restlichen Lagerbestand.
+ Als Ersatz wird das :ref:`Industrial Dual 0-20mA Bricklet 2.0 <industrial_dual_0_20ma_v2_bricklet>`
+ empfohlen.
 
 Features
 --------

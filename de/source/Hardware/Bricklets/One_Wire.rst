@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/one-wire-bricklet.html
+:shoplink: ../../../shop/bricklets/one-wire-bricklet.html
 
 .. include:: One_Wire.substitutions
    :start-after: >>>substitutions
@@ -9,9 +9,6 @@
 
 One Wire Bricklet
 =================
-
-.. note::
-  Dieses Bricklet befindet sich aktuell noch in der Entwicklung!
 
 .. raw:: html
 

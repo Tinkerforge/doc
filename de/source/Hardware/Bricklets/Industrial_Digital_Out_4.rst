@@ -24,6 +24,11 @@ Industrial Digital Out 4 Bricklet
 
 	{% tfgalleryend %}
 
+.. note::
+
+ Das Industrial Digital Out 4 Bricklet ist abgekündigt. Wir verkaufen noch unseren restlichen Lagerbestand.
+ Als Ersatz wird das :ref:`Industrial Digital Out 4 Bricklet 2.0 <industrial_digital_out_4_v2_bricklet>`
+ empfohlen.
 
 Features
 --------

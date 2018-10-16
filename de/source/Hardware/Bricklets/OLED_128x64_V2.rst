@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/oled-128x64-v2-bricklet.html
+:shoplink: ../../../shop/bricklets/oled-128x64-v2-bricklet.html
 
 .. include:: OLED_128x64_V2.substitutions
    :start-after: >>>substitutions
@@ -9,9 +9,6 @@
 
 OLED 128x64 Bricklet 2.0
 ========================
-
-.. note::
-  Dieses Bricklet befindet sich aktuell noch in der Entwicklung!
 
 .. raw:: html
 

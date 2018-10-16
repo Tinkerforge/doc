@@ -25,7 +25,7 @@ CAN Bricklet
 
 .. note::
 
- The CAN Bricklet is discontinued. The
+ The CAN Bricklet is discontinued. We are selling our remaining stock. The
  :ref:`CAN Bricklet 2.0 <can_v2_bricklet>` is the recommended
  replacement.
 

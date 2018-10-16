@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/isolator-bricklet.html
+:shoplink: ../../../shop/bricklets/isolator-bricklet.html
 
 .. include:: Isolator.substitutions
    :start-after: >>>substitutions
@@ -9,9 +9,6 @@
 
 Isolator Bricklet
 =================
-
-.. note::
-  Dieses Bricklet befindet sich aktuell noch in der Entwicklung!
 
 .. raw:: html
 

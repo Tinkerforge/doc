@@ -26,7 +26,7 @@ Dual Relay Bricklet
 
 .. note::
 
- Das Dual Relay Bricklet ist abgekündigt.
+ Das Dual Relay Bricklet ist abgekündigt. Wir verkaufen noch unseren restlichen Lagerbestand.
  Als Ersatz wird das :ref:`Industrial Dual Relay Bricklet <industrial_dual_relay_bricklet>`
  empfohlen.
 

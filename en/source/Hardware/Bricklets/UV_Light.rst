@@ -21,6 +21,11 @@ UV Light Bricklet
 
 	{% tfgalleryend %}
 
+.. note::
+
+ The UV Light Bricklet is discontinued. We are selling our remaining stock. The
+ :ref:`UV Light Bricklet 2.0 <uv_light_v2_bricklet>` is the recommended
+ replacement.
 
 Features
 --------

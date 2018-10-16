@@ -27,7 +27,7 @@ Sound Intensity Bricklet
 
 .. note::
 
- Das Sound Intensity Bricklet ist abgekündigt.
+ Das Sound Intensity Bricklet ist abgekündigt. Wir verkaufen noch unseren restlichen Lagerbestand.
  Als Ersatz wird das :ref:`Sound Pressure Level Bricklet <sound_pressure_level_bricklet>`
  empfohlen.
 

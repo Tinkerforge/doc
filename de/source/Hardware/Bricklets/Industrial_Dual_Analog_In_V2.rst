@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/industrial-dual-analog-in-v2-bricklet.html
+:shoplink: ../../../shop/bricklets/industrial-dual-analog-in-v2-bricklet.html
 
 .. include:: Industrial_Dual_Analog_In_V2.substitutions
    :start-after: >>>substitutions
@@ -9,9 +9,6 @@
 
 Industrial Dual Analog In Bricklet 2.0
 ======================================
-
-.. note::
-  Dieses Bricklet befindet sich aktuell noch in der Entwicklung!
 
 .. raw:: html
 

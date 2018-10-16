@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/analog-out-v3-bricklet.html
+:shoplink: ../../../shop/bricklets/analog-out-v3-bricklet.html
 
 .. include:: Analog_Out_V3.substitutions
    :start-after: >>>substitutions
@@ -9,9 +9,6 @@
 
 Analog Out Bricklet 3.0
 =======================
-
-.. note::
-  Dieses Bricklet befindet sich aktuell noch in der Entwicklung!
 
 .. raw:: html
 
@@ -24,7 +21,6 @@ Analog Out Bricklet 3.0
 	Dimensions/analog_out_v3_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
 
 	{% tfgalleryend %}
-
 
 Features
 --------

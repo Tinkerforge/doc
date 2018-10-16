@@ -25,6 +25,11 @@ IO-16 Bricklet
 
 	{% tfgalleryend %}
 
+.. note::
+
+ The IO-16 Bricklet is discontinued. We are selling our remaining stock. The
+ :ref:`IO-16 Bricklet 2.0 <io16_v2_bricklet>` is the recommended
+ replacement.
 
 Features
 --------

@@ -21,6 +21,11 @@ Barometer Bricklet
 
 	{% tfgalleryend %}
 
+.. note::
+
+ The Barometer Bricklet is discontinued. We are selling our remaining stock. The
+ :ref:`Barometer Bricklet 2.0 <barometer_v2_bricklet>` is the recommended
+ replacement.
 
 Features
 --------

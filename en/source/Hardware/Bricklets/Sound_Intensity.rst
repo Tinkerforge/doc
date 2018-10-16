@@ -26,7 +26,7 @@ Sound Intensity Bricklet
 
 .. note::
 
- The Sound Intensity Bricklet is discontinued. The
+ The Sound Intensity Bricklet is discontinued. We are selling our remaining stock. The
  :ref:`Sound Pressure Level Bricklet <sound_pressure_level_bricklet>` is the recommended
  replacement.
 

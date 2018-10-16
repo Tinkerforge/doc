@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklet/distance-ir-v2-bricklet.html
+:shoplink: ../../../shop/bricklet/distance-ir-v2-bricklet.html
 
 .. include:: Distance_IR_V2.substitutions
    :start-after: >>>substitutions
@@ -9,9 +9,6 @@
 
 Distance IR Bricklet 2.0
 ========================
-
-.. note::
-  This Bricklet is currently work-in-progress!
 
 .. raw:: html
 

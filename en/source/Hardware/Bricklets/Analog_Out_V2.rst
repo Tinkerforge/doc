@@ -23,6 +23,11 @@ Analog Out Bricklet 2.0
 
 	{% tfgalleryend %}
 
+.. note::
+
+ The Analog Out Bricklet 2.0 is discontinued. We are selling our remaining stock. The
+ :ref:`Analog Out Bricklet 3.0 <analog_out_v3_bricklet>` is the recommended
+ replacement.
 
 Features
 --------

@@ -24,7 +24,7 @@ Dust Detector Bricklet
 
 .. note::
 
- Das Dust Detector Bricklet ist abgekündigt.
+ Das Dust Detector Bricklet ist abgekündigt. Wir verkaufen noch unseren restlichen Lagerbestand.
  Als Ersatz wird das :ref:`Particulate Matter Bricklet <particulate_matter_bricklet>`
  empfohlen.
 

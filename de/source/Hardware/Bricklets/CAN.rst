@@ -25,7 +25,7 @@ CAN Bricklet
 
 .. note::
 
- Das CAN Bricklet ist abgekündigt.
+ Das CAN Bricklet ist abgekündigt. Wir verkaufen noch unseren restlichen Lagerbestand.
  Als Ersatz wird das :ref:`CAN Bricklet 2.0 <can_v2_bricklet>`
  empfohlen.
 

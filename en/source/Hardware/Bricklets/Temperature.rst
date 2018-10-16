@@ -24,6 +24,11 @@ Temperature Bricklet
 
 	{% tfgalleryend %}
 
+.. note::
+
+ The Temperature Bricklet is discontinued. We are selling our remaining stock. The
+ :ref:`Temperature Bricklet 2.0 <temperature_v2_bricklet>` is the recommended
+ replacement.
 
 Features
 --------

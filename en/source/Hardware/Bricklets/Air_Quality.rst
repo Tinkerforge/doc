@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/air-quality-bricklet.html
+:shoplink: ../../../shop/bricklets/air-quality-bricklet.html
 
 .. include:: Air_Quality.substitutions
    :start-after: >>>substitutions
@@ -9,9 +9,6 @@
 
 Air Quality Bricklet
 ====================
-
-.. note::
-  This Bricklet is currently work-in-progress!
 
 .. raw:: html
 

@@ -27,7 +27,7 @@ RS232 Bricklet
 
 .. note::
 
- Das RS232 Bricklet ist abgekündigt.
+ Das RS232 Bricklet ist abgekündigt. Wir verkaufen noch unseren restlichen Lagerbestand.
  Als Ersatz wird das :ref:`RS232 Bricklet 2.0 <rs232_v2_bricklet>`
  empfohlen.
 

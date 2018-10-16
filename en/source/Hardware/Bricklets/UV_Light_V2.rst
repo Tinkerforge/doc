@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/uv-light-v2-bricklet.html
+:shoplink: ../../../shop/bricklets/uv-light-v2-bricklet.html
 
 .. include:: UV_Light_V2.substitutions
    :start-after: >>>substitutions
@@ -9,9 +9,6 @@
 
 UV Light Bricklet 2.0
 =====================
-
-.. note::
-  This Bricklet is currently work-in-progress!
 
 .. raw:: html
 

@@ -24,7 +24,7 @@ Dust Detector Bricklet
 
 .. note::
 
- The Dust Detector Bricklet is discontinued. The
+ The Dust Detector Bricklet is discontinued. We are selling our remaining stock. The
  :ref:`Particulate Matter Bricklet <particulate_matter_bricklet>` is the recommended
  replacement.
 

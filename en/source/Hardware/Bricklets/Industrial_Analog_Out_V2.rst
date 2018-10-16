@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/industrial-analog-out-v2-bricklet.html
+:shoplink: ../../../shop/bricklets/industrial-analog-out-v2-bricklet.html
 
 .. include:: Industrial_Analog_Out_V2.substitutions
    :start-after: >>>substitutions
@@ -9,9 +9,6 @@
 
 Industrial Analog Out Bricklet 2.0
 ==================================
-
-.. note::
-  This Bricklet is currently work-in-progress!
 
 .. raw:: html
 

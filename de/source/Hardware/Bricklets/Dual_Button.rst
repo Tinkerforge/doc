@@ -23,6 +23,11 @@ Dual Button Bricklet
 
 	{% tfgalleryend %}
 
+.. note::
+
+ Das Dual Button Bricklet ist abgekündigt. Wir verkaufen noch unseren restlichen Lagerbestand.
+ Als Ersatz wird das :ref:`Dual Button Bricklet 2.0 <dual_button_v2_bricklet>`
+ empfohlen.
 
 Features
 --------

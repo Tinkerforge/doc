@@ -21,6 +21,11 @@ Industrial Analog Out Bricklet
 
 	{% tfgalleryend %}
 
+.. note::
+
+ Das Industrial Analog Out Bricklet ist abgekündigt. Wir verkaufen noch unseren restlichen Lagerbestand.
+ Als Ersatz wird das :ref:`Industrial Analog Out Bricklet 2.0 <industrial_analog_out_v2_bricklet>`
+ empfohlen.
 
 Features
 --------

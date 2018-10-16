@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/temperature-v2-bricklet.html
+:shoplink: ../../../shop/bricklets/temperature-v2-bricklet.html
 
 .. include:: Temperature_V2.substitutions
    :start-after: >>>substitutions
@@ -9,9 +9,6 @@
 
 Temperature Bricklet 2.0
 ========================
-
-.. note::
-  This Bricklet is currently work-in-progress!
 
 .. raw:: html
 

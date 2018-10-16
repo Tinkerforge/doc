@@ -24,7 +24,7 @@ Motion Detector Bricklet
 
 .. note::
 
- Das Motion Detector Bricklet ist abgekündigt.
+ Das Motion Detector Bricklet ist abgekündigt. Wir verkaufen noch unseren restlichen Lagerbestand.
  Als Ersatz wird das :ref:`Motion Detector Bricklet 2.0 <motion_detector_v2_bricklet>`
  empfohlen.
 

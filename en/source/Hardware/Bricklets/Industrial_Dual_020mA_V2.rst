@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/industrial-dual-0-20ma-v2-bricklet.html
+:shoplink: ../../../shop/bricklets/industrial-dual-0-20ma-v2-bricklet.html
 
 .. include:: Industrial_Dual_020mA_V2.substitutions
    :start-after: >>>substitutions
@@ -9,9 +9,6 @@
 
 Industrial Dual 0-20mA Bricklet 2.0
 ===================================
-
-.. note::
-  This Bricklet is currently work-in-progress!
 
 .. raw:: html
 

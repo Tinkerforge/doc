@@ -25,6 +25,11 @@ Distance IR Bricklet
 
 	{% tfgalleryend %}
 
+.. note::
+
+ The Distance IR Bricklet is discontinued. We are selling our remaining stock. The
+ :ref:`Distance IR Bricklet 2.0 <distance_ir_v2_bricklet>` is the recommended
+ replacement.
 
 Features
 --------

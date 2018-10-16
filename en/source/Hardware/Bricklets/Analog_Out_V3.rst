@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/analog-out-v3-bricklet.html
+:shoplink: ../../../shop/bricklets/analog-out-v3-bricklet.html
 
 .. include:: Analog_Out_V3.substitutions
    :start-after: >>>substitutions
@@ -9,9 +9,6 @@
 
 Analog Out Bricklet 3.0
 =======================
-
-.. note::
-  This Bricklet is currently work-in-progress!
 
 .. raw:: html
 

@@ -25,7 +25,7 @@ Real-Time Clock Bricklet
 
 .. note::
 
- The Real-Time Clock Bricklet is discontinued. The
+ The Real-Time Clock Bricklet is discontinued. We are selling our remaining stock. The
  :ref:`Real-Time Clock Bricklet 2.0 <real_time_clock_v2_bricklet>` is the recommended
  replacement.
 

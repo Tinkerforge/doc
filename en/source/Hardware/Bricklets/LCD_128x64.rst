@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/lcd-128x64-bricklet.html
+:shoplink: ../../../shop/bricklets/lcd-128x64-bricklet.html
 
 .. include:: LCD_128x64.substitutions
    :start-after: >>>substitutions
@@ -9,9 +9,6 @@
 
 LCD 128x64 Bricklet
 ===================
-
-.. note::
-  This Bricklet is currently work-in-progress!
 
 .. raw:: html
 

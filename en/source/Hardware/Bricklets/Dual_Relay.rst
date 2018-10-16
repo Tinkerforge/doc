@@ -26,7 +26,7 @@ Dual Relay Bricklet
 
 .. note::
 
- The Dual Relay Bricklet is discontinued. The
+ The Dual Relay Bricklet is discontinued. We are selling our remaining stock. The
  :ref:`Industrial Dual Relay Bricklet <industrial_dual_relay_bricklet>` is the recommended
  replacement.
 

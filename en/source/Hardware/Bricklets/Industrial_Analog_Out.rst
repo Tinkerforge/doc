@@ -21,6 +21,11 @@ Industrial Analog Out Bricklet
 
 	{% tfgalleryend %}
 
+.. note::
+
+ The Industrial Analog Out Bricklet is discontinued. We are selling our remaining stock. The
+ :ref:`Industrial Analog Out Bricklet 2.0 <industrial_analog_out_v2_bricklet>` is the recommended
+ replacement.
 
 Features
 --------
