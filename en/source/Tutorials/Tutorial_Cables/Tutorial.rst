@@ -98,16 +98,31 @@ Bricklet Cable 7 pole - 7 pole (7p-7p)
 The 7p-7p cables can be used to connect new Bricklets with 7 pole
 connectors with
 
-* Isolator Bricklet (not yet released),
+* :ref:`Isolator Bricklet <isolator_bricklet>`,
 * Bricklet HAT (not yet released) and
 * Bricklet HAT Zero (not yet released).
 
 It is not possible to connect a old 10 pole Bricklet to the Isolator or a
 HAT.
 
+Below you can see a Isolator Bricklet connected to a Master Brick and
+Voltage/Current Bricklet. In this configuration it needs a 7p-10p cable to
+the left and a 7p-7p cable to the right.
+
+.. image:: /Images/Bricklets/bricklet_isolator_cables_800.jpg
+   :scale: 100 %
+   :alt: Isolator Bricklet with 7p-10p and 7p-7p cable
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_isolator_cables_1200.jpg
+
+
 Available cables:
 
-* Comming soon
+* `Bricklet Cable 6cm (7p-7p) <https://www.tinkerforge.com/en/shop/accessories/bricklet-cable-6cm-7p-7p.html>`__
+* `Bricklet Cable 15cm (7p-7p) <https://www.tinkerforge.com/en/shop/accessories/bricklet-cable-15cm-7p-7p.html>`__
+* `Bricklet Cable 50cm (7p-7p) <https://www.tinkerforge.com/en/shop/accessories/bricklet-cable-50cm-7p-7p.html>`__
+* `Bricklet Cable 100cm (7p-7p) <https://www.tinkerforge.com/en/shop/accessories/bricklet-cable-100cm-7p-7p.html>`__
+* `Bricklet Cable 200cm (7p-7p) <https://www.tinkerforge.com/en/shop/accessories/bricklet-cable-200cm-7p-7p.html>`__
 
 
 Future Outlook
