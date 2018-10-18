@@ -61,7 +61,7 @@ Der IAQ Index hat einen Wertebereich von 0-500:
 Typische Anwendungen für dieses Bricklet sind die Überwachung der Luftqualität,
 Umweltstatistiken, Hausautomatisierung usw.
 
-Das Analog Out Bricklet 3.0 hat einen 7 Pol Bricklet Stecker und wird
+Das Air Quality Bricklet hat einen 7 Pol Bricklet Stecker und wird
 mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
 
 
