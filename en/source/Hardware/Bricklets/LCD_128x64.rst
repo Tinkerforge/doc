@@ -70,7 +70,7 @@ Touch demonstration:
 	  <source src="../../_images/Videos/bricklet_lcd_128x64_video.webm" type="video/webm">
 	</video>
 
-LCD 128x64 Bricklet together with :ref:`air_quality_bricklet <Air Quality Bricklet>`:
+LCD 128x64 Bricklet together with :ref:`Air Quality Bricklet <air_quality_bricklet>`:
 
 .. raw:: html
 
