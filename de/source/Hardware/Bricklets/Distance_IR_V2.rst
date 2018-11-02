@@ -1,5 +1,5 @@
 
-:shoplink: ../../../shop/bricklet/distance-ir-v2-bricklet.html
+:shoplink: ../../../shop/bricklet/distance-ir-10-80cm-v2-bricklet.html
 
 .. include:: Distance_IR_V2.substitutions
    :start-after: >>>substitutions
