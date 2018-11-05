@@ -77,6 +77,19 @@ Ressourcen
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/particulate-matter-bricklet/zipball/master>`__)
 * 3D Modell (`Online ansehen <https://autode.sk/2rFjjDp>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/particulate_matter/particulate-matter.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/particulate_matter/particulate-matter.FCStd>`__)
 
+.. _particulate_matter_bricklet_laser_diode:
+
+Laserdiode Lebensdauer
+----------------------
+
+Das Particulate Matter Bricklet nutzt eine Laserdiode. Die Lebensdauer 
+der Laserdiode beträgt ca. 8000 Stunden bei kontinuierlicher Nutzung. 
+
+Wenn Messungen in größeren Abständen stattfinden sollen (z.B. stündlich) 
+lohnt es sich die Laserdiode zwischen den Messungen auszumachen.
+
+Der Sensor benötigt ca. 30 Sekunden nach der Aktivierung um sich einzuschwingen
+und stabile Werte zu produzieren.
 
 .. _particulate_matter_bricklet_test:
 

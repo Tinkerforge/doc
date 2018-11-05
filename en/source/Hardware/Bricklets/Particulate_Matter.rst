@@ -77,6 +77,20 @@ Resources
 * Source code and design files (`Download <https://github.com/Tinkerforge/particulate-matter-bricklet/zipball/master>`__)
 * 3D model (`View online <https://autode.sk/2rFjjDp>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/particulate_matter/particulate-matter.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/particulate_matter/particulate-matter.FCStd>`__)
 
+.. _particulate_matter_bricklet_laser_diode:
+
+Laser Diode Lifetime
+--------------------
+
+The Particulate Matter Bricklet uses a laser diode. The diode has a lifetime of about
+8000 hours of continous use.
+
+If you want to measure in an interval with a long idle time (e.g. hourly) you should
+turn the laser diode off between the measurements to increase the longevity of the
+Bricklet.
+
+The sensor takes about 30 seconds after it is enabled to settle and produce stable
+values.
 
 .. _particulate_matter_bricklet_test:
 
