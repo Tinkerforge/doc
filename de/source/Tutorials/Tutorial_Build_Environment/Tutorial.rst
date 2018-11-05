@@ -137,7 +137,7 @@ Für diese gits muss auch ein Symlink auf die ``bricklib2`` gesetzt werden::
 
 Dann kann der Quellcode mit einem normalen ``make`` Aufruf gebaut werden::
 
- cd ~/tf/temperature-bricklet/software
+ cd ~/tf/humidity-v2-bricklet/software
  make
 
 Das gebaute Plugin liegt im ``software/build/`` Verzeichnis. In diesem
