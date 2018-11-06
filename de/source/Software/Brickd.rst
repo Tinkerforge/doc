@@ -178,6 +178,10 @@ den Kommandozeilenparameter `--version`:
 
    brickd --version
 
-* macOS::
+* macOS (bis Brick Daemon 2.2.1)::
 
    /usr/libexec/brickd.app/Contents/MacOS/brickd --version
+
+* macOS (seit Brick Daemon 2.2.2)::
+
+   /usr/local/libexec/brickd.app/Contents/MacOS/brickd --version

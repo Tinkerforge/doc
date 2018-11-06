@@ -170,6 +170,10 @@ installed with the `--version` commandline argument:
 
    brickd --version
 
-* macOS::
+* macOS (until Brick Daemon 2.2.1)::
 
    /usr/libexec/brickd.app/Contents/MacOS/brickd --version
+
+* macOS (since Brick Daemon 2.2.2)::
+
+   /usr/local/libexec/brickd.app/Contents/MacOS/brickd --version
