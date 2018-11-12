@@ -846,7 +846,7 @@ class CSharpObject(ObjectDescription):
 
         indextext = self.get_index_text(name)
         if indextext:
-            self.indexnode['entries'].append(fixup_index_entry(('single', indextext, name, name)))
+            self.indexnode['entries'].append(fixup_index_entry(('single', indextext, name, name, 'foobar')))
 
     def before_content(self):
         lastname = self.names and self.names[-1]

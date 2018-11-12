@@ -301,7 +301,7 @@ class TVPLObject(ObjectDescription):
 
         indextext = self.get_index_text(modname, name_cls)
         if indextext:
-            self.indexnode['entries'].append(fixup_index_entry(('single', indextext, fullname, fullname)))
+            self.indexnode['entries'].append(fixup_index_entry(('single', indextext, fullname, fullname, 'foobar')))
 
     def before_content(self):
         # needed for automatic qualification of members (reset in subclasses)
@@ -479,7 +479,7 @@ class TVPLModule(Directive):
         if not noindex:
             indextext = _('%s (module)') % modname
             inode = addnodes.index(entries=[('single', indextext,
-                                             'module-' + modname, modname)])
+                                             'module-' + modname, modname, 'foobar')])
             ret.append(inode)
         return ret
 

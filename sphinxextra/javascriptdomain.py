@@ -228,7 +228,7 @@ class JavaScriptObject(ObjectDescription):
 
         indextext = self.get_index_text(modname, name_cls)
         if indextext:
-            self.indexnode['entries'].append(fixup_index_entry(('single', indextext, fullname, '')))
+            self.indexnode['entries'].append(fixup_index_entry(('single', indextext, fullname, '', 'foobar')))
 
     def before_content(self):
         # needed for automatic qualification of members (reset in subclasses)
@@ -433,7 +433,7 @@ class JavaScriptModule(Directive):
             ret.append(targetnode)
             indextext = _('%s (module)') % modname
             inode = addnodes.index(entries=[('single', indextext,
-                                             'module-' + modname, '')])
+                                             'module-' + modname, '', 'foobar')])
             ret.append(inode)
         return ret
 
