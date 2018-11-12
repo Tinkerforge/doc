@@ -1406,7 +1406,7 @@ def generate(path):
             print('Generating Bricks_{0}.table'.format(bindings_info.software_doc_suffix))
             write_if_changed(os.path.join(path, 'source', 'Software', 'Bricks_{0}.table'.format(bindings_info.software_doc_suffix)), make_api_bindings_devices_table(bindings_info, brick_infos, 'Brick', False))
 
-            print('Generating Bricks_{0}._Discontinuedtable'.format(bindings_info.software_doc_suffix))
+            print('Generating Bricks_{0}_Discontinued.table'.format(bindings_info.software_doc_suffix))
             write_if_changed(os.path.join(path, 'source', 'Software', 'Bricks_{0}_Discontinued.table'.format(bindings_info.software_doc_suffix)), make_api_bindings_devices_table(bindings_info, brick_infos, 'Brick', True))
         else:
             print('Generating Bricks_{0}.toctree'.format(bindings_info.software_doc_suffix))
