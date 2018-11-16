@@ -31,6 +31,7 @@ Features
 * Ausgangsspannung bis zu 36V
 * Galvanisch getrennt
 * Eine Status-LED pro Kanal
+* PWM-Ausgabe mit einer Frequenz bis zu 40kHz
 
 
 .. _industrial_digital_out_4_v2_bricklet_description:
