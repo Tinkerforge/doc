@@ -31,6 +31,7 @@ Features
 * Output voltages up to 36V
 * Galvanically isolated
 * Status LED per channel
+* PWM output with frequency up to 40kHz
 
 
 .. _industrial_digital_out_4_v2_bricklet_description:
