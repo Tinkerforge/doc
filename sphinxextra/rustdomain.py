@@ -188,7 +188,6 @@ class DefinitionParser(object):
             return_type = self._parse_type()
         
         result = addnodes.desc_signature("pub fn " + self.definition)
-        result['device'] = bricklet_name.replace("Bricklet", "").replace("Brick", "")
         result['struct'] = bricklet_name + "::"
         result['fn'] = fn_name
         result += addnodes.desc_addname("pub fn ", "pub fn ")
@@ -226,7 +225,6 @@ class DefinitionParser(object):
         result += addnodes.desc_addname(device_name + "::", device_name + "::")
         result += addnodes.desc_name(constant_name, constant_name)
         result += addnodes.desc_type(t)
-        result['device'] = device_name
         result['struct'] = device_name + "::"
         result['fn'] = constant_name
         return result
@@ -255,7 +253,10 @@ class RustObject(ObjectDescription):
         objects = self.env.domaindata['rust']['objects']
         fullname = signode['struct'] + signode['fn']
         signode['ids'].append(fullname)
-        self.state.document.note_explicit_target(signode) # has to happen _after_ the fullname is added to the signodes' ids, as note_explicit_target generates the html id-attributes (i.e. link anchors)
+        
+        # has to happen _after_ the fullname is added to the signodes' ids, as note_explicit_target generates the html id-attributes (i.e. link anchors)
+        self.state.document.note_explicit_target(signode)
+        
         if fullname in objects:
             self.env.warn(
                     self.env.docname,
@@ -280,7 +281,6 @@ class RustObject(ObjectDescription):
         parser = DefinitionParser(sig)
         try:
             rv = self.parse_definition(parser)
-            signode['device'] = rv['device']
             signode['struct'] = rv['struct']
             signode['fn'] = rv['fn']
             parser.assert_end()
@@ -310,33 +310,6 @@ class DefinitionError(Exception):
     def __str__(self):
         return unicode(self.encode('utf-8'))
 
-class RustCurrentNamespace(Directive):
-    """This directive is just to tell Sphinx that we're documenting
-    stuff in namespace foo.
-    """
-
-    has_content = False
-    required_arguments = 1
-    optional_arguments = 0
-    final_argument_whitespace = True
-    option_spec = {}
-
-    def run(self):
-        return
-        env = self.state.document.settings.env
-        if self.arguments[0].strip() in ('NULL', '0', 'nullptr'):
-            env.temp_data['rust:prefix'] = None
-        else:
-            parser = DefinitionParser(self.arguments[0])
-            try:
-                prefix = parser.parse_type()
-                parser.assert_end()
-            except DefinitionError, e:
-                self.env.warn(self.env.docname,
-                              e.description, self.lineno)
-            else:
-                env.temp_data['rust:prefix'] = prefix
-        return []
 
 class RustConstantObject(RustObject):
     def get_index_text(self, name):
@@ -353,19 +326,13 @@ class RustConstantObject(RustObject):
 
 class RustXRefRole(XRefRole):
     def _fix_parens(self, env, has_explicit_title, title, target):
-        if not has_explicit_title:
-            if title.endswith('()'):
-                # remove parentheses
-                title = title[:-2]
-            if env.config.add_function_parentheses:
-                # add them back to all occurrences if configured
-                #title += '()' # Matthias: dont add them back
-                pass
+        # remove parentheses
+        if not has_explicit_title and title.endswith('()'):                
+            title = title[:-2]
         # remove parentheses from the target too
         if target.endswith('()'):
             target = target[:-2]
         return title, target
-
 
     def process_link(self, env, refnode, has_explicit_title, title, target):
         refnode['rust:parent'] = env.temp_data.get('rust:parent')
@@ -378,7 +345,6 @@ class RustXRefRole(XRefRole):
                 dcolon = title.rfind('::')
                 if dcolon != -1:
                     title = title[dcolon + 2:]
-        #return title, "AccelerometerBricklet::get_acceleration"
         return title, target
 
 
