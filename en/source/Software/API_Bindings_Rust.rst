@@ -66,9 +66,9 @@ connected Stepper Brick, which you can figure out using Brick Viewer:
 
 .. code-block:: rust
 
-  private static string HOST = "localhost";
-  private static int PORT = 4223;
-  private static string UID = "XYZ"; // Change to your UID
+    const HOST: &str = "localhost";
+    const PORT: u16 = 4223;
+    const UID: &str = "XXYYZZ"; // Change XXYYZZ to the UID of your Stepper Brick.
 
 Now we can build and run the project with ``cargo run``.
 
