@@ -90,7 +90,7 @@ Current Consumption               | 40mW (8mA at 5V, backlight off)
                                   | 545mW (107mA at 5V, backlight at 100%)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Display Resolution                128x64 pixel, 26x8 characters
+Display Resolution                128x64 pixel, 22x8 characters
 Display Size                      7.1cm (2.8")
 Display Colors                    Black/White
 --------------------------------  ------------------------------------------------------------
@@ -169,13 +169,49 @@ We provide examples for:
 * `Visual Basic .NET <https://raw.githubusercontent.com/Tinkerforge/lcd-128x64-bricklet/master/software/examples/vbnet/ExampleScribble.vb>`__.
 
 
+.. _lcd_128x64_bricklet_gui:
+
+Graphical User Interface
+------------------------
+
+.. raw:: html
+
+ <iframe class="youtube" width="640" height="360" src="https://www.youtube-nocookie.com/embed/cvemPnlb9Dw" frameborder="0" allowfullscreen></iframe>
+
+Since firmware version 2.0.2 the LCD 128x64 Bricklet comes with an API for an easy
+to use graphical user interface (GUI). The user interface consists of four basic 
+UI elements:
+
+* **Buttons**: Up to 12 buttons can be placed with arbitrary position/width/height and custom text. They automatically generate a press- and release-event.
+* **Slider**: Up to 6 slider can be placed at arbitrary position/length. You can use horizontal and vertical slider. They automatically generate a position-event. 
+* **Graphs**: Up to 4 graphs can be placed with arbitrary position/width/height. You can use dot-, line- and bar-graphs and a caption text for the x and y axis can be used. You can stream a list of data-points, the graph is drawn automatically.
+* **Tabs**: Up to 10 tabs can be used. Tabs can have text or icons. They automatically generate an event on tab selection changes.
+
+These GUI elements can be added, updated and removed with an easy-to-use API. Interaction is done with 
+callbacks on a user-event (click/swipe) basis. See the examples for your programming languages in the API
+documentation for the details.
+
+The LCD 128x64 Bricklet has a buffer for the normal drawing functions (WritePixels, WriteLine, DrawBox, etc)
+and an additional buffer for the GUI elements. The GUI buffer will be drawn on top of the standard buffer.
+
+Additionally both of those buffers can be double-buffered for smooth uninterrupted drawing.
+
+This means that GUI will always stay on the display and react to user interaction until explicitly removed.
+With this approach the cooperation between GUI elements and self drawn addtions is easy to achieve, since
+there is never any `z-fighting <https://en.wikipedia.org/wiki/Z-fighting>`__.
+
+For Example: If you want to use a button with an icon, you can create a button with the position, 
+width/height as you need it and leave the text empty. After that you can draw the icon inside
+of the button with the standard WritePixels function. This will work without problems and the highlight
+effect of the button during a click will not permanently overwrite your custom icon.
+
 .. _lcd_128x64_bricklet_font:
 
 Font
 ----
 
 The Bricklet has an embedded font (ASCII subset in green) that allows fast and
-easy text rendering (up to 26x8 characters):
+easy text rendering (up to 22x8 characters):
 
 .. image:: /Images/Bricklets/bricklet_lcd_128x64_font.png
    :scale: 100 %

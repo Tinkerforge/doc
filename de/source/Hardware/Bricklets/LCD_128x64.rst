@@ -89,7 +89,7 @@ Stromverbrauch                    | 40mW (8mA bei 5V, Hintergrundbeleuchtung aus
                                   | 545mW (107mA bei 5V, Hintergrundbeleuchtung 100%)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Display-Auflösung                 128x64 Pixel, 26x8 Zeichen
+Display-Auflösung                 128x64 Pixel, 22x8 Zeichen
 Display-Größe                     7,1cm (2,8")
 Display-Farben                    Schwarz/Weiß
 --------------------------------  ------------------------------------------------------------
@@ -166,13 +166,54 @@ Wir haben Beispiele für:
   (mit `rgd <http://www.rubydoc.info/gems/rgd>`__) und
 * `Visual Basic .NET <https://raw.githubusercontent.com/Tinkerforge/lcd-128x64-bricklet/master/software/examples/vbnet/ExampleScribble.vb>`__.
 
+.. _lcd_128x64_bricklet_gui:
+
+Grafische Benutzeroberfläche
+----------------------------
+
+.. raw:: html
+
+ <iframe class="youtube" width="640" height="360" src="https://www.youtube-nocookie.com/embed/cvemPnlb9Dw" frameborder="0" allowfullscreen></iframe>
+
+Seit Firmware Version 2.0.2 hat das LCD 128x64 Bricklet eine API für eine einfach
+zu benutzende grafische Benutzeroberfläche (GUI). Die Oberfläche basiert auf
+vier grundelegenden UI-Elementen:
+
+* **Buttons**: Bis zu 12 Buttons können an eine beliebige Position mit beliebiger Breite/Höhe und benuzterdefiniertem Text positioniert werden. Die Buttons können automatisch ein Press-/Release-Event erzeugen.
+* **Slider**: Bis zu 6 Slider können an eine beliebige Position mit beliebiger Länge positioniert werden. Es können horizontale und vertikale Slider verwendet werden. Sie können automatisch ein Position-Event erzeugen.
+* **Graphen**: Bis zu 4 Graphen können an eine beliebige Position mit beliebiger Größe positioniert werden. Es können Dot-, Line- und Bar-Graphen gezeichnet und eine Beschriftung der X- und Y-Achse hinzugefügt werden. Die Datenpunkte können per API gestreamt werden, der Graph wird automatisch gezeichnet.
+* **Tabs**: Bis zu 10 Tabs können verwendet werden. Tabs können entweder Text oder Icons haben. Sie können Selektion automatisch erkennen und ein entsprechendes Event generieren.
+
+Diese GUI-Elemente können mit einer einfach zu benutzenden API hinzugefügt, aktualisiert 
+und entfernt werden. Interaktion wird über Callbacks auf der Basis von Nutzer-Events 
+erzeugt (per klicken/wischen). Siehe GUI-Beispiele in deiner Programmiersprache in der
+API-Dokumentation für Details.
+
+Das LCD 128x64 Bricklet hat einen Buffer für die normalen Zeichnen-Funktionen (WritePixels,
+WriteLine, DrawBox, etc) und einen zusätzlichen Buffer für die GUI-Elemente. Der GUI-Buffer
+wird über dem Standard-Buffer gezeichnet.
+
+Zusätzlich kann für beide Buffer Double-Buffering für flüssiges und ununterbrochenes zeichnen
+verwendet werden.
+
+Dies bedeutet, dass das GUI immer auf dem Display bleibt und auf Nutzer-Interaktion reagiert
+bis das jeweilige Element explizit entfernt wird. Durch diesen Ansatz ist eine 
+Kooperation zwischen GUI und eigenen gezeichneten Elementen einfach möglich, da es nie
+zu `z-fighting <https://en.wikipedia.org/wiki/Z-fighting>`__ kommen kann.
+
+Beispiel: Wenn ein Button mit einem Icon anstatt eines Textes gezeichnet werden soll, kann
+zuerst der Button an die gewünschte Stelle mit der gewünschen Größe ohne Text erstellt werden.
+Danach kann dann das Icon in den Buffer mit der normalen WritePixels-Funktion gezeichnet werden.
+Dies funktioniert ohne Probleme auch dann noch wenn der Nutzer durch klicken den Highlight-Effekt
+erzeugt, da der Effekt den Icon nicht permanent überschreibt.
+
 .. _lcd_128x64_bricklet_font:
 
 Zeichensatz
 -----------
 
 Das Bricklet beinhaltet folgenden Zeichensatz (ASCII ist grün markiert), mit
-dem schnell und einfach Text (bis zu 26x8 Zeichen) auf dem Display angezeigt
+dem schnell und einfach Text (bis zu 22x8 Zeichen) auf dem Display angezeigt
 werden kann:
 
 .. image:: /Images/Bricklets/bricklet_lcd_128x64_font.png
