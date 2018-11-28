@@ -205,7 +205,7 @@ Beispiel: Wenn ein Button mit einem Icon anstatt eines Textes gezeichnet werden 
 zuerst der Button an die gewünschte Stelle mit der gewünschen Größe ohne Text erstellt werden.
 Danach kann dann das Icon in den Buffer mit der normalen WritePixels-Funktion gezeichnet werden.
 Dies funktioniert ohne Probleme auch dann noch wenn der Nutzer durch klicken den Highlight-Effekt
-erzeugt, da der Effekt den Icon nicht permanent überschreibt.
+erzeugt, da der Effekt das Icon nicht permanent überschreibt.
 
 .. _lcd_128x64_bricklet_font:
 
