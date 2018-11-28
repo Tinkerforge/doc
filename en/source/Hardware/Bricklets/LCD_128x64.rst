@@ -20,6 +20,10 @@ LCD 128x64 Bricklet
 	Bricklets/bricklet_lcd_128x64_bottom_[?|?].jpg           LCD 128x64 Bricklet
 	Cases/bricklet_lcd_128x64_case_front_master_[?|?].jpg    LCD 128x64 Bricklet with case
 	Cases/bricklet_lcd_128x64_case_back_master_[?|?].jpg     LCD 128x64 Bricklet with case
+	Bricklets/bricklet_lcd_128x64_buttn_screen_[?|?].jpg     LCD 128x64 Bricklet with GUI
+	Bricklets/bricklet_lcd_128x64_graph_screen_[?|?].jpg     LCD 128x64 Bricklet with GUI
+	Bricklets/bricklet_lcd_128x64_slider_screen_[?|?].jpg    LCD 128x64 Bricklet with GUI
+	Bricklets/bricklet_lcd_128x64_mix_screen_[?|?].jpg       LCD 128x64 Bricklet with GUI
 	Bricklets/bricklet_lcd_128x64_brickv_[100|].jpg          LCD 128x64 Bricklet in Brick Viewer
 	Dimensions/lcd_128x64_bricklet_dimensions_[100|600].png  Outline and drilling plan
 
