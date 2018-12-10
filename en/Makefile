@@ -34,6 +34,7 @@ generate:
 	python ../generate_tables.py
 	python ../generate_common_substitutions.py
 	python ../generate_weather_station_substitutions.py
+	python ../generate_tabletop_weather_station_substitutions.py
 	python ../generate_hardware_hacking_substitutions.py
 	python ../generate_server_room_monitoring_substitutions.py
 
