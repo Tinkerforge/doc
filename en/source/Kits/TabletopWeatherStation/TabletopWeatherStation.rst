@@ -33,7 +33,7 @@ Features
 
 * Open source touch-capable Tabletop Weather Station
 * Measures Temperature, Humidity, Air Pressure and Air Quaility Index
-* Main Application available (touch-capable, with graphs, database logging)
+* Demo Application available (touch-capable, with graphs, database logging)
 * Control over USB, Wi-Fi, Ethernet or with RED Brick
 * Internet of Things (IoT) capable
 
@@ -62,7 +62,7 @@ available.
 
 Programming of the weather station can be done with all of the available
 bindings (|bindings|). Example implementations for many supported programming languages
-and a main application are available. The main application offers 
+and a demo application are available. The demo application offers 
 graphs, logging to database, control via touch, etc. It is written in Python
 and available for Windows, Linux and macOS.
 
@@ -74,7 +74,7 @@ wireless outdoor weather station and sensor:
 * `Outdoor Weather Station WS-6147 <https://www.tinkerforge.com/en/shop/outdoor-weather-station-ws-6147.html>`__
 * `Temperature/Humidity Sensor TH-6148 <https://www.tinkerforge.com/en/shop/temperature-humidity-sensor-th-6148.html>`__
 
-Both are supported by the main application out-of-the-box.
+Both are supported by the demo application out-of-the-box.
 
 TODO: Video
 
@@ -116,7 +116,7 @@ Resources
 ---------
 
 * Tabletop Weather Station Case as FreeCAD CAD files (`Download <TODO>`__)
-* TODO: Main Application Download
+* TODO: Demo Application Download
 * Simple examples: |examples_download|
 
 
@@ -146,13 +146,13 @@ everything will work if it is screwed together in the weather station
 enclosure.
 
 
-.. _tabletop_weather_station_main:
+.. _tabletop_weather_station_demo:
 
-Main Application
+Demo Application
 ----------------
 
-The main application for the Tabletop Weather Station is written in Python. You
-can find the source code `here <https://github.com/Tinkerforge/tabletop-weather-station/tree/master/main>`__ 
+The demo application for the Tabletop Weather Station is written in Python. You
+can find the source code `here <https://github.com/Tinkerforge/tabletop-weather-station/tree/master/demo>`__ 
 and executables for Linux, macOS and Windows are available 
 `here <TBD>`__.
 
@@ -168,7 +168,7 @@ have a text-label or icon. The touch-click/gesture and GUI callbacks of the
 LCD 128x64 Bricklet are passed through to the screen if it is selected.
 
 You can add your own screens in the 
-`custom_screens.py <https://github.com/Tinkerforge/tabletop-weather-station/blob/master/main/custom_screens.py>`__.
+`custom_screens.py <https://github.com/Tinkerforge/tabletop-weather-station/blob/master/demo/custom_screens.py>`__.
 
 A simple screen that displays the curent time looks as follows::
 
@@ -192,12 +192,12 @@ A simple screen that displays the curent time looks as follows::
 As a minimum you have to define a text (or optionally an icon) and a ``draw_init`` as well
 ass ``draw_update`` function. For examples on how to react to touch-gestures and similar
 you can take a look at the already implemented screens in
-`screens.py <https://github.com/Tinkerforge/tabletop-weather-station/blob/master/main/screens.py>`__.
+`screens.py <https://github.com/Tinkerforge/tabletop-weather-station/blob/master/demo/screens.py>`__.
 
 The code above will create the following additional tab:
 
 Pull request for new screens are definitely welcome, we are looking forward to integrate
-your fancy screens into the main applications :-).
+your fancy screens into the demo applications :-).
 
 
 .. _tabletop_weather_station_construction:
@@ -214,7 +214,7 @@ Examples
 --------
 
 If you don't want to use Python or you want to write your own program that does not use the
-:ref:`Main Application <tabletop_weather_station_main>` as a starting point, you can take
+:ref:`Demo Application <tabletop_weather_station_demo>` as a starting point, you can take
 a look at the following examples:
 
 .. include:: TabletopWeatherStation.substitutions
