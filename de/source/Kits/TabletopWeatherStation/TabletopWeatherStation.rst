@@ -1,5 +1,5 @@
 
-:shoplink: ../../../shop/kits/starter-kit-tabletop-weather-station.html
+:shoplink: ../../../shop/kits/tabletop-weather-station.html
 
 .. include:: TabletopWeatherStation.substitutions
    :start-after: >>>general
