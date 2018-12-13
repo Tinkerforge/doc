@@ -168,7 +168,11 @@ Graphen können mit einer einstellbaren Zeitbasis angezeigt werden und die Daten
 in einer sqlite Datenbank geloggt. Konfigurationen können per Touch-Bedienung über die
 Wetterstation selbst eingestellt werden.
 
-TODO: Fotos?
+.. image:: /Images/Kits/tabletop_weather_station_gui_600.jpg
+   :scale: 100 %
+   :alt: GUI auf dem LCD 128x64 Bricklet
+   :align: center
+   :target: ../../_images/Kits/tabletop_weather_station_gui_1000.jpg
 
 Die Anwendung ist in "Screens" aufgeteilt. Jeder Screen wird als ein Tab mit Text-Label
 oder Icon dargestellt. Touch-Klick/Gesten und GUI-Callbacks werden zur einfachen
