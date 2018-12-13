@@ -11,23 +11,34 @@
 Tisch-Wetterstation
 ===================
 
-..
-	.. raw:: html
+.. raw:: html
 
-		{% tfgallery %}
+	{% tfgallery %}
 
-		Kits/tabletop_weather_station_table_[100|800].jpg               Wetterstation: Basiskit auf Tisch
-		Kits/tabletop_weather_station_black_table_[100|800].jpg         Wetterstation (schwarz): Basiskit auf Tisch
-		Kits/tabletop_weather_station_wall_far_[100|800].jpg            Wetterstation: Mit WLAN an Wand
-		Kits/tabletop_weather_station_wall_near_[100|800].jpg           Wetterstation: Mit WLAN an Wand
-		Kits/tabletop_weather_station_construction_rpi_front_[?|?].jpg  Wetterstation: Mit Raspberry Pi
-		Kits/tabletop_weather_station_demo_[100|].jpg                   Wetterstation: Demo Anwendung
-		Kits/tabletop_weather_station_xively_graphs_[100|800].jpg       Wetterstation: Xively-Graphen
-		Kits/tabletop_weather_station_lcd_all_[100|orig].jpg            Wetterstation: Verschiedene Modi
-		Kits/tabletop_weather_station_website_[100|orig].jpg            Wetterstation: Eingebettet in einer Webseite
-		Kits/tabletop_weather_station_buttons_assembled_[100|800].jpg   Wetterstation: Mit großen Drucktastern auf der linken Seite
+	Kits/tabletop_weather_station_transparent_right_titled_[?|?].jpg    Tisch-Wetterstation
+	Kits/tabletop_weather_station_content_[?|?].jpg                     Tisch-Wetterstation
+	Kits/tabletop_weather_station_transparent_back_[?|?].jpg            Tisch-Wetterstation
+	Kits/tabletop_weather_station_transparent_back_titled_[?|?].jpg     Tisch-Wetterstation
+	Kits/tabletop_weather_station_transparent_titled_[?|?].jpg          Tisch-Wetterstation
+	Kits/tabletop_weather_station_transparent_titled_pwr_[?|?].jpg      Tisch-Wetterstation
+	Kits/tabletop_weather_station_complete_transparent_back_[?|?].jpg   Tisch-Wetterstation
+	Kits/tabletop_weather_station_black_right_back_[?|?].jpg            Tisch-Wetterstation
+	Kits/tabletop_weather_station_black_right_titled_[?|?].jpg          Tisch-Wetterstation
+	Kits/tabletop_weather_station_blue_back_[?|?].jpg                   Tisch-Wetterstation
+	Kits/tabletop_weather_station_blue_left_back_[?|?].jpg              Tisch-Wetterstation
+	Kits/tabletop_weather_station_blue_right_titled_[?|?].jpg           Tisch-Wetterstation
+	Kits/tabletop_weather_station_colors_[?|?].jpg                      Tisch-Wetterstation
+	Kits/tabletop_weather_station_colors_side_by_side_[?|?].jpg         Tisch-Wetterstation
+	Kits/tabletop_weather_station_frosted_back_[?|?].jpg                Tisch-Wetterstation
+	Kits/tabletop_weather_station_frosted_right_titled_[?|?].jpg        Tisch-Wetterstation
+	Kits/tabletop_weather_station_frosted_titled_[?|?].jpg              Tisch-Wetterstation
+	Kits/tabletop_weather_station_screen_graph_[?|?].jpg                Tisch-Wetterstation
+	Kits/tabletop_weather_station_screen_main_[?|?].jpg                 Tisch-Wetterstation
+	Kits/tabletop_weather_station_screen_outdoor_[?|?].jpg              Tisch-Wetterstation
+	Kits/tabletop_weather_station_screen_sensor_[?|?].jpg               Tisch-Wetterstation
+	Kits/tabletop_weather_station_screen_settings_[?|?].jpg             Tisch-Wetterstation
 
-		{% tfgalleryend %}
+	{% tfgalleryend %}
 
 Features
 --------
