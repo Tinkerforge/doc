@@ -33,7 +33,7 @@ Features
 --------
 
 * Open Source touchfähige Tisch-Wetterstation
-* Misst Temperatur, Luftfeuchtigkeit, Luftdruck und Air Quality Index (Luftqulität)
+* Misst Temperatur, Luftfeuchtigkeit, Luftdruck und Luftqualität (Air Quality Index)
 * Demo-Anwendung verfügbar (touchfähig, mit Graphen, Logging in Datenbank)
 * Steuerbar über USB, WLAN, Ethernet oder mit RED Brick
 * Internet der Dinge (IoT) fähig
@@ -68,7 +68,7 @@ stehen zur Verfügung. Eine Demo-Anwendung implementiert Steuerung über Touch,
 Trendansicht per Graphen, Logging in einer Datenbank usw. Sie ist in Python
 geschrieben und für Windows, Linux und macOS verfügbar.
 
-Das Kit kan mit dem :ref:`Outdoor Weather Bricklet <outdoor_weather_bricklet>`
+Das Kit kann mit dem :ref:`Outdoor Weather Bricklet <outdoor_weather_bricklet>`
 erweitert werden. Montagelöcher und eine Öffnung für die Antenne sind im Gehäuse
 bereits vorgesehen. Mit dem Bricklet können die folgenden Funk-Außenwetterstationen und
 Sensoren ausgelesen werden:
@@ -150,7 +150,7 @@ Demo-Anwendung
 
 Die Demo-Anwendung für die Tisch-Wetterstation ist in Python geschrieben. Der
 Source Code kann `hier <https://github.com/Tinkerforge/tabletop-weather-station/tree/master/main>`__
-gefunden werden. Ausführbare Dateein stehen für Linux, macOS und Windows `hier <TBD>`__ verfügbar.
+gefunden werden. Ausführbare Dateien stehen für Linux, macOS und Windows `hier <TBD>`__ verfügbar.
 
 Es werden die Daten des Air Quality Brickelts sowie der Außenwetterstation dargestellt.
 Graphen können mit einer einstellbaren Zeitbasis angezeigt werden und die Daten werden
@@ -159,7 +159,7 @@ Wetterstation selbst eingestellt werden.
 
 TODO: Fotos?
 
-Die Anwendung ist in "Screens" aufgeteil. Jeder Screen wird als ein Tab mit Text-Label
+Die Anwendung ist in "Screens" aufgeteilt. Jeder Screen wird als ein Tab mit Text-Label
 oder Icon dargestellt. Touch-Klick/Gesten und GUI-Callbacks werden zur einfachen
 Nutzung vom LCD 128x64 zum selektierten Screen weitergeleitet.
 
@@ -188,7 +188,7 @@ aussehen::
 
 Minimalst muss der Tab-Text (oder optional ein icon) festgelegt und die ``draw_init``-
 sowie ``draw_update``-Funktion implementiert werden. Beispiele für die Nutzung von
-Touch-Gesten und ähnliches können in den Bereits implementierten Screens in der 
+Touch-Gesten und ähnliches können in den bereits implementierten Screens in der 
 `screens.py <https://github.com/Tinkerforge/tabletop-weather-station/blob/master/main/screens.py>`__
 gefunden werden.
 
