@@ -182,7 +182,7 @@ Eigene Screens können über die
 `custom_screens.py <https://github.com/Tinkerforge/tabletop-weather-station/blob/master/main/custom_screens.py>`__
 hinzugefügt werden.
 
-Ein einfacher Screen der die aktuelle Uhrzeit auf das Disply schreibt könnte wie folgt 
+Ein einfacher Screen der die aktuelle Uhrzeit auf das Display schreibt könnte wie folgt 
 aussehen::
 
 	class ClockScreen(Screen):
