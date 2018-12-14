@@ -10,23 +10,34 @@
 Tabletop Weather Station
 ========================
 
-..
-	.. raw:: html
+.. raw:: html
 
-		{% tfgallery %}
+	{% tfgallery %}
 
-		Kits/weather_station_table_[100|800].jpg               Weather Station: Basic Kit on table
-		Kits/weather_station_black_table_[100|800].jpg         Weather Station (black): Basic Kit on table
-		Kits/weather_station_wall_far_[100|800].jpg            Weather Station: With Wi-Fi on wall
-		Kits/weather_station_wall_near_[100|800].jpg           Weather Station: With Wi-Fi on wall
-		Kits/weather_station_construction_rpi_front_[?|?].jpg  Weather Station: With Raspberry Pi
-		Kits/weather_station_demo_[100|].jpg                   Weather Station: Demo Application
-		Kits/weather_station_xively_graphs_[100|800].jpg       Weather Station: Xively graphs
-		Kits/weather_station_lcd_all_[100|orig].jpg            Weather Station: Different Modes
-		Kits/weather_station_website_[100|orig].jpg            Weather Station: Embedded in website
-		Kits/weather_station_buttons_assembled_[100|800].jpg   Weather Station: With big buttons on the left side
+	Kits/tabletop_weather_station_transparent_right_titled_[?|?].jpg    Tabletop Weather Station
+	Kits/tabletop_weather_station_content_[?|?].jpg                     Tabletop Weather Station
+	Kits/tabletop_weather_station_transparent_back_[?|?].jpg            Tabletop Weather Station
+	Kits/tabletop_weather_station_transparent_back_titled_[?|?].jpg     Tabletop Weather Station
+	Kits/tabletop_weather_station_transparent_titled_[?|?].jpg          Tabletop Weather Station
+	Kits/tabletop_weather_station_transparent_titled_pwr_[?|?].jpg      Tabletop Weather Station
+	Kits/tabletop_weather_station_complete_transparent_back_[?|?].jpg   Tabletop Weather Station
+	Kits/tabletop_weather_station_black_right_back_[?|?].jpg            Tabletop Weather Station
+	Kits/tabletop_weather_station_black_right_titled_[?|?].jpg          Tabletop Weather Station
+	Kits/tabletop_weather_station_blue_back_[?|?].jpg                   Tabletop Weather Station
+	Kits/tabletop_weather_station_blue_left_back_[?|?].jpg              Tabletop Weather Station
+	Kits/tabletop_weather_station_blue_right_titled_[?|?].jpg           Tabletop Weather Station
+	Kits/tabletop_weather_station_colors_[?|?].jpg                      Tabletop Weather Station
+	Kits/tabletop_weather_station_colors_side_by_side_[?|?].jpg         Tabletop Weather Station
+	Kits/tabletop_weather_station_frosted_back_[?|?].jpg                Tabletop Weather Station
+	Kits/tabletop_weather_station_frosted_right_titled_[?|?].jpg        Tabletop Weather Station
+	Kits/tabletop_weather_station_frosted_titled_[?|?].jpg              Tabletop Weather Station
+	Kits/tabletop_weather_station_screen_graph_[?|?].jpg                Tabletop Weather Station
+	Kits/tabletop_weather_station_screen_main_[?|?].jpg                 Tabletop Weather Station
+	Kits/tabletop_weather_station_screen_outdoor_[?|?].jpg              Tabletop Weather Station
+	Kits/tabletop_weather_station_screen_sensor_[?|?].jpg               Tabletop Weather Station
+	Kits/tabletop_weather_station_screen_settings_[?|?].jpg             Tabletop Weather Station
 
-		{% tfgalleryend %}
+	{% tfgalleryend %}
 
 Features
 --------
@@ -76,12 +87,9 @@ wireless outdoor weather station and sensor:
 
 Both are supported by the demo application out-of-the-box.
 
-TODO: Video
+.. raw:: html
 
-..
-	.. raw:: html
-
-	 <iframe class="youtube" width="640" height="360" src="https://www.youtube-nocookie.com/embed/uwsseiiu_4A" frameborder="0" allowfullscreen></iframe>
+ <iframe class="youtube" width="640" height="360" src="https://www.youtube-nocookie.com/embed/dz18cRKUvgA" frameborder="0" allowfullscreen></iframe>
 
 Technical Specifications
 ------------------------
@@ -98,17 +106,13 @@ Temperature Resolution            0.01°C
 IAQ Index Accuracy                ±15 and ±15% of reading
 Air Pressure Accuracy             ±0.12mbar (700-900mbar at 25-40°C), ±0.6mbar (full scale)
 Humidity Accuracy                 ±3%RH (20-80%RH at 25°C)
-Temperature Accuracy              ±0.5°C (at 25°C), ±1.0°C (0-65°C)*
+Temperature Accuracy              ±0.5°C (at 25°C), ±1.0°C (0-65°C)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)            110 x 125 x 65mm
 Weight                            TBDg 
 ================================  ============================================================
 
-\* This is the temperature at the exact position of the sensor. If the Air Quality Bricklet is 
-used inside of an enclosure, the air around the Bricklet may heat up more than the ambient air. 
-The Bricklet does have API to calibrate this kind of offset. On the Tabletop Weather Station 
-the Air Quality Bricklet is mounted outside of the enclosure to minimize self-heating.
 
 .. _tabletop_weather_station_resources:
 
@@ -161,7 +165,11 @@ Graphs can be drawn for different time frames, the data is logged in a sqlite da
 with a configuratable period and the settings are configurable through the touch-interface
 of the weather station itself.
 
-TODO: Photos?
+.. image:: /Images/Kits/tabletop_weather_station_gui_600.jpg
+   :scale: 100 %
+   :alt: GUI on the LCD 128x64 Bricklet
+   :align: center
+   :target: ../../_images/Kits/tabletop_weather_station_gui_1000.jpg
 
 The application is segmented in "screens". Each screen is shown as a tab that can
 have a text-label or icon. The touch-click/gesture and GUI callbacks of the 
@@ -196,7 +204,14 @@ you can take a look at the already implemented screens in
 
 The code above will create the following additional tab:
 
-Pull request for new screens are definitely welcome, we are looking forward to integrate
+.. image:: /Images/Kits/tabletop_weather_station_screen_clock_600.jpg
+   :scale: 100 %
+   :alt: Clock Screen
+   :align: center
+   :target: ../../_images/Kits/tabletop_weather_station_screen_clock_1000.jpg
+
+
+Pull requests for new screens are definitely welcome, we are looking forward to integrate
 your fancy screens into the demo applications :-).
 
 
@@ -205,7 +220,40 @@ your fancy screens into the demo applications :-).
 Construction
 ------------
 
-TODO
+To assemble the Tabletop Weather Station we recommend that you first screw all
+of the Bricks/Brickelts to the plastic parts and put the parts together afterwards.
+
+.. image:: /Images/Exploded/tabletop_weather_station_explosion_master_700.png
+   :scale: 100 %
+   :alt: Exploded assembly drawing
+   :align: center
+   :target: ../../_images/Exploded/tabletop_weather_station_explosion_master.png
+
+If you want to add a RED Brick and/or Outdoor Weather Bricklet, you can attach them
+to the same plate as the Master Brick:
+
+.. image:: /Images/Exploded/tabletop_weather_station_explosion_complete_700.png
+   :scale: 100 %
+   :alt: Exploded assembly drawing
+   :align: center
+   :target: ../../_images/Exploded/tabletop_weather_station_explosion_complete.png
+
+As you can see in the exploded assembly drawings, we attach the
+Air Quality Bricklet to the outside of the weather station. This ensures that the
+heat comming from the other components (LCD 128x64 Bricklet, Master Brick, perhaps a
+RED Brick) does not influence the temperature measurement of the Air Quality Bricklet.
+
+You can also screw the Air Quality Bricklet to the inside. In this case we recommend
+that you use the temperature calibration function of the Bricklet to correct it to
+the temperature of the outside. This is important since the temperature is also used
+to determine the correct Indoor Air Quality Index and Humidity.
+
+Below you can find a sped-up video of the assembly. During crucial parts the speed
+of the video is slowed down.
+
+.. raw:: html
+
+ <iframe class="youtube" width="640" height="360" src="https://www.youtube-nocookie.com/embed/-3BiX39U5_A" frameborder="0" allowfullscreen></iframe>
 
 
 .. _tabletop_weather_station_examples:
@@ -233,12 +281,72 @@ Thus they are a good starting point for the foundation of your own custom applic
 Standalone with RED Brick
 -------------------------
 
-TODO?
+You can add a RED Brick to the Tabletop Weather Station below the
+Master Brick. In this case the power is supplied through the USB
+connector of the RED Brick.
 
+.. image:: /Images/Kits/tabletop_weather_station_transparent_back2_600.jpg
+   :scale: 100 %
+   :alt: RED Brick in Tabletop Weather Station case
+   :align: center
+   :target: ../../_images/Kits/tabletop_weather_station_transparent_back2_1000.jpg
 
-.. _tabletop_weather_station_openhab:
+With the RED Brick you can upload your application and make the
+Tabletop Weather Station standalone. To upload the demo application
+go to the RED Brick tab in Brick Viewer and click on "program" and "New".
 
-Smart Home Integration using openHAB
-------------------------------------
+Choose a name and Python as language.
 
-TODO?
+.. image:: /Images/Kits/tabletop_weather_station_red1.jpg
+   :scale: 100 %
+   :alt: Upload demo application to RED Brick with Brick Viewer
+   :align: center
+
+Add the files of the demo application. You can find the files
+`on github <https://github.com/Tinkerforge/tabletop-weather-station/tree/master/demo>`__.
+If you already had the weather station running before, you can also
+upload the sqlite database (.db file here) to retain the data.
+
+.. image:: /Images/Kits/tabletop_weather_station_red2.jpg
+   :scale: 100 %
+   :alt: Upload demo application to RED Brick with Brick Viewer
+   :align: center
+
+Choose tabletop_weather_station.py as script file.
+
+.. image:: /Images/Kits/tabletop_weather_station_red3.jpg
+   :scale: 100 %
+   :alt: Upload demo application to RED Brick with Brick Viewer
+   :align: center
+
+There is no standard input for the demo, otherwise you can leave
+the rest of the configurations as default.
+
+.. image:: /Images/Kits/tabletop_weather_station_red4.jpg
+   :scale: 100 %
+   :alt: Upload demo application to RED Brick with Brick Viewer
+   :align: center
+
+.. image:: /Images/Kits/tabletop_weather_station_red5.jpg
+   :scale: 100 %
+   :alt: Upload demo application to RED Brick with Brick Viewer
+   :align: center
+
+.. image:: /Images/Kits/tabletop_weather_station_red6.jpg
+   :scale: 100 %
+   :alt: Upload demo application to RED Brick with Brick Viewer
+   :align: center
+
+.. image:: /Images/Kits/tabletop_weather_station_red7.jpg
+   :scale: 100 %
+   :alt: Upload demo application to RED Brick with Brick Viewer
+   :align: center
+
+After the upload is finished the demo application should be
+able to automatically run on the RED Brick after power-up!
+
+..
+	.. _tabletop_weather_station_openhab:
+	Smart Home Integration using openHAB
+	------------------------------------
+	TODO?

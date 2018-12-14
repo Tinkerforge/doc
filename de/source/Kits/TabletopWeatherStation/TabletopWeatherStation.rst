@@ -89,12 +89,9 @@ Sensoren ausgelesen werden:
 
 Beide werden von der Demo-Anwendung unterstützt.
 
-TODO: Video
+.. raw:: html
 
-..
-	.. raw:: html
-
-	 <iframe class="youtube" width="640" height="360" src="https://www.youtube-nocookie.com/embed/uwsseiiu_4A" frameborder="0" allowfullscreen></iframe>
+ <iframe class="youtube" width="640" height="360" src="https://www.youtube-nocookie.com/embed/dz18cRKUvgA" frameborder="0" allowfullscreen></iframe>
 
 
 Technische Spezifikation
@@ -112,7 +109,7 @@ Temperatur-Auflösung              0,01°C
 IAQ Index-Genauigkeit             ±15 und ±15% des Wertes
 Luftdruck-Genauigkeit             ±0,12mbar (700-900mbar bei 25-40°C), ±0,6mbar (gesamter Messbereich)
 Luftfeuchte-Genauigkeit           ±3%RH (20-80%RH bei 25°C)
-Temperatur-Genauigkeit            ±0,5°C (at 25°C), ±1,0°C (0-65°C)*
+Temperatur-Genauigkeit            ±0,5°C (at 25°C), ±1,0°C (0-65°C)
 --------------------------------  ---------------------------------------------------------------------
 --------------------------------  ---------------------------------------------------------------------
 Abmessungen (B x T x H)           110 x 125 x 65mm
@@ -160,7 +157,7 @@ Demo-Anwendung
 --------------
 
 Die Demo-Anwendung für die Tisch-Wetterstation ist in Python geschrieben. Der
-Source Code kann `hier <https://github.com/Tinkerforge/tabletop-weather-station/tree/master/main>`__
+Source Code kann `hier <https://github.com/Tinkerforge/tabletop-weather-station/tree/master/demo>`__
 gefunden werden. Ausführbare Dateien stehen für Linux, macOS und Windows `hier <TBD>`__ verfügbar.
 
 Es werden die Daten des Air Quality Brickelts sowie der Außenwetterstation dargestellt.
@@ -179,7 +176,7 @@ oder Icon dargestellt. Touch-Klick/Gesten und GUI-Callbacks werden zur einfachen
 Nutzung vom LCD 128x64 zum selektierten Screen weitergeleitet.
 
 Eigene Screens können über die 
-`custom_screens.py <https://github.com/Tinkerforge/tabletop-weather-station/blob/master/main/custom_screens.py>`__
+`custom_screens.py <https://github.com/Tinkerforge/tabletop-weather-station/blob/master/demo/custom_screens.py>`__
 hinzugefügt werden.
 
 Ein einfacher Screen der die aktuelle Uhrzeit auf das Display schreibt könnte wie folgt 
@@ -204,12 +201,16 @@ aussehen::
 Minimalst muss der Tab-Text (oder optional ein icon) festgelegt und die ``draw_init``-
 sowie ``draw_update``-Funktion implementiert werden. Beispiele für die Nutzung von
 Touch-Gesten und ähnliches können in den bereits implementierten Screens in der 
-`screens.py <https://github.com/Tinkerforge/tabletop-weather-station/blob/master/main/screens.py>`__
+`screens.py <https://github.com/Tinkerforge/tabletop-weather-station/blob/master/demo/screens.py>`__
 gefunden werden.
 
 Der obige Code fügt folgenden Tab zur Demo-Anwendung hinzu:
 
-TODO: Foto
+.. image:: /Images/Kits/tabletop_weather_station_screen_clock_600.jpg
+   :scale: 100 %
+   :alt: Clock Screen
+   :align: center
+   :target: ../../_images/Kits/tabletop_weather_station_screen_clock_1000.jpg
 
 Pull Requests für neue Screens sind definitiv erwünscht, wir freuen uns schon darauf
 eure schicken Screens in die Demo-Anwendung zu integrieren :-).
@@ -218,7 +219,40 @@ eure schicken Screens in die Demo-Anwendung zu integrieren :-).
 Konstruktion
 ------------
 
-TODO
+Für den Zusammenbau der Tisch-Wetterstation empfehlen wir zuerst alle Bricks/Bricklets
+an den Plastikteilen zu befestigen und diese danach zusammenzusetzen.
+
+.. image:: /Images/Exploded/tabletop_weather_station_explosion_master_700.png
+   :scale: 100 %
+   :alt: Explosionszeichnung
+   :align: center
+   :target: ../../_images/Exploded/tabletop_weather_station_explosion_master.png
+
+Wenn zusätzlich ein RED Brick und/oder Outdoor Weather Bricklet verwendet werden
+soll, können diese auf die gleiche Platte wie der Master Brick geschraubt werden:
+
+.. image:: /Images/Exploded/tabletop_weather_station_explosion_complete_700.png
+   :scale: 100 %
+   :alt: Explosionszeichnung
+   :align: center
+   :target: ../../_images/Exploded/tabletop_weather_station_explosion_complete.png
+
+Wie in den Explosionszeichnungen zu erkennen ist befestigen wir das Air Quality Bricklet
+auf der Außenseite der Wetterstation. Dies stellt sich dass die Hitze die von den
+anderen Komponenten (LCD 128x64 Bricklet, Master Brick, eventuell RED Brick) abgegeben
+wird nicht die Temperaturmessung des Air Quality Bricklets beeinflussen kann.
+
+Es ist auch möglich das Air Quality Bricklet auf die Innenseite zu schrauben. In diesem
+Fall empfehlen wir die Temperatur über die Temperatur-Kalibrierungsfunktion des Bricklets
+zu korrigieren. Die ist wichtig, da die ermittelte Temperatur auch zur Bestimmung der
+Luftqualität und der Luftfeuchte verwendet wird.
+
+Das folgende video zeigt den Zusammenbau im Zeitraffer. An den wichtigen Stellen wird
+das Video verlangsamt.
+
+.. raw:: html
+
+ <iframe class="youtube" width="640" height="360" src="https://www.youtube-nocookie.com/embed/-3BiX39U5_A" frameborder="0" allowfullscreen></iframe>
 
 
 .. _tabletop_weather_station_examples:
@@ -248,12 +282,74 @@ Daher sind die Beispiele gut als Grundlage für eine eigene Anwendung geeignet.
 Selbstständig mit RED Brick
 ---------------------------
 
-TODO?
+Ein RED Brick kann zur Tisch-Wetterstation hinzugefügt werden. Es wird
+unter den Master Brick geschraubt. In diesem Fall erfolgt die Stromversorgung
+über den USB-Stecker des RED Bricks.
+
+.. image:: /Images/Kits/tabletop_weather_station_transparent_back2_600.jpg
+   :scale: 100 %
+   :alt: RED Brick im Gehäuse der Tisch-Wetterstation
+   :align: center
+   :target: ../../_images/Kits/tabletop_weather_station_transparent_back2_1000.jpg
+
+Mit dem RED Brick kann die Anwendung der Tisch-Wetterstation selbständig
+ausgeführt werden. Um die Demo-Anwendung auf den RED Brick hochzuladen
+klicke im RED Brick tab des Brick Viewers auf "prgram" und "New".
+
+Wähle einen Namen und Python als Programmiersprache.
+
+.. image:: /Images/Kits/tabletop_weather_station_red1.jpg
+   :scale: 100 %
+   :alt: Hochladen der Demo-Anwendung über Brick Viewer
+   :align: center
+
+Füge die Dateien der Demo-Anwendung hinzu. Die Daten können auf
+`github gefunden werden <https://github.com/Tinkerforge/tabletop-weather-station/tree/master/demo>`__.
+Wenn die Wetterstation bereits zuvor gelaufen ist kann die sqlite
+Datenkank mit hochgeladen werden (.db Datei hier) um die bereits gespeicherten
+Messwerte weiter zu verwenden.
+
+.. image:: /Images/Kits/tabletop_weather_station_red2.jpg
+   :scale: 100 %
+   :alt: Hochladen der Demo-Anwendung über Brick Viewer
+   :align: center
+
+Wähle tabletop_weather_station.py als Startdatei.
+
+.. image:: /Images/Kits/tabletop_weather_station_red3.jpg
+   :scale: 100 %
+   :alt: Hochladen der Demo-Anwendung über Brick Viewer
+   :align: center
+
+Es gibt in der Demo kein Standard-Input, alle anderen Optionen
+können auf den Standardwerten bleiben.
+
+.. image:: /Images/Kits/tabletop_weather_station_red4.jpg
+   :scale: 100 %
+   :alt: Hochladen der Demo-Anwendung über Brick Viewer
+   :align: center
+
+.. image:: /Images/Kits/tabletop_weather_station_red5.jpg
+   :scale: 100 %
+   :alt: Hochladen der Demo-Anwendung über Brick Viewer
+   :align: center
+
+.. image:: /Images/Kits/tabletop_weather_station_red6.jpg
+   :scale: 100 %
+   :alt: Hochladen der Demo-Anwendung über Brick Viewer
+   :align: center
+
+.. image:: /Images/Kits/tabletop_weather_station_red7.jpg
+   :scale: 100 %
+   :alt: Hochladen der Demo-Anwendung über Brick Viewer
+   :align: center
+
+Nach dem der Uploadfertig ist sollte die Demo-Anwendung automatisch
+auf dem RED Brick laufen nachdem dieser gestartet wird!
 
 
-.. _tabletop_weather_station_openhab:
-
-Smart Home Integration mit openHAB
-----------------------------------
-
-TODO
+..
+	.. _tabletop_weather_station_openhab:
+	Smart Home Integration mit openHAB
+	----------------------------------
+	TODO
