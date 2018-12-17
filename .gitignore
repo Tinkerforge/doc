@@ -4,7 +4,9 @@ en/source/index_api.html
 en/source/index_hardware.html
 en/source/Images/Screenshots/LabVIEW/*.vi.png
 en/source/Software/Bricks
+en/source/Software/Bricks_*.rst
 en/source/Software/Bricklets
+en/source/Software/Bricklets_*.rst
 en/source/Software/IPConnection_*_*xample*
 en/source/Software/Tinkerforge.js
 de/build
