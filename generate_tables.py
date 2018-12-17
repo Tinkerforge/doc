@@ -1399,6 +1399,60 @@ def generate(path):
             write_if_changed(os.path.join(path, 'source', 'Low_Level_Protocols', '{0}_links.table'.format(bindings_info.software_doc_suffix)), make_llproto_links_table(bindings_info))
 
     for bindings_info in bindings_infos:
+        if not bindings_info.is_programming_language:
+            continue
+        template = {'en': u"""
+{lang} - {device_type}{discontinued_title_parenthesis}
+{equal_signs}
+
+Links to the API reference for the {discontinued}{device_type} as
+well as the examples from the ZIP file of the bindings are listed in the
+following table. Further project descriptions can be found in the
+:ref:`Starter Kits <index_kits>` section.
+
+.. include:: {device_type}_{lang_path}{discontinued_title_underscore}.table
+
+.. include:: {device_type}_{lang_path}{discontinued_title_underscore}.toctree
+""",
+'de': u"""
+{lang} - {device_type}{discontinued_title_parenthesis}
+{equal_signs}
+
+Links zur API Referenz der {discontinued}{device_type} sowie den
+Beispiele aus der ZIP Datei der Bindings sind in der folgenden Tabelle
+aufgelistet. Anleitungen für weiterführende Projekte finden sich im Abschnitt
+über :ref:`Starterkits <index_kits>`.
+
+.. include:: {device_type}_{lang_path}{discontinued_title_underscore}.table
+
+.. include:: {device_type}_{lang_path}{discontinued_title_underscore}.toctree
+""" }
+        disc_title_par = {'en': u" (Discontinued)", 'de': u" (Abgekündigt)"}
+        disc = {'en': u"discontinued ", 'de': u"abgekündigten "}
+        disp_name = bindings_info.display_name
+        lang_path = bindings_info.software_doc_suffix
+        for dev in [u"Bricks", u"Bricklets"]:
+            print('Generating {dev}_{lang}_Discontinued.rst'.format(dev=dev, lang=lang_path))
+            discontinued = template[lang].format(lang=disp_name,
+                                                    lang_path = lang_path,
+                                                    device_type=dev,
+                                                    discontinued=disc[lang],
+                                                    discontinued_title_parenthesis=disc_title_par[lang],
+                                                    equal_signs="="*(len(disp_name) + 3 + len(dev) + len(disc_title_par[lang])),
+                                                    discontinued_title_underscore="_Discontinued")
+            write_if_changed(os.path.join(path, 'source', 'Software', "{dev}_{lang}_Discontinued.rst".format(dev=dev, lang=lang_path)), discontinued.encode('utf-8'))
+                        
+            print('Generating {dev}_{lang}.rst'.format(dev=dev, lang=lang_path))
+            normal = template[lang].format(lang=disp_name,
+                                            lang_path = lang_path,
+                                            device_type=dev,
+                                            discontinued="",
+                                            discontinued_title_parenthesis="",
+                                            equal_signs="="*(len(disp_name) + 3 + len(dev)),
+                                            discontinued_title_underscore="")            
+            write_if_changed(os.path.join(path, 'source', 'Software', "{dev}_{lang}.rst".format(dev=dev, lang=lang_path)), normal.encode('utf-8'))
+
+    for bindings_info in bindings_infos:
         if bindings_info.is_programming_language:
             print('Generating Bricks_{0}.toctree'.format(bindings_info.software_doc_suffix))
             write_if_changed(os.path.join(path, 'source', 'Software', 'Bricks_{0}.toctree'.format(bindings_info.software_doc_suffix)), make_software_devices_toctree(bindings_info, brick_infos, 'Bricks', '', False))
