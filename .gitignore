@@ -14,7 +14,9 @@ de/build-in-progress
 de/source/index_api.html
 de/source/index_hardware.html
 de/source/Software/Bricks
+de/source/Software/Bricks_*.rst
 de/source/Software/Bricklets
+de/source/Software/Bricklets_*.rst
 de/source/Software/IPConnection_*_*xample*
 de/source/Software/Tinkerforge.js
 *.table
