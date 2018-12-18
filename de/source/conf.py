@@ -26,6 +26,7 @@ sys.path.append(os.path.join(os.path.split(__file__)[0], '../..'))
 extensions = ['sphinxextra.customhtml',
               'sphinxextra.csharpdomain',
               'sphinxextra.delphidomain',
+              'sphinxextra.godomain',
               'sphinxextra.labviewdomain',
               'sphinxextra.javadomain',
               'sphinxextra.javascriptdomain',
