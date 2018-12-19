@@ -35,6 +35,9 @@ bindings_infos = \
     BindingsInfo('Delphi/Lazarus', 'delphi', 'Delphi', True, True,
                  {'en': 'http://www.delphibasics.co.uk/',
                   'de': 'http://www.delphi-treff.de/tutorials/grundlagen-tutorials/'}),
+    BindingsInfo('Go', 'go', 'Go', True, False,
+                 {'en': 'https://tour.golang.org',
+                  'de': 'https://tour.golang.org'}),
     BindingsInfo('Java', 'java', 'Java', True, True,
                  {'en': 'http://docs.oracle.com/javase/tutorial/',
                   'de': 'http://docs.oracle.com/javase/tutorial/'}), # http://openbook.galileocomputing.de/javainsel/
