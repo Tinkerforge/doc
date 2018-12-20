@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklet/color-v2-bricklet.html
+:DISABLED_shoplink: ../../../shop/bricklets/color-v2-bricklet.html
 
 .. include:: Color_V2.substitutions
    :start-after: >>>substitutions

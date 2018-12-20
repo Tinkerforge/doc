@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklet/multi-touch-v2-bricklet.html
+:DISABLED_shoplink: ../../../shop/bricklets/multi-touch-v2-bricklet.html
 
 .. include:: Multi_Touch_V2.substitutions
    :start-after: >>>substitutions

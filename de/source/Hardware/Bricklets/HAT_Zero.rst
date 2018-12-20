@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklet/hat-zero-bricklet.html
+:DISABLED_shoplink: ../../../shop/bricklets/hat-zero-bricklet.html
 
 .. include:: HAT_Zero.substitutions
    :start-after: >>>substitutions

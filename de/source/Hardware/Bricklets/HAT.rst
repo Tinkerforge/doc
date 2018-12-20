@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklet/hat-bricklet.html
+:DISABLED_shoplink: ../../../shop/bricklets/hat-bricklet.html
 
 .. include:: HAT.substitutions
    :start-after: >>>substitutions

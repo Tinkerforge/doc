@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklet/hall-effect-v2-bricklet.html
+:DISABLED_shoplink: ../../../shop/bricklets/hall-effect-v2-bricklet.html
 
 .. include:: Hall_Effect_V2.substitutions
    :start-after: >>>substitutions

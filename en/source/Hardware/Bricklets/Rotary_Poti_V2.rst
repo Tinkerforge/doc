@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklet/rotary-poti-v2-bricklet.html
+:DISABLED_shoplink: ../../../shop/bricklets/rotary-poti-v2-bricklet.html
 
 .. include:: Rotary_Poti_V2.substitutions
    :start-after: >>>substitutions
