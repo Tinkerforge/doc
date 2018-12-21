@@ -176,18 +176,11 @@ wieder zu entfernen. Dieser erwartet eine Callback-ID, die von "Register*Callbac
 
  Mögliche Enumerierungsarten sind:
 
- * EnumerationTypeAvailable: Gerät ist verfügbar
-    (Enumerierung vom Benutzer ausgelöst: :go:func:`Enumerate() <(*IPConnection) Enumerate>`).
-    Diese Enumerierungsart kann mehrfach für
-    das selbe Gerät auftreten.
- * EnumerationTypeConnected: Gerät wurde neu verbunden
-    (Automatisch vom Brick gesendet nachdem die Kommunikation aufgebaut wurde).
-    Dies kann bedeuten, dass das Gerät die vorher eingestellte Konfiguration
-    verloren hat und neu konfiguriert werden muss.
+ * EnumerationTypeAvailable: Gerät ist verfügbar (Enumerierung vom Benutzer ausgelöst: :go:func:`Enumerate() <(*IPConnection) Enumerate>`). Diese Enumerierungsart kann mehrfach für das selbe Gerät auftreten.
+ * EnumerationTypeConnected: Gerät wurde neu verbunden (Automatisch vom Brick gesendet nachdem die Kommunikation aufgebaut wurde). Dies kann bedeuten, dass das Gerät die vorher eingestellte Konfiguration verloren hat und neu konfiguriert werden muss.
  * EnumerationTypeDisconnected: Gerät wurde getrennt (Nur bei USB-Verbindungen möglich). In diesem Fall haben nur ``UID`` und ``EnumerationType`` einen gültigen Wert.
 
- Es sollte möglich sein Plug-and-Play-Funktionalität mit diesem Listener
-  zu implementieren (wie es im Brick Viewer geschieht).
+ Es sollte möglich sein Plug-and-Play-Funktionalität mit diesem Listener zu implementieren (wie es im Brick Viewer geschieht).
 
   Die Device Identifier Werte sind :ref:`hier <device_identifier>` zu finden.
   Es gibt auch Konstanten für diese Werte, welche nach dem folgenden Muster
@@ -195,27 +188,20 @@ wieder zu entfernen. Dieser erwartet eine Callback-ID, die von "Register*Callbac
 
   <device-package>.DeviceIdentifier
 
- Zum Beispiel: :go:const:`master_brick.DeviceIdentifier`
-  oder :go:const:`ambient_light_bricklet.DeviceIdentifier`.
+ Zum Beispiel: :go:const:`master_brick.DeviceIdentifier` oder :go:const:`ambient_light_bricklet.DeviceIdentifier`.
 
 
 .. go:function:: func (*IPConnection) RegisterConnectCallback(func(reason ConnectReason)) (callbackID uint64)
 
- Dieses Callback wird aufgerufen wenn die IP Connection eine Verbindung
-  zu einem Brick Daemon oder einer WIFI/Ethernet Extension aufgebaut hat,
-  mögliche Gründe sind:
+ Dieses Callback wird aufgerufen wenn die IP Connection eine Verbindung zu einem Brick Daemon oder einer WIFI/Ethernet Extension aufgebaut hat, mögliche Gründe sind:
 
- * ConnectReasonRequest: Verbindung aufgebaut nach Anfrage
-    vom Benutzer.
- * ConnectReasonAutoReconnect: Verbindung aufgebaut durch
-    Auto-Reconnect.
+ * ConnectReasonRequest: Verbindung aufgebaut nach Anfrage vom Benutzer.
+ * ConnectReasonAutoReconnect: Verbindung aufgebaut durch Auto-Reconnect.
 
 
 .. go:function:: func (*IPConnection) RegisterDisconnectCallback(func(reason DisconnectReason)) (callbackID uint64)
 
- Dieses Callback wird aufgerufen wenn die Verbindung der IP Connection
-  zu einem Brick Daemon oder einer WIFI/Ethernet Extension getrennt wurde,
-  mögliche Gründe sind:
+ Dieses Callback wird aufgerufen wenn die Verbindung der IP Connection zu einem Brick Daemon oder einer WIFI/Ethernet Extension getrennt wurde, mögliche Gründe sind:
 
  * DisconnectReasonRequest: Trennung wurde vom Benutzer
     angefragt.
