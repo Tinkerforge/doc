@@ -8,10 +8,10 @@ The Go bindings allow you to control :ref:`Bricks <primer_bricks>` and
 :ref:`Bricklets <primer_bricklets>` from your Go programs. The
 :ref:`ZIP file <downloads_bindings_examples>` for the bindings contains:
 
-* in ``github.com/tinkerforge/go-api-bindings`` the source code of the bindings
+* in ``github.com/Tinkerforge/go-api-bindings`` the source code of the bindings
 * in ``examples/`` the examples for every Brick and Bricklet
 
-The Go bindings are also hosted on `GitHub <https://github.com/tinkerforge/go-api-bindings>`_.
+The Go bindings are also hosted on `GitHub <https://github.com/Tinkerforge/go-api-bindings>`_.
 
 
 Requirements

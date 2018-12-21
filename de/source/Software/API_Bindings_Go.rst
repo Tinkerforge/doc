@@ -9,10 +9,10 @@ Die Go Bindings ermöglichen es :ref:`Bricks <primer_bricks>` und
 heraus zu steuern. Die :ref:`ZIP Datei <downloads_bindings_examples>` für
 die Bindings beinhaltet:
 
-* in ``github.com/tinkerforge/go-api-bindings`` den Quelltext der Bindings
+* in ``github.com/Tinkerforge/go-api-bindings`` den Quelltext der Bindings
 * in ``examples/`` die Beispiele für alle Bricks und Bricklets
 
-Die Go-Bindings sind auch auf `GitHub <https://github.com/tinkerforge/go-api-bindings>`_ zu finden.
+Die Go-Bindings sind auch auf `GitHub <https://github.com/Tinkerforge/go-api-bindings>`_ zu finden.
 
 
 Voraussetzungen
