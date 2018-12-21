@@ -32,6 +32,7 @@ Installation and usage instructions for each supported programming language:
 * :ref:`PHP <api_bindings_php>`
 * :ref:`Python <api_bindings_python>`
 * :ref:`Ruby <api_bindings_ruby>`
+* :ref:`Rust <api_bindings_rust>`
 * :ref:`Shell <api_bindings_shell>`
 * :ref:`Visual Basic .NET <api_bindings_vbnet>`
 
@@ -53,6 +54,7 @@ Installation and usage instructions for each supported programming language:
    PHP <API_Bindings_PHP>
    Python <API_Bindings_Python>
    Ruby <API_Bindings_Ruby>
+   Rust <API_Bindings_Rust>
    Shell <API_Bindings_Shell>
    Visual Basic .NET <API_Bindings_VBNET>
 

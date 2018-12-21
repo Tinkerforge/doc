@@ -65,7 +65,7 @@ bindings_infos = \
     BindingsInfo('Ruby', 'ruby', 'Ruby',  True, True,
                  {'en': 'https://www.ruby-lang.org/en/documentation/quickstart/',
                   'de': 'https://www.ruby-lang.org/de/documentation/quickstart/'}),
-    BindingsInfo('Rust', 'rust', 'Rust', True, False,
+    BindingsInfo('Rust', 'rust', 'Rust', True, True,
                  {'en': 'https://doc.rust-lang.org/tutorial.html',
                   'de': 'https://doc.rust-lang.org/tutorial.html'}),
     BindingsInfo('Shell', 'shell', 'Shell', True, True,
