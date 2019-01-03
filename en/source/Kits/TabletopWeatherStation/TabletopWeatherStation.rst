@@ -43,7 +43,7 @@ Features
 --------
 
 * Open source touch-capable Tabletop Weather Station
-* Measures Temperature, Humidity, Air Pressure and Air Quaility Index
+* Measures Temperature, Humidity, Air Pressure and Air Quality Index
 * Demo Application available (touch-capable, with graphs, database logging)
 * Control over USB, Wi-Fi, Ethernet or with RED Brick
 * Internet of Things (IoT) capable
@@ -78,7 +78,7 @@ graphs, logging to database, control via touch, etc. It is written in Python
 and available for Windows, Linux and macOS.
 
 The kit can be extended by an :ref:`Outdoor Weather Bricklet <outdoor_weather_bricklet>`.
-Mounting holes and and an opening for the antenna are included in the Tabletop Weather 
+Mounting holes and an opening for the antenna are included in the Tabletop Weather 
 Station enclosure. With this Bricklet you can receive data from the following
 wireless outdoor weather station and sensor:
 
@@ -110,7 +110,7 @@ Temperature Accuracy              ±0.5°C (at 25°C), ±1.0°C (0-65°C)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)            110 x 125 x 65mm
-Weight                            TBDg 
+Weight                            238g (basic), 288g (basic + RED Brick + Outdoor Weater Bricklet)
 ================================  ============================================================
 
 
@@ -293,7 +293,7 @@ connector of the RED Brick.
 
 With the RED Brick you can upload your application and make the
 Tabletop Weather Station standalone. To upload the demo application
-go to the RED Brick tab in Brick Viewer and click on "program" and "New".
+go to the RED Brick tab in Brick Viewer and click on "Program" and "New".
 
 Choose a name and Python as language.
 
