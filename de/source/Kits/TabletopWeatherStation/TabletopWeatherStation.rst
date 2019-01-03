@@ -113,7 +113,7 @@ Temperatur-Genauigkeit            ±0,5°C (at 25°C), ±1,0°C (0-65°C)
 --------------------------------  ---------------------------------------------------------------------
 --------------------------------  ---------------------------------------------------------------------
 Abmessungen (B x T x H)           110 x 125 x 65mm
-Gewicht                           TBDg
+Gewicht                           238g (Basis), 288g (Basis + RED Brick + Outdoor Weather Bricklet)
 ================================  =====================================================================
 
 .. _tabletop_weather_station_resources:
@@ -158,7 +158,7 @@ Demo-Anwendung
 
 Die Demo-Anwendung für die Tisch-Wetterstation ist in Python geschrieben. Der
 Source Code kann `hier <https://github.com/Tinkerforge/tabletop-weather-station/tree/master/demo>`__
-gefunden werden. Ausführbare Dateien stehen für Linux, macOS und Windows `hier <TBD>`__ verfügbar.
+gefunden werden. Ausführbare Dateien stehen für Linux, macOS und Windows `hier <TBD>`__ zur Verfügung.
 
 Es werden die Daten des Air Quality Brickelts sowie der Außenwetterstation dargestellt.
 Graphen können mit einer einstellbaren Zeitbasis angezeigt werden und die Daten werden
@@ -238,16 +238,16 @@ soll, können diese auf die gleiche Platte wie der Master Brick geschraubt werde
    :target: ../../_images/Exploded/tabletop_weather_station_explosion_complete.png
 
 Wie in den Explosionszeichnungen zu erkennen ist befestigen wir das Air Quality Bricklet
-auf der Außenseite der Wetterstation. Dies stellt sich dass die Hitze die von den
+auf der Außenseite der Wetterstation. Dies stellt sicher dass die Hitze die von den
 anderen Komponenten (LCD 128x64 Bricklet, Master Brick, eventuell RED Brick) abgegeben
 wird nicht die Temperaturmessung des Air Quality Bricklets beeinflussen kann.
 
 Es ist auch möglich das Air Quality Bricklet auf die Innenseite zu schrauben. In diesem
 Fall empfehlen wir die Temperatur über die Temperatur-Kalibrierungsfunktion des Bricklets
-zu korrigieren. Die ist wichtig, da die ermittelte Temperatur auch zur Bestimmung der
+zu korrigieren. Dies ist wichtig, da die ermittelte Temperatur auch zur Bestimmung der
 Luftqualität und der Luftfeuchte verwendet wird.
 
-Das folgende video zeigt den Zusammenbau im Zeitraffer. An den wichtigen Stellen wird
+Das folgende Video zeigt den Zusammenbau im Zeitraffer. An den wichtigen Stellen wird
 das Video verlangsamt.
 
 .. raw:: html
@@ -282,7 +282,7 @@ Daher sind die Beispiele gut als Grundlage für eine eigene Anwendung geeignet.
 Selbstständig mit RED Brick
 ---------------------------
 
-Ein RED Brick kann zur Tisch-Wetterstation hinzugefügt werden. Es wird
+Ein RED Brick kann zur Tisch-Wetterstation hinzugefügt werden und wird
 unter den Master Brick geschraubt. In diesem Fall erfolgt die Stromversorgung
 über den USB-Stecker des RED Bricks.
 
@@ -294,7 +294,7 @@ unter den Master Brick geschraubt. In diesem Fall erfolgt die Stromversorgung
 
 Mit dem RED Brick kann die Anwendung der Tisch-Wetterstation selbständig
 ausgeführt werden. Um die Demo-Anwendung auf den RED Brick hochzuladen
-klicke im RED Brick tab des Brick Viewers auf "prgram" und "New".
+klicke im RED Brick Tab des Brick Viewers auf "Program" und "New".
 
 Wähle einen Namen und Python als Programmiersprache.
 
@@ -344,8 +344,8 @@ können auf den Standardwerten bleiben.
    :alt: Hochladen der Demo-Anwendung über Brick Viewer
    :align: center
 
-Nach dem der Uploadfertig ist sollte die Demo-Anwendung automatisch
-auf dem RED Brick laufen nachdem dieser gestartet wird!
+Nach dem der Upload fertig ist sollte die Demo-Anwendung automatisch
+auf dem RED Brick laufen sobald dieser gestartet wird!
 
 
 ..
