@@ -59,6 +59,12 @@ The Bricklet has the standard status LED and an additional info LED
 that can be turned on trough the API, e.g. to show that a weight
 measurement is in range.
 
+This Bricklet ist not galvanically isolated to the Tinkerforge system. 
+This means that there is a direct electrical connection between the terminals 
+of the Bricklet and the rest of the system. Dependent of the application 
+this can lead to undesired connections, ground loops or short circuits. 
+These problems can be prevented by using the Bricklet together with a :ref:`Isolator Bricklet <isolator>`.
+
 The Load Cell Bricklet 2.0 has a 7 pole Bricklet connector and is connected to a
 Brick with a ``7p-10p`` Bricklet cable.
 

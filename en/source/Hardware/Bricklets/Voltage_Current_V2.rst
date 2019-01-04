@@ -45,6 +45,12 @@ your power supply (e.g. battery) and your load (e.g. motor).
 In case of battery powered systems you can measure the state of the battery
 by bidirectional current measurement (charge/discharge).
 
+This Bricklet ist not galvanically isolated to the Tinkerforge system. 
+This means that there is a direct electrical connection between the terminals 
+of the Bricklet and the rest of the system. Dependent of the application 
+this can lead to undesired connections, ground loops or short circuits. 
+These problems can be prevented by using the Bricklet together with a :ref:`Isolator Bricklet <isolator>`.
+
 The Voltage/Current Bricklet 2.0 has a 7 pole Bricklet connector and is connected to a
 Brick with a ``7p-10p`` Bricklet cable.
 

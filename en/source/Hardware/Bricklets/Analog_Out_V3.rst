@@ -51,6 +51,12 @@ a supply voltage of at least 12V.
 For output voltages below 5V, you can :ref:`connect the 5V and VIN terminals
 <analog_out_v3_bricklet_connectivity>`.
 
+This Bricklet ist not galvanically isolated to the Tinkerforge system. 
+This means that there is a direct electrical connection between the terminals 
+of the Bricklet and the rest of the system. Dependent of the application 
+this can lead to undesired connections, ground loops or short circuits. 
+These problems can be prevented by using the Bricklet together with a :ref:`Isolator Bricklet <isolator>`.
+
 The Analog Out Bricklet 3.0 has a 7 pole Bricklet connector and is connected to a
 Brick with a ``7p-10p`` Bricklet cable.
 

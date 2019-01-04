@@ -42,6 +42,12 @@ and receive CAN data in a `CAN bus <https://en.wikipedia.org/wiki/CAN_bus>`__.
 The baudrate can be configured between 10kbit/s and 1Mbit/s. It is possible
 to apply filters to match for frames with a specific identifier.
 
+This Bricklet ist not galvanically isolated to the Tinkerforge system. 
+This means that there is a direct electrical connection between the terminals 
+of the Bricklet and the rest of the system. Dependent of the application 
+this can lead to undesired connections, ground loops or short circuits. 
+These problems can be prevented by using the Bricklet together with a :ref:`Isolator Bricklet <isolator>`.
+
 The CAN Bricklet 2.0 has a 7 pole Bricklet connector and is connected to a
 Brick with a ``7p-10p`` Bricklet cable.
 

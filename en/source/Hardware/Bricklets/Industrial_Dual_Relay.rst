@@ -56,6 +56,12 @@ If you want to switch inductive loads, please see:
  to switch higher voltages, consider to put the Dual Relay Bricklet
  in a casing. Touching the contacts is potentially life-threatening!
 
+This Bricklet ist not galvanically isolated to the Tinkerforge system. 
+This means that there is a direct electrical connection between the terminals 
+of the Bricklet and the rest of the system. Dependent of the application 
+this can lead to undesired connections, ground loops or short circuits. 
+These problems can be prevented by using the Bricklet together with a :ref:`Isolator Bricklet <isolator>`.
+
 The Industrial Dual Relay Bricklet has a 7 pole Bricklet connector and
 is connected to a Brick with a ``7p-10p`` Bricklet cable.
 

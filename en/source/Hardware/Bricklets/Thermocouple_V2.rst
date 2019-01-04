@@ -62,6 +62,15 @@ Another option is to choose the wire option. Then you will get the Bricklet
 without any connector but with two 20cm isolated wires. This way you can 
 connect your own connector to it.
 
+This Bricklet ist not galvanically isolated to the Tinkerforge system. 
+This means that there is a direct electrical connection between the terminals 
+of the Bricklet and the rest of the system. Dependent of the application 
+this can lead to undesired connections, ground loops or short circuits. 
+These problems can be prevented by using the Bricklet together with a :ref:`Isolator Bricklet <isolator>`.
+
+The Thermocouple Bricklet 2.0 has a 7 pole Bricklet connector and is connected to a
+Brick with a ``7p-10p`` Bricklet cable.
+
 
 Technical Specifications
 ------------------------
