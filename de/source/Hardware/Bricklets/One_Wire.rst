@@ -52,6 +52,12 @@ Stromversorgung für das 1-Wire Gerät zu wechseln.
 Eine Beispielanwendung für das Bricklet wäre z.B. das Bestimmen der
 Temperatur mit einem MAX31820 1-Wire Temperatursensors.
 
+Das Bricklet verfügt über keine galvanische Trennung zum Tinkerforge System. 
+Das heißt es gibt eine direkte elektrische Verbindung zwischen den 
+Anschlussklemmen des Bricklets und dem restlichen System. Sollte dies in der 
+jeweiligen Anwendung zu ungewollten Verbindungen, Masseschleifen oder 
+Kurzschlüssen führen, so ist der Einsatz zusammen mit einem :ref`Isolator Bricklet <isolator>` ratsam.
+
 Das One Wire Bricklet hat einen 7 Pol Bricklet Stecker und wird
 mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
 

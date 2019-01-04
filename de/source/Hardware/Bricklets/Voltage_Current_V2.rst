@@ -45,6 +45,12 @@ zwischen Spannungsversorgung (z.B. Batterie) und Last (z.B. Motor) eingebaut.
 In akkubetriebenen Systemen können über die bidirektionale Strommessung
 Aussagen über den Ladezustand des Akkus getroffen werden.
 
+Das Bricklet verfügt über keine galvanische Trennung zum Tinkerforge System. 
+Das heißt es gibt eine direkte elektrische Verbindung zwischen den 
+Anschlussklemmen des Bricklets und dem restlichen System. Sollte dies in der 
+jeweiligen Anwendung zu ungewollten Verbindungen, Masseschleifen oder 
+Kurzschlüssen führen, so ist der Einsatz zusammen mit einem :ref`Isolator Bricklet <isolator>` ratsam.
+
 Das Voltage/Current Bricklet 2.0 hat einen 7 Pol Bricklet Stecker und wird
 mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
 

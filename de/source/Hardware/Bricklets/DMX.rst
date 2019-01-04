@@ -55,6 +55,12 @@ ohne Beeinflussung zu überwachen.
 Das Bricklet ist mit einer XLR Buchse und Stecker ausgestattet und verfügt über eine
 schaltbare 120 Ohm Terminierung.
 
+Das Bricklet verfügt über keine galvanische Trennung zum Tinkerforge System. 
+Das heißt es gibt eine direkte elektrische Verbindung zwischen den 
+Anschlussklemmen des Bricklets und dem restlichen System. Sollte dies in der 
+jeweiligen Anwendung zu ungewollten Verbindungen, Masseschleifen oder 
+Kurzschlüssen führen, so ist der Einsatz zusammen mit einem :ref`Isolator Bricklet <isolator>` ratsam.
+
 Das DMX Bricklet hat einen 7 Pol Bricklet Stecker und wird
 mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
 

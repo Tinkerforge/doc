@@ -56,6 +56,12 @@ Das Schalten induktiver Lasten kann besondere Vorkehrungen erfordern, siehe:
  Anschlussklemmen und Kontakte sind nicht isoliert. Beim Schalten von hohen
  Spannungen sollte das Dual Relay Bricklet in ein Gehäuse verbaut werden.
  Das Berühren der Kontakte ist potentiell lebensgefährlich!
+ 
+Das Bricklet verfügt über keine galvanische Trennung zum Tinkerforge System. 
+Das heißt es gibt eine direkte elektrische Verbindung zwischen den 
+Anschlussklemmen des Bricklets und dem restlichen System. Sollte dies in der 
+jeweiligen Anwendung zu ungewollten Verbindungen, Masseschleifen oder 
+Kurzschlüssen führen, so ist der Einsatz zusammen mit einem :ref`Isolator Bricklet <isolator>` ratsam.
 
 Das Industrial Dual Relay Bricklet hat einen 7 Pol Bricklet Stecker
 und wird mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.

@@ -60,6 +60,14 @@ ausstatten. Es kann Typ J, T, E, U und N gewählt werden. Ist der gewünschte
 Anschluss nicht dabei, so kann das Bricklet auch mit zwei isolierten 20cm Drähten 
 geliefert werden. Somit kann auch ein eigener Anschluss angeschlossen werden.
 
+Das Bricklet verfügt über keine galvanische Trennung zum Tinkerforge System. 
+Das heißt es gibt eine direkte elektrische Verbindung zwischen den 
+Anschlussklemmen des Bricklets und dem restlichen System. Sollte dies in der 
+jeweiligen Anwendung zu ungewollten Verbindungen, Masseschleifen oder 
+Kurzschlüssen führen, so ist der Einsatz zusammen mit einem :ref`Isolator Bricklet <isolator>` ratsam.
+
+Das Thermocouple Bricklet 2.0 hat einen 7 Pol Bricklet Stecker und wird
+mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
 
 Technische Spezifikation
 ------------------------
