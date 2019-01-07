@@ -28,7 +28,7 @@ Installation
 
 Die Rust-Bindings können mit der Zip-Datei oder von crates.io installiert werden.
 
-Durch Hinzufügen von ``tinkerforge = "2.0"`` in den ``[dependencies]``-Abschnitt der
+Durch Hinzufügen von ``tinkerforge = "2.*"`` in den ``[dependencies]``-Abschnitt der
 ``Cargo.toml`` eines Projektes, wird cargo beim nächsten Durchlauf die Bindings und alle
 Abhängigkeiten herunterladen.
 
@@ -59,7 +59,7 @@ werden, die von Cargo erstellte Datei selben Namens kann gelöscht oder übersch
   -> src/main.rs (war davor example_configuration.rs)
 
 
-Danach muss entweder ``tinkerforge = "2.0"`` oder ``tinkerforge = {path=[your/path/here]}`` 
+Danach muss entweder ``tinkerforge = "2.*"`` oder ``tinkerforge = {path=[your/path/here]}`` 
 in den ``[dependencies]``-Abschnitt der ``Cargo.toml`` des Projekts eingefügt werden.
 
 Am Anfang des Beispiels ist mit ``HOST`` und ``PORT`` angegeben unter welcher

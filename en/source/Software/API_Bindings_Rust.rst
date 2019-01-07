@@ -28,7 +28,7 @@ Installation
 The Rust bindings can either be installed from the zip file, or by downloading
 them from crates.io.
 
-If you add ``tinkerforge = "2.0"`` to your ``Cargo.toml``'s ``[dependencies]`` section, cargo
+If you add ``tinkerforge = "2.*"`` to your ``Cargo.toml``'s ``[dependencies]`` section, cargo
 will download the bindings and all dependencies on the next run.
 
 If you want to install them from the zip file, download and extract it and register the dependency by adding
@@ -56,7 +56,7 @@ created by cargo)::
   -> Cargo.toml
   -> src/main.rs (was example_configuration.rs)
   
-Then add either ``tinkerforge = "2.0"`` or ``tinkerforge = {path=[your/path/here]}`` 
+Then add either ``tinkerforge = "2.*"`` or ``tinkerforge = {path=[your/path/here]}`` 
 into the ``[dependencies]`` section of your project's ``Cargo.toml``.
 
 In the example ``HOST`` and ``PORT`` specify at which network address the
