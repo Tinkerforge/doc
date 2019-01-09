@@ -303,16 +303,17 @@ Choose a name and Python as language.
    :align: center
 
 Add the files of the demo application. You can find the files
-`on github <https://github.com/Tinkerforge/tabletop-weather-station/tree/master/demo>`__.
+`on GitHub <https://github.com/Tinkerforge/tabletop-weather-station/tree/master/demo/tabletop_weather_station_demo>`__.
 If you already had the weather station running before, you can also
-upload the sqlite database (.db file here) to retain the data.
+upload the SQLite database (``.tabletop_weather_station_demo.db`` in your home
+directory) to retain the data.
 
 .. image:: /Images/Kits/tabletop_weather_station_red2.jpg
    :scale: 100 %
    :alt: Upload demo application to RED Brick with Brick Viewer
    :align: center
 
-Choose tabletop_weather_station.py as script file.
+Choose ``main.py`` as script file.
 
 .. image:: /Images/Kits/tabletop_weather_station_red3.jpg
    :scale: 100 %

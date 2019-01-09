@@ -304,17 +304,18 @@ Wähle einen Namen und Python als Programmiersprache.
    :align: center
 
 Füge die Dateien der Demo-Anwendung hinzu. Die Daten können auf
-`github gefunden werden <https://github.com/Tinkerforge/tabletop-weather-station/tree/master/demo>`__.
-Wenn die Wetterstation bereits zuvor gelaufen ist kann die sqlite
-Datenkank mit hochgeladen werden (.db Datei hier) um die bereits gespeicherten
-Messwerte weiter zu verwenden.
+`GitHub gefunden werden <https://github.com/Tinkerforge/tabletop-weather-station/tree/master/demo/tabletop_weather_station_demo>`__.
+Wenn die Wetterstation bereits zuvor gelaufen ist kann die SQLite
+Datenkank mit hochgeladen werden (``.tabletop_weather_station_demo.db`` Datei
+deinem Home-Verzeichnis) um die bereits gespeicherten Messwerte weiter zu
+verwenden.
 
 .. image:: /Images/Kits/tabletop_weather_station_red2.jpg
    :scale: 100 %
    :alt: Hochladen der Demo-Anwendung über Brick Viewer
    :align: center
 
-Wähle tabletop_weather_station.py als Startdatei.
+Wähle ``main.py`` als Startdatei.
 
 .. image:: /Images/Kits/tabletop_weather_station_red3.jpg
    :scale: 100 %
