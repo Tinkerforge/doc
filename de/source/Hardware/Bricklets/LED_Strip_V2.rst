@@ -66,7 +66,7 @@ APA102 (DotStar) LED-Treiber ausgestattet sind. Es ist möglich 2048 RGB oder
 
 Mit Hilfe der API können alle LEDs gleichzeitig mit einer festen
 Aktualisierungsrate von bis zu 100Hz gesteuert werden.  Ein Anwendungsbeispiel
-findet man im :ref:`Starter Kit: Blinken Lights <starter_kit_blinkenlights>`:
+findet man im :ref:`Starterkit: Blinkenlights <starter_kit_blinkenlights>`:
 `Video <https://www.youtube.com/watch?v=mmNRa-lLaXM>`__
 
 Das LED Strip Bricklet 2.0 hat einen 7 Pol Bricklet Stecker und wird

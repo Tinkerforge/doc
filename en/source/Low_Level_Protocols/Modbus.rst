@@ -118,7 +118,7 @@ API
 
 Links to the API reference for Bricks and Bricklets are listed in the
 following table. Further project descriptions can be found in the
-:ref:`Starter Kits <index_kits>` section.
+:ref:`Kits <index_kits>` section.
 
 .. include:: Modbus_links.table
 

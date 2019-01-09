@@ -55,7 +55,7 @@ Projekte auf `GitHub <https://github.com/Tinkerforge>`__ herausgelesen werden.
    "",     "51", "`Neues Dual Relay Bricklet <https://www.tinkerforge.com/de/blog/2013/12/16/neues-dual-relay-bricklet>`__"
    "2014", "03", "`Perl Bindings <https://www.tinkerforge.com/de/blog/2014/1/14/perl-bindings-fertig>`__"
    "",     "06", "`Mathematica Bindings <https://www.tinkerforge.com/de/blog/2014/2/7/mathematica-bindings-fertig>`__"
-   "",     "07", "`Starter Kit: Blinkenlights <https://www.tinkerforge.com/de/blog/2014/2/10/neues-starterkit:-blinkenlights>`__"
+   "",     "07", "`Starterkit: Blinkenlights <https://www.tinkerforge.com/de/blog/2014/2/10/neues-starterkit:-blinkenlights>`__"
    "",     "08", "`Ankündigung RED Brick <https://www.tinkerforge.com/de/blog/2014/2/21/tinkerforge-goes-stand-alone-aka-red-brick>`__"
    "",     "10", "`LabVIEW Bindings <https://www.tinkerforge.com/de/blog/2014/3/6/labview-bindings-fertig>`__"
    "",     "15", "`JavaScript Bindings für Browser/Node.js und Authentifizierung <https://www.tinkerforge.com/de/blog/2014/4/9/javascript-bindings-fuer-browser-nodejs-und-authentifizierung>`__"

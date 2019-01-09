@@ -156,7 +156,6 @@ miscalibrated
 addListener
 removeListener
 Raspbian
-Starterkit
 armhf
 armel
 Cosm

@@ -1,6 +1,6 @@
 
-Starter Kits
-============
+Kits
+====
 
 .. toctree::
    :hidden:

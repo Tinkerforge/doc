@@ -1,6 +1,6 @@
 
-Starterkits
-===========
+Kits
+====
 
 .. toctree::
    :hidden:

@@ -109,10 +109,10 @@ Master Extension Firmwares können mit dem Brick Viewer aktualisiert werden
 
 .. _downloads_demos:
 
-Starterkit Demos
-----------------
+Kit Demos
+----------
 
-Zu vielen :ref:`Starterkits <index_kits>` gehört auch eine Demo Anwendung die
+Zu vielen :ref:`Kits <index_kits>` gehört auch eine Demo Anwendung die
 dessen Fähigkeiten vorführt.
 
 .. include:: Downloads_kits.table

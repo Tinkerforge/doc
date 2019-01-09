@@ -47,9 +47,9 @@ Software
 
 .. _index_kits:
 
-************
-Starter Kits
-************
+****
+Kits
+****
 
 .. include:: Kits.content
 

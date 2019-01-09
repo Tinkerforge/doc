@@ -407,7 +407,7 @@ Knopf verworfen werden. Dateien mit ungespeicherten Änderungen werden als
 ``(modified)`` angezeigt.
 
 Ein openHAB Konfigurationsbeispiel ist in der Dokumentation des
-:ref:`Starterkits: Wetterstation <starter_kit_weather_station_openhab>`
+:ref:`Starterkit: Wetterstation <starter_kit_weather_station_openhab>`
 beschrieben.
 
 .. _red_brick_brickv_settings_brickd:

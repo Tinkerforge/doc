@@ -103,10 +103,10 @@ Viewer (see :ref:`here <brickv_flash_extension_firmware>`).
 
 .. _downloads_demos:
 
-Starter Kit Demos
------------------
+Kit Demos
+---------
 
-Many :ref:`starter kits <index_kits>` come with demo applications that show
+Many :ref:`kits <index_kits>` come with demo applications that show
 their features.
 
 .. include:: Downloads_kits.table

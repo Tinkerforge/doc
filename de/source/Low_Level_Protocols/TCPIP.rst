@@ -407,7 +407,7 @@ Bricks und Bricklets
 
 Links zur API Referenz der Bricks und Bricklets sind in der folgenden Tabelle
 aufgelistet. Anleitungen für weiterführende Projekte finden sich im Abschnitt
-über :ref:`Starterkits <index_kits>`.
+über :ref:`Kits <index_kits>`.
 
 .. include:: TCPIP_links.table
 

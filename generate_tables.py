@@ -527,13 +527,13 @@ def make_download_kits_table():
 
     table_head = {
     'en': """.. csv-table::
- :header: "Starter Kit", "Downloads", "Version", "Archive", "Changelog"
+ :header: "Kit", "Downloads", "Version", "Archive", "Changelog"
  :delim: |
  :widths: 17, 32, 5, 5, 8
 
 """,
     'de': """.. csv-table::
- :header: "Starterkit", "Downloads", "Version", "Archiv", "Changelog"
+ :header: "Kit", "Downloads", "Version", "Archiv", "Changelog"
  :delim: |
  :widths: 17, 32, 5, 5, 8
 
@@ -1411,7 +1411,7 @@ def generate(path):
 Links to the API reference for the {discontinued}{device_type} as
 well as the examples from the ZIP file of the bindings are listed in the
 following table. Further project descriptions can be found in the
-:ref:`Starter Kits <index_kits>` section.
+:ref:`Kits <index_kits>` section.
 
 .. include:: {device_type}_{lang_path}{discontinued_title_underscore}.table
 
@@ -1424,7 +1424,7 @@ following table. Further project descriptions can be found in the
 Links zur API Referenz der {discontinued}{device_type} sowie den
 Beispiele aus der ZIP Datei der Bindings sind in der folgenden Tabelle
 aufgelistet. Anleitungen für weiterführende Projekte finden sich im Abschnitt
-über :ref:`Starterkits <index_kits>`.
+über :ref:`Kits <index_kits>`.
 
 .. include:: {device_type}_{lang_path}{discontinued_title_underscore}.table
 
