@@ -118,13 +118,14 @@ accessory_infos = \
                 'de': 'Adapter zwischen einem 5mm DC Stecker und 2 Pin Stecker Schwarz'})
 ]
 
-KitInfo = namedtuple('KitInfo', 'display_name url_part')
+KitInfo = namedtuple('KitInfo', 'display_name url_part prefix released')
 
 kit_infos = \
 [
-    KitInfo({'en': 'Blinkenlights', 'de': 'Blinkenlights'}, 'blinkenlights'),
-    KitInfo({'en': 'Camera Slider', 'de': 'Kameraschlitten'}, 'camera_slider'),
-    KitInfo({'en': 'Weather Station', 'de': 'Wetterstation'}, 'weather_station')
+    KitInfo({'en': 'Starter Kit: Blinkenlights', 'de': 'Starterkit: Blinkenlights'}, 'blinkenlights', 'starter_kit_', True),
+    KitInfo({'en': 'Starter Kit: Camera Slider', 'de': 'Starterkit: Kameraschlitten'}, 'camera_slider', 'starter_kit_', True),
+    KitInfo({'en': 'Tabletop Weather Station', 'de': 'Tisch-Wetterstation'}, 'tabletop_weather_station', '', False),
+    KitInfo({'en': 'Starter Kit: Weather Station', 'de': 'Starterkit: Wetterstation'}, 'weather_station', 'starter_kit_', True)
 ]
 
 LATEST_VERSIONS_URL = 'http://download.tinkerforge.com/latest_versions.txt'
@@ -540,15 +541,20 @@ def make_download_kits_table():
 """
     }
 
-    row = ' :ref:`{0} <starter_kit_{1}>` | `Linux <http://download.tinkerforge.com/kits/{1}/linux/starter-kit-{2}-demo-{5}.{6}.{7}_all.deb>`__, `macOS <http://download.tinkerforge.com/kits/{1}/macos/starter_kit_{1}_demo_macos_{5}_{6}_{7}.dmg>`__, `Windows <http://download.tinkerforge.com/kits/{1}/windows/starter_kit_{1}_demo_windows_{5}_{6}_{7}.exe>`__, `{3} <https://github.com/Tinkerforge/{2}/archive/demo-{5}.{6}.{7}.zip>`__ | {5}.{6}.{7} | `{4} <http://download.tinkerforge.com/kits/{1}/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/{2}/master/demo/changelog>`__'
+    row = ' :ref:`{0} <{5}{1}>` | `Linux <http://download.tinkerforge.com/kits/{1}/linux/{6}{2}-demo-{7}.{8}.{9}_all.deb>`__, `macOS <http://download.tinkerforge.com/kits/{1}/macos/{5}{1}_demo_macos_{7}_{8}_{9}.dmg>`__, `Windows <http://download.tinkerforge.com/kits/{1}/windows/{5}{1}_demo_windows_{7}_{8}_{9}.exe>`__, `{3} <https://github.com/Tinkerforge/{2}/archive/demo-{7}.{8}.{9}.zip>`__ | {7}.{8}.{9} | `{4} <http://download.tinkerforge.com/kits/{1}/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/{2}/master/demo/changelog>`__'
     rows = []
 
     for kit_info in kit_infos:
+        if not kit_info.released:
+            continue
+
         rows.append(row.format(kit_info.display_name[lang],
                                kit_info.url_part,
                                kit_info.url_part.replace('_', '-'),
                                source_code[lang],
                                archive[lang],
+                               kit_info.prefix,
+                               kit_info.prefix.replace('_', '-'),
                                *kit_versions[kit_info.url_part]))
 
     return table_head[lang] + '\n'.join(rows) + '\n'
@@ -1444,7 +1450,7 @@ aufgelistet. Anleitungen für weiterführende Projekte finden sich im Abschnitt
                                                     equal_signs="="*(len(disp_name) + 3 + len(dev) + len(disc_title_par[lang])),
                                                     discontinued_title_underscore="_Discontinued")
             write_if_changed(os.path.join(path, 'source', 'Software', "{dev}_{lang}_Discontinued.rst".format(dev=dev, lang=lang_path)), discontinued.encode('utf-8'))
-                        
+
             print('Generating {dev}_{lang}.rst'.format(dev=dev, lang=lang_path))
             normal = template[lang].format(lang=disp_name,
                                             lang_path = lang_path,
@@ -1452,7 +1458,7 @@ aufgelistet. Anleitungen für weiterführende Projekte finden sich im Abschnitt
                                             discontinued="",
                                             discontinued_title_parenthesis="",
                                             equal_signs="="*(len(disp_name) + 3 + len(dev)),
-                                            discontinued_title_underscore="")            
+                                            discontinued_title_underscore="")
             write_if_changed(os.path.join(path, 'source', 'Software', "{dev}_{lang}.rst".format(dev=dev, lang=lang_path)), normal.encode('utf-8'))
 
     for bindings_info in bindings_infos:
