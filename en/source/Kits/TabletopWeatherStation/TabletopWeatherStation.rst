@@ -120,7 +120,7 @@ Resources
 ---------
 
 * Tabletop Weather Station Case as FreeCAD CAD files (`Download <TODO>`__)
-* TODO: Demo Application Download
+* Demo Application (Download: `Windows <http://download.tinkerforge.com/kits/tabletop_weather_station/windows/tabletop_weather_station_demo_windows_latest.exe>`__, `Linux <http://download.tinkerforge.com/kits/tabletop_weather_station/linux/tabletop-weather-station-demo-linux_latest.deb>`__, `macOS <http://download.tinkerforge.com/kits/tabletop_weather_station/macos/tabletop_weather_station_demo_macos_latest.dmg>`__, `Source Code <https://github.com/Tinkerforge/tabletop-weather-station/tree/master/demo>`__)
 * Simple examples: |examples_download|
 
 
