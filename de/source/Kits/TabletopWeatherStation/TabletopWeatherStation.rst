@@ -176,7 +176,7 @@ oder Icon dargestellt. Touch-Klick/Gesten und GUI-Callbacks werden zur einfachen
 Nutzung vom LCD 128x64 zum selektierten Screen weitergeleitet.
 
 Eigene Screens können über die 
-`custom_screens.py <https://github.com/Tinkerforge/tabletop-weather-station/blob/master/demo/custom_screens.py>`__
+`custom_screens.py <https://github.com/Tinkerforge/tabletop-weather-station/blob/master/demo/tabletop_weather_station_demo/custom_screens.py>`__
 hinzugefügt werden.
 
 Ein einfacher Screen der die aktuelle Uhrzeit auf das Display schreibt könnte wie folgt 
@@ -201,7 +201,7 @@ aussehen::
 Minimalst muss der Tab-Text (oder optional ein icon) festgelegt und die ``draw_init``-
 sowie ``draw_update``-Funktion implementiert werden. Beispiele für die Nutzung von
 Touch-Gesten und ähnliches können in den bereits implementierten Screens in der 
-`screens.py <https://github.com/Tinkerforge/tabletop-weather-station/blob/master/demo/screens.py>`__
+`screens.py <https://github.com/Tinkerforge/tabletop-weather-station/blob/master/demo/tabletop_weather_station_demo/screens.py>`__
 gefunden werden.
 
 Der obige Code fügt folgenden Tab zur Demo-Anwendung hinzu:

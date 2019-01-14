@@ -49,11 +49,11 @@ distances without polling.
 Infrared sensors with different distance ranges are supported and available in the shop:
 
 * `Infrared Sensor 4-30cm GP2Y0A41SK0F
-  <https://www.tinkerforge.com/en/shop/bricklets/distance-ir-v2-4-30cm-bricklet.html>`__
+  <https://www.tinkerforge.com/en/shop/bricklets/distance-ir-4-30cm-v2-bricklet.html>`__
 * `Infrared Sensor 10-80cm GP2Y0A21YK0F
-  <https://www.tinkerforge.com/en/shop/bricklets/distance-ir-v2-10-80cm-bricklet.html>`__
+  <https://www.tinkerforge.com/en/shop/bricklets/distance-ir-10-80cm-v2-bricklet.html>`__
 * `Infrared Sensor 20-150cm GP2Y0A02YK0F
-  <https://www.tinkerforge.com/en/shop/bricklets/distance-ir-v2-20-150cm-bricklet.html>`__
+  <https://www.tinkerforge.com/en/shop/bricklets/distance-ir-20-150cm-v2-bricklet.html>`__
 
 Typically these types of sensors are used in robotics to measure distances
 for mapping or localization purposes. But you can also use this sensors in

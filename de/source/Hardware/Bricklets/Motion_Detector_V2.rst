@@ -20,7 +20,7 @@ Motion Detector Bricklet 2.0
 	Bricklets/bricklet_motion_detector_v2_top_[?|?].jpg                Motion Detector Bricklet 2.0
 	Bricklets/bricklet_motion_detector_v2_tilted_black_lense_[?|?].jpg Motion Detector Bricklet 2.0 (schwarze Linse)
 	Cases/bricklet_motion_detector_v2_case_built_up_[?|?].jpg          Motion Detector Bricklet 2.0 im Gehäuse
-	Cases/bricklet_motion_detector_v2_case_be_built_up_[100|].jpg      Motion Detector Bricklet 2.0 im Gehäuse (schwarz)
+	Cases/bricklet_motion_detector_v2_case_be_built_up_[?|?].jpg       Motion Detector Bricklet 2.0 im Gehäuse (schwarz)
 	Bricklets/bricklet_motion_detector_v2_brickv_[100|].jpg            Motion Detector Bricklet 2.0 im Brick Viewer
 	Dimensions/motion_detector_v2_bricklet_dimensions_[100|600].png    Umriss und Bohrplan
 

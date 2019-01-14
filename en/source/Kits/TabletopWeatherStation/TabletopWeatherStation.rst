@@ -176,7 +176,7 @@ have a text-label or icon. The touch-click/gesture and GUI callbacks of the
 LCD 128x64 Bricklet are passed through to the screen if it is selected.
 
 You can add your own screens in the 
-`custom_screens.py <https://github.com/Tinkerforge/tabletop-weather-station/blob/master/demo/custom_screens.py>`__.
+`custom_screens.py <https://github.com/Tinkerforge/tabletop-weather-station/blob/master/demo/tabletop_weather_station_demo/custom_screens.py>`__.
 
 A simple screen that displays the curent time looks as follows::
 
@@ -200,7 +200,7 @@ A simple screen that displays the curent time looks as follows::
 As a minimum you have to define a text (or optionally an icon) and a ``draw_init`` as well
 ass ``draw_update`` function. For examples on how to react to touch-gestures and similar
 you can take a look at the already implemented screens in
-`screens.py <https://github.com/Tinkerforge/tabletop-weather-station/blob/master/demo/screens.py>`__.
+`screens.py <https://github.com/Tinkerforge/tabletop-weather-station/blob/master/demo/tabletop_weather_station_demo/screens.py>`__.
 
 The code above will create the following additional tab:
 

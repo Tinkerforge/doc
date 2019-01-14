@@ -166,7 +166,7 @@ Case
 ----
 
 A `laser-cut case for the OLED 128x64 Bricklet 2.0
-<https://www.tinkerforge.com/en/shop/cases/case-oled-128x64-v2-bricklet.html>`__ is available.
+<https://www.tinkerforge.com/en/shop/cases/case-oled-128x64-bricklet.html>`__ is available.
 
 .. image:: /Images/Cases/bricklet_oled_128x64_v2_case_350.jpg
    :scale: 100 %

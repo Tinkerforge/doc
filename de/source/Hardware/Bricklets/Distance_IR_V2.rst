@@ -50,11 +50,11 @@ reagieren ohne die Werte laufend abzufragen (kein Polling notwendig).
 Im Shop sind Infrarot Sensoren für verschiedene Messbereiche verfügbar:
 
 * `Infrarot Sensor 4-30cm GP2Y0A41SK0F
-  <https://www.tinkerforge.com/de/shop/bricklets/distance-ir-v2-4-30cm-bricklet.html>`__
+  <https://www.tinkerforge.com/de/shop/bricklets/distance-ir-4-30cm-v2-bricklet.html>`__
 * `Infrarot Sensor 10-80cm GP2Y0A21YK0F
-  <https://www.tinkerforge.com/de/shop/bricklets/distance-ir-v2-10-80cm-bricklet.html>`__
+  <https://www.tinkerforge.com/de/shop/bricklets/distance-ir-10-80cm-v2-bricklet.html>`__
 * `Infrarot Sensor 20-150cm GP2Y0A02YK0F
-  <https://www.tinkerforge.com/de/shop/bricklets/distance-ir-v2-20-150cm-bricklet.html>`__
+  <https://www.tinkerforge.com/de/shop/bricklets/distance-ir-20-150cm-v2-bricklet.html>`__
 
 Typischerweise werden diese Sensoren in der Robotik genutzt um Entfernungen
 zu messen, zur Lokalisierung oder zur Kartenerstellung. Sie sind aber noch
