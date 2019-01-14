@@ -163,6 +163,36 @@ easy text rendering (up to 26x8 characters):
    :align: center
    :target: ../../_images/Bricklets/bricklet_oled_font.png
 
+.. _oled_128x64_bricklet_case:
+
+Case
+----
+
+A `laser-cut case for the OLED 128x64 Bricklet
+<https://www.tinkerforge.com/en/shop/cases/case-oled-128x64-bricklet.html>`__ is available.
+
+.. image:: /Images/Cases/bricklet_oled_128x64_v2_case_350.jpg
+   :scale: 100 %
+   :alt: Case for OLED 128x64 Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_oled_128x64_v2_case_1000.jpg
+
+The assembly is easiest if you follow the following steps:
+
+* Screw front plate to Bricklet,
+* build up side plates and bottom/back plate,
+* screw front plate to side plates.
+
+Below you can see an exploded assembly drawing of the OLED 128x64 Bricklet case:
+
+.. image:: /Images/Exploded/oled_128x64_v2_exploded_350.png
+   :scale: 100 %
+   :alt: Exploded assembly drawing for OLED 128x64 Bricklet
+   :align: center
+   :target: ../../_images/Exploded/oled_128x64_v2_exploded.png
+
+|bricklet_case_hint|
+
 .. _oled_128x64_bricklet_programming_interface:
 
 Programming Interface
