@@ -8,3 +8,4 @@ with Tinkerforge:
 * :ref:`starter_kit_blinkenlights`
 * :ref:`starter_kit_iot`
 * :ref:`starter_kit_camera_slider`
+* :ref:`tabletop_weather_station`

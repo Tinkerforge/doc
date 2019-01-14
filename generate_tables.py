@@ -124,7 +124,7 @@ kit_infos = \
 [
     KitInfo({'en': 'Starter Kit: Blinkenlights', 'de': 'Starterkit: Blinkenlights'}, 'blinkenlights', 'starter_kit_', True),
     KitInfo({'en': 'Starter Kit: Camera Slider', 'de': 'Starterkit: Kameraschlitten'}, 'camera_slider', 'starter_kit_', True),
-    KitInfo({'en': 'Tabletop Weather Station', 'de': 'Tisch-Wetterstation'}, 'tabletop_weather_station', '', False),
+    KitInfo({'en': 'Tabletop Weather Station', 'de': 'Tisch-Wetterstation'}, 'tabletop_weather_station', '', True),
     KitInfo({'en': 'Starter Kit: Weather Station', 'de': 'Starterkit: Wetterstation'}, 'weather_station', 'starter_kit_', True)
 ]
 

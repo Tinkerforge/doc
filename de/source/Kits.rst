@@ -11,5 +11,6 @@ Kits
    Starterkit: Blinkenlights <Kits/Blinkenlights/Blinkenlights>
    Starterkit: Internet der Dinge <Kits/InternetOfThings/InternetOfThings>
    Starterkit: Kameraschlitten <Kits/CameraSlider/CameraSlider>
+   Tisch-Wetterstation <Kits/TabletopWeatherStation/TabletopWeatherStation>
 
 .. include:: Kits.content
