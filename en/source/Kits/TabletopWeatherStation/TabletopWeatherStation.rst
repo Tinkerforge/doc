@@ -45,7 +45,7 @@ Features
 * Open source touch-capable Tabletop Weather Station
 * Measures Temperature, Humidity, Air Pressure and Air Quality Index
 * Demo Application available (touch-capable, with graphs, database logging)
-* Control over USB, Wi-Fi, Ethernet or with RED Brick
+* Control over USB, Wi-Fi or with RED Brick
 * Internet of Things (IoT) capable
 
 Description

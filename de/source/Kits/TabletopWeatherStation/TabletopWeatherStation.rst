@@ -46,7 +46,7 @@ Features
 * Open Source touchfähige Tisch-Wetterstation
 * Misst Temperatur, Luftfeuchtigkeit, Luftdruck und Luftqualität (Air Quality Index)
 * Demo-Anwendung verfügbar (touchfähig, mit Graphen, Logging in Datenbank)
-* Steuerbar über USB, WLAN, Ethernet oder mit RED Brick
+* Steuerbar über USB, WLAN oder mit RED Brick
 * Internet der Dinge (IoT) fähig
 
 Beschreibung
