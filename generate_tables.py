@@ -35,7 +35,7 @@ bindings_infos = \
     BindingsInfo('Delphi/Lazarus', 'delphi', 'Delphi', True, True,
                  {'en': 'http://www.delphibasics.co.uk/',
                   'de': 'http://www.delphi-treff.de/tutorials/grundlagen-tutorials/'}),
-    BindingsInfo('Go', 'go', 'Go', True, False,
+    BindingsInfo('Go', 'go', 'Go', True, True,
                  {'en': 'https://tour.golang.org',
                   'de': 'https://tour.golang.org'}),
     BindingsInfo('Java', 'java', 'Java', True, True,
