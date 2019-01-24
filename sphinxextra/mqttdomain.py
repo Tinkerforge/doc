@@ -40,7 +40,7 @@ class DefinitionParser(object):
             (msg, self.definition))
 
     def parse_function(self):
-        splt = self.definition.replace("[/SUFFIX]", "").split('/')
+        splt = self.definition.replace("[/<SUFFIX>]", "").split('/')
         if len(splt) < 3:
             self.fail("Expected topic with at least 3 path elements")
         if len(splt) > 4:
