@@ -15,8 +15,8 @@ Go - IP Connection
 
 .. _ipcon_go_examples:
 
-Examples
---------
+Beispiele
+---------
 
 Der folgende Beispielcode ist `Public Domain (CC0 1.0)
 <https://creativecommons.org/publicdomain/zero/1.0/deed.de>`__.
@@ -50,7 +50,7 @@ API
 
 Die IP Connection ist im Package ``github.com/Tinkerforge/go-api-bindings/ipconnection`` definiert.
 
-Basic Functions
+Grundfunktionen
 ^^^^^^^^^^^^^^^
 
 .. go:function:: func NewIPConnection() (ipcon IPConnection)
