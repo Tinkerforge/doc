@@ -31,16 +31,30 @@ Accelerometer Bricklet 2.0
 Features
 --------
 
-* TBD
-* TBD
-
+* 3-Achsen Accelerometer
+* 0,0001g Schritte mit 16Bit Auflösung
+* Messbereich bis zu ±8g
+* Datenrate bis zu 25,6kHz
 
 .. _accelerometer_v2_bricklet_description:
 
 Beschreibung
 ------------
 
-TBD
+Mit dem Accelerometer :ref:`Bricklet <primer_bricklets>` können
+:ref:`Bricks <primer_bricks>` Beschleunigung entlang der X- Y- und Z-Achse
+messen. Die gemessene Beschleunigung kann in `g
+<https://de.wikipedia.org/wiki/G-Kraft>`__ ausgelesen werden. Mit
+konfigurierbaren Events ist es möglich auf Beschleunigungsänderungen zu
+reagieren ohne die Werte laufend abzufragen (kein Polling notwendig).
+
+Ein ``Continuous Acceleration Callback`` kann genutzt werden um hohe Datenraten
+bis zu 25,6kHz zu übertragen. Das Bricklet ist damit gut für Anwendungen im
+Bereich Predictive Maintenance geeignet.
+
+Auf dem Bricklet befindet sich eine LED die mittels API ein- und ausgeschaltet
+werden kann, um z.B. anzuzeigen, dass eine bestimmte Beschleunigung erreicht
+wurde.
 
 
 Technische Spezifikation
@@ -49,20 +63,25 @@ Technische Spezifikation
 ================================  ============================================================
 Eigenschaft                       Wert
 ================================  ============================================================
-Stromverbrauch                    TBDmA
+Sensor                            KX122
+Stromverbrauch                    TBDmW (TBDmA bei 5V)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-E TBD                             W TBD
+Auflösung                         0,0001g Schritte, 16Bit Auflösung
+Stoßfestigkeit                    5000g für 0,5ms / 10000g für 0,2ms
+Messbereich                       ±2g / ±4g / ±8g (per API einstellbar)
+Datenrate                         0,781Hz - 25,6kHz (per API einstellbar)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Abmessungen (B x T x H)           TBD x TBD x TBDmm (TBD x TBD x TBD")
-Gewicht                           TBDg
+Abmessungen (B x T x H)           25 x 20 x 5mm (0,98 x 0,79 x 0,19")
+Gewicht                           2g
 ================================  ============================================================
 
 
 Ressourcen
 ----------
 
+* KX122 datasheet (`Download <https://github.com/Tinkerforge/accelerometer-bricklet-v2/raw/master/datasheets/KX122.pdf>`__)
 * Schaltplan (`Download <https://github.com/Tinkerforge/accelerometer-v2-bricklet/raw/master/hardware/accelerometer-v2-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/accelerometer_v2_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/accelerometer-v2-bricklet/zipball/master>`__)
@@ -79,14 +98,18 @@ Erster Test
 |test_connect|.
 
 |test_tab|
-Wenn alles wie erwartet funktioniert ... TBD.
+Wenn alles wie erwartet funktioniert wird die Beschleunigung in g
+angezeigt. Der Graph gibt den zeitlichen Verlauf der Beschleunigung wieder.
 
-..
-	.. image:: /Images/Bricklets/bricklet_accelerometer_v2_brickv.jpg
-	   :scale: 100 %
-	   :alt: Accelerometer Bricklet 2.0 im Brick Viewer
-	   :align: center
-	   :target: ../../_images/Bricklets/bricklet_accelerometer_v2_brickv.jpg
+Lasse das Bricklet mit allen drei Achsen nacheinander nach unten zeigen. Die
+angezeigte Beschleunigung sollte ca. 1g für die nach unten zeigende Achse
+betragen. Die Beschleunigung für die anderen Achsen sollte nahe 0g sein.
+
+.. image:: /Images/Bricklets/bricklet_accelerometer_v2_brickv.jpg
+   :scale: 100 %
+   :alt: Accelerometer Bricklet 2.0 im Brick Viewer
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_accelerometer_v2_brickv.jpg
 
 |test_pi_ref|
 
@@ -96,27 +119,26 @@ Wenn alles wie erwartet funktioniert ... TBD.
 Gehäuse
 -------
 
-..
-	Ein `laser-geschnittenes Gehäuse für das Accelerometer Bricklet 2.0
-	<https://www.tinkerforge.com/de/shop/cases/case-accelerometer-v2-bricklet.html>`__ ist verfügbar.
+Ein `laser-geschnittenes Gehäuse für das Accelerometer Bricklet 2.0
+<https://www.tinkerforge.com/de/shop/cases/case-accelerometer-bricklet.html>`__ ist verfügbar.
 
-	.. image:: /Images/Cases/bricklet_accelerometer_v2_case_350.jpg
-	   :scale: 100 %
-	   :alt: Gehäuse für Accelerometer Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_accelerometer_v2_case_1000.jpg
+.. image:: /Images/Cases/bricklet_accelerometer_case_built_up_350.jpg
+   :scale: 100 %
+   :alt: Gehäuse für Accelerometer Bricklet 2.0
+   :align: center
+   :target: ../../_images/Cases/bricklet_accelerometer_case_built_up_1000.jpg
 
-	.. include:: Accelerometer_V2.substitutions
-	   :start-after: >>>bricklet_case_steps
-	   :end-before: <<<bricklet_case_steps
+.. include:: Accelerometer.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
 
-	.. image:: /Images/Exploded/accelerometer_v2_exploded_350.png
-	   :scale: 100 %
-	   :alt: Explosionszeichnung für Accelerometer Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Exploded/accelerometer_v2_exploded.png
+.. image:: /Images/Exploded/accelerometer_exploded_350.png
+   :scale: 100 %
+   :alt: Explosionszeichnung für Accelerometer Bricklet 2.0
+   :align: center
+   :target: ../../_images/Exploded/accelerometer_exploded.png
 
-	|bricklet_case_hint|
+|bricklet_case_hint|
 
 
 .. _accelerometer_v2_bricklet_programming_interface:
