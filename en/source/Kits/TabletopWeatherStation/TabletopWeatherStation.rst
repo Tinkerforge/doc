@@ -57,7 +57,7 @@ index with high precision. The basic kit consists of
 
 * :ref:`Master Brick <master_brick>`,
 * :ref:`Air Quality Bricklet <air_quality_bricklet>` and
-* `Tabletop Weather Station case <TBD>`__.
+* `Tabletop Weather Station case <https://www.tinkerforge.com/en/shop/tabletop-weather-station-case.html>`__.
 
 It can be controlled by an (Embedded-) PC.
 Control via Wi-Fi is possible if a :ref:`WIFI Extension 2.0 <wifi_v2_extension>` is 
@@ -119,7 +119,7 @@ Weight                            238g (basic), 288g (basic + RED Brick + Outdoo
 Resources
 ---------
 
-* Tabletop Weather Station Case as FreeCAD CAD files (`Download <TODO>`__)
+* Tabletop Weather Station Case as FreeCAD CAD files (`Download <https://github.com/Tinkerforge/cases/tree/master/tabletop_weather_station>`__)
 * Demo Application (Download: `Windows <http://download.tinkerforge.com/kits/tabletop_weather_station/windows/tabletop_weather_station_demo_windows_latest.exe>`__, `Linux <http://download.tinkerforge.com/kits/tabletop_weather_station/linux/tabletop-weather-station-demo-linux_latest.deb>`__, `macOS <http://download.tinkerforge.com/kits/tabletop_weather_station/macos/tabletop_weather_station_demo_macos_latest.dmg>`__, `Source Code <https://github.com/Tinkerforge/tabletop-weather-station/tree/master/demo>`__)
 * Simple examples: |examples_download|
 
@@ -158,7 +158,7 @@ Demo Application
 The demo application for the Tabletop Weather Station is written in Python. You
 can find the source code `here <https://github.com/Tinkerforge/tabletop-weather-station/tree/master/demo>`__ 
 and executables for Linux, macOS and Windows are available 
-`here <TBD>`__.
+`here <https://www.tinkerforge.com/en/doc/Downloads.html#kit-demos>`__.
 
 It shows the data of the Air Quality Bricklet as well as the Outdoor Weather Station.
 Graphs can be drawn for different time frames, the data is logged in a sqlite database
