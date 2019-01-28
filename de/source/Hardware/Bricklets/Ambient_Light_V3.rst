@@ -31,8 +31,9 @@ Ambient Light Bricklet 3.0
 Features
 --------
 
-* TBD
-* TBD
+* Misst Umgebungslicht bis zu 64000Lux
+* Voller Dynamikumfang von 0,01Lux bis 64000Lux
+* Ausgabe in 0,01Lux Schritten (16Bit effektive Auflösung)
 
 
 .. _ambient_light_v3_bricklet_description:
@@ -40,7 +41,17 @@ Features
 Beschreibung
 ------------
 
-TBD
+Mit dem Ambient Light :ref:`Bricklet <primer_bricklets>` 3.0 können
+:ref:`Bricks <primer_bricks>` die Umgebungshelligkeit messen.
+Es ist der Nachfolger des :ref:`ambient_light_bricklet` mit einem etwa 70x
+größeren Messbereich.
+Die gemessene Helligkeit kann in `Lux <https://de.wikipedia.org/wiki/Lux_(Einheit)>`__
+ausgelesen werden. Mit konfigurierbaren Events ist es möglich auf
+Helligkeitsänderungen zu reagieren ohne die Werte laufend abzufragen
+(kein Polling notwendig).
+
+Dieses Bricklet kann genutzt werden um z.B. helligkeitsabhängig Beleuchtungen
+oder Motoren zu steuern.
 
 
 Technische Spezifikation
@@ -49,20 +60,22 @@ Technische Spezifikation
 ================================  ============================================================
 Eigenschaft                       Wert
 ================================  ============================================================
-Stromverbrauch                    TBDmA
+Sensor                            LTR329ALS
+Stromverbrauch                    TBDmW (TBDmA bei 5V)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-E TBD                             W TBD
+Beleuchtungsstärke                0Lux - 64000Lux in 0,01Lux Schritten, 16Bit Auflösung
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Abmessungen (B x T x H)           TBD x TBD x TBDmm (TBD x TBD x TBD")
-Gewicht                           TBDg
+Abmessungen (B x T x H)           25 x 15 x 5mm (0,98 x 0,59 x 0,19")
+Gewicht                           2g
 ================================  ============================================================
 
 
 Ressourcen
 ----------
 
+* LTR329ALS Datenblatt (`Download <https://github.com/Tinkerforge/ambient-light-v3-bricklet/raw/master/datasheets/LTR329ALS.pdf>`__)
 * Schaltplan (`Download <https://github.com/Tinkerforge/ambient-light-v3-bricklet/raw/master/hardware/ambient-light-v3-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/ambient_light_v3_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/ambient-light-v3-bricklet/zipball/master>`__)
@@ -79,14 +92,18 @@ Erster Test
 |test_connect|.
 
 |test_tab|
-Wenn alles wie erwartet funktioniert ... TBD.
+Wenn alles wie erwartet funktioniert wird die Beleuchtungsstärke in Lux
+angezeigt. Der Graph gibt den zeitlichen Verlauf der Beleuchtungsstärke wieder.
 
-..
-	.. image:: /Images/Bricklets/bricklet_ambient_light_v3_brickv.jpg
-	   :scale: 100 %
-	   :alt: Ambient Light Bricklet 3.0 im Brick Viewer
-	   :align: center
-	   :target: ../../_images/Bricklets/bricklet_ambient_light_v3_brickv.jpg
+Ein guter Test für den Sensor ist es den Raum abzudunkeln und eine Taschenlampe
+langsam über den Sensor hinweg zu bewegen. Der resultierende Graph sollte
+ungefähr so aussehen wie auf dem folgenden Screenshot.
+
+.. image:: /Images/Bricklets/bricklet_ambient_light_v3_brickv.jpg
+   :scale: 100 %
+   :alt: Ambient Light Bricklet 3.0 im Brick Viewer
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_ambient_light_v3_brickv.jpg
 
 |test_pi_ref|
 
@@ -96,27 +113,27 @@ Wenn alles wie erwartet funktioniert ... TBD.
 Gehäuse
 -------
 
-..
-	Ein `laser-geschnittenes Gehäuse für das Ambient Light Bricklet 3.0
-	<https://www.tinkerforge.com/de/shop/cases/case-ambient-light-v3-bricklet.html>`__ ist verfügbar.
+Ein `laser-geschnittenes Gehäuse für das Ambient Light Bricklet 3.0
+<https://www.tinkerforge.com/de/shop/cases/case-ambient-light-barometer-humidity-temperature-bricklet.html>`__
+ist verfügbar.
 
-	.. image:: /Images/Cases/bricklet_ambient_light_v3_case_350.jpg
-	   :scale: 100 %
-	   :alt: Gehäuse für Ambient Light Bricklet 3.0
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_ambient_light_v3_case_1000.jpg
+.. image:: /Images/Cases/bricklet_ambient_light_case_built_up_350.jpg
+   :scale: 100 %
+   :alt: Gehäuse für Ambient Light Bricklet 3.0
+   :align: center
+   :target: ../../_images/Cases/bricklet_ambient_light_case_built_up_1000.jpg
 
-	.. include:: Ambient_Light_V3.substitutions
-	   :start-after: >>>bricklet_case_steps
-	   :end-before: <<<bricklet_case_steps
+.. include:: Ambient_Light_V3.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
 
-	.. image:: /Images/Exploded/ambient_light_v3_exploded_350.png
-	   :scale: 100 %
-	   :alt: Explosionszeichnung für Ambient Light Bricklet 3.0
-	   :align: center
-	   :target: ../../_images/Exploded/ambient_light_v3_exploded.png
+.. image:: /Images/Exploded/ambient_light_exploded_350.png
+   :scale: 100 %
+   :alt: Explosionszeichnung für Ambient Light Bricklet 3.0
+   :align: center
+   :target: ../../_images/Exploded/ambient_light_exploded.png
 
-	|bricklet_case_hint|
+|bricklet_case_hint|
 
 
 .. _ambient_light_v3_bricklet_programming_interface:
