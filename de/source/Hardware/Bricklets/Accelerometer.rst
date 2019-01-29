@@ -1,4 +1,6 @@
 
+:shoplink: ../../../shop/bricklets/accelerometer-bricklet.html
+
 .. include:: Accelerometer.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
@@ -22,10 +24,9 @@ Accelerometer Bricklet
 
 .. note::
 
- Das Accelerometer Bricklet ist abgekündigt und wird nicht mehr verkauft.
+ Das Accelerometer Bricklet ist abgekündigt. Wir verkaufen noch unseren restlichen Lagerbestand.
  Als Ersatz wird das :ref:`Accelerometer Bricklet 2.0 <accelerometer_v2_bricklet>`
  empfohlen.
-
 
 Features
 --------

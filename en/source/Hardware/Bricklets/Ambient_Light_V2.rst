@@ -1,6 +1,4 @@
 
-:shoplink: ../../../shop/bricklets/ambient-light-v2-bricklet.html
-
 .. include:: Ambient_Light_V2.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
@@ -24,7 +22,7 @@ Ambient Light Bricklet 2.0
 
 .. note::
 
- The Ambient Light Bricklet 2.0 is discontinued. We are selling our remaining stock. The
+ The Ambient Light Bricklet 2.0 is discontinued and is no longer sold. The
  :ref:`Ambient Light Bricklet 3.0 <ambient_light_v3_bricklet>` is the recommended
  replacement.
 
