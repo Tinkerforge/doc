@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/ambient-light-v3-bricklet.html
+:shoplink: ../../../shop/bricklets/ambient-light-v3-bricklet.html
 
 .. include:: Ambient_Light_V3.substitutions
    :start-after: >>>substitutions

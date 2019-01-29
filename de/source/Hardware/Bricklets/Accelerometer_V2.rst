@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/accelerometer-v2-bricklet.html
+:shoplink: ../../../shop/bricklets/accelerometer-v2-bricklet.html
 
 .. include:: Accelerometer_V2.substitutions
    :start-after: >>>substitutions
