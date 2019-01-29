@@ -10,18 +10,12 @@
 Ambient Light Bricklet 3.0
 ==========================
 
-.. note::
-  This Bricklet is currently work-in-progress!
-
-..
-    .. raw:: html
+.. raw:: html
 
 	{% tfgallery %}
 
 	Bricklets/bricklet_ambient_light_v3_tilted_[?|?].jpg           Ambient Light Bricklet 3.0
-	Bricklets/bricklet_ambient_light_v3_horizontal_[?|?].jpg       Ambient Light Bricklet 3.0
-	Bricklets/bricklet_ambient_light_v3_master_[100|600].jpg       Ambient Light Bricklet 3.0 with Master Brick
-	Cases/bricklet_ambient_light_v3_case_[100|600].jpg             Ambient Light Bricklet 3.0 with case
+	Bricklets/bricklet_ambient_light_v3_top_[?|?].jpg              Ambient Light Bricklet 3.0
 	Bricklets/bricklet_ambient_light_v3_brickv_[100|].jpg          Ambient Light Bricklet 3.0 in Brick Viewer
 	Dimensions/ambient_light_v3_bricklet_dimensions_[100|600].png  Outline and drilling plan
 
@@ -60,7 +54,7 @@ Technical Specifications
 Property                          Value
 ================================  ============================================================
 Sensor                            LTR329ALS
-Current Consumption               TBDmW (TBDmA at 5V)
+Current Consumption               10mW (2mA at 5V)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Illumination                      0lux - 64000lux in 0.01lux steps, 16bit resolution
