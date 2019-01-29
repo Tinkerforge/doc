@@ -25,7 +25,7 @@ Ambient Light Bricklet
 .. note::
 
  Das Ambient Light Bricklet ist abgekündigt und wird nicht mehr verkauft.
- Als Ersatz wird das :ref:`Ambient Light Bricklet 2.0 <ambient_light_v2_bricklet>`
+ Als Ersatz wird das :ref:`Ambient Light Bricklet 3.0 <ambient_light_v3_bricklet>`
  empfohlen.
 
 

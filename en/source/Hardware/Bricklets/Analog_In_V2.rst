@@ -1,6 +1,4 @@
 
-:shoplink: ../../../shop/bricklets/analog-in-v2-bricklet.html
-
 .. include:: Analog_In_V2.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions

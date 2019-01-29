@@ -25,7 +25,7 @@ Analog Out Bricklet
 .. note::
 
  Das Analog Out Bricklet ist abgekündigt und wird nicht mehr verkauft.
- Als Ersatz wird das :ref:`Analog Out Bricklet 2.0 <analog_out_v2_bricklet>`
+ Als Ersatz wird das :ref:`Analog Out Bricklet 3.0 <analog_out_v3_bricklet>`
  empfohlen.
 
 Features

@@ -1,6 +1,4 @@
 
-:shoplink: ../../../shop/bricklets/accelerometer-bricklet.html
-
 .. include:: Accelerometer.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
@@ -21,6 +19,12 @@ Accelerometer Bricklet
 	Dimensions/accelerometer_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
 
 	{% tfgalleryend %}
+
+.. note::
+
+ Das Accelerometer Bricklet ist abgekündigt und wird nicht mehr verkauft.
+ Als Ersatz wird das :ref:`Accelerometer Bricklet 2.0 <accelerometer_v2_bricklet>`
+ empfohlen.
 
 
 Features
