@@ -45,10 +45,10 @@ Beschreibung
 
 Das *Starterkit: Serverraum-Überwachung* ist ein Open Source Kit um
 Serverraum-Installationen zu überwachen. Das Basiskit ist mit folgenden Sensoren
-ausgestattet: :ref:`Ambient Light Bricklet 2.0 <ambient_light_v2_bricklet>`
+ausgestattet: :ref:`Ambient Light Bricklet 3.0 <ambient_light_v3_bricklet>`
 (überwacht z.B. die Raumbeleuchtung), :ref:`Humidity Bricklet 2.0 <humidity_v2_bricklet>`
 (überwacht Luftfeuchtigkeit),
-:ref:`Temperature Bricklet <temperature_bricklet>` (überwacht die Temperatur im
+:ref:`Temperature Bricklet 2.0 <temperature_v2_bricklet>` (überwacht die Temperatur im
 Rack) und ein :ref:`PTC Bricklet 2.0 <ptc_v2_bricklet>` mit Pt100 Temperaturfühler
 (z.B. zum Überwachen der Temperatur in einem Server).
 
