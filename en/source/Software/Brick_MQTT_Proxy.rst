@@ -756,7 +756,7 @@ payloads.
                                                                                 |                                      | :tcpip:func:`dim_socket_b/set <BrickletRemoteSwitch.dim_socket_b>`
                                                                                 |                                      | :tcpip:func:`switch_socket_c/set <BrickletRemoteSwitch.switch_socket_c>`
 
-:ref:`Remote Switch Bricklet 2.0 <remote_switch_v2_bricklet>`                   | bricklet/remote_switch_v2            | :tcpip:func:`switching_state <BrickletRemoteSwitchV2.get_switching_state>`
+ :ref:`Remote Switch Bricklet 2.0 <remote_switch_v2_bricklet>`                  | bricklet/remote_switch_v2            | :tcpip:func:`switching_state <BrickletRemoteSwitchV2.get_switching_state>`
                                                                                 |                                      | :tcpip:func:`repeats <BrickletRemoteSwitchV2.get_repeats>`
                                                                                 |                                      | :tcpip:func:`repeats/set <BrickletRemoteSwitchV2.set_repeats>`
                                                                                 |                                      | :tcpip:func:`switch_socket_a/set <BrickletRemoteSwitchV2.switch_socket_a>`
