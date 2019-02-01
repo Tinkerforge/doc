@@ -226,8 +226,8 @@ Warning/Critical Bereiche zu aktivieren. Dazu muss einfach die
 benötigten Informationen eingetragen werden.
 
 Durch Klicken des *Save* Buttons wird die Konfiguration auf dem RED Brick
-gespeichert. Nun kann über die Seite ``http://<red-brick-ip>/nagios3/`` der
-aktuelle Zustand von Nagios abgerufen werden.
+gespeichert. Nun kann über die Seite ``http://<red-brick-ip>/nagios/`` oder ``http://<red-brick-ip>/nagios3/ (für RED Brick Image Version 1.9 und älter)``
+der aktuelle Zustand von Nagios abgerufen werden.
 
 .. image:: /Images/Screenshots/nagios_srm_600.jpg
    :scale: 100 %
@@ -238,7 +238,11 @@ aktuelle Zustand von Nagios abgerufen werden.
 Die Standardeinstellung für Username:Password lautet ``nagiosadmin``:``tf``.
 Das Passwort kann über die Console durch folgenden Befehl geändert werden::
 
- sudo htpasswd -c -b /etc/nagios3/htpasswd.users nagiosadmin NEWPASSWORD
+ sudo htpasswd -c -b /usr/local/nagios/etc/htpasswd.users nagiosadmin <PASSWORT>
+
+RED Brick Image Version 1.9 und älter::
+
+ sudo htpasswd -c -b /etc/nagios3/htpasswd.users nagiosadmin <PASSWORT>
 
 Jede der Regeln wird in Nagios als ein Service angezeigt. Die Übersicht aller
 Nagios Services kann über den ``Services`` Link in der Kategorie

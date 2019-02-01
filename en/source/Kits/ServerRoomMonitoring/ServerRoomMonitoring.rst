@@ -219,7 +219,8 @@ warning/critical ranges. Just tick the ``Enable Email Notification`` checkbox
 and add the required information.
 
 Click *Save* to save the configuration on the RED Brick. You can now visit
-``http://<red-brick-ip>/nagios3/`` to view the current Nagios status.
+``http://<red-brick-ip>/nagios/`` or ``http://<red-brick-ip>/nagios3/ (RED Brick image version 1.19 and older)``
+to view the current Nagios status.
 
 .. image:: /Images/Screenshots/nagios_srm_600.jpg
    :scale: 100 %
@@ -230,7 +231,11 @@ Click *Save* to save the configuration on the RED Brick. You can now visit
 The default username:password is ``nagiosadmin``:``tf``. You can change the
 password through the console with::
 
- sudo htpasswd -c -b /etc/nagios3/htpasswd.users nagiosadmin NEWPASSWORD
+ sudo htpasswd -c -b /usr/local/nagios/etc/htpasswd.users nagiosadmin <PASSWORD>
+
+For RED Brick image version 1.9 and older::
+
+ sudo htpasswd -c -b /etc/nagios3/htpasswd.users nagiosadmin <PASSWORD>
 
 Each of the rules will be shown as a service in Nagios. An overview over all 
 services is available if you click on ``Services`` in the ``Current Status``
