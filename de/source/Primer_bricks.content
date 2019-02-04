@@ -6,7 +6,7 @@ Kommunikation (z.B. :ref:`Master Brick <master_brick>`) und um Motoren zu
 steuern (z.B. :ref:`DC Brick <dc_brick>`).
 
 Über :ref:`Bricklets <primer_bricklets>` können die Fähigkeiten von
-Bricks erweitert werden. Abhängig vom Modell verfügt jeder Brick über zwei oder
+Bricks erweitert werden. Abhängig vom Modell verfügt jeder Brick über keine, zwei oder
 vier Anschlüsse für Bricklets.
 
 Bricks können gestapelt werden, siehe die 

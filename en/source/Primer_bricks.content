@@ -6,7 +6,7 @@ performs one task. There are Bricks that perform complex sensor tasks (e.g.
 (e.g. :ref:`DC Brick <dc_brick>`).
 
 With :ref:`Bricklets <primer_bricklets>` the features of Bricks can
-be extended. Dependent on the Brick it has two or four connectors for Bricklets.
+be extended. Dependent on the Brick it has none, two or four connectors for Bricklets.
 
 Bricks can be assembled into a stack (see 
 :ref:`description of stack concept <primer_stack>`). The USB interface of a 
