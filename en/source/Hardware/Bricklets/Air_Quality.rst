@@ -118,14 +118,18 @@ Resources
 IAQ Index Accuracy
 ------------------
 
-The Bricklet is building a database of measurements and uses this data to
-calculate an accurate IAQ index over time. It will take 1-2 days until the IAQ
-index has a high reliability. The API of the Bricklet returns a best guess about
-the accuracy (ranging from unreliable to high).
+The Bricklet is building a database of measurements and uses this data to do an
+automatic background calibration and calculate an accurate IAQ index over time.
+It will take 1-2 days until the IAQ index has a high reliability. The API of the
+Bricklet returns a best guess about the accuracy (ranging from unreliable to high).
 
 The Bricklet saves the current database of values and calculated coefficients
 every 12 hours in its internal flash memory. If the Bricklet loses power it will
 not take as long to receive reliable data again.
+
+The automatic background calibration considers 4 days of data. We recommend
+that you run the Bricklet for 4 full days before you consider the data as
+completely reliable.
 
 
 .. _air_quality_bricklet_test:
