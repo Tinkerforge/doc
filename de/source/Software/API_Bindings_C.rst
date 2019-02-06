@@ -113,28 +113,37 @@ IDE
 
 Jetzt kann ein neues Projekt in Visual Studio erzeugt werden:
 
-* File
-* New
-* Project From Existing Code
-* Wähle als Type "Visual C++"
+* Datei
+* Neu
+* Projekt aus vorhandenem Code...
+* Wähle als Typ "Visual C++"
 * Wähle ``example_project/``
 * Wähle einen Projektnamen
-* Klicke Next
-* Wähle "Console Application"
-* Klicke Finish
+* Klicke Weiter
+* Wähle "Windows-Konsolenanwendung"
+* Klicke Fertig
 
 Zusätzlich müssen noch ``ws2_32.lib`` (WinSock2) und ``advapi32.lib`` dem
 Projekt hinzugefügt werden:
 
-* Project
-* Properties
+* Projekt
+* Eigenschaften
 * Linker
-* Input, Option "Additional Dependencies"
+* Eingabe, Option "Zusätzliche Abhängigkeiten"
 * Füge ``ws2_32.lib;advapi32.lib;`` hinzu
 
 Ältere Versionen von Visual Studio bringen kein ``stdint.h`` mit. Eine kompatible
 Version gibt es `hier <https://github.com/chemeris/msinttypes/blob/master/stdint.h>`__.
 Falls nötig diese herunterladen und im ``example_project/`` Ordner speichern.
+
+Das Visual C++ Projekt hat vielleicht die "Vorkompilierte Header" Option
+standardmäßig aktiviert. Die C/C++ Bindings unterstützen dies nicht. Deaktiviere
+die "Vorkompilierte Header" Option für alle ``*.cpp`` Dateien die aus den
+Bindings verwendet werden, jeweils in deren Eigenschaftsdialog:
+
+* C/C++
+* Vorkompilierte Header, Option "Vorkompilierter Header"
+* Wähle "Vorkompilierte Header nicht verwenden"
 
 Das waren alle nötigen Änderungen, jetzt kann das Projekt kompiliert und
 gestartet werden!

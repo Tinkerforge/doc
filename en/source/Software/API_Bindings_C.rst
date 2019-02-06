@@ -131,6 +131,15 @@ Older version of Visual Studio don't come with ``stdint.h``. A compatible
 version can be found `here <https://github.com/chemeris/msinttypes/blob/master/stdint.h>`__.
 If necessary download it to the ``example_project/`` folder.
 
+The Visual C++ project might have the "Precompiled Headers" option enabled by
+default. The C/C++ bindings do not support this. Disable the "Precompiled Headers"
+option for all the ``*.cpp`` files used from the API bindings in their individual
+properties dialog:
+
+* C/C++
+* Precompiled Headers, option "Create/Use Precompiled Header"
+* Choose "Not Using Precompiled Headers"
+
 That's it, now the project can be compiled an executed!
 
 Command Line
