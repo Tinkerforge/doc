@@ -114,7 +114,7 @@ IAQ Index-Genauigkeit
 
 Das Bricklet baut über längere Zeit eine Datenbank an Messwerten auf, um über
 eine automatische Hintergrundkalibrierung einen genaueren IAQ Index bestimmen zu
-können. Es dauert 1-2 Tage bis der IAQ Index eine hohe Genauigkeit erreicht.
+können. Es dauert ein paar Tage bis der IAQ Index eine hohe Genauigkeit erreicht.
 Die API des Bricklets meldet eine Schätzung der Genauigkeit des IAQ Index
 (von unzuverlässig bis hoch).
 
@@ -123,9 +123,10 @@ Koeffizienten alle 12 Stunden in seinem internen Flash-Speicher. Dadurch dauert
 es nach einem Neustart des Bricklet nicht lange bis wieder verlässliche Daten
 zur Verfügung stehen.
 
-Die automatische Hintergrundkalibrierung nutzt die Daten der letzten 4 Tage.
-Wir empfehlen daher das Bricklet für 4 vollte Tage laufen zu lassen bevor
-die Werte als vollständig zuverlässig angesehen werden können.
+Seit Firmware-Version 2.0.3 nutzt die automatische Hintergrundkalibrierung Daten 
+der letzten 28 Tage. Wir empfehlen daher das Bricklet für 28 vollte Tage laufen zu 
+lassen bevor die Werte als vollständig zuverlässig angesehen werden können. Mit der
+API kann das Kalibrierungs-Fenster auf 4 Tage verkürzt werden.
 
 .. _air_quality_bricklet_test:
 
