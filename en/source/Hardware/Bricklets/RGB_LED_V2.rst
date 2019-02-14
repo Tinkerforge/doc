@@ -31,16 +31,24 @@ RGB LED Bricklet 2.0
 Features
 --------
 
-* TBD
-* TBD
-
+* 1x RGB LED
+* 24 bit color resolution
+* Luminance output is corrected for human light perception (CIE 1931)
 
 .. _rgb_led_v2_bricklet_description:
 
 Description
 -----------
 
-TBD
+The RGB LED :ref:`Bricklet <primer_bricklets>` 2.0 can be used to
+extend the features of :ref:`Bricks <primer_bricks>` with the
+capability to control a RGB LED. Each of the three channels
+(red, green, blue) can be controlled individually with 8 bit resolution.
+
+The luminance output of the LED is corrected for human light perception
+with accordance to CIE 1931. This means that for every color a fade from 
+off to full brightness (value 0 to 255) will appear to be a smooth color 
+gradient to the human eye.
 
 
 Technical Specifications
@@ -49,20 +57,23 @@ Technical Specifications
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
-Current Consumption               TBDmA
+LED                               QBLP679E-RGB
+Current Consumption               | Off: TBDmW (TBDmA at 5V)
+                                  | White: TBDmW (TBDmA at 5V)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-P TBD                             V TBD
+Luminous intensity (R, G, B)      400-630mcd, 1000-1500mcd, 200-285mcd
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Dimensions (W x D x H)            TBD x TBD x TBDmm (TBD x TBD x TBD")
-Weight                            TBDg
+Dimensions (W x D x H)            25 x 20 x 5mm (0.98 x 0.79 x 0.19")
+Weight                            3g
 ================================  ============================================================
 
 
 Resources
 ---------
 
+* QBLP679E-RGB datasheet (`Download <https://github.com/Tinkerforge/rgb-led-bricklet/raw/master/datasheets/QBLP679E-RGB.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/rgb-led-v2-bricklet/raw/master/hardware/rgb-led-v2-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/rgb_led_v2_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/rgb-led-v2-bricklet/zipball/master>`__)
@@ -79,14 +90,14 @@ Test your RGB LED Bricklet 2.0
 |test_connect|.
 
 |test_tab|
-If everything went as expected ... TBD.
+If everything went as expected you can now control the RGB LED color with
+different sliders:
 
-..
-	.. image:: /Images/Bricklets/bricklet_rgb_led_v2_brickv.jpg
-	   :scale: 100 %
-	   :alt: RGB LED Bricklet 2.0 in Brick Viewer
-	   :align: center
-	   :target: ../../_images/Bricklets/bricklet_rgb_led_v2_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_rgb_led_v2_brickv.jpg
+   :scale: 100 %
+   :alt: RGB LED Bricklet 2.0 in Brick Viewer
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_rgb_led_v2_brickv.jpg
 
 |test_pi_ref|
 
