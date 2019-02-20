@@ -31,8 +31,7 @@ Joystick Bricklet 2.0
 Features
 --------
 
-* TBD
-* TBD
+* 2-axis joystick with push-button
 
 
 .. _joystick_v2_bricklet_description:
@@ -40,7 +39,16 @@ Features
 Description
 -----------
 
-TBD
+The Joystick :ref:`Bricklet <primer_bricklets>` 2.0 can be used to
+extend the features of :ref:`Bricks <primer_bricks>` by joystick
+functionality.
+
+The Joystick is two directional and equipped with a push-button.
+You can read out the position of the stick (X/Y coordinates) and
+the state of the button. 
+
+With configurable events it is possible to react on
+changing positions and an button presses without polling.
 
 
 Technical Specifications
@@ -49,16 +57,18 @@ Technical Specifications
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
-Current Consumption               TBDmA
+Joystick                          2-axis with push-button
+Current Consumption               TBD
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-P TBD                             V TBD
+X/Y Position                      -100/100, 0=center
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Dimensions (W x D x H)            TBD x TBD x TBDmm (TBD x TBD x TBD")
-Weight                            TBDg
+Dimensions (W x D x H)            25 x 45 x 23mm (0.98 x 1.77 x 0.9")*
+Weight                            12g*
 ================================  ============================================================
 
+\* without knob
 
 Resources
 ---------
@@ -79,14 +89,24 @@ Test your Joystick Bricklet 2.0
 |test_connect|.
 
 |test_tab|
-If everything went as expected ... TBD.
+If everything went as expected the Brick Viewer should look as
+depicted below.
 
-..
-	.. image:: /Images/Bricklets/bricklet_joystick_v2_brickv.jpg
-	   :scale: 100 %
-	   :alt: Joystick Bricklet 2.0 in Brick Viewer
-	   :align: center
-	   :target: ../../_images/Bricklets/bricklet_joystick_v2_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_joystick_v2_brickv.jpg
+   :scale: 100 %
+   :alt: Joystick Bricklet 2.0 in Brick Viewer
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_joystick_v2_brickv.jpg
+
+The tab consists of a coordinate system that shows the current position of
+the stick and if the button is pressed.
+Below this coordinate system you can find a graph that visualizes the
+movements over time.
+You should be able to reproduce the depicted graph when you move the
+stick first up, then down, then right and then end left.
+
+If the Brick Viewer does not show "Position x=0, y=0" when the stick is
+in center position, press the "Calibrate Zero" button.
 
 |test_pi_ref|
 
@@ -96,27 +116,26 @@ If everything went as expected ... TBD.
 Case
 ----
 
-..
-	A `laser-cut case for the Joystick Bricklet 2.0
-	<https://www.tinkerforge.com/en/shop/cases/case-joystick-v2-bricklet.html>`__ is available.
+A `laser-cut case for the Joystick Bricklet 2.0
+<https://www.tinkerforge.com/en/shop/cases/case-joystick-bricklet.html>`__ is available.
 
-	.. image:: /Images/Cases/bricklet_joystick_v2_case_350.jpg
-	   :scale: 100 %
-	   :alt: Case for Joystick Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_joystick_v2_case_1000.jpg
+.. image:: /Images/Cases/bricklet_joystick_case_350.jpg
+   :scale: 100 %
+   :alt: Case for Joystick Bricklet 2.0
+   :align: center
+   :target: ../../_images/Cases/bricklet_joystick_case_1000.jpg
 
-	.. include:: Joystick_V2.substitutions
-	   :start-after: >>>bricklet_case_steps
-	   :end-before: <<<bricklet_case_steps
+.. include:: Joystick_V2.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
 
-	.. image:: /Images/Exploded/joystick_v2_exploded_350.png
-	   :scale: 100 %
-	   :alt: Exploded assembly drawing for Joystick Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Exploded/joystick_v2_exploded.png
+.. image:: /Images/Exploded/joystick_exploded_350.png
+   :scale: 100 %
+   :alt: Exploded assembly drawing for Joystick Bricklet 2.0
+   :align: center
+   :target: ../../_images/Exploded/joystick_exploded.png
 
-	|bricklet_case_hint|
+|bricklet_case_hint|
 
 
 .. _joystick_v2_bricklet_programming_interface:
