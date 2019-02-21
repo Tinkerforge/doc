@@ -31,8 +31,10 @@ Segment Display 4x7 Bricklet 2.0
 Features
 --------
 
-* TBD
-* TBD
+* Four 7-segment digits
+* Switchable dots per digit, colon and tick mark
+* Brightness of segments configurable
+* Configurable counter functionality
 
 
 .. _segment_display_4x7_v2_bricklet_description:
@@ -40,7 +42,14 @@ Features
 Description
 -----------
 
-TBD
+The Segment Display 4x7 :ref:`Bricklet <primer_bricklets>` 2.0 can be
+used to control four 7-segment displays, four dots, two colon dots and
+a tick mark by a :ref:`Brick <primer_bricks>`. Each of the 35 segments
+can be controlled independently. 
+
+It is also possible to configure the brightness of the segments. 
+Besides the possibility of controlling each segment
+independently, the API offers a user configurable counter.
 
 
 Technical Specifications
@@ -49,13 +58,17 @@ Technical Specifications
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
-Current Consumption               TBDmA
+Current Consumption               | TBDmA (all segments off)
+                                  | TBDmA (all segments on at minimum brightness)
+                                  | TBDmA (all segments on at maximum brightness)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-P TBD                             V TBD
+Segment Width                     6mm
+Segment Height                    10mm
+Brightness of Segments            Configurable in 8 steps
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Dimensions (W x D x H)            TBD x TBD x TBDmm (TBD x TBD x TBD")
+Dimensions (W x D x H)            25 x 65 x 9mm (0.98 x 2.56 x 0.35")
 Weight                            TBDg
 ================================  ============================================================
 
@@ -63,6 +76,8 @@ Weight                            TBDg
 Resources
 ---------
 
+* TM1637 datasheet (`Download <https://github.com/Tinkerforge/segment-display-4x7-v2-bricklet/raw/master/datasheets/TM1637.pdf>`__)
+* LTC-4627JR datasheet (`Download <https://github.com/Tinkerforge/segment-display-4x7-v2-bricklet/raw/master/datasheets/LTC-4627JR.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/segment-display-4x7-v2-bricklet/raw/master/hardware/segment-display-4x7-v2-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/segment_display_4x7_v2_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/segment-display-4x7-v2-bricklet/zipball/master>`__)
@@ -79,14 +94,14 @@ Test your Segment Display 4x7 Bricklet 2.0
 |test_connect|.
 
 |test_tab|
-If everything went as expected ... TBD.
+If everything went as expected you can now activate/deactivate the
+individual segments.
 
-..
-	.. image:: /Images/Bricklets/bricklet_segment_display_4x7_v2_brickv.jpg
-	   :scale: 100 %
-	   :alt: Segment Display 4x7 Bricklet 2.0 in Brick Viewer
-	   :align: center
-	   :target: ../../_images/Bricklets/bricklet_segment_display_4x7_v2_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_segment_display_4x7_v2_brickv.jpg
+   :scale: 100 %
+   :alt: Segment Display 4x7 Bricklet 2.0 in Brick Viewer
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_segment_display_4x7_v2_brickv.jpg
 
 |test_pi_ref|
 
@@ -96,27 +111,31 @@ If everything went as expected ... TBD.
 Case
 ----
 
-..
-	A `laser-cut case for the Segment Display 4x7 Bricklet 2.0
-	<https://www.tinkerforge.com/en/shop/cases/case-segment-display-4x7-v2-bricklet.html>`__ is available.
+A `laser-cut case for the Segment Display 4x7 Bricklet 2.0
+<https://www.tinkerforge.com/en/shop/cases/case-segment-display-4x7-bricklet.html>`__ is available.
 
-	.. image:: /Images/Cases/bricklet_segment_display_4x7_v2_case_350.jpg
-	   :scale: 100 %
-	   :alt: Case for Segment Display 4x7 Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_segment_display_4x7_v2_case_1000.jpg
+.. image:: /Images/Cases/bricklet_segment_display_4x7_case_tilted_350.jpg
+   :scale: 100 %
+   :alt: Case for Segment Display 4x7 Bricklet 2.0
+   :align: center
+   :target: ../../_images/Cases/bricklet_segment_display_4x7_case_tilted_1000.jpg
 
-	.. include:: Segment_Display_4x7_V2.substitutions
-	   :start-after: >>>bricklet_case_steps
-	   :end-before: <<<bricklet_case_steps
+The assembly is easiest if you follow the following steps:
 
-	.. image:: /Images/Exploded/segment_display_4x7_v2_exploded_350.png
-	   :scale: 100 %
-	   :alt: Exploded assembly drawing for Segment Display 4x7 Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Exploded/segment_display_4x7_v2_exploded.png
+* Screw Bricklet to top plate with spacers at the bottom and long screws from the top,
+* build up side plates,
+* plug side plates into top plate and
+* screw bottom plate to bottom spacers.
 
-	|bricklet_case_hint|
+Below you can see an exploded assembly drawing of the Segment Display 4x7 Bricklet 2.0 case:
+
+.. image:: /Images/Exploded/segment_display_4x7_exploded_350.png
+   :scale: 100 %
+   :alt: Exploded assembly drawing for Segment Display 4x7 Bricklet 2.0
+   :align: center
+   :target: ../../_images/Exploded/segment_display_4x7_exploded.png
+
+|bricklet_case_hint|
 
 
 .. _segment_display_4x7_v2_bricklet_programming_interface:
