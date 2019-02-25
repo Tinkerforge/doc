@@ -71,9 +71,9 @@ contain logic which should be run if a message arrives. These blocks end with ``
 MQTT Topics
 ^^^^^^^^^^^
 
-MQTT topics are structured as follows: ``[GLOBAL_PREFIX/][OPERATION]/[DEVICE][/UID/][FUNCTION][/SUFFIX]``
+MQTT topics are structured as follows: ``[<GLOBAL_PREFIX>/]<OPERATION>/<DEVICE>[/<UID>]/<FUNCTION>[/<SUFFIX>]``
 
-``[GLOBAL_PREFIX/]`` is the global prefix for all topics (default: ``tinkerforge/``).
+``[<GLOBAL_PREFIX>/]`` is the global prefix for all topics (default: ``tinkerforge/``).
 It can be changed using the ``--global-topic-prefix`` command line flag.
 The  prefix can be used to disambiguate multiple instances of the MQTT Bindings.
 It can contain multiple topic levels, for example ``tinkerforge/living_room/sensors/``.
@@ -81,22 +81,22 @@ If the prefix does not end with a '/', one is inserted, except if you select an 
 Then all topics start with the operation. Note that this is not recommended. Also note, that '/'
 is a valid prefix.
 
-``[OPERATION]`` denotes the type of request. It can be one of ``request``, ``response``, ``register`` or ``callback``.
+``<OPERATION>`` denotes the type of request. It can be one of ``request``, ``response``, ``register`` or ``callback``.
 The bindings subscribe to ``request`` and ``register`` topics and will publish answers to
 ``requests`` under ``response``, answers to ``register`` under ``callback`` topics.
  
-``[DEVICE]`` is the type of device you want to interact with. This can be the name of a
+``<DEVICE>`` is the type of device you want to interact with. This can be the name of a
 brick or bricklet in snake_case, for example ``oled_64x48_bricklet``, or ``ip_connection``.
 See the documentation of devices for the exact spelling.
   
-``[/UID/]`` is the UID of the device. If the device is the ``ip_connection``,
+``[/<UID>]`` is the UID of the device. If the device is the ``ip_connection``,
 this has to be empty and with no slashes, for example: ``.../ip_connection/enumerate``
   
-``[FUNCTION]`` is the function to call, or the callback to register to, written in snake_case.
+``<FUNCTION>`` is the function to call, or the callback to register to, written in snake_case.
  
-``[/SUFFIX]`` is the optional suffix to attach to responses. This can be used to allow message
+``[/<SUFFIX>]`` is the optional suffix to attach to responses. This can be used to allow message
 filtering, for example by setting it to ``/STATUS`` for requests or callback registrations which
-query status information. Another MQTT client can then register to ``[GLOBAL_PREFIX/]+/+/+/+/STATUS`` to
+query status information. Another MQTT client can then register to ``[<GLOBAL_PREFIX>/]+/+/+/+/STATUS`` to
 receive all status information tagged as such.
  
 A typical request topic looks like this: ``tinkerforge/request/rgb_led_button_bricklet/Dod/get_color``.
@@ -125,6 +125,42 @@ is equivalent to publishing ``{"config": 2}``.
 Symbols for constants are documented where they are available.
 
 Callback (de)registrations can use either ``{"register": true/false}`` or ``true/false`` as payload.
+ 
+Loading initial messages from a file
+------------------------------------
+
+Messages to be processed when the bindings are started, can be read from a file. Use the ``--init-file /path/to/file``
+command line argument to specify one. These files can (for example) be used to configure and register callbacks. The file
+is expected to contain a JSON-Object with MQTT topics as attribute names. The attribute values are JSON objects
+as used as MQTT payload. The following example shows a file which registers the all_data callback of a IMU Brick 2.0
+and configures the period of the callback to 100ms::
+
+ {
+         "tinkerforge/register/imu_v2_brick/XXYYZZ/all_data": {"register": true},
+         "tinkerforge/request/imu_v2_brick/XXYYZZ/set_all_data_period": {"period": 100}
+ }
+
+
+Command line arguments
+----------------------
+
+ * ``-h, --help`` show this help message and exit
+ * ``--ipcon-host <IPCON_HOST>`` hostname or IP address of Brick Daemon, WIFI or Ethernet Extension (default: localhost)
+ * ``--ipcon-port <IPCON_PORT>`` port number of Brick Daemon, WIFI or Ethernet Extension (default: 4223)
+ * ``--ipcon-auth-secret <IPCON_AUTH_SECRET>`` authentication secret of Brick Daemon, WIFI or Ethernet Extension
+ * ``--ipcon-timeout <IPCON_TIMEOUT>`` timeout in milliseconds for communication with Brick Daemon, WIFI or Ethernet Extension (default: 2500)
+ * ``--broker-host <BROKER_HOST>`` hostname or IP address of MQTT broker (default: localhost)
+ * ``--broker-port <BROKER_PORT>`` port number of MQTT broker (default: 1883)
+ * ``--broker-username <BROKER_USERNAME>`` username for the MQTT broker connection
+ * ``--broker-password <BROKER_PASSWORD>`` password for the MQTT broker connection
+ * ``--broker-certificate <BROKER_CERTIFICATE>`` Certificate Authority certificate file used for SSL/TLS connections to the broker
+ * ``--broker-tls-insecure`` disable verification of the server hostname in the server certificate for the MQTT broker connection
+ * ``--global-topic-prefix <GLOBAL_TOPIC_PREFIX>`` global MQTT topic prefix (default: tinkerforge/)
+ * ``--debug`` enable debug output
+ * ``--no-symbolic-response`` disable translation into string constants for responses
+ * ``--show-payload`` show received payload if JSON parsing fails
+ * ``--init-file <INIT_FILE>`` file from where to load initial messages to publish
+ 
  
 API Reference and Examples
 --------------------------

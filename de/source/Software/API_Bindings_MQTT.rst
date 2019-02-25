@@ -77,9 +77,9 @@ ausgeführt werden soll, wenn eine Subscription eine Nachricht erhält, steht di
 MQTT-Topics
 ^^^^^^^^^^^
 
-Die Struktur der MQTT-Topics ist wie folgt: ``[GLOBAL_PREFIX/][OPERATION]/[DEVICE][/UID/][FUNCTION][/SUFFIX]``
+Die Struktur der MQTT-Topics ist wie folgt: ``[<GLOBAL_PREFIX>/]<OPERATION>/<DEVICE>[/<UID>]/<FUNCTION>[/<SUFFIX>]``
 
-``[GLOBAL_PREFIX/]`` ist der globale Präfix aller Topics (Standardeinstellung: ``tinkerforge/``).
+``[<GLOBAL_PREFIX>/]`` ist der globale Präfix aller Topics (Standardeinstellung: ``tinkerforge/``).
 Er kann mit dem ``--global-topic-prefix`` Kommandozeilenargument geändert werden. Der Präfix
 kann verwendet werden um zwischen mehreren Instanzen der MQTT-Bindings zu unterscheiden. Außerdem
 kann er mehrere Topic-Levels beinhalten, zum Beispiel ``tinkerforge/wohnzimmer/sensoren``. Wenn
@@ -87,22 +87,22 @@ der konfiguriere Präfix nicht mit einem '/' endet, wird es von den Bindings ein
 ein leerer Prefix wurde konfiguriert. Dann beginnen alle Topics mit der Operation. Dieses Vorgehen wird wegen
 möglichen Namenskonflikten nicht empfohlen. Außerdem ist zu beachten, dass '/' ein gültiger Präfix ist.
 
-``[OPERATION]`` ist der Typ der Anfrage. Dieser kann ``request``, ``response``, ``register`` oder ``callback`` sein.
+``<OPERATION>`` ist der Typ der Anfrage. Dieser kann ``request``, ``response``, ``register`` oder ``callback`` sein.
 Die Bindings subscriben auf ``request``- und ``register``-Topics und publishen Antworten auf ``request``- unter
 ``response``-Topics, Antworten auf ``register``- unter ``callback``-Topics.
 
-``[DEVICE]`` ist der Typ des Gerätes mit dem interagiert werden soll. Dies kann der Name eines Bricks
+``<DEVICE>`` ist der Typ des Gerätes mit dem interagiert werden soll. Dies kann der Name eines Bricks
 oder Bricklets in snake_case, oder ``ip_connection`` sein. Siehe die Dokumentation der Geräte für die
 genaue Schreibweise.
 
-``[/UID/]`` ist die UID des Gerätes. Wenn das Gerät die ``ip_connection`` ist, muss die UID leer und ohne '/' sein,
+``[/<UID>]`` ist die UID des Gerätes. Wenn das Gerät die ``ip_connection`` ist, muss die UID leer und ohne '/' sein,
 zum Beispiel ``.../ip_connection/enumerate``.
 
-``[FUNCTION]`` ist die Funktion, die aufgerufen, oder das Callback, das registriert werden soll (in snake_case).
+``<FUNCTION>`` ist die Funktion, die aufgerufen, oder das Callback, das registriert werden soll (in snake_case).
 
-``[/SUFFIX]`` ist der optionale Suffix der an Antworten angehangen wird. Dieser kann verwendet werden, um Nachrichten
+``</[SUFFIX]>`` ist der optionale Suffix der an Antworten angehangen wird. Dieser kann verwendet werden, um Nachrichten
 zu filtern. Zum Beispiel kann er für Requests oder Callback-Registrierungen, die Statusinformationen abfragen
-auf ``/STATUS`` gesetzt werden. Ein anderer MQTT-Client kann sich dann auf ``[GLOBAL_PREFIX/]+/+/+/+/STATUS`` registrieren
+auf ``/STATUS`` gesetzt werden. Ein anderer MQTT-Client kann sich dann auf ``[<GLOBAL_PREFIX>/]+/+/+/+/STATUS`` registrieren
 um alle Statusmeldungen zu erhalten.
 
 Ein typisches Request-Topic sieht aus wie folgt: ``tinkerforge/request/rgb_led_button_bricklet/Dod/get_color``.
@@ -131,6 +131,43 @@ ist es äquivalent, ``{"config": "show_heartbeat"}`` oder ``{"config": 2}`` auf 
 Symbole für Konstanten sind dokumentiert, wenn sie verfügbar sind.
 
 Callback(de)registrierungen können entweder ``{"register": true/false}`` oder ``true/false`` als Payload haben.
+
+Laden initialer Nachrichten aus einer Datei
+-------------------------------------------
+
+Um die Konfiguration zu vereinfachen, können Nachrichten, die einmal beim Start der Bindings verarbeitet werden
+sollen, aus einer Datei geladen werden. Hierzu wird das Kommandozeilenargument ``--init-file /pfad/zur/datei``
+verwendet. Mit dieser Datei können z.B. Callbacks konfiguriert und registriert werden. Das Dateiformat entspricht
+einem JSON-Objekt, dessen Attributsnamen MQTT-Topics sind. Die Attributswerte werden als weitere JSON-Objekte, die
+dem MQTT-Payload entsprechen, behandelt. Folgendes Beispiel zeigt eine Datei, die das all-data-Callback eines
+IMU Brick 2.0 registriert und dessen Periode auf 100ms konfiguriert::
+
+ {
+         "tinkerforge/register/imu_v2_brick/XXYYZZ/all_data": {"register": true},
+         "tinkerforge/request/imu_v2_brick/XXYYZZ/set_all_data_period": {"period": 100}
+ }
+
+
+Kommandozeilenargumente
+-----------------------
+
+ * ``-h, --help`` Listet die Kommandozeilenargumente auf
+ * ``--ipcon-host <IPCON_HOST>`` Hostname oder IP-Addresse des Brick Daemons, der WiFi- oder Ethernet-Extension (default: localhost)
+ * ``--ipcon-port <IPCON_PORT>`` Port des Brick Daemons, der WiFi- oder Ethernet-Extension (default: 4223)
+ * ``--ipcon-auth-secret <IPCON_AUTH_SECRET>`` Authentisierungsgeheimnis des Brick Daemons, der WiFi- oder Ethernet-Extension
+ * ``--ipcon-timeout <IPCON_TIMEOUT>`` Timeout in Millisekunden für Kommunikation mit dem Brick Daemons, der WiFi- oder Ethernet-Extension (default: 2500)
+ * ``--broker-host <BROKER_HOST>`` Hostname oder IP-Addresse des MQTT-Brokers (default: localhost)
+ * ``--broker-port <BROKER_PORT>`` Port des MQTT-Brokers (default: 1883)
+ * ``--broker-username <BROKER_USERNAME>`` Username für die Verbindung zum MQTT-Broker
+ * ``--broker-password <BROKER_PASSWORD>`` Passwort für die Verbindung zum MQTT-Broker
+ * ``--broker-certificate <BROKER_CERTIFICATE>`` CA-Zertifikat für SSL/TLS-Verbindung zum Broker
+ * ``--broker-tls-insecure`` Deaktiviert Verifikation des Hostnames und Zertifikates für die Verbindung zum MQTT-Broker
+ * ``--global-topic-prefix <GLOBAL_TOPIC_PREFIX>`` Globaler Präfix für MQTT-Topics (default: tinkerforge/)
+ * ``--debug`` Aktiviert die Debug-Ausgabe
+ * ``--no-symbolic-response`` Deaktiviert die Übersetzung von Antwort-Konstanten in Strings
+ * ``--show-payload`` Aktiviert die Anzeige empfangenen Payloads falls das JSON-Parsing fehlschlägt
+ * ``--init-file <INIT_FILE>`` Läd Nachrichten, die initial verarbeitet werden sollen, aus einer Datei.
+
 
 API Referenz und Beispiele
 --------------------------
