@@ -17,6 +17,9 @@ Solid State Relay Bricklet 2.0
 	Bricklets/bricklet_solid_state_relay_v2_tilted_[?|?].jpg           Solid State Relay Bricklet 2.0
 	Bricklets/bricklet_solid_state_relay_v2_top_[?|?].jpg              Solid State Relay Bricklet 2.0
 	Bricklets/bricklet_solid_state_relay_v2_w_relay_[?|?].jpg          Solid State Relay Bricklet 2.0
+	Bricklets/bricklet_ssr_w_cover_[?|?].jpg                           Solid State Relay Bricklet 2.0 with cover
+	Bricklets/bricklet_ssr_w_heatsink_tilted_low_[?|?].jpg             Solid State Relay Bricklet 2.0 with heatsink
+	Bricklets/bricklet_ssr_w_heatsink_tilted_[?|?].jpg                 Solid State Relay Bricklet 2.0 with heatsink
 	Bricklets/bricklet_solid_state_relay_v2_brickv_[100|].jpg          Solid State Relay Bricklet 2.0 in Brick Viewer
 	Dimensions/solid_state_relay_v2_bricklet_dimensions_[100|600].png  Outline and drilling plan
 
