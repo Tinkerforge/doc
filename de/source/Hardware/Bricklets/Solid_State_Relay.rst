@@ -1,6 +1,4 @@
 
-:shoplink: ../../../shop/bricklets/solid-state-relay-bricklet.html
-
 .. include:: Solid_State_Relay.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
@@ -28,7 +26,7 @@ Solid State Relay Bricklet
 
 .. note::
 
- Das Solid State Relay Bricklet ist abgekündigt. Wir verkaufen noch unseren restlichen Lagerbestand.
+ Das Solid State Relay Bricklet ist abgekündigt und wird nicht mehr verkauft.
  Als Ersatz wird das :ref:`Solid State Relay Bricklet 2.0 <solid_state_relay_v2_bricklet>`
  empfohlen.
 
