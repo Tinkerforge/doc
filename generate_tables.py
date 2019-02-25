@@ -53,7 +53,7 @@ bindings_infos = \
     BindingsInfo('MATLAB/Octave', 'matlab', 'MATLAB', True, True,
                  {'en': 'FIXME',
                   'de': 'FIXME'}),
-    BindingsInfo('MQTT', 'mqtt', 'MQTT', True, False,
+    BindingsInfo('MQTT', 'mqtt', 'MQTT', True, True,
                  {'en': 'FIXME',
                   'de': 'FIXME'}),
     BindingsInfo('Perl', 'perl', 'Perl', True, True,

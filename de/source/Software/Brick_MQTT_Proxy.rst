@@ -10,6 +10,10 @@ Proxy erlaubt den Zugriff auf Bricks und Bricklets über MQTT. Er ist in Python
 geschrieben und übersetzt Nachrichten zwischen dem 
 :ref:`Tinkerforge TCP/IP Protocol (TFP) <llproto_tcpip>` und MQTT.
 
+.. note::
+ Der Brick MQTT Proxy ist abgekündigt und wird nicht mehr weiterentwicklet.
+ Stattdessen können die :ref:`MQTT API Bindings <api_bindings_mqtt>` verwendet werden.
+
 Setup und Benutzung
 -------------------
 

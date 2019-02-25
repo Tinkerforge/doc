@@ -9,7 +9,8 @@ Die MQTT-Bindings ermöglichen es :ref:`Bricks <primer_bricks>` und
 Die :ref:`ZIP Datei <downloads_bindings_examples>` für
 die Bindings beinhaltet:
 
-* ``tinkerforge_mqtt`` ein Pythonscript, dass als Übersetzungsproxy zwischen einem MQTT-Broker und einem Brick Daemon agiert
+* ``tinkerforge_mqtt`` ein Pythonscript, dass als Übersetzungs-Proxy zwischen
+  einem MQTT-Broker und einem Brick Daemon agiert
 * in ``examples/`` die Beispiele für alle Bricks und Bricklets
 
 Die MQTT-Bindings basieren auf den :ref:`Python Bindings <api_bindings_python>`.
@@ -63,14 +64,14 @@ dem Brick Daemon, sowie dem MQTT-Broker verbinden kann.
 
 Alle Beispiele sind als Pseudocode geschrieben, der in eine Programmiersprache nach Wahl
 übersetzt werden muss. Alternativ können die mosquitto_pub und mosquitto_sub Befehle,
-die ein Teil des mosquitto MQTT-Brokers sind, verwendet werden.
+die ein Teil des Mosquitto MQTT-Brokers sind, verwendet werden.
 
 Die Beispiele bestehen aus einem setup- und einem cleanup-Block. Der setup-Block
 konfiguriert die Geräte und Callbacks, der cleanup-Block hält sie an. Nicht jedes
 Beispiel hat einen cleanup-Block.
 
-Der Pseudocode zeichnet MQTT-Publish-Operationen als ``publish [PAYLOAD] to [TOPIC]``
-sowie MQTT-Subscribe-Operationen als ``subscribe to [TOPIC]`` aus. Falls weitere Logik
+Der Pseudocode zeichnet MQTT-Publish-Operationen als ``publish <PAYLOAD> to <TOPIC>``
+sowie MQTT-Subscribe-Operationen als ``subscribe to <TOPIC>`` aus. Falls weitere Logik
 ausgeführt werden soll, wenn eine Subscription eine Nachricht erhält, steht diese im
 ``subscribe``-Block, der mit ``endsubscribe`` beendet wird.
 
@@ -83,7 +84,7 @@ Die Struktur der MQTT-Topics ist wie folgt: ``[<GLOBAL_PREFIX>/]<OPERATION>/<DEV
 Er kann mit dem ``--global-topic-prefix`` Kommandozeilenargument geändert werden. Der Präfix
 kann verwendet werden um zwischen mehreren Instanzen der MQTT-Bindings zu unterscheiden. Außerdem
 kann er mehrere Topic-Levels beinhalten, zum Beispiel ``tinkerforge/wohnzimmer/sensoren``. Wenn
-der konfiguriere Präfix nicht mit einem '/' endet, wird es von den Bindings eingefüht, es sei denn
+der konfiguriere Präfix nicht mit einem '/' endet, wird es von den Bindings eingefügt, es sei denn
 ein leerer Prefix wurde konfiguriert. Dann beginnen alle Topics mit der Operation. Dieses Vorgehen wird wegen
 möglichen Namenskonflikten nicht empfohlen. Außerdem ist zu beachten, dass '/' ein gültiger Präfix ist.
 
@@ -130,7 +131,7 @@ ist es äquivalent, ``{"config": "show_heartbeat"}`` oder ``{"config": 2}`` auf 
 
 Symbole für Konstanten sind dokumentiert, wenn sie verfügbar sind.
 
-Callback(de)registrierungen können entweder ``{"register": true/false}`` oder ``true/false`` als Payload haben.
+Callback-(De)registrierungen können entweder ``{"register": true/false}`` oder ``true/false`` als Payload haben.
 
 Laden initialer Nachrichten aus einer Datei
 -------------------------------------------
@@ -139,12 +140,12 @@ Um die Konfiguration zu vereinfachen, können Nachrichten, die einmal beim Start
 sollen, aus einer Datei geladen werden. Hierzu wird das Kommandozeilenargument ``--init-file /pfad/zur/datei``
 verwendet. Mit dieser Datei können z.B. Callbacks konfiguriert und registriert werden. Das Dateiformat entspricht
 einem JSON-Objekt, dessen Attributsnamen MQTT-Topics sind. Die Attributswerte werden als weitere JSON-Objekte, die
-dem MQTT-Payload entsprechen, behandelt. Folgendes Beispiel zeigt eine Datei, die das all-data-Callback eines
+dem MQTT-Payload entsprechen, behandelt. Folgendes Beispiel zeigt eine Datei, die das ``all_data``-Callback eines
 IMU Brick 2.0 registriert und dessen Periode auf 100ms konfiguriert::
 
  {
-         "tinkerforge/register/imu_v2_brick/XXYYZZ/all_data": {"register": true},
-         "tinkerforge/request/imu_v2_brick/XXYYZZ/set_all_data_period": {"period": 100}
+     "tinkerforge/register/imu_v2_brick/XXYYZZ/all_data": {"register": true},
+     "tinkerforge/request/imu_v2_brick/XXYYZZ/set_all_data_period": {"period": 100}
  }
 
 
@@ -152,17 +153,17 @@ Kommandozeilenargumente
 -----------------------
 
  * ``-h, --help`` Listet die Kommandozeilenargumente auf
- * ``--ipcon-host <IPCON_HOST>`` Hostname oder IP-Addresse des Brick Daemons, der WiFi- oder Ethernet-Extension (default: localhost)
- * ``--ipcon-port <IPCON_PORT>`` Port des Brick Daemons, der WiFi- oder Ethernet-Extension (default: 4223)
- * ``--ipcon-auth-secret <IPCON_AUTH_SECRET>`` Authentisierungsgeheimnis des Brick Daemons, der WiFi- oder Ethernet-Extension
- * ``--ipcon-timeout <IPCON_TIMEOUT>`` Timeout in Millisekunden für Kommunikation mit dem Brick Daemons, der WiFi- oder Ethernet-Extension (default: 2500)
- * ``--broker-host <BROKER_HOST>`` Hostname oder IP-Addresse des MQTT-Brokers (default: localhost)
- * ``--broker-port <BROKER_PORT>`` Port des MQTT-Brokers (default: 1883)
+ * ``--ipcon-host <IPCON_HOST>`` Hostname oder IP-Addresse des Brick Daemons, der WIFI- oder Ethernet-Extension (Standard: localhost)
+ * ``--ipcon-port <IPCON_PORT>`` Port des Brick Daemons, der WIFI- oder Ethernet-Extension (Standard: 4223)
+ * ``--ipcon-auth-secret <IPCON_AUTH_SECRET>`` Authentisierungsgeheimnis des Brick Daemons, der WIFI- oder Ethernet-Extension
+ * ``--ipcon-timeout <IPCON_TIMEOUT>`` Timeout in Millisekunden für Kommunikation mit dem Brick Daemons, der WIFI- oder Ethernet-Extension (Standard: 2500)
+ * ``--broker-host <BROKER_HOST>`` Hostname oder IP-Addresse des MQTT-Brokers (Standard: localhost)
+ * ``--broker-port <BROKER_PORT>`` Port des MQTT-Brokers (Standard: 1883)
  * ``--broker-username <BROKER_USERNAME>`` Username für die Verbindung zum MQTT-Broker
  * ``--broker-password <BROKER_PASSWORD>`` Passwort für die Verbindung zum MQTT-Broker
  * ``--broker-certificate <BROKER_CERTIFICATE>`` CA-Zertifikat für SSL/TLS-Verbindung zum Broker
  * ``--broker-tls-insecure`` Deaktiviert Verifikation des Hostnames und Zertifikates für die Verbindung zum MQTT-Broker
- * ``--global-topic-prefix <GLOBAL_TOPIC_PREFIX>`` Globaler Präfix für MQTT-Topics (default: tinkerforge/)
+ * ``--global-topic-prefix <GLOBAL_TOPIC_PREFIX>`` Globaler Präfix für MQTT-Topics (Standard: tinkerforge/)
  * ``--debug`` Aktiviert die Debug-Ausgabe
  * ``--no-symbolic-response`` Deaktiviert die Übersetzung von Antwort-Konstanten in Strings
  * ``--show-payload`` Aktiviert die Anzeige empfangenen Payloads falls das JSON-Parsing fehlschlägt

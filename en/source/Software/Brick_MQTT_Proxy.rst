@@ -10,6 +10,10 @@ provides access to Bricks and Bricklets over MQTT. It is written in Python
 and translates messages between the :ref:`Tinkerforge TCP/IP Protocol (TFP)
 <llproto_tcpip>` and MQTT.
 
+.. note::
+ The Brick MQTT Proxy is discontinued and no further development will be done.
+ The :ref:`MQTT API bindings <api_bindings_mqtt>` can be used instead.
+
 Setup and Usage
 ---------------
 

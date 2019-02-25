@@ -8,7 +8,8 @@ The MQTT bindings allow you to control :ref:`Bricks <primer_bricks>` and
 :ref:`Bricklets <primer_bricklets>` using the MQTT protocol. The
 :ref:`ZIP file <downloads_bindings_examples>` for the bindings contains:
 
-* ``tinkerforge_mqtt`` a Python script that acts as a translation proxy between a MQTT broker and a Brick Daemon
+* ``tinkerforge_mqtt`` a Python script that acts as a translation proxy between
+  a MQTT broker and a Brick Daemon
 * in ``examples/`` the examples for every Brick and Bricklet
 
 The MQTT bindings are based on the :ref:`Python bindings <api_bindings_python>`.
@@ -17,7 +18,7 @@ Requirements
 ------------
 
 * Python 2.7.9 or newer with ``argparse`` module, Python 3.4 or newer is also supported.
-* Paho's python library 1.3.1 or newer.
+* Paho's Python library 1.3.1 or newer.
 
 
 .. _api_bindings_mqtt_install:
@@ -32,12 +33,12 @@ the ``PATH``. For example, this folder on Linux and macOS::
 
  /usr/local/bin/
 
-On Windows the ``Scripts/`` folder of the Python installation is a good choice::
+On Windows the ``Scripts\`` folder of the Python installation is a good choice::
 
  C:\Python27\Scripts\
 
 To be able to call the bindings directly on Windows you have to create a
-``tinkerforge_mqtt.bat`` file in the ``Scripts/`` folder with the following content::
+``tinkerforge_mqtt.bat`` file in the ``Scripts\`` folder with the following content::
 
  @"C:\Python27\python.exe" "C:\Python27\Scripts\tinkerforge_mqtt"
 
@@ -59,13 +60,13 @@ and MQTT broker, using the command line switches. See the output of ``tinkerforg
 
 All examples are written in pseudo code, you have to translate them to your favorite
 programming language before running them. Alternatively you can use the mosquitto_pub
-and mosquitto_sub commands, which are part of the mosquitto MQTT broker.
+and mosquitto_sub commands, which are part of the Mosquitto MQTT broker.
 
 The examples consist of a setup and a cleanup block. The setup block configures devices
 and callbacks, the cleanup block stops them. Not all examples have a cleanup block.
 
-The pseudo code denotes MQTT publish operations as ``publish [PAYLOAD] to [TOPIC]``
-and subscribe operations as ``subscribe to [TOPIC]``. Subscriptions optionally
+The pseudo code denotes MQTT publish operations as ``publish <PAYLOAD> to <TOPIC>``
+and subscribe operations as ``subscribe to <TOPIC>``. Subscriptions optionally
 contain logic which should be run if a message arrives. These blocks end with ``endsubscribe``.
 
 MQTT Topics
@@ -84,21 +85,21 @@ is a valid prefix.
 ``<OPERATION>`` denotes the type of request. It can be one of ``request``, ``response``, ``register`` or ``callback``.
 The bindings subscribe to ``request`` and ``register`` topics and will publish answers to
 ``requests`` under ``response``, answers to ``register`` under ``callback`` topics.
- 
+
 ``<DEVICE>`` is the type of device you want to interact with. This can be the name of a
-brick or bricklet in snake_case, for example ``oled_64x48_bricklet``, or ``ip_connection``.
+Brick or Bricklet in snake_case, for example ``oled_64x48_bricklet``, or ``ip_connection``.
 See the documentation of devices for the exact spelling.
-  
+
 ``[/<UID>]`` is the UID of the device. If the device is the ``ip_connection``,
 this has to be empty and with no slashes, for example: ``.../ip_connection/enumerate``
-  
+
 ``<FUNCTION>`` is the function to call, or the callback to register to, written in snake_case.
- 
+
 ``[/<SUFFIX>]`` is the optional suffix to attach to responses. This can be used to allow message
 filtering, for example by setting it to ``/STATUS`` for requests or callback registrations which
 query status information. Another MQTT client can then register to ``[<GLOBAL_PREFIX>/]+/+/+/+/STATUS`` to
 receive all status information tagged as such.
- 
+
 A typical request topic looks like this: ``tinkerforge/request/rgb_led_button_bricklet/Dod/get_color``.
 The response to this request (or an error) will be published under
 ``tinkerforge/response/rgb_led_button_bricklet/Dod/get_color`` by the bindings.
@@ -106,7 +107,7 @@ The response to this request (or an error) will be published under
 A callback registration topic looks like this: ``tinkerforge/register/rgb_led_button_bricklet/Dod/button_state_changed``.
 If you subscribe to ``tinkerforge/callback/rgb_led_button_bricklet/Dod/button_state_changed`` you will receive a message
 each time the button is pressed or released.
- 
+
 MQTT Payload
 ^^^^^^^^^^^^
 
@@ -115,7 +116,7 @@ of the corresponding function in the Python bindings. Occurred errors are logged
 as well as inserted into returned JSON objects under the ``_ERROR`` field.
 
 If symbolic output is not disabled (using the ``--no-symbolic-response`` command line flag),
-integer constants are translated to strings. For example the button_state_changed callback of
+integer constants are translated to strings. For example the ``button_state_changed callback`` of
 the RGB LED Button Bricklet will be ``{"state": "pressed"}`` instead of ``{"state:" 0}``.
 
 Integer constants in request payloads can also be replaced by their associated symbols. For
@@ -125,19 +126,19 @@ is equivalent to publishing ``{"config": 2}``.
 Symbols for constants are documented where they are available.
 
 Callback (de)registrations can use either ``{"register": true/false}`` or ``true/false`` as payload.
- 
+
 Loading initial messages from a file
 ------------------------------------
 
 Messages to be processed when the bindings are started, can be read from a file. Use the ``--init-file /path/to/file``
 command line argument to specify one. These files can (for example) be used to configure and register callbacks. The file
-is expected to contain a JSON-Object with MQTT topics as attribute names. The attribute values are JSON objects
-as used as MQTT payload. The following example shows a file which registers the all_data callback of a IMU Brick 2.0
+is expected to contain a JSON object with MQTT topics as attribute names. The attribute values are JSON objects
+as used as MQTT payload. The following example shows a file which registers the ``all_data`` callback of a IMU Brick 2.0
 and configures the period of the callback to 100ms::
 
  {
-         "tinkerforge/register/imu_v2_brick/XXYYZZ/all_data": {"register": true},
-         "tinkerforge/request/imu_v2_brick/XXYYZZ/set_all_data_period": {"period": 100}
+     "tinkerforge/register/imu_v2_brick/XXYYZZ/all_data": {"register": true},
+     "tinkerforge/request/imu_v2_brick/XXYYZZ/set_all_data_period": {"period": 100}
  }
 
 
@@ -160,8 +161,8 @@ Command line arguments
  * ``--no-symbolic-response`` disable translation into string constants for responses
  * ``--show-payload`` show received payload if JSON parsing fails
  * ``--init-file <INIT_FILE>`` file from where to load initial messages to publish
- 
- 
+
+
 API Reference and Examples
 --------------------------
 
