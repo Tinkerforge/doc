@@ -30,6 +30,7 @@ Programmiersprache:
 * :ref:`LabVIEW <api_bindings_labview>`
 * :ref:`Mathematica <api_bindings_mathematica>`
 * :ref:`MATLAB/Octave <api_bindings_matlab>`
+* :ref:`MQTT <api_bindings_mqtt>`
 * :ref:`Perl <api_bindings_perl>`
 * :ref:`PHP <api_bindings_php>`
 * :ref:`Python <api_bindings_python>`
@@ -53,6 +54,7 @@ Programmiersprache:
    LabVIEW <API_Bindings_LabVIEW>
    Mathematica <API_Bindings_Mathematica>
    MATLAB/Octave <API_Bindings_MATLAB>
+   MQTT <API_Bindings_MQTT>
    Perl <API_Bindings_Perl>
    PHP <API_Bindings_PHP>
    Python <API_Bindings_Python>
