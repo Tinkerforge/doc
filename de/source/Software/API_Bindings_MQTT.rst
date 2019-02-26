@@ -133,8 +133,63 @@ Symbole für Konstanten sind dokumentiert, wenn sie verfügbar sind.
 
 Callback-(De)registrierungen können entweder ``{"register": true/false}`` oder ``true/false`` als Payload haben.
 
+Requests und Responses
+^^^^^^^^^^^^^^^^^^^^^^
+
+Um eine Funktion eines Bricks oder Bricklets aufzurufen, muss eine Nachricht im JSON-Format im entsprechenden
+'request'-Topic gepublisht werden. Um zum Beispiel mit mosquitto_pub die Farbe des RGB LED Button Bricklets mit der UID Enx auf Gelb zu setzen,
+kann folgender Befehl verwendet werden::
+    
+  mosquitto_pub -t tinkerforge/request/rgb_led_button_bricklet/Enx/set_color -m '{"red":255, "green":127, "blue":0}'
+
+Funktionen geben Werte unter 'response'-Topics zurück. Folgendermaßen kann die aktuelle Farbe des selben Bricklets abgefragt werden::
+    
+  mosquitto_sub -t tinkerforge/response/rgb_led_button_bricklet/Enx/get_color
+  mosquitto_pub -t tinkerforge/request/rgb_led_button_bricklet/Enx/get_color -m ''
+  
+Auch aufgetretene Fehler werden unter 'response'-Topics gepublisht, zum Beispiel wird, falls ein Parameter fehlt::
+  
+  mosquitto_sub -t tinkerforge/response/rgb_led_button_bricklet/Enx/set_color
+  mosquitto_pub -t tinkerforge/request/rgb_led_button_bricklet/Enx/set_color -m '{"red":255, "green":127, "blue":0}'
+
+die Nachricht::
+
+  {"_ERROR": "The arguments ['green'] where missing for a call of set_color of device Enx of type rgb_led_button_bricklet."} 
+  
+auf dem Topic ``tinkerforge/response/rgb_led_button_bricklet/Enx/set_color`` zurückgegeben.
+Fehler werden auch auf der Standardausgabe der Bindings ausgegeben.
+
+Callbacks
+^^^^^^^^^
+
+Callbacks können auf 'register'-Topics registriert werden::
+  
+  mosquitto_pub -t tinkerforge/register/rgb_led_button_bricklet/Enx/button_state_changed -m 'true'
+  
+und werden auf den entsprechenden 'callback'-Topics ausgelöst::
+
+  mosquitto_sub -t tinkerforge/callback/rgb_led_button_bricklet/Enx/button_state_changed
+  
+gibt Nachrichten der Form::
+    
+  {"state": 0}
+  {"state": 1}
+
+zurück, wenn der Taster gedrückt und losgelassen wird.
+
+Um ein Callback zu deregistrieren, kann als Payload 'false' statt 'true' verwendet werden.
+Außerdem ist es möglich, stattdessen ``{"register":  true}`` und ``{"register": false}`` zu verwenden.
+
+Die Callback-Konfiguration funktioniert analog zu den anderen Bindings. Wenn ein Callback aktiviert
+und/oder konfiguriert werden muss, müssen folgende Schritte durchgeführt werden:
+
+  - Subscriben auf dem 'callback'-Topic
+  - Publishen der Registrierung auf dem 'register'-Topic
+  - Publishen der Konfiguration der Callback-Eigenschaften wie z.B. der Periode
+  - Publishen der Aktivierung des Callbacks über das 'request'-Topic
+
 Laden initialer Nachrichten aus einer Datei
--------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Um die Konfiguration zu vereinfachen, können Nachrichten, die einmal beim Start der Bindings verarbeitet werden
 sollen, aus einer Datei geladen werden. Hierzu wird das Kommandozeilenargument ``--init-file /pfad/zur/datei``
@@ -147,6 +202,42 @@ IMU Brick 2.0 registriert und dessen Periode auf 100ms konfiguriert::
      "tinkerforge/register/imu_v2_brick/XXYYZZ/all_data": {"register": true},
      "tinkerforge/request/imu_v2_brick/XXYYZZ/set_all_data_period": {"period": 100}
  }
+
+Topic-Präfixe
+^^^^^^^^^^^^^
+
+Die Bindings können mit dem '--global-topic-prefix'-Parameter auf einen anderen globalen Präfix konfiguriert werden.
+Der Präfix kann beispielsweise verwendet werden, um mehrere Binding-Instanzen die mit dem selben Broker verbunden sind zu trennen.
+Der Präfix kann beliebig lang sein, zum Beispiel ``tf/instance/1/foo/bar``.
+
+Topic-Suffixe
+^^^^^^^^^^^^^
+
+Die Bindings unterstützen beliebige Suffixe pro Topic. Mit diesen können zum Beispiel alle Bricks/Bricklets
+in einem Raum mit einer Raumnummer markiert werden::
+  
+  mosquitto_pub -t tinkerforge/register/rgb_led_button_bricklet/Enx/button_state_changed/room/1 -m 'true'
+  mosquitto_pub -t tinkerforge/register/rgb_led_button_bricklet/gBs/button_state_changed/room/2 -m 'true'
+  mosquitto_pub -t tinkerforge/register/rgb_led_button_bricklet/Dod/button_state_changed/room/1 -m 'true'
+  
+Um alle Callbacks von Bricks/Bricklets in Raum 1 zu empfangen, kann auf folgendes Topic subscribt werden::
+  
+  mosquitto_sub -t tinkerforge/callback/+/+/+/room/1
+
+Es werden dann Callback-Nachrichten von 'Enx' und 'Dod' empfangen, aber nicht von 'gBs'.
+
+Um alle Nachrichten zu erhalten kann sich auf::
+
+  mosquitto_sub -t tinkerforge/callback/#
+  mosquitto_sub -t tinkerforge/response/#
+ 
+subscribt werden.
+
+Start der Bindings
+------------------
+
+Die Bindings publishen beim Start eine Nachricht auf ``[GLOBAL_PREFIX]/callback/bindings/restart`` mit ``null``
+als Payload. Diese Nachricht kann als Neustart-Signal verwendet werden. Es müssen dann alle verwendeten Callbacks neugestartet werden.
 
 
 Kommandozeilenargumente
