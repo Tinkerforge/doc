@@ -260,7 +260,7 @@ Im Folgenden wird der bisherigen Aufbau aus DC Brick und Rotary Poti
 Bricklet um einen Master Brick erweitert.
 
 .. note::
- Die weise Ecke jedes Bricks zeigt an, in welcher Ausrichtung zwei Bricks
+ Die weiße Ecke jedes Bricks zeigt an, in welcher Ausrichtung zwei Bricks
  zusammengesteckt werden können.
 
 
