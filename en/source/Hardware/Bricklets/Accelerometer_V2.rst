@@ -77,7 +77,7 @@ Weight                            2g
 Resources
 ---------
 
-* KX122 datasheet (`Download <https://github.com/Tinkerforge/accelerometer-bricklet-v2/raw/master/datasheets/KX122.pdf>`__)
+* KX122 datasheet (`Download <https://github.com/Tinkerforge/accelerometer-v2-bricklet/raw/master/datasheets/KX122.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/accelerometer-v2-bricklet/raw/master/hardware/accelerometer-v2-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/accelerometer_v2_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/accelerometer-v2-bricklet/zipball/master>`__)
