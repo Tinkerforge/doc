@@ -17,8 +17,7 @@ Starterkit: Wetterstation
 	Kits/weather_station_wall_far_[100|800].jpg            Wetterstation: Mit WLAN an Wand
 	Kits/weather_station_wall_near_[100|800].jpg           Wetterstation: Mit WLAN an Wand
 	Kits/weather_station_construction_rpi_front_[?|?].jpg  Wetterstation: Mit Raspberry Pi
-	Kits/weather_station_demo_[100|].jpg                   Wetterstation: Demo Anwendung
-	Kits/weather_station_xively_graphs_[100|800].jpg       Wetterstation: Xively-Graphen
+	Kits/weather_station_demo_[100|].png                   Wetterstation: Demo Anwendung
 	Kits/weather_station_lcd_all_[100|orig].jpg            Wetterstation: Verschiedene Modi
 	Kits/weather_station_website_[100|orig].jpg            Wetterstation: Eingebettet in einer Webseite
 	Kits/weather_station_buttons_assembled_[100|800].jpg   Wetterstation: Mit großen Drucktastern auf der linken Seite
@@ -56,13 +55,11 @@ eingebunden werden. Für einen Standalone-Betrieb kann ein :ref:`RED Brick
 <red_brick>` oder ein anderes Embedded Board, wie
 z.B. das :ref:`Raspberry Pi <embedded_raspberry_pi>`, direkt ins Gehäuse 
 eingebaut werden. Auch Internet der Dinge (Internet of Things, IoT) Anwendungen
-sind somit möglich (siehe z.B. das 
-:ref:`Xively Beispiel <starter_kit_weather_station_xively>`).
+sind somit möglich.
 
 Für die Wetterstation sind verschiedene Beispielprojekte verfügbar, so können 
-die Messwerte auf einem 20x4 Zeichen LCD angezeigt, 
-auf einer Webseite oder z.B. auf `Xively <https://www.xively.com/>`__
-hochgeladen werden. Über vier Taster auf dem 
+die Messwerte auf einem 20x4 Zeichen LCD angezeigt, oder
+auf einer Webseite hochgeladen werden. Über vier Taster auf dem 
 :ref:`LCD 20x4 Bricklet <lcd_20x4_bricklet>` kann zwischen 
 verschiedenen Modi umgeschaltet werden.
 
@@ -114,7 +111,6 @@ Ressourcen
 
 * Wetterstations-Gehäuse als FreeCAD CAD Dateien (`Download <https://github.com/Tinkerforge/weather-station/tree/master/case>`__)
 * Beispielquelltexte für :ref:`starter_kit_weather_station_write_to_lcd` (Download: |write_to_lcd_examples_download|)
-* Beispielquelltext für :ref:`starter_kit_weather_station_xively` (Download: `Python <https://github.com/Tinkerforge/weather-station/tree/master/xively/python>`__)
 * Beispielquelltext für :ref:`starter_kit_weather_station_website` (Download: `PHP <https://github.com/Tinkerforge/weather-station/tree/master/website/php>`__)
 * Beispielquelltext für :ref:`starter_kit_weather_station_button_control` (Download: `C# <https://github.com/Tinkerforge/weather-station/tree/master/button_control/csharp>`__)
 * Beispielkonfiguration für :ref:`starter_kit_weather_station_openhab` (`Download <https://github.com/Tinkerforge/weather-station/tree/master/openhab>`__)
@@ -152,12 +148,11 @@ Demo Anwendung
 
 Wenn die Hardware korrekt funktioniert kann die Demo Anwendung zum
 Starterkit: Wetterstation getestet werden. Diese implementiert für
-Demonstrationszwecke drei der vorgestellten :ref:`Projekte
+Demonstrationszwecke zwei der vorgestellten :ref:`Projekte
 <starter_kit_weather_station_projects>`:
 
 1. :ref:`starter_kit_weather_station_write_to_lcd`
 2. :ref:`starter_kit_weather_station_button_control`
-3. :ref:`starter_kit_weather_station_xively`
 
 Jedes Projekt besitzt sein eigenes Tab in der Anwendung. Das erste Projekt
 zeigt nur die gemessenen Werte an. Das zweite Projekt ist komplexer und
@@ -166,23 +161,14 @@ Die Anzeige kann hierbei über die vier Taster des LCD 20x4 Bricklets oder
 über die Taster in der Anwendung geändert werden. In manchen Modi kann über 
 ein mehrfaches Drücken des Tasters der Sensor geändert werden.
 
-Zum Schluss bietet das Xively Projekt die Möglichkeit die Messwerte 
-hochzuladen. Dazu muss sich auf `xively.com <https://www.xively.com>`__
-registriert werden. Anschließend können dort Feed ID und API Key 
-sowie für jeden Sensor ein Channel angelegt werden 
-(AirPressure, AmbientLight, Humidity und Temperature).
-Feed ID, API Key und das Upload-Intervall müssen anschließend
-in der Demo Anwendung konfiguriert werden. Für weitere Informationen
-siehe die Projektbeschreibung.
-
 Die Demo Anwendung kann aus den :ref:`Ressourcen <starter_kit_weather_station_resources>`
 heruntergeladen werden.
 
-.. image:: /Images/Kits/weather_station_demo_350.jpg
+.. image:: /Images/Kits/weather_station_demo_350.png
    :scale: 100 %
    :alt: Screenshot Wetterstation Demo Anwendung
    :align: center
-   :target: ../../_images/Kits/weather_station_demo.jpg
+   :target: ../../_images/Kits/weather_station_demo.png
 
 
 Konstruktion
@@ -260,32 +246,6 @@ Die vier Möglichkeiten können das gleiche Programm benutzen.
 Beispielanwendungen mit Schritt-für-Schritt Anleitungen existieren für: |write_to_lcd_examples|.
 
 .. include:: WriteToLCD.toctree
-
-
-.. _starter_kit_weather_station_xively:
-
-Internet der Dinge / Xively Anbindung
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-`Xively <https://www.xively.com/>`__ ist ein Service der die Möglichkeit bietet
-das "Internet der Dinge" zu analysieren und zu visualisieren. Dieser kann eine
-Historie der Wetterstationsdaten speichern, sowie nette Graphen zeichnen:
-
-.. image:: /Images/Kits/weather_station_xively_graphs_600.jpg
-   :scale: 100 %
-   :alt: Xively Datastreams als Graph
-   :align: center
-   :target: ../../_images/Kits/weather_station_xively_graphs_orig.jpg
-
-Eine Beispiel-Implementierung mit Schritt-für-Schritt Instruktionen
-die die Wetterdaten auf Xively veröffentlicht ist verfügbar
-in :ref:`Python <starter_kit_weather_station_python_to_xively>`.
-
-.. toctree::
-   :hidden:
-
-   PythonToXively
-
 
 
 .. _starter_kit_weather_station_website:
