@@ -31,8 +31,9 @@ Hall Effect Bricklet 2.0
 Features
 --------
 
-* TBD
-* TBD
+* Measures magnetic flux density between -7mT and 7mT
+* Counter with configurable thresholds, bipolar and unipolar
+* Can count with a frequency of up to 10kHz
 
 
 .. _hall_effect_v2_bricklet_description:
@@ -40,7 +41,22 @@ Features
 Description
 -----------
 
-TBD
+The Hall Effect :ref:`Bricklet <primer_bricklets>` extends
+:ref:`Bricks <primer_bricks>` and can
+`magnetic flux density (magnetic induction) <https://en.wikipedia.org/wiki/Magnetic_flux>`__
+from -7mT to 7mT (`milli Tesla <https://en.wikipedia.org/wiki/Tesla_(unit)>`__).
+It can count the (dis-)appearances of magnetic fields
+and can for example be used to measure the speed of a wheel with attached magnet
+with a frequency of up to 10kHz.
+
+The low/high threshold for the counter as well as a debounce time can
+be configured and adjusted to a specific application.
+
+Example applications are:
+
+* Detect if a door is open or closed
+* Reading out water/electricity meters
+* Counting RPM of motors
 
 
 Technical Specifications
@@ -49,13 +65,17 @@ Technical Specifications
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
-Current Consumption               TBDmA
+Sensor                            DRV5053
+Current Consumption               TBD
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-P TBD                             V TBD
+Operation                         Omnipolar (North and South pole is detected)
+Detection Range                   -7mT to 7mT
+Counter Trigger Point             Configurable (unipolar and bipolar)
+Counter Sampling Rate             10kHz
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Dimensions (W x D x H)            TBD x TBD x TBDmm (TBD x TBD x TBD")
+Dimensions (W x D x H)            25 x 15 x 5mm (0.98 x 0.59 x 0.19")
 Weight                            TBDg
 ================================  ============================================================
 
@@ -63,6 +83,7 @@ Weight                            TBDg
 Resources
 ---------
 
+* DRV5053 datasheet (`Download <https://github.com/Tinkerforge/hall-effect-v2-bricklet/raw/master/datasheets/DRV5053.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/hall-effect-v2-bricklet/raw/master/hardware/hall-effect-v2-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/hall_effect_v2_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/hall-effect-v2-bricklet/zipball/master>`__)
@@ -79,44 +100,17 @@ Test your Hall Effect Bricklet 2.0
 |test_connect|.
 
 |test_tab|
-If everything went as expected ... TBD.
+If everything went as expected you can now see the measurement the magnetic
+flux density. You can move a megnet near the Bricklet to test it.
 
-..
-	.. image:: /Images/Bricklets/bricklet_hall_effect_v2_brickv.jpg
-	   :scale: 100 %
-	   :alt: Hall Effect Bricklet 2.0 in Brick Viewer
-	   :align: center
-	   :target: ../../_images/Bricklets/bricklet_hall_effect_v2_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_hall_effect_v2_brickv.jpg
+   :scale: 100 %
+   :alt: Hall Effect Bricklet 2.0 in Brick Viewer
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_hall_effect_v2_brickv.jpg
 
 |test_pi_ref|
 
-
-.. _hall_effect_v2_bricklet_case:
-
-Case
-----
-
-..
-	A `laser-cut case for the Hall Effect Bricklet 2.0
-	<https://www.tinkerforge.com/en/shop/cases/case-hall-effect-v2-bricklet.html>`__ is available.
-
-	.. image:: /Images/Cases/bricklet_hall_effect_v2_case_350.jpg
-	   :scale: 100 %
-	   :alt: Case for Hall Effect Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_hall_effect_v2_case_1000.jpg
-
-	.. include:: Hall_Effect_V2.substitutions
-	   :start-after: >>>bricklet_case_steps
-	   :end-before: <<<bricklet_case_steps
-
-	.. image:: /Images/Exploded/hall_effect_v2_exploded_350.png
-	   :scale: 100 %
-	   :alt: Exploded assembly drawing for Hall Effect Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Exploded/hall_effect_v2_exploded.png
-
-	|bricklet_case_hint|
 
 
 .. _hall_effect_v2_bricklet_programming_interface:
