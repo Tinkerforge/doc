@@ -109,14 +109,32 @@ Ressourcen
 * 3D Modell (`Online ansehen <https://autode.sk/2NTYEnR>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/air_quality/air-quality.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/air_quality/air-quality.FCStd>`__)
 
 
-IAQ Index-Genauigkeit
----------------------
+IAQ-Genauigkeit und automatische Kalibrierung
+---------------------------------------------
+
+.. note::
+
+ In der aktuell veröffentlichen Firmware (2.0.4) wird die Kalibrierung nicht alle
+ 12 Stunden gespeichert. Wir mussten dies leider deaktivieren, da der proprietäre
+ Lade-/Speichermechanismus aktuell einen Bug hat den wir nicht fixen können.
+ Eine neue Firmware in der das speichern der Kalibrierung wieder aktiviert ist
+ gibt es sobald dieser Bug gefixt wird.
 
 Das Bricklet baut über längere Zeit eine Datenbank an Messwerten auf, um über
 eine automatische Hintergrundkalibrierung einen genaueren IAQ Index bestimmen zu
 können. Es dauert ein paar Tage bis der IAQ Index eine hohe Genauigkeit erreicht.
-Die API des Bricklets meldet eine Schätzung der Genauigkeit des IAQ Index
-(von unzuverlässig bis hoch).
+
+Die IAQ-Genauigkeit (IAQ Accuracy) spiegelt den aktuellen Status der
+Hintergrundkalibrierung wieder.
+
+* Accuracy 0: Das Bricklet wurde gerade gestartet und der Sensor stabilisiert sich.
+* Accuracy 1: Die Historie der Hintergrundkalibrierung ist zweifelhaft. Dies bedeutet typischerweise dass die Daten die der Sensor gemessen hat über einen längern Zeitraum zu stabil waren. Der Kalibrierungs-Algorithmus kann keine klaren Referenzen bilden.
+* Accuracy 2: Das Bricklet hat neue Kalibrierungsdaten gefunden und eine Rekalibrierung läuft.
+* Accuracy 3: Das Bricklet ist erfolgreich Kalibriert.
+
+Die effektive Dauer der Kalibrierung hängt von den Stimuli ab die der Sensor
+beobachtet. Eine IAQ-Genauigkeit die zwischen 2 und 3 hin- und herwandert ist
+erwartet. Das Bricklet ist erfolgreich dabei sich zu rekalibrieren.
 
 Das Bricklet speichert die aktuelle Datenbank an Werten und berechneten
 Koeffizienten alle 12 Stunden in seinem internen Flash-Speicher. Dadurch dauert

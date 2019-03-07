@@ -115,13 +115,30 @@ Resources
 * 3D model (`View online <https://autode.sk/2NTYEnR>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/air_quality/air-quality.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/air_quality/air-quality.FCStd>`__)
 
 
-IAQ Index Accuracy
-------------------
+IAQ Accuracy and Automatic Calibration
+--------------------------------------
+
+.. note::
+
+ The currently released firmware (2.0.4) does not save the calibration every
+ 12 hours. We had to disable this because of a bug in the proprietary load/save
+ mechanism that we can't fix. We will release a new firmware that has this enabled
+ again as soon as this bug is fixed.
 
 The Bricklet is building a database of measurements and uses this data to do an
 automatic background calibration and calculate an accurate IAQ index over time.
-It will take a few days until the IAQ index has a high reliability. The API of the
-Bricklet returns a best guess about the accuracy (ranging from unreliable to high).
+It will take a few days until the IAQ index has a high reliability.
+
+The IAQ accuracy is reflects the current state of the background calibration process.
+
+* Accuracy 0: The Bricklet was just started and the sensor is stabilizing.
+* Accuracy 1: The background history is uncertain. This typically means the gas sensor data was too stable for the calibration algorithm to clearly define its references.
+* Accuracy 2: The Bricklet found new calibration data and is currently calibrating.
+* Accuracy 3: The Bricklets is calibrated successfully.
+
+The effective duration of the calibration process depends on the stimuli observed by
+the sensor. An IAQ accuracy going back and fourth between 2 and 3 is expected, the
+Bricklet is recalibrating itself.
 
 The Bricklet saves the current database of values and calculated coefficients
 every 12 hours in its internal flash memory. If the Bricklet loses power it will
