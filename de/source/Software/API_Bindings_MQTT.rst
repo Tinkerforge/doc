@@ -150,7 +150,7 @@ Funktionen geben Werte unter 'response'-Topics zurück. Folgendermaßen kann die
 Auch aufgetretene Fehler werden unter 'response'-Topics gepublisht, zum Beispiel wird, falls ein Parameter fehlt::
   
   mosquitto_sub -t tinkerforge/response/rgb_led_button_bricklet/Enx/set_color
-  mosquitto_pub -t tinkerforge/request/rgb_led_button_bricklet/Enx/set_color -m '{"red":255, "green":127, "blue":0}'
+  mosquitto_pub -t tinkerforge/request/rgb_led_button_bricklet/Enx/set_color -m '{"red":255, "blue":0}'
 
 die Nachricht::
 

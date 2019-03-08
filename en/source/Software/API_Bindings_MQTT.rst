@@ -145,7 +145,7 @@ To query the current color of the same Bricklet use::
 Occured errors are published under the 'response' topic. If for example a parameter is missing::
     
   mosquitto_sub -t tinkerforge/response/rgb_led_button_bricklet/Enx/set_color
-  mosquitto_pub -t tinkerforge/request/rgb_led_button_bricklet/Enx/set_color -m '{"red":255, "green":127, "blue":0}'
+  mosquitto_pub -t tinkerforge/request/rgb_led_button_bricklet/Enx/set_color -m '{"red":255, "blue":0}'
    
 The message::
     
