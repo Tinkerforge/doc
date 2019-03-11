@@ -34,7 +34,7 @@ Features
 --------
 
 * 7,1cm (2,8") LCD mit 128x64 Pixel Auflösung
-* Eingebetter Zeichensatz für einfache Textdarstellung
+* Eingebetter Font und GUI für einfache Textdarstellung und GUI-Elemente
 * Touchscreen mit Callback für x/y-Koordinaten und Anpressdruck
 * Automatische Wischgestenerkennung (links, rechts, rauf und runter)
 
@@ -53,7 +53,8 @@ seinem festen Zeichensatz. Die Größe des Displays ist sehr ähnlich zum alten
 LCD 20x4 Bricklet, so dass es als direkter Ersatz verwendet werden kann,
 
 Mittels des eingebetteten :ref:`Zeichensatzes <lcd_128x64_bricklet_font>` können
-schnell und einfach Texte auf dem Display dargestellt werden
+schnell und einfach Texte auf dem Display dargestellt werden. Zusätzlich gibt es
+eine :ref:`eingebettete GUI <lcd_128x64_bricklet_gui>`.
 
 Der Touchscreen hat einen einfach zu verwendende Callback für x/y-Koordinaten
 und Anpressdruck. Zusätzlich erkennt das Bricklet automatisch Wischgesten.
@@ -63,25 +64,12 @@ Hohe Update-Raten bis zu 60Hz sind möglich.
 Das LCD 128x64 Bricklet hat einen 7 Pol Bricklet Stecker und wird
 mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
 
-Touch-Demonstration:
+LCD 128x64 Bricklet zusammen mit dem :ref:`Air Quality Bricklet <air_quality_bricklet>` in
+der :ref:`Tisch-Wetterstation <tabletop_weather_station>`
 
 .. raw:: html
 
-	<video class="align-center" max-width="100%" width="100%" height="auto" controls autoplay loop>
-	  <source src="../../_images/Videos/bricklet_lcd_128x64_video.mp4" type="video/mp4">
-	  <source src="../../_images/Videos/bricklet_lcd_128x64_video.ogg" type="video/ogg">
-	  <source src="../../_images/Videos/bricklet_lcd_128x64_video.webm" type="video/webm">
-	</video>
-
-LCD 128x64 Bricklet zusammen mit :ref:`Air Quality Bricklet <air_quality_bricklet>`:
-
-.. raw:: html
-
-	<video class="align-center" max-width="100%" width="100%" height="auto" controls autoplay loop>
-	  <source src="../../_images/Videos/bricklet_air_quality_video.mp4" type="video/mp4">
-	  <source src="../../_images/Videos/bricklet_air_quality_video.ogg" type="video/ogg">
-	  <source src="../../_images/Videos/bricklet_air_quality_video.webm" type="video/webm">
-	</video>
+ <iframe class="youtube" width="640" height="360" src="https://www.youtube-nocookie.com/embed/dz18cRKUvgA" frameborder="0" allowfullscreen></iframe>
 
 Technische Spezifikation
 ------------------------

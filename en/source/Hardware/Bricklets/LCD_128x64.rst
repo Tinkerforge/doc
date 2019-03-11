@@ -34,7 +34,7 @@ Features
 --------
 
 * 7.1cm (2.8") LCD with a resolution of 128x64 pixel
-* Embedded font for easy text drawing
+* Embedded font and GUI for easy drawing of text and GUI elements
 * Touchscreen with x/y-coordinate and touch pressure callback
 * Automatic swipe gesture recognition (left, right, up and down)
 
@@ -54,7 +54,8 @@ character display. The screen size is very similar to the screen size of the
 old LCD 20x4 Bricklet, so it can be used as a direct replacement.
 
 Text can easily be drawn onto the display with the embedded
-:ref:`font <lcd_128x64_bricklet_font>` of the Bricklet.
+:ref:`font <lcd_128x64_bricklet_font>` of the Bricklet. The Bricklet also
+comes with an :ref:`embedded GUI <lcd_128x64_bricklet_gui>`.
 
 The touch screen has easy to use callbacks with x/y coordinates and touch
 pressure. The Bricklet can automatically detect standard swipe gestures.
@@ -64,25 +65,13 @@ High update rates of up to 60Hz are possible.
 The LCD 128x64 Bricklet has a 7 pole Bricklet connector and is connected to a
 Brick with a ``7p-10p`` Bricklet cable.
 
-Touch demonstration:
+The LCD 128x64 Bricklet together with :ref:`Air Quality Bricklet <air_quality_bricklet>` in the
+:ref:`Tabletop Weather Station <tabletop_weather_station>`
 
 .. raw:: html
 
-	<video class="align-center" max-width="100%" width="100%" height="auto" controls autoplay loop>
-	  <source src="../../_images/Videos/bricklet_lcd_128x64_video.mp4" type="video/mp4">
-	  <source src="../../_images/Videos/bricklet_lcd_128x64_video.ogg" type="video/ogg">
-	  <source src="../../_images/Videos/bricklet_lcd_128x64_video.webm" type="video/webm">
-	</video>
+ <iframe class="youtube" width="640" height="360" src="https://www.youtube-nocookie.com/embed/dz18cRKUvgA" frameborder="0" allowfullscreen></iframe>
 
-LCD 128x64 Bricklet together with :ref:`Air Quality Bricklet <air_quality_bricklet>`:
-
-.. raw:: html
-
-	<video class="align-center" max-width="100%" width="100%" height="auto" controls autoplay loop>
-	  <source src="../../_images/Videos/bricklet_air_quality_video.mp4" type="video/mp4">
-	  <source src="../../_images/Videos/bricklet_air_quality_video.ogg" type="video/ogg">
-	  <source src="../../_images/Videos/bricklet_air_quality_video.webm" type="video/webm">
-	</video>
 
 Technical Specifications
 ------------------------
