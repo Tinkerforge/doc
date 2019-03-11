@@ -65,7 +65,7 @@ Das LCD 128x64 Bricklet hat einen 7 Pol Bricklet Stecker und wird
 mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
 
 LCD 128x64 Bricklet zusammen mit dem :ref:`Air Quality Bricklet <air_quality_bricklet>` in
-der :ref:`Tisch-Wetterstation <tabletop_weather_station>`
+der :ref:`Tisch-Wetterstation <tabletop_weather_station>`:
 
 .. raw:: html
 

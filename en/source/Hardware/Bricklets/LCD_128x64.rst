@@ -66,7 +66,7 @@ The LCD 128x64 Bricklet has a 7 pole Bricklet connector and is connected to a
 Brick with a ``7p-10p`` Bricklet cable.
 
 The LCD 128x64 Bricklet together with :ref:`Air Quality Bricklet <air_quality_bricklet>` in the
-:ref:`Tabletop Weather Station <tabletop_weather_station>`
+:ref:`Tabletop Weather Station <tabletop_weather_station>`:
 
 .. raw:: html
 
