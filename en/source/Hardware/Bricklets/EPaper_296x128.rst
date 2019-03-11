@@ -99,7 +99,7 @@ depicted below.
 You can draw and write text to the display.
 
 Note: On startup the Bricklet can not read back the content of the screen.
-So the Brick Viewer will show a black screen even if something is one the display.
+So the Brick Viewer will show a black screen even if something is on the display.
 If you write to the display afterwards, the Brick Viewer will be able to read it back
 and show it until the Bricklet is powered down again.
 
