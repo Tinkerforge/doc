@@ -58,7 +58,7 @@ schnell und einfach Texte auf dem Display dargestellt werden
 Der Touchscreen hat einen einfach zu verwendende Callback für x/y-Koordinaten
 und Anpressdruck. Zusätzlich erkennt das Bricklet automatisch Wischgesten.
 
-Hohe Update-Raten bis uz 60Hz sind möglich.
+Hohe Update-Raten bis zu 60Hz sind möglich.
 
 Das LCD 128x64 Bricklet hat einen 7 Pol Bricklet Stecker und wird
 mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
