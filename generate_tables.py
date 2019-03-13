@@ -139,6 +139,7 @@ firmware_versions = {}
 plugin_versions = {}
 extension_versions = {}
 kit_versions = {}
+red_image_versions = {}
 
 def get_latest_version_info():
     print 'Discovering latest versions on tinkerforge.com'
@@ -182,6 +183,8 @@ def get_latest_version_info():
             extension_versions[parts[1]] = latest_version
         elif parts[0] == 'kits':
             kit_versions[parts[1]] = latest_version
+        elif parts[0] == 'red_images':
+            red_image_versions[parts[1]] = latest_version
 
 def make_primer_table(device_infos):
     table_head = {
@@ -376,6 +379,37 @@ def make_download_bindings_table():
                                archive[lang],
                                bindings_and_examples[lang],
                                *bindings_versions[bindings_info.url_part]))
+
+    return table_head[lang] + '\n'.join(rows) + '\n'
+
+def make_download_red_images_table():
+    archive = {
+    'en': 'Archive',
+    'de': 'Archiv'
+    }
+
+    table_head = {
+    'en': """.. csv-table::
+ :header: "Type", "Downloads", "Version", "Archive", "Changelog"
+ :delim: |
+ :widths: 17, 32, 5, 5, 8
+
+""",
+    'de': """.. csv-table::
+ :header: "Typ", "Downloads", "Version", "Archiv", "Changelog"
+ :delim: |
+ :widths: 17, 32, 5, 5, 8
+
+"""
+    }
+
+    row = ' :ref:`RED Brick Image | `Image <http://download.tinkerforge.com/red_images/{0}/red_image_{2}_{3}_{0}.img.7z>`__ | {2}.{3} | `{1} <http://download.tinkerforge.com/red_images/{0}/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/red-brick/master/image/changelog_{0}>`__'
+    rows = []
+
+    for image in ['full']:
+        rows.append(row.format(image,
+                               archive[lang],
+                               *red_image_versions[image]))
 
     return table_head[lang] + '\n'.join(rows) + '\n'
 
@@ -1303,6 +1337,9 @@ def generate(path):
 
     print('Generating Downloads_bindings.table')
     write_if_changed(os.path.join(path, 'source', 'Downloads_bindings.table'), make_download_bindings_table())
+
+    print('Generating Downloads_red_images.table')
+    write_if_changed(os.path.join(path, 'source', 'Downloads_red_images.table'), make_download_red_images_table())
 
     print('Generating Downloads_brick_firmwares.table')
     write_if_changed(os.path.join(path, 'source', 'Downloads_brick_firmwares.table'), make_download_brick_firmwares_table())

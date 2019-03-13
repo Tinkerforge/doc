@@ -60,12 +60,7 @@ RED Brick Images
 The RED Brick boots from an SD card image. See the :ref:`RED Brick
 documentation <red_brick_images>` for more details about the images.
 
-.. csv-table::
- :header: "Type", "Downloads", "Version", "Archive", "Changelog"
- :delim: |
- :widths: 17, 32, 5, 5, 8
-
- RED Brick Image | `Image <http://download.tinkerforge.com/red_images/full/red_image_1_13_full.img.7z>`__ | 1.13 | `Archive <http://download.tinkerforge.com/red_images/full/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/red-brick/master/image/changelog_full>`__
+.. include:: Downloads_red_images.table
 
 
 .. _downloads_brick_firmwares:
