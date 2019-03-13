@@ -403,7 +403,7 @@ def make_download_red_images_table():
 """
     }
 
-    row = ' :ref:`RED Brick Image | `Image <http://download.tinkerforge.com/red_images/{0}/red_image_{2}_{3}_{0}.img.7z>`__ | {2}.{3} | `{1} <http://download.tinkerforge.com/red_images/{0}/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/red-brick/master/image/changelog_{0}>`__'
+    row = ' RED Brick Image | `Image <http://download.tinkerforge.com/red_images/{0}/red_image_{2}_{3}_{0}.img.7z>`__ | {2}.{3} | `{1} <http://download.tinkerforge.com/red_images/{0}/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/red-brick/master/image/changelog_{0}>`__'
     rows = []
 
     for image in ['full']:
