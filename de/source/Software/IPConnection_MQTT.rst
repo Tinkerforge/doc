@@ -1,6 +1,6 @@
 
-.. |ref_api_bindings| replace:: :ref:`MQTT API bindings <api_bindings_mqtt>`
-.. |ref_install_guide| replace:: :ref:`installation guide <api_bindings_mqtt_install>`
+.. |ref_api_bindings| replace:: :ref:`MQTT API Bindings <api_bindings_mqtt>`
+.. |ref_install_guide| replace:: :ref:`Installationanleitung <api_bindings_mqtt_install>`
 .. |bindings_name| replace:: MQTT
 
 .. _ipcon_mqtt:
