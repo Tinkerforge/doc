@@ -12,7 +12,7 @@ and translates messages between the :ref:`Tinkerforge TCP/IP Protocol (TFP)
 
 .. note::
  The Brick MQTT Proxy is discontinued and no further development will be done.
- The :ref:`MQTT API bindings <brick_mqtt_proxy>` are the recommended replacement.
+ The :ref:`MQTT API bindings <api_bindings_mqtt>` are the recommended replacement.
 
 Setup and Usage
 ---------------
