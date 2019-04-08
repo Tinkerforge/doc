@@ -4,7 +4,7 @@
 Brick Viewer Installation auf macOS
 ===================================
 
-**Voraussetzungen**: macOS 10.9 (Mavericks) oder neuer
+**Voraussetzungen**: macOS 10.11 (El Capitan) oder neuer
 
 Der :ref:`Brick Viewer <brickv>` kann mittels einer ``.dmg`` Datei
 installiert werden.

@@ -4,7 +4,7 @@
 Brick Viewer Installation on Windows
 ====================================
 
-**Requirements**: Windows XP or newer
+**Requirements**: Windows 7 or newer
 
 The :ref:`Brick Viewer <brickv>` can be installed from a setup ``.exe`` file.
 
