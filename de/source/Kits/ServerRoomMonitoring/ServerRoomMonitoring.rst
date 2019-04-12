@@ -55,7 +55,7 @@ ausgestattet: :ref:`Ambient Light Bricklet 3.0 <ambient_light_v3_bricklet>`
 :ref:`Temperature Bricklet 2.0 <temperature_v2_bricklet>` (überwacht die Temperatur im
 Rack) und ein :ref:`PTC Bricklet 2.0 <ptc_v2_bricklet>` mit Pt100 Temperaturfühler
 (z.B. zum Überwachen der Temperatur in einem Server). Es ist Platz für bis zu acht PTC
-Bricklets mit bis zu 8 Temperaturfühlern vorgesehen.
+Bricklets mit bis zu acht Temperaturfühlern vorgesehen.
 
 Das Kit-Gehäuse kann direkt in einem 19" Server Rack befestigt werden (1HE). Mit 
 weiteren Modulen des Tinkerforge :ref:`Baukastensystems<primer_products>`, 
