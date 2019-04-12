@@ -12,17 +12,21 @@ Starterkit: Serverraum-Überwachung
 
 	{% tfgallery %}
 
-	Kits/server_room_monitoring_red_1_[100|800].jpg        Serverraum-Überwachungskit: Vorderseite
-	Kits/server_room_monitoring_alu_surface_[100|800].jpg  Serverraum-Überwachungskit: Oberfläche Aluminium
-	Kits/server_room_monitoring_alu_in_hand_[100|800].jpg  Serverraum-Überwachungskit
-	Kits/server_room_monitoring_red_3_[100|800].jpg        Serverraum-Überwachungskit: Rückseite
-	Kits/server_room_monitoring_in_rack3_[100|800].jpg     Serverraum-Überwachungskit: Im Serverrack
-	Kits/server_room_monitoring_red_2_[100|800].jpg        Serverraum-Überwachungskit: Vorderseite
-	Kits/server_room_monitoring_content_[100|800].jpg      Serverraum-Überwachungskit: Inhalt
-	Kits/server_room_monitoring_extended_[100|800].jpg     Serverraum-Überwachungskit: Erweiterte Version
-	Kits/server_room_monitoring_iqr_[100|800].jpg          Serverraum-Überwachungskit: An/Aus-Schalter
-	Kits/server_room_monitoring_in_rack1_[100|800].jpg     Serverraum-Überwachungskit: Im Serverrack
-	Kits/server_room_monitoring_in_rack2_[100|800].jpg     Serverraum-Überwachungskit: Im Serverrack
+	Kits/server_room_monitoring_right_basic_[100|800].jpg                  Server Room Monitoring Kit
+	Kits/server_room_monitoring_left_front_open_basic_[100|800].jpg        Server Room Monitoring Kit
+	Kits/server_room_monitoring_left_front_close_basic_[100|800].jpg       Server Room Monitoring Kit
+	Kits/server_room_monitoring_front_right_red_close_[100|800].jpg        Server Room Monitoring Kit
+	Kits/server_room_monitoring_back_right_red_open_[100|800].jpg          Server Room Monitoring Kit
+	Kits/server_room_monitoring_front_right_seg_motion_close_[100|800].jpg Server Room Monitoring Kit
+	Kits/server_room_monitoring_back_open_[100|800].jpg                    Server Room Monitoring Kit
+	Kits/server_room_monitoring_case_front_open_[100|800].jpg              Server Room Monitoring Kit
+	Kits/server_room_monitoring_side_close_[100|800].jpg                   Server Room Monitoring Kit
+	Kits/server_room_monitoring_top_[100|800].jpg                          Server Room Monitoring Kit: Inhalt
+	Kits/server_room_monitoring_alu_surface_[100|800].jpg                  Server Room Monitoring Kit: Oberfläche Aluminium
+	Kits/server_room_monitoring_alu_in_hand_[100|800].jpg                  Server Room Monitoring Kit
+	Kits/server_room_monitoring_in_rack3_[100|800].jpg                     Server Room Monitoring Kit: Im Serverrack
+	Kits/server_room_monitoring_in_rack1_[100|800].jpg                     Server Room Monitoring Kit: Im Serverrack
+	Kits/server_room_monitoring_in_rack2_[100|800].jpg                     Server Room Monitoring Kit: Im Serverrack
 
 	{% tfgalleryend %}
 
@@ -50,7 +54,8 @@ ausgestattet: :ref:`Ambient Light Bricklet 3.0 <ambient_light_v3_bricklet>`
 (überwacht Luftfeuchtigkeit),
 :ref:`Temperature Bricklet 2.0 <temperature_v2_bricklet>` (überwacht die Temperatur im
 Rack) und ein :ref:`PTC Bricklet 2.0 <ptc_v2_bricklet>` mit Pt100 Temperaturfühler
-(z.B. zum Überwachen der Temperatur in einem Server).
+(z.B. zum Überwachen der Temperatur in einem Server). Es ist Platz für bis zu acht PTC
+Bricklets mit bis zu 8 Temperaturfühlern vorgesehen.
 
 Das Kit-Gehäuse kann direkt in einem 19" Server Rack befestigt werden (1HE). Mit 
 weiteren Modulen des Tinkerforge :ref:`Baukastensystems<primer_products>`, 
@@ -104,16 +109,11 @@ aus bastelfreundlichem PMMA in das einfach neue Befestigungslöcher gebohrt
 werden können. Befestigungslöcher für verschiedene
 :ref:`Bricks <primer_bricks>` und
 :ref:`Bricklets <primer_bricklets>` sind bereits vorhanden.
-Folgende Module können direkt befestigt werden:
 
-:ref:`Analog In Bricklet 2.0 <analog_in_v2_bricklet>`,
-:ref:`Analog Out Bricklet 2.0 <analog_in_v2_bricklet>`,
-:ref:`Industrial Digital In 4 Bricklet <industrial_digital_in_4_bricklet>`,
-:ref:`Industrial Digital Out 4 Bricklet <industrial_digital_out_4_bricklet>`,
-:ref:`Industrial Quad Relay Bricklet <industrial_quad_relay_bricklet>`,
-:ref:`IO-4 Bricklet <io4_bricklet>`,
-:ref:`Motion Detector Bricklet 2.0 <motion_detector_v2_bricklet>`,
-und :ref:`Segment Display 4x7 Bricklet<segment_display_4x7_bricklet>`.
+In der Frontblende können zusätzlich ein
+:ref:`Motion Detector Bricklet 2.0 <motion_detector_v2_bricklet>`
+und ein :ref:`Segment Display 4x7 Bricklet<segment_display_4x7_bricklet>`
+befestigt werden.
 
 Technische Spezifikation
 ------------------------
@@ -422,11 +422,11 @@ Die vollständige Projektbeschreibung kann
 :ref:`hier <starter_kit_server_room_monitoring_extended_nagios>` gefunden 
 werden.
 
-.. image:: /Images/Kits/server_room_monitoring_extended_350.jpg
+.. image:: /Images/Kits/server_room_monitoring_front_right_seg_motion_close_350.jpg
    :scale: 100 %
    :alt: Erweiterte Version des Kits
    :align: center
-   :target: ../../_images/Kits/server_room_monitoring_extended_1000.jpg
+   :target: ../../_images/Kits/server_room_monitoring_front_right_seg_motion_close_1000.jpg
 
 .. toctree::
    :hidden:
