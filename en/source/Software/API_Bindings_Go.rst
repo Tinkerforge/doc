@@ -40,11 +40,8 @@ Brick Daemon and helps to figure out basic information about the connected
 Bricks and Bricklets.
 
 As an example let's compile the configuration example for the Stepper Brick
-from the command line. For this we create a new folder ``example_project`` in the ``src`` folder of the go path,
-and then copy the ``example_configuration.go``
-file from the ``examples/StepperBrick/`` folder into the created folder. Rename the copied file to ``main.go``.::
-
- $GOPATH/src/example_project/main.go (was example_configuration.go)
+from the command line. For this we use  the ``example_configuration.go``
+file from the ``examples/StepperBrick/`` folder of the zip.
 
 In the example ``ADDR`` specifies at which network address the
 Stepper Brick can be found. If it is connected locally to USB then ``localhost:4223`` is correct.
@@ -56,7 +53,7 @@ connected Stepper Brick, which you can figure out using Brick Viewer:
     const ADDR string = "localhost:4223"
     const UID string = "XXYYZZ" // Change XXYYZZ to the UID of your Stepper Brick.
 
-Now we can build and run the project with ``go run example_project``.
+Now we can build and run the project with ``go run example_configuration.go``.
 
  
 API Reference and Examples

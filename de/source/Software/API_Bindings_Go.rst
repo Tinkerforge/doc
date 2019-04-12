@@ -40,13 +40,9 @@ Bindings. Brick Viewer kann sich mit Brick Daemon verbinden und gibt
 Informationen über die angeschlossenen Bricks und Bricklets aus.
 
 Als Beispiel wird im Folgenden das Konfigurationsbeispiel des Stepper Bricks
-auf der Kommandozeile kompiliert. Dafür muss zuerst ein neuer Ordner ``example_project`` 
-im ``src``-Ordner des Go-Pfades erstellt werden. Dann muss die Datei 
-``example_configuration.go`` aus dem ``examples/StepperBrick/``-Ordner der Zip in den erstellten Ordner kopiert und in ``main.go`` umbenannt
-werden.::
-
- $GOPATH/src/example_project/main.go (war davor example_configuration.go)
-
+auf der Kommandozeile kompiliert. Dafür nutzen wir die Datei
+``example_configuration.go`` aus dem ``examples/StepperBrick/``-Ordner der
+Zip.
 
 Am Anfang des Beispiels ist mit ``ADDR`` angegeben unter welcher
 Netzwerkadresse der Stepper Brick zu erreichen ist. Ist er lokal per USB
@@ -59,7 +55,8 @@ Brick Viewer ermittelt werden:
     const ADDR string = "localhost:4223"
     const UID string = "XXYYZZ" // Change XXYYZZ to the UID of your Stepper Brick.
 
-Jetzt kann das Projekt mit ``go run example_project`` kompiliert und ausgeführt werden.
+Jetzt kann das Projekt mit ``go run example_configuration.go`` kompiliert
+und ausgeführt werden.
 
 
 API Referenz und Beispiele
