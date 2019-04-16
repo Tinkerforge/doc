@@ -71,6 +71,24 @@ Resources
 * 3D model (`View online <TBD>`__ | Download: `STEP <http://download.tinkerforge.com/3d/TBD/TBD.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/TBD/TBD.FCStd>`__)
 
 
+.. _hat_brick_low_power_sleep_mode:
+
+Low Power Sleep Mode
+--------------------
+
+
+.. _hat_brick_watchdog:
+
+Watchdog
+--------
+
+
+.. _hat_brick_real_time_clock:
+
+Real-Time Clock
+---------------
+
+
 .. _hat_brick_test:
 
 Test your HAT Brick
