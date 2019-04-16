@@ -1,0 +1,99 @@
+
+:DISABLED_shoplink: ../../../shop/bricks/hat-zero-brick.html
+
+.. include:: HAT_Zero_Brick.substitutions
+   :start-after: >>>substitutions
+   :end-before: <<<substitutions
+
+.. _hat_zero_brick:
+
+HAT Zero Brick
+==============
+
+.. note::
+  This Brick is currently work-in-progress!
+
+..
+    .. raw:: html
+
+	{% tfgallery %}
+
+	Bricks/brick_hat_zero_tilted_[?|?].jpg              HAT Zero Brick
+	Bricks/brick_hat_zero_horizontal_[?|?].jpg          HAT Zero Brick
+	Bricks/brick_hat_zero_brickv_[100|].jpg             HAT Zero Brick in Brick Viewer
+	Dimensions/hat_zero_brick_dimensions_[100|600].png  Outline and drilling plan
+
+	{% tfgalleryend %}
+
+
+Features
+--------
+
+* TBD
+* TBD
+
+
+.. _hat_zero_brick_description:
+
+Description
+-----------
+
+TBD
+
+
+Technical Specifications
+------------------------
+
+================================  ============================================================
+Property                          Value
+================================  ============================================================
+Current Consumption               TBDmA
+--------------------------------  ------------------------------------------------------------
+--------------------------------  ------------------------------------------------------------
+P TBD                             V TBD
+--------------------------------  ------------------------------------------------------------
+--------------------------------  ------------------------------------------------------------
+Dimensions (W x D x H)            TBD x TBD x TBDmm (TBD x TBD x TBD")
+Weight                            TBDg
+================================  ============================================================
+
+
+Resources
+---------
+
+* Schematic (`Download <https://github.com/Tinkerforge/hat-zero-brick/raw/master/hardware/hat-zero-schematic.pdf>`__)
+* Outline and drilling plan (`Download <../../_images/Dimensions/hat_zero_brick_dimensions.png>`__)
+* Source code and design files (`Download <https://github.com/Tinkerforge/hat-zero-brick/zipball/master>`__)
+* 3D model (`View online <TBD>`__ | Download: `STEP <http://download.tinkerforge.com/3d/TBD/TBD.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/TBD/TBD.FCStd>`__)
+
+
+.. _hat_zero_brick_test:
+
+Test your HAT Zero Brick
+------------------------
+
+|test_intro|
+
+|test_connect|.
+
+|test_tab|
+If everything went as expected ... TBD.
+
+..
+	.. image:: /Images/Bricks/brick_hat_zero_brickv.jpg
+	   :scale: 100 %
+	   :alt: HAT Zero Brick in Brick Viewer
+	   :align: center
+	   :target: ../../_images/Bricks/brick_hat_zero_brickv.jpg
+
+|test_pi_ref|
+
+
+.. _hat_zero_brick_programming_interface:
+
+Programming Interface
+---------------------
+
+See :ref:`Programming Interface <programming_interface>` for a detailed description.
+
+.. include:: HAT_Zero_Brick_hlpi.table
