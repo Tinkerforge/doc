@@ -72,12 +72,7 @@ Resources
 Test your HAT Brick
 -------------------
 
-|test_intro|
-
-|test_connect|.
-
-|test_tab|
-If everything went as expected ... TBD.
+TODO
 
 ..
 	.. image:: /Images/Bricks/brick_hat_brickv.jpg
@@ -85,8 +80,6 @@ If everything went as expected ... TBD.
 	   :alt: HAT Brick in Brick Viewer
 	   :align: center
 	   :target: ../../_images/Bricks/brick_hat_brickv.jpg
-
-|test_pi_ref|
 
 
 

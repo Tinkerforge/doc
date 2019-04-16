@@ -72,12 +72,7 @@ Ressourcen
 Erster Test
 -----------
 
-|test_intro|
-
-|test_connect|.
-
-|test_tab|
-Wenn alles wie erwartet funktioniert ... TBD.
+TODO
 
 ..
 	.. image:: /Images/Bricks/brick_hat_zero_brickv.jpg
@@ -86,7 +81,6 @@ Wenn alles wie erwartet funktioniert ... TBD.
 	   :align: center
 	   :target: ../../_images/Bricks/brick_hat_zero_brickv.jpg
 
-|test_pi_ref|
 
 
 .. _hat_zero_brick_programming_interface:

@@ -72,12 +72,7 @@ Resources
 Test your HAT Zero Brick
 ------------------------
 
-|test_intro|
-
-|test_connect|.
-
-|test_tab|
-If everything went as expected ... TBD.
+TODO
 
 ..
 	.. image:: /Images/Bricks/brick_hat_zero_brickv.jpg
@@ -86,7 +81,6 @@ If everything went as expected ... TBD.
 	   :align: center
 	   :target: ../../_images/Bricks/brick_hat_zero_brickv.jpg
 
-|test_pi_ref|
 
 
 .. _hat_zero_brick_programming_interface:
