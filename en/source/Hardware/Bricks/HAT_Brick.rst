@@ -29,8 +29,12 @@ HAT Brick
 Features
 --------
 
-* TBD
-* TBD
+* Raspberry Pi HAT with standard RPi HAT form factor
+* Has eight ports for Bricklets
+* Integrates DC power supply (5V-28V input)
+* Measures USB and DC supply voltages
+* Adds battery backed real-time clock to Raspberry Pi
+* Adds low power sleep mode and RPi watchdog
 
 
 .. _hat_brick_description:

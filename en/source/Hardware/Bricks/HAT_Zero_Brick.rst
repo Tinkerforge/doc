@@ -29,8 +29,9 @@ HAT Zero Brick
 Features
 --------
 
-* TBD
-* TBD
+* Raspberry Pi HAT with RPi Zero form factor
+* Has four ports for Bricklets
+* Measures USB supply voltage
 
 
 .. _hat_zero_brick_description:
