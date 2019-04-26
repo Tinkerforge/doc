@@ -338,6 +338,11 @@ weitere Benutzung gespeichert werden kann.
 Serverraum-Überwachung mit Nagios oder Icinga
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. note::
+	Ein fertiges Icinga Check Plugin welches von `Netways <https://www.netways.de>`__
+	getwartet wird kann im icinga exchange gefunden werden:
+	`https://exchange.icinga.com/netways/check_tinkerforge <https://exchange.icinga.com/netways/check_tinkerforge>`__
+
 `Icinga <https://www.icinga.com/>`__ und `Nagios <https://www.nagios.org/>`__
 sind Computer Überwachungswerkzeuge. Icinga ist ein Fork von Nagios
 und gilt als rückwärtskompatibel zu Nagios. Die dokumentierten Beispiele 

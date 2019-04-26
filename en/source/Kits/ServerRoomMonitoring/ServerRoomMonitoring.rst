@@ -330,6 +330,10 @@ degree Celsius and how to save it in a variable for further use.
 Server Room Monitoring with Nagios or Icinga
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. note::
+	A ready-to-use Icinga Check Plugin that is maintained by `Netways <https://www.netways.de>`__
+	can be found on the icinga exchange: `https://exchange.icinga.com/netways/check_tinkerforge <https://exchange.icinga.com/netways/check_tinkerforge>`__
+
 `Icinga <https://www.icinga.com/>`__ and `Nagios <https://www.nagios.org/>`__
 are computer system monitoring tools. Icinga is a fork of Nagios and is 
 said to be backward compatible to Nagios. In the following examples we are
