@@ -42,7 +42,24 @@ Features
 Description
 -----------
 
-TBD
+The HAT Brick is a `Raspberry Pi HAT <https://www.raspberrypi.org/blog/introducing-raspberry-pi-hats/>`__
+with the standard RPi HAT form factor. The Brick follows the HAT specification
+and it will show up in the device tree in linux.
+
+With the HAT Brick your Raspberry Pi has access to **eight** :ref:`Bricklet <primer_bricklets>` ports.
+
+You can power the Raspberry Pi through the HAT with a 5V-28V DC power supply. This will be
+able to provide very stable 5V, even under heavy load. You can also still power the
+HAT/RPi through USB. The USB/DC supply voltages are measured and accessible through the API.
+
+Additionally, the HAT has a :ref:`real-time clock with battery backup <hat_brick_real_time_clock>`
+that is directly connected to the Raspberry Pi. The HAT can also :ref:`turn the RPi off for a specified
+time <hat_brick_low_power_sleep_mode>`. and it can act as a :ref:`watchdog <hat_brick_watchdog>`
+to restart the RPi if it crashes or a program gets stuck.
+
+The HAT is electrically compatible to the Raspberry Pi 2B, 3B, 3B+, Zero and Zero W. The mounting
+holes are compatible to the Raspberry Pi 2/3. We also offer a smaller :ref:`HAT Zero Brick <hat_zero_brick>`
+that has mounting holes that are compatible to the Raspberry Pi Zero.
 
 
 Technical Specifications
@@ -102,12 +119,11 @@ connect to the IP of the Raspberry Pi, otherwise to localhost.
 In the Brick Viewer a new tab named "HAT Brick" as well as one Tab for each of the
 connected Bricklets will appear:
 
-..
-	.. image:: /Images/Bricks/brick_hat_brickv.jpg
-	   :scale: 100 %
-	   :alt: HAT Brick in Brick Viewer
-	   :align: center
-	   :target: ../../_images/Bricks/brick_hat_brickv.jpg
+.. image:: /Images/Bricks/hat_brickv.jpg
+   :scale: 100 %
+   :alt: HAT Brick in Brick Viewer
+   :align: center
+   :target: ../../_images/Bricks/hat_brickv.jpg
 
 In the HAT Brick tab of the Brick Viewer you can test the sleep mode and see the
 measured voltages as well as the connected Bricklets.
@@ -122,7 +138,7 @@ in the folder ``/proc/device-tree/hat/`` on the Raspberry Pi:
 
 This should print something like the following::
 
-	Name: hat, Product: HAT Bricklet, Product ID: 0x084e, Vendor: Tinkerforge GmbH
+	Name: hat, Product: HAT Brick, Product ID: 0x084e, Vendor: Tinkerforge GmbH
 
 If the folder does not exist or the data does not match the installation was not
 successfull. Is the HAT Brick connected correctly? Did you restart the RPi after

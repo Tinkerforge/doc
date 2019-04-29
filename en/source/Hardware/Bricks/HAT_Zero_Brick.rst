@@ -39,7 +39,19 @@ Features
 Description
 -----------
 
-TBD
+The HAT Zero Brick is a `Raspberry Pi HAT <https://www.raspberrypi.org/blog/introducing-raspberry-pi-hats/>`__
+with the standard RPi Zero HAT form factor. The Brick follows the HAT specification
+and it will show up in the device tree in linux.
+
+With the HAT Zero Brick your Raspberry Pi has access to four :ref:`Bricklet <primer_bricklets>` ports.
+
+The USB supply voltage is measured and accessible through the API.
+
+The HAT is electrically compatible to the Raspberry Pi 2B, 3B, 3B+, Zero and Zero W. The mounting
+holes are compatible to the Raspberry Pi Zero and Zero W and it is designed to use up as little
+space as possible. We also offer a bigger :ref:`HAT Brick <hat_brick>` with eight Bricklet
+ports and additional features that has mounting holes that are compatible to the standard
+Raspberry Pi 2/3.
 
 
 Technical Specifications
@@ -74,16 +86,53 @@ Resources
 Test your HAT Zero Brick
 ------------------------
 
-TODO
+To get started with the HAT Zero Brick you first have to install :ref:`Brick Daemon <brickd>`
+on the Raspberry Pi. Brick Daemon acts as a proxy between the Bricklet ports
+on the HAT and the API bindings.
 
-..
-	.. image:: /Images/Bricks/brick_hat_zero_brickv.jpg
-	   :scale: 100 %
-	   :alt: HAT Zero Brick in Brick Viewer
-	   :align: center
-	   :target: ../../_images/Bricks/brick_hat_zero_brickv.jpg
+You can install Brick Daemon from the terminal with the following commands:
 
+.. code-block:: shell
 
+	sudo apt-get install libusb-1.0-0 libudev0 pm-utils
+	wget http://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_armhf.deb
+	sudo dpkg -i brickd_linux_latest_armhf.deb
+
+After you have the Brick Daemon installed you can put the HAT on top of the
+Raspberry Pi and restart it.
+
+Now use :ref:`Brick Viewer <brickv>` to connect to the Bricklets. You can install
+Brick Viewer directly on the Raspberry Pi or on an external PC that has access to
+the Raspberry Pi (over WIFI). If you use an external PC you have to
+connect to the IP of the Raspberry Pi, otherwise to localhost.
+
+In the Brick Viewer a new tab named "HAT Zero Brick" as well as one Tab for each of the
+connected Bricklets will appear:
+
+.. image:: /Images/Bricks/hat_zero_brickv.jpg
+   :scale: 100 %
+   :alt: HAT Zero Brick in Brick Viewer
+   :align: center
+   :target: ../../_images/Bricks/hat_zero_brickv.jpg
+
+In the HAT Zero Brick tab of the Brick Viewer you can test the sleep mode and see the
+measured voltages as well as the connected Bricklets.
+
+If you are not sure if the HAT Zero Brick was detected correctly you can take a look
+in the folder ``/proc/device-tree/hat/`` on the Raspberry Pi:
+
+.. code-block:: shell
+
+	cd /proc/device-tree/hat/
+	echo Name: "$(tr -d '\0'<name)", Product: "$(tr -d '\0'<product)",  Product ID: "$(tr -d '\0'<product_id)", Vendor: "$(tr -d '\0'<vendor)"
+
+This should print something like the following::
+
+	Name: hat, Product: HAT Zero Brick, Product ID: 0x085d, Vendor: Tinkerforge GmbH
+
+If the folder does not exist or the data does not match the installation was not
+successfull. Is the HAT Zero Brick connected correctly? Did you restart the RPi after
+you connected it?
 
 .. _hat_zero_brick_programming_interface:
 
