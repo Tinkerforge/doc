@@ -134,6 +134,57 @@ If the folder does not exist or the data does not match the installation was not
 successfull. Is the HAT Zero Brick connected correctly? Did you restart the RPi after
 you connected it?
 
+
+Compatibility to other Boards and Images
+----------------------------------------
+
+If you use Raspbian the HAT Zero Brick will automatically be detected and used. The pins
+that are used for the communication with the Bricklets are configured automatically.
+
+This is done through a configuration that is read by Raspian from an EEPROM on the HAT.
+
+If you use a non-standard linux image that does not have the raspi-config framework or
+a different board that has a compatible pin header but different processor this will
+not work automatically.
+
+In this case the Brick Daemon can do the necessary configuration to the SPI and GPIO 
+pins. You have to add the configuration to the ``/etc/brickd.conf`` file.
+
+For a standard Raspberry Pi with non-standard image you can add the following::
+
+	bricklet.group0.spidev = /dev/spidev0.0
+
+	bricklet.group0.cs0.driver = gpio
+	bricklet.group0.cs0.name = gpio27
+	bricklet.group0.cs0.num = 27
+
+	bricklet.group0.cs1.driver = gpio
+	bricklet.group0.cs1.name = gpio23
+	bricklet.group0.cs1.num = 23
+
+	bricklet.group0.cs2.driver = gpio
+	bricklet.group0.cs2.name = gpio24
+	bricklet.group0.cs2.num = 24
+
+	bricklet.group0.cs3.driver = gpio
+	bricklet.group0.cs3.name = gpio22
+	bricklet.group0.cs3.num = 22
+
+	bricklet.group0.cs4.driver = gpio
+	bricklet.group0.cs4.name = gpio25
+	bricklet.group0.cs4.num = 25
+
+First you have to define the spi device that is used (``/dev/spidev0.0`` for the
+Raspberry Pi). Then you have to define the GPIO driver, name and number for each
+chip select. There are four chip selects for the four Bricklet ports and one 
+additional chip select for the HAT itself.
+
+If you use a completely different board you will have to take a look at the
+schematics of the board to adjust the configuration. If you need help with this
+the best place to ask for help is probably in the forums at 
+`tinkerunity.org <https://www.tinkerunity.org>`__.
+
+
 .. _hat_zero_brick_programming_interface:
 
 Programming Interface
