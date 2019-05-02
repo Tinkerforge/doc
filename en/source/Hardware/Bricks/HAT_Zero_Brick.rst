@@ -98,7 +98,7 @@ You can install Brick Daemon from the terminal with the following commands:
 	wget http://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_armhf.deb
 	sudo dpkg -i brickd_linux_latest_armhf.deb
 
-After you have the Brick Daemon installed you can put the HAT on top of the
+After the Brick Daemon is installed you can put the HAT on top of the
 Raspberry Pi and restart it.
 
 Now use :ref:`Brick Viewer <brickv>` to connect to the Bricklets. You can install
