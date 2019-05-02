@@ -44,17 +44,17 @@ Description
 
 The HAT Brick is a `Raspberry Pi HAT <https://www.raspberrypi.org/blog/introducing-raspberry-pi-hats/>`__
 with the standard RPi HAT form factor. The Brick follows the HAT specification
-and it will show up in the device tree in linux.
+and it will automatically work with Raspbian without any changes.
 
 With the HAT Brick your Raspberry Pi has access to **eight** :ref:`Bricklet <primer_bricklets>` ports.
 
-You can power the Raspberry Pi through the HAT with a 5V-28V DC power supply. This will be
-able to provide very stable 5V, even under heavy load. You can also still power the
+You can power the Raspberry Pi through the HAT with a 5V-28V DC power supply. This power supply
+will be able to provide very stable 5V, even under heavy load. You can also still power the
 HAT/RPi through USB. The USB/DC supply voltages are measured and accessible through the API.
 
 Additionally, the HAT has a :ref:`real-time clock with battery backup <hat_brick_real_time_clock>`
 that is directly connected to the Raspberry Pi. The HAT can also :ref:`turn the RPi off for a specified
-time <hat_brick_low_power_sleep_mode>`. and it can act as a :ref:`watchdog <hat_brick_watchdog>`
+time <hat_brick_low_power_sleep_mode>` and it can act as a :ref:`watchdog <hat_brick_watchdog>`
 to restart the RPi if it crashes or a program gets stuck.
 
 The HAT is electrically compatible to the Raspberry Pi 2B, 3B, 3B+, Zero and Zero W. The mounting

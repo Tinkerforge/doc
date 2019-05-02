@@ -41,7 +41,7 @@ Description
 
 The HAT Zero Brick is a `Raspberry Pi HAT <https://www.raspberrypi.org/blog/introducing-raspberry-pi-hats/>`__
 with the standard RPi Zero HAT form factor. The Brick follows the HAT specification
-and it will show up in the device tree in linux.
+and it will automatically work with Raspbian without any changes.
 
 With the HAT Zero Brick your Raspberry Pi has access to four :ref:`Bricklet <primer_bricklets>` ports.
 
