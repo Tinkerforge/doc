@@ -31,8 +31,8 @@ Rotary Poti Bricklet 2.0
 Features
 --------
 
-* TBD
-* TBD
+* 300° Dreh-Potentiometer
+* Ausgabe der Position von -150° bis 150° in 1° Schritten
 
 
 .. _rotary_poti_v2_bricklet_description:
@@ -40,7 +40,17 @@ Features
 Beschreibung
 ------------
 
-TBD
+Das Rotary Poti :ref:`Bricklet <primer_bricklets>` ist mit einem
+Dreh-`Potentiometer <https://en.wikipedia.org/wiki/Potentiometer>`__ ausgestattet,
+dessen Position über ein :ref:`Brick <primer_bricks>` ausgelesen werden kann. 
+Zusätzlich können Events konfiguriert werden die ausgelöst werden wenn eine 
+spezifizierte Position erreicht wird.
+
+Dieses Bricklet kann für Steueraufgaben benutzt werden wie z.B. das Steuern
+einer Lautstärke.
+
+Das Rotary Poti Bricklet 2.0 hat einen 7 Pol Bricklet Stecker und wird
+mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
 
 
 Technische Spezifikation
@@ -49,13 +59,14 @@ Technische Spezifikation
 ================================  ============================================================
 Eigenschaft                       Wert
 ================================  ============================================================
-Stromverbrauch                    TBDmA
+Dreh-Potentiometer                1 Umdrehung, 300°
+Stromverbrauch                    TBD
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-E TBD                             W TBD
+Position                          -150° bis 150° (links nach rechts) in 1° Schritten
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Abmessungen (B x T x H)           TBD x TBD x TBDmm (TBD x TBD x TBD")
+Abmessungen (B x T x H)           30 x 25 x 23mm (1,18 x 0,98 x 0,9")*
 Gewicht                           TBDg
 ================================  ============================================================
 
@@ -79,14 +90,17 @@ Erster Test
 |test_connect|.
 
 |test_tab|
-Wenn alles wie erwartet funktioniert ... TBD.
+Wenn alles wie erwartet funktioniert sollte der Tab wie im folgenden Bild
+aussehen.
 
-..
-	.. image:: /Images/Bricklets/bricklet_rotary_poti_v2_brickv.jpg
-	   :scale: 100 %
-	   :alt: Rotary Poti Bricklet 2.0 im Brick Viewer
-	   :align: center
-	   :target: ../../_images/Bricklets/bricklet_rotary_poti_v2_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_rotary_poti_v2_brickv.jpg
+   :scale: 100 %
+   :alt: Rotary Poti Bricklet 2.0 in Brick Viewer
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_rotary_poti_v2_brickv.jpg
+
+Der Graph ist durch Drehen des Knopfes von links nach rechts und zurück
+entstanden.
 
 |test_pi_ref|
 
@@ -96,27 +110,26 @@ Wenn alles wie erwartet funktioniert ... TBD.
 Gehäuse
 -------
 
-..
-	Ein `laser-geschnittenes Gehäuse für das Rotary Poti Bricklet 2.0
-	<https://www.tinkerforge.com/de/shop/cases/case-rotary-poti-v2-bricklet.html>`__ ist verfügbar.
+Ein `laser-geschnittenes Gehäuse für das Rotary Poti Bricklet 2.0
+<https://www.tinkerforge.com/de/shop/cases/case-rotary-poti-bricklet.html>`__ ist verfügbar.
 
-	.. image:: /Images/Cases/bricklet_rotary_poti_v2_case_350.jpg
-	   :scale: 100 %
-	   :alt: Gehäuse für Rotary Poti Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_rotary_poti_v2_case_1000.jpg
+.. image:: /Images/Cases/bricklet_rotary_poti_case_350.jpg
+   :scale: 100 %
+   :alt: Gehäuse für Rotary Poti Bricklet 2.0
+   :align: center
+   :target: ../../_images/Cases/bricklet_rotary_poti_case_1000.jpg
 
-	.. include:: Rotary_Poti_V2.substitutions
-	   :start-after: >>>bricklet_case_steps
-	   :end-before: <<<bricklet_case_steps
+.. include:: Rotary_Poti_V2.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
 
-	.. image:: /Images/Exploded/rotary_poti_v2_exploded_350.png
-	   :scale: 100 %
-	   :alt: Explosionszeichnung für Rotary Poti Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Exploded/rotary_poti_v2_exploded.png
+.. image:: /Images/Exploded/rotary_poti_exploded_350.png
+   :scale: 100 %
+   :alt: Explosionszeichnung für Rotary Poti Bricklet 2.0
+   :align: center
+   :target: ../../_images/Exploded/rotary_poti_exploded.png
 
-	|bricklet_case_hint|
+|bricklet_case_hint|
 
 
 .. _rotary_poti_v2_bricklet_programming_interface:
