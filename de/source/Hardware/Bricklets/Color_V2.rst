@@ -68,6 +68,9 @@ ohne einen Farbfilter. R,G,B und C sind jeweils 16Bit Werte. Aus diesen
 Informationen berechnet das Bricklet die Helligkeit und die Farbtemperatur 
 (ebenfalls jeweils 16Bit).
 
+Das Color Bricklet 2.0 hat einen 7 Pol Bricklet Stecker und wird
+mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
+
 
 Technische Spezifikation
 ------------------------
