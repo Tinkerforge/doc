@@ -31,8 +31,8 @@ Distance US Bricklet 2.0
 Features
 --------
 
-* TBD
-* TBD
+* Measures distances from 30cm to 500cm with ultrasound
+* Resolution of 1mm
 
 
 .. _distance_us_v2_bricklet_description:
@@ -40,8 +40,17 @@ Features
 Description
 -----------
 
-TBD
+The Distance US :ref:`Bricklet <primer_bricklets>` 2.0 is equipped with
+an `ultrasonic distance sensor <https://en.wikipedia.org/wiki/Ultrasonic_sensor>`__
+and extends :ref:`Bricks <primer_bricks>` by the possibility to measure 
+distances from 30cm to 500cm.
 
+With configurable events it is possible to react on changing distances without
+polling. Typical applications can be found in robotics, usage as light barrier
+alternative and so on.
+
+The Distance US Bricklet 2.0 has a 7 pole Bricklet connector and is connected to a
+Brick with a ``7p-10p`` Bricklet cable.
 
 Technical Specifications
 ------------------------
@@ -49,13 +58,16 @@ Technical Specifications
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
-Current Consumption               TBDmA
+Sensor                            MaxSonar HRLV MB1013
+Current Consumption               TBD
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-P TBD                             V TBD
+Distance                          30cm - 500cm
+Resolution                        1mm
+Update Rate                       2Hz / 10Hz (configurable)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Dimensions (W x D x H)            TBD x TBD x TBDmm (TBD x TBD x TBD")
+Dimensions (W x D x H)            35 x 35 x 20mm (1.38 x 1.38 x 0.78")
 Weight                            TBDg
 ================================  ============================================================
 
@@ -63,6 +75,7 @@ Weight                            TBDg
 Resources
 ---------
 
+* datasheet MaxSonar HRLV MB1013 (`Download <https://github.com/Tinkerforge/distance-us-v2-bricklet/raw/master/datasheets/HRLV-MaxSonar-EZ_Datasheet.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/distance-us-v2-bricklet/raw/master/hardware/distance-us-v2-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/distance_us_v2_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/distance-us-v2-bricklet/zipball/master>`__)
@@ -79,7 +92,7 @@ Test your Distance US Bricklet 2.0
 |test_connect|.
 
 |test_tab|
-If everything went as expected ... TBD.
+If everything went as expected you can now see the measured distance.
 
 ..
 	.. image:: /Images/Bricklets/bricklet_distance_us_v2_brickv.jpg
