@@ -49,6 +49,9 @@ slider can be read out.
 With configurable events it is possible to react on
 changing positions without polling.
 
+The Rotary Poti Bricklet 2.0 has a 7 pole Bricklet connector and is connected to a
+Brick with a ``7p-10p`` Bricklet cable.
+
 
 Technical Specifications
 ------------------------
@@ -64,10 +67,9 @@ Position                          -150° to 150° (left to right) in 1° steps
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)            30 x 25 x 23mm (1.18 x 0.98 x 0.9")*
-Weight                            5g*
+Weight                            TBDg
 ================================  ============================================================
 
-\* without knob
 
 Resources
 ---------
