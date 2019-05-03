@@ -5,8 +5,9 @@ Brick Viewer Installation auf Linux
 ===================================
 
 Der :ref:`Brick Viewer <brickv>` kann auf einer Debian basierten Distribution
-(Ubuntu, Mint, etc.) aus einer ``.deb`` Datei installiert werden. Auf anderen
-Distributionen kann er aus dem Quelltext installiert werden.
+(Ubuntu, Mint, etc.) aus einer ``.deb`` Datei installiert werden. Für Arch Linux
+steht im AUR das Paket `brickv <https://aur.archlinux.org/packages/brickv/>`_ zur Verfügung.
+Auf anderen Distributionen kann der Brick Viewer aus seinem Quelltext installiert werden.
 
 
 Debian Package
@@ -51,7 +52,7 @@ Statt mittels eines graphischen Installationsprogramms kann der Brick Viewer
 auch über einen Terminal mittels folgender Befehle installiert werden::
 
  wget http://download.tinkerforge.com/tools/brickv/linux/brickv_linux_latest.deb
- sudo apt-get install python python-qt4 python-qt4-gl python-opengl python-serial
+ sudo apt-get install python3 python3-pyqt5 python3-pyqt5.qtopengl python3-serial
  sudo dpkg -i brickv_linux_latest.deb
 
 
@@ -62,23 +63,20 @@ Um den Brick Viewer aus dem Quelltext heraus zu verwenden kann der Quelltext
 ebenfalls im :ref:`Downloadbereich <downloads_tools>` heruntergeladen werden.
 Auch hier müssen die benötigten Abhängigkeiten installiert werden:
 
-* python
-* python-qt4
-* python-qt4-gl
-* python-opengl
-* python-serial
-* pyqt4-dev-tools
+* python3
+* python3-pyqt5
+* python3-pyqt5.qtopengl
+* python3-serial
 
 Auf Debian basierte Distributionen können diese Pakete wie zuvor per ``apt-get``
 installiert werden. Für andere Distributionen sollte es äquivalente Pakete geben::
 
- sudo apt-get install python python-qt4 python-qt4-gl python-opengl python-serial pyqt4-dev-tools
+ sudo apt-get install python3 python3-pyqt5 python3-pyqt5.qtopengl python3-serial
 
-Als erstes müssen die Qt ``.ui`` Dateien übersetzt werden (dafür wird
-``pyuic4`` benötigt). Dazu in den ``src/`` Ordner innerhalb des entpackten
+Als erstes müssen die Qt ``.ui`` Dateien übersetzt werden. Dazu in den ``src/`` Ordner innerhalb des entpackten
 Quelltexts wechseln und dort folgenden Befehl ausführen::
 
- python build_all_ui.py
+ python build_src.py
 
 Um den Brick Viewer zu starten muss in den ``src/brickv/`` Ordner
 gewechselt und dort folgender Befehl ausgeführt werden::
