@@ -93,7 +93,7 @@ Brick Viewer installieren
 
 Der :ref:`Brick Viewer <brickv>` kann mit folgenden Befehlen installiert werden::
 
- sudo apt-get install python python-qt4 python-qt4-gl python-opengl python-serial
+ sudo apt-get install python3 python3-pyqt5 python3-pyqt5.qtopengl python3-serial
  wget http://download.tinkerforge.com/tools/brickv/linux/brickv_linux_latest.deb
  sudo dpkg -i brickv_linux_latest.deb
 
