@@ -102,9 +102,6 @@ installiert werden. Wenn dies passiert schlägt ``apt-get`` vor
 ``sudo apt-get -f install`` auszuführen. Dies sollte das Problem beheben und
 die benötigten Abhängigkeiten installieren.
 
-Dabei ist darauf zu achten, dass Python 2 installiert ist (was der Standard bei
-Raspbian ist), da Brick Viewer noch nicht mit Python 3 funktioniert.
-
 Updates können durch Wiederholen der letzten beiden Befehle installiert werden::
 
  wget http://download.tinkerforge.com/tools/brickv/linux/brickv_linux_latest.deb

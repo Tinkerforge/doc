@@ -99,9 +99,6 @@ commands::
 If this happens ``apt-get`` suggest to run ``sudo apt-get -f install`` which
 should resolve this problem and install re required dependencies.
 
-Ensure that you have Python 2 installed (this is the default in Raspbian anyway),
-because Brick Viewer doesn't work with Python 3 yet.
-
 Updates can be installed by repeating the last two commands::
 
  wget http://download.tinkerforge.com/tools/brickv/linux/brickv_linux_latest.deb
