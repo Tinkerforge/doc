@@ -136,7 +136,7 @@ einzustellen. Die Brick Viewer Software kann genutzt werden um verschiedene
 Empfindlichkeiten auszuprobieren. Dazu muss nur der Electrode Sensitivity Wert
 geändert und mittels "Recalibrate" übertragen werden.
 
-.. _multi_touch_bricklet_circuit_board_pads:
+.. _multi_touch_v2_bricklet_circuit_board_pads:
 
 Leiterplatten Pads
 ------------------
@@ -160,7 +160,7 @@ Für Spiele-Anwendungen gibt es ein spezielles Pad-Kit:
 
  * `Giant Game Pad (siehe unten) <https://www.tinkerforge.com/de/shop/giant-game-pad.html>`__
 
-.. _multi_touch_bricklet_giant_game_pad:
+.. _multi_touch_v2_bricklet_giant_game_pad:
 
 Benutzung des Giant Game Pads
 -----------------------------

@@ -133,7 +133,7 @@ Use the Brick Viewer Software to play around with it by changing the value until
 you found a satisfying sensitivity. To transfer new values press "Recalibrate".
 
 
-.. _multi_touch_bricklet_circuit_board_pads:
+.. _multi_touch_v2_bricklet_circuit_board_pads:
 
 Circuit Board Pads
 ------------------
@@ -157,7 +157,7 @@ Additionally there is a pad kit especially for gaming applications:
  * `Giant Game Pad (see below) <https://www.tinkerforge.com/en/shop/giant-game-pad.html>`__
 
 
-.. _multi_touch_bricklet_giant_game_pad:
+.. _multi_touch_v2_bricklet_giant_game_pad:
 
 Usage of the Giant Game Pad
 ---------------------------
