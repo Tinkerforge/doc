@@ -58,9 +58,9 @@ Technical Specifications
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
-Current Consumption               | TBDmA (all segments off)
-                                  | TBDmA (all segments on at minimum brightness)
-                                  | TBDmA (all segments on at maximum brightness)
+Current Consumption               | 30mW  (6mA at 5V)  all segments off
+                                  | 60mW  (12mA at 5V) all segments on at minimum brightness
+                                  | 400mW (80mA at 5V) all segments on at maximum brightness
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Segment Width                     6mm
@@ -69,7 +69,7 @@ Brightness of Segments            Configurable in 8 steps
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)            25 x 65 x 9mm (0.98 x 2.56 x 0.35")
-Weight                            TBDg
+Weight                            11g
 ================================  ============================================================
 
 

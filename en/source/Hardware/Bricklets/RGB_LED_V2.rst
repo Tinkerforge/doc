@@ -58,8 +58,8 @@ Technical Specifications
 Property                          Value
 ================================  ============================================================
 LED                               QBLP679E-RGB
-Current Consumption               | Off: TBDmW (TBDmA at 5V)
-                                  | White: TBDmW (TBDmA at 5V)
+Current Consumption               | Off: 35mW (7mA at 5V)
+                                  | White: 180mW (36mA at 5V)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Luminous intensity (R, G, B)      400-630mcd, 1000-1500mcd, 200-285mcd

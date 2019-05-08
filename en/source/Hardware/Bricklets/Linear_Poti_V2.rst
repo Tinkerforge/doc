@@ -58,7 +58,7 @@ Technical Specifications
 Property                          Value
 ================================  ============================================================
 Linear Potentiometer              59mm (2.32") adjustable length
-Current Consumption               TBD
+Current Consumption               42mW (8.4mA at 5V)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Position                          0% - 100% (slider down - slider up) in 1% steps
