@@ -44,8 +44,8 @@ Description
 -----------
 
 The Energy Monitor :ref:`Bricklet <primer_bricklets>` is equipped with
-a 2.5mm jack plug for a current transformer and a TBDmm barrel plug
-for a voltage transformer. The transformer voltages are used to calculate
+a 3.5mm jack plug for a current transformer and a 3.5mm OD/1.35mm ID barrel
+plug for a voltage transformer. The transformer voltages are used to calculate
 voltage, current, energy, real/apparent/reactive power, power factor and
 frequency of mains voltage. Additionally the waveform for voltage and
 current is provided.
@@ -74,8 +74,8 @@ Current Consumption               TBDmw (TBDmA at 5V)
 --------------------------------  ------------------------------------------------------------
 Input Voltage                     Max 12V AC from voltage transformer
 Input Current                     Max 1V AC from current transformer
-Connector Voltage                 2.5mm jack plug (audio jack)
-Connector Current                 TBDmm barrel plug
+Connector Voltage                 3.5mm jack plug (audio jack)
+Connector Current                 3.5mm OD with 1.35mm ID barrel plug
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)            40 x 40 x 5mm (1.57 x 1.57 x 0.2")
