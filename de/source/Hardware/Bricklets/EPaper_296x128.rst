@@ -31,8 +31,9 @@ E-Paper 296x128 Bricklet
 Features
 --------
 
-* TBD
-* TBD
+* 7,4cm (2,9") E-Paper Display mit einer Auflösung von 296x128 Pixel
+* Zwei Dreifarb-Displays verfügbar: Schwarz/Weiß/Rot und Schwarz/Weiß/Grau
+* Eingebetteter Font für einfache Textdarstellung
 
 
 .. _e_paper_296x128_bricklet_description:
@@ -40,7 +41,18 @@ Features
 Beschreibung
 ------------
 
-TBD
+Das E-Paper 296x128 :ref:`Bricklet <primer_bricklets>` Ist ein E-Paper Display mit
+einer Auflösung von 296x128 Pixel.
+
+Jedes Pixel kann individuell gesetzt werden, das Display kann also Grafiken anzeigen.
+Der Inhalt des Displays bleibt bestehen wenn das Bricklet vom Strom getrennt wird.
+
+Eine Dreifarb-Aktualisierung des Bildschirminhalts dauert ungefähr 7,5 Sekunden. Mit
+unterschiedlichen Aktualisierungs-Modi ist es möglich Aktualisierungsraten von bis zu
+1Hz zu erreichen wenn nur Schwarz und Weiß genutzt wird.
+
+Das E-Paper 296x128 Bricklet 2.0 hat einen 7 Pol Bricklet Stecker und wird
+mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
 
 
 Technische Spezifikation
@@ -49,14 +61,17 @@ Technische Spezifikation
 ================================  ============================================================
 Eigenschaft                       Wert
 ================================  ============================================================
-Stromverbrauch                    TBDmA
+Stromverbrauch                    | 45mW (9mA bei 5V) inaktiv
+                                  | 95mW (19mA bei 5V) während des setzen eines Bildes
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-E TBD                             W TBD
+Display-Auflösung                 296x128 Pixel
+Display-Größe                     7,4cm (2,9")
+Display-Farben                    Schwarz/Weiß/Rot oder Schwarz/Weiß/Grau
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Abmessungen (B x T x H)           TBD x TBD x TBDmm (TBD x TBD x TBD")
-Gewicht                           TBDg
+Abmessungen (B x T x H)           100 x 40 x 6mm (3,93 x 1,57 x 0,24")
+Gewicht                           20g
 ================================  ============================================================
 
 
@@ -79,14 +94,20 @@ Erster Test
 |test_connect|.
 
 |test_tab|
-Wenn alles wie erwartet funktioniert ... TBD.
+Wenn alles wie erwartet funktioniert sollte das Tab im Brick Viewer wie folgt aussehen.
 
-..
-	.. image:: /Images/Bricklets/bricklet_e_paper_296x128_brickv.jpg
-	   :scale: 100 %
-	   :alt: E-Paper 296x128 Bricklet im Brick Viewer
-	   :align: center
-	   :target: ../../_images/Bricklets/bricklet_e_paper_296x128_brickv.jpg
+Es ist möglich per Maus auf dem Display zu zeichnen und Text zu schreiben.
+
+Hinweis: Beim starten des Bricklet kann der Inhalt des Displays nicht ausgelesen werden.
+Daher zeigt der Brick Viewer nach dem starten erst schwarzes Display, auch wenn etwas
+auf dem Display dargestellt wird. Nach dem ersten schreiben auf dem Display kann der
+Brick Viewer den Display-Inhalt auslesen bis das Bricklet wieder neugestartet wird.
+
+.. image:: /Images/Bricklets/bricklet_e_paper_296x128_brickv.jpg
+   :scale: 100 %
+   :alt: E-Paper 296x128 Bricklet im Brick Viewer
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_e_paper_296x128_brickv.jpg
 
 |test_pi_ref|
 
