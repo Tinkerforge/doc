@@ -31,8 +31,7 @@ Joystick Bricklet 2.0
 Features
 --------
 
-* TBD
-* TBD
+* 2-Achsen Joystick mit Taster
 
 
 .. _joystick_v2_bricklet_description:
@@ -40,8 +39,19 @@ Features
 Beschreibung
 ------------
 
-TBD
+Das Joystick :ref:`Bricklet <primer_bricklets>` 2.0 kann an jeden
+:ref:`Brick <primer_bricks>` angeschlossen werden.
 
+Der Joystick ist 2-achsig und mit einem Taster ausgestattet.
+Die Position des Joysticks (X/Y Koordinaten) und der Status des Tasters kann
+ausgelesen werden. Zusätzlich können Events konfiguriert werden die ausgelöst
+werden wenn der Stick eine bestimmte Position erreicht oder der Taster gedrückt
+wird.
+
+Der Joystick kann benutzt werden um z.B. Roboter oder Spiele zu steuern.
+
+Das Joystick Bricklet 2.0 hat einen 7 Pol Bricklet Stecker und wird
+mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
 
 Technische Spezifikation
 ------------------------
@@ -49,14 +59,15 @@ Technische Spezifikation
 ================================  ============================================================
 Eigenschaft                       Wert
 ================================  ============================================================
-Stromverbrauch                    TBDmA
+Joystick                          2-achsig mit Taster
+Stromverbrauch                    45mW (9mA at 5V)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-E TBD                             W TBD
+X/Y Position                      -100/100, 0=Mittelposition
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Abmessungen (B x T x H)           TBD x TBD x TBDmm (TBD x TBD x TBD")
-Gewicht                           TBDg
+Abmessungen (B x T x H)           25 x 45 x 23mm (0,98 x 1,77 x 0,9")*
+Gewicht                           15g
 ================================  ============================================================
 
 
@@ -79,14 +90,24 @@ Erster Test
 |test_connect|.
 
 |test_tab|
-Wenn alles wie erwartet funktioniert ... TBD.
+Wenn alles wie erwartet funktioniert sollte folgendes Tab im Brick Viewer erscheinen.
 
-..
-	.. image:: /Images/Bricklets/bricklet_joystick_v2_brickv.jpg
-	   :scale: 100 %
-	   :alt: Joystick Bricklet 2.0 im Brick Viewer
-	   :align: center
-	   :target: ../../_images/Bricklets/bricklet_joystick_v2_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_joystick_v2_brickv.jpg
+   :scale: 100 %
+   :alt: Joystick Bricklet 2.0 im Brick Viewer
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_joystick_v2_brickv.jpg
+
+Auf dem Tab wird in einem Koordinatenkreuz die aktuelle Position des Sticks
+angezeigt. Der Zustand des Tasters wird über die Füllung des Kreises angezeigt.
+Wenn der Taster gedrückt ist dann wird der Kreis gefüllt dargestellt.
+Der Graph darunter gibt den zeitlichen Verlauf der Position wieder.
+Der Verlauf im abgebildeten Graph ist durch folgenden Bewegungsablauf des
+Joysticks entstanden: hoch, runter, rechts, links.
+
+Falls die Position nicht als (0,0) angezeigt wird obwohl sich der Stick in
+Mittelstellung befindet, dann kann der "Calibrate (0,0)" Knopf geklickt werden
+um die Null-Position zu kalibrieren.
 
 |test_pi_ref|
 
@@ -96,27 +117,26 @@ Wenn alles wie erwartet funktioniert ... TBD.
 Gehäuse
 -------
 
-..
-	Ein `laser-geschnittenes Gehäuse für das Joystick Bricklet 2.0
-	<https://www.tinkerforge.com/de/shop/cases/case-joystick-v2-bricklet.html>`__ ist verfügbar.
+Ein `laser-geschnittenes Gehäuse für das Joystick Bricklet 2.0
+<https://www.tinkerforge.com/de/shop/cases/case-joystick-bricklet.html>`__ ist verfügbar.
 
-	.. image:: /Images/Cases/bricklet_joystick_v2_case_350.jpg
-	   :scale: 100 %
-	   :alt: Gehäuse für Joystick Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_joystick_v2_case_1000.jpg
+.. image:: /Images/Cases/bricklet_joystick_case_350.jpg
+   :scale: 100 %
+   :alt: Gehäuse für Joystick Bricklet 2.0
+   :align: center
+   :target: ../../_images/Cases/bricklet_joystick_case_1000.jpg
 
-	.. include:: Joystick_V2.substitutions
-	   :start-after: >>>bricklet_case_steps
-	   :end-before: <<<bricklet_case_steps
+.. include:: Joystick.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
 
-	.. image:: /Images/Exploded/joystick_v2_exploded_350.png
-	   :scale: 100 %
-	   :alt: Explosionszeichnung für Joystick Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Exploded/joystick_v2_exploded.png
+.. image:: /Images/Exploded/joystick_exploded_350.png
+   :scale: 100 %
+   :alt: Explosionszeichnung für Joystick Bricklet 2.0
+   :align: center
+   :target: ../../_images/Exploded/joystick_exploded.png
 
-	|bricklet_case_hint|
+|bricklet_case_hint|
 
 
 .. _joystick_v2_bricklet_programming_interface:
