@@ -31,8 +31,8 @@ Linear Poti Bricklet 2.0
 Features
 --------
 
-* TBD
-* TBD
+* 59mm Linear-Potentiometer
+* Ausgabe der Position von 0% bis 100% in 1% Schritten
 
 
 .. _linear_poti_v2_bricklet_description:
@@ -40,7 +40,17 @@ Features
 Beschreibung
 ------------
 
-TBD
+Das Linear Poti :ref:`Bricklet <primer_bricklets>` ist mit einem
+Linear-`Potentiometer <https://de.wikipedia.org/wiki/Potentiometer>`__
+("Fader", "Slider") ausgestattet. :ref:`Brick <primer_bricks>`
+können die Position des Sliders auslesen. Zusätzlich können Events konfiguriert
+werden die bei einer definierten Position des Sliders ausgelöst werden.
+
+Dieses Bricklet kann für Steuerungsaufgaben genutzt werden, wie z.B. das
+Einstellen der Lautstärke eines Mediaplayers.
+
+Das Bricklet 2.0 hat einen 7 Pol Bricklet Stecker und wird
+mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
 
 
 Technische Spezifikation
@@ -49,15 +59,18 @@ Technische Spezifikation
 ================================  ============================================================
 Eigenschaft                       Wert
 ================================  ============================================================
-Stromverbrauch                    TBDmA
+Linear-Potentiometer              59mm (2,32") einstellbare Länge
+Stromverbrauch                    42mW (8.4mA bei 5V)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-E TBD                             W TBD
+Position                          0% - 100% (Slider unten - Slider oben) in 1% Schritten
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Abmessungen (B x T x H)           TBD x TBD x TBDmm (TBD x TBD x TBD")
-Gewicht                           TBDg
+Abmessungen (B x T x H)           25 x 85 x 20mm (0,98 x 3,35 x 0,78")*
+Gewicht                           14g*
 ================================  ============================================================
+
+\* ohne Knopf
 
 
 Ressourcen
@@ -79,14 +92,16 @@ Erster Test
 |test_connect|.
 
 |test_tab|
-Wenn alles wie erwartet funktioniert ... TBD.
+Wenn alles wie erwartet funktioniert sollte der Tab wie im folgenden Bild
+aussehen.
 
-..
-	.. image:: /Images/Bricklets/bricklet_linear_poti_v2_brickv.jpg
-	   :scale: 100 %
-	   :alt: Linear Poti Bricklet 2.0 im Brick Viewer
-	   :align: center
-	   :target: ../../_images/Bricklets/bricklet_linear_poti_v2_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_linear_poti_v2_brickv.jpg
+   :scale: 100 %
+   :alt: Linear Poti Bricklet 2.0 im Brick Viewer
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_linear_poti_v2_brickv.jpg
+
+Der Graph ist durch hoch und runter bewegen des Sliders entstanden.
 
 |test_pi_ref|
 
@@ -96,27 +111,26 @@ Wenn alles wie erwartet funktioniert ... TBD.
 Gehäuse
 -------
 
-..
-	Ein `laser-geschnittenes Gehäuse für das Linear Poti Bricklet 2.0
-	<https://www.tinkerforge.com/de/shop/cases/case-linear-poti-v2-bricklet.html>`__ ist verfügbar.
+Ein `laser-geschnittenes Gehäuse für das Linear Poti Bricklet 2.0
+<https://www.tinkerforge.com/de/shop/cases/case-linear-poti-bricklet.html>`__ ist verfügbar.
 
-	.. image:: /Images/Cases/bricklet_linear_poti_v2_case_350.jpg
-	   :scale: 100 %
-	   :alt: Gehäuse für Linear Poti Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_linear_poti_v2_case_1000.jpg
+.. image:: /Images/Cases/bricklet_linear_poti_case_350.jpg
+   :scale: 100 %
+   :alt: Gehäuse für Linear Poti Bricklet 2.0
+   :align: center
+   :target: ../../_images/Cases/bricklet_linear_poti_case_1000.jpg
 
-	.. include:: Linear_Poti_V2.substitutions
-	   :start-after: >>>bricklet_case_steps
-	   :end-before: <<<bricklet_case_steps
+.. include:: Linear_Poti.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
 
-	.. image:: /Images/Exploded/linear_poti_v2_exploded_350.png
-	   :scale: 100 %
-	   :alt: Explosionszeichnung für Linear Poti Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Exploded/linear_poti_v2_exploded.png
+.. image:: /Images/Exploded/linear_poti_exploded_350.png
+   :scale: 100 %
+   :alt: Explosionszeichnung für Linear Poti Bricklet 2.0
+   :align: center
+   :target: ../../_images/Exploded/linear_poti_exploded.png
 
-	|bricklet_case_hint|
+|bricklet_case_hint|
 
 
 .. _linear_poti_v2_bricklet_programming_interface:
