@@ -31,8 +31,9 @@ Piezo Speaker Bricklet 2.0
 Features
 --------
 
-* TBD
-* TBD
+* Kann einen konfigurierbaren Piepton zwischen 50Hz und 15000Hz erzeugen
+* Kann konfigurierbaren Alarm/Sirenen-Ton ausgeben
+* Lautstärke ist zwischen 85dB(A) und 110dB(A) konfigurierbar
 
 
 .. _piezo_speaker_v2_bricklet_description:
@@ -40,7 +41,19 @@ Features
 Beschreibung
 ------------
 
-TBD
+Das Piezo Speaker :ref:`Bricklet <primer_bricklets>` 2.0 kann genutzt werden um mit
+:ref:`Bricks <primer_bricks>` Töne mit unterschiedlichen Frequenzen und Lautstäken zu 
+erzeugen.
+
+Der verfügbare Frequenzbereich ist 50Hz bis 15000Hz. Die Lautstärke kann zwischen
+85dB(A) und 110dB(A) eingestellt werden.
+
+Zusätzlich hat das Bricklet Unterstützung für Alarm und Sirenen-Töne. In diesem Modus
+wird ein *sweep* erzeugt der einen Frequenzbereich abläuft mit konfigurierbarem Bereich,
+Schrittgröße und Länge.
+
+Das Piezo Speaker Bricklet 2.0 hat einen 7 Pol Bricklet Stecker und wird
+mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
 
 
 Technische Spezifikation
@@ -49,20 +62,23 @@ Technische Spezifikation
 ================================  ============================================================
 Eigenschaft                       Wert
 ================================  ============================================================
-Stromverbrauch                    TBDmA
+Buzzer                            PT-4532PLQ
+Stromverbrauch                    55mW (11mA bei 5V)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-E TBD                             W TBD
+Frequenzbereich                   50Hz - 15000Hz (konfigurierbar)
+Lautstärke                        85dB(A) - 110dB(A) @50cm/1kHz (konfigurierbar)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Abmessungen (B x T x H)           TBD x TBD x TBDmm (TBD x TBD x TBD")
-Gewicht                           TBDg
+Abmessungen (B x T x H)           55 x 45 x 20mm (2.2 x 1.8 x 0.8")
+Gewicht                           20g
 ================================  ============================================================
 
 
 Ressourcen
 ----------
 
+* PT-4532PLQ Datenblatt (`Download <https://github.com/Tinkerforge/piezo-speaker-v2-bricklet/raw/master/datasheets/PT-4532PLQ.pdf>`__)
 * Schaltplan (`Download <https://github.com/Tinkerforge/piezo-speaker-v2-bricklet/raw/master/hardware/piezo-speaker-v2-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/piezo_speaker_v2_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/piezo-speaker-v2-bricklet/zipball/master>`__)
@@ -79,16 +95,48 @@ Erster Test
 |test_connect|.
 
 |test_tab|
-Wenn alles wie erwartet funktioniert ... TBD.
+Wenn alles wie erwartet funktioniert wird können nun Töne erzeugt werden.
 
-..
-	.. image:: /Images/Bricklets/bricklet_piezo_speaker_v2_brickv.jpg
-	   :scale: 100 %
-	   :alt: Piezo Speaker Bricklet 2.0 im Brick Viewer
-	   :align: center
-	   :target: ../../_images/Bricklets/bricklet_piezo_speaker_v2_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_piezo_speaker_v2_brickv.jpg
+   :scale: 100 %
+   :alt: Piezo Speaker Bricklet 2.0 im Brick Viewer
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_piezo_speaker_v2_brickv.jpg
 
 |test_pi_ref|
+
+
+Lautstärke und Schalldruckpegel
+-------------------------------
+
+Das Bricklet hat 11 unterschiedliche Lautstärkenstufen (0 bis 10).
+
+Wir haben den Schalldruckpegel mit dem unten beschriebenen Testaufbau
+gemessen. Dazu haben wir den Durchschnitt von drei unterschiedlichen
+Schallpegelmessgeräten bei einer Distanz von 50cm bestimmt. Die
+eingestellte Frequenz des Piezo Speaker Bricklet 2.0 war 1kHz.
+
+.. image:: /Images/Bricklets/bricklet_piezo_speaker_v2_spl1_800.jpg
+   :scale: 100 %
+   :alt: Piezo Speaker Bricklet 2.0 im Brick Viewer
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_piezo_speaker_v2_spl1_1200.jpg
+
+Das Resultat ist ein Bereich von 85dB(A) bis 110dB(A):
+
+.. image:: /Images/Bricklets/bricklet_piezo_speaker_v2_spl_bargraph.png
+   :scale: 100 %
+   :alt: Piezo Speaker Bricklet 2.0 im Brick Viewer
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_piezo_speaker_v2_spl_bargraph.png
+
+Der Lautstärkenbereich 0-4 kann für Benachrichtigungstöne genutzt werden und
+die Lautstärke im Bereich 5-10 ist gut geeignet für laute und nervige Alarm-Töne.
+
+.. warning::
+	Hinweis: Bei 110 dB(A) die empfohlene zulässige Expositionszeit (laut
+	`NIOSH und CDC <https://www.cdc.gov/niosh/topics/noise/chart-lookatnoise.html>`__) 
+	nur ungefähr 1,5 Minuten!
 
 
 .. _piezo_speaker_v2_bricklet_case:
