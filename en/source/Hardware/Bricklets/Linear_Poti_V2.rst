@@ -49,7 +49,7 @@ slider can be read out.
 With configurable events it is possible to react on changing positions
 without polling.
 
-The Bricklet 2.0 has a 7 pole Bricklet connector and is connected to a
+The Linear Poti Bricklet 2.0 has a 7 pole Bricklet connector and is connected to a
 Brick with a ``7p-10p`` Bricklet cable.
 
 

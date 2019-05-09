@@ -49,7 +49,7 @@ werden die bei einer definierten Position des Sliders ausgelöst werden.
 Dieses Bricklet kann für Steuerungsaufgaben genutzt werden, wie z.B. das
 Einstellen der Lautstärke eines Mediaplayers.
 
-Das Bricklet 2.0 hat einen 7 Pol Bricklet Stecker und wird
+Das Linear Poti Bricklet 2.0 hat einen 7 Pol Bricklet Stecker und wird
 mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
 
 
