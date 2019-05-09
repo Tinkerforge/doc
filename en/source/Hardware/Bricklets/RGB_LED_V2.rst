@@ -50,6 +50,9 @@ with accordance to CIE 1931. This means that for every color a fade from
 off to full brightness (value 0 to 255) will appear to be a smooth color 
 gradient to the human eye.
 
+The RGB LED Bricklet 2.0 has a 7 pole Bricklet connector and is connected to a
+Brick with a ``7p-10p`` Bricklet cable.
+
 
 Technical Specifications
 ------------------------
