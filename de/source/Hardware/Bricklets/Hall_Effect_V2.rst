@@ -31,8 +31,9 @@ Hall Effect Bricklet 2.0
 Features
 --------
 
-* TBD
-* TBD
+* Misst magnetische Flussdichte zwischen -7mT und 7mT
+* Zähler mit konfigurierbaren Grenzbereich, bipolar und unipolar
+* Kann mit Frequenzen bis zu 10kHz zählen
 
 
 .. _hall_effect_v2_bricklet_description:
@@ -40,7 +41,25 @@ Features
 Beschreibung
 ------------
 
-TBD
+Das Hall Effect :ref:`Bricklet <primer_bricklets>` 2.0 kann die 
+`magnetische Flussdichte <https://de.wikipedia.org/wiki/Magnetische_Flussdichte>`__
+zwischen -7mT und 7mT (`Milli-Tesla <https://de.wikipedia.org/wiki/Tesla_(Einheit)>`__) bestimmen.
+Es zählt das Auftreten und Verschwinden eines
+Magnetfelds und kann von :ref:`Bricks <primer_bricks>` genutzt werden, um z.B. 
+die Geschwindigkeit eines Rades, an dem ein Magnet befestigt ist, mit bis zu 
+10kHz zu messen.
+
+Für den Zähler kann ein unterer und oberer Grenzbereich sowie eine Enprellzeit
+eingestellt und auf die jeweilige Anwendung angepasst werden.
+
+Beispielanwendungen sind:
+
+* Erkennen ob eine Tür offen/geschlossen ist
+* Auslesen eines Wasser-/Stromzählers
+* Umdrehungszahl eines Motors messen
+
+Das Hall Effect Bricklet 2.0 hat einen 7 Pol Bricklet Stecker und wird
+mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
 
 
 Technische Spezifikation
@@ -49,20 +68,25 @@ Technische Spezifikation
 ================================  ============================================================
 Eigenschaft                       Wert
 ================================  ============================================================
-Stromverbrauch                    TBDmA
+Sensor                            DRV5053
+Stromverbrauch                    59mW (11.8mA at 5V)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-E TBD                             W TBD
+Funktionsweise                    Omnipolar (Nord- und Südpol werden detektiert)
+Messbereich                       -7mT to 7mT
+Zähler-Triggerpunkt               Konfigurierbar (unipolar und bipolar)
+Zähler-Abtastfrequenz             10kHz
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Abmessungen (B x T x H)           TBD x TBD x TBDmm (TBD x TBD x TBD")
-Gewicht                           TBDg
+Abmessungen (B x T x H)           25 x 15 x 5mm (0,98 x 0,59 x 0,19")
+Gewicht                           2g
 ================================  ============================================================
 
 
 Ressourcen
 ----------
 
+* DRV5053 Datenblatt (`Download <https://github.com/Tinkerforge/hall-effect-v2-bricklet/raw/master/datasheets/DRV5053.pdf>`__)
 * Schaltplan (`Download <https://github.com/Tinkerforge/hall-effect-v2-bricklet/raw/master/hardware/hall-effect-v2-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/hall_effect_v2_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/hall-effect-v2-bricklet/zipball/master>`__)
@@ -79,44 +103,18 @@ Erster Test
 |test_connect|.
 
 |test_tab|
-Wenn alles wie erwartet funktioniert ... TBD.
+Wenn alles wie erwartet funktioniert kann jetzt die magnetische
+Flussdichte abgelese werden. Zum testen kann ein Magnet in die
+nähe des Bricklets geführt werden.
 
-..
-	.. image:: /Images/Bricklets/bricklet_hall_effect_v2_brickv.jpg
-	   :scale: 100 %
-	   :alt: Hall Effect Bricklet 2.0 im Brick Viewer
-	   :align: center
-	   :target: ../../_images/Bricklets/bricklet_hall_effect_v2_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_hall_effect_v2_brickv.jpg
+   :scale: 100 %
+   :alt: Hall Effect Bricklet 2.0 im Brick Viewer
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_hall_effect_v2_brickv.jpg
 
 |test_pi_ref|
 
-
-.. _hall_effect_v2_bricklet_case:
-
-Gehäuse
--------
-
-..
-	Ein `laser-geschnittenes Gehäuse für das Hall Effect Bricklet 2.0
-	<https://www.tinkerforge.com/de/shop/cases/case-hall-effect-v2-bricklet.html>`__ ist verfügbar.
-
-	.. image:: /Images/Cases/bricklet_hall_effect_v2_case_350.jpg
-	   :scale: 100 %
-	   :alt: Gehäuse für Hall Effect Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_hall_effect_v2_case_1000.jpg
-
-	.. include:: Hall_Effect_V2.substitutions
-	   :start-after: >>>bricklet_case_steps
-	   :end-before: <<<bricklet_case_steps
-
-	.. image:: /Images/Exploded/hall_effect_v2_exploded_350.png
-	   :scale: 100 %
-	   :alt: Explosionszeichnung für Hall Effect Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Exploded/hall_effect_v2_exploded.png
-
-	|bricklet_case_hint|
 
 
 .. _hall_effect_v2_bricklet_programming_interface:
