@@ -32,7 +32,7 @@ Features
 --------
 
 * 7.4cm (2.9") e-paper display with a resolution of 296x128 pixel
-* two three-color displays available: black/white/red and black/white/gray
+* Two three-color displays available: black/white/red and black/white/gray
 * Embedded font for easy text drawing
 
 
