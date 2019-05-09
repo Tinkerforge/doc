@@ -105,33 +105,6 @@ different sliders:
 |test_pi_ref|
 
 
-.. _rgb_led_v2_bricklet_case:
-
-Case
-----
-
-..
-	A `laser-cut case for the RGB LED Bricklet 2.0
-	<https://www.tinkerforge.com/en/shop/cases/case-rgb-led-v2-bricklet.html>`__ is available.
-
-	.. image:: /Images/Cases/bricklet_rgb_led_v2_case_350.jpg
-	   :scale: 100 %
-	   :alt: Case for RGB LED Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_rgb_led_v2_case_1000.jpg
-
-	.. include:: RGB_LED_V2.substitutions
-	   :start-after: >>>bricklet_case_steps
-	   :end-before: <<<bricklet_case_steps
-
-	.. image:: /Images/Exploded/rgb_led_v2_exploded_350.png
-	   :scale: 100 %
-	   :alt: Exploded assembly drawing for RGB LED Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Exploded/rgb_led_v2_exploded.png
-
-	|bricklet_case_hint|
-
 
 .. _rgb_led_v2_bricklet_programming_interface:
 

@@ -31,8 +31,9 @@ RGB LED Bricklet 2.0
 Features
 --------
 
-* TBD
-* TBD
+* 1x RGB LED
+* 24 Bit Farbauflösung
+* Leuchtkraft wird für menschliche Lichtempfindleichkeit korrigiert (CIE 1931)
 
 
 .. _rgb_led_v2_bricklet_description:
@@ -40,7 +41,18 @@ Features
 Beschreibung
 ------------
 
-TBD
+Mit dem RGB LED :ref:`Bricklet <primer_bricklets>` 2.0 können
+:ref:`Bricks <primer_bricks>` eine eine RGB LED steuern. Jeder
+Kanal der LED (rot, grün, blau) kann individuell mit 8 Bit
+Auflösung gesteuert werden.
+
+Die Leuchtkraft der LED wird automatisch für die menschliche Lichtempfindleichkeit
+nach CIE 1931 korrigiert. Das bedeutet, dass für jede Farbe ein wechsel von aus
+zu voller Helligkeit für das menschliche Auge wie ein gleichmäßiger Farbverlauf
+erscheint.
+
+Das RGB LED Bricklet 2.0 hat einen 7 Pol Bricklet Stecker und wird
+mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
 
 
 Technische Spezifikation
@@ -49,20 +61,23 @@ Technische Spezifikation
 ================================  ============================================================
 Eigenschaft                       Wert
 ================================  ============================================================
-Stromverbrauch                    TBDmA
+LED                               QBLP679E-RGB
+Stromverbrauch                    | Aus: 35mW (7mA bei 5V)
+                                  | Weiß: 180mW (36mA bei 5V)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-E TBD                             W TBD
+Lichtstärke (R, G, B)             400-630mcd, 1000-1500mcd, 200-285mcd
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Abmessungen (B x T x H)           TBD x TBD x TBDmm (TBD x TBD x TBD")
-Gewicht                           TBDg
+Abmessungen (B x T x H)           25 x 20 x 5mm (0.98 x 0.79 x 0.19")
+Gewicht                           3g
 ================================  ============================================================
 
 
 Ressourcen
 ----------
 
+* QBLP679E-RGB Datenblatt (`Download <https://github.com/Tinkerforge/rgb-led-bricklet/raw/master/datasheets/QBLP679E-RGB.pdf>`__)
 * Schaltplan (`Download <https://github.com/Tinkerforge/rgb-led-v2-bricklet/raw/master/hardware/rgb-led-v2-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/rgb_led_v2_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/rgb-led-v2-bricklet/zipball/master>`__)
@@ -79,44 +94,17 @@ Erster Test
 |test_connect|.
 
 |test_tab|
-Wenn alles wie erwartet funktioniert ... TBD.
+Wenn alles so funktioniert wie erwartet lässt sich die RGB LED jetzt
+mit unterschiedlichen Schiebereglern steuern:
 
-..
-	.. image:: /Images/Bricklets/bricklet_rgb_led_v2_brickv.jpg
-	   :scale: 100 %
-	   :alt: RGB LED Bricklet 2.0 im Brick Viewer
-	   :align: center
-	   :target: ../../_images/Bricklets/bricklet_rgb_led_v2_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_rgb_led_v2_brickv.jpg
+   :scale: 100 %
+   :alt: RGB LED Bricklet 2.0 im Brick Viewer
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_rgb_led_v2_brickv.jpg
 
 |test_pi_ref|
 
-
-.. _rgb_led_v2_bricklet_case:
-
-Gehäuse
--------
-
-..
-	Ein `laser-geschnittenes Gehäuse für das RGB LED Bricklet 2.0
-	<https://www.tinkerforge.com/de/shop/cases/case-rgb-led-v2-bricklet.html>`__ ist verfügbar.
-
-	.. image:: /Images/Cases/bricklet_rgb_led_v2_case_350.jpg
-	   :scale: 100 %
-	   :alt: Gehäuse für RGB LED Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_rgb_led_v2_case_1000.jpg
-
-	.. include:: RGB_LED_V2.substitutions
-	   :start-after: >>>bricklet_case_steps
-	   :end-before: <<<bricklet_case_steps
-
-	.. image:: /Images/Exploded/rgb_led_v2_exploded_350.png
-	   :scale: 100 %
-	   :alt: Explosionszeichnung für RGB LED Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Exploded/rgb_led_v2_exploded.png
-
-	|bricklet_case_hint|
 
 
 .. _rgb_led_v2_bricklet_programming_interface:
