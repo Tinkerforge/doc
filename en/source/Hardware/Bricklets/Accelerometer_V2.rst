@@ -51,6 +51,8 @@ for predictive maintenance applications.
 The Bricklet has an LED that can be turned on trough the API, e.g. to show
 that a specific acceleration was reached.
 
+The Accelerometer Bricklet 2.0 has a 7 pole Bricklet connector and is connected to a
+Brick with a ``7p-10p`` Bricklet cable.
 
 
 Technical Specifications
