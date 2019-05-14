@@ -86,6 +86,11 @@ Dimensions (W x D x H)            35 x 40 x 18mm (1.38 x 1.57 x 0.71")
 Weight                            TBDg
 ================================  ============================================================
 
+\* Die Temperatur wird direkt am Sensor gemessen. Wenn sich das Bricklet 
+in einem Gehäuse befindet, kann es vorkommen, dass sich die Temperatur im Gehäuse
+anders verhält als die Umgebungsluft außerhalb des Gehäuses. Das Bricklet
+besitzt eine API um diesen Unterschied auszugleichen.
+
 
 Ressourcen
 ----------
