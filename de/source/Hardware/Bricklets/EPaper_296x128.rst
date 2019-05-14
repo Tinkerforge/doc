@@ -41,13 +41,13 @@ Features
 Beschreibung
 ------------
 
-Das E-Paper 296x128 :ref:`Bricklet <primer_bricklets>` Ist ein E-Paper Display mit
+Das E-Paper 296x128 :ref:`Bricklet <primer_bricklets>` ist ein E-Paper Display mit
 einer Auflösung von 296x128 Pixel.
 
 Jedes Pixel kann individuell gesetzt werden, das Display kann also Grafiken anzeigen.
 Der Inhalt des Displays bleibt bestehen wenn das Bricklet vom Strom getrennt wird.
 
-Das E-Paper 296x128 Bricklet ist Verfügbar mit zwei unterschiedlichen 
+Das E-Paper 296x128 Bricklet ist verfügbar mit zwei unterschiedlichen 
 Dreifarb-Display-Optionen: Schwarz/Weiß/Rot und Schwarz/Weiß/Grau.
 
 Eine Dreifarb-Aktualisierung des Bildschirminhalts dauert ungefähr 7,5 Sekunden. Mit
@@ -65,7 +65,7 @@ Technische Spezifikation
 Eigenschaft                       Wert
 ================================  ============================================================
 Stromverbrauch                    | 45mW (9mA bei 5V) inaktiv
-                                  | 95mW (19mA bei 5V) während des setzen eines Bildes
+                                  | 95mW (19mA bei 5V) während dem Setzen eines Bildes
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Display-Auflösung                 296x128 Pixel
@@ -101,9 +101,9 @@ Wenn alles wie erwartet funktioniert sollte das Tab im Brick Viewer wie folgt au
 
 Es ist möglich per Maus auf dem Display zu zeichnen und Text zu schreiben.
 
-Hinweis: Beim starten des Bricklet kann der Inhalt des Displays nicht ausgelesen werden.
+Hinweis: Beim Starten des Bricklet kann der Inhalt des Displays nicht ausgelesen werden.
 Daher zeigt der Brick Viewer nach dem starten erst schwarzes Display, auch wenn etwas
-auf dem Display dargestellt wird. Nach dem ersten schreiben auf dem Display kann der
+auf dem Display dargestellt wird. Nach dem ersten Schreiben auf dem Display kann der
 Brick Viewer den Display-Inhalt auslesen bis das Bricklet wieder neugestartet wird.
 
 .. image:: /Images/Bricklets/bricklet_e_paper_296x128_brickv.jpg
@@ -120,8 +120,8 @@ Benutzung
 
 Um auf das Display zu zeichnen empfehlen wir eine Image Library
 zu nutzen die für eine spezifische Programmiersprache entwickelt wurde
-(zum Beispiel PIL für Python). Dadurch können die Zeichen-Primitiven der
-und Schriftarten der Library verwendet werden und das fertig gezeichnete
+(zum Beispiel PIL für Python). Dadurch können die Zeichen-Primitiven und 
+Schriftarten der Library verwendet werden und das fertig gezeichnete
 Bild kann dann zum Bricklet übertragen werden.
 
 Wir haben Beispiele für:
@@ -181,7 +181,7 @@ Aktuell gibt es drei unterschiedliche Update-Modi:
 Wenn der Black/White- oder Delta-Modus zusammen mit dem schwarz/weiß/rot-Bildschirm verwendet wird,
 bekommt die weiße Farbe nach mehrmaligem Wechsel zwischen schwarz und weiß einen rötlichen Stich.
 
-Wenn der Delta-Modus mit schnell Aktualisierungen verwendet wird, empfehlen wir in regelmäßigen
+Wenn der Delta-Modus mit schnellen Aktualisierungen verwendet wird, empfehlen wir in regelmäßigen
 Abständen zurück zum Default-Modus zu wechseln um dort vollflächig zwischen den drei Farben hin
 und her zu wechseln. Dadurch wird das Ghosting welches durch die Verwendung des Delta-Modus
 entsteht wieder entfernt. Danach kann dann wieder in den Delta-Modus gewechselt werden für
