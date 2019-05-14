@@ -42,12 +42,12 @@ Beschreibung
 ------------
 
 Mit dem RGB LED :ref:`Bricklet <primer_bricklets>` 2.0 können
-:ref:`Bricks <primer_bricks>` eine eine RGB LED steuern. Jeder
+:ref:`Bricks <primer_bricks>` eine RGB LED steuern. Jeder
 Kanal der LED (rot, grün, blau) kann individuell mit 8 Bit
 Auflösung gesteuert werden.
 
 Die Leuchtkraft der LED wird automatisch für die menschliche Lichtempfindleichkeit
-nach CIE 1931 korrigiert. Das bedeutet, dass für jede Farbe ein wechsel von aus
+nach CIE 1931 korrigiert. Das bedeutet, dass für jede Farbe ein Wechsel von aus
 zu voller Helligkeit für das menschliche Auge wie ein gleichmäßiger Farbverlauf
 erscheint.
 
