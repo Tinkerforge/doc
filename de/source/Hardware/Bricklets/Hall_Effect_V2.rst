@@ -104,7 +104,7 @@ Erster Test
 
 |test_tab|
 Wenn alles wie erwartet funktioniert kann jetzt die magnetische
-Flussdichte abgelese werden. Zum testen kann ein Magnet in die
+Flussdichte abgelese werden. Zum Testen kann ein Magnet in die
 nähe des Bricklets geführt werden.
 
 .. image:: /Images/Bricklets/bricklet_hall_effect_v2_brickv.jpg
