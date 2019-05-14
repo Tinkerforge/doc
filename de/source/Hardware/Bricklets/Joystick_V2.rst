@@ -106,7 +106,7 @@ Der Verlauf im abgebildeten Graph ist durch folgenden Bewegungsablauf des
 Joysticks entstanden: hoch, runter, rechts, links.
 
 Falls die Position nicht als (0,0) angezeigt wird obwohl sich der Stick in
-Mittelstellung befindet, dann kann der "Calibrate (0,0)" Knopf geklickt werden
+Mittelstellung befindet, dann kann der "Calibrate Zero" Knopf geklickt werden
 um die Null-Position zu kalibrieren.
 
 |test_pi_ref|
