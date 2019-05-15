@@ -68,7 +68,8 @@ Technische Spezifikation
 Eigenschaft                       Wert
 ================================  ============================================================
 Sensor                            Sensirion SCD30
-Stromverbrauch                    TBDmW (TBDmA bei 5V)
+Stromverbrauch (Durchschnitt)     60mW (12mA bei 5V)
+Stromverbrauch (Peak)             400mW (80mA bei 5V)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 CO2-Konzentration Auflösung       1ppm mit Bereich 400ppm bis 10000ppm
@@ -83,7 +84,7 @@ Messfrequenz                      0,5 Messungen pro Sekunde
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)            35 x 40 x 18mm (1.38 x 1.57 x 0.71")
-Weight                            TBDg
+Weight                            9g
 ================================  ============================================================
 
 \* Die Temperatur wird direkt am Sensor gemessen. Wenn sich das Bricklet 
