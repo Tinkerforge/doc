@@ -81,7 +81,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/rgb-led-v2-bricklet/raw/master/hardware/rgb-led-v2-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/rgb_led_v2_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/rgb-led-v2-bricklet/zipball/master>`__)
-* 3D Modell (`Online ansehen <https://autode.sk/30ouYWQ>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/rgb-led-v2.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/rgb-led-v2.FCStd>`__)
+* 3D Modell (`Online ansehen <https://autode.sk/30ouYWQ>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/rgb_led_v2/rgb-led-v2.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/rgb_led_v2/rgb-led-v2.FCStd>`__)
 
 
 .. _rgb_led_v2_bricklet_test:

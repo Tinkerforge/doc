@@ -77,7 +77,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/joystick-v2-bricklet/raw/master/hardware/joystick-v2-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/joystick_v2_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/joystick-v2-bricklet/zipball/master>`__)
-* 3D model (`View online <https://autode.sk/30pO5Ab>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/joystick-v2.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/joystick-v2.FCStd>`__)
+* 3D model (`View online <https://autode.sk/30pO5Ab>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/joystick_v2/joystick-v2.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/joystick_v2/joystick-v2.FCStd>`__)
 
 
 .. _joystick_v2_bricklet_test:

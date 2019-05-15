@@ -90,7 +90,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/hall-effect-v2-bricklet/raw/master/hardware/hall-effect-v2-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/hall_effect_v2_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/hall-effect-v2-bricklet/zipball/master>`__)
-* 3D Modell (`Online ansehen <https://autode.sk/2VBKu39>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/hall-effect-v2.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/hall-effect-v2.FCStd>`__)
+* 3D Modell (`Online ansehen <https://autode.sk/2VBKu39>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/hall_effect_v2/hall-effect-v2.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/hall_effect_v2/hall-effect-v2.FCStd>`__)
 
 
 .. _hall_effect_v2_bricklet_test:
