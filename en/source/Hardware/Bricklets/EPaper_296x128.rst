@@ -84,7 +84,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/e-paper-296x128-bricklet/raw/master/hardware/e-paper-296x128-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/e_paper_296x128_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/e-paper-296x128-bricklet/zipball/master>`__)
-* 3D model (`View online <TBD>`__ | Download: `STEP <http://download.tinkerforge.com/3d/TBD/TBD.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/TBD/TBD.FCStd>`__)
+* 3D model (`View online <https://autode.sk/2VyGhgF>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/e-paper-296x128-bricklet.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/e-paper-296x128-bricklet.FCStd>`__)
 
 
 .. _e_paper_296x128_bricklet_test:
