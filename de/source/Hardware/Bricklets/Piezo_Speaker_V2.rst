@@ -32,7 +32,7 @@ Features
 --------
 
 * Kann einen konfigurierbaren Piepton zwischen 50Hz und 15000Hz erzeugen
-* Kann konfigurierbaren Alarm/Sirenen-Ton ausgeben
+* Kann einen einstellbaren Alarm/Sirenen-Ton ausgeben
 * Lautstärke ist zwischen 85dB(A) und 110dB(A) konfigurierbar
 
 
@@ -49,8 +49,8 @@ Der verfügbare Frequenzbereich ist 50Hz bis 15000Hz. Die Lautstärke kann zwisc
 85dB(A) und 110dB(A) eingestellt werden.
 
 Zusätzlich hat das Bricklet Unterstützung für Alarm und Sirenen-Töne. In diesem Modus
-wird ein *sweep* erzeugt der einen Frequenzbereich abläuft mit konfigurierbarem Bereich,
-Schrittgröße und Länge.
+wird ein *sweep* erzeugt der einen Frequenzbereich mit konfigurierbarer
+Schrittgröße und Länge abläuft.
 
 Das Piezo Speaker Bricklet 2.0 hat einen 7 Pol Bricklet Stecker und wird
 mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
@@ -95,7 +95,7 @@ Erster Test
 |test_connect|.
 
 |test_tab|
-Wenn alles wie erwartet funktioniert wird können nun Töne erzeugt werden.
+Wenn alles wie erwartet funktioniert können nun Töne erzeugt werden.
 
 .. image:: /Images/Bricklets/bricklet_piezo_speaker_v2_brickv.jpg
    :scale: 100 %
@@ -134,7 +134,7 @@ Der Lautstärkenbereich 0-4 kann für Benachrichtigungstöne genutzt werden und
 die Lautstärke im Bereich 5-10 ist gut geeignet für laute und nervige Alarm-Töne.
 
 .. warning::
-	Hinweis: Bei 110 dB(A) die empfohlene zulässige Expositionszeit (laut
+	Hinweis: Bei 110 dB(A) beträgt die empfohlene zulässige Expositionszeit (laut
 	`NIOSH und CDC <https://www.cdc.gov/niosh/topics/noise/chart-lookatnoise.html>`__) 
 	nur ungefähr 1,5 Minuten!
 

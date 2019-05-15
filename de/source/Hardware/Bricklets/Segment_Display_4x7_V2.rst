@@ -95,7 +95,7 @@ Erster Test
 |test_connect|.
 
 |test_tab|
-Wenn alles wie erwartet funktioniert wird können die einzelnen Segmente
+Wenn alles wie erwartet funktioniert können die einzelnen Segmente
 nun ein-/ausgeschaltet werden.
 
 .. image:: /Images/Bricklets/bricklet_segment_display_4x7_v2_brickv.jpg

@@ -91,8 +91,7 @@ Erster Test
 
 |test_tab|
 Klicke auf die "Enable Laser" Checkbox, um den Laser zu aktivieren.
-Wenn alles wie erwartet funktioniert wird die gemessen Distanz und die
-Ausgangsspannung des Sensors angezeigt.
+Wenn alles wie erwartet funktioniert wird die gemessene Distanz des Sensors angezeigt.
 Der Graph gibt den zeitlichen Verlauf der Distanz wieder.
 Das folgende Bild entstand durch langsames auf den Sensor zu und wieder
 wegbewegen einer Hand.

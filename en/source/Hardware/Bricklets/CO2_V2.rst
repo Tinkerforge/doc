@@ -33,7 +33,7 @@ Features
 
 * Measures CO2 concentration from 400 to 10000ppm (parts per million)
 * High accuracy of ±30ppm (full-scale) and ±3% (of reading)
-* Measures temperature and humidity for compenstaion
+* Measures temperature and humidity for compensation
 * Ambient air pressure can be applied for additional compensation
 
 

@@ -48,7 +48,7 @@ You can read out the position of the stick (X/Y coordinates) and
 the state of the button. 
 
 With configurable events it is possible to react on
-changing positions and an button presses without polling.
+changing positions and on button presses without polling.
 
 The Joystick Bricklet 2.0 has a 7 pole Bricklet connector and is connected to a
 Brick with a ``7p-10p`` Bricklet cable.

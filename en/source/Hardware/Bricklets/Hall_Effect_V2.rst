@@ -103,8 +103,8 @@ Test your Hall Effect Bricklet 2.0
 |test_connect|.
 
 |test_tab|
-If everything went as expected you can now see the measurement the magnetic
-flux density. You can move a megnet near the Bricklet to test it.
+If everything went as expected you can now see the measurement of the magnetic
+flux density. You can move a magnet near the Bricklet to test it.
 
 .. image:: /Images/Bricklets/bricklet_hall_effect_v2_brickv.jpg
    :scale: 100 %

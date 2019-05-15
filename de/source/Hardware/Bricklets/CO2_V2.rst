@@ -34,7 +34,7 @@ Features
 * Misst CO2 Konzentration von 400 bis 10000ppm (Teile pro Million)
 * Hohe Genauigkeit von ±30ppm (gesamter Messbereich) und ±3% (Messwert)
 * Misst Temperatur und Luftfeuchtigkeit zur Kompensation
-* UmgebungsLuftdruck kann für zusätzliche Kompensation gesetzt werden
+* Umgebungsluftdruck kann für zusätzliche Kompensation gesetzt werden
 
 
 .. _co2_v2_bricklet_description:
@@ -54,7 +54,7 @@ CO2 Konzentrationsänderungen zu reagieren ohne die Werte laufend abzufragen
 Das Bricklet misst Temperatur und Luftfeuchte. Diese Werte werden
 intern zur Kompensation genutzt und können zusätzlich ausgesen werden.
 
-Eine weitere Kompoensation kann über den Luftdruck geschehen. Dieser
+Eine weitere Kompensation kann über den Luftdruck geschehen. Dieser
 kann extern gemessen und über die API gesetzt werden um weitere
 Kompensationen durchzuführen und die CO2-Messung noch zu verbessern.
 
@@ -86,6 +86,11 @@ Dimensions (W x D x H)            35 x 40 x 18mm (1.38 x 1.57 x 0.71")
 Weight                            TBDg
 ================================  ============================================================
 
+\* Die Temperatur wird direkt am Sensor gemessen. Wenn sich das Bricklet 
+in einem Gehäuse befindet, kann es vorkommen, dass sich die Temperatur im Gehäuse
+anders verhält als die Umgebungsluft außerhalb des Gehäuses. Das Bricklet
+besitzt eine API um diesen Unterschied auszugleichen.
+
 
 Ressourcen
 ----------
@@ -100,19 +105,19 @@ Ressourcen
 Luftdruck-Kompoensation und Temperatur-Offset
 ---------------------------------------------
 
-Das CO2 Bricklet 2.0 hat API um den Umgebungsluftdruck für eine
-zusätzliche interne Kompensation zu setzen um die Genauigkeit
+Das CO2 Bricklet 2.0 besitzt eine API um den Umgebungsluftdruck für eine
+zusätzliche interne Kompensation zu setzen, um dadurch die Genauigkeit
 der CO2-Konzentration zu erhöhen.
 
 Dafür kann das:ref:`Barometer Bricklet 2.0 <barometer_v2_bricklet>` oder
 :ref:`Air Quality Bricklet <air_quality_bricklet>` genutzt werden um
-den Luftdruck zu messen und periodisch zu setzten.
+den Luftdruck zu messen und periodisch zu setzen.
 
-Falls das Bricklet in einem Gehäuse verwendet wird kann es passieren dass die
+Falls das Bricklet in einem Gehäuse verwendet wird kann es passieren, dass die
 Luft im Gehäuse sich mehr erhitzt als die Umgebungsluft. Dieser
 Temperatur-Offset kann mit der API kalibriert werden.
 Wir empfehlen das Bricklet im Gehäuse für mindestens 24 Stunden laufen zu
-lassen damit die Temperatur ein gleichgewicht erreicht hat.
+lassen bis die Temperatur ein Gleichgewicht erreicht hat.
 
 
 .. _co2_v2_bricklet_test:
