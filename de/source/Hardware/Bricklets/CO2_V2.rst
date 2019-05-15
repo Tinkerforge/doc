@@ -99,7 +99,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/co2-v2-bricklet/raw/master/hardware/co2-v2-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/co2_v2_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/co2-v2-bricklet/zipball/master>`__)
-* 3D Modell (`Online ansehen <TBD>`__ | Download: `STEP <http://download.tinkerforge.com/3d/TBD/TBD.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/TBD/TBD.FCStd>`__)
+* 3D Modell (`Online ansehen <https://autode.sk/2VEHtyN>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/co2-v2.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/co2-v2.FCStd>`__)
 
 
 Luftdruck-Kompoensation und Temperatur-Offset

@@ -90,7 +90,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/hall-effect-v2-bricklet/raw/master/hardware/hall-effect-v2-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/hall_effect_v2_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/hall-effect-v2-bricklet/zipball/master>`__)
-* 3D model (`View online <https://autode.sk/2VBKu39>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/hall-effect-v2-bricklet.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/hall-effect-v2-bricklet.FCStd>`__)
+* 3D model (`View online <https://autode.sk/2VBKu39>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/hall-effect-v2.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/hall-effect-v2.FCStd>`__)
 
 
 .. _hall_effect_v2_bricklet_test:
