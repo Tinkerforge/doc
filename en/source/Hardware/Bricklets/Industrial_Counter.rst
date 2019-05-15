@@ -104,6 +104,100 @@ Resources
 * 3D model (`View online <https://autode.sk/2rzxZ72>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/industrial_counter/industrial-counter.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/industrial_counter/industrial-counter.FCStd>`__)
 
 
+.. _industrial_counter_bricklet_quadrature_encoder:
+
+Quadrature Encoder
+------------------
+
+The Industrial Counter Bricklet can be used to read out up to two quadrature encoders.
+
+One A/B-pair of the encoder can be connected to the Channels 0/2 and the other pair
+can be connected to the channels 1/3.
+        
+.. image:: /Images/Bricklets/bricklet_industrial_counter_w_encoder_600.jpg
+   :scale: 100 %
+   :alt: Industrial Counter Bricklet, Silent Stepper Brick and LPD3806-600BM encoder
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_industrial_counter_w_encoder_1200.jpg
+
+As an example we use a LPD3806-600BM encoder. It has a simple interface
+consisting of A, B, VCC and GND/SHD and it can be powered by a 24V power supply.
+
+To use it with the Industrial Counter Bricklet we connected A and B with a 
+1k ohm pull-up to VCC and A to CH0-, B to CH2- as well as VCC to CH0+ and CH2+.
+
+.. image:: /Images/Bricklets/bricklet_industrial_counter_encoder.png
+   :scale: 100 %
+   :alt: Diagram of Industrial Counter Bricklet with LPD3806-600BM encoder
+   :align: center
+
+In software we configure channel 0 to count up on rising edge if channel 2 is low
+(see :ref:`Extern Count Direction <industrial_counter_bricklet_external_count_direction>`
+for more information on this configuration).
+
+The following example code (Python) does the necessary configuration, 
+starts one full revolution with a Silent Stepper Brick and prints the count
+of channel 0 of the Industrial Counter Bricklet. The LPD3806-600BM encoder
+has 600 steps per rotation, so the expected count is 600.
+
+.. code-block:: python
+
+    HOST = "localhost"
+    PORT = 4223
+    UID_COUNTER = "GfX" 
+    UID_SILENT_STEPPER = "63noND"
+
+    from tinkerforge.ip_connection import IPConnection
+    from tinkerforge.bricklet_industrial_counter import BrickletIndustrialCounter
+    from tinkerforge.brick_silent_stepper import BrickSilentStepper
+    import time
+
+    if __name__ == "__main__":
+        ipcon = IPConnection() # Create IP connection
+        counter = BrickletIndustrialCounter(UID_COUNTER, ipcon) # Create device object
+        ss = BrickSilentStepper(UID_SILENT_STEPPER, ipcon) # Create device object
+
+        ipcon.connect(HOST, PORT) # Connect to brickd
+        # Don't use device before ipcon is connected
+
+
+        # Configure channel 0 to count up if channel 2 is low
+        counter.set_counter_configuration(counter.CHANNEL_0, 
+                                          counter.COUNT_EDGE_RISING,
+                                          counter.COUNT_DIRECTION_EXTERNAL_DOWN,
+                                          counter.DUTY_CYCLE_PRESCALER_1,
+                                          counter.FREQUENCY_INTEGRATION_TIME_1024_MS)
+        counter.set_all_counter_active([True, False, False, False])
+        counter.set_counter(0, 0)
+
+        # Configure stepper motor with 800mA, 10000steps/s² acceleration,
+        # 1/16 step resolution, velocity 3200 steps/s and enable motor.
+        ss.set_motor_current(800)
+        ss.set_speed_ramping(10000, 10000)
+        ss.set_step_configuration(ss.STEP_RESOLUTION_16, True)
+        ss.set_max_velocity(3200)
+        ss.enable() # Enable motor power
+
+        # Move 3200 steps (at 1/16 step resolution and 200 steps per revolution
+        # this is exactly 1 full revolution)
+        ss.set_steps(3200)
+
+        # Wait for 3200 steps to finish
+        time.sleep(2)
+
+        # Get counter value. 
+        # We expect this to return a value of 600 for the LPD3806-600BM encoder
+        encoder_count = counter.get_counter(0)
+        print('Encoder Count: {0}'.format(encoder_count))
+
+        ipcon.disconnect()
+
+
+In our test the output of the program was exactly as expected::
+    
+    tf@pc:~/tests$ python count.py 
+    > Encoder Count: 600
+
 
 .. _industrial_counter_bricklet_channel_status_led:
 

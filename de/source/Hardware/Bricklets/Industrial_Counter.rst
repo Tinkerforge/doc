@@ -104,6 +104,106 @@ Ressourcen
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/industrial-counter-bricklet/zipball/master>`__)
 * 3D Modell (`Online ansehen <https://autode.sk/2rzxZ72>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/industrial_counter/industrial-counter.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/industrial_counter/industrial-counter.FCStd>`__)
 
+
+.. _industrial_counter_bricklet_quadrature_encoder:
+
+Quadraturencoder / Inkrementalgeber
+-----------------------------------
+
+Das Industrial Counter Bricklet kann genutzt werden um bis zu zwei Quadraturencoder
+bzw Inkrementalgeber mit Quadratursignal auszulesen.
+
+Ein A/B-Paar des Encoders kann mit den Kanälen 0/2 und das andere Paar mit den
+Kanälen 1/3 verbunden werden.
+        
+.. image:: /Images/Bricklets/bricklet_industrial_counter_w_encoder_600.jpg
+   :scale: 100 %
+   :alt: Industrial Counter Bricklet, Silent Stepper Brick und LPD3806-600BM Encoder
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_industrial_counter_w_encoder_1200.jpg
+
+Um ein Beispiel bereitzustellen haben wir den LPD3806-600BM Encoder genutzt. Dieser
+Encoder hat eine einfache Schnittstelle die aus den Signalen A, B, VCC und GND/SHD
+besteht. Der Encoder kann per 24V-Stromversorgung versorgt werden.
+
+Um den Encoder mit dem Industrial Counter Bricklet zu nutzen haben wir A und B
+mit einem 1k-Ohm Pull-Up zu VCC ausgestattet und A mit CH0- sowie B mit CH2- und
+VCC mit CH0+ und CH2+ verbunden:
+
+.. image:: /Images/Bricklets/bricklet_industrial_counter_encoder.png
+   :scale: 100 %
+   :alt: Diagram of Industrial Counter Bricklet with LPD3806-600BM encoder
+   :align: center
+
+In Software konfigurieren wir einfach Kanal 0 steigende Flanken zu zählen wenn
+Kanal 2 *low* ist (siehe :ref:`Extern Count Direction <industrial_counter_bricklet_external_count_direction>`
+für mehr Informationen zu dieser Konfiguration).
+
+Der folgende Beispielcode (Python) führt die notwendigen Konfigurationen aus und
+startet eine volle Drehung mit dem Silent Stepper Brick. Danach liest er den
+Zählerstand von Kanal 0 des Industrial Counter Bricklets aus und gibt diesen
+auf der Console aus. Der LPD3806-600BM Encoder hat 600 Schritte pro Umdrehung,
+wir erwarten also einen Zählerstand von 600.
+
+.. code-block:: python
+
+    HOST = "localhost"
+    PORT = 4223
+    UID_COUNTER = "GfX" 
+    UID_SILENT_STEPPER = "63noND"
+
+    from tinkerforge.ip_connection import IPConnection
+    from tinkerforge.bricklet_industrial_counter import BrickletIndustrialCounter
+    from tinkerforge.brick_silent_stepper import BrickSilentStepper
+    import time
+
+    if __name__ == "__main__":
+        ipcon = IPConnection() # Create IP connection
+        counter = BrickletIndustrialCounter(UID_COUNTER, ipcon) # Create device object
+        ss = BrickSilentStepper(UID_SILENT_STEPPER, ipcon) # Create device object
+
+        ipcon.connect(HOST, PORT) # Connect to brickd
+        # Don't use device before ipcon is connected
+
+
+        # Configure channel 0 to count up if channel 2 is low
+        counter.set_counter_configuration(counter.CHANNEL_0, 
+                                          counter.COUNT_EDGE_RISING,
+                                          counter.COUNT_DIRECTION_EXTERNAL_DOWN,
+                                          counter.DUTY_CYCLE_PRESCALER_1,
+                                          counter.FREQUENCY_INTEGRATION_TIME_1024_MS)
+        counter.set_all_counter_active([True, False, False, False])
+        counter.set_counter(0, 0)
+
+        # Configure stepper motor with 800mA, 10000steps/s² acceleration,
+        # 1/16 step resolution, velocity 3200 steps/s and enable motor.
+        ss.set_motor_current(800)
+        ss.set_speed_ramping(10000, 10000)
+        ss.set_step_configuration(ss.STEP_RESOLUTION_16, True)
+        ss.set_max_velocity(3200)
+        ss.enable() # Enable motor power
+
+        # Move 3200 steps (at 1/16 step resolution and 200 steps per revolution
+        # this is exactly 1 full revolution)
+        ss.set_steps(3200)
+
+        # Wait for 3200 steps to finish
+        time.sleep(2)
+
+        # Get counter value. 
+        # We expect this to return a value of 600 for the LPD3806-600BM encoder
+        encoder_count = counter.get_counter(0)
+        print('Encoder Count: {0}'.format(encoder_count))
+
+        ipcon.disconnect()
+
+
+In unserem Test war die Ausgabe des Testprogramms exakt wie erwartet::
+    
+    tf@pc:~/tests$ python count.py 
+    > Encoder Count: 600
+
+
 .. _industrial_counter_bricklet_channel_status_led:
 
 Kanal Status LEDs
