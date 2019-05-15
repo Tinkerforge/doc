@@ -12,16 +12,16 @@ Industrial Counter Bricklet
 
 .. raw:: html
 
-	{% tfgallery %}
+    {% tfgallery %}
 
-	Bricklets/bricklet_industrial_counter_tilted_[?|?].jpg           Industrial Counter Bricklet
-	Bricklets/bricklet_industrial_counter_tilted2_[?|?].jpg          Industrial Counter Bricklet
-	Bricklets/bricklet_industrial_counter_side_[?|?].jpg             Industrial Counter Bricklet
-	Bricklets/bricklet_industrial_counter_top_[?|?].jpg              Industrial Counter Bricklet
-	Bricklets/bricklet_industrial_counter_brickv_[100|].jpg          Industrial Counter Bricklet in Brick Viewer
-	Dimensions/industrial_counter_bricklet_dimensions_[100|600].png  Outline and drilling plan
+    Bricklets/bricklet_industrial_counter_tilted_[?|?].jpg           Industrial Counter Bricklet
+    Bricklets/bricklet_industrial_counter_tilted2_[?|?].jpg          Industrial Counter Bricklet
+    Bricklets/bricklet_industrial_counter_side_[?|?].jpg             Industrial Counter Bricklet
+    Bricklets/bricklet_industrial_counter_top_[?|?].jpg              Industrial Counter Bricklet
+    Bricklets/bricklet_industrial_counter_brickv_[100|].jpg          Industrial Counter Bricklet in Brick Viewer
+    Dimensions/industrial_counter_bricklet_dimensions_[100|600].png  Outline and drilling plan
 
-	{% tfgalleryend %}
+    {% tfgalleryend %}
 
 
 Features
@@ -61,11 +61,11 @@ is connected to a Brick with a ``7p-10p`` Bricklet cable.
 
 .. raw:: html
  
-	<video class="align-center" max-width="100%" width="100%" height="auto" controls autoplay loop>
-	  <source src="../../_images/Videos/bricklet_industrial_counter_video.mp4" type="video/mp4">
-	  <source src="../../_images/Videos/bricklet_industrial_counter_video.ogg" type="video/ogg">
-	  <source src="../../_images/Videos/bricklet_industrial_counter_video.webm" type="video/webm">
-	</video>
+    <video class="align-center" max-width="100%" width="100%" height="auto" controls autoplay loop>
+      <source src="../../_images/Videos/bricklet_industrial_counter_video.mp4" type="video/mp4">
+      <source src="../../_images/Videos/bricklet_industrial_counter_video.ogg" type="video/ogg">
+      <source src="../../_images/Videos/bricklet_industrial_counter_video.webm" type="video/webm">
+    </video>
 
 Technical Specifications
 ------------------------
