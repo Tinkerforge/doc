@@ -161,18 +161,19 @@ wieder zu entfernen. Dieser erwartet eine Callback-ID, die von "Register*Callbac
 
  Dieses Callback empfängt eine Struktur mit sieben Feldern:
 
-  * ``UID``: Die UID des Bricks/Bricklets.
-  * ``ConnectedUID``: Die UID des Bricks mit dem das Brick/Bricklet verbunden
-    ist. Für ein Bricklet ist dies die UID des Bricks mit dem es verbunden ist.
-    Für einen Brick ist es die UID des untersten Master Bricks in einem Stapel.
-    Der unterste Master Brick hat die Connected-UID "0". Mit diesen Informationen
-    sollte es möglich sein die komplette Netzwerktopologie zu rekonstruieren.
-  * ``Position``: Für Bricks: '0' - '8' (Position in Stapel). Für Bricklets:
-    'a' - 'd' (Position an Brick).
-  * ``HardwareVersion``: Major, Minor und Release Nummer der Hardwareversion.
-  * ``FirmwareVersion``: Major, Minor und Release Nummer der Firmwareversion.
-  * ``DeviceIdentifier``: Eine Zahl, welche den Brick/Bricklet repräsentiert.
-  * ``EnumerationType``: Art der Enumerierung.
+ * ``UID``: Die UID des Bricks/Bricklets.
+ * ``ConnectedUID``: Die UID des Bricks mit dem das Brick/Bricklet verbunden
+   ist. Für ein Bricklet ist dies die UID des Bricks mit dem es verbunden ist.
+   Für einen Brick ist es die UID des untersten Master Bricks in einem Stapel.
+   Der unterste Master Brick hat die Connected-UID "0". Mit diesen Informationen
+   sollte es möglich sein die komplette Netzwerktopologie zu rekonstruieren.
+ * ``Position``: Für Bricks: '0' - '8' (Position in Stapel). Für Bricklets:
+   'a' - 'h' (Position an Brick) oder 'i' (Position des Raspberry Pi (Zero) HAT)
+   oder 'z' (Bricklet an :ref:`Isolator Bricklet <isolator_bricklet>`).
+ * ``HardwareVersion``: Major, Minor und Release Nummer der Hardwareversion.
+ * ``FirmwareVersion``: Major, Minor und Release Nummer der Firmwareversion.
+ * ``DeviceIdentifier``: Eine Zahl, welche den Brick/Bricklet repräsentiert.
+ * ``EnumerationType``: Art der Enumerierung.
 
  Mögliche Enumerierungsarten sind:
 

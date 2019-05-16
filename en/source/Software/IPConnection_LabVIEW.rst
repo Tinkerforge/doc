@@ -224,7 +224,8 @@ The available events are described below.
    in a stack this will be "0". With this information it is possible to
    reconstruct the complete network topology.
  * ``position``: For Bricks: '0' - '8' (position in stack). For Bricklets:
-   'a' - 'd' (position on Brick).
+   'a' - 'h' (position on Brick) or 'i' (position of the Raspberry Pi (Zero) HAT)
+   or 'z' (Bricklet on :ref:`Isolator Bricklet <isolator_bricklet>`).
  * ``hardwareVersion``: Major, minor and release number for hardware version.
  * ``firmwareVersion``: Major, minor and release number for firmware version.
  * ``deviceIdentifier``: A number that represents the device.

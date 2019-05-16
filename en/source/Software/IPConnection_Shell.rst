@@ -225,8 +225,9 @@ Basic Functions
    be the UID of the bottom Master Brick in the stack. For the bottom Master
    Brick in a stack this will be "0". With this information it is possible to
    reconstruct the complete network topology.
- * ``position`` is position in stack (0 - 8) for Bricks or the position on
-   Brick (a - d) for Bricklets.
+ * ``position`` is for Bricks: '0' - '8' (position in stack). For Bricklets:
+   'a' - 'h' (position on Brick) or 'i' (position of the Raspberry Pi (Zero) HAT)
+   or 'z' (Bricklet on :ref:`Isolator Bricklet <isolator_bricklet>`).
  * ``hardware-version`` is in major, minor and release format.
  * ``firmware-version`` is in major, minor and release format.
  * ``device-identifier`` is the name of the device as known from the

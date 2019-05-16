@@ -186,18 +186,19 @@ Die verfügbaren Events werden im Folgenden beschrieben.
 
  Der Event empfängt sieben Parameter:
 
- * *uid*: Die UID des Bricks/Bricklets.
- * *connectedUid*: Die UID des Bricks mit dem das Brick/Bricklet verbunden
+ * ``uid``: Die UID des Bricks/Bricklets.
+ * ``connectedUid``: Die UID des Bricks mit dem das Brick/Bricklet verbunden
    ist. Für ein Bricklet ist dies die UID des Bricks mit dem es verbunden ist.
    Für einen Brick ist es die UID des untersten Master Bricks in einem Stapel.
    Der unterste Master Brick hat die Connected-UID "0". Mit diesen Informationen
    sollte es möglich sein die komplette Netzwerktopologie zu rekonstruieren.
- * *position*: Für Bricks: '0' - '8' (Position in Stapel). Für Bricklets:
-   'a' - 'd' (Position an Brick).
- * *hardwareVersion*: Major, Minor und Release Nummer der Hardwareversion.
- * *firmwareVersion*: Major, Minor und Release Nummer der Firmwareversion.
- * *deviceIdentifier*: Eine Zahl, welche den Brick/Bricklet repräsentiert.
- * *enumerationType*: Art der Enumerierung.
+ * ``position``: Für Bricks: '0' - '8' (Position in Stapel). Für Bricklets:
+   'a' - 'h' (Position an Brick) oder 'i' (Position des Raspberry Pi (Zero) HAT)
+   oder 'z' (Bricklet an :ref:`Isolator Bricklet <isolator_bricklet>`).
+ * ``hardwareVersion``: Major, Minor und Release Nummer der Hardwareversion.
+ * ``firmwareVersion``: Major, Minor und Release Nummer der Firmwareversion.
+ * ``deviceIdentifier``: Eine Zahl, welche den Brick/Bricklet repräsentiert.
+ * ``enumerationType``: Art der Enumerierung.
 
  Mögliche Enumerierungsarten sind:
 

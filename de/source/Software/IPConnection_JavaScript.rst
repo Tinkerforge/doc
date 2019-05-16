@@ -244,7 +244,8 @@ werden weiter unten beschrieben.
    Der unterste Master Brick hat die Connected-UID "0". Mit diesen Informationen
    sollte es möglich sein die komplette Netzwerktopologie zu rekonstruieren.
  * ``position``: Für Bricks: '0' - '8' (Position in Stapel). Für Bricklets:
-   'a' - 'd' (Position an Brick).
+   'a' - 'h' (Position an Brick) oder 'i' (Position des Raspberry Pi (Zero) HAT)
+   oder 'z' (Bricklet an :ref:`Isolator Bricklet <isolator_bricklet>`).
  * ``hardwareVersion``: Major, Minor und Release Nummer der Hardwareversion.
  * ``firmwareVersion``: Major, Minor und Release Nummer der Firmwareversion.
  * ``deviceIdentifier``: Eine Zahl, welche den Brick/Bricklet repräsentiert.
