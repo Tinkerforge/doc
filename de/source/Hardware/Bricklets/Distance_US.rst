@@ -1,6 +1,4 @@
 
-:shoplink: ../../../shop/bricklets/distance-us-bricklet.html
-
 .. include:: Distance_US.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
