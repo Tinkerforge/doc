@@ -18,7 +18,6 @@ Laser Range Finder Bricklet 2.0
 	Bricklets/bricklet_laser_range_finder_v2_tilted2_[?|?].jpg          Laser Range Finder Bricklet 2.0
 	Bricklets/bricklet_laser_range_finder_v2_top_[?|?].jpg              Laser Range Finder Bricklet 2.0
 	Bricklets/bricklet_laser_range_finder_v2_bottom_[?|?].jpg           Laser Range Finder Bricklet 2.0
-	Cases/bricklet_laser_range_finder_v2_case_[100|600].jpg             Laser Range Finder Bricklet 2.0 with case
 	Bricklets/bricklet_laser_range_finder_v2_brickv_[100|].jpg          Laser Range Finder Bricklet 2.0 in Brick Viewer
 	Dimensions/laser_range_finder_v2_bricklet_dimensions_[100|600].png  Outline and drilling plan
 

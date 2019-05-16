@@ -18,7 +18,6 @@ Segment Display 4x7 Bricklet 2.0
 	Bricklets/bricklet_segment_display_4x7_v2_tilted2_[?|?].jpg          Segment Display 4x7 Bricklet 2.0
 	Bricklets/bricklet_segment_display_4x7_v2_top_[?|?].jpg              Segment Display 4x7 Bricklet 2.0
 	Bricklets/bricklet_segment_display_4x7_v2_side_[?|?].jpg             Segment Display 4x7 Bricklet 2.0
-	Cases/bricklet_segment_display_4x7_v2_case_[100|600].jpg             Segment Display 4x7 Bricklet 2.0 with case
 	Bricklets/bricklet_segment_display_4x7_v2_brickv_[100|].jpg          Segment Display 4x7 Bricklet 2.0 in Brick Viewer
 	Dimensions/segment_display_4x7_v2_bricklet_dimensions_[100|600].png  Outline and drilling plan
 

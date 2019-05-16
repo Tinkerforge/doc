@@ -16,7 +16,6 @@ RGB LED Bricklet 2.0
 
 	Bricklets/bricklet_rgb_led_v2_tilted_[?|?].jpg           RGB LED Bricklet 2.0
 	Bricklets/bricklet_rgb_led_v2_top_[?|?].jpg              RGB LED Bricklet 2.0
-	Cases/bricklet_rgb_led_v2_case_[100|600].jpg             RGB LED Bricklet 2.0 with case
 	Bricklets/bricklet_rgb_led_v2_brickv_[100|].jpg          RGB LED Bricklet 2.0 in Brick Viewer
 	Dimensions/rgb_led_v2_bricklet_dimensions_[100|600].png  Outline and drilling plan
 
