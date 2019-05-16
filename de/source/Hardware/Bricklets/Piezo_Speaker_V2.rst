@@ -10,17 +10,13 @@
 Piezo Speaker Bricklet 2.0
 ==========================
 
-.. note::
-  Dieses Bricklet befindet sich aktuell noch in der Entwicklung!
-
-..
-    .. raw:: html
+.. raw:: html
 
 	{% tfgallery %}
 
 	Bricklets/bricklet_piezo_speaker_v2_tilted_[?|?].jpg           Piezo Speaker Bricklet 2.0
-	Bricklets/bricklet_piezo_speaker_v2_horizontal_[?|?].jpg       Piezo Speaker Bricklet 2.0
-	Bricklets/bricklet_piezo_speaker_v2_master_[100|600].jpg       Piezo Speaker Bricklet 2.0 mit Master Brick
+	Bricklets/bricklet_piezo_speaker_v2_top_[?|?].jpg              Piezo Speaker Bricklet 2.0
+	Bricklets/bricklet_piezo_speaker_v2_side_[?|?].jpg             Piezo Speaker Bricklet 2.0
 	Cases/bricklet_piezo_speaker_v2_case_[100|600].jpg             Piezo Speaker Bricklet 2.0 im Gehäuse
 	Bricklets/bricklet_piezo_speaker_v2_brickv_[100|].jpg          Piezo Speaker Bricklet 2.0 im Brick Viewer
 	Dimensions/piezo_speaker_v2_bricklet_dimensions_[100|600].png  Umriss und Bohrplan

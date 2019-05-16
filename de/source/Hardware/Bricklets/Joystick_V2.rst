@@ -10,17 +10,13 @@
 Joystick Bricklet 2.0
 =====================
 
-.. note::
-  Dieses Bricklet befindet sich aktuell noch in der Entwicklung!
-
-..
-    .. raw:: html
+.. raw:: html
 
 	{% tfgallery %}
 
 	Bricklets/bricklet_joystick_v2_tilted_[?|?].jpg           Joystick Bricklet 2.0
-	Bricklets/bricklet_joystick_v2_horizontal_[?|?].jpg       Joystick Bricklet 2.0
-	Bricklets/bricklet_joystick_v2_master_[100|600].jpg       Joystick Bricklet 2.0 mit Master Brick
+	Bricklets/bricklet_joystick_v2_top_[?|?].jpg              Joystick Bricklet 2.0
+	Bricklets/bricklet_joystick_v2_side_[?|?].jpg             Joystick Bricklet 2.0
 	Cases/bricklet_joystick_v2_case_[100|600].jpg             Joystick Bricklet 2.0 im Gehäuse
 	Bricklets/bricklet_joystick_v2_brickv_[100|].jpg          Joystick Bricklet 2.0 im Brick Viewer
 	Dimensions/joystick_v2_bricklet_dimensions_[100|600].png  Umriss und Bohrplan

@@ -10,17 +10,16 @@
 E-Paper 296x128 Bricklet
 ========================
 
-.. note::
-  Dieses Bricklet befindet sich aktuell noch in der Entwicklung!
 
-..
-    .. raw:: html
+.. raw:: html
 
 	{% tfgallery %}
 
-	Bricklets/bricklet_e_paper_296x128_tilted_[?|?].jpg           E-Paper 296x128 Bricklet
-	Bricklets/bricklet_e_paper_296x128_horizontal_[?|?].jpg       E-Paper 296x128 Bricklet
-	Bricklets/bricklet_e_paper_296x128_master_[100|600].jpg       E-Paper 296x128 Bricklet mit Master Brick
+	Bricklets/bricklet_e_paper_296x128_tilted_red_[?|?].jpg       E-Paper 296x128 Bricklet
+	Bricklets/bricklet_e_paper_296x128_tilted_gray_[?|?].jpg      E-Paper 296x128 Bricklet
+	Bricklets/bricklet_e_paper_296x128_top_red_[?|?].jpg          E-Paper 296x128 Bricklet
+	Bricklets/bricklet_e_paper_296x128_top_gray_[?|?].jpg         E-Paper 296x128 Bricklet
+	Bricklets/bricklet_e_paper_296x128_tilted_bottom_[?|?].jpg    E-Paper 296x128 Bricklet
 	Cases/bricklet_e_paper_296x128_case_[100|600].jpg             E-Paper 296x128 Bricklet im Gehäuse
 	Bricklets/bricklet_e_paper_296x128_brickv_[100|].jpg          E-Paper 296x128 Bricklet im Brick Viewer
 	Dimensions/e_paper_296x128_bricklet_dimensions_[100|600].png  Umriss und Bohrplan

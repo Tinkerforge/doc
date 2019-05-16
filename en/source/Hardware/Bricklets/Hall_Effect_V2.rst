@@ -10,17 +10,12 @@
 Hall Effect Bricklet 2.0
 ========================
 
-.. note::
-  This Bricklet is currently work-in-progress!
-
-..
-    .. raw:: html
+.. raw:: html
 
 	{% tfgallery %}
 
 	Bricklets/bricklet_hall_effect_v2_tilted_[?|?].jpg           Hall Effect Bricklet 2.0
-	Bricklets/bricklet_hall_effect_v2_horizontal_[?|?].jpg       Hall Effect Bricklet 2.0
-	Bricklets/bricklet_hall_effect_v2_master_[100|600].jpg       Hall Effect Bricklet 2.0 with Master Brick
+	Bricklets/bricklet_hall_effect_v2_top_[?|?].jpg              Hall Effect Bricklet 2.0
 	Cases/bricklet_hall_effect_v2_case_[100|600].jpg             Hall Effect Bricklet 2.0 with case
 	Bricklets/bricklet_hall_effect_v2_brickv_[100|].jpg          Hall Effect Bricklet 2.0 in Brick Viewer
 	Dimensions/hall_effect_v2_bricklet_dimensions_[100|600].png  Outline and drilling plan
