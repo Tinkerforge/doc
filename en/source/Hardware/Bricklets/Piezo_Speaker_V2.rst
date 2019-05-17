@@ -51,6 +51,16 @@ duration.
 The Piezo Speaker Bricklet 2.0 has a 7 pole Bricklet connector and is connected to a
 Brick with a ``7p-10p`` Bricklet cable.
 
+Below you can find an audio file with samples of different sounds and alarams 
+that have been generated with a Piezo Speaker Bricklet 2.0:
+
+.. raw:: html
+ 
+	<audio controls>
+	  <source src="../../_images/Videos/bricklet_piezo_speaker_v2_audio.ogg" type="audio/ogg">
+	  <source src="../../_images/Videos/bricklet_piezo_speaker_v2_audio.mp3" type="audio/mp3">
+	</audio>
+
 
 Technical Specifications
 ------------------------
