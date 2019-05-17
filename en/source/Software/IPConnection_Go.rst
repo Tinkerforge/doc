@@ -144,15 +144,15 @@ done with "Register*Callback" functions of the IPConnection object. For example:
 
 .. code-block:: go
 
-    callbackID := ipcon.RegisterExampleCallback(func(param type) {
+    registrationID := ipcon.RegisterExampleCallback(func(param type) {
         fmt.Println(param)
     });    
     
 The available events are described below.  It is possible to add several callbacks and
-to remove them with the corresponding "Deregister*Callback" function, which expects a callback ID returned by "Register*Callback".
+to remove them with the corresponding "Deregister*Callback" function, which expects a registration ID returned by "Register*Callback".
 
 
-.. go:function:: func (*IPConnection) RegisterEnumerateCallback(func(response EnumerateResponse)) (callbackID uint64)
+.. go:function:: func (*IPConnection) RegisterEnumerateCallback(func(response EnumerateResponse)) (registrationID uint64)
 
  The callback receives a struct with seven members:
 
@@ -196,7 +196,7 @@ to remove them with the corresponding "Deregister*Callback" function, which expe
  or :go:const:`ambient_light_bricklet.DeviceIdentifier`.
 
 
-.. go:function:: func (*IPConnection) RegisterConnectCallback(func(reason ConnectReason)) (callbackID uint64)
+.. go:function:: func (*IPConnection) RegisterConnectCallback(func(reason ConnectReason)) (registrationID uint64)
 
  This event is triggered whenever the IP Connection got connected to a
  Brick Daemon or to a WIFI/Ethernet Extension, possible reasons are:
@@ -207,7 +207,7 @@ to remove them with the corresponding "Deregister*Callback" function, which expe
    auto-reconnect.
 
 
-.. go:function:: func (*IPConnection) RegisterDisconnectCallback(func(reason DisconnectReason)) (callbackID uint64)
+.. go:function:: func (*IPConnection) RegisterDisconnectCallback(func(reason DisconnectReason)) (registrationID uint64)
 
  This event is triggered whenever the IP Connection got disconnected from a
  Brick Daemon or to a WIFI/Ethernet Extension, possible reasons are:

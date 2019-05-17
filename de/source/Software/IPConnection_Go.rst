@@ -148,16 +148,16 @@ durchgeführt werden. Zum Beispiel:
 
 .. code-block:: go
 
-    callbackID := ipcon.RegisterExampleCallback(func(param type) {
+    registrationID := ipcon.RegisterExampleCallback(func(param type) {
         fmt.Println(param)
     });   
 
 Die verfügbaren Ereignisse werden unterhalb beschrieben. Es ist möglich mehrere Callbacks
 hinzuzufügen und auch mit einem korrespondierenden "Deregister*Callback"-Aufruf
-wieder zu entfernen. Dieser erwartet eine Callback-ID, die von "Register*Callback" zurückgegeben wurde
+wieder zu entfernen. Dieser erwartet eine Registrierungs-ID, die von "Register*Callback" zurückgegeben wurde
 
 
-.. go:function:: func (*IPConnection) RegisterEnumerateCallback(func(response EnumerateResponse)) (callbackID uint64)
+.. go:function:: func (*IPConnection) RegisterEnumerateCallback(func(response EnumerateResponse)) (registrationID uint64)
 
  Dieses Callback empfängt eine Struktur mit sieben Feldern:
 
@@ -192,7 +192,7 @@ wieder zu entfernen. Dieser erwartet eine Callback-ID, die von "Register*Callbac
  Zum Beispiel: :go:const:`master_brick.DeviceIdentifier` oder :go:const:`ambient_light_bricklet.DeviceIdentifier`.
 
 
-.. go:function:: func (*IPConnection) RegisterConnectCallback(func(reason ConnectReason)) (callbackID uint64)
+.. go:function:: func (*IPConnection) RegisterConnectCallback(func(reason ConnectReason)) (registrationID uint64)
 
  Dieses Callback wird aufgerufen wenn die IP Connection eine Verbindung zu einem Brick Daemon oder einer WIFI/Ethernet Extension aufgebaut hat, mögliche Gründe sind:
 
@@ -200,7 +200,7 @@ wieder zu entfernen. Dieser erwartet eine Callback-ID, die von "Register*Callbac
  * ConnectReasonAutoReconnect: Verbindung aufgebaut durch Auto-Reconnect.
 
 
-.. go:function:: func (*IPConnection) RegisterDisconnectCallback(func(reason DisconnectReason)) (callbackID uint64)
+.. go:function:: func (*IPConnection) RegisterDisconnectCallback(func(reason DisconnectReason)) (registrationID uint64)
 
  Dieses Callback wird aufgerufen wenn die Verbindung der IP Connection zu einem Brick Daemon oder einer WIFI/Ethernet Extension getrennt wurde, mögliche Gründe sind:
 
