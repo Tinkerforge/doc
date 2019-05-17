@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/e-paper-296x128-bricklet.html
+:DISABLED_shoplink: ../../../shop/bricklets/e-paper-296x128-bricklet-bwg.html
 
 .. include:: EPaper_296x128.substitutions
    :start-after: >>>substitutions
