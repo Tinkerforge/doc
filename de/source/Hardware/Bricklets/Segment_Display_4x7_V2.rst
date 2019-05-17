@@ -17,6 +17,8 @@ Segment Display 4x7 Bricklet 2.0
 	Bricklets/bricklet_segment_display_4x7_v2_tilted2_[?|?].jpg          Segment Display 4x7 Bricklet 2.0
 	Bricklets/bricklet_segment_display_4x7_v2_top_[?|?].jpg              Segment Display 4x7 Bricklet 2.0
 	Bricklets/bricklet_segment_display_4x7_v2_side_[?|?].jpg             Segment Display 4x7 Bricklet 2.0
+	Bricklets/bricklet_segment_display_4x7_v2_active_bright_[?|?].jpg    Segment Display 4x7 Bricklet 2.0
+	Bricklets/bricklet_segment_display_4x7_v2_active_dark_[?|?].jpg      Segment Display 4x7 Bricklet 2.0
 	Bricklets/bricklet_segment_display_4x7_v2_brickv_[100|].jpg          Segment Display 4x7 Bricklet 2.0 im Brick Viewer
 	Dimensions/segment_display_4x7_v2_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
 
@@ -47,6 +49,15 @@ Zähler.
 
 Das Segment Display 4x7 Bricklet 2.0 hat einen 7 Pol Bricklet Stecker und wird
 mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
+
+.. raw:: html
+ 
+	<video class="align-center" max-width="100%" width="600px" height="auto" controls loop>
+	  <source src="../../_images/Videos/bricklet_segment_display_4x7_v2_video.mp4" type="video/mp4">
+	  <source src="../../_images/Videos/bricklet_segment_display_4x7_v2_video.ogg" type="video/ogg">
+	  <source src="../../_images/Videos/bricklet_segment_display_4x7_v2_video.webm" type="video/webm">
+	</video>
+
 
 Technische Spezifikation
 ------------------------

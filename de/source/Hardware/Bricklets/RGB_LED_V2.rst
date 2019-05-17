@@ -16,6 +16,7 @@ RGB LED Bricklet 2.0
 
 	Bricklets/bricklet_rgb_led_v2_tilted_[?|?].jpg           RGB LED Bricklet 2.0
 	Bricklets/bricklet_rgb_led_v2_top_[?|?].jpg              RGB LED Bricklet 2.0
+	Bricklets/bricklet_rgb_led_v2_bright_vs_dark_[?|?].jpg   RGB LED Bricklet 2.0
 	Bricklets/bricklet_rgb_led_v2_brickv_[100|].jpg          RGB LED Bricklet 2.0 im Brick Viewer
 	Dimensions/rgb_led_v2_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
 
@@ -47,6 +48,14 @@ erscheint.
 
 Das RGB LED Bricklet 2.0 hat einen 7 Pol Bricklet Stecker und wird
 mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
+
+.. raw:: html
+ 
+	<video class="align-center" max-width="100%" width="400px" height="auto" controls loop>
+	  <source src="../../_images/Videos/bricklet_rgb_led_v2_video.mp4" type="video/mp4">
+	  <source src="../../_images/Videos/bricklet_rgb_led_v2_video.ogg" type="video/ogg">
+	  <source src="../../_images/Videos/bricklet_rgb_led_v2_video.webm" type="video/webm">
+	</video>
 
 
 Technische Spezifikation

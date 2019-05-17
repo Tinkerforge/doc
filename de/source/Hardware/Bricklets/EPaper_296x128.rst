@@ -56,6 +56,14 @@ unterschiedlichen Aktualisierungs-Modi ist es möglich Aktualisierungsraten von 
 Das E-Paper 296x128 Bricklet 2.0 hat einen 7 Pol Bricklet Stecker und wird
 mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
 
+.. raw:: html
+ 
+	<video class="align-center" max-width="100%" width="100%" height="auto" controls loop>
+	  <source src="../../_images/Videos/bricklet_e_paper_296x128_video.mp4" type="video/mp4">
+	  <source src="../../_images/Videos/bricklet_e_paper_296x128_video.ogg" type="video/ogg">
+	  <source src="../../_images/Videos/bricklet_e_paper_296x128_video.webm" type="video/webm">
+	</video>
+
 
 Technische Spezifikation
 ------------------------
