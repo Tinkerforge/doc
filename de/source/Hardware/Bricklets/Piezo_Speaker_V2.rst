@@ -17,7 +17,6 @@ Piezo Speaker Bricklet 2.0
 	Bricklets/bricklet_piezo_speaker_v2_tilted_[?|?].jpg           Piezo Speaker Bricklet 2.0
 	Bricklets/bricklet_piezo_speaker_v2_top_[?|?].jpg              Piezo Speaker Bricklet 2.0
 	Bricklets/bricklet_piezo_speaker_v2_side_[?|?].jpg             Piezo Speaker Bricklet 2.0
-	Cases/bricklet_piezo_speaker_v2_case_[100|600].jpg             Piezo Speaker Bricklet 2.0 im Geh채use
 	Bricklets/bricklet_piezo_speaker_v2_brickv_[100|].jpg          Piezo Speaker Bricklet 2.0 im Brick Viewer
 	Dimensions/piezo_speaker_v2_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
 
@@ -149,6 +148,8 @@ die Lautst채rke im Bereich 5-10 ist gut geeignet f체r laute und nervige Alarm-T�
 
 Geh채use
 -------
+
+Comming soon...
 
 ..
 	Ein `laser-geschnittenes Geh채use f체r das Piezo Speaker Bricklet 2.0
