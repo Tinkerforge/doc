@@ -24,6 +24,12 @@ Piezo Speaker Bricklet
 
 	{% tfgalleryend %}
 
+.. note::
+
+ The Piezo Speaker Bricklet is discontinued. We are selling our remaining stock. The
+ :ref:`Piezo Speaker Bricklet 2.0 <piezo_speaker_v2_bricklet>` is the recommended
+ replacement.
+
 
 Features
 --------

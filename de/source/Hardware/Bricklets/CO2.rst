@@ -22,6 +22,12 @@ CO2 Bricklet
 
 	{% tfgalleryend %}
 
+.. note::
+
+ Das CO2 Bricklet Bricklet ist abgekündigt und wird nicht mehr verkauft.
+ Als Ersatz wird das :ref:`CO2 Bricklet 2.0 <co2_v2_bricklet>`
+ empfohlen.
+
 
 Features
 --------

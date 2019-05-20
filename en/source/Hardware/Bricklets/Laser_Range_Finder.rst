@@ -22,6 +22,12 @@ Laser Range Finder Bricklet
 
 	{% tfgalleryend %}
 
+.. note::
+
+ The Laser Range Finder Bricklet is discontinued and is no longer sold. The
+ :ref:`Laser Range Finder Bricklet 2.0 <laser_range_finder_v2_bricklet>` is the recommended
+ replacement.
+
 
 Features
 --------

@@ -23,6 +23,12 @@ Segment Display 4x7 Bricklet
 
 	{% tfgalleryend %}
 
+.. note::
+
+ The Segment Display 4x7 Bricklet is discontinued. We are selling our remaining stock. The
+ :ref:`Segment Display 4x7 Bricklet 2.0 <segment_display_4x7_v2_bricklet>` is the recommended
+ replacement.
+
 
 Features
 --------

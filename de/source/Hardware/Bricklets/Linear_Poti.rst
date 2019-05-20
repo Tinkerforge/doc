@@ -27,6 +27,12 @@ Linear Poti Bricklet
 
 	{% tfgalleryend %}
 
+.. note::
+
+ Das Linear Poti Bricklet ist abgekündigt. Wir verkaufen noch unseren restlichen Lagerbestand.
+ Als Ersatz wird das :ref:`Linear Poti Bricklet 2.0 <linear_poti_v2_bricklet>`
+ empfohlen.
+
 
 Features
 --------

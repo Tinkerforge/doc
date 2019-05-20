@@ -24,6 +24,12 @@ Features
 
 	{% tfgalleryend %}
 
+.. note::
+
+ Das RGB LED Bricklet ist abgekündigt. Wir verkaufen noch unseren restlichen Lagerbestand.
+ Als Ersatz wird das :ref:`RGB LED Bricklet 2.0 <rgb_led_v2_bricklet>`
+ empfohlen.
+
 
 Features
 --------

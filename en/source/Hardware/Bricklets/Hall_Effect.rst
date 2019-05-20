@@ -24,6 +24,12 @@ Hall Effect Bricklet
 
 	{% tfgalleryend %}
 
+.. note::
+
+ The Hall Effect Bricklet is discontinued. We are selling our remaining stock. The
+ :ref:`Hall Effect Bricklet 2.0 <hall_effect_v2_bricklet>` is the recommended
+ replacement.
+
 
 Features
 --------

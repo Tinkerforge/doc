@@ -25,6 +25,12 @@ Joystick Bricklet
 
 	{% tfgalleryend %}
 
+.. note::
+
+ Das Joystick Bricklet ist abgekündigt. Wir verkaufen noch unseren restlichen Lagerbestand.
+ Als Ersatz wird das :ref:`Joystick Bricklet 2.0 <joystick_v2_bricklet>`
+ empfohlen.
+
 
 Features
 --------

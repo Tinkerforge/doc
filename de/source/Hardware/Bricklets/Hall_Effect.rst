@@ -24,6 +24,12 @@ Hall Effect Bricklet
 
 	{% tfgalleryend %}
 
+.. note::
+
+ Das Hall Effect Bricklet ist abgekündigt. Wir verkaufen noch unseren restlichen Lagerbestand.
+ Als Ersatz wird das :ref:`Hall Effect Bricklet 2.0 <hall_effect_v2_bricklet>`
+ empfohlen.
+
 
 Features
 --------

@@ -21,6 +21,11 @@ RGB LED Bricklet
 
 	{% tfgalleryend %}
 
+.. note::
+
+ The RGB LED Bricklet is discontinued. We are selling our remaining stock. The
+ :ref:`RGB LED Bricklet 2.0 <rgb_led_v2_bricklet>` is the recommended
+ replacement.
 
 
 Features

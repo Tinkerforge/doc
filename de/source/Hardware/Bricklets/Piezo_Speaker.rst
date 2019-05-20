@@ -24,6 +24,12 @@ Piezo Speaker Bricklet
 
 	{% tfgalleryend %}
 
+.. note::
+
+ Das Piezo Speaker Bricklet ist abgekündigt. Wir verkaufen noch unseren restlichen Lagerbestand.
+ Als Ersatz wird das :ref:`Piezo Speaker Bricklet 2.0 <piezo_speaker_v2_bricklet>`
+ empfohlen.
+
 
 Features
 --------
