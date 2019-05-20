@@ -1,6 +1,4 @@
 
-:shoplink: ../../../shop/bricklets/co2-bricklet.html
-
 .. include:: CO2.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
