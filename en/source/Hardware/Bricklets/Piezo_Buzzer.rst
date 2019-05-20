@@ -24,7 +24,7 @@ Piezo Buzzer Bricklet
 .. note::
 
  The Piezo Buzzer Bricklet is discontinued and is no longer sold. The
- :ref:`Piezo Speaker Bricklet <piezo_speaker_bricklet>` is the recommended
+ :ref:`Piezo Speaker Bricklet 2.0 <piezo_speaker_v2_bricklet>` is the recommended
  replacement.
 
 
