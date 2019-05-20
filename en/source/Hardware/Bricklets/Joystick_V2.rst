@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/joystick-v2-bricklet.html
+:shoplink: ../../../shop/bricklets/joystick-v2-bricklet.html
 
 .. include:: Joystick_V2.substitutions
    :start-after: >>>substitutions

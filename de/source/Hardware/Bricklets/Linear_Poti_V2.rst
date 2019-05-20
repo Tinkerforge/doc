@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/linear-poti-v2-bricklet.html
+:shoplink: ../../../shop/bricklets/linear-poti-v2-bricklet.html
 
 .. include:: Linear_Poti_V2.substitutions
    :start-after: >>>substitutions

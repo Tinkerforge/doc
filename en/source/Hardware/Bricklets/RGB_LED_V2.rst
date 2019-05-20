@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/rgb-led-v2-bricklet.html
+:shoplink: ../../../shop/bricklets/rgb-led-v2-bricklet.html
 
 .. include:: RGB_LED_V2.substitutions
    :start-after: >>>substitutions

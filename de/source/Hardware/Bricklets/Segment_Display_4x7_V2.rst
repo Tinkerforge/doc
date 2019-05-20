@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/segment-display-4x7-v2-bricklet.html
+:shoplink: ../../../shop/bricklets/segment-display-4x7-v2-bricklet.html
 
 .. include:: Segment_Display_4x7_V2.substitutions
    :start-after: >>>substitutions

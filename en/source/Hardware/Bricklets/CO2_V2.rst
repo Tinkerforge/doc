@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/co2-v2-bricklet.html
+:shoplink: ../../../shop/bricklets/co2-v2-bricklet.html
 
 .. include:: CO2_V2.substitutions
    :start-after: >>>substitutions

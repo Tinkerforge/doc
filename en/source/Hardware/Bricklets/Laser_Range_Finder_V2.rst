@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/laser-range-finder-v2-bricklet.html
+:shoplink: ../../../shop/bricklets/laser-range-finder-v2-bricklet.html
 
 .. include:: Laser_Range_Finder_V2.substitutions
    :start-after: >>>substitutions

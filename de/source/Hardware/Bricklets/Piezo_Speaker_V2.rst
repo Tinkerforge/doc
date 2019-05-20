@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/piezo-speaker-v2-bricklet.html
+:shoplink: ../../../shop/bricklets/piezo-speaker-v2-bricklet.html
 
 .. include:: Piezo_Speaker_V2.substitutions
    :start-after: >>>substitutions
