@@ -17,6 +17,7 @@ Piezo Speaker Bricklet 2.0
 	Bricklets/bricklet_piezo_speaker_v2_tilted_[?|?].jpg           Piezo Speaker Bricklet 2.0
 	Bricklets/bricklet_piezo_speaker_v2_top_[?|?].jpg              Piezo Speaker Bricklet 2.0
 	Bricklets/bricklet_piezo_speaker_v2_side_[?|?].jpg             Piezo Speaker Bricklet 2.0
+	Cases/bricklet_piezo_speaker_v2_case_front_[?|?].jpg           Piezo Speaker Bricklet 2.0 im Gehäuse
 	Bricklets/bricklet_piezo_speaker_v2_brickv_[100|].jpg          Piezo Speaker Bricklet 2.0 im Brick Viewer
 	Dimensions/piezo_speaker_v2_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
 
