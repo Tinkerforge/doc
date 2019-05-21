@@ -18,7 +18,6 @@ CO2 Bricklet 2.0
 	Bricklets/bricklet_co2_v2_tilted2_[?|?].jpg          CO2 Bricklet 2.0
 	Bricklets/bricklet_co2_v2_top_[?|?].jpg              CO2 Bricklet 2.0
 	Bricklets/bricklet_co2_v2_side_[?|?].jpg             CO2 Bricklet 2.0
-	Cases/bricklet_co2_v2_case_[100|600].jpg             CO2 Bricklet 2.0 with case
 	Bricklets/bricklet_co2_v2_brickv_[100|].jpg          CO2 Bricklet 2.0 in Brick Viewer
 	Dimensions/co2_v2_bricklet_dimensions_[100|600].png  Outline and drilling plan
 
@@ -136,33 +135,6 @@ depicted below.
 
 |test_pi_ref|
 
-
-.. _co2_v2_bricklet_case:
-
-Case
-----
-
-..
-	A `laser-cut case for the CO2 Bricklet 2.0
-	<https://www.tinkerforge.com/en/shop/cases/case-co2-v2-bricklet.html>`__ is available.
-
-	.. image:: /Images/Cases/bricklet_co2_v2_case_350.jpg
-	   :scale: 100 %
-	   :alt: Case for CO2 Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_co2_v2_case_1000.jpg
-
-	.. include:: CO2_V2.substitutions
-	   :start-after: >>>bricklet_case_steps
-	   :end-before: <<<bricklet_case_steps
-
-	.. image:: /Images/Exploded/co2_v2_exploded_350.png
-	   :scale: 100 %
-	   :alt: Exploded assembly drawing for CO2 Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Exploded/co2_v2_exploded.png
-
-	|bricklet_case_hint|
 
 
 .. _co2_v2_bricklet_programming_interface:

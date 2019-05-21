@@ -18,7 +18,6 @@ CO2 Bricklet 2.0
 	Bricklets/bricklet_co2_v2_tilted2_[?|?].jpg          CO2 Bricklet 2.0
 	Bricklets/bricklet_co2_v2_top_[?|?].jpg              CO2 Bricklet 2.0
 	Bricklets/bricklet_co2_v2_side_[?|?].jpg             CO2 Bricklet 2.0
-	Cases/bricklet_co2_v2_case_[100|600].jpg             CO2 Bricklet 2.0 im Gehäuse
 	Bricklets/bricklet_co2_v2_brickv_[100|].jpg          CO2 Bricklet 2.0 im Brick Viewer
 	Dimensions/co2_v2_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
 
