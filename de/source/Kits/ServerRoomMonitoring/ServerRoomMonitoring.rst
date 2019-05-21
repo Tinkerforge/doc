@@ -70,9 +70,8 @@ Eine Nutzung ist auf zwei verschiedene Arten möglich:
    Alle Sensoren des Kits können aus der Ferne von anderen Rechnern per Ethernet
    über die angebotenen APIs (|bindings|) abgefragt werden. Somit können 
    individuelle Lösungen einfach realisiert werden. Beispiele für
-   :ref:`Bash <starter_kit_server_room_monitoring_simple_monitoring>`,
-   :ref:`Nagios/Icinga <starter_kit_server_room_monitoring_nagios_or_icinga_index>` und
-   :ref:`Xively <starter_kit_server_room_monitoring_upload_sensor_data_to_xively_index>`
+   :ref:`Bash <starter_kit_server_room_monitoring_simple_monitoring>` und
+   :ref:`Nagios/Icinga <starter_kit_server_room_monitoring_nagios_or_icinga_index>`
    demonstrieren die Nutzungsmöglichkeiten.
 
 2. **Eigenständige Überwachung** (Standardkit + RED Brick)
@@ -141,7 +140,6 @@ Ressourcen
 * Beispielquelltext für :ref:`Einfaches Monitoring <starter_kit_server_room_monitoring_simple_monitoring>` (Download: `Shell <https://raw.githubusercontent.com/Tinkerforge/server-room-monitoring/master/simple_monitoring/check_tf_temp_simple.sh>`__)
 * Beispielquelltext für :ref:`Nagios/Icinga Plugin <starter_kit_server_room_monitoring_nagios_or_icinga_index>` (Download: `Python <https://raw.githubusercontent.com/Tinkerforge/server-room-monitoring/master/nagios_icinga/check_tf_temp.py>`__)
 * Beispielquelltext für :ref:`Nagios/Icinga Extended Plugin <starter_kit_server_room_monitoring_extended_nagios_index>` (Download: `Python <https://raw.githubusercontent.com/Tinkerforge/server-room-monitoring/master/nagios_icinga/check_tf_temp_ext.py>`__)
-* Beispielquelltext für :ref:`Sensordaten an Xively übertragen <starter_kit_server_room_monitoring_upload_sensor_data_to_xively_index>` (Download: `Python <https://raw.githubusercontent.com/Tinkerforge/server-room-monitoring/master/xively/server_room_monitoring.py>`__)
 
 Erste Tests, Firmware-Aktualisierung und Konfiguration
 ------------------------------------------------------
@@ -374,33 +372,6 @@ Die vollständige Projektbeschreibung kann :ref:`hier
 Der Abschnitt über :ref:`Erweiterungsmöglichkeiten
 <starter_kit_server_room_monitoring_further_enhancements>` beinhaltet weitere
 Nagios/Icinga Beispiele.
-
-
-.. _starter_kit_server_room_monitoring_upload_sensor_data_to_xively_index:
-
-Sensordaten an Xively übertragen
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Bei `Xively <https://www.xively.com/>`__ handelt es sich um einen Dienst, der die
-Möglichkeit bietet das "Internet der Dinge" zu analysieren und zu visualisieren.
-Der Dienst kann dazu genutzt werden verschiedene Geräte über das Internet
-miteinander zu verbinden. Er kann eine Historie von Messwerten speichern und
-visualisieren.
-
-.. image:: /Images/Kits/server_room_monitoring_xively_350.jpg
-   :scale: 100 %
-   :alt: Xively Datenstrom konfiguration
-   :align: center
-   :target: ../../_images/Kits/server_room_monitoring_xively_orig.jpg
-
-Die vollständige Projektbeschreibung kann :ref:`hier
-<starter_kit_server_room_monitoring_upload_sensor_data_to_xively>`
-gefunden werden.
-
-.. toctree::
-   :hidden:
-
-   Details <UploadSensorDataToXively>
 
 
 .. _starter_kit_server_room_monitoring_further_enhancements:
