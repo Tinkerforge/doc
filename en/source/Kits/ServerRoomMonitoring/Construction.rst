@@ -147,8 +147,8 @@ back side part and the PTC Bricklet 2.0 on spacers on the bottom plate.
 
 Before the first usage the PTC Bricklet 2.0 has to be configured and the 
 temperature probe (2-wire) has to be attached. How this is done is documented
-:ref:`here <ptc_bricklet_v2_jumper_configuration>` and 
-:ref:`here <ptc_bricklet_v2_connectivity>`.
+:ref:`here <ptc_v2_bricklet_jumper_configuration>` and
+:ref:`here <ptc_v2_bricklet_connectivity>`.
 
 .. image:: /Images/Kits/server_room_monitoring_construction_step8_350.jpg
    :scale: 100 %
