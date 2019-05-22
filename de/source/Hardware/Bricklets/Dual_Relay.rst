@@ -210,7 +210,7 @@ Wir empfehlen die folgenden Leitungs- bzw. Abisolier-Längen:
    :scale: 100 %
    :alt: Empfohlene Kabellängen
    :align: center
-   :target: ../../_images/Cases/bricklet_dual_relay_case_cable_1000.jpg
+   :target: ../../_images/Cases/bricklet_dual_relay_case_cables_1000.jpg
 
 Der Aufbau ist am einfachsten wenn die folgenden Schritte befolgt werden:
 

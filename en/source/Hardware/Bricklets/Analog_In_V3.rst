@@ -135,7 +135,7 @@ is available.
    :scale: 100 %
    :alt: Exploded assembly drawing for Analog In Bricklet 3.0
    :align: center
-   :target: ../../_images/Exploded/analog_v2_in_exploded.png
+   :target: ../../_images/Exploded/analog_in_v2_exploded.png
 
 |bricklet_case_hint|
 

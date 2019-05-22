@@ -102,7 +102,7 @@ abhängig vom Schaltzustand des Relais.
    :scale: 100 %
    :alt: Industrial Dual Relay Bricklet Anschlussmöglichkeiten
    :align: center
-   :target: ../../_images/Bricklets/bricklet_industrial_dual_relay_connectivity_700.jpg
+   :target: ../../_images/Bricklets/bricklet_industrial_dual_relay_connectivity_800.jpg
 
 
 .. _industrial_dual_relay_bricklet_test:
