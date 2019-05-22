@@ -307,7 +307,7 @@ Read out connected sensors (adapt the UID):
  temperature=2603
 
 The shell bindings support the execution of additional shell commands with the
-``--execute`` option (see `Shell Bindings <ipcon_shell_output>`__ for more
+``--execute`` option (see :ref:`Shell Bindings <ipcon_shell_output>` for more
 information). The following script shows how to convert the returned value into
 degree Celsius and how to save it in a variable for further use.
 

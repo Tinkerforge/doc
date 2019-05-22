@@ -142,7 +142,7 @@ Brick Viewer.
    :scale: 100 %
    :alt: Complete brickv Master Brick tab
    :align: center
-   :target: ../../_images/Extensions/extension_wifi2_complete.jpg
+   :target: ../../_images/Extensions/extension_wifi2_brickv_complete.jpg
 
 .. _wifi_v2_extension_ports:
 
@@ -157,7 +157,7 @@ cases they can stay unchanged.
    :scale: 100 %
    :alt: WIFI Extension 2.0 port configuration
    :align: center
-   :target: ../../_images/Extensions/extension_wifi2_ports.jpg
+   :target: ../../_images/Extensions/extension_wifi2_brickv_ports.jpg
 
 PHY Modes
 ^^^^^^^^^
@@ -174,7 +174,7 @@ are available. PHY mode N can't be used if the access point is enabled.
    :scale: 100 %
    :alt: WIFI Extension 2.0 phy mode configuration
    :align: center
-   :target: ../../_images/Extensions/extension_wifi2_phy_mode.jpg
+   :target: ../../_images/Extensions/extension_wifi2_brickv_phy_mode.jpg
 
 .. _wifi_v2_extension_authentication:
 
@@ -191,7 +191,7 @@ and restarting the Master Brick authentication is enabled.
    :scale: 100 %
    :alt: WIFI Extension 2.0 phy authentication configuration
    :align: center
-   :target: ../../_images/Extensions/extension_brickv_wifi2_authentication.jpg
+   :target: ../../_images/Extensions/extension_wifi2_brickv_authentication.jpg
 
 Now every TCP/IP connection to the WIFI Extension 2.0 has to prove to the
 Master Brick that it knows the authentication secret before normal communication

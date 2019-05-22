@@ -115,7 +115,7 @@ occur anymore.
    :scale: 100 %
    :alt: Moisture Bricklet hardware version 1.0
    :align: center
-   :target: ../../_images/Cases/bricklet_moisture_tilted_1000.jpg
+   :target: ../../_images/Bricklets/bricklet_moisture_tilted_1000.jpg
 
 .. _moisture_bricklet_case:
 

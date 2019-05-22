@@ -115,7 +115,7 @@ A `laser-cut case for the CAN Bricklet 2.0
    :scale: 100 %
    :alt: Case for CAN Bricklet 2.0
    :align: center
-   :target: ../../_images/Cases/bricklet_can_built_up1_case_1000.jpg
+   :target: ../../_images/Cases/bricklet_can_case_built_up1_1000.jpg
 
 .. include:: CAN_V2.substitutions
    :start-after: >>>bricklet_case_steps

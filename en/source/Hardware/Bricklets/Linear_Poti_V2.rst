@@ -110,7 +110,7 @@ Case
 ----
 
 A `laser-cut case for the Linear Poti Bricklet 2.0
-<https://www.tinkerforge.com/en/shop/cases/case-linear-poti-v2-bricklet.html>`__ is available.
+<https://www.tinkerforge.com/en/shop/cases/case-linear-poti-bricklet.html>`__ is available.
 
 .. image:: /Images/Cases/bricklet_linear_poti_case_350.jpg
    :scale: 100 %

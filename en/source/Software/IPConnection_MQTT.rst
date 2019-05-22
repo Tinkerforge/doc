@@ -24,7 +24,7 @@ The example code below is `Public Domain (CC0 1.0)
 Enumerate
 ^^^^^^^^^
 
-`Download (example_enumerate.txt) <https://raw.githubusercontent.com/Tinkerforge/generators/master/mqtt/example_enumerate.txt>`__
+`Download (example_enumerate.txt) <https://raw.githubusercontent.com/Tinkerforge/generators/master/mqtt/example-enumerate.txt>`__
 
 .. literalinclude:: IPConnection_MQTT_example-enumerate.txt
  :linenos:
@@ -34,7 +34,7 @@ Enumerate
 Authenticate
 ^^^^^^^^^^^^
 
-`Download (example_authenticate.txt) <https://raw.githubusercontent.com/Tinkerforge/generators/master/mqtt/example_authenticate.txt>`__
+`Download (example_authenticate.txt) <https://raw.githubusercontent.com/Tinkerforge/generators/master/mqtt/example-authenticate.txt>`__
 
 .. literalinclude:: IPConnection_MQTT_example-authenticate.txt
  :linenos:

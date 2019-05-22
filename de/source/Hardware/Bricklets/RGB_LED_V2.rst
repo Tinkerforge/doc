@@ -80,7 +80,7 @@ Gewicht                           3g
 Ressourcen
 ----------
 
-* QBLP679E-RGB Datenblatt (`Download <https://github.com/Tinkerforge/rgb-led-bricklet/raw/master/datasheets/QBLP679E-RGB.pdf>`__)
+* QBLP679E-RGB Datenblatt (`Download <https://github.com/Tinkerforge/rgb-led-v2-bricklet/raw/master/datasheets/QBLP679E-RGB.pdf>`__)
 * Schaltplan (`Download <https://github.com/Tinkerforge/rgb-led-v2-bricklet/raw/master/hardware/rgb-led-v2-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/rgb_led_v2_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/rgb-led-v2-bricklet/zipball/master>`__)

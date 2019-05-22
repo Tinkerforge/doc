@@ -276,7 +276,7 @@ Bild dargestellt.
    :scale: 100 %
    :alt: DC Brick im Stapel mit Master Brick und Step-Down Power Supply, mit angeschlossenem Motor und Rotary Poti Bricklet
    :align: center
-   :target: ../_images/Tutorial/tutorial_2_1200.jpg
+   :target: ../../_images/Tutorial/tutorial_2_1200.jpg
 
 Einen Moment nachdem der Master Brick über USB an den PC angeschlossen wurde
 sollte der Brick Viewer Tabs für alle drei Teilnehmer des Stapels anzeigen

@@ -144,7 +144,7 @@ konfiguriert werden.
    :scale: 100 %
    :alt: Kompletter Brickv Master Brick Tab
    :align: center
-   :target: ../../_images/Extensions/extension_wifi2_complete.jpg
+   :target: ../../_images/Extensions/extension_wifi2_brickv_complete.jpg
 
 .. _wifi_v2_extension_ports:
 
@@ -160,7 +160,7 @@ notwendig.
    :scale: 100 %
    :alt: WIFI Extension 2.0 Port Konfiguration
    :align: center
-   :target: ../../_images/Extensions/extension_wifi2_ports.jpg
+   :target: ../../_images/Extensions/extension_wifi2_brickv_ports.jpg
 
 PHY Modus
 ^^^^^^^^^
@@ -178,7 +178,7 @@ aktiviert ist
    :scale: 100 %
    :alt: WIFI Extension 2.0 PHY Modus Konfiguration
    :align: center
-   :target: ../../_images/Extensions/extension_wifi2_phy_mode.jpg
+   :target: ../../_images/Extensions/extension_wifi2_brickv_phy_mode.jpg
 
 .. _wifi_v2_extension_authentication:
 
@@ -196,7 +196,7 @@ und der Master Brick neugestartet wurde ist Authentifizierung aktiv.
    :scale: 100 %
    :alt: WIFI Extension 2.0 Authentifizierung Konfiguration
    :align: center
-   :target: ../../_images/Extensions/extension_brickv_wifi2_authentication.jpg
+   :target: ../../_images/Extensions/extension_wifi2_brickv_authentication.jpg
 
 Bei aktivierter Authentifizierung muss jede TCP/IP Verbindung zur WIFI Extension zuerst nachweisen,
 dass sie das Authentifizierungsgeheimnis kennt, bevor normale Kommunikation

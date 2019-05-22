@@ -91,7 +91,7 @@ header. But only one of these connectors can be used at the same time.
    :scale: 100 %
    :alt: RS232 Bricklet pinout
    :align: center
-   :target: ../../_images/Bricklets/bricklet_industrial_rs232_horizontal_1200.jpg
+   :target: ../../_images/Bricklets/bricklet_rs232_horizontal_1200.jpg
 
 D-Sub 9 Connector
 ^^^^^^^^^^^^^^^^^

@@ -331,7 +331,7 @@ you will set back all sliders to their default values.
    :scale: 100 %
    :alt: Blinkenlights Demo Application Screenshot: Fire
    :align: center
-   :target: ../../_images/Kits/blinkenlights_demo_fire_1200.jpg
+   :target: ../../_images/Kits/blinkenlights_demo_fire.jpg
 
 The standalone :ref:`Python <api_bindings_python>` project can be downloaded from
 `GitHub <https://github.com/Tinkerforge/blinkenlights/tree/master/fire/python>`__.

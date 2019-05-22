@@ -346,7 +346,7 @@ werden.
    :scale: 100 %
    :alt: Screenshot Blinkenlights Demoanwendung: Fire
    :align: center
-   :target: ../../_images/Kits/blinkenlights_demo_fire_1200.jpg
+   :target: ../../_images/Kits/blinkenlights_demo_fire.jpg
 
 Das einzelne :ref:`Python <api_bindings_python>` Projekt kann von
 `GitHub <https://github.com/Tinkerforge/blinkenlights/tree/master/fire/python>`__

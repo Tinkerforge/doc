@@ -382,7 +382,7 @@ A `laser-cut case for the Industrial Counter Bricklet
    :scale: 100 %
    :alt: Exploded assembly drawing for Industrial Counter Bricklet
    :align: center
-   :target: ../../_images/Exploded/industria_exploded.png
+   :target: ../../_images/Exploded/industrial_exploded.png
 
 |bricklet_case_hint|
 

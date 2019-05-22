@@ -372,7 +372,7 @@ Ein `laser-geschnittenes Gehäuse für das LED Strip Bricklet 2.0
    :align: center
    :target: ../../_images/Cases/bricklet_led_strip_v2_case_1000.jpg
 
-.. include:: LED_Strip.substitutions
+.. include:: LED_Strip_V2.substitutions
    :start-after: >>>bricklet_case_steps
    :end-before: <<<bricklet_case_steps
 

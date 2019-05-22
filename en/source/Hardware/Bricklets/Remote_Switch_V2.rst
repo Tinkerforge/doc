@@ -75,7 +75,7 @@ Resources
 
 * RFM69HW datasheet (`Download <https://github.com/Tinkerforge/remote-switch-v2-bricklet/raw/master/datasheets/RFM69HW.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/remote-switch-v2-bricklet/raw/master/hardware/remote-switch-v2-schematic.pdf>`__)
-* Outline and drilling plan (`Download <../../_images/Dimensions/remote_bricklet_dimensions.png>`__)
+* Outline and drilling plan (`Download <../../_images/Dimensions/remote_switch_v2_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/remote-switch-v2-bricklet/zipball/master>`__)
 * 3D model (`View online <http://autode.sk/2BK1DJ4>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/remote_switch_v2/remote-switch-v2.step>`__,  `FreeCAD <http://download.tinkerforge.com/3d/bricklets/remote_switch_v2/remote-switch-v2.FCStd>`__)
 

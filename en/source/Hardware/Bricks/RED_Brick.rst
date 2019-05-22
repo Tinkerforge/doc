@@ -761,7 +761,7 @@ all Python programs::
 
 The default web interface of the RED Brick uses Python/Flask.
 You can find the code
-`on GitHub <https://github.com/Tinkerforge/red-brick/blob/master/image/patches/root-fs/common/tmp/index.py>`__.
+`on GitHub <https://github.com/Tinkerforge/red-brick/blob/master/image/patches/root-fs/common/tmp/index.wsgi>`__.
 
 It is of course also possible to use templates, static files and so on. You
 can just use them as it is shown in most Flask tutorials.

@@ -354,9 +354,9 @@ A `laser-cut case for the LED Strip Bricklet 2.0
    :scale: 100 %
    :alt: Case for LED Strip Bricklet
    :align: center
-   :target: ../../_images/Cases/bricklet_led_strip_case_v2_case_1000.jpg
+   :target: ../../_images/Cases/bricklet_led_strip_v2_case_1000.jpg
 
-.. include:: LED_Strip.substitutions
+.. include:: LED_Strip_V2.substitutions
    :start-after: >>>bricklet_case_steps
    :end-before: <<<bricklet_case_steps
 

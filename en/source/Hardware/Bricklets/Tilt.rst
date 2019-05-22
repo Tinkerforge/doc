@@ -100,7 +100,7 @@ A `laser-cut case for the Tilt Bricklet
    :scale: 100 %
    :alt: Case for Tilt Bricklet
    :align: center
-   :target: ../../_images/Cases/bricklet_tilt_case_tilt_front_1000.jpg
+   :target: ../../_images/Cases/bricklet_tilt_case_tilted_front_1000.jpg
 
 .. include:: Tilt.substitutions
    :start-after: >>>bricklet_case_steps
