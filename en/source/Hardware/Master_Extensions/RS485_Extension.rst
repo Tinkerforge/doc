@@ -45,20 +45,14 @@ be used exactly the same way as if they were both connected via USB.
 It is also possible to create a bus with several RS485 Extension where
 only one is connected via USB, Ethernet or WIFI to a PC (many-to-one routing).
 
-:ref:`Modbus RTU <llproto_modbus>` is used as the
-protocol on the RS485 interface. This allows to use a stack of Bricks
-and Bricklets with an RS485 Extension to be integrated in existing
-Modbus networks. It is also possible to communicate with a stack
-directly via Modbus from an embedded device or over a Modbus gateway.
-
 The following combinations with other Extensions in a stack are possible
 (regardless of order):
 
-* RS485 Master / Chibi Slave
 * RS485 Master / Ethernet
 * RS485 Master / WIFI
 * RS485 Master / WIFI 2.0
-* RS485 Slave / Chibi Master
+* RS485 Master / Chibi Slave [discontinued]
+* RS485 Slave / Chibi Master [discontinued]
 
 
 Technical Specifications

@@ -46,20 +46,14 @@ benutzt werden als wenn sie einzeln per USB angeschlossen wären.
 Es ist möglich einen Bus mit mehreren RS485 Extension zu betreiben, dabei
 muss einer per USB, Ethernet oder WLAN verbunden sein (Many-to-One Routing).
 
-:ref:`Modbus RTU <llproto_modbus>` wird als Protokoll auf der RS485
-Schnittstelle genutzt. Dadurch ist es möglich Stapel aus Bricks und Bricklets
-mit RS485 Extension in ein vorhandenes Modbus Netzwerk zu integrieren. Es ist
-auch möglich direkt mit einem Stapel über Modbus zu kommunizieren, z.B. über
-ein eingebettetes Gerät oder über einen Modbus Gateway.
-
 Die folgenden Kombinationen von Extensions in einem Stapel sind möglich.
 Die Reihenfolge im Stapel ist dabei nicht relevant:
 
-* RS485 Master / Chibi Slave
 * RS485 Master / Ethernet
 * RS485 Master / WIFI
 * RS485 Master / WIFI 2.0
-* RS485 Slave / Chibi Master
+* RS485 Master / Chibi Slave [abgekündigt]
+* RS485 Slave / Chibi Master [abgekündigt]
 
 Technische Spezifikation
 ------------------------
