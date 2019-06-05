@@ -19,8 +19,8 @@ RS485 Bricklet
 	Bricklets/bricklet_rs485_bottom_[?|?].jpg           RS485 Bricklet
 	Cases/bricklet_rs485_case_built_up1_[?|?].jpg       RS485 Bricklet in case
 	Cases/bricklet_rs485_case_built_up2_[?|?].jpg       RS485 Bricklet in case
-	Bricklets/bricklet_rs485_brickv_[100|].jpg          RS485 Bricklet in Brick Viewer
-	Bricklets/bricklet_rs485_brickv_modbus_[100|].jpg   RS485 Bricklet in Brick Viewer
+	Bricklets/bricklet_rs485_brickv_[100|].png          RS485 Bricklet in Brick Viewer
+	Bricklets/bricklet_rs485_brickv_modbus_[100|].png   RS485 Bricklet in Brick Viewer
 	Dimensions/rs485_bricklet_dimensions_[100|600].png  Outline and drilling plan
 
 	{% tfgalleryend %}
@@ -29,8 +29,8 @@ RS485 Bricklet
 Features
 --------
 
-* Unterstützt low-level RS485 sowie Modbus RTU Master/Slave
-* Modbus RTU Implementierung Standardkonform für alle Read/Write Funktionen von Coils und Registern
+* Unterstützt low-level RS485 sowie Modbus-RTU-Master/Slave
+* Modbus-RTU-Implementierung standardkonform für alle Read/Write-Funktionen von Coils und Registern
 * Unterstützt Halb- und Voll-Duplex
 * Konfigurierbare Baudrate, Parität, Stoppbits und Wortlänge
 * Schaltbare 120 Ohm Terminierung
@@ -50,12 +50,12 @@ Es unterstützt Halb- und Voll-Duplex und hat eine konfigurierbare Terminierung.
 Das Bricklet hat drei Modi:
 
 * RS485,
-* Modbus RTU Master und
-* Modbus RTU Slave.
+* Modbus-RTU-Master und
+* Modbus-RTU-Slave.
 
 Im RS485-Modus können beliebige Daten empfangen und gesendet werden. Die Modbus-Modi
-sind Modbus-Standardkonform. Im  Modbus RTU Master-Modus können beliebige Coils/Register
-von einem Slave gelesen und gesetzt werden. Im Modbus RTU Slave-Modus ist möglich Daten
+sind Modbus-Standardkonform. Im  Modbus-RTU-Master-Modus können beliebige Coils/Register
+von einem Slave gelesen und gesetzt werden. Im Modbus-RTU-Slave-Modus ist möglich Daten
 für Coils/Register bereitzustellen und über eine Modbus-Master Schreiboperation
 zu empfangen.
 
@@ -133,45 +133,44 @@ Terminierung kann ein- und aus-geschaltet werden.
 Eine Legende mit den unterschiedlichen Konfigurationsmöglichkeiten befindet sich auch
 auf der Unterseite des Bricklets.
 
-Modbus RTU Funktionen
+Modbus-RTU-Funktionen
 ---------------------
 
-Im Modbus Master/Slave-Modus können Modbus Nachrichten gesendet und empfangen
-werden. Zum Beispiel kann ein Modbus Master eine Anfrage an einen Modbus Slave
-senden. Die Modbus Funktionen basieren auf Callbacks.
+Im Modbus-Master/Slave-Modus können Modbus-Nachrichten gesendet und empfangen
+werden. Zum Beispiel kann ein Modbus-Master eine Anfrage an einen Modbus-Slave
+senden. Die Modbus-Funktionen basieren auf Callbacks.
 
-Zum besseren Verständnis des generellen Konzepts Beschreiben wir hier ein
-Szenario. In diesem Szenario sind zwei RS485 Bricklets im Bus. Eins ist im
-Modbus Master-Modus und das andere ist im Modbus Slave-Modus.
+Zum besseren Verständnis des generellen Konzepts beschreiben wir hier ein
+Szenario. In diesem Szenario sind zwei RS485-Bricklets im Bus. Eins ist im
+Modbus-Master-Modus und das andere ist im Modbus-Slave-Modus. Der Modbus-Master möchte 4 Register beginnend mit dem Register 400002 (also dem zweiten Holding Register) vom Modbus-Slave mit Adresse 8 lesen:
 
-1. Der Modbus Master liest 4 Register mit Startadresse 2 vom Modbus Slave
-   mit Adresse 8.
-2. Dazu registriert der Master den *modbus_master_read_holding_registers_response*
+1. Dazu registriert der Master den *modbus_master_read_holding_registers_response*
    Callback, welcher ausgeführt wird, wenn der Slave auf eine Anfrage des Masters
-   antwortet. Das Bricklet welches im Slave-Modus operiert muss sich auf den
+   antwortet. Das Bricklet welches im Slave-Modus operiert, muss sich auf den
    *modbus_slave_read_holding_registers_request* registrieren. Dieser
    wird bei Empfangen einer Anfrage aufgerufen.
-3. Der Master ruf die Funktion *modbus_master_read_holding_registers* auf.
-   Die Parameter der Funktion bestehen aus einer Slave-Adresse, einer
-   Register Startadresse und der Anzahl der zu lesenden Register. Diese Funktion
-   sendet die Anfrage auf dem Bus.
-4. Auf der Slave-Seite wird der registrierte Callback aufgerufen, die Parameter
-   zeigen, dass der Master 4 Register mit Startadresse 2 lesen möchte.
-5. Der Slave ruft die Funktion *modbus_slave_answer_read_holding_registers_request*
+2. Der Master ruft die Funktion *modbus_master_read_holding_registers* auf.
+   Die Parameter der Funktion sind die Slave-Adresse, die Nummer des ersten Registers
+   und die Anzahl der zu lesenden Register. Dabei ist die Präfix-Ziffer 4, die das
+   Register als Holding Register ausweist, implizit. Es muss also nur 2 als Registernummer übergeben werden.
+   Die Funktion sendet die Anfrage auf dem Bus.
+3. Auf der Slave-Seite wird der registrierte Callback aufgerufen. Die Parameter
+   zeigen, dass der Master 4 Holding Register beginnend beim Register 2 lesen möchte.
+4. Der Slave ruft die Funktion *modbus_slave_answer_read_holding_registers_request*
    mit den angeforderten Daten auf, diese sendet die Antwort auf dem Bus.
-6. Nach Empfang der Antwort wird beim Master der Callback
+5. Nach Empfang der Antwort wird beim Master der Callback
    *modbus_master_read_holding_registers_response* aufgerufen mit den angeforderten
    Daten aufgerufen.
 
-Für Details dieser Funktionen siehe :ref:`programming interface <rs485_bricklet_programming_interface>`.
+Für Details dieser Funktionen siehe :ref:`Programmierschnittstelle <rs485_bricklet_programming_interface>`.
 
-Alle Verfügbaren Modbus Funktionen können auch über den Brick Viewer ausprobiert werden:
+Alle Verfügbaren Modbus-Funktionen können auch über den Brick Viewer ausprobiert werden:
 
-.. image:: /Images/Bricklets/bricklet_rs485_brickv_modbus.jpg
+.. image:: /Images/Bricklets/bricklet_rs485_brickv_modbus.png
    :scale: 100 %
    :alt: RS485 Bricklet im Brick Viewer
    :align: center
-   :target: ../../_images/Bricklets/bricklet_rs485_brickv_modbus.jpg
+   :target: ../../_images/Bricklets/bricklet_rs485_brickv_modbus.png
 
 
 .. _rs485_bricklet_test:
@@ -182,19 +181,20 @@ Erster Test
 |test_intro|
 
 |test_connect|.
-Verbinde dann den RR und TX Pin mit einem kleinen Kabel, damit das Bricklet seine
-eigene Ausgabe zurück ließt.
+Verbinde dann den RX+ mit dem TX+ Pin und den RX- mit dem TX- Pin mit jeweils
+einem kleinen Kabel, damit das Bricklet seine eigene Ausgabe zurück liest. Konfiguriere
+die DIP-Schalter auf Voll-Duplex, abhängig von den Kabeln mit oder ohne Terminierung.
 
-|test_tab|
-Wenn alles wie erwartet funktioniert kann jetzt Text in das Eingabefeld getippt
-und mit Enter abgeschickt werden. Der gleiche Text sollte dann im Textfeld
-darüber auftauchen.
+|test_tab| Konfiguriere hier den Modus RS485 und die Duplexoption Full-Duplex und drücke
+den Save Configuration-Button Wenn alles wie erwartet funktioniert, kann jetzt
+Text in das Eingabefeld getippt und mit Enter abgeschickt werden.
+Der gleiche Text sollte dann im Textfeld darüber erscheinen.
 
-.. image:: /Images/Bricklets/bricklet_rs485_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_rs485_brickv.png
    :scale: 100 %
    :alt: RS485 Bricklet im Brick Viewer
    :align: center
-   :target: ../../_images/Bricklets/bricklet_rs485_brickv.jpg
+   :target: ../../_images/Bricklets/bricklet_rs485_brickv.png
 
 |test_pi_ref|
 

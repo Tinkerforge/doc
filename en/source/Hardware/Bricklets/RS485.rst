@@ -19,8 +19,8 @@ RS485 Bricklet
 	Bricklets/bricklet_rs485_bottom_[?|?].jpg           RS485 Bricklet
 	Cases/bricklet_rs485_case_built_up1_[?|?].jpg       RS485 Bricklet in case
 	Cases/bricklet_rs485_case_built_up2_[?|?].jpg       RS485 Bricklet in case
-	Bricklets/bricklet_rs485_brickv_[100|].jpg          RS485 Bricklet in Brick Viewer
-	Bricklets/bricklet_rs485_brickv_modbus_[100|].jpg   RS485 Bricklet in Brick Viewer
+	Bricklets/bricklet_rs485_brickv_[100|].png          RS485 Bricklet in Brick Viewer
+	Bricklets/bricklet_rs485_brickv_modbus_[100|].png   RS485 Bricklet in Brick Viewer
 	Dimensions/rs485_bricklet_dimensions_[100|600].png  Outline and drilling plan
 
 	{% tfgalleryend %}
@@ -136,23 +136,23 @@ are based on callbacks.
 
 To better understand the general concept a scenario is described. In this
 scenario two RS485 Bricklets are present on the bus. One operating in Modbus
-master mode and the other in Modbus slave mode:
+master mode and the other in Modbus slave mode. The Modbus master wants to 
+read 4 registers starting with the register 400002 (e.g. the second holding register)
+from Modbus slave at address 8:
 
-1. The Modbus master wants to read 4 registers starting from address 2 from Modbus
-   slave at address 8.
-2. The master registers the *modbus_master_read_holding_registers_response*
+1. The master registers the *modbus_master_read_holding_registers_response*
    callback which will be called when the slave sends a response to the master.
    The Bricklet that is operating in slave mode registers the
    *modbus_slave_read_holding_registers_request* callback which will be called
    when a corresponding request is received.
-3. The master calls the function *modbus_master_read_holding_registers*.
-   Parameters of this function specifies the slave address, starting address and
-   the number of registers to read. This function sends the request on the bus.
-4. On the slave side the registered callback is invoked with the parameters which
-   specifies that the master wants to read 4 registers starting from address 2.
-5. The slave calls the function *modbus_slave_answer_read_holding_registers_request*
+2. The master calls the function *modbus_master_read_holding_registers*.
+   Parameters of this function specifies the slave address, the number of the first register and
+   the number of registers to read. The prefix digit 4, that identifies the register as holding register, is implicit and has to be omitted. This function sends the request on the bus.
+3. On the slave side the registered callback is invoked with the parameters which
+   specifies that the master wants to read 4 holding registers starting from register 2.
+4. The slave calls the function *modbus_slave_answer_read_holding_registers_request*
    with the requested data which sends the response on the bus.
-6. Upon receiving the response from the slave the *modbus_master_read_holding_registers_response*
+5. Upon receiving the response from the slave the *modbus_master_read_holding_registers_response*
    callback is called on the master side with the data provided by the slave.
 
 For details of these functions refer to the :ref:`programming interface <rs485_bricklet_programming_interface>`
@@ -160,11 +160,11 @@ section.
 
 All of the available Modbus functions can also be used in Brick Viewer:
 
-.. image:: /Images/Bricklets/bricklet_rs485_brickv_modbus.jpg
+.. image:: /Images/Bricklets/bricklet_rs485_brickv_modbus.png
    :scale: 100 %
    :alt: RS485 Bricklet in Brick Viewer
    :align: center
-   :target: ../../_images/Bricklets/bricklet_rs485_brickv_modbus.jpg
+   :target: ../../_images/Bricklets/bricklet_rs485_brickv_modbus.png
 
 
 .. _rs485_bricklet_test:
@@ -175,18 +175,19 @@ Test your RS485 Bricklet
 |test_intro|
 
 |test_connect|.
-Connect the RX to the TX pins with a cable to make the Bricklet read back its
-own output.
+Connect the RX+ to the TX+ pin and the RX- to the TX- pin with two cables to make the Bricklet read back its
+own output. Configure the DIP switches to full duplex mode, depending on the used cables, with or without termination.
 
 |test_tab|
+Set the mode to RS485 and the duplex option to full duplex and then click Save Configuration.
 If everything went as expected you can now type some text into the input
 editbox and hit enter. The same text should then show up in the textarea above.
 
-.. image:: /Images/Bricklets/bricklet_rs485_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_rs485_brickv.png
    :scale: 100 %
    :alt: RS485 Bricklet in Brick Viewer
    :align: center
-   :target: ../../_images/Bricklets/bricklet_rs485_brickv.jpg
+   :target: ../../_images/Bricklets/bricklet_rs485_brickv.png
 
 |test_pi_ref|
 
