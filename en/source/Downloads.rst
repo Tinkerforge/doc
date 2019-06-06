@@ -37,7 +37,9 @@ The Brick Viewer is for testing purposes and flashing new firmwares and plugins
 onto Bricks and Bricklets.
 
 If you use a Linux distribution that does not use ``.deb``, you can
-install the Brick Viewer and the Brick Daemon from source.
+install the Brick Daemon and the Brick Viewer from source. For Arch Linux the packages
+`brickd <https://aur.archlinux.org/packages/brickd/>`_ and
+`brickv <https://aur.archlinux.org/packages/brickv/>`_  are available in the AUR.
 
 
 .. _downloads_bindings_examples:

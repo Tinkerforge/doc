@@ -43,7 +43,9 @@ und Plugins auf Bricks und Bricklets.
 
 Für Linux Distributionen die kein ``.deb`` verwenden, können der
 Brick Daemon und Brick Viewer auch basierend auf dem Quelltext installiert
-werden.
+werden. Für Arch Linux stehen im AUR die Pakete
+`brickd <https://aur.archlinux.org/packages/brickd/>`_ und
+`brickv <https://aur.archlinux.org/packages/brickv/>`_ zur Verfügung.
 
 
 .. _downloads_bindings_examples:
