@@ -5,8 +5,9 @@ Brick Daemon Installation on Linux
 ==================================
 
 The :ref:`Brick Daemon <brickd>` can be installed on Debian based distribution
-(Ubuntu, Mint, etc.) from a ``.deb`` file. On other distributions it can be
-installed from source.
+(Ubuntu, Mint, etc.) from a ``.deb`` file. For Arch Linux the package 
+`brickd <https://aur.archlinux.org/packages/brickd/>`_ is available in the AUR.
+On other distributions the Brick Daemon can be installed from source.
 
 
 Debian Package
