@@ -1,13 +1,13 @@
 
 The software includes service and test programs, the API bindings to interact
-with Bricks and Bricklets as well as their firmwares and plugins:
+with Bricks and Bricklets, as well as their firmwares and plugins:
 
 * :ref:`brickd`
 * :ref:`brickv`
 * :ref:`api_bindings`
 * :ref:`brick_logger`
 
-Those can be downloaded in the :ref:`downloads section <downloads>`. The
+All software is available in the :ref:`downloads section <downloads>`. The
 :ref:`source code and links for bug trackers <source_code>` can be found in
 their own section.
 
