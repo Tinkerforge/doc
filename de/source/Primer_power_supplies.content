@@ -1,12 +1,12 @@
 :ref:`Bricks <primer_bricks>` und :ref:`Bricklets <primer_bricklets>` 
-können über die USB Schnittstelle des Bricks mit Strom versorgt werden. 
+können über die USB-Schnittstelle des Bricks mit Strom versorgt werden. 
 :ref:`Stapel <primer_stack>` können ebenfalls über die USB Verbindung des 
-Masters mit Strom versorgt werden. Diese Möglichkeit ist durch die USB 
-Spezifikation auf 500mA beschränkt. Ein großer Stapel kann einen höheren 
+Masters mit Strom versorgt werden. Diese Möglichkeit ist durch die USB-Spezifikation
+auf 500mA beschränkt. Ein großer Stapel kann einen höheren 
 Stromverbrauch aufweisen.
 
 Die Stromversorgungsmodule können einen Stapel mit mehr als 500mA versorgen. 
 Zusätzlich wird über den Stapel auch die Versorgungsspannung geleitet, so dass
 Bricks im Stapel ihre angeschlossenen Motoren darüber direkt versorgen können
-(z.B. :ref:`DC Brick <dc_brick>`). Stromversorgungsmodule haben die Größe von 
+(z.B. der :ref:`DC Brick <dc_brick>`). Stromversorgungsmodule haben die Größe von 
 :ref:`Bricks <primer_bricks>` und werden unter einen Stapel gesteckt.

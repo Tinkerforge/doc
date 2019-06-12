@@ -6,5 +6,5 @@ level protocols:
 * :ref:`llproto_tcpip`
 * :ref:`llproto_modbus`
 
-A :ref:`Wireshark dissector <wireshark_dissector>` for TFP
-(Tinkerforge Protocol) is available.
+A :ref:`Wireshark dissector <wireshark_dissector>` for the Tinkerforge Protocol (TFP)
+is available.

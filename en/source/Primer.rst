@@ -235,7 +235,7 @@ information about how to use stacks.
 
 With :ref:`Master Extensions <primer_master_extensions>` the USB interface of
 a stack can be replaced by :ref:`Ethernet <ethernet_extension>`, 
-:ref:`WIFI <wifi_extension>` or :ref:`RS485 <rs485_extension>`. 
+:ref:`Wi-Fi <wifi_extension>` or :ref:`RS485 <rs485_extension>`. 
 If the USB connection does not deliver enough power 
 :ref:`power supplies <primer_power_supplies>` can be used to power the stack.
 
@@ -247,9 +247,8 @@ Programming/API
 A general description of the programming interface can be found 
 :ref:`here <programming_interface>`. An overview of the API bindings for each
 programming language is given :ref:`here <api_bindings>`. The API of each 
-product can be found on each product document page. Additional there can be 
-found programming examples for the product in any supported programming 
-language.
+product, including examples in any supported programming language, can be found
+on each product document page.
 
 These Tutorials are an introduction to the usage of Bricks and Bricklets:
 

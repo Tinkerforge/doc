@@ -22,14 +22,13 @@ Unsere Produkte gliedern sich in fünf verschiedene Kategorien:
   Nicht stapelbare Sensor-/Aktormodule, die die Fähigkeiten von Bricks
   erweitern.
 * :ref:`Master Extensions <primer_master_extensions>`:
-  Module um Alternativen zur USB Schnittstelle des
-  :ref:`Master Bricks <master_brick>` zu bieten (WIFI, Ethernet, RS485).
+  Module, die Alternativen zur USB-Schnittstelle des
+  :ref:`Master Bricks <master_brick>` bieten (WIFI, Ethernet, RS485).
 * :ref:`Stromversorgungen <primer_power_supplies>`:
-  Module die einen Stapel von Bricks mit Strom versorgen.
+  Module, die einen Stapel aus Bricks mit Strom versorgen.
 * :ref:`Zubehör <primer_accessories>`
 
-Dieses :ref:`Tutorial <tutorial_first_steps>` erklärt wie alles zusammen
-funktioniert.
+Die Verwendung von Bricks und Bricklets demonstriert :ref:`dieses Tutorial <tutorial_first_steps>`.
 
 
 .. _primer_bricks:
@@ -225,21 +224,21 @@ Stapel aus Bricks
     :target: _images/Bricks/brick_master_stack_front_big_800.jpg
 
 :ref:`Bricks <primer_bricks>` können zu einem Stapel zusammengesteckt werden. 
-Ein :ref:`Master Brick<master_brick>` (als unterstes Brick) kümmert sich 
-um die Kommunikation aller anderen Teilnehmer im Stapel. Er routet Nachrichten 
-zwischen den Teilnehmern und dem steuernden Gerät. Es ist also nur eine USB
-Verbindung notwendig um die Bricks und Bricklets eines Stapels zu steuern.
+Ein :ref:`Master Brick<master_brick>` (als unterster Brick) kümmert sich 
+um die Kommunikation aller anderen Teilnehmer im Stapel: Er routet Nachrichten 
+zwischen den Teilnehmern und dem steuernden Gerät. Es ist also nur eine
+USB-Verbindung notwendig, um die Bricks und Bricklets eines Stapels zu steuern.
 Aus Benutzersicht verhält sich ein Stapel so, als wären alle Bricks einzeln
-per USB am Gerät angeschlossen. Das :ref:`Stapel Tutorial
+per USB am Gerät angeschlossen. Das :ref:`Stapel-Tutorial
 <tutorial_first_steps_build_stacks>` beinhaltet weitere Informationen über
 Stapel.
 
-Über :ref:`Master Extensions <primer_master_extensions>` kann die USB
-Verbindung eines Stapels durch :ref:`Ethernet <ethernet_extension>`, 
-:ref:`WLAN (WIFI) <wifi_extension>` oder 
+Über :ref:`Master Extensions <primer_master_extensions>` kann die
+USB-Verbindung eines Stapels durch :ref:`Ethernet <ethernet_extension>`, 
+:ref:`WLAN (Wi-Fi) <wifi_extension>` oder 
 :ref:`RS485 <rs485_extension>` ersetzt werden.
-Reicht die USB Stromversorgung nicht aus, kann ein Stapel auch mit einer 
-:ref:`Stromversorgung <primer_power_supplies>` versorgt werden.
+Reicht die Stromzufuhr über USB nicht aus, kann ein Stapel auch mit einer 
+:ref:`Stromversorgung <primer_power_supplies>` betrieben werden.
 
 
 .. _primer_programming:
@@ -251,8 +250,8 @@ Eine generelle Beschreibung der Programmierschnittstelle kann
 :ref:`hier <programming_interface>` gefunden werden. Eine Übersicht der API 
 Bindings für die jeweilige Programmiersprache befindet sich 
 :ref:`hier <api_bindings>`. Die API eines Produkts ist auf der jeweiligen 
-Produktseite dokumentiert. Hier lassen sich auch spezifische Programmbeispiele 
-für jedes Produkt in jeder unterstützen Programmiersprache finden.
+Produktseite dokumentiert. Dort finden sich auch spezifische Programmbeispiele 
+für jedes Produkt in jeder unterstützen Programmiersprache.
 
 Die folgenden Tutorials bilden einen Einstieg in die Verwendung von Bricks und 
 Bricklets:

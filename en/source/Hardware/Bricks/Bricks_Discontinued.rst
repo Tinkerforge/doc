@@ -1,4 +1,6 @@
 
+.. _bricks_discontinued:
+
 Bricks (Discontinued)
 =====================
 

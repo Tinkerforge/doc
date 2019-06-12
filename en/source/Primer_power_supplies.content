@@ -5,6 +5,6 @@ is limited by the USB specification to 500mA. A large stack may need more power.
 
 To provide greater currents, Power Supplies are available.
 These modules power the stack and can additionally be used to supply the power
-for driver Bricks (e.g. :ref:`DC Brick <dc_brick>`). Power Supplies
+for driver Bricks (e.g. the :ref:`DC Brick <dc_brick>`). Power Supplies
 have the same size as :ref:`Bricks <primer_bricks>` and are
 stacked in at the bottom of the stack.

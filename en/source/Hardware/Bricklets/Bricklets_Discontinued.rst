@@ -1,4 +1,6 @@
 
+.. _bricklets_discontinued:
+
 Bricklets (Discontinued)
 ========================
 

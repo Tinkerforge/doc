@@ -1,4 +1,6 @@
 
+.. _extensions_discontinued:
+
 Master Extensions (Abgekündigt)
 ===============================
 

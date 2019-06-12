@@ -4,15 +4,17 @@ seine USB Schnittstelle. Master Extensions erweitern die
 Kommunikationsmöglichkeiten von Master Bricks. Es gibt kabelgebundene 
 (:ref:`RS485 <rs485_extension>`,  :ref:`Ethernet <ethernet_extension>`) und 
 drahtlose Master Extensions (:ref:`WIFI <wifi_v2_extension>`). Anstatt über USB 
-können Bricks und Bricklets somit über WLAN (WIFI) oder Ethernet gesteuert 
-werden. Über RS485 ist eine Vernetzung untereinander auch über größere Strecken 
+können Bricks und Bricklets somit über WLAN (Wi-Fi) oder Ethernet gesteuert 
+werden. Über RS485 ist eine Vernetzung untereinander, auch über größere Strecken, 
 möglich.
 
 Aus Programmierersicht sind die verschiedenen Kommunikationsmöglichkeiten 
-transparent. Ein Stapel mit Master Extension verhält sich so als wären alle 
+transparent. Ein Stapel mit Master Extension verhält sich so, als wären alle 
 Bricks einzeln per USB am PC angeschlossen.
 
-Dies bedeutet: Programme können mit allen Bricks einzeln per USB am PC
-angeschlossen entwickelt werden. Wenn später die Bricks gestapelt und über
-eine Master Extension angebunden werden, dann funktioniert das zuvor geschriebene
+Das bedeutet: Während Programme entwickelt werden, können allen Bricks einzeln per USB am PC
+angeschlossen werden. Wenn später die Bricks gestapelt und/oder über
+eine Master Extension angebunden werden sollen, funktioniert das zuvor geschriebene
 Programm ohne Änderungen weiter.
+
+Es gibt einen extra Abschnitt für :ref:`abgekündigte Extensions<extensions_discontinued>`.

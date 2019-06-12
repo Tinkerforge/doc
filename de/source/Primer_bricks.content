@@ -1,18 +1,19 @@
-Bricks sind 4 x 4cm (1,57 x 1,57") große Module, die über einen Mini-USB 
-Anschluss verfügen und über diesen von Geräten, wie zum Beispiel einem 
-(Embedded-) PC, gesteuert werden können. Jedes Brick besitzt eine Aufgabe: Es 
-gibt Bricks für Messaufgaben (z.B. :ref:`IMU Brick 2.0 <imu_v2_brick>`), zur 
-Kommunikation (z.B. :ref:`Master Brick <master_brick>`) und um Motoren zu
-steuern (z.B. :ref:`DC Brick <dc_brick>`).
+Bricks sind 4 x 4 cm (1,57 x 1,57") große Module, die über einen Mini-USB 
+Anschluss verfügen. Über diesen können sie von Geräten, wie zum Beispiel einem 
+(Embedded-)PC, gesteuert werden. Jeder Brick besitzt eine Aufgabe: Es 
+gibt Bricks für Messaufgaben (z.B. den :ref:`IMU Brick 2.0 <imu_v2_brick>`), zur 
+Kommunikation (z.B. den :ref:`Master Brick <master_brick>`) und um Motoren zu
+steuern (z.B. den :ref:`DC Brick <dc_brick>`).
 
 Über :ref:`Bricklets <primer_bricklets>` können die Fähigkeiten von
 Bricks erweitert werden. Abhängig vom Modell verfügt jeder Brick über keine, zwei oder
 vier Anschlüsse für Bricklets.
 
-Bricks können gestapelt werden, siehe die 
-:ref:`Beschreibung zum Stapelkonzept <primer_stack>`. Die USB
-Schnittstelle eines Master Bricks kann mit 
+Bricks können, wie die :ref:`Beschreibung zum Stapelkonzept <primer_stack>` erklärt, gestapelt werden.
+Die USB-Schnittstelle eines Master Bricks kann mit 
 :ref:`Master Extensions <primer_master_extensions>` durch
-WLAN, Ethernet oder RS485 ersetzt werden. Zusammen mit dem Stapelkonzept können 
+WLAN, Ethernet oder RS485 ersetzt werden. Durch das Stapelkonzept können 
 somit alle Bricks und Bricklets anstatt per USB auch per WLAN oder Ethernet 
 gesteuert werden.
+
+Es gibt einen extra Abschnitt für :ref:`abgekündigte Bricks<bricks_discontinued>`.
