@@ -3,8 +3,8 @@
 
 HOST = "localhost"
 PORT = 4223
-UID_DC = "9yEBJP3Jnf3" # Change to the UID of your DC Brick
-UID_POTI = "2wx" # Change to the UID of your Rotary Poti Bricklet
+UID_DC = "XXYYZZ" # Change to the UID of your DC Brick
+UID_POTI = "XYZ" # Change to the UID of your Rotary Poti Bricklet
 
 from tinkerforge.ip_connection import IPConnection
 from tinkerforge.brick_dc import DC
