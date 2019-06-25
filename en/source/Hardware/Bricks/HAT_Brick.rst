@@ -50,7 +50,7 @@ With the HAT Brick you can connect up to **eight** :ref:`Bricklets <primer_brick
 Raspberry Pi.
 
 You can power the Raspberry Pi through the HAT by an external 5V-28V DC power supply. 
-The onboard power supply will be able to provide very stable 5V, even under heavy load. This way you
+The onboard power supply will be able to provide very stable 5V, even under heavy load. You
 can power the Raspberry Pi, connected Bricklets and USB devices connected to the 
 RPi's USB connectors. Power issues with RPi's due to a voltage drop on the power supply are 
 compensated by delivering slightly increased 5V (5.3V).
@@ -62,8 +62,8 @@ The USB/DC supply voltages are measured and accessible through the API.
 
 Additionally, the HAT has a :ref:`real-time clock with battery backup <hat_brick_real_time_clock>`
 that is directly connected to the Raspberry Pi. The HAT can :ref:`turn the RPi off for a specified
-time <hat_brick_low_power_sleep_mode>`. This way you can use the Raspberry Pi in battery powered
-applications, for example like sending sensor information every hour to a cloud.
+time <hat_brick_low_power_sleep_mode>`. You can use the Raspberry Pi in battery powered
+applications, for example to send sensor information every hour to a cloud.
 
 A :ref:`watchdog <hat_brick_watchdog>` can also be implemented with the HAT, such that the RPi will be
 restarted if it crashes or your program gets stuck.
