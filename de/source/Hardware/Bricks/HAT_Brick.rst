@@ -67,10 +67,10 @@ Ressourcen
 * 3D Modell (`Online ansehen <TBD>`__ | Download: `STEP <http://download.tinkerforge.com/3d/TBD/TBD.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/TBD/TBD.FCStd>`__)
 
 
-.. _hat_brick_test:
+.. _hat_brick_erste_schritte:
 
-Erster Test
------------
+Erste Schritte
+--------------
 
 TODO
 

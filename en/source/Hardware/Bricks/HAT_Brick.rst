@@ -31,7 +31,7 @@ Features
 
 * Raspberry Pi HAT with standard RPi HAT form factor
 * Has **eight** ports for Bricklets
-* Integrates DC power supply (5V-28V input)
+* Onboard 5.3V power supply (5V-28V input, up to 4A)
 * Measures USB and DC supply voltages
 * Adds battery backed real-time clock to Raspberry Pi
 * Adds low power sleep mode and RPi watchdog
@@ -46,19 +46,30 @@ The HAT Brick is a `Raspberry Pi HAT <https://www.raspberrypi.org/blog/introduci
 with the standard RPi HAT form factor. The Brick follows the HAT specification
 and it will automatically work with Raspbian without any changes.
 
-With the HAT Brick your Raspberry Pi has access to **eight** :ref:`Bricklet <primer_bricklets>` ports.
+With the HAT Brick you can connect up to **eight** :ref:`Bricklets <primer_bricklets>` to your
+Raspberry Pi.
 
-You can power the Raspberry Pi through the HAT with a 5V-28V DC power supply. This power supply
-will be able to provide very stable 5V, even under heavy load. You can also still power the
-HAT/RPi through USB. The USB/DC supply voltages are measured and accessible through the API.
+You can power the Raspberry Pi through the HAT by an external 5V-28V DC power supply. 
+The onboard power supply will be able to provide very stable 5V, even under heavy load. This way you
+can power the Raspberry Pi, connected Bricklets and USB devices connected to the 
+RPi's USB connectors. Power issues with RPi's due to a voltage drop on the power supply are 
+compensated by delivering slightly increased 5V (5.3V).
+
+You can also still power the
+HAT/RPi through USB. In that case you have to ensure that the HAT will be provided with stable 5V, 
+for example by the official Raspberry Pi universal power supply.
+The USB/DC supply voltages are measured and accessible through the API.
 
 Additionally, the HAT has a :ref:`real-time clock with battery backup <hat_brick_real_time_clock>`
-that is directly connected to the Raspberry Pi. The HAT can also :ref:`turn the RPi off for a specified
-time <hat_brick_low_power_sleep_mode>` and it can act as a :ref:`watchdog <hat_brick_watchdog>`
-to restart the RPi if it crashes or a program gets stuck.
+that is directly connected to the Raspberry Pi. The HAT can :ref:`turn the RPi off for a specified
+time <hat_brick_low_power_sleep_mode>`. This way you can use the Raspberry Pi in battery powered
+applications, for example like sending sensor information every hour to a cloud.
 
-The HAT is electrically compatible to the Raspberry Pi 2B, 3B, 3B+, Zero and Zero W. The mounting
-holes are compatible to the Raspberry Pi 2/3. We also offer a smaller :ref:`HAT Zero Brick <hat_zero_brick>`
+A :ref:`watchdog <hat_brick_watchdog>` can also be implemented with the HAT, such that the RPi will be
+restarted if it crashes or your program gets stuck.
+
+The HAT is electrically compatible to the Raspberry Pi 2B, 3B, 3B+, 4B, Zero and Zero W. The mounting
+holes are compatible to the Raspberry Pi 2/3/4. We also offer a smaller :ref:`HAT Zero Brick <hat_zero_brick>`
 that has mounting holes that are compatible to the Raspberry Pi Zero.
 
 
@@ -73,6 +84,7 @@ Current Consumption               100mW (20mA at 5V)
 --------------------------------  ------------------------------------------------------------
 Bricklet Ports                    8
 DC Input Voltage                  5-28V
+DC Output                         5.3V, max. 4A
 Sleep Current (≤1.4)*             70mW (14mA at 5V) + 1.5mW if sleep indicator LED enabled
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
@@ -91,14 +103,14 @@ Resources
 * 3D model (`View online <TBD>`__ | Download: `STEP <http://download.tinkerforge.com/3d/TBD/TBD.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/TBD/TBD.FCStd>`__)
 
 
-.. _hat_brick_test:
+.. _hat_brick_getting_started:
 
-Test your HAT Brick
--------------------
+Getting Started
+---------------
 
 To get started with the HAT Brick you first have to install :ref:`Brick Daemon <brickd>`
 on the Raspberry Pi. Brick Daemon acts as a proxy between the Bricklet ports
-on the HAT and the API bindings.
+on the HAT and the API bindings. It also handles the real-time clock.
 
 You can install Brick Daemon from the terminal with the following commands:
 
@@ -111,10 +123,10 @@ You can install Brick Daemon from the terminal with the following commands:
 After the Brick Daemon is installed you can put the HAT on top of the
 Raspberry Pi and restart it.
 
-Now use :ref:`Brick Viewer <brickv>` to connect to the Bricklets. You can install
-Brick Viewer directly on the Raspberry Pi or on an external PC that has access to
-the Raspberry Pi (over Ethernet or WIFI). If you use an external PC you have to
-connect to the IP of the Raspberry Pi, otherwise to localhost.
+Now use :ref:`Brick Viewer <brickv>` to connect to the Hat Brick and connected Bricklets. 
+You can install Brick Viewer directly on the Raspberry Pi or on an external PC that has 
+access to the Raspberry Pi (over Ethernet or WIFI). If you use an external PC you have 
+to connect to the IP of the Raspberry Pi, otherwise to localhost.
 
 In the Brick Viewer a new tab named "HAT Brick" as well as one Tab for each of the
 connected Bricklets will appear:
@@ -153,7 +165,7 @@ Low Power Sleep Mode
 The HAT Brick can turn the Raspberry Pi off and on again with a
 configurable off-duration.
 
-You can configure if the power supply off the Bricklets is to be
+You can configure if the power supply of the Bricklets is to be
 turned off at the same time. Addtionally the blue status LED can
 be either turned off, or configured as a sleep indicator with a
 1 second blink interval.

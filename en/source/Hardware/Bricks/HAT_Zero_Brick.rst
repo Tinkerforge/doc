@@ -30,7 +30,7 @@ Features
 --------
 
 * Raspberry Pi HAT with RPi Zero form factor
-* Has four ports for Bricklets
+* Has **four** ports for Bricklets
 * Measures USB supply voltage
 
 
@@ -43,15 +43,15 @@ The HAT Zero Brick is a `Raspberry Pi HAT <https://www.raspberrypi.org/blog/intr
 with the standard RPi Zero HAT form factor. The Brick follows the HAT specification
 and it will automatically work with Raspbian without any changes.
 
-With the HAT Zero Brick your Raspberry Pi has access to four :ref:`Bricklet <primer_bricklets>` ports.
+With the HAT Zero Brick your Raspberry Pi has access to **four** :ref:`Bricklet <primer_bricklets>` ports.
 
 The USB supply voltage is measured and accessible through the API.
 
-The HAT is electrically compatible to the Raspberry Pi 2B, 3B, 3B+, Zero and Zero W. The mounting
+The HAT is electrically compatible to the Raspberry Pi 2B, 3B, 3B+, 4, Zero and Zero W. The mounting
 holes are compatible to the Raspberry Pi Zero and Zero W and it is designed to use up as little
 space as possible. We also offer a bigger :ref:`HAT Brick <hat_brick>` with eight Bricklet
 ports and additional features that has mounting holes that are compatible to the standard
-Raspberry Pi 2/3.
+Raspberry Pi 2/3/4.
 
 
 Technical Specifications
@@ -81,10 +81,10 @@ Resources
 * 3D model (`View online <TBD>`__ | Download: `STEP <http://download.tinkerforge.com/3d/TBD/TBD.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/TBD/TBD.FCStd>`__)
 
 
-.. _hat_zero_brick_test:
+.. _hat_zero_brick_getting_started:
 
-Test your HAT Zero Brick
-------------------------
+Getting Started
+---------------
 
 To get started with the HAT Zero Brick you first have to install :ref:`Brick Daemon <brickd>`
 on the Raspberry Pi. Brick Daemon acts as a proxy between the Bricklet ports
