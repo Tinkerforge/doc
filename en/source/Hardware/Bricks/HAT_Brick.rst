@@ -72,6 +72,11 @@ The HAT is electrically compatible to the Raspberry Pi 2B, 3B, 3B+, 4B, Zero and
 holes are compatible to the Raspberry Pi 2/3/4. We also offer a smaller :ref:`HAT Zero Brick <hat_zero_brick>`
 that has mounting holes that are compatible to the Raspberry Pi Zero.
 
+.. note::
+  The HAT Brick provides Bricklet ports with 7 poles each. You can connect Bricklets with a
+  7 pole to 7 pole cable to it. Only Bricklets with 7 pole Bricklet ports are 
+  supported.
+
 
 Technical Specifications
 ------------------------

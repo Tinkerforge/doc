@@ -74,6 +74,9 @@ Befestigungslöcher snd kompatibel zum Raspberry Pi 2/3/4. ZUsätzlich bieten wi
 :ref:`HAT Zero Brick <hat_zero_brick>` eine kleinere Version, deren Befestigungslöcher zum Raspberry
 Pi Zero kompatibel sind.
 
+.. note::
+  Das HAT Brick besitzt Bricklet 7 polige Anschlüsse. Über ein 7 pol <-> 7 pol Kabel können Bricklets
+  an das Brick angeschlossen werden. Es werden nur Bricklets unterstützt die über einen 7 poligen Anschluss verfügen. 
 
 Technische Spezifikation
 ------------------------

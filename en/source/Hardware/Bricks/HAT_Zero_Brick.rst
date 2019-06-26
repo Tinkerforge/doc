@@ -53,6 +53,10 @@ space as possible. We also offer a bigger :ref:`HAT Brick <hat_brick>` with eigh
 ports and additional features that has mounting holes that are compatible to the standard
 Raspberry Pi 2/3/4.
 
+.. note::
+  The HAT Brick provides Bricklet ports with 7 poles each. You can connect Bricklets with a
+  7 pole to 7 pole cable to it. Only Bricklets with 7 pole Bricklet ports are 
+  supported.
 
 Technical Specifications
 ------------------------

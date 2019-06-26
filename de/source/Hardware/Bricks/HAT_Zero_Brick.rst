@@ -55,6 +55,10 @@ wenig Platz zu benötigen. Zusätzlich bieten wir mit dem
 :ref:`HAT Brick <hat_brick>` eine größere Version mit acht Bricklet Anschlüssen und weiteren Features. 
 Die Befestigungslöcher sind bei der Version kompatibel zu den standard Raspberry Pis 2/3/4.
 
+.. note::
+  Das HAT Brick besitzt Bricklet 7 polige Anschlüsse. Über ein 7 pol <-> 7 pol Kabel können Bricklets
+  an das Brick angeschlossen werden. Es werden nur Bricklets unterstützt die über einen 7 poligen Anschluss verfügen. 
+
 Technische Spezifikation
 ------------------------
 
