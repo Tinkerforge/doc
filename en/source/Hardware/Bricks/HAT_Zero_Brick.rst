@@ -115,8 +115,8 @@ connected Bricklets will appear:
    :align: center
    :target: ../../_images/Bricks/hat_zero_brickv.jpg
 
-In the HAT Zero Brick tab of the Brick Viewer you can test the sleep mode and see the
-measured voltages as well as the connected Bricklets.
+In the HAT Zero Brick tab of the Brick Viewer you can see the measured USB voltage 
+as well as the connected Bricklets.
 
 If you are not sure if the HAT Zero Brick was detected correctly you can take a look
 in the folder ``/proc/device-tree/hat/`` on the Raspberry Pi:

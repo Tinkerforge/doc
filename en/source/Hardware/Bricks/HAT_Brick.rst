@@ -56,7 +56,7 @@ RPi's USB connectors. Power issues with RPi's due to a voltage drop on the power
 compensated by delivering slightly increased 5V (5.3V).
 
 You can also still power the
-HAT/RPi through USB. In that case you have to ensure that the HAT will be provided with stable 5V, 
+HAT/RPi through Micro-USB. In that case you have to ensure that the HAT will be provided with stable 5V, 
 for example by the official Raspberry Pi universal power supply.
 The USB/DC supply voltages are measured and accessible through the API.
 
@@ -123,7 +123,7 @@ You can install Brick Daemon from the terminal with the following commands:
 After the Brick Daemon is installed you can put the HAT on top of the
 Raspberry Pi and restart it.
 
-Now use :ref:`Brick Viewer <brickv>` to connect to the Hat Brick and connected Bricklets. 
+Now use :ref:`Brick Viewer <brickv>` to connect to the HAT Brick and connected Bricklets. 
 You can install Brick Viewer directly on the Raspberry Pi or on an external PC that has 
 access to the Raspberry Pi (over Ethernet or WIFI). If you use an external PC you have 
 to connect to the IP of the Raspberry Pi, otherwise to localhost.
@@ -186,8 +186,8 @@ Watchdog
 The HAT Brick can be used as a watchdog for the Raspberry Pi. It
 can restart the Raspberry Pi if it crashes or gets stuck.
 
-To implement the watchdog you can also use the sleep delay and
-sleep duration parameters of the ``SetSleepMode`` function.
+To implement the watchdog you can also use the ``sleep delay`` and
+``sleep duration`` parameters of the ``SetSleepMode`` function.
 
 Watchdog implementation example (Python):
 
@@ -258,7 +258,7 @@ not work automatically.
 In this case the Brick Daemon can do the necessary configuration to the SPI and GPIO 
 pins. You have to add the configuration to the ``/etc/brickd.conf`` file.
 
-For a standard Raspberry Pi with non-standard image you can add the following::
+For a standard Raspberry Pi you can add the following::
 
 	bricklet.group0.spidev = /dev/spidev0.0
 
