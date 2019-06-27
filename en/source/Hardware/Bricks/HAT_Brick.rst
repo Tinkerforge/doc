@@ -80,6 +80,15 @@ holes are compatible to the Raspberry Pi 2/3/4. We also offer a smaller :ref:`HA
 that has mounting holes which are compatible to the Raspberry Pi Zero.
 
 
+HAT Brick with Thermal Imaging Bricklet and LCD 128x64 Bricklet:
+
+.. raw:: html
+
+	<video class="align-center" max-width="100%" width="100%" height="auto" controls loop>
+	  <source src="../../_images/Videos/brick_hat_with_thermal_imaging_and_lcd.mp4" type="video/mp4">
+	  <source src="../../_images/Videos/brick_hat_with_thermal_imaging_and_lcd.ogg" type="video/ogg">
+	  <source src="../../_images/Videos/brick_hat_with_thermal_imaging_and_lcd.webm" type="video/webm">
+	</video>
 
 
 Technical Specifications
