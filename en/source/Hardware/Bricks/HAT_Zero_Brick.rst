@@ -2,8 +2,7 @@
 :DISABLED_shoplink: ../../../shop/bricks/hat-zero-brick.html
 
 .. include:: HAT_Zero_Brick.substitutions
-   :start-after: >>>substitutions
-   :end-before: <<<substitutions
+
 
 .. _hat_zero_brick:
 
