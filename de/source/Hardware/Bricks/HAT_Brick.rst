@@ -70,7 +70,7 @@ Ein :ref:`Watchdog <hat_brick_watchdog>` kann ebenfalls mit dem HAT implementier
 RPi neugestartet wird wenn dieser sich aufhängt oder das eigene Programm steckenbleibt.
 
 Der HAT Brick ist elektronisch kompatibel zu den Raspberry Pi 2B, 3B, 3B+, 4B, Zero und Zero W. Die
-Befestigungslöcher snd kompatibel zum Raspberry Pi 2/3/4. ZUsätzlich bieten wir mit dem 
+Befestigungslöcher sind kompatibel zum Raspberry Pi 2/3/4. Zusätzlich bieten wir mit dem 
 :ref:`HAT Zero Brick <hat_zero_brick>` eine kleinere Version, deren Befestigungslöcher zum Raspberry
 Pi Zero kompatibel sind.
 
