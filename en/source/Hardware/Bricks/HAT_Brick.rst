@@ -13,13 +13,16 @@ HAT Brick
 .. note::
   This Brick is currently work-in-progress!
 
-..
-    .. raw:: html
+.. raw:: html
 
 	{% tfgallery %}
 
-	Bricks/brick_hat_tilted_[?|?].jpg              HAT Brick
-	Bricks/brick_hat_horizontal_[?|?].jpg          HAT Brick
+	Bricks/brick_hat_tilted_top_[?|?].jpg          HAT Brick top
+	Bricks/brick_hat_tilted_bottom_[?|?].jpg       HAT Brick bottom
+	Bricks/brick_hat_tilted_w_rpi_[?|?].jpg        HAT Brick with Raspberry Pi 4
+	Bricks/brick_hat_top_w_rpi_[?|?].jpg           HAT Brick
+	Bricks/brick_hat_w_bricklets_[?|?].jpg         HAT Brick with Bricklets
+	Bricks/brick_hat_w_hat_zero_[?|?].jpg          HAT Brick and HAT Zero Brick
 	Bricks/brick_hat_brickv_[100|].jpg             HAT Brick in Brick Viewer
 	Dimensions/hat_brick_dimensions_[100|600].png  Outline and drilling plan
 
@@ -136,11 +139,11 @@ to connect to the IP of the Raspberry Pi, otherwise to localhost.
 In the Brick Viewer a new tab named "HAT Brick" as well as one Tab for each of the
 connected Bricklets will appear:
 
-.. image:: /Images/Bricks/hat_brickv.jpg
+.. image:: /Images/Bricks/brick_hat_brickv.jpg
    :scale: 100 %
    :alt: HAT Brick in Brick Viewer
    :align: center
-   :target: ../../_images/Bricks/hat_brickv.jpg
+   :target: ../../_images/Bricks/brick_hat_brickv.jpg
 
 In the HAT Brick tab of the Brick Viewer you can test the sleep mode and see the
 measured voltages as well as the connected Bricklets.

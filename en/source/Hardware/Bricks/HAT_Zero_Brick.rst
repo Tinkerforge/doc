@@ -13,13 +13,15 @@ HAT Zero Brick
 .. note::
   This Brick is currently work-in-progress!
 
-..
-    .. raw:: html
+.. raw:: html
 
 	{% tfgallery %}
 
-	Bricks/brick_hat_zero_tilted_[?|?].jpg              HAT Zero Brick
-	Bricks/brick_hat_zero_horizontal_[?|?].jpg          HAT Zero Brick
+	Bricks/brick_hat_zero_tilted_top_[?|?].jpg          HAT Zero Brick top
+	Bricks/brick_hat_zero_tilted_bottom_[?|?].jpg       HAT Zero Brick bottom
+	Bricks/brick_hat_zero_tilted_w_rpi_[?|?].jpg        HAT Zero Brick with Raspberry Pi Zero
+	Bricks/brick_hat_zero_tilted_w_bricklets_[?|?].jpg  HAT Zero Brick with Bricklets
+	Bricks/brick_hat_w_hat_zero_[?|?].jpg               HAT Zero Brick and HAT Brick
 	Bricks/brick_hat_zero_brickv_[100|].jpg             HAT Zero Brick in Brick Viewer
 	Dimensions/hat_zero_brick_dimensions_[100|600].png  Outline and drilling plan
 
@@ -113,11 +115,11 @@ connect to the IP of the Raspberry Pi, otherwise to localhost.
 In the Brick Viewer a new tab named "HAT Zero Brick" as well as one Tab for each of the
 connected Bricklets will appear:
 
-.. image:: /Images/Bricks/hat_zero_brickv.jpg
+.. image:: /Images/Bricks/brick_hat_zero_brickv.jpg
    :scale: 100 %
    :alt: HAT Zero Brick in Brick Viewer
    :align: center
-   :target: ../../_images/Bricks/hat_zero_brickv.jpg
+   :target: ../../_images/Bricks/brick_hat_zero_brickv.jpg
 
 In the HAT Zero Brick tab of the Brick Viewer you can see the measured USB voltage 
 as well as the connected Bricklets.

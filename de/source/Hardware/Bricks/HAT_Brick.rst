@@ -13,13 +13,15 @@ HAT Brick
 .. note::
   Dieses Brick befindet sich aktuell noch in der Entwicklung!
 
-..
-    .. raw:: html
+.. raw:: html
 
 	{% tfgallery %}
-
-	Bricks/brick_hat_tilted_[?|?].jpg              HAT Brick
-	Bricks/brick_hat_horizontal_[?|?].jpg          HAT Brick
+	Bricks/brick_hat_tilted_top_[?|?].jpg          HAT Brick Oberseite
+	Bricks/brick_hat_tilted_bottom_[?|?].jpg       HAT Brick Unterseite
+	Bricks/brick_hat_tilted_w_rpi_[?|?].jpg        HAT Brick mit Raspberry Pi 4
+	Bricks/brick_hat_top_w_rpi_[?|?].jpg           HAT Brick
+	Bricks/brick_hat_w_bricklets_[?|?].jpg         HAT Brick mit Bricklets
+	Bricks/brick_hat_w_hat_zero_[?|?].jpg          HAT Brick und HAT Zero Brick
 	Bricks/brick_hat_brickv_[100|].jpg             HAT Brick im Brick Viewer
 	Dimensions/hat_brick_dimensions_[100|600].png  Umriss und Bohrplan
 
@@ -138,11 +140,11 @@ externen PC muss sich auf die IP des Raspberry Pis verbunden werden. Ansonste au
 Im Brick Viewer sollte ein Tab (Reiter) namens "HAT Brick" und für jedes angeschlossene Bricklet
 ein weiteres Tab angezeigt werden.
 
-.. image:: /Images/Bricks/hat_brickv.jpg
+.. image:: /Images/Bricks/brick_hat_brickv.jpg
    :scale: 100 %
    :alt: HAT Brick in Brick Viewer
    :align: center
-   :target: ../../_images/Bricks/hat_brickv.jpg
+   :target: ../../_images/Bricks/brick_hat_brickv.jpg
 
 Im HAT Brick Tab des Brick Viewers können der Schlafmodus getestet und die gemessenen Spannungen
 betrachtet werden.
