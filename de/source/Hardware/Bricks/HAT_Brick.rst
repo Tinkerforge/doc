@@ -11,7 +11,7 @@ HAT Brick
 =========
 
 .. note::
-  Dieses Brick befindet sich aktuell noch in der Entwicklung!
+  Dieser Brick befindet sich aktuell noch in der Entwicklung!
 
 .. raw:: html
 
@@ -31,12 +31,12 @@ HAT Brick
 Features
 --------
 
-* Raspberry Pi HAT im standard RPi HAT Formfaktor
-* Besitzt **acht** Anschlüsse für Bricklets
+* Raspberry Pi HAT im Standard-HAT-Formfaktor
+* **Acht** Anschlüsse für Bricklets
 * Integrierte 5.3V Stromversorgung (5V-28V Eingang, bis zu 4A)
-* Misst USB und DC Spannungsversorgung
-* Bietet eine Realtimeclock für das Raspberry Pi
-* Bietet Schlafmodus (low power) und RPi Watchdog
+* Misst USB- und DC-Spannungsversorgung
+* Bietet eine Real-Time-Clock für den Raspberry Pi
+* Bietet Schlafmodus (low power) und Watchdog
 
 
 .. _hat_brick_description:
@@ -45,40 +45,38 @@ Beschreibung
 ------------
 
 Der HAT Brick ist ein `Raspberry Pi HAT <https://www.raspberrypi.org/blog/introducing-raspberry-pi-hats/>`__
-im standard RPi HAT Formfaktor. Der Brick ist zur HAT Spezifikation konform und funktioniert automatisch
-mit Raspbian ohne irgendwelche Änderungen.
+im Standard-HAT-Formfaktor. Der Brick ist zur HAT-Spezifikation konform und funktioniert automatisch und ohne Änderungen mit Raspbian.
 
 Mit dem HAT Brick können bis zu **acht** :ref:`Bricklets <primer_bricklets>` an ein Raspberry Pi
 angeschlossen werden.
 
-Das Raspberry Pi kann über den HAT mit einer externen 5V-28V DC Stromversorgung betrieben werden.
-Die integrierte Stromversorgung liefert stabile 5V für den RPi, auch unter großer Last. Somit können
-der Raspberry Pi, angeschlossene Bricklets und mit dem Raspberry Pi verbundene USB Geräte versorgt 
-werden. Schwierigkeiten mit der Stromversorgung des RPi's gehören mit dem HAT der Vergangenheit an,
-da das HAT den Spannungsabfall kompensiert und eine etwas erhöhte Spannungsversorgung liefert (5,3V).
+.. note::
+  Der HAT Brick besitzt 7-Pol-Bricklet-Anschlüsse. Über ein 7-Pol- <-> 7-Pol-Kabel können Bricklets
+  an den Brick angeschlossen werden. Es werden nur Bricklets unterstützt, die über einen 7-poligen Anschluss verfügen. 
 
-Alternativ kann der HAT/RPi auch über Micro-USB versorgt werden. In diesem Fall muss allerdings sichergestellt 
-werden, dass die Stromversorgung stable 5V bietet. Dies ist zum Beispiel mit der offiziellen Raspberry Pi
-Universal Stromversorgung möglich.
+Der Raspberry Pi kann über den HAT Brick mit einer externen 5V-28V DC Stromversorgung betrieben werden.
+Die integrierte Stromversorgung liefert auch unter großer Last stabile 5V für den Raspberry Pi. Somit können
+auch angeschlossene Bricklets und verbundene USB-Geräte versorgt werden. Das HAT Brick liefert hierfür eine etwas erhöhte Spannung von 5,3V.
+
+Alternativ können HAT Brick und Raspberry Pi auch über Micro-USB versorgt werden. In diesem Fall muss allerdings sichergestellt werden,
+dass die Stromversorgung stabile 5V bietet. Dies ist zum Beispiel mit dem offiziellen Raspberry Pi
+Universal-Netzteil möglich.
 Die USB/DC Versorgungsspannungen werden vom HAT gemessen und sind über die API zugänglich.
 
-Zusätzlich bietet der hat eine :ref:`Real-Time Clock mit Batteriebackup <hat_brick_real_time_clock>`,
-welche direkt mit dem Raspberry Pi verbunden ist. Der HAT kann :ref:`den RPi für eine angegebene Zeit
-ausschalten <hat_brick_low_power_sleep_mode>`. Somit kann der Raspberry PI auch in batteriebetriebenen
-Anwendungen eingesetzt werden. Als Beispiel in einer Anwendung, in der Sensorinformationen jede Stunde
+Der HAT Brick bietet eine :ref:`Real-Time-Clock mit Batteriebackup <hat_brick_real_time_clock>`,
+die direkt mit dem Raspberry Pi verbunden ist. Mit dieser kann :ref:`der Raspberry Pi für eine angegebene Zeit ausgeschaltet werden <hat_brick_low_power_sleep_mode>`. 
+Somit kann der Raspberry Pi auch in batteriebetriebenen
+Anwendungen eingesetzt werden, zum Beispiel in einer Anwendung, in der Sensorinformationen jede Stunde
 in die Cloud geschickt werden sollen.
 
-Ein :ref:`Watchdog <hat_brick_watchdog>` kann ebenfalls mit dem HAT implementiert werden, so dass der
-RPi neugestartet wird wenn dieser sich aufhängt oder das eigene Programm steckenbleibt.
+Mit dem HAT Brick kann ein :ref:`Watchdog <hat_brick_watchdog>` implementiert werden, der den
+Raspberry Pi neustartet, wenn sich dieser aufhängt oder das eigene Programm steckenbleibt.
 
-Der HAT Brick ist elektronisch kompatibel zu den Raspberry Pi 2B, 3B, 3B+, 4B, Zero und Zero W. Die
+Der HAT Brick ist elektronisch kompatibel zu den Raspberry Pis 2B, 3B, 3B+, 4B, Zero und Zero W. Die
 Befestigungslöcher sind kompatibel zum Raspberry Pi 2/3/4. Zusätzlich bieten wir mit dem 
 :ref:`HAT Zero Brick <hat_zero_brick>` eine kleinere Version, deren Befestigungslöcher zum Raspberry
 Pi Zero kompatibel sind.
 
-.. note::
-  Das HAT Brick besitzt Bricklet 7 polige Anschlüsse. Über ein 7 pol <-> 7 pol Kabel können Bricklets
-  an das Brick angeschlossen werden. Es werden nur Bricklets unterstützt die über einen 7 poligen Anschluss verfügen. 
 
 Technische Spezifikation
 ------------------------
@@ -89,16 +87,17 @@ Eigenschaft                           Wert
 Stromverbrauch                        100mW (20mA bei 5V)
 ------------------------------------  ------------------------------------------------------------
 ------------------------------------  ------------------------------------------------------------
-Bricklet Anschlüsse                   8
-DC Eingangsspannunsbereich            5-28V
+Bricklet-Anschlüsse                   8
+DC Eingangsspannungsbereich           5-28V
 DC Ausgang                            5,3V, max. 4A
-Stromverbrauch im Sleepmodus (≤1.4)*  70mW (14mA bei 5V) + 1.5mW wenn Sleep Anzeigeled aktiv ist
+Stromverbrauch im Sleepmodus (≤1.4)*  70mW (14mA bei 5V) + 1.5mW wenn die Sleep-LED aktiv ist
 ------------------------------------  ------------------------------------------------------------
 ------------------------------------  ------------------------------------------------------------
 Abmessungen (B x T x H)               65 x 56 x 25mm (2,56 x 2,20 x 0,98")
 Gewicht                               30g 
 ====================================  ============================================================
 
+\*: Dieser Wert ist für den HAT Brick in Hardware-Version 1.4 oder kleiner.
 
 Ressourcen
 ----------
@@ -114,10 +113,10 @@ Ressourcen
 Erste Schritte
 --------------
 
-Um mit dem HAT Brick zu beginnen muss zuerst der :ref:`Brick Daemon <brickd>`
-auf dem Raspberry Pi installiert werden. Der Brick Daemon agiert als proxy zwischen 
-den Brickletanschlüssen des HATs und den API Bindings. Er kümmert sich auch um die
-Real-Time Clock.
+Um den HAT Brick verwenden zu können, muss zuerst der :ref:`Brick Daemon <brickd>`
+auf dem Raspberry Pi installiert werden. Der Brick Daemon agiert als Proxy zwischen 
+den Brickletanschlüssen des HAT Brickss und den API Bindings. Er kümmert sich auch um die
+Real-Time-Clock.
 
 Der Brick Daemon kann auf dem Raspberry Pi im Terminal mit folgenden Kommandos 
 installiert werden:
@@ -128,17 +127,17 @@ installiert werden:
 	wget http://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_armhf.deb
 	sudo dpkg -i brickd_linux_latest_armhf.deb
 
-Nachdem der Brick Daemon installiert ist, kann der HAT auf den Raspberry Pi gesteckt
+Nachdem der Brick Daemon installiert wurde, kann der HAT Brick auf den Raspberry Pi gesteckt
 und dieser neugestartet werden.
 
-Anschließend kann der :ref:`Brick Viewer <brickv>` genutzt werden um sich mit dem HAT Brick 
+Anschließend kann der :ref:`Brick Viewer <brickv>` genutzt werden, um sich mit dem HAT Brick 
 und den angeschlossenen Bricklets zu verbinden. 
-Der Brick Viewer kann entweder direkt auf dem Raspberry Pi oder aber auf einem externen PC,
-der Zugriff auf den RPi besitzt (über Ethernet oder WLAN) installiert werden. Von einem
-externen PC muss sich auf die IP des Raspberry Pis verbunden werden. Ansonste auf localhost.
+Der Brick Viewer kann entweder direkt auf dem Raspberry Pi oder auf einem externen PC,
+der über Ethernet oder WLAN Zugriff auf den Raspberry Pi besitzt, installiert werden. Von einem
+externen PC aus muss sich auf den Hostnamen oder die IP des Raspberry Pis verbunden werden, vom Raspberry Pi aus auf localhost.
 
-Im Brick Viewer sollte ein Tab (Reiter) namens "HAT Brick" und für jedes angeschlossene Bricklet
-ein weiteres Tab angezeigt werden.
+Im Brick Viewer sollte ein Tab namens "HAT Brick" und für jedes angeschlossene Bricklet
+ein weiterer Tab angezeigt werden.
 
 .. image:: /Images/Bricks/brick_hat_brickv.jpg
    :scale: 100 %
@@ -149,7 +148,7 @@ ein weiteres Tab angezeigt werden.
 Im HAT Brick Tab des Brick Viewers können der Schlafmodus getestet und die gemessenen Spannungen
 betrachtet werden.
 
-Sollte unklar sein, ob der HAT Brick korrekt erkannt wurden kann ein Blick in den Ordner
+Sollte unklar sein, ob der HAT Brick korrekt erkannt wurde, kann ein Blick in den Ordner
 ``/proc/device-tree/hat/`` auf dem Raspberry Pi helfen:
 
 .. code-block:: shell
@@ -161,9 +160,8 @@ Dies sollte etwa das folgende ausgeben::
 
 	Name: hat, Product: HAT Brick, Product ID: 0x084e, Vendor: Tinkerforge GmbH
 
-Falls der Order nicht exisitiert, oder die Ausgabe nicht korrekt ist war die Installation nicht erfolgreich.
-Dann sollte geprüft werden ob der HAT Brick korrekt verbunden wurde und ob der Raspberry Pi nach dem aufstecken
-neugestartet wurde.
+Falls der Order nicht exisitiert, oder die Ausgabe nicht korrekt ist, war die Installation nicht erfolgreich.
+Dann sollte geprüft werden, ob der HAT Brick korrekt verbunden wurde und ob der Raspberry Pi nach dem aufstecken neugestartet wurde.
 
 
 .. _hat_brick_low_power_sleep_mode:
@@ -171,16 +169,15 @@ neugestartet wurde.
 Low Power Sleep Modus
 ---------------------
 
-Der HAT Brick kann das Raspberry Pi aus-/ und einschalten mit einer konfigurierbaren Ausschaltzeit.
+Der HAT Brick kann den Raspberry Pi mit einer konfigurierbaren Ausschaltzeit aus- und einschalten.
 
-Es kann auch konfiguriert werden ob die Bricklets ebenfalls mit abgeschaltet werden sollen. Zusätzlich
-kann die blaue Status-LED entweder ebenfalls ausgeschaltet oder aber mit einem 1 Sekunden Blink-Intervall
-konfiguriert werden.
+Es kann auch konfiguriert werden, dass die Bricklets ebenfalls abgeschaltet werden sollen. Zusätzlich
+kann die blaue Status-LED deaktiviert, oder, um den Sleep-Modus anzuzeigen, auf ein Blink-Intervall von einer Sekunde konfiguriert werden.
 
-Während das RPi ausgeschaltet ist, läuft die Real-Time Clock weiter und die Uhrzeit wird beim Neustart
+Während der Raspberry Pi ausgeschaltet ist, läuft die Real-Time-Clock weiter. Die Uhrzeit wird beim Neustart
 wieder korrekt gesetzt.
 
-Zum Thema Sleep Modus bietet die API eine genauere Beschreibung in der ``SetSleepMode`` Funktion.
+Die Sleep-Modi werden in der API-Beschreibung der Funktion ``SetSleepMode`` genauer beschrieben.
 
 
 .. _hat_brick_watchdog:
@@ -189,12 +186,10 @@ Watchdog
 --------
 
 Der HAT Brick kann als Watchdog für den Raspberry Pi genutzt werden. Er kann
-den RPi neustarten, wenn dieser sich aufhängt oder das eigene Programm festhängt.
+den Raspberry Pi neustarten, falls sich dieser oder ein eigenes Programm aufhängt.
 
 Um einen Watchdog zu implementieren können die ``Sleep Delay`` und ``Sleep Duration`` Parameter der 
-``SetSleepMode`` Funktion genutzt werden.
-
-Watchdog Implementierungsbeispiel (Python):
+``SetSleepMode`` Funktion genutzt werden, wie im folgenden Beispiel (in Python) gezeigt wird:
 
 .. code-block:: python
 
@@ -202,44 +197,41 @@ Watchdog Implementierungsbeispiel (Python):
 		hat.set_sleep_mode(10, 2, True, False, False)
 		time.sleep(1)
 
-Der Beispielcode teilt dem HAT Brick in jedem Schleifendurchlauf mit, das Raspberry Pi in 10 
-Sekunden neuzustarten. Dies erfolgt einmal pro sekunde. Jeden Schleifendurchlauf wird der Neustart
-somit auf 10 Sekunden zurückgesetzt. Wenn der Raspberry Pi sich aufhängt, erfolgt dieser reset nicht mehr 
-und der Raspberry Pi wird neugestartet.
+Der Beispielcode teilt dem HAT Brick in jedem Schleifendurchlauf mit, den Raspberry Pi in 10 
+Sekunden neuzustarten. Dies erfolgt einmal pro Sekunde, in jedem Schleifendurchlauf wird der Neustart
+somit auf in 10 Sekunden zurückgesetzt. Falls der Raspberry Pi sich aufhängt, erfolgt dieser Reset nicht mehr und der Raspberry Pi wird nach 10 Sekunden neugestartet.
 
-Diese Schleife kann als eigenständiges Programm implementiert werden. Alternativ kann der  ``SetSleepMode``
-Aufruf irgendwo in der Hauptschleife der eigenen Anwendung, die auf dem Raspberry Pi läuft, eingebaut werden.
-call somewhere in the main loop of your application that runs on the
-Im Falle, dass der Raspberry Pi hängt, erfolgt also der neustart.
+Die Schleife kann als eigenständiges Programm implementiert werden. Alternativ kann der  ``SetSleepMode``
+Aufruf in der Hauptschleife einer eigenen Anwendung, die auf dem Raspberry Pi läuft, eingebaut werden, um diese gegenüber Abstürzen robust zu machen.
 
 
 .. _hat_brick_real_time_clock:
 
-Real-Time Clock
+Real-Time-Clock
 ---------------
 
-Der HAT Brick bietet eine I2C Real-Time Clock (Echtzeituhr), welche direkt mit 
-dem Raspberry Pi verbunden ist. Die Uhr wird automatisch vom RPi erkannt. Mit dmesg 
+Der HAT Brick bietet eine I2C Real-Time-Clock (Echtzeituhr), welche direkt mit 
+dem Raspberry Pi verbunden ist. Die Uhr wird automatisch vom Raspberry Pi erkannt. Mit ``dmesg``
 kann überprüft werden ob die Uhr korrekt erkannt wurde. Es sollte ein Eintrag
 wie der folgende existieren::
 
 	[    3.850299] rtc-pcf8523 1-0068: rtc core: registered rtc-pcf8523 as rtc0
 
-Falls NTP nicht zur Verfügung steht muss das Datum und Uhrzeit anfangs einmal händisch gesetzt
+Falls NTP nicht zur Verfügung steht, muss das Datum und Uhrzeit einmal gesetzt
 werden. Anschließend kann mit folgenden Kommando:
 
 .. code-block:: shell
 
 	hwclock --systohc
 
-die Uhrzeit des RPi auf die Real-Time Clock übertragen werden. Dies ist nur einmal notwendig.
+die Uhrzeit des Raspberry Pi auf die Real-Time-Clock übertragen werden. Dies ist nur einmal notwendig.
 
-Steht NTP zur Verfügung, so wird die Real-Time Clock automatisch aktualisiert.
+Steht NTP zur Verfügung, so wird die Real-Time-Clock automatisch aktualisiert.
 
 Der Brick Daemon stellt sicher, dass Datum und Uhrzeit automatisch nach einem Neustart von der
-Real-Time Clock übernommen werden.
+Real-Time-Clock übernommen werden.
 
-Ohne Brick Daemon kann dies händisch mit folgenden Kommando durchgeführt werden:
+Ohne Brick Daemon kann dies mit dem folgenden Kommando durchgeführt werden:
 
 .. code-block:: shell
 
@@ -249,19 +241,16 @@ Ohne Brick Daemon kann dies händisch mit folgenden Kommando durchgeführt werde
 Kompatibilität zu anderen Boards und Images
 -------------------------------------------
 
-Wird Raspbian genutzt, so wird der HAT Brick automatisch erkannt und genutzt. 
-Die Pins werden dann automatisch für eine Kommunikation mit den Bricklets konfiguriert.
+Wird Raspbian genutzt, wird der HAT Brick automatisch erkannt und kann verwendet werden. 
+Die Pins werden automatisch für eine Kommunikation mit Bricklets konfiguriert, indem die gespeicherte HAT-Konfiguration aus dem EEPROM des HAT Brick gelesen wird.
 
-Dies erfolgt über das Auslesen der gespeicherten HAT Konfiguration aus dem EEPROM des HAT.
+Wird ein Linux-Image, welches das ``raspi-config``-Framework nicht bietet,
+oder ein anderes Board mit Raspberry Pi kompatiblen GPIO-Pinheadern, aber anderem Prozessor genutzt,
+funktioniert das nicht automatisch.
 
-Wird ein Linux Image genutzt, welches das raspi-config Framework nicht bietet,
-oder aber ein anderes Board mit Raspberry Pi kompatiblen GPIO Pinheader aber anderen Prozessor genutzt,
-so funktioniert dies nicht automatisch.
+In diesem Fall kann der Brick Daemon die notwendige SPI- und GPIO-Pinkonfiguration vornehmen, falls sie in der Datei ``/etc/brickd.conf`` angegeben wird.
 
-In diesem Fall kann der Brick Daemon die notwendige SPI und GPIO Pinkonfiguration vornehmen.
-Dazu muss in der ``/etc/brickd.conf`` Datei die Konfiguration angegeben werden.
-
-Für ein standard Raspberry Pi wäre dies::
+Für ein Standard-Raspberry Pi beispielsweise::
 
 	bricklet.group0.spidev = /dev/spidev0.0
 
@@ -301,16 +290,14 @@ Für ein standard Raspberry Pi wäre dies::
 	bricklet.group0.cs8.name = gpio5
 	bricklet.group0.cs8.num = 5
 
-Als erstes muss das SPI Device, das genutzt werden soll konfiguriert werden 
-(``/dev/spidev0.0`` für den Raspberry Pi). Anschließend muss ein GPIO Treiber,
-und Name und Nummer des GPIO für jedes Chip Selects definiert werden.
-Es gibt acht Chip Selects für die acht Bricklet Anschlüsse und ein Chip Select für
+Als erstes muss das SPI-Device, das genutzt werden soll, konfiguriert werden
+(``/dev/spidev0.0`` für den Raspberry Pi). Anschließend müssen ein GPIO-Treiber,
+sowie Name und Nummer des GPIOs für jeden Chip Select Pin definiert werden.
+Es gibt acht Chip Selects für die acht Bricklet-Anschlüsse und ein Chip Select für
 den HAT Brick selbst.
 
-Wird ein komplett verschiedenes Board genutzt, so kann der Schaltplan zu dem Board
-Aufschlüsse bieten, wie die Konfiguration angepasst werden muss. Sollte Hilfe 
-notwendig sein, bietet `tinkerunity.org <https://www.tinkerunity.org>`__
-eine Möglichkeit Hilfe zu finden.
+Wird ein komplett anderes Board genutzt, so kann der Schaltplan des Boards
+Aufschlüsse darüber bieten, wie die Konfiguration angepasst werden muss. `tinkerunity.org <https://www.tinkerunity.org>`__ bietet eine Möglichkeit, Hilfe zu finden.
 
 
 .. _hat_brick_programming_interface:
