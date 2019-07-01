@@ -103,8 +103,8 @@ Die 7p-7p Kabel können genutz werden um die neuem Bricklets mit 7-Pol
 Stecker mit
 
 * :ref:`Isolator Bricklet <isolator_bricklet>`,
-* HAT Brick (noch nicht veröffentlicht) und
-* HAT Zero Brick (noch nicht veröffentlicht)
+* :ref:`HAT Brick <hat_brick>` und
+* :ref:`HAT Zero Brick <hat_zero_brick>`.
 
 zu verbinden. Es ist nicht möglich alte 10-Pol Bricklets mit dem Isolator oder
 einem HAT zu verbinden.
