@@ -21,6 +21,7 @@ HAT Zero Brick
 	Bricks/brick_hat_zero_tilted_w_rpi_[?|?].jpg        HAT Zero Brick with Raspberry Pi Zero
 	Bricks/brick_hat_zero_tilted_w_bricklets_[?|?].jpg  HAT Zero Brick with Bricklets
 	Bricks/brick_hat_w_hat_zero_[?|?].jpg               HAT Zero Brick and HAT Brick
+	Bricks/brick_hat_zero_w_std_rpi_[?|?].jpg           HAT Zero Brick with Raspberry Pi 4
 	Bricks/brick_hat_zero_brickv_[100|].jpg             HAT Zero Brick in Brick Viewer
 	Dimensions/hat_zero_brick_dimensions_[100|600].png  Outline and drilling plan
 
@@ -138,6 +139,28 @@ This should print something like the following::
 If the folder does not exist or the data does not match the installation was not
 successful. Is the HAT Zero Brick connected correctly? Did you restart the Raspberry Pi after
 you connected it?
+
+Mounting HAT Zero Brick to normal Raspberry Pi
+----------------------------------------------
+
+You can use the HAT Zero Brick with a normal (non-zero) Raspberry Pi 2/3/4.
+
+.. image:: /Images/Bricks/brick_hat_zero_w_std_rpi_600.jpg
+   :scale: 100 %
+   :alt: HAT Zero Brick with Raspberry Pi 4
+   :align: center
+   :target: ../../_images/Bricks/brick_hat_zero_w_std_rpi_1200.jpg
+
+To mount it we recommend that you use our `Raspberry Pi Mounting Kit <https://www.tinkerforge.com/en/shop/accessories/mounting/raspberry-pi-mounting-kit.html>`__.
+
+Use the two mounting holes in the back of the HAT and the RPi. The two mounting
+holes in the front stay unused, but the HAT is still solidly connected this way
+and will not come free under vibration. You can use the standoffs together with
+nuts that are part of the mounting kit to make the RPi level or to mount it
+to something else.
+
+There is enough space left between the RPi and the HAT Zero Brick to connect
+Bricklets to all four Bricklet ports.
 
 
 Compatibility to other Boards and Images

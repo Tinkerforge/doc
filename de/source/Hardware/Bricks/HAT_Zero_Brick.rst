@@ -20,6 +20,7 @@ HAT Zero Brick
 	Bricks/brick_hat_zero_tilted_w_rpi_[?|?].jpg        HAT Zero Brick mit Raspberry Pi Zero
 	Bricks/brick_hat_zero_tilted_w_bricklets_[?|?].jpg  HAT Zero Brick mit Bricklets
 	Bricks/brick_hat_w_hat_zero_[?|?].jpg               HAT Zero Brick und HAT Brick
+	Bricks/brick_hat_zero_w_std_rpi_[?|?].jpg           HAT Zero Brick mit Raspberry Pi 4
 	Bricks/brick_hat_zero_brickv_[100|].jpg             HAT Zero Brick im Brick Viewer
 	Dimensions/hat_zero_brick_dimensions_[100|600].png  Umriss und Bohrplan
 
@@ -138,6 +139,28 @@ Dies sollte etwa das folgende ausgeben::
 Falls der Order nicht exisitiert, oder die Ausgabe nicht korrekt ist, war die Installation nicht erfolgreich.
 Dann sollte geprüft werden, ob der HAT Zero Brick korrekt verbunden wurde und ob der Raspberry Pi nach dem aufstecken
 neugestartet wurde.
+
+HAT Zero Brick auf normalen Raspberry Pi befestigen
+---------------------------------------------------
+
+Das HAT Zero Brick kann zusammen mit einem normalen (nicht-zero) Raspbery Pi 2/3/4 verwendet werden.
+
+.. image:: /Images/Bricks/brick_hat_zero_w_std_rpi_600.jpg
+   :scale: 100 %
+   :alt: HAT Zero Brick mit Raspberry Pi 4
+   :align: center
+   :target: ../../_images/Bricks/brick_hat_zero_w_std_rpi_1200.jpg
+
+Zur Befestigung empfehlen wir die Nutzung eines `Raspberry Pi Befestigungskit <https://www.tinkerforge.com/de/shop/accessories/mounting/raspberry-pi-mounting-kit.html>`__.
+
+Nutze die Zwei Montagelöcher auf der Rückseite des HATs und des RPi. Die Zwei Montagelöcher
+auf der Vorderseite des HATs bleiben unbenutzt. Das HAT Zero Brick ist so bereits hinreichend
+befestigt, es löst sich auch nicht bei Vibrationen. Zwei weitere Abstandshalter und Muttern
+des Befestigungskits können auf der Vorderseite des RPi genutzt werden um den Aufbau eben zu
+machen oder woanders zu befestigen.
+
+Zwischen RPi und HAT Zero Brick ist genug Platz um alle vier Bricklet ports mit Bricklets
+zu verbinden.
 
 Kompatibilität zu anderen Boards und Images
 -------------------------------------------
