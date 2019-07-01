@@ -82,7 +82,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/hat-zero-brick/raw/master/hardware/hat-zero-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/hat_zero_brick_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/hat-zero-brick/zipball/master>`__)
-* 3D Modell (`Online ansehen <TBD>`__ | Download: `STEP <http://download.tinkerforge.com/3d/TBD/TBD.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/TBD/TBD.FCStd>`__)
+* 3D Modell (`Online ansehen <https://autode.sk/2Xh7HUf>`__ | Download: `STEP <http://download.tinkerforge.com/3d/hat-zero/hat-zero.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/hat-zero/hat-zero.FCStd>`__)
 
 
 .. _hat_zero_brick_erste_schritte:

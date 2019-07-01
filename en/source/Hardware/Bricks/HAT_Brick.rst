@@ -121,7 +121,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/hat-brick/raw/master/hardware/hat-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/hat_brick_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/hat-brick/zipball/master>`__)
-* 3D model (`View online <TBD>`__ | Download: `STEP <http://download.tinkerforge.com/3d/TBD/TBD.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/TBD/TBD.FCStd>`__)
+* 3D model (`View online <https://autode.sk/2XiDCDT>`__ | Download: `STEP <http://download.tinkerforge.com/3d/hat/hat.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/hat/hat.FCStd>`__)
 
 
 .. _hat_brick_getting_started:
