@@ -99,8 +99,8 @@ The 7p-7p cables can be used to connect new Bricklets with 7 pole
 connectors with
 
 * :ref:`Isolator Bricklet <isolator_bricklet>`,
-* HAT Brick (not yet released) and
-* HAT Zero Brick (not yet released).
+* :ref:`HAT Brick <hat_brick>` and
+* :ref:`HAT Zero Brick <hat_zero_brick>`.
 
 It is not possible to connect a old 10 pole Bricklet to the Isolator or a
 HAT.
