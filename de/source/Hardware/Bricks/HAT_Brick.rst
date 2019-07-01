@@ -21,6 +21,7 @@ HAT Brick
 	Bricks/brick_hat_top_w_rpi_[?|?].jpg           HAT Brick
 	Bricks/brick_hat_w_bricklets_[?|?].jpg         HAT Brick mit Bricklets
 	Bricks/brick_hat_w_hat_zero_[?|?].jpg          HAT Brick und HAT Zero Brick
+	Bricks/brick_hat_caption_[?|?].jpg             HAT Brick mit Funktionsblöcken
 	Bricks/brick_hat_brickv_[100|].jpg             HAT Brick im Brick Viewer
 	Dimensions/hat_brick_dimensions_[100|600].png  Umriss und Bohrplan
 
@@ -77,7 +78,9 @@ Befestigungslöcher sind kompatibel zum Raspberry Pi 2/3/4. Zusätzlich bieten w
 Pi Zero kompatibel sind.
 
 
-HAT Brick mit Thermal Imaging Bricklet und LCD 128x64 Bricklet:
+Beispielprojekt: Nutze HAT Brick + Raspberry PI 4 mit :ref:`Thermal Imaging Bricklet <thermal_imaging_bricklet>` und 
+:ref:`LCD 128x64 Bricklet <lcd_128x64_bricklet>` um eine 1-Bit Repräsentation des Wärmebildes auf dem LCD 128x64 zu
+zeigen. Der Quellcode kann `hier <https://www.tinkerforge.com/de/doc/Software/Bricklets/ThermalImaging_Bricklet_Python.html#thermal-imaging-to-lcd>`__ gefunden werden.
 
 .. raw:: html
 
@@ -121,6 +124,12 @@ Ressourcen
 
 Erste Schritte
 --------------
+
+.. image:: /Images/Bricks/brick_hat_caption_800.jpg
+   :scale: 100 %
+   :alt: HAT Brick mit Funktionsblöcken
+   :align: center
+   :target: ../../_images/Bricks/brick_hat_caption_1200.jpg
 
 Um den HAT Brick verwenden zu können, muss zuerst der :ref:`Brick Daemon <brickd>`
 auf dem Raspberry Pi installiert werden. Der Brick Daemon agiert als Proxy zwischen 
