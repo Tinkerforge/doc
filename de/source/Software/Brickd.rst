@@ -58,11 +58,11 @@ Verbindungen.
 
   * Windows XP::
 
-   C:\Dokumente und Einstellungen\All Users\Application Data\Tinkerforge\Brickd\brickd.log
+     C:\Dokumente und Einstellungen\All Users\Application Data\Tinkerforge\Brickd\brickd.log
 
   * Windows Vista oder neuer::
 
-   C:\ProgramData\Tinkerforge\Brickd\brickd.log
+     C:\ProgramData\Tinkerforge\Brickd\brickd.log
 
   Das ``logviewer.exe`` Tool (Teil der brickd Installation) kann diese Log-Datei
   anzeigen und beinhaltet auch eine Live Log Ansicht.
@@ -90,11 +90,11 @@ Brick Daemon verwendet eine Konfigurationsdatei mit Schlüssel-Wert Format:
 
   * Windows XP::
 
-   C:\Dokumente und Einstellungen\All Users\Application Data\Tinkerforge\Brickd\brickd.ini
+     C:\Dokumente und Einstellungen\All Users\Application Data\Tinkerforge\Brickd\brickd.ini
 
   * Windows Vista oder neuer::
 
-   C:\ProgramData\Tinkerforge\Brickd\brickd.ini
+     C:\ProgramData\Tinkerforge\Brickd\brickd.ini
 
   Das ``logviewer.exe`` Tool (Teil der brickd Installation) kann diese
   Konfigurationsdatei bearbeiten.
@@ -190,13 +190,13 @@ Seit Brick Daemon Version 1.0.8 ist es möglich die aktuell installierte
 Brick Daemon Version zu erfragen. Dafür unterstützt der Brick Daemon
 den Kommandozeilenparameter `--version`:
 
-* Windows XP::
+* Windows XP:
 
   .. code-block:: none
 
     "C:\Programme\Tinkerforge\Brickd\brickd.exe" --version
 
-* Windows Vista oder neuer::
+* Windows Vista oder neuer:
 
   .. code-block:: none
 

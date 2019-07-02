@@ -58,11 +58,11 @@ This includes basic information about USB hotplug and TCP/IP connections.
 
   * Windows XP::
 
-   C:\Documents und Settings\All Users\Application Data\Tinkerforge\Brickd\brickd.log
+     C:\Documents und Settings\All Users\Application Data\Tinkerforge\Brickd\brickd.log
 
   * Windows Vista or newer::
 
-   C:\ProgramData\Tinkerforge\Brickd\brickd.log
+     C:\ProgramData\Tinkerforge\Brickd\brickd.log
 
   You can use the ``logviewer.exe`` tool (part of the brickd installation) to
   view this log file. The tool also includes a Live Log view.
@@ -89,11 +89,11 @@ The Brick Daemon configuration is stored in a file using a key-value format:
 
   * Windows XP::
 
-   C:\Documents und Settings\All Users\Application Data\Tinkerforge\Brickd\brickd.ini
+     C:\Documents und Settings\All Users\Application Data\Tinkerforge\Brickd\brickd.ini
 
   * Windows Vista or newer::
 
-   C:\ProgramData\Tinkerforge\Brickd\brickd.ini
+     C:\ProgramData\Tinkerforge\Brickd\brickd.ini
 
   You can use the ``logviewer.exe`` tool (part of the brickd installation) to
   edit this config file.
@@ -182,13 +182,13 @@ Checking Installed Version
 Since Brick Daemon version 1.0.8 you can check which Brick Daemon is currently
 installed with the `--version` commandline argument:
 
-* Windows XP::
+* Windows XP:
 
   .. code-block:: none
 
     "C:\Program Files\Tinkerforge\Brickd\brickd.exe" --version
 
-* Windows Vista or newer::
+* Windows Vista or newer:
 
   .. code-block:: none
 
