@@ -53,19 +53,30 @@ Standardmäßig loggt Brick Daemon Nachrichten über Informationen, Warnungen un
 Fehler. Diese beinhalten auch Informationen über USB hotplug und TCP/IP
 Verbindungen.
 
-* Windows: Nachrichten werden im Windows Event Log angezeigt. Das
-  ``logviewer.exe`` Tool (Teil der brickd Installation) zeigt die brickd
-  Meldungen im Windows Event Log an.
-* Linux und macOS: Nachrichten werden nach ``/var/log/brickd.log`` geschrieben.
+* Windows: Nachrichten werden einer Log-Datei namens ``brickd.log`` im Brick
+  Daemon Data-Verzeichnis gespeichert:
+  * Windows XP::
+
+   C:\Dokumente und Einstellungen\All Users\Application Data\Tinkerforge\Brickd\brickd.log
+
+  * Windows Vista oder neuer::
+
+   C:\ProgramData\Tinkerforge\Brickd\brickd.log
+
+  Das ``logviewer.exe`` Tool (Teil der brickd Installation) kann diese Log-Datei
+  anzeigen und beinhaltet auch eine Live Log Ansicht.
+* Linux und macOS: Nachrichten werden in diesem Log-Datei geschrieben::
+
+   /var/log/brickd.log
 
 Falls der Standard Logging Einstellung nicht genug Details ausgibt, um ein
 Problem debuggen zu können, dann kann das Debug Log Level aktiviert werden.
 Dies ist standardmäßig nicht aktiviert, da es die Menge der ausgegebenen
-Lognachrichten stark erhöht, so dass es einen Einfluss auf den
+Log-Nachrichten stark erhöht, so dass es einen Einfluss auf den
 Nachrichtendurchsatz von brickd haben kann.
 
-* Windows: Das ``logviewer.exe`` Tool stellt ebenfalls Live Debug Log Ansicht
-  bereit, die das vollständige Debug Log eines laufenden brickd anzeigt.
+* Windows: Das ``logviewer.exe`` Tool stellt ebenfalls Live Log Ansicht
+  bereit, die auf Debug Level gestellt werden kann.
 
 
 Konfiguration
@@ -74,10 +85,17 @@ Konfiguration
 Brick Daemon verwendet eine Konfigurationsdatei mit Schlüssel-Wert Format:
 
 * Windows: Die Konfigurationsdatei heißt ``brickd.ini`` und ist im Brick Daemon
-  Installationsverzeichnis gespeichert::
+  Data-Verzeichnis gespeichert:
+  * Windows XP::
 
-   C:\Program Files\Tinkerforge\Brickd\brickd.ini
+   C:\Dokumente und Einstellungen\All Users\Application Data\Tinkerforge\Brickd\brickd.ini
 
+  * Windows Vista oder neuer::
+
+   C:\ProgramData\Tinkerforge\Brickd\brickd.ini
+
+  Das ``logviewer.exe`` Tool (Teil der brickd Installation) kann diese
+  Konfigurationsdatei bearbeiten.
 * Linux und macOS: Die Konfigurationsdatei heißt ``brickd.conf`` und ist hier
   gespeichert::
 
@@ -86,11 +104,13 @@ Brick Daemon verwendet eine Konfigurationsdatei mit Schlüssel-Wert Format:
 Nach Änderungen an der Konfigurationsdatei muss Brick Daemon neugestartet
 werden um die Änderungen zu übernehmen:
 
-* Windows:
+* Windows: Mit dem ``logviewer.exe`` Tool (Teil der brickd Installation) kann
+  der Brick Daemon Dienst neustarten werden.
+* Linux (systemd)::
 
-  Die "Computerverwaltung" öffnen, zum Abschnitt für "Dienste" wechseln
-  und den Brick Daemon Dienst neustarten.
-* Linux::
+   sudo systemctl restart brickd
+
+* Linux (SysVinit)::
 
    sudo /etc/init.d/brickd restart
 
@@ -168,11 +188,13 @@ Seit Brick Daemon Version 1.0.8 ist es möglich die aktuell installierte
 Brick Daemon Version zu erfragen. Dafür unterstützt der Brick Daemon
 den Kommandozeilenparameter `--version`:
 
-* Windows:
+* Windows XP::
 
-  .. code-block:: none
+   "C:\Program Files\Tinkerforge\Brickd\brickd.exe" --version
 
-    "C:\Program Files\Tinkerforge\Brickd\brickd.exe" --version
+* Windows Vista oder neuer::
+
+   "C:\Program Files (x86)\Tinkerforge\Brickd\brickd.exe" --version
 
 * Linux::
 
