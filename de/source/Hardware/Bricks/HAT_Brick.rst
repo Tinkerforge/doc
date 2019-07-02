@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricks/hat-brick.html
+:shoplink: ../../../shop/bricks/hat-brick.html
 
 .. include:: HAT_Brick.substitutions
 
@@ -8,9 +8,6 @@
 
 HAT Brick
 =========
-
-.. note::
-  Dieser Brick befindet sich aktuell noch in der Entwicklung!
 
 .. raw:: html
 

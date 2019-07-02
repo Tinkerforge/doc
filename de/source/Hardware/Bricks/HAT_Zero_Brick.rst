@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricks/hat-zero-brick.html
+:shoplink: ../../../shop/bricks/hat-zero-brick.html
 
 .. include:: HAT_Zero_Brick.substitutions
 
@@ -8,9 +8,6 @@
 
 HAT Zero Brick
 ==============
-
-.. note::
-  Dieses Brick befindet sich aktuell noch in der Entwicklung!
 
 .. raw:: html
 
