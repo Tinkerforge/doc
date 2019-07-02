@@ -55,6 +55,7 @@ This includes basic information about USB hotplug and TCP/IP connections.
 
 * Windows: Log messages are written to a log file called ``brickd.log`` in the
   Brick Daemon data directory:
+
   * Windows XP::
 
    C:\Documents und Settings\All Users\Application Data\Tinkerforge\Brickd\brickd.log
@@ -84,7 +85,8 @@ Configuration
 The Brick Daemon configuration is stored in a file using a key-value format:
 
 * Windows: The configuration file is called ``brickd.ini`` and stored in the
-  Brick Daemon data directory
+  Brick Daemon data directory:
+
   * Windows XP::
 
    C:\Documents und Settings\All Users\Application Data\Tinkerforge\Brickd\brickd.ini
@@ -182,11 +184,15 @@ installed with the `--version` commandline argument:
 
 * Windows XP::
 
-   "C:\Program Files\Tinkerforge\Brickd\brickd.exe" --version
+  .. code-block:: none
+
+    "C:\Program Files\Tinkerforge\Brickd\brickd.exe" --version
 
 * Windows Vista or newer::
 
-   "C:\Program Files (x86)\Tinkerforge\Brickd\brickd.exe" --version
+  .. code-block:: none
+
+    "C:\Program Files (x86)\Tinkerforge\Brickd\brickd.exe" --version
 
 * Linux::
 

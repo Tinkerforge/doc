@@ -55,6 +55,7 @@ Verbindungen.
 
 * Windows: Nachrichten werden einer Log-Datei namens ``brickd.log`` im Brick
   Daemon Data-Verzeichnis gespeichert:
+
   * Windows XP::
 
    C:\Dokumente und Einstellungen\All Users\Application Data\Tinkerforge\Brickd\brickd.log
@@ -86,6 +87,7 @@ Brick Daemon verwendet eine Konfigurationsdatei mit Schlüssel-Wert Format:
 
 * Windows: Die Konfigurationsdatei heißt ``brickd.ini`` und ist im Brick Daemon
   Data-Verzeichnis gespeichert:
+
   * Windows XP::
 
    C:\Dokumente und Einstellungen\All Users\Application Data\Tinkerforge\Brickd\brickd.ini
@@ -190,11 +192,15 @@ den Kommandozeilenparameter `--version`:
 
 * Windows XP::
 
-   "C:\Program Files\Tinkerforge\Brickd\brickd.exe" --version
+  .. code-block:: none
+
+    "C:\Programme\Tinkerforge\Brickd\brickd.exe" --version
 
 * Windows Vista oder neuer::
 
-   "C:\Program Files (x86)\Tinkerforge\Brickd\brickd.exe" --version
+  .. code-block:: none
+
+    "C:\Programme (x86)\Tinkerforge\Brickd\brickd.exe" --version
 
 * Linux::
 
