@@ -301,7 +301,7 @@ In Access Point mode the WIFI Extension 2.0 supports
 * WPA/WPA2 PSK
 
 as encryption protocols. You can also open a network without encryption.
-If you enable encryption you can set a password with up to 64 ASCII characters.
+If you enable encryption you can set a password with at least 8 and up to 64 ASCII characters.
 
 .. image:: /Images/Extensions/extension_wifi2_brickv_ap_encryption.jpg
    :scale: 100 %

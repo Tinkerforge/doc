@@ -316,7 +316,7 @@ Verschlüsselungsprotokolle
 * WPA/WPA2 PSK.
 
 Es ist auch möglich ein Netzwerk ohne Verschlüsselung zu erstellen. Falls
-Verschlüsselung aktiviert ist, kann ein Passwort mit bis zu 64
+Verschlüsselung aktiviert ist, kann ein Passwort mit mindestens 8 und bis zu 64
 ASCII-Zeichen eingetragen werden.
 
 .. image:: /Images/Extensions/extension_wifi2_brickv_ap_encryption.jpg
