@@ -50,7 +50,7 @@ Logging
 -------
 
 Standardmäßig loggt Brick Daemon Nachrichten über Informationen, Warnungen und
-Fehler. Diese beinhalten auch Informationen über USB hotplug und TCP/IP
+Fehler. Diese beinhalten auch Informationen über USB Hotplug und TCP/IP
 Verbindungen.
 
 * Windows: Nachrichten werden einer Log-Datei namens ``brickd.log`` im Brick
