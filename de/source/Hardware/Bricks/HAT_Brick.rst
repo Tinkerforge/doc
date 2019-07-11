@@ -114,7 +114,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/hat-brick/raw/master/hardware/hat-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/hat_brick_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/hat-brick/zipball/master>`__)
-* 3D Modell (`Online ansehen <https://autode.sk/2XiDCDT>`__ | Download: `STEP <http://download.tinkerforge.com/3d/hat/hat.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/hat/hat.FCStd>`__)
+* 3D Modell (`Online ansehen <https://autode.sk/2XiDCDT>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricks/hat/hat.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricks/hat/hat.FCStd>`__)
 
 
 .. _hat_brick_erste_schritte:
