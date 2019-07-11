@@ -178,7 +178,10 @@ def get_latest_version_info():
         elif parts[0] == 'bricks':
             firmware_versions[parts[1]] = latest_version
         elif parts[0] == 'bricklets':
-            plugin_versions[parts[1]] = latest_version
+            if parts[1] in ['hat', 'hat_zero']:
+                firmware_versions[parts[1]] = latest_version
+            else:
+                plugin_versions[parts[1]] = latest_version
         elif parts[0] == 'extensions':
             extension_versions[parts[1]] = latest_version
         elif parts[0] == 'kits':
