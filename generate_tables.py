@@ -178,10 +178,7 @@ def get_latest_version_info():
         elif parts[0] == 'bricks':
             firmware_versions[parts[1]] = latest_version
         elif parts[0] == 'bricklets':
-            if parts[1] in ['hat', 'hat_zero']:
-                firmware_versions[parts[1]] = latest_version
-            else:
-                plugin_versions[parts[1]] = latest_version
+            plugin_versions[parts[1]] = latest_version
         elif parts[0] == 'extensions':
             extension_versions[parts[1]] = latest_version
         elif parts[0] == 'kits':
@@ -442,12 +439,17 @@ def make_download_brick_firmwares_table():
 """
     }
 
-    row = ' :ref:`{0} <{1}>` | `Firmware <http://download.tinkerforge.com/firmwares/bricks/{2}/brick_{2}_firmware_{6}_{7}_{8}.bin>`__, `{3} <https://github.com/Tinkerforge/{4}/archive/v{6}.{7}.{8}.zip>`__ | {6}.{7}.{8} | `{5} <http://download.tinkerforge.com/firmwares/bricks/{2}/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/{4}/master/software/changelog>`__'
+    row = ' :ref:`{0} <{1}>` | `Firmware <http://download.tinkerforge.com/firmwares/{6}s/{2}/{6}_{2}_firmware_{7}_{8}_{9}.bin>`__, `{3} <https://github.com/Tinkerforge/{4}/archive/v{7}.{8}.{9}.zip>`__ | {7}.{8}.{9} | `{5} <http://download.tinkerforge.com/firmwares/{6}s/{2}/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/{4}/master/software/changelog>`__'
     rows = []
 
     for brick_info in sorted(brick_infos, key=lambda x: x.short_display_name.lower()):
         if brick_info.firmware_url_part != None and brick_info.is_documented:
-            firmware_version = firmware_versions.get(brick_info.firmware_url_part, (0,0,0))
+            if brick_info.firmware_url_part in ['hat', 'hat_zero']:
+                firmware_version = plugin_versions.get(brick_info.firmware_url_part, (0,0,0))
+                category = 'bricklet'
+            else:
+                firmware_version = firmware_versions.get(brick_info.firmware_url_part, (0,0,0))
+                category = 'brick'
 
             rows.append(row.format(brick_info.short_display_name,
                                    brick_info.ref_name,
@@ -455,6 +457,7 @@ def make_download_brick_firmwares_table():
                                    source_code[lang],
                                    brick_info.git_name,
                                    archive[lang],
+                                   category,
                                    *firmware_version))
 
     return table_head[lang] + '\n'.join(rows) + '\n'
