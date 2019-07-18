@@ -83,7 +83,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/industrial-analog-out-v2-bricklet/raw/master/hardware/industrial-analog-out-v2-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/industrial_analog_out_v2_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/industrial-analog-out-v2-bricklet/zipball/master>`__)
-* 3D Modell (`Online ansehen <https://autode.sk/2NYVTln>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/industrial_analog_out_v2/industrial-analog-out-v2.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/industrial_analog_out_v2/industrial-analog-out-v2.FCStd>`__)
+* 3D Modell (`Online ansehen <https://autode.sk/2NYVTln>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricklets/industrial_analog_out_v2/industrial-analog-out-v2.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricklets/industrial_analog_out_v2/industrial-analog-out-v2.FCStd>`__)
 
 
 Anschlussmöglichkeit

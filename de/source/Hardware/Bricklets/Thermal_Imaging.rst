@@ -108,7 +108,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/thermal-imaging-bricklet/raw/master/hardware/thermal-imaging-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/thermal_imaging_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/thermal-imaging-bricklet/zipball/master>`__)
-* 3D Modell (`Online ansehen <http://autode.sk/2BUaYhK>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/thermal_imaging/thermal-imaging.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/thermal_imaging/thermal-imaging.FCStd>`__)
+* 3D Modell (`Online ansehen <https://autode.sk/2BUaYhK>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricklets/thermal_imaging/thermal-imaging.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricklets/thermal_imaging/thermal-imaging.FCStd>`__)
 
 
 .. _thermal_imaging_bricklet_demo_video:
@@ -253,7 +253,7 @@ Thermal by FLIR
 ---------------
 
 Das Tinkerforge Thermal Imaging Bricklet ist mit einer
-`Lepton <http://www.flir.com/cores/lepton/>`__ Wärmebildkamera
+`Lepton <https://www.flir.com/cores/lepton/>`__ Wärmebildkamera
 ausgestattet. Tinkerforge ist Teil des Thermal by FLIR Programms
 (daher auch das Logo auf dem Bricklet). Thermal by FLIR ist ein
 Programm bei dem FLIR mit Entwicklern zusammenarbeitet um die Entwicklung

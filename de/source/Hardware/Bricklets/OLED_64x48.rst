@@ -137,13 +137,13 @@ Wir haben Beispiele für
 * `JavaScript (Node.js) <https://raw.githubusercontent.com/Tinkerforge/oled-64x48-bricklet/master/software/examples/javascript/ExampleScribble.js>`__
   (mit `gm <https://www.npmjs.com/package/gm>`__ und `get-pixels <https://www.npmjs.com/package/get-pixels>`__),
 * `Perl <https://raw.githubusercontent.com/Tinkerforge/oled-64x48-bricklet/master/software/examples/perl/example_scribble.pl>`__
-  (mit `GD <http://search.cpan.org/~lds/GD-2.56/lib/GD.pm>`__),
+  (mit `GD <https://search.cpan.org/~lds/GD-2.56/lib/GD.pm>`__),
 * `PHP <https://raw.githubusercontent.com/Tinkerforge/oled-64x48-bricklet/master/software/examples/php/ExampleScribble.php>`__
-  (mit `GD <http://php.net/manual/de/book.image.php>`__),
+  (mit `GD <https://php.net/manual/de/book.image.php>`__),
 * `Python <https://raw.githubusercontent.com/Tinkerforge/oled-64x48-bricklet/master/software/examples/python/example_scribble.py>`__
-  (mit `PIL <http://python-pillow.org/>`__),
+  (mit `PIL <https://python-pillow.org/>`__),
 * `Ruby <https://raw.githubusercontent.com/Tinkerforge/oled-64x48-bricklet/master/software/examples/ruby/example_scribble.rb>`__
-  (mit `rgd <http://www.rubydoc.info/gems/rgd>`__) und
+  (mit `rgd <https://www.rubydoc.info/gems/rgd>`__) und
 * `Visual Basic .NET <https://raw.githubusercontent.com/Tinkerforge/oled-64x48-bricklet/master/software/examples/vbnet/ExampleScribble.vb>`__.
 
 .. _oled_64x48_bricklet_font:

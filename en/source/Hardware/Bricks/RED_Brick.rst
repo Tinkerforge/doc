@@ -76,7 +76,7 @@ be extended by an Ethernet interface. The
 other remote stacks of Bricks and Bricklets.
 
 Advanced users can use the RED Brick with full access to the underlying
-`Debian <http://www.debian.org/>`__ system.
+`Debian <https://www.debian.org/>`__ system.
 
 An introduction video is available on Youtube:
 
@@ -107,7 +107,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/red-brick/raw/master/hardware/red-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/red_brick_dimensions.png>`__)
 * Linux image and hardware design files (`Download <https://github.com/Tinkerforge/red-brick/zipball/master>`__)
-* 3D model (`View online <http://autode.sk/2iTFL7d>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricks/red/red.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricks/red/red.FCStd>`__)
+* 3D model (`View online <https://autode.sk/2iTFL7d>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricks/red/red.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricks/red/red.FCStd>`__)
 
 .. _red_brick_test:
 
@@ -379,7 +379,7 @@ openHAB
    :alt: Screenshot of settings tab showing openHAB configurations.
    :align: center
 
-In the `openHAB <http://www.openhab.org/>`__ section (requires Image >= 1.6 and
+In the `openHAB <https://www.openhab.org/>`__ section (requires Image >= 1.6 and
 Brick Viewer >= 2.2.3) of this tab you can configure the openHAB service
 running on the RED Brick. Since Image >= 1.10 and Brick Viewer >= 2.3.11
 openHAB2 is used.
@@ -501,7 +501,7 @@ directly connect from your smart phone or notebook to the RED Brick.
 * Server Monitoring: Enables the `Nagios <https://www.nagios.org/>`__
   monitoring system, see :ref:`server monitoring in the settings tab
   <red_brick_brickv_settings_server_monitoring>`.
-* openHAB: Enables the `openHAB <http://www.openhab.org/>`__ runtime, see
+* openHAB: Enables the `openHAB <https://www.openhab.org/>`__ runtime, see
   :ref:`openHAB in the settings tab <red_brick_brickv_settings_openhab>`.
 * Mobile Internet: If mobile Internet is enabled, you can configure
   the a :ref:`mobile Internet connection in the settings tab
@@ -733,10 +733,10 @@ The webserver on the RED Brick (Apache) uses WSGI
 (`mod_wsgi <https://github.com/GrahamDumpleton/mod_wsgi>`__) to interface with
 Python programs. It is configured to recognize an ``index.py`` as the
 starting point for a WSGI script. All of the common Python web frameworks
-support WSGI. The `Flask framework <http://flask.pocoo.org/>`__ is
+support WSGI. The `Flask framework <https://flask.pocoo.org/>`__ is
 preinstalled on the RED Brick (including
-`Werkzeug <http://werkzeug.pocoo.org/>`__ and
-`Jinja <http://jinja.pocoo.org/>`__).
+`Werkzeug <https://werkzeug.pocoo.org/>`__ and
+`Jinja <https://jinja.pocoo.org/>`__).
 
 A minimal flask web interface that can be uploaded to the RED Brick
 is an ``index.py`` with the following content:
@@ -802,7 +802,7 @@ To control Bricks/Bricklets you can import the Tinkerforge Bindings::
 RED Brick Software Image
 ------------------------
 
-The RED Brick software image is based on `Debian <http://www.debian.org/>`__
+The RED Brick software image is based on `Debian <https://www.debian.org/>`__
 and is stored on a Micro-SD-Card. Previously the image was available in two
 different flavors: The "full" and the "fast" image. Since image version 1.4
 there is only one image (previously known as the full image) with configurable
@@ -811,7 +811,7 @@ allow to customize your image for your individual requirements.
 
 The image comes with a driver for the GPU and all necessary graphical user
 interface libraries. If enabled, it boots an X server and the
-`LXDE desktop environment <http://lxde.org/>`__
+`LXDE desktop environment <https://lxde.org/>`__
 with auto login. If the program you run on the RED Brick uses a graphical
 interface it will show up on the desktop. The screen resolution should
 automatically adapt to the preferred resolution of the connected HDMI monitor.

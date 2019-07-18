@@ -96,7 +96,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/stepper-brick/raw/master/hardware/stepper-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/stepper_brick_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/stepper-brick/zipball/master>`__)
-* 3D Modell (`Online ansehen <http://autode.sk/2BCk72r>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricks/stepper/stepper.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricks/stepper/stepper.FCStd>`__)
+* 3D Modell (`Online ansehen <https://autode.sk/2BCk72r>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricks/stepper/stepper.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricks/stepper/stepper.FCStd>`__)
 
 
 .. _stepper_brick_connectivity:
@@ -187,7 +187,7 @@ Decay Modi
 ----------
 
 Für eine gute Erläuterung der verschiedenen Decay Modi siehe
-`diesen <http://ebldc.com/?p=86/>`__ Blogeintrag (Englisch) von Avayan oder
+`diesen <https://ebldc.com/?p=86/>`__ Blogeintrag (Englisch) von Avayan oder
 `diesen <http://www.schrittmotor-blog.de/stromregelung-von-schrittmotoren-auf-das-abschalten-kommt-es-an/>`__
 Blogeintrag (Deutsch) von T. Ostermann.
 

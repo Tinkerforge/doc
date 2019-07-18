@@ -20,7 +20,7 @@ Since version 2.0.0 the C# bindings are
 compliant. This allows to use them with all `.NET compatible languages
 <https://en.wikipedia.org/wiki/List_of_CLI_languages>`__, such as
 LabVIEW's `.NET support
-<http://zone.ni.com/reference/en-XX/help/371361K-01/lvcomm/dotnet_pal/>`__.
+<https://zone.ni.com/reference/en-XX/help/371361K-01/lvcomm/dotnet_pal/>`__.
 
 
 Requirements

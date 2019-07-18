@@ -94,7 +94,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/isolator-bricklet/raw/master/hardware/isolator-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/isolator_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/isolator-bricklet/zipball/master>`__)
-* 3D model (`View online <https://autode.sk/2NYVE9E>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/isolator/isolator.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/isolator/isolator.FCStd>`__)
+* 3D model (`View online <https://autode.sk/2NYVE9E>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricklets/isolator/isolator.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricklets/isolator/isolator.FCStd>`__)
 
 
 Example

@@ -182,7 +182,7 @@ geeignete externe Maschinen nicht möglich ist.
 
 Die Werkskalibrierung für jeden IMU Brick kann hier abgerufen werden::
 
- http://download.tinkerforge.com/imu_calibration/YOUR_IMU_UID.txt
+ https://download.tinkerforge.com/imu_calibration/YOUR_IMU_UID.txt
 
 Dazu muss ``YOUR_IMU_UID`` durch die UID des IMU Bricks ersetzt werden.
 Falls ein Sensor verkalibriert ist oder eine neue Firmwareversion geflasht
@@ -312,7 +312,7 @@ bereit gestellt der die Quaternionen in das Fahrzeugkoordinatensystem nach
 DIN70000 umwandelt. Insbesondere wird dort durchgängig ein
 `rechtshändiges Koordinatensystem <https://de.wikipedia.org/wiki/Rechtssystem_(Mathematik)>`__
 verwendet. Mehr Informationen dazu gibt es im 
-`Blog von MachLab Engineering <http://mechlab-engineering.de/2014/03/tinkerforge-imu-zur-lageerkennung-von-fahrzeugen/>`__.
+`Blog von MachLab Engineering <https://mechlab-engineering.de/2014/03/tinkerforge-imu-zur-lageerkennung-von-fahrzeugen/>`__.
 
 Funktionsweise
 --------------

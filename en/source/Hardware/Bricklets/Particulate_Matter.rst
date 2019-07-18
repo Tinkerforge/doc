@@ -75,7 +75,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/particulate-matter-bricklet/raw/master/hardware/particulate-matter-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/particulate_matter_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/particulate-matter-bricklet/zipball/master>`__)
-* 3D model (`View online <https://autode.sk/2rFjjDp>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/particulate_matter/particulate-matter.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/particulate_matter/particulate-matter.FCStd>`__)
+* 3D model (`View online <https://autode.sk/2rFjjDp>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricklets/particulate_matter/particulate-matter.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricklets/particulate_matter/particulate-matter.FCStd>`__)
 
 .. _particulate_matter_bricklet_laser_diode:
 

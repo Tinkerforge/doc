@@ -66,7 +66,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/heart-rate-bricklet/raw/master/hardware/heart-rate-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/heart_rate_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/heart-rate-bricklet/zipball/master>`__)
-* 3D Modell (`Online ansehen <TBD>`__ | Download: `STEP <http://download.tinkerforge.com/3d/TBD/TBD.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/TBD/TBD.FCStd>`__)
+* 3D Modell (`Online ansehen <https://autode.sk/TBD>`__ | Download: `STEP <https://download.tinkerforge.com/3d/TBD/TBD.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/TBD/TBD.FCStd>`__)
 
 
 .. _heart_rate_bricklet_test:

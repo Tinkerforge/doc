@@ -80,7 +80,7 @@ dass auch entfernte Stapel von Bricks und Bricklets vom RED Brick gesteuert
 werden können.
 
 Fortgeschrittene Nutzer können den Brick mit vollem Zugriff auf dem
-zugrundeliegenden `Debian <http://www.debian.org>`__ System nutzen.
+zugrundeliegenden `Debian <https://www.debian.org>`__ System nutzen.
 
 Ein Einführungsvideo gibt es auf Youtube:
 
@@ -111,7 +111,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/red-brick/raw/master/hardware/red-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/red_brick_dimensions.png>`__)
 * Linux Image und Platinenlayout (`Download <https://github.com/Tinkerforge/red-brick/zipball/master>`__)
-* 3D Modell (`Online ansehen <http://autode.sk/2iTFL7d>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricks/red/red.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricks/red/red.FCStd>`__)
+* 3D Modell (`Online ansehen <https://autode.sk/2iTFL7d>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricks/red/red.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricks/red/red.FCStd>`__)
 
 
 .. _red_brick_test:
@@ -389,7 +389,7 @@ openHAB
    :alt: Screenshot des Settings Tabs: openHAB Konfiguration.
    :align: center
 
-Im `openHAB <http://www.openhab.org/>`__ Abschnitt (benötigt Image >= 1.6 und
+Im `openHAB <https://www.openhab.org/>`__ Abschnitt (benötigt Image >= 1.6 und
 Brick Viewer >= 2.2.3) kann der openHAB Service auf dem RED Brick konfiguriert
 werden. Ab Image >= 1.10 und Brick Viewer >= 2.3.11 wird openHAB2 verwendet.
 
@@ -514,7 +514,7 @@ und Notebooks direkt mit dem RED Brick verbinden können.
 * Server Monitoring: Aktiviert das `Nagios <https://www.nagios.org/>`__
   Monitoring System (siehe :ref:`Serverüberwachung im Settings Tab
   <red_brick_brickv_settings_server_monitoring>`).
-* openHAB: Aktiviert die `openHAB <http://www.openhab.org/>`__ Runtime (siehe
+* openHAB: Aktiviert die `openHAB <https://www.openhab.org/>`__ Runtime (siehe
   :ref:`openHAB im Settings Tab <red_brick_brickv_settings_openhab>`).
 * Mobile Internet: Wenn Mobile Internet aktiviert ist, dann kann eine
   :ref:`mobile Internet-Verbindung im Settings Tab
@@ -742,10 +742,9 @@ Auf dem Webserver (Apache) des RED Bricks wird WSGI
 (`mod_wsgi <https://github.com/GrahamDumpleton/mod_wsgi>`__) von Python genutzt
 um Webseiten darzustellen. Dieser ist konfiguriert um eine ``index.py`` als
 Startpunkt für ein WSGI Skript zu nutzen. Alle verbreiteten Python Web
-Frameworks unterstützen WSGI. Das `Flask framework <http://flask.pocoo.org/>`__
+Frameworks unterstützen WSGI. Das `Flask framework <https://flask.pocoo.org/>`__
 ist auf dem RED Brick vorinstalliert (beinhaltet
-`Werkzeug <http://werkzeug.pocoo.org/>`__ und
-`Jinja <http://jinja.pocoo.org/>`__).
+`Werkzeug <https://werkzeug.pocoo.org/>`__ und `Jinja <https://jinja.pocoo.org/>`__).
 
 Ein minimales Flask Web Interface, das auf den RED Brick hochgeladen werden kann,
 ist eine ``index.py`` mit folgenden Inhalt:
@@ -816,7 +815,7 @@ werden::
 RED Brick Software Image
 ------------------------
 
-Das RED Brick Software Image basiert auf `Debian <http://www.debian.org/>`__
+Das RED Brick Software Image basiert auf `Debian <https://www.debian.org/>`__
 und ist auf einer Micro-SD-Karte gespeichert. Zu Anfang gab es das Image in
 zwei Varianten: Das "Full" und das "Fast" Image. Seit Image Version 1.4 gibt es
 nur noch ein Image (ehemals das "Full" Image) mit einstellbaren Services
@@ -826,7 +825,7 @@ Image an verschiedenen Anforderungen anzupassen.
 Das Image verfügt über GPU Treiber und besitzt alle notwendigen
 Bibliotheken für die Nutzung von grafischen Nutzerschnittstellen (GUIs).
 Falls aktiviert, startet ein X Server während des Bootvorgangs und das
-`LXDE Desktop Environment <http://lxde.org/>`__ wird mit Autologin gestartet.
+`LXDE Desktop Environment <https://lxde.org/>`__ wird mit Autologin gestartet.
 Wenn das eigene Programm eine grafische Nutzerschnittstelle nutzt, so wird
 diese auf dem Desktop angezeigt. Die Bildschirmauflösung passt sich der
 Voreinstellung des angeschlossenen HDMI Monitors an. Über LXDE kann diese aber

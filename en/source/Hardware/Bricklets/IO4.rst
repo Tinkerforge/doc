@@ -86,7 +86,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/io4-bricklet/raw/master/hardware/io4-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/io4_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/io4-bricklet/zipball/master>`__)
-* 3D model (`View online <http://autode.sk/2C1Ljoh>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/io4/io4.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/io4/io4.FCStd>`__)
+* 3D model (`View online <https://autode.sk/2C1Ljoh>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricklets/io4/io4.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricklets/io4/io4.FCStd>`__)
 
 
 .. _io4_bricklet_test:

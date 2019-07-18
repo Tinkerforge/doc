@@ -66,7 +66,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/xmc1400-breakout-bricklet/raw/master/hardware/xmc1400-breakout-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/xmc1400_breakout_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/xmc1400-breakout-bricklet/zipball/master>`__)
-* 3D Modell (`Online ansehen <TBD>`__ | Download: `STEP <http://download.tinkerforge.com/3d/TBD/TBD.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/TBD/TBD.FCStd>`__)
+* 3D Modell (`Online ansehen <https://autode.sk/TBD>`__ | Download: `STEP <https://download.tinkerforge.com/3d/TBD/TBD.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/TBD/TBD.FCStd>`__)
 
 
 .. _xmc1400_breakout_bricklet_test:

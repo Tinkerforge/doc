@@ -42,7 +42,7 @@ Maven
 ^^^^^
 
 Die Bindings steht auch im `Central Maven Repository
-<http://search.maven.org/#search%7Cga%7C1%7Ca%3Atinkerforge>`__ zur Verfügung.
+<https://search.maven.org/#search%7Cga%7C1%7Ca%3Atinkerforge>`__ zur Verfügung.
 Dadurch können sie direkt in Maven Projekte eingebunden werden. Dazu einfach
 ``tinkerforge`` als Abhängigkeit in die Maven Projektdatei (``pom.xml``)
 aufnehmen. Der Platzhalter ``X.Y.Z`` steht dabei für die zu verwendende Version

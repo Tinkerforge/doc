@@ -78,7 +78,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/co2-bricklet/raw/master/hardware/co2-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/co2_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/co2-bricklet/zipball/master>`__)
-* 3D model (`View online <https://autode.sk/2E2cT4z>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/co2/co2.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/co2/co2.FCStd>`__)
+* 3D model (`View online <https://autode.sk/2E2cT4z>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricklets/co2/co2.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricklets/co2/co2.FCStd>`__)
 
 
 .. _co2_bricklet_test:

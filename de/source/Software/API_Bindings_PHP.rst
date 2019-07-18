@@ -10,7 +10,7 @@ heraus zu steuern. Die :ref:`ZIP Datei <downloads_bindings_examples>` für
 die Bindings beinhaltet:
 
 * ``Tinkerforge.tgz``, ein PEAR Package (installierbar mit `pear
-  <http://pear.php.net/>`__ Tool)
+  <https://pear.php.net/>`__ Tool)
 * in ``source/`` den Quelltext für ``Tinkerforge.tgz``
 * in ``examples/`` die Beispiele für alle Bricks und Bricklets
 
@@ -33,7 +33,7 @@ Vom PEAR Package
 ^^^^^^^^^^^^^^^^
 
 Die Bindings stehen als PEAR Package bereit, das mit dem `pear
-<http://pear.php.net/>`__ Tool und folgendem Befehl installiert werden kann.
+<https://pear.php.net/>`__ Tool und folgendem Befehl installiert werden kann.
 Abhängig von der Art der PHP Installation muss dies möglicherweise mit ``sudo``
 bzw. als Administrator ausgeführt werden::
 

@@ -80,7 +80,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/segment-display-4x7-bricklet/raw/master/hardware/segment-display-4x7-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/segment_display_4x7_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/segment-display-4x7-bricklet/zipball/master>`__)
-* 3D model (`View online <http://autode.sk/2iV9qNf>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/segment_display_4x7/segment-display-4x7.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/segment_display_4x7/segment-display-4x7.FCStd>`__)
+* 3D model (`View online <https://autode.sk/2iV9qNf>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricklets/segment_display_4x7/segment-display-4x7.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricklets/segment_display_4x7/segment-display-4x7.FCStd>`__)
 
 
 .. _segment_display_4x7_bricklet_test:

@@ -18,14 +18,14 @@ Eine Demo-Anwendung basierend auf diesem Projekt ist verfügbar:
 <https://github.com/Tinkerforge/hardware-hacking/raw/master/remote_switch_gui/csharp/RemoteSwitchGUI.exe>`__):
 
 * Auf Windows wird das `.NET Framework
-  <http://www.microsoft.com/de-de/download/details.aspx?id=30653>`__ benötigt,
+  <https://www.microsoft.com/de-de/download/details.aspx?id=30653>`__ benötigt,
   dies ist typischerweise aber bereits installiert.
 * Auf Linux wird die `Mono Runtime for Linux
-  <http://www.mono-project.com/Mono:Linux>`__ benötigt, dies ist typischerweise
+  <https://www.mono-project.com/Mono:Linux>`__ benötigt, dies ist typischerweise
   aber bereits auch installiert.
 * Auf macOS wird die `Mono Runtime for macOS
-  <http://www.mono-project.com/Mono:OSX>`__ benötigt. Seit macOS 10.8 muss
-  außerdem noch `XQuartz <http://xquartz.macosforge.org/>`__ installiert werden
+  <https://www.mono-project.com/Mono:OSX>`__ benötigt. Seit macOS 10.8 muss
+  außerdem noch `XQuartz <https://xquartz.macosforge.org/>`__ installiert werden
   damit die Mono Runtime richtig funktioniert. Jetzt kann die Demo-Anwendung
   mittels ``mono RemoteSwitchGUI.exe`` aus einem Terminal-Fenster heraus
   gestartet werden.

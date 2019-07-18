@@ -100,7 +100,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/silent-stepper-brick/raw/master/hardware/silent-stepper-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/silent_stepper_brick_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/silent-stepper-brick/zipball/master>`__)
-* 3D model (`View online <http://autode.sk/2BVli9h>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricks/silent_stepper/silent-stepper.step>`__,  `FreeCAD <http://download.tinkerforge.com/3d/bricks/silent_stepper/silent-stepper.FCStd>`__)
+* 3D model (`View online <https://autode.sk/2BVli9h>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricks/silent_stepper/silent-stepper.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricks/silent_stepper/silent-stepper.FCStd>`__)
 
 .. _silent_stepper_brick_connectivity:
 

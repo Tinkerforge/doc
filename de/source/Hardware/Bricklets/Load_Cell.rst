@@ -89,7 +89,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/load-cell-bricklet/raw/master/hardware/load-cell-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/load_cell_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/load-cell-bricklet/zipball/master>`__)
-* 3D Modell (`Online ansehen <http://autode.sk/2BcQdkS>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/load_cell/load-cell.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/load_cell/load-cell.FCStd>`__)
+* 3D Modell (`Online ansehen <https://autode.sk/2BcQdkS>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricklets/load_cell/load-cell.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricklets/load_cell/load-cell.FCStd>`__)
 
 
 .. _load_cell_bricklet_connectivity:

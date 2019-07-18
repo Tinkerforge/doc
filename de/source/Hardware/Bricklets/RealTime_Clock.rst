@@ -84,7 +84,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/real-time-clock-bricklet/raw/master/hardware/real-time-clock-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/real_time_clock_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/real-time-clock-bricklet/zipball/master>`__)
-* 3D Modell (`Online ansehen <http://autode.sk/2BFtoCC>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/real_time_clock/real-time-clock.step>`__,  `FreeCAD <http://download.tinkerforge.com/3d/bricklets/real_time_clock/real-time-clock.FCStd>`__)
+* 3D Modell (`Online ansehen <https://autode.sk/2BFtoCC>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricklets/real_time_clock/real-time-clock.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricklets/real_time_clock/real-time-clock.FCStd>`__)
 
 
 .. _real_time_clock_bricklet_test:

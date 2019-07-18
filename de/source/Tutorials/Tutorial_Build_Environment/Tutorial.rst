@@ -17,7 +17,7 @@ komplette Tinkerforge Ökosystem aufsetzt:
 * `build_environment_setup.sh <https://github.com/Tinkerforge/generators/blob/master/build_environment_setup.sh>`__
 
 Das Skript wurde mit einem Ubuntu 15.04 VirtualBox Image von `osboxes.org
-<http://www.osboxes.org/>`__ getestet. Es sollte auf allen aktuellen Debian
+<https://www.osboxes.org/>`__ getestet. Es sollte auf allen aktuellen Debian
 basierten Linux Distributionen funktionieren. Für nicht-Debian basierende
 Distribution müssen die Aufrufe von ``apt-get`` mit Aufrufen
 der entsprechenden Gegenstücke (``yum``, ``emerge``, ``packman``, etc)
@@ -274,7 +274,7 @@ Gehäuse CAD Dateien
 -------------------
 
 Unsere lasergeschnittenen Acrylgehäuse wurden mit 
-`FreeCAD <http://www.freecadweb.org/>`__ erstellt. Die Gehöuse
+`FreeCAD <https://www.freecadweb.org/>`__ erstellt. Die Gehöuse
 sind im ``cases``-git welches in ``~/tf/cases`` zu finden ist.
 
 Beispielsweise kann die Gehäuse-Projektdatei des Ambient Light
@@ -288,7 +288,7 @@ Dokumentation
 -------------
 
 Die Dokumentation ist in
-`reStructuredText <http://docutils.sourceforge.net/rst.html>`__ geschrieben.
+`reStructuredText <https://docutils.sourceforge.net/rst.html>`__ geschrieben.
 Sie ist im ``doc``-git welches in ``~/tf/doc`` zu finden ist.
 
 Die komplette Dokumentation kann gebaut werden mit::

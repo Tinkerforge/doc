@@ -119,7 +119,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/hat-brick/raw/master/hardware/hat-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/hat_brick_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/hat-brick/zipball/master>`__)
-* 3D model (`View online <https://autode.sk/2XiDCDT>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricks/hat/hat.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricks/hat/hat.FCStd>`__)
+* 3D model (`View online <https://autode.sk/2XiDCDT>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricks/hat/hat.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricks/hat/hat.FCStd>`__)
 
 
 .. _hat_brick_getting_started:
@@ -142,7 +142,7 @@ You can install Brick Daemon from the Raspberry Pi's terminal with the following
 .. code-block:: shell
 
 	sudo apt-get install libusb-1.0-0 libudev0 pm-utils
-	wget http://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_armhf.deb
+	wget https://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_armhf.deb
 	sudo dpkg -i brickd_linux_latest_armhf.deb
 
 After Brick Daemon is installed you can put the HAT Brick on top of the

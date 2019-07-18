@@ -80,7 +80,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/sound-pressure-level-bricklet/raw/master/hardware/sound-pressure-level-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/sound_pressure_level_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/sound-pressure-level-bricklet/zipball/master>`__)
-* 3D model (`View online <https://autode.sk/2IdCjzd>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/sound_pressure_level/sound-pressure-level.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/sound_pressure_level/sound-pressure-level.FCStd>`__)
+* 3D model (`View online <https://autode.sk/2IdCjzd>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricklets/sound_pressure_level/sound-pressure-level.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricklets/sound_pressure_level/sound-pressure-level.FCStd>`__)
 
 
 .. _sound_pressure_level_bricklet_accuracy:

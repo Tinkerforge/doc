@@ -51,7 +51,7 @@ Sonstiges gestartet werden, oder aus einem Terminal heraus mit::
 Statt mittels eines graphischen Installationsprogramms kann der Brick Viewer
 auch über einen Terminal durch folgende Befehle installiert werden::
 
- wget http://download.tinkerforge.com/tools/brickv/linux/brickv_linux_latest.deb
+ wget https://download.tinkerforge.com/tools/brickv/linux/brickv_linux_latest.deb
  sudo apt-get install python3 python3-pyqt5 python3-pyqt5.qtopengl python3-serial
  sudo dpkg -i brickv_linux_latest.deb
 

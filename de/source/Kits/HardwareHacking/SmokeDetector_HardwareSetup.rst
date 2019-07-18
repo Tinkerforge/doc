@@ -10,7 +10,7 @@ vom Modell ab.
 
 In diesem Beispiel nutzen wir einen 
 `ELRO FA20RF/2
-<http://www.elro.eu/en/products/cat/flamingo/security1/smoke-detectors/wireless-interconnectable-smoke-detectors>`__
+<https://www.elro.eu/en/products/cat/flamingo/security1/smoke-detectors/wireless-interconnectable-smoke-detectors>`__
 Rauchmelder. Dieser Rauchmelder ist drahtlos vernetzbar. Das heißt, dass
 Rauchmelder in verschiedenen Räumen installiert werden können und alle auslösen
 wenn ein Melder Rauch detektiert.

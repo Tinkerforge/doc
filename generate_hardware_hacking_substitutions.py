@@ -66,11 +66,11 @@ android_common_intro = {
 """
 >>>intro
 For this project we are assuming, that you have the `Android SDK
-<http://developer.android.com/sdk/index.html>`__ set up and that you have a
+<https://developer.android.com/sdk/index.html>`__ set up and that you have a
 rudimentary understanding of the Java language.
 
 If you are totally new to Java itself you should start
-`here <http://docs.oracle.com/javase/tutorial/>`__.
+`here <https://docs.oracle.com/javase/tutorial/>`__.
 If you are new to the Tinkerforge API, you should start
 :ref:`here <api_bindings_java_android>`.
 <<<intro
@@ -79,12 +79,12 @@ If you are new to the Tinkerforge API, you should start
 """
 >>>intro
 Für diese Projekt setzen wir voraus, dass das `Android SDK
-<http://developer.android.com/sdk/index.html>`__
+<https://developer.android.com/sdk/index.html>`__
 eingerichtet ist und ein grundsätzliches Verständnis der Java Programmiersprache
 vorhanden ist.
 
 Falls dies nicht der Fall ist sollte
-`hier <http://docs.oracle.com/javase/tutorial/>`__ begonnen werden. Informationen
+`hier <https://docs.oracle.com/javase/tutorial/>`__ begonnen werden. Informationen
 über die Tinkerforge API sind dann :ref:`hier <api_bindings_java_android>` zu
 finden.
 <<<intro
@@ -100,7 +100,7 @@ For this project we are assuming, that you have the `Windows Phone SDK
 rudimentary understanding of the C# language.
 
 If you are totally new to C# itself you should start
-`here <http://csharp.net-tutorials.com/>`__.
+`here <https://csharp.net-tutorials.com/>`__.
 If you are new to the Tinkerforge API, you should start
 :ref:`here <api_bindings_csharp_windows_phone>`.
 <<<intro
@@ -114,7 +114,7 @@ eingerichtet ist und ein grundsätzliches Verständnis der C# Programmiersprache
 vorhanden ist.
 
 Falls dies nicht der Fall ist sollte
-`hier <http://csharp.net-tutorials.com/>`__ begonnen werden. Informationen
+`hier <https://csharp.net-tutorials.com/>`__ begonnen werden. Informationen
 über die Tinkerforge API sind dann :ref:`hier <api_bindings_csharp_windows_phone>`
 zu finden.
 <<<intro
@@ -130,7 +130,7 @@ For this project we are assuming, that you have `Xcode
 rudimentary understanding of the Objective-C language.
 
 If you are totally new to Objective-C itself you should start
-`here <http://cocoadevcentral.com/d/learn_objectivec/>`__.
+`here <https://cocoadevcentral.com/d/learn_objectivec/>`__.
 If you are new to the Tinkerforge API, you should start
 :ref:`here <api_bindings_c_ios>`.
 <<<intro
@@ -144,7 +144,7 @@ eingerichtet ist und ein grundsätzliches Verständnis der Objective-C
 Programmiersprache vorhanden ist.
 
 Falls dies nicht der Fall ist sollte
-`hier <http://cocoadevcentral.com/d/learn_objectivec/>`__ begonnen werden. Informationen
+`hier <https://cocoadevcentral.com/d/learn_objectivec/>`__ begonnen werden. Informationen
 über die Tinkerforge API sind dann :ref:`hier <api_bindings_c_ios>` zu finden.
 <<<intro
 """

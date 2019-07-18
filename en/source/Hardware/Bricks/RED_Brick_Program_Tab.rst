@@ -168,7 +168,7 @@ the ``Tinkerforge.dll`` in step 2.
   in step 2. A .NET executable usually has the file ending ``.exe``.
 
   Your executable will be executed with
-  `mono <http://www.mono-project.com/>`__, but you can compile
+  `mono <https://www.mono-project.com/>`__, but you can compile
   on Windows with Visual Studio, that works without problem.
   Make sure that you don't use any Windows specific libraries that
   are not available on the RED Brick.
@@ -347,7 +347,7 @@ PHP
    :alt: Screenshot of RED Brick Wizard Step 3 (PHP).
    :align: center
 
-The Tinkerforge Bindings are installed through `PEAR <http://pear.php.net/>`__
+The Tinkerforge Bindings are installed through `PEAR <https://pear.php.net/>`__
 and thus available. You can import them with the ``require_once``
 function, e.g.: ``require_once('Tinkerforge/IPConnection.php');``.
 
@@ -486,7 +486,7 @@ the ``Tinkerforge.dll`` in step 2.
   in step 2. A .NET executable usually has the file ending ``.exe``.
 
   Your executable will be executed with
-  `mono <http://www.mono-project.com/>`__, but you can compile
+  `mono <https://www.mono-project.com/>`__, but you can compile
   on Windows with Visual Studio, that works without problem.
   Make sure that you don't use any Windows specific libraries that
   are not available on the RED Brick.

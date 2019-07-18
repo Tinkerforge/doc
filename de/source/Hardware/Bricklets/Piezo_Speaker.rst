@@ -81,7 +81,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/piezo-speaker-bricklet/raw/master/hardware/piezo-speaker-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/piezo_speaker_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/piezo-speaker-bricklet/zipball/master>`__)
-* 3D Modell (`Online ansehen <http://autode.sk/2BfnHz6>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/piezo_speaker/piezo-speaker.step>`__,  `FreeCAD <http://download.tinkerforge.com/3d/bricklets/piezo_speaker/piezo-speaker.FCStd>`__)
+* 3D Modell (`Online ansehen <https://autode.sk/2BfnHz6>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricklets/piezo_speaker/piezo-speaker.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricklets/piezo_speaker/piezo-speaker.FCStd>`__)
 
 
 .. _piezo_speaker_bricklet_test:

@@ -4,7 +4,7 @@
 Brick MQTT Proxy (Discontinued)
 ===============================
 
-`MQTT <http://mqtt.org/>`__ is a machine-to-machine (M2M) and Internet of Things
+`MQTT <https://mqtt.org/>`__ is a machine-to-machine (M2M) and Internet of Things
 (IoT) publish/subscribe message transport protocol. The Brick MQTT Proxy
 provides access to Bricks and Bricklets over MQTT. It is written in Python
 and translates messages between the :ref:`Tinkerforge TCP/IP Protocol (TFP)
@@ -55,7 +55,7 @@ Examples
 ^^^^^^^^
 
 In the following examples we use 
-`mosquitto <http://mosquitto.org/documentation/>`__ as broker and client. 
+`mosquitto <https://mosquitto.org/>`__ as broker and client. 
 Other broker and clients can be used similarly. To install
 the broker and client software under Linux do the following:
 

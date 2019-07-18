@@ -12,7 +12,7 @@ Dingen.
 Im Folgenden wird angenommen, dass die Android Entwicklungsumgebung schon
 installiert ist. Für Android-Anfänger empfehlen wir zuerst mit dem
 `First App Tutorial
-<http://developer.android.com/training/basics/firstapp/index.html>`__ von
+<https://developer.android.com/training/basics/firstapp/index.html>`__ von
 Google zu beginnen.
 
 
@@ -128,5 +128,5 @@ Die App kann nun im Simulator getestet werden:
 
   Seit Android 4.2 führt der Aufruf von ``new IPConnection`` auf dem UI Thread
   zu einer ``andriod.os.NetworkOnMainThreadException``. Siehe diese
-  `StackOverflow Frage <http://stackoverflow.com/questions/6343166/android-os-networkonmainthreadexception>`__
+  `StackOverflow Frage <https://stackoverflow.com/questions/6343166/android-os-networkonmainthreadexception>`__
   für weitere Informationen.

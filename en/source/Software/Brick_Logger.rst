@@ -91,7 +91,7 @@ Standalone
 
 The Brick Logger can also be used outside of Brick Viewer. It is available
 as single `Python script
-<http://download.tinkerforge.com/tools/brick_logger/brick_logger_latest.zip>`__.
+<https://download.tinkerforge.com/tools/brick_logger/brick_logger_latest.zip>`__.
 To use it you need to install the :ref:`Python API bindings
 <api_bindings_python>` and create and save a configuration in Brick Viewer.
 Then you can run it like this (``config.json`` is your manually saved
@@ -105,7 +105,7 @@ RED Brick
 ^^^^^^^^^
 
 The Brick Logger is also available as `preconfigured RED Brick program
-<http://download.tinkerforge.com/tools/brick_logger/brick_logger_latest.tfrba>`__
+<https://download.tinkerforge.com/tools/brick_logger/brick_logger_latest.tfrba>`__
 that you can import. See the :ref:`RED Brick documentation
 <red_brick_brickv_import_export_tab>` for details.
 

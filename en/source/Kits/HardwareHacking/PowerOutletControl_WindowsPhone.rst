@@ -27,7 +27,7 @@ Control Remote Mains Switches using Windows Phone
 The complete Visual Studio project can be downloaded `here
 <https://github.com/Tinkerforge/hardware-hacking/tree/master/power_outlet_control_smart_phone/windows_phone>`__.
 A demo app based on this project is available in the
-`Windows Phone Store <http://www.windowsphone.com/s?appid=52e1f6a9-707c-4961-9e68-5736e6d29b73>`__.
+`Windows Phone Store <https://www.windowsphone.com/s?appid=52e1f6a9-707c-4961-9e68-5736e6d29b73>`__.
 
 
 Goals

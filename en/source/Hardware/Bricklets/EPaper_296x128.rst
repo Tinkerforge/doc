@@ -91,7 +91,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/e-paper-296x128-bricklet/raw/master/hardware/e-paper-296x128-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/e_paper_296x128_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/e-paper-296x128-bricklet/zipball/master>`__)
-* 3D model (`View online <https://autode.sk/2VyGhgF>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/e_paper_296x128/e-paper-296x128.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/e_paper_296x128/e-paper-296x128.FCStd>`__)
+* 3D model (`View online <https://autode.sk/2VyGhgF>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricklets/e_paper_296x128/e-paper-296x128.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricklets/e_paper_296x128/e-paper-296x128.FCStd>`__)
 
 
 .. _e_paper_296x128_bricklet_test:
@@ -139,11 +139,11 @@ We provide examples for:
 * `Go <https://raw.githubusercontent.com/Tinkerforge/e-paper-296x128-bricklet/master/software/examples/go/example_load_image.go>`__,
 * `Java <https://raw.githubusercontent.com/Tinkerforge/e-paper-296x128-bricklet/master/software/examples/java/ExampleLoadImage.java>`__,
 * `Perl <https://raw.githubusercontent.com/Tinkerforge/e-paper-296x128-bricklet/master/software/examples/perl/example_load_image.pl>`__
-  (with `GD <http://search.cpan.org/~lds/GD-2.56/lib/GD.pm>`__),
+  (with `GD <https://search.cpan.org/~lds/GD-2.56/lib/GD.pm>`__),
 * `PHP <https://raw.githubusercontent.com/Tinkerforge/e-paper-296x128-bricklet/master/software/examples/php/ExampleLoadImage.php>`__
-  (with `GD <http://php.net/manual/en/book.image.php>`__),
+  (with `GD <https://php.net/manual/en/book.image.php>`__),
 * `Python <https://raw.githubusercontent.com/Tinkerforge/e-paper-296x128-bricklet/master/software/examples/python/example_load_image.py>`__
-  (with `PIL <http://python-pillow.org/>`__),
+  (with `PIL <https://python-pillow.org/>`__),
 * `Rust <https://raw.githubusercontent.com/Tinkerforge/e-paper-296x128-bricklet/master/software/examples/rust/example_load_image.rs>`__,
   (with `image <https://docs.rs/image/0.21.1/image/>`__)
 * `Visual Basic .NET <https://raw.githubusercontent.com/Tinkerforge/e-paper-296x128-bricklet/master/software/examples/vbnet/ExampleLoadImage.vb>`__.

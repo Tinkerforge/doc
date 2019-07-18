@@ -5,7 +5,7 @@ Raspberry Pi
 ============
 
 This section describes how to use Bricks and Bricklets with a
-`Raspberry Pi <http://www.raspberrypi.org/>`__ together with Debian.
+`Raspberry Pi <https://www.raspberrypi.org/>`__ together with Debian.
 
 
 Prepare SD Card
@@ -15,7 +15,7 @@ In the first step you have to set up Debian on a SD card. There are two ways
 to do this.
 
 There is the recommended `New Out of Box Software (NOOBS)
-<http://www.raspberrypi.org/downloads>`__ approach. You just download the NOOBS
+<https://www.raspberrypi.org/downloads>`__ approach. You just download the NOOBS
 ZIP file unpack it to an SD card and boot your Raspberry Pi from it. Then
 follow the steps in the graphical installer and select "Raspbian" to be
 installed.
@@ -24,9 +24,9 @@ If you don't want to use NOOBS there is also the old and more manual way to
 download one of the different Debian images. There is one called "Raspbian"
 (armhf) and the other one called "Soft-Float Debian" (armel). Raspbian uses
 the hardware floating point unit (FPU) of the board and is the recommended one.
-Download the latest `Raspbian image <http://www.raspberrypi.org/downloads>`__
+Download the latest `Raspbian image <https://www.raspberrypi.org/downloads>`__
 and follow the necessary steps of this `SD card setup tutorial
-<http://elinux.org/RPi_Easy_SD_Card_Setup>`__.
+<https://elinux.org/RPi_Easy_SD_Card_Setup>`__.
 
 
 Start Raspberry Pi
@@ -52,7 +52,7 @@ If you have installed an Debian **with** hardware floating point unit support
 executing (if ``libudev0`` isn't available install ``libudev1`` instead)::
 
  sudo apt-get install libusb-1.0-0 libudev0 pm-utils
- wget http://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_armhf.deb
+ wget https://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_armhf.deb
  sudo dpkg -i brickd_linux_latest_armhf.deb
 
 The Brick Daemon will be started after the installation and at startup
@@ -60,7 +60,7 @@ automatically.
 
 Updates can be installed by repeating the last two commands::
 
- wget http://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_armhf.deb
+ wget https://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_armhf.deb
  sudo dpkg -i brickd_linux_latest_armhf.deb
 
 
@@ -92,7 +92,7 @@ To install the :ref:`Brick Viewer <brickv>` software execute the following
 commands::
 
  sudo apt-get install python3 python3-pyqt5 python3-pyqt5.qtopengl python3-serial
- wget http://download.tinkerforge.com/tools/brickv/linux/brickv_linux_latest.deb
+ wget https://download.tinkerforge.com/tools/brickv/linux/brickv_linux_latest.deb
  sudo dpkg -i brickv_linux_latest.deb
 
 ``apt-get`` might complain about dependencies that are not going to be installed.
@@ -101,7 +101,7 @@ should resolve this problem and install re required dependencies.
 
 Updates can be installed by repeating the last two commands::
 
- wget http://download.tinkerforge.com/tools/brickv/linux/brickv_linux_latest.deb
+ wget https://download.tinkerforge.com/tools/brickv/linux/brickv_linux_latest.deb
  sudo dpkg -i brickv_linux_latest.deb
 
 

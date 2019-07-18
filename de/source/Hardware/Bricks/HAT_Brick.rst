@@ -114,7 +114,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/hat-brick/raw/master/hardware/hat-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/hat_brick_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/hat-brick/zipball/master>`__)
-* 3D Modell (`Online ansehen <https://autode.sk/2XiDCDT>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricks/hat/hat.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricks/hat/hat.FCStd>`__)
+* 3D Modell (`Online ansehen <https://autode.sk/2XiDCDT>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricks/hat/hat.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricks/hat/hat.FCStd>`__)
 
 
 .. _hat_brick_erste_schritte:
@@ -139,7 +139,7 @@ installiert werden:
 .. code-block:: shell
 
 	sudo apt-get install libusb-1.0-0 libudev0 pm-utils
-	wget http://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_armhf.deb
+	wget https://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_armhf.deb
 	sudo dpkg -i brickd_linux_latest_armhf.deb
 
 Nachdem der Brick Daemon installiert wurde, kann der HAT Brick auf den Raspberry Pi gesteckt

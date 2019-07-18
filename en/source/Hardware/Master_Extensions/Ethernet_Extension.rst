@@ -95,7 +95,7 @@ Resources
 * Schematic (Download: `With PoE <https://github.com/Tinkerforge/ethernet-extension/raw/master/hardware/poe/ethernet-extension-poe-schematic.pdf>`__, `Without PoE <https://github.com/Tinkerforge/ethernet-extension/raw/master/hardware/wo_poe/ethernet-extension-wopoe-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/ethernet_extension_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/ethernet-extension>`__)
-* 3D model (View online: `PoE <http://autode.sk/2BgDVb2>`__, `w/o PoE <http://autode.sk/2BVinxA>`__ | Download: `STEP PoE <http://download.tinkerforge.com/3d/extensions/ethernet/poe/ethernet-extension-poe.step>`__, `STEP w/o PoE <http://download.tinkerforge.com/3d/extensions/ethernet/wo_poe/ethernet-extension-wopoe.step>`__, `FreeCAD PoE <http://download.tinkerforge.com/3d/extensions/ethernet/poe/ethernet-extension-poe.FCStd>`__, `FreeCAD w/o PoE <http://download.tinkerforge.com/3d/extensions/ethernet/wo_poe/ethernet-extension-wopoe.FCStd>`__)
+* 3D model (View online: `PoE <https://autode.sk/2BgDVb2>`__, `w/o PoE <https://autode.sk/2BVinxA>`__ | Download: `STEP PoE <https://download.tinkerforge.com/3d/extensions/ethernet/poe/ethernet-extension-poe.step>`__, `STEP w/o PoE <https://download.tinkerforge.com/3d/extensions/ethernet/wo_poe/ethernet-extension-wopoe.step>`__, `FreeCAD PoE <https://download.tinkerforge.com/3d/extensions/ethernet/poe/ethernet-extension-poe.FCStd>`__, `FreeCAD w/o PoE <https://download.tinkerforge.com/3d/extensions/ethernet/wo_poe/ethernet-extension-wopoe.FCStd>`__)
 
 
 .. _ethernet_extension_configuration:

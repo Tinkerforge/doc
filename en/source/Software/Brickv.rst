@@ -191,10 +191,10 @@ Using brick-flash on Linux
 Brick Viewer requires a graphical desktop. If you need to flash Bricks
 connected to a Linux system without a graphical desktop you can use the
 ``brick-flash`` tool. It is available as `Debian package
-<http://download.tinkerforge.com/tools/brick_flash/linux/brick-flash_linux_latest.deb>`__
+<https://download.tinkerforge.com/tools/brick_flash/linux/brick-flash_linux_latest.deb>`__
 that you can download and install::
 
- wget http://download.tinkerforge.com/tools/brick_flash/linux/brick-flash_linux_latest.deb
+ wget https://download.tinkerforge.com/tools/brick_flash/linux/brick-flash_linux_latest.deb
  sudo dpkg -i brick-flash_linux_latest.deb
 
 In contrast to Brick Viewer ``brick-flash`` does not download the firmware
@@ -202,7 +202,7 @@ for the Brick automatically. The latest firmwares can be found
 :ref:`here <downloads_brick_firmwares>`. Download the one that should be
 flashed, for example the latest Master Brick firmware::
 
- wget http://download.tinkerforge.com/firmwares/bricks/master/brick_master_firmware_latest.bin
+ wget https://download.tinkerforge.com/firmwares/bricks/master/brick_master_firmware_latest.bin
 
 Ensure that the Brick is in bootloader mode (see the Brick Viewer section above
 about how to do that) and find the serial port name of the Brick. Typically

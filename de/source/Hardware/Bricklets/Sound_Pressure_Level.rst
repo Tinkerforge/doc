@@ -77,7 +77,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/sound-pressure-level-bricklet/raw/master/hardware/sound-pressure-level-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/sound_pressure_level_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/sound-pressure-level-bricklet/zipball/master>`__)
-* 3D Modell (`Online ansehen <https://autode.sk/2IdCjzd>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/sound_pressure_level/sound-pressure-level.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/sound_pressure_level/sound-pressure-level.FCStd>`__)
+* 3D Modell (`Online ansehen <https://autode.sk/2IdCjzd>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricklets/sound_pressure_level/sound-pressure-level.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricklets/sound_pressure_level/sound-pressure-level.FCStd>`__)
 
 .. _sound_pressure_level_bricklet_genauigkeit:
 

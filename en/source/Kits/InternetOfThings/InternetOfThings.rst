@@ -374,8 +374,8 @@ The kit can communicate with lots of different other "things". It is
 very easy to integrate other Bricks and Bricklets from the Tinkerforge
 building blocks. You can also use product specific interfaces or online
 services such as `Xively <https://www.xively.com/>`__,
-`Cumulocity <http://www.cumulocity.com/>`__, 
-`Carriots <http://www.carriots.com/>`__ or similar to interact with
+`Cumulocity <https://www.cumulocity.com/>`__, 
+`Carriots <https://www.carriots.com/>`__ or similar to interact with
 other devices. In the following we will show some examples:
 
 **Motion detection with Motion Detector Bricklet:**

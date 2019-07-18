@@ -77,7 +77,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/remote-switch-v2-bricklet/raw/master/hardware/remote-switch-v2-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/remote_switch_v2_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/remote-switch-v2-bricklet/zipball/master>`__)
-* 3D model (`View online <http://autode.sk/2BK1DJ4>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/remote_switch_v2/remote-switch-v2.step>`__,  `FreeCAD <http://download.tinkerforge.com/3d/bricklets/remote_switch_v2/remote-switch-v2.FCStd>`__)
+* 3D model (`View online <https://autode.sk/2BK1DJ4>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricklets/remote_switch_v2/remote-switch-v2.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricklets/remote_switch_v2/remote-switch-v2.FCStd>`__)
 
 
 .. _remote_switch_v2_bricklet_test:

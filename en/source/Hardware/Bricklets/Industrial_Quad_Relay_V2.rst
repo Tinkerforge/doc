@@ -78,7 +78,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/industrial-quad-relay-v2-bricklet/raw/master/hardware/industrial-quad-relay-v2-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/industrial_quad_relay_v2_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/industrial-quad-relay-v2-bricklet/zipball/master>`__)
-* 3D model (`View online <https://autode.sk/2JSDnZI>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/industrial_quad_relay_v2/industrial-quad-relay-v2.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/industrial_quad_relay_v2/industrial-quad-relay-v2.FCStd>`__)
+* 3D model (`View online <https://autode.sk/2JSDnZI>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricklets/industrial_quad_relay_v2/industrial-quad-relay-v2.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricklets/industrial_quad_relay_v2/industrial-quad-relay-v2.FCStd>`__)
 
 
 Connectivity

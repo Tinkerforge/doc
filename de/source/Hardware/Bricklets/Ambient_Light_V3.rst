@@ -75,7 +75,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/ambient-light-v3-bricklet/raw/master/hardware/ambient-light-v3-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/ambient_light_v3_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/ambient-light-v3-bricklet/zipball/master>`__)
-* 3D Modell (`Online ansehen <https://autode.sk/2WsqooM>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/ambient_light_v3/ambient-light-v3.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/ambient_light_v3/ambient-light-v3.FCStd>`__)
+* 3D Modell (`Online ansehen <https://autode.sk/2WsqooM>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricklets/ambient_light_v3/ambient-light-v3.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricklets/ambient_light_v3/ambient-light-v3.FCStd>`__)
 
 
 .. _ambient_light_v3_bricklet_test:

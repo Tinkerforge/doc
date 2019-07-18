@@ -111,7 +111,7 @@ Resources
 * Example Source Code for :ref:`starter_kit_weather_station_website` (Download: `PHP <https://github.com/Tinkerforge/weather-station/tree/master/website/php>`__)
 * Example Source Code for :ref:`starter_kit_weather_station_button_control` (Download: `C# <https://github.com/Tinkerforge/weather-station/tree/master/button_control/csharp>`__)
 * Example Configuration for :ref:`starter_kit_weather_station_openhab` (`Download <https://github.com/Tinkerforge/weather-station/tree/master/openhab>`__)
-* :ref:`starter_kit_weather_station_demo` (Download: `Windows <http://download.tinkerforge.com/kits/weather_station/windows/starter_kit_weather_station_demo_windows_latest.exe>`__, `Linux <http://download.tinkerforge.com/kits/weather_station/linux/starter-kit-weather-station-demo_linux_latest.deb>`__, `macOS <http://download.tinkerforge.com/kits/weather_station/macos/starter_kit_weather_station_demo_macos_latest.dmg>`__, `Source Code <https://github.com/Tinkerforge/weather-station/tree/master/demo>`__)
+* :ref:`starter_kit_weather_station_demo` (Download: `Windows <https://download.tinkerforge.com/kits/weather_station/windows/starter_kit_weather_station_demo_windows_latest.exe>`__, `Linux <https://download.tinkerforge.com/kits/weather_station/linux/starter-kit-weather-station-demo_linux_latest.deb>`__, `macOS <https://download.tinkerforge.com/kits/weather_station/macos/starter_kit_weather_station_demo_macos_latest.dmg>`__, `Source Code <https://github.com/Tinkerforge/weather-station/tree/master/demo>`__)
 
 
 Firmware updating and first tests
@@ -310,7 +310,7 @@ in :ref:`C# <starter_kit_weather_station_button_control_csharp>`.
 Smart Home Integration using openHAB
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The Weather Station can be integrated into an `openHAB <http://www.openhab.org/>`__
+The Weather Station can be integrated into an `openHAB <https://www.openhab.org/>`__
 managed smart home using the `openHAB Tinkerforge bindings
 <https://github.com/openhab/openhab/wiki/Tinkerforge-Binding/>`__.
 

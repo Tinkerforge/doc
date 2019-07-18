@@ -47,7 +47,7 @@ Beschreibung
 Mit dem Distance IR :ref:`Bricklet <primer_bricklets>` können
 :ref:`Bricks <primer_bricks>` Entfernungen messen.
 Dieses Bricklet wird auf der Rückseite von analogen
-`Sharp <http://www.sharpsma.com>`__ Infrarot Entfernungssensoren befestigt.
+`Sharp <https://www.sharpsma.com>`__ Infrarot Entfernungssensoren befestigt.
 Nachdem der verbundene Sensor konfiguriert wurde, können die gemessenen
 Entfernungen direkt in Millimeter ausgelesen werden.
 Mit konfigurierbaren Events ist es möglich auf veränderte Distanzmessung zu
@@ -79,7 +79,7 @@ Sensor                            GP2Y0A41SK0F oder GP2Y0A21YK0F oder GP2Y0A02YK
 Stromverbrauch                    Siehe Datenblatt des Sensors
 --------------------------------  ---------------------------------------------------------------------------
 --------------------------------  ---------------------------------------------------------------------------
-Entfernungen                      Abhängig vom angeschlossenen `Sharp <http://www.sharpsma.com>`__ IR Sensor:
+Entfernungen                      Abhängig vom angeschlossenen `Sharp <https://www.sharpsma.com>`__ IR Sensor:
 
                                   * GP2Y0A41SK0F:  4cm -  30cm (1,57" - 11,81")
                                   * GP2Y0A21YK0F: 10cm -  80cm (3,94" - 31,50")
@@ -104,7 +104,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/distance-ir-bricklet/raw/master/hardware/distance-ir-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/dist_ir_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/distance-ir-bricklet/zipball/master>`__)
-* 3D Modell (`Online ansehen <https://autode.sk/2rIh6qT>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/distance_ir/distance-ir.step>`__,  `FreeCAD <http://download.tinkerforge.com/3d/bricklets/distance_ir/distance-ir.FCStd>`__)
+* 3D Modell (`Online ansehen <https://autode.sk/2rIh6qT>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricklets/distance_ir/distance-ir.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricklets/distance_ir/distance-ir.FCStd>`__)
 
 
 .. _distance_ir_bricklet_test:

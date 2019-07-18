@@ -154,7 +154,7 @@ Das war's! Zum Schluss muss nur noch die HTML und PHP Datei in ein
 Verzeichnis gelegt werden, das von einem Webserver wie Apache bedient wird.
 
 Wenn es hierbei Probleme gibt lohnt sich ein Blick in die
-`PHP Installationsanleitung <http://php.net/manual/de/install.php>`__.
+`PHP Installationsanleitung <https://php.net/manual/de/install.php>`__.
 
 Wir haben dies auf einem Ubuntu Rechner getestet. Hier konnten wir
 PHP und Apache einfach per apt-get installieren::

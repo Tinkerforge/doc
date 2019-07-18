@@ -80,7 +80,7 @@ Ressourcen
 ----------
 
 * Kameraschlitten-Halterungen als FreeCAD CAD Dateien (`Download <https://github.com/Tinkerforge/camera-slider/tree/master/brackets>`__)
-* :ref:`starter_kit_camera_slider_demo` (Download: `Windows <http://download.tinkerforge.com/kits/camera_slider/windows/starter_kit_camera_slider_demo_windows_latest.exe>`__, `Linux <http://download.tinkerforge.com/kits/camera_slider/linux/starter-kit-camera-slider-demo_linux_latest.deb>`__, `macOS <http://download.tinkerforge.com/kits/camera_slider/macos/starter_kit_camera_slider_demo_macos_latest.dmg>`__, `RED Brick <http://download.tinkerforge.com/kits/camera_slider/red_brick/starter_kit_camera_slider_demo_red_brick_latest.tfrba>`__, `Quelltext <https://github.com/Tinkerforge/camera-slider/tree/master/demo>`__)
+* :ref:`starter_kit_camera_slider_demo` (Download: `Windows <https://download.tinkerforge.com/kits/camera_slider/windows/starter_kit_camera_slider_demo_windows_latest.exe>`__, `Linux <https://download.tinkerforge.com/kits/camera_slider/linux/starter-kit-camera-slider-demo_linux_latest.deb>`__, `macOS <https://download.tinkerforge.com/kits/camera_slider/macos/starter_kit_camera_slider_demo_macos_latest.dmg>`__, `RED Brick <https://download.tinkerforge.com/kits/camera_slider/red_brick/starter_kit_camera_slider_demo_red_brick_latest.tfrba>`__, `Quelltext <https://github.com/Tinkerforge/camera-slider/tree/master/demo>`__)
 
 
 Firmware aktualisieren und erste Tests
@@ -282,7 +282,7 @@ gphoto2 Support
 Vorbereitung unter Windows und macOS.
 
 Unter **Windows** hat der "Time Lapse" Tab oben einen weiteren Knopf namens
-"Start Zadig". `Zadig <http://zadig.akeo.ie/>`__ kann einen USB Treiber für
+"Start Zadig". `Zadig <https://zadig.akeo.ie/>`__ kann einen USB Treiber für
 eine angeschlossenen Kamera installieren, so dass gphoto2 mit der Kamera
 kommunizieren kann:
 
@@ -339,7 +339,7 @@ Die Canon EOS Kameraserie verwendet eine 3-polige 2,5mm Stereo-Klinkenbuchse
 als Anschluss für einen Kabelauslöser mit Fokusier- und Auslösefunktion. Eine
 detaillierte Übersicht über die genau Anschlussbelegung der Canon EOS Kameras
 und anderer Kameraserien gibt es `hier
-<http://www.doc-diy.net/photo/remote_pinout/>`__. Mit einem passendem Kabel und
+<https://www.doc-diy.net/photo/remote_pinout/>`__. Mit einem passendem Kabel und
 einem Industrial Quad Relay Bricklet haben wir uns unseren eigenen Kabelauslöser
 gebaut:
 
@@ -397,7 +397,7 @@ Auf RED Brick importieren
 Die Demo Anwendung kann zur autarken Verwendung auch auf ein :ref:`RED Brick
 <red_brick>` hochgeladen werden. Lade dazu die aktuelle Version als `Archiv für
 das  RED Brick
-<http://download.tinkerforge.com/kits/camera_slider/red_brick/starter_kit_camera_slider_demo_red_brick_latest.tfrba>`__
+<https://download.tinkerforge.com/kits/camera_slider/red_brick/starter_kit_camera_slider_demo_red_brick_latest.tfrba>`__
 herunter und importiere es mittels des :ref:`RED Brick Import/Export
 <red_brick_brickv_import_export_tab>` Tab des Brick Viewers. Die Demo wird
 dann automatisch im Vollbild starten.

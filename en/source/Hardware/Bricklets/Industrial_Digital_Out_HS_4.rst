@@ -66,7 +66,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/industrial-digital-out-hs-4-bricklet/raw/master/hardware/industrial-digital-out-hs-4-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/industrial_digital_out_hs_4_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/industrial-digital-out-hs-4-bricklet/zipball/master>`__)
-* 3D model (`View online <TBD>`__ | Download: `STEP <http://download.tinkerforge.com/3d/TBD/TBD.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/TBD/TBD.FCStd>`__)
+* 3D model (`View online <https://autode.sk/TBD>`__ | Download: `STEP <https://download.tinkerforge.com/3d/TBD/TBD.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/TBD/TBD.FCStd>`__)
 
 
 .. _industrial_digital_out_hs_4_bricklet_test:

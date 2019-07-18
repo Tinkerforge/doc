@@ -35,7 +35,7 @@ Am Ende sollte jede Versionsnummer mit einer "2" beginnen.
 Es sollte der Lieferung ein Beipackzettel beigelegen haben. Dieser beschreibt
 auch wie Bricks und Bricklets aktualisiert werden können. Wenn keiner oder eine
 veraltete Version dabei war, kann die neueste Version des Beipackzettels
-`hier <http://download.tinkerforge.com/_stuff/beipackzettel.pdf>`__ 
+`hier <https://download.tinkerforge.com/_stuff/beipackzettel.pdf>`__
 heruntergeladen werden.
 
 Allgemein

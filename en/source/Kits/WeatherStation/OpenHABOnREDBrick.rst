@@ -34,7 +34,7 @@ achieve this.
 Step 1: Enable openHAB service
 ------------------------------
 
-The `openHAB <http://www.openhab.org/>`__ service is disabled by default on the
+The `openHAB <https://www.openhab.org/>`__ service is disabled by default on the
 RED Brick because it takes quite some time to start and slows down the boot
 process. Before we can configure openHAB we have to enable it first. The
 :ref:`RED Brick services documentation <red_brick_brickv_settings_services>`

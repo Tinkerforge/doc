@@ -91,7 +91,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/ptc-v2-bricklet/raw/master/hardware/ptc-v2-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/ptc_v2_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/ptc-v2-bricklet/zipball/master>`__)
-* 3D Modell (`Online ansehen <https://autode.sk/2rjjW4L>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/ptc_v2/ptc-v2.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/ptc_v2/ptc-v2.FCStd>`__)
+* 3D Modell (`Online ansehen <https://autode.sk/2rjjW4L>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricklets/ptc_v2/ptc-v2.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricklets/ptc_v2/ptc-v2.FCStd>`__)
 
 
 .. _ptc_v2_bricklet_jumper_configuration:

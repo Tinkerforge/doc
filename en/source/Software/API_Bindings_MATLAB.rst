@@ -44,11 +44,11 @@ with the following command in MATLAB:
 
 If this command doesn't show Java support then see the MATLAB documentation
 about how to configure `Java for MATLAB
-<http://www.mathworks.com/help/compiler_sdk/java/configure-your-java-environment.html>`__.
+<https://www.mathworks.com/help/compiler_sdk/java/configure-your-java-environment.html>`__.
 
 To use the bindings MATLAB needs to know where to find the ``Tinkerforge.jar``
 file. There are several ways to archive this, see the `MATLAB documentation
-<http://www.mathworks.com/help/matlab/matlab_external/bringing-java-classes-and-methods-into-matlab-workspace.html>`__
+<https://www.mathworks.com/help/matlab/matlab_external/bringing-java-classes-and-methods-into-matlab-workspace.html>`__
 for more details on all of them.
 The recommended way is to the add the bindings to the preferences folder.
 
@@ -101,7 +101,7 @@ Octave 3.6::
 
 For Windows we recommend the MinGW build of Octave, because it comes with Java
 support by default. The `Octave Wiki
-<http://wiki.octave.org/Octave_for_Microsoft_Windows>`__ has a guide about
+<https://wiki.octave.org/Octave_for_Microsoft_Windows>`__ has a guide about
 how to set up Octave for Windows.
 
 You can test if Java support is available with the following command in Octave:

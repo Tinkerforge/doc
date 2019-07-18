@@ -97,7 +97,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/wifi-v2-extension/raw/master/hardware/wifi-extension-schematic.pdf>`__)
 * Umriss und Borhplan (`Download <../../_images/Dimensions/wifi_extension_dimensions.png>`__)
 * Quelltext und Platinenlayout (`Download <https://github.com/Tinkerforge/wifi-v2-extension/zipball/master>`__)
-* 3D Modell (`Online ansehen <http://autode.sk/2BcDHSq>`__ | Download: `STEP <http://download.tinkerforge.com/3d/extensions/wifi_v2/wifi-extension.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/extensions/wifi_v2/wifi-extension.FCStd>`__)
+* 3D Modell (`Online ansehen <https://autode.sk/2BcDHSq>`__ | Download: `STEP <https://download.tinkerforge.com/3d/extensions/wifi_v2/wifi-extension.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/extensions/wifi_v2/wifi-extension.FCStd>`__)
 
 
 WLAN Netzwerk

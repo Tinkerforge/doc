@@ -77,7 +77,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/rotary-encoder-v2-bricklet/raw/master/hardware/rotary-encoder-v2-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/rotary_encoder_v2_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/rotary-encoder-v2-bricklet/zipball/master>`__)
-* 3D Modell (`Online ansehen <http://autode.sk/2EHoGaC>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/rotary_encoder_v2/rotary-encoder-v2.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/rotary_encoder_v2/rotary-encoder-v2.FCStd>`__)
+* 3D Modell (`Online ansehen <https://autode.sk/2EHoGaC>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricklets/rotary_encoder_v2/rotary-encoder-v2.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricklets/rotary_encoder_v2/rotary-encoder-v2.FCStd>`__)
 
 
 .. _rotary_encoder_v2_bricklet_test:

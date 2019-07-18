@@ -78,7 +78,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/piezo-speaker-bricklet/raw/master/hardware/piezo-speaker-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/piezo_speaker_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/piezo-speaker-bricklet/zipball/master>`__)
-* 3D model (`View online <http://autode.sk/2BfnHz6>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/piezo_speaker/piezo-speaker.step>`__,  `FreeCAD <http://download.tinkerforge.com/3d/bricklets/piezo_speaker/piezo-speaker.FCStd>`__)
+* 3D model (`View online <https://autode.sk/2BfnHz6>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricklets/piezo_speaker/piezo-speaker.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricklets/piezo_speaker/piezo-speaker.FCStd>`__)
 
 
 .. _piezo_speaker_bricklet_test:

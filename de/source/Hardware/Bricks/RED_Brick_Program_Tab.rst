@@ -167,7 +167,7 @@ kompiliert werden.
 * Executable: Wähle die ausführbare .NET Datei, die in Schritt 2 hinzugefügt
   wurde. Diese Datei hat typischerweise die Endung ``.exe``.
 
-  Die ausführbare Datei wird mit `Mono <http://www.mono-project.com/>`__
+  Die ausführbare Datei wird mit `Mono <https://www.mono-project.com/>`__
   ausgeführt. Die Datei kann auch unter Windows mit Visual Studio kompiliert
   und auf dem RED Brick mit Mono ausgeführt werden, dabei muss allerdings darauf
   geachtet werden, dass keine Windows spezifischen Bibliotheken genutzt werden,
@@ -345,7 +345,7 @@ PHP
    :alt: Screenshot des RED Brick Wizard Schritt 3 (PHP).
    :align: center
 
-Die Tinkerforge Bindings wurden mittels `PEAR <http://pear.php.net/>`__
+Die Tinkerforge Bindings wurden mittels `PEAR <https://pear.php.net/>`__
 installiert und sind verfügbar.
 Mittels ``require_once`` können diese importiert werden, z.B.:
 ``require_once('Tinkerforge/IPConnection.php');``.
@@ -479,7 +479,7 @@ vorigen Schritt (Schritt 2) kompiliert werden.
 * Executable: Wähle die ausführbare .NET Datei von den in Schritt 2 zuvor
   gewählten Dateien. Die Endung ist typischerweise ``.exe``.
 
-  Die ausführbare Datei wird mit `Mono <http://www.mono-project.com/>`__
+  Die ausführbare Datei wird mit `Mono <https://www.mono-project.com/>`__
   ausgeführt. Die Datei kann unter Windows zuvor mit Visual Studio kompiliert
   worden sein und anschließend auf dem RED Brick mit Mono ausgeführt werden.
   Dabei muss allerdings darauf geachtet werden, dass keine Windows spezifischen

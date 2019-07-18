@@ -51,19 +51,19 @@ werden::
  sudo apt-get install libusb-1.0-0 libudev0 pm-utils
 
  # On ARM (e.g. Raspberry Pi)
- wget http://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_armhf.deb
+ wget https://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_armhf.deb
  sudo dpkg -i brickd_linux_latest_armhf.deb
 
  # On 64bit x86
- wget http://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_amd64.deb
+ wget https://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_amd64.deb
  sudo dpkg -i brickd_linux_latest_amd64.deb
 
  # On 32bit x86
- wget http://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_i386.deb
+ wget https://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_i386.deb
  sudo dpkg -i brickd_linux_latest_i386.deb
 
  # On RED Brick
- wget http://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest+redbrick_armhf.deb
+ wget https://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest+redbrick_armhf.deb
  sudo dpkg -i brickd_linux_latest+redbrick_armhf.deb
 
 Der Brick Daemon wird nach der Installation und beim Hochfahren des Systems

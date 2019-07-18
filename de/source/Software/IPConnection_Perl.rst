@@ -219,7 +219,7 @@ Variablen nicht automatisch zwischen Threads geteilt. Wenn eine Variable
 gleichzeitig in einer Callback Funktion und dem Rest des Programms genutzt
 werden soll, dann muss diese als ``:shared`` markiert werden. Siehe dazu auch
 die Dokumentation des `threads::shared
-<http://perldoc.perl.org/threads/shared.html>`__ Perl Moduls für weitere
+<https://perldoc.perl.org/threads/shared.html>`__ Perl Moduls für weitere
 Details.
 
 Die verfügbaren IDs mit der dazugehörigen Parameteranzahl und -typen

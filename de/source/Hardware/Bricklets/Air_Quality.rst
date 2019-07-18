@@ -106,7 +106,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/air-quality-bricklet/raw/master/hardware/air-quality-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/air_quality_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/air-quality-bricklet/zipball/master>`__)
-* 3D Modell (`Online ansehen <https://autode.sk/2NTYEnR>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/air_quality/air-quality.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/air_quality/air-quality.FCStd>`__)
+* 3D Modell (`Online ansehen <https://autode.sk/2NTYEnR>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricklets/air_quality/air-quality.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricklets/air_quality/air-quality.FCStd>`__)
 
 
 IAQ-Genauigkeit und automatische Kalibrierung

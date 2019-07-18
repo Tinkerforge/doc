@@ -114,7 +114,7 @@ Ressourcen
 * Beispielquelltext für :ref:`starter_kit_weather_station_website` (Download: `PHP <https://github.com/Tinkerforge/weather-station/tree/master/website/php>`__)
 * Beispielquelltext für :ref:`starter_kit_weather_station_button_control` (Download: `C# <https://github.com/Tinkerforge/weather-station/tree/master/button_control/csharp>`__)
 * Beispielkonfiguration für :ref:`starter_kit_weather_station_openhab` (`Download <https://github.com/Tinkerforge/weather-station/tree/master/openhab>`__)
-* :ref:`starter_kit_weather_station_demo` (Download: `Windows <http://download.tinkerforge.com/kits/weather_station/windows/starter_kit_weather_station_demo_windows_latest.exe>`__, `Linux <http://download.tinkerforge.com/kits/weather_station/linux/starter-kit-weather-station-demo_linux_latest.deb>`__, `macOS <http://download.tinkerforge.com/kits/weather_station/macos/starter_kit_weather_station_demo_macos_latest.dmg>`__, `Quelltext <https://github.com/Tinkerforge/weather-station/tree/master/demo>`__)
+* :ref:`starter_kit_weather_station_demo` (Download: `Windows <https://download.tinkerforge.com/kits/weather_station/windows/starter_kit_weather_station_demo_windows_latest.exe>`__, `Linux <https://download.tinkerforge.com/kits/weather_station/linux/starter-kit-weather-station-demo_linux_latest.deb>`__, `macOS <https://download.tinkerforge.com/kits/weather_station/macos/starter_kit_weather_station_demo_macos_latest.dmg>`__, `Quelltext <https://github.com/Tinkerforge/weather-station/tree/master/demo>`__)
 
 Firmware aktualisieren und erste Tests
 --------------------------------------
@@ -310,7 +310,7 @@ in :ref:`C# <starter_kit_weather_station_button_control_csharp>` verfügbar.
 Smart Home Integration mit openHAB
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Die Wetterstation kann in ein `openHAB <http://www.openhab.org/>`__ verwaltetes
+Die Wetterstation kann in ein `openHAB <https://www.openhab.org/>`__ verwaltetes
 Smart Home integriert werden mittels der `openHAB Tinkerforge Bindings
 <https://github.com/openhab/openhab/wiki/Tinkerforge-Binding/>`__.
 

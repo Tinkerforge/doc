@@ -115,8 +115,8 @@ Resources
 * Example Source Code for :ref:`Control Garage Door over Smart Phone <starter_kit_hardware_hacking_garage_control>` (Download: `Android (Java) <https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control_smart_phone/android>`__, `Windows Phone (C#) <https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control_smart_phone/windows_phone>`__, `iOS (ObjC) <https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control_smart_phone/ios>`__)
 * Example Source Code for :ref:`Doorbell Notifier <starter_kit_hardware_hacking_doorbell_notifier>` (Download: `Python <https://github.com/Tinkerforge/hardware-hacking/tree/master/doorbell_notifier/python>`__)
 * Demo Application for :ref:`Control Remote Mains Switches with GUI <starter_kit_hardware_hacking_remote_switch_gui_csharp>` (Download: `Windows (.NET), Linux (Mono), macOS (Mono) <https://github.com/Tinkerforge/hardware-hacking/raw/master/remote_switch_gui/csharp/RemoteSwitchGUI.exe>`__)
-* Demo Apps for :ref:`Control Remote Mains Switches over Smart Phone <starter_kit_hardware_hacking_remote_switch>` (Download: `Android <https://play.google.com/store/apps/details?id=com.tinkerforge.poweroutletcontrol>`__, `Windows Phone <http://www.windowsphone.com/s?appid=52e1f6a9-707c-4961-9e68-5736e6d29b73>`__, `iOS <https://itunes.apple.com/us/app/power-outlet-control/id739029826?mt=8>`__)
-* Demo Apps for :ref:`Control Garage Door over Smart Phone <starter_kit_hardware_hacking_garage_control>` (Download: `Android <https://play.google.com/store/apps/details?id=com.tinkerforge.garagecontrol>`__, `Windows Phone <http://www.windowsphone.com/s?appid=4c9a8f61-d9ed-4fd2-b4e6-a332b617c596>`__, `iOS <https://itunes.apple.com/us/app/garage-control/id739047995?&mt=8>`__)
+* Demo Apps for :ref:`Control Remote Mains Switches over Smart Phone <starter_kit_hardware_hacking_remote_switch>` (Download: `Android <https://play.google.com/store/apps/details?id=com.tinkerforge.poweroutletcontrol>`__, `Windows Phone <https://www.windowsphone.com/s?appid=52e1f6a9-707c-4961-9e68-5736e6d29b73>`__, `iOS <https://itunes.apple.com/us/app/power-outlet-control/id739029826?mt=8>`__)
+* Demo Apps for :ref:`Control Garage Door over Smart Phone <starter_kit_hardware_hacking_garage_control>` (Download: `Android <https://play.google.com/store/apps/details?id=com.tinkerforge.garagecontrol>`__, `Windows Phone <https://www.windowsphone.com/s?appid=4c9a8f61-d9ed-4fd2-b4e6-a332b617c596>`__, `iOS <https://itunes.apple.com/us/app/garage-control/id739047995?&mt=8>`__)
 
 
 Required Tools
@@ -241,7 +241,7 @@ Control Mains Switches Remotely
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This kit includes the remote switch set `ELRO AB440WD/2
-<http://www.elro.eu/en/products/cat/home-automation/home-control/outdoor1/2-outdoor-switches-with-remote-control>`__.
+<https://www.elro.eu/en/products/cat/home-automation/home-control/outdoor1/2-outdoor-switches-with-remote-control>`__.
 These remote control mains switches can be used as a first step
 towards home automation. We are going to hack the remote control of these 
 switches and connect it to a PC to create software controlled remote switches.
@@ -254,7 +254,7 @@ switches and connect it to a PC to create software controlled remote switches.
 
 We connect an :ref:`Industrial Quad Relay Bricklet
 <industrial_quad_relay_bricklet>` to the buttons of the `ELRO AB440RA
-<http://www.elro.eu/en/products/cat/home-automation/home-control1/transmitters1/remote-control1>`__
+<https://www.elro.eu/en/products/cat/home-automation/home-control1/transmitters1/remote-control1>`__
 remote control. There are a vast number of remote switches available on the
 market. Most of the commercially available remote controls use the HX2262 IC
 with the same hardware design as the ELRO remote control.
@@ -316,7 +316,7 @@ alarm.
    :target: ../../_images/Kits/hardware_hacking_smoke_detector_finished_1200.jpg
 
 For this project we use the wireless smoke detector set `ELRO FA20RF/2
-<http://www.elro.eu/en/products/cat/flamingo/security1/smoke-detectors/wireless-interconnectable-smoke-detectors>`__
+<https://www.elro.eu/en/products/cat/flamingo/security1/smoke-detectors/wireless-interconnectable-smoke-detectors>`__
 and connect an :ref:`Industrial Digital In 4 <industrial_digital_in_4_bricklet>` to one of its
 LEDs that light up during an alarm.
 

@@ -85,7 +85,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/ptc-bricklet/raw/master/hardware/ptc-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/ptc_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/ptc-bricklet/zipball/master>`__)
-* 3D model (`View online <http://autode.sk/2knGTQP>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/ptc/ptc.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/ptc/ptc.FCStd>`__)
+* 3D model (`View online <https://autode.sk/2knGTQP>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricklets/ptc/ptc.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricklets/ptc/ptc.FCStd>`__)
 
 .. _ptc_bricklet_jumper_configuration:
 

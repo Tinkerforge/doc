@@ -9,7 +9,7 @@ The PHP bindings allow you to control :ref:`Bricks <primer_bricks>` and
 :ref:`ZIP file <downloads_bindings_examples>` for the bindings contains:
 
 * ``Tinkerforge.tgz``, a PEAR package (installable with `pear
-  <http://pear.php.net/>`__ tool)
+  <https://pear.php.net/>`__ tool)
 * in ``source/`` the source code of ``Tinkerforge.tgz``
 * in ``examples/`` the examples for every Brick and Bricklet
 
@@ -31,7 +31,7 @@ From PEAR Package
 ^^^^^^^^^^^^^^^^^
 
 The bindings are available as a PEAR package. You can install it with the
-`pear <http://pear.php.net/>`__ tool using the following command. Depending on
+`pear <https://pear.php.net/>`__ tool using the following command. Depending on
 your PHP installation you might have to execute this with ``sudo`` or as
 administrator::
 

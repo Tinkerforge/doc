@@ -19,9 +19,9 @@ Seit Version 2.0.0 sind die C# Bindings `CLS
 Dies erlaubt es die Bindings mit allen `.NET kompatiblen Sprachen
 <https://de.wikipedia.org/wiki/Liste_von_.NET-Sprachen>`__ zu verwenden, wie
 z.B. Mathematicas `.NET/Link Unterstützung
-<http://reference.wolfram.com/language/NETLink/tutorial/CallingNETFromTheWolframLanguage.html>`__.
-Diese benötigt das `.NET Framework <http://www.microsoft.com/net>`__ unter
-Windows und das `Mono Framework <http://www.mono-project.com/>`__ unter
+<https://reference.wolfram.com/language/NETLink/tutorial/CallingNETFromTheWolframLanguage.html>`__.
+Diese benötigt das `.NET Framework <https://www.microsoft.com/net>`__ unter
+Windows und das `Mono Framework <https://www.mono-project.com/>`__ unter
 Linux und macOS.
 
 
@@ -158,7 +158,7 @@ Abhängig davon ob und wie die Mathematica Bindings installiert wurden muss
 die ``LoadNETAssembly[]`` Zeile angepasst werden, damit Mathematica die
 ``Tinkerforge.dll`` Datei finden kann. Weitere Details über das Laden von
 .NET Bibliotheken finden sich in der `Mathematica Dokumentation
-<http://reference.wolfram.com/language/NETLink/ref/LoadNETAssembly.html>`__.
+<https://reference.wolfram.com/language/NETLink/ref/LoadNETAssembly.html>`__.
 
 Wurden die Bindings als :ref:`AddOn <api_bindings_mathematica_install_addon>`
 installiert dann muss der ``LoadNETAssembly[]`` Aufruf so aussehen:

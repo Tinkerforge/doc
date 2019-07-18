@@ -83,7 +83,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/barometer-bricklet/raw/master/hardware/barometer-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/barometer_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/barometer-bricklet/zipball/master>`__)
-* 3D Modell (`Online ansehen <http://autode.sk/2iT7sNj>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/barometer/barometer.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/barometer/barometer.FCStd>`__)
+* 3D Modell (`Online ansehen <https://autode.sk/2iT7sNj>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricklets/barometer/barometer.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricklets/barometer/barometer.FCStd>`__)
 
 
 .. _barometer_bricklet_test:
@@ -140,7 +140,7 @@ Wert aus QFE Wert approximiert werden::
 
 `Hier <https://rechneronline.de/barometer/>`__ gibt es einen Online-Rechner der
 diese Formel berechnet. Die Höhe des Messortes kann leicht mit `Google Maps
-<http://www.mapcoordinates.net/de>`__ bestimmt werden.
+<https://www.mapcoordinates.net/de>`__ bestimmt werden.
 
 Höhenangabe
 ^^^^^^^^^^^

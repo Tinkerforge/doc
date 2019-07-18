@@ -18,9 +18,9 @@ Since version 2.0.0 the C# bindings are
 compliant. This allows to use them with all `.NET compatible languages
 <https://en.wikipedia.org/wiki/List_of_CLI_languages>`__, such as
 Mathematica's `.NET/Link support
-<http://reference.wolfram.com/language/NETLink/tutorial/CallingNETFromTheWolframLanguage.html>`__.
-It requires the `.NET Framework <http://www.microsoft.com/net>`__ on Windows
-and the `Mono Framework <http://www.mono-project.com/>`__ on Linux and macOS.
+<https://reference.wolfram.com/language/NETLink/tutorial/CallingNETFromTheWolframLanguage.html>`__.
+It requires the `.NET Framework <https://www.microsoft.com/net>`__ on Windows
+and the `Mono Framework <https://www.mono-project.com/>`__ on Linux and macOS.
 
 
 Requirements
@@ -151,7 +151,7 @@ Depending on if and how you installed the Mathematica bindings you have to
 adapt the ``LoadNETAssembly[]`` call accordingly to make Mathematica find the
 ``Tinkerforge.dll`` file. Further details about handling .NET libraries in
 `Mathematica documentation
-<http://reference.wolfram.com/language/NETLink/ref/LoadNETAssembly.html>`__.
+<https://reference.wolfram.com/language/NETLink/ref/LoadNETAssembly.html>`__.
 
 If the bindings are installed as :ref:`AddOn
 <api_bindings_mathematica_install_addon>` then the ``LoadNETAssembly[]``

@@ -41,7 +41,7 @@ Beschreibung
 Mit dem Distance IR :ref:`Bricklet <primer_bricklets>` 2.0 können
 :ref:`Bricks <primer_bricks>` Entfernungen messen.
 Dieses Bricklet wird auf der Rückseite von analogen
-`Sharp <http://www.sharpsma.com>`__ Infrarot Entfernungssensoren befestigt.
+`Sharp <https://www.sharpsma.com>`__ Infrarot Entfernungssensoren befestigt.
 Nachdem der verbundene Sensor konfiguriert wurde, können die gemessenen
 Entfernungen direkt in Millimeter ausgelesen werden.
 Mit konfigurierbaren Events ist es möglich auf veränderte Distanzmessung zu
@@ -106,7 +106,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/distance-ir-v2-bricklet/raw/master/hardware/distance-ir-v2-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/distance_ir_v2_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/distance-ir-v2-bricklet/zipball/master>`__)
-* 3D Modell (`Online ansehen <https://autode.sk/2LPlBes>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/distance_ir_v2/distance-ir-v2.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/distance_ir_v2/distance-ir-v2.FCStd>`__)
+* 3D Modell (`Online ansehen <https://autode.sk/2LPlBes>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricklets/distance_ir_v2/distance-ir-v2.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricklets/distance_ir_v2/distance-ir-v2.FCStd>`__)
 
 
 .. _distance_ir_v2_bricklet_test:

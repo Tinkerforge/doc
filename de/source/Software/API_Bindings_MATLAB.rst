@@ -46,13 +46,13 @@ kann mit folgendem Befehl in MATLAB getestet werden:
 
 Falls dieser Befehl keine Java Unterstürzung zeigt, dann siehe die MATLAB
 Dokumentation darüber wie `Java für MATLAB
-<http://www.mathworks.com/help/compiler_sdk/java/configure-your-java-environment.html>`__
+<https://www.mathworks.com/help/compiler_sdk/java/configure-your-java-environment.html>`__
 eingerichtet werden kann.
 
 Um die Bindings verwenden zu können muss MATLAB die ``Tinkerforge.jar`` Datei
 finden können. Diese kann auf verschiedene Art und Weisen erreicht werden.
 Die `MATLAB Dokumentation
-<http://www.mathworks.com/help/matlab/matlab_external/bringing-java-classes-and-methods-into-matlab-workspace.html>`__
+<https://www.mathworks.com/help/matlab/matlab_external/bringing-java-classes-and-methods-into-matlab-workspace.html>`__
 beschreibt alle Art und Weisen.
 Das empfohlene Vorgehen ist die Bindings dem Preferences-Ordner hinzuzufügen.
 
@@ -107,7 +107,7 @@ werden::
 Für Windows empfehlen wir die MinGW Variante von Octave. In dieser Variante ist
 die Java Unterstützung standardmäßig aktiviert. Eine Anleitung wie Octave für
 Windows installiert werden kann findet sich im
-`Octave Wiki <http://wiki.octave.org/Octave_for_Microsoft_Windows>`__.
+`Octave Wiki <https://wiki.octave.org/Octave_for_Microsoft_Windows>`__.
 
 Die Verfügbarkeit der Java Unterstützung kann mit folgendem Befehl in Octave
 getestet werden:

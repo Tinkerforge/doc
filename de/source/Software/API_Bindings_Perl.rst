@@ -38,9 +38,9 @@ Von CPAN
 ^^^^^^^^
 
 Die Bindings stehen auch im Comprehensive Perl Archive Network `CPAN
-<http://search.cpan.org/dist/Tinkerforge/>`__ bereit. Von dort können sie mit
+<https://search.cpan.org/dist/Tinkerforge/>`__ bereit. Von dort können sie mit
 dem CPANminus Tool `cpanm
-<http://search.cpan.org/dist/App-cpanminus/lib/App/cpanminus.pm>`__ und
+<https://search.cpan.org/dist/App-cpanminus/lib/App/cpanminus.pm>`__ und
 folgendem Befehl installiert werden (dazu wird die ZIP Datei der Bindings nicht
 benötigt). Abhängig von der Art der Perl Installation muss dies möglicherweise
 mit ``sudo`` bzw. als Administrator ausgeführt werden::
@@ -141,11 +141,11 @@ Bekannte Probleme
 -----------------
 
 Es sind Deadlock-Probleme auf Windows mit `Strawberry Perl
-<http://strawberryperl.com/>`__ und `Active State Perl
-<http://www.activestate.com/activeperl>`__ bekannt. Der empfohlene Workaround
+<https://strawberryperl.com/>`__ und `Active State Perl
+<https://www.activestate.com/activeperl>`__ bekannt. Der empfohlene Workaround
 dafür ist `Cygwin <https://www.cygwin.com/>`__ Perl zu verwenden, das von
 diesen Problemen nicht betroffen ist. Siehe diesen `PerlMonks Thread
-<http://perlmonks.org/?node_id=1078634>`__ für weitere Details.
+<https://perlmonks.org/?node_id=1078634>`__ für weitere Details.
 
 
 API Referenz und Beispiele

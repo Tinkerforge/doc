@@ -36,7 +36,7 @@ werden muss um diese Ziele zu erreichen.
 Schritt 1: openHAB Service aktivieren
 -------------------------------------
 
-Der `openHAB <http://www.openhab.org/>`__ Service ist auf dem RED Brick
+Der `openHAB <https://www.openhab.org/>`__ Service ist auf dem RED Brick
 standardmäßig deaktiviert, da er etwas länger zum Starten benötigt und so den
 Bootprozess etwas verlangsamt. Daher müssen wir zuerst openHAB aktivieren.
 Die :ref:`RED Brick Services Dokumentation <red_brick_brickv_settings_services>`

@@ -96,7 +96,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/stepper-brick/raw/master/hardware/stepper-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/stepper_brick_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/stepper-brick/zipball/master>`__)
-* 3D model (`View online <http://autode.sk/2BCk72r>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricks/stepper/stepper.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricks/stepper/stepper.FCStd>`__)
+* 3D model (`View online <https://autode.sk/2BCk72r>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricks/stepper/stepper.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricks/stepper/stepper.FCStd>`__)
 
 
 .. _stepper_brick_connectivity:
@@ -185,7 +185,7 @@ Decay Modes
 -----------
 
 For a good explanation of the different decay modes see
-`this <http://ebldc.com/?p=86/>`__ blog post by Avayan.
+`this <https://ebldc.com/?p=86/>`__ blog post by Avayan.
 
 A good decay mode is unfortunately different for every motor. The best
 way to work out a good decay mode for your stepper motor, if you can't

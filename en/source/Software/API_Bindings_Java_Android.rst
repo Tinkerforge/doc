@@ -11,7 +11,7 @@ this page only covers Android specific things.
 In the following we assume that you already have the Android development
 environment installed. If you are just starting with Android development,
 you should first complete the `first app tutorial
-<http://developer.android.com/training/basics/firstapp/index.html>`__ from
+<https://developer.android.com/training/basics/firstapp/index.html>`__ from
 Google.
 
 
@@ -124,5 +124,5 @@ Test in simulator by clicking:
 
   Since Android 4.2 calling ``new IPConnection`` on the UI thread will cause an
   ``andriod.os.NetworkOnMainThreadException`` to be thrown. See this
-  `StackOverflow question <http://stackoverflow.com/questions/6343166/android-os-networkonmainthreadexception>`__
+  `StackOverflow question <https://stackoverflow.com/questions/6343166/android-os-networkonmainthreadexception>`__
   for more details.

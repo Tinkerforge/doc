@@ -37,9 +37,9 @@ From CPAN
 ^^^^^^^^^
 
 The bindings are also available on the Comprehensive Perl Archive Network `CPAN
-<http://search.cpan.org/dist/Tinkerforge/>`__. You can install them with the
+<https://search.cpan.org/dist/Tinkerforge/>`__. You can install them with the
 CPANminus tool `cpanm
-<http://search.cpan.org/dist/App-cpanminus/lib/App/cpanminus.pm>`__ using the
+<https://search.cpan.org/dist/App-cpanminus/lib/App/cpanminus.pm>`__ using the
 following command (in this case you don't even need the ZIP file for the
 bindings). Depending on your Perl installation you might have to execute this
 with ``sudo`` or as administrator::
@@ -138,11 +138,11 @@ Known Problems
 --------------
 
 There are known deadlock problems on Windows with `Strawberry Perl
-<http://strawberryperl.com/>`__ and `Active State Perl
-<http://www.activestate.com/activeperl>`__. The recommended workaround is to
+<https://strawberryperl.com/>`__ and `Active State Perl
+<https://www.activestate.com/activeperl>`__. The recommended workaround is to
 use `Cygwin <https://www.cygwin.com/>`__ Perl that doesn't
 suffer from this problem. See this `PerlMonks thread
-<http://perlmonks.org/?node_id=1078634>`__ for some details.
+<https://perlmonks.org/?node_id=1078634>`__ for some details.
 
 
 API Reference and Examples

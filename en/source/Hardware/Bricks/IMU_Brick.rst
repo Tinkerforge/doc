@@ -175,7 +175,7 @@ possible without suitable external machinery.
 
 The factory calibration for your IMU Brick can be found at::
 
- http://download.tinkerforge.com/imu_calibration/YOUR_IMU_UID.txt
+ https://download.tinkerforge.com/imu_calibration/YOUR_IMU_UID.txt
 
 Replace ``YOUR_IMU_UID`` by the UID of your IMU Brick.
 If you accidentally miscalibrated a sensor or you

@@ -66,7 +66,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/energy-monitor-bricklet/raw/master/hardware/energy-monitor-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/energy_monitor_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/energy-monitor-bricklet/zipball/master>`__)
-* 3D Modell (`Online ansehen <TBD>`__ | Download: `STEP <http://download.tinkerforge.com/3d/TBD/TBD.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/TBD/TBD.FCStd>`__)
+* 3D Modell (`Online ansehen <https://autode.sk/TBD>`__ | Download: `STEP <https://download.tinkerforge.com/3d/TBD/TBD.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/TBD/TBD.FCStd>`__)
 
 
 .. _energy_monitor_bricklet_test:

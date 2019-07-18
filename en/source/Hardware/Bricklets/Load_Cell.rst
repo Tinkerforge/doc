@@ -88,7 +88,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/load-cell-bricklet/raw/master/hardware/load-cell-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/load_cell_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/load-cell-bricklet/zipball/master>`__)
-* 3D model (`View online <http://autode.sk/2BcQdkS>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/load_cell/load-cell.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/load_cell/load-cell.FCStd>`__)
+* 3D model (`View online <https://autode.sk/2BcQdkS>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricklets/load_cell/load-cell.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricklets/load_cell/load-cell.FCStd>`__)
 
 
 .. _load_cell_bricklet_connectivity:

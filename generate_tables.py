@@ -27,20 +27,20 @@ BindingsInfo = namedtuple('BindingsInfo', 'display_name url_part software_doc_su
 bindings_infos = \
 [
     BindingsInfo('C/C++', 'c', 'C', True, True,
-                 {'en': 'http://www.cprogramming.com/',
-                  'de': 'http://www.cprogramming.com/'}), # http://www.c-howto.de/
+                 {'en': 'https://www.cprogramming.com/',
+                  'de': 'https://www.cprogramming.com/'}), # http://www.c-howto.de/
     BindingsInfo('C#', 'csharp', 'CSharp', True, True,
-                 {'en': 'http://csharp.net-tutorials.com/',
-                  'de': 'http://csharp.net-tutorials.com/'}),
+                 {'en': 'https://csharp.net-tutorials.com/',
+                  'de': 'https://csharp.net-tutorials.com/'}),
     BindingsInfo('Delphi/Lazarus', 'delphi', 'Delphi', True, True,
                  {'en': 'http://www.delphibasics.co.uk/',
-                  'de': 'http://www.delphi-treff.de/tutorials/grundlagen-tutorials/'}),
+                  'de': 'https://www.delphi-treff.de/tutorials/grundlagen-tutorials/'}),
     BindingsInfo('Go', 'go', 'Go', True, True,
                  {'en': 'https://tour.golang.org',
                   'de': 'https://tour.golang.org'}),
     BindingsInfo('Java', 'java', 'Java', True, True,
-                 {'en': 'http://docs.oracle.com/javase/tutorial/',
-                  'de': 'http://docs.oracle.com/javase/tutorial/'}), # http://openbook.galileocomputing.de/javainsel/
+                 {'en': 'https://docs.oracle.com/javase/tutorial/',
+                  'de': 'https://docs.oracle.com/javase/tutorial/'}), # http://openbook.galileocomputing.de/javainsel/
     BindingsInfo('JavaScript',  'javascript', 'JavaScript', True, True,
                  {'en': 'FIXME',
                   'de': 'FIXME'}),
@@ -60,8 +60,8 @@ bindings_infos = \
                  {'en': 'FIXME',
                   'de': 'FIXME'}),
     BindingsInfo('PHP', 'php', 'PHP', True, True,
-                 {'en': 'http://www.php.net/manual/en/getting-started.php',
-                  'de': 'http://www.php.net/manual/de/getting-started.php'}),
+                 {'en': 'https://www.php.net/manual/en/getting-started.php',
+                  'de': 'https://www.php.net/manual/de/getting-started.php'}),
     BindingsInfo('Python', 'python', 'Python', True, True,
                  {'en': 'https://www.python.org/about/gettingstarted/', # http://getpython3.com/diveintopython3/
                   'de': 'https://www.python.org/about/gettingstarted/'}),
@@ -131,7 +131,7 @@ kit_infos = \
     KitInfo({'en': 'Starter Kit: Weather Station', 'de': 'Starterkit: Wetterstation'}, 'weather_station', 'starter_kit_', True)
 ]
 
-LATEST_VERSIONS_URL = 'http://download.tinkerforge.com/latest_versions.txt'
+LATEST_VERSIONS_URL = 'https://download.tinkerforge.com/latest_versions.txt'
 
 tool_versions = {}
 bindings_versions = {}
@@ -320,9 +320,9 @@ def make_download_tools_table():
 """
     }
 
-    row_brickd = ' :ref:`{0} <{1}>` | Linux (`amd64 <http://download.tinkerforge.com/tools/{1}/linux/{1}-{4}.{5}.{6}_amd64.deb>`__, `i386 <http://download.tinkerforge.com/tools/{1}/linux/{1}-{4}.{5}.{6}_i386.deb>`__, `armhf <http://download.tinkerforge.com/tools/{1}/linux/{1}-{4}.{5}.{6}_armhf.deb>`__, `RED Brick <http://download.tinkerforge.com/tools/{1}/linux/{1}-{4}.{5}.{6}+redbrick_armhf.deb>`__), `macOS <http://download.tinkerforge.com/tools/{1}/macos/{1}_macos_{4}_{5}_{6}.dmg>`__, `Windows <http://download.tinkerforge.com/tools/{1}/windows/{1}_windows_{4}_{5}_{6}.exe>`__, `{2} <https://github.com/Tinkerforge/{1}/archive/v{4}.{5}.{6}.zip>`__ | {4}.{5}.{6} | `{3} <http://download.tinkerforge.com/tools/{1}/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/{1}/master/src/changelog>`__'
-    row_brick_logger = ' :ref:`{0} <{1}>` | `Linux, macOS, Windows <http://download.tinkerforge.com/tools/{1}/{1}_{4}_{5}_{6}.zip>`__, `RED Brick <http://download.tinkerforge.com/tools/{1}/{1}_{4}_{5}_{6}.tfrba>`__, `{2} <https://github.com/Tinkerforge/brickv/archive/brick-logger-{4}.{5}.{6}.zip>`__ | {4}.{5}.{6} | `{3} <http://download.tinkerforge.com/tools/{1}/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/brickv/master/src/changelog.brick-logger>`__'
-    row_other = ' :ref:`{0} <{1}>` | `Linux <http://download.tinkerforge.com/tools/{1}/linux/{1}-{4}.{5}.{6}_all.deb>`__, `macOS <http://download.tinkerforge.com/tools/{1}/macos/{1}_macos_{4}_{5}_{6}.dmg>`__, `Windows <http://download.tinkerforge.com/tools/{1}/windows/{1}_windows_{4}_{5}_{6}.exe>`__, `{2} <https://github.com/Tinkerforge/{1}/archive/v{4}.{5}.{6}.zip>`__ | {4}.{5}.{6} | `{3} <http://download.tinkerforge.com/tools/{1}/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/{1}/master/src/changelog>`__'
+    row_brickd = ' :ref:`{0} <{1}>` | Linux (`amd64 <https://download.tinkerforge.com/tools/{1}/linux/{1}-{4}.{5}.{6}_amd64.deb>`__, `i386 <https://download.tinkerforge.com/tools/{1}/linux/{1}-{4}.{5}.{6}_i386.deb>`__, `armhf <https://download.tinkerforge.com/tools/{1}/linux/{1}-{4}.{5}.{6}_armhf.deb>`__, `RED Brick <https://download.tinkerforge.com/tools/{1}/linux/{1}-{4}.{5}.{6}+redbrick_armhf.deb>`__), `macOS <https://download.tinkerforge.com/tools/{1}/macos/{1}_macos_{4}_{5}_{6}.dmg>`__, `Windows <https://download.tinkerforge.com/tools/{1}/windows/{1}_windows_{4}_{5}_{6}.exe>`__, `{2} <https://github.com/Tinkerforge/{1}/archive/v{4}.{5}.{6}.zip>`__ | {4}.{5}.{6} | `{3} <https://download.tinkerforge.com/tools/{1}/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/{1}/master/src/changelog>`__'
+    row_brick_logger = ' :ref:`{0} <{1}>` | `Linux, macOS, Windows <https://download.tinkerforge.com/tools/{1}/{1}_{4}_{5}_{6}.zip>`__, `RED Brick <https://download.tinkerforge.com/tools/{1}/{1}_{4}_{5}_{6}.tfrba>`__, `{2} <https://github.com/Tinkerforge/brickv/archive/brick-logger-{4}.{5}.{6}.zip>`__ | {4}.{5}.{6} | `{3} <https://download.tinkerforge.com/tools/{1}/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/brickv/master/src/changelog.brick-logger>`__'
+    row_other = ' :ref:`{0} <{1}>` | `Linux <https://download.tinkerforge.com/tools/{1}/linux/{1}-{4}.{5}.{6}_all.deb>`__, `macOS <https://download.tinkerforge.com/tools/{1}/macos/{1}_macos_{4}_{5}_{6}.dmg>`__, `Windows <https://download.tinkerforge.com/tools/{1}/windows/{1}_windows_{4}_{5}_{6}.exe>`__, `{2} <https://github.com/Tinkerforge/{1}/archive/v{4}.{5}.{6}.zip>`__ | {4}.{5}.{6} | `{3} <https://download.tinkerforge.com/tools/{1}/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/{1}/master/src/changelog>`__'
     rows = []
 
     for tool_info in tool_infos:
@@ -367,7 +367,7 @@ def make_download_bindings_table():
 """
     }
 
-    row = ' :ref:`{0} <api_bindings_{1}>` | `{3} <http://download.tinkerforge.com/bindings/{1}/tinkerforge_{1}_bindings_{4}_{5}_{6}.zip>`__ | {4}.{5}.{6} | `{2} <http://download.tinkerforge.com/bindings/{1}/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/generators/master/{1}/changelog.txt>`__'
+    row = ' :ref:`{0} <api_bindings_{1}>` | `{3} <https://download.tinkerforge.com/bindings/{1}/tinkerforge_{1}_bindings_{4}_{5}_{6}.zip>`__ | {4}.{5}.{6} | `{2} <https://download.tinkerforge.com/bindings/{1}/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/generators/master/{1}/changelog.txt>`__'
     rows = []
 
     for bindings_info in bindings_infos:
@@ -403,7 +403,7 @@ def make_download_red_images_table():
 """
     }
 
-    row = ' RED Brick Image | `Image <http://download.tinkerforge.com/red_images/{0}/red_image_{2}_{3}_{0}.img.7z>`__ | {2}.{3} | `{1} <http://download.tinkerforge.com/red_images/{0}/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/red-brick/master/image/changelog_{0}>`__'
+    row = ' RED Brick Image | `Image <https://download.tinkerforge.com/red_images/{0}/red_image_{2}_{3}_{0}.img.7z>`__ | {2}.{3} | `{1} <https://download.tinkerforge.com/red_images/{0}/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/red-brick/master/image/changelog_{0}>`__'
     rows = []
 
     for image in ['full']:
@@ -439,7 +439,7 @@ def make_download_brick_firmwares_table():
 """
     }
 
-    row = ' :ref:`{0} <{1}>` | `Firmware <http://download.tinkerforge.com/firmwares/{6}s/{2}/{6}_{2}_firmware_{7}_{8}_{9}.bin>`__, `{3} <https://github.com/Tinkerforge/{4}/archive/v{7}.{8}.{9}.zip>`__ | {7}.{8}.{9} | `{5} <http://download.tinkerforge.com/firmwares/{6}s/{2}/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/{4}/master/software/changelog>`__'
+    row = ' :ref:`{0} <{1}>` | `Firmware <https://download.tinkerforge.com/firmwares/{6}s/{2}/{6}_{2}_firmware_{7}_{8}_{9}.bin>`__, `{3} <https://github.com/Tinkerforge/{4}/archive/v{7}.{8}.{9}.zip>`__ | {7}.{8}.{9} | `{5} <https://download.tinkerforge.com/firmwares/{6}s/{2}/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/{4}/master/software/changelog>`__'
     rows = []
 
     for brick_info in sorted(brick_infos, key=lambda x: x.short_display_name.lower()):
@@ -488,7 +488,7 @@ def make_download_bricklet_plugins_table():
 """
     }
 
-    row = ' :ref:`{0} <{1}>` | `Plugin <http://download.tinkerforge.com/firmwares/bricklets/{2}/bricklet_{2}_firmware_{7}_{8}_{9}.{6}>`__, `{3} <https://github.com/Tinkerforge/{4}/archive/v{7}.{8}.{9}.zip>`__ | {7}.{8}.{9} | `{5} <http://download.tinkerforge.com/firmwares/bricklets/{2}/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/{4}/master/software/changelog>`__'
+    row = ' :ref:`{0} <{1}>` | `Plugin <https://download.tinkerforge.com/firmwares/bricklets/{2}/bricklet_{2}_firmware_{7}_{8}_{9}.{6}>`__, `{3} <https://github.com/Tinkerforge/{4}/archive/v{7}.{8}.{9}.zip>`__ | {7}.{8}.{9} | `{5} <https://download.tinkerforge.com/firmwares/bricklets/{2}/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/{4}/master/software/changelog>`__'
     rows = []
 
     for bricklet_info in sorted(bricklet_infos, key=lambda x: x.short_display_name.lower()):
@@ -541,7 +541,7 @@ def make_download_extension_firmwares_table():
 """
     }
 
-    row = ' :ref:`{0} <{1}>` | `Firmware <http://download.tinkerforge.com/firmwares/extensions/{2}/extension_{2}_firmware_{6}_{7}_{8}.zbin>`__, `{3} <https://github.com/Tinkerforge/{4}/archive/v{6}.{7}.{8}.zip>`__ | {6}.{7}.{8} | `{5} <http://download.tinkerforge.com/firmwares/extensions/{2}/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/{4}/master/software/changelog>`__'
+    row = ' :ref:`{0} <{1}>` | `Firmware <https://download.tinkerforge.com/firmwares/extensions/{2}/extension_{2}_firmware_{6}_{7}_{8}.zbin>`__, `{3} <https://github.com/Tinkerforge/{4}/archive/v{6}.{7}.{8}.zip>`__ | {6}.{7}.{8} | `{5} <https://download.tinkerforge.com/firmwares/extensions/{2}/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/{4}/master/software/changelog>`__'
     rows = []
 
     for extension_info in sorted(extension_infos, key=lambda x: x.short_display_name.lower()):
@@ -584,7 +584,7 @@ def make_download_kits_table():
 """
     }
 
-    row = ' :ref:`{0} <{5}{1}>` | `Linux <http://download.tinkerforge.com/kits/{1}/linux/{6}{2}-demo-{7}.{8}.{9}_all.deb>`__, `macOS <http://download.tinkerforge.com/kits/{1}/macos/{5}{1}_demo_macos_{7}_{8}_{9}.dmg>`__, `Windows <http://download.tinkerforge.com/kits/{1}/windows/{5}{1}_demo_windows_{7}_{8}_{9}.exe>`__, `{3} <https://github.com/Tinkerforge/{2}/archive/demo-{7}.{8}.{9}.zip>`__ | {7}.{8}.{9} | `{4} <http://download.tinkerforge.com/kits/{1}/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/{2}/master/demo/changelog>`__'
+    row = ' :ref:`{0} <{5}{1}>` | `Linux <https://download.tinkerforge.com/kits/{1}/linux/{6}{2}-demo-{7}.{8}.{9}_all.deb>`__, `macOS <https://download.tinkerforge.com/kits/{1}/macos/{5}{1}_demo_macos_{7}_{8}_{9}.dmg>`__, `Windows <https://download.tinkerforge.com/kits/{1}/windows/{5}{1}_demo_windows_{7}_{8}_{9}.exe>`__, `{3} <https://github.com/Tinkerforge/{2}/archive/demo-{7}.{8}.{9}.zip>`__ | {7}.{8}.{9} | `{4} <https://download.tinkerforge.com/kits/{1}/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/{2}/master/demo/changelog>`__'
     rows = []
 
     for kit_info in kit_infos:

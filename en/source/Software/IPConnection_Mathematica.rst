@@ -68,12 +68,12 @@ Basic Functions
  no longer in use by a program. But because Mathematica can not automatically
  tell when a Mathematica "program" doesn't use a .NET object anymore, this has
  to be done by the program. For this the `ReleaseNETObject[]
- <http://reference.wolfram.com/language/NETLink/ref/ReleaseNETObject.html>`__
+ <https://reference.wolfram.com/language/NETLink/ref/ReleaseNETObject.html>`__
  function is used in the examples.
 
  For further information about object management in .NET/Link see the
  corresponding Mathematica `.NET/Link documentation
- <http://reference.wolfram.com/language/NETLink/tutorial/CallingNETFromTheWolframLanguage.html#14400>`__.
+ <https://reference.wolfram.com/language/NETLink/tutorial/CallingNETFromTheWolframLanguage.html#14400>`__.
 
 
 .. mathematica:function:: IPConnection@Connect[host, port] -> Null
@@ -206,7 +206,7 @@ done by appending your callback handler to the corresponding event:
 
 For further information about event handling using .NET/Link see the
 corresponding Mathematica `.NET/Link documentation
-<http://reference.wolfram.com/language/NETLink/tutorial/CallingNETFromTheWolframLanguage.html#17034>`__.
+<https://reference.wolfram.com/language/NETLink/tutorial/CallingNETFromTheWolframLanguage.html#17034>`__.
 
 The available events are described below.
 

@@ -78,7 +78,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/can-bricklet/raw/master/hardware/can-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/can_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/can-bricklet/zipball/master>`__)
-* 3D Modell (`Online ansehen <http://autode.sk/2kpRE4X>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/can/can.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/can/can.FCStd>`__)
+* 3D Modell (`Online ansehen <https://autode.sk/2kpRE4X>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricklets/can/can.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricklets/can/can.FCStd>`__)
 
 
 .. _can_bricklet_test:

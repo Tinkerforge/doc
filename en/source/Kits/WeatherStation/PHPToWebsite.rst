@@ -152,7 +152,7 @@ That's it! Now we have to put the HTML and the PHP file in a directory
 that is served by a webserver, such as Apache.
 
 If you haven't done anything like this, you should take a look at the
-`PHP installation guide <http://php.net/manual/en/install.php>`__.
+`PHP installation guide <https://php.net/manual/en/install.php>`__.
 
 This was tested on a Ubuntu machine, so we have simply installed PHP
 and apache via apt-get::

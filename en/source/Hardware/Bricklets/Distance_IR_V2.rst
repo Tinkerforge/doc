@@ -40,7 +40,7 @@ Description
 
 The Distance IR :ref:`Bricklet <primer_bricklets>` 2.0 can be used to
 extend the features of :ref:`Bricks <primer_bricks>` by the
-capability to measure distances. `Sharp <http://www.sharpsma.com>`__ analog
+capability to measure distances. `Sharp <https://www.sharpsma.com>`__ analog
 infrared proximity sensors can be attached to the Bricklet.
 After configuring the attached sensor you can read out the measured distance
 in millimeters. With configurable events it is possible to react on changing
@@ -103,7 +103,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/distance-ir-v2-bricklet/raw/master/hardware/distance-ir-v2-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/distance_ir_v2_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/distance-ir-v2-bricklet/zipball/master>`__)
-* 3D model (`View online <https://autode.sk/2LPlBes>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/distance_ir_v2/distance-ir-v2.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/distance_ir_v2/distance-ir-v2.FCStd>`__)
+* 3D model (`View online <https://autode.sk/2LPlBes>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricklets/distance_ir_v2/distance-ir-v2.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricklets/distance_ir_v2/distance-ir-v2.FCStd>`__)
 
 
 .. _distance_ir_v2_bricklet_test:

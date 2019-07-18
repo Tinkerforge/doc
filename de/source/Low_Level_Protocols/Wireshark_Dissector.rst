@@ -37,7 +37,7 @@ Der TFP Dissector ist im Wireshark SVN trunk seit
 Er ist noch nicht in der letzten "stable" Veröffentlichung. Die folgenden
 Schritte sind notwendig um Wireshark aus dem Quellcode zu installieren::
 
- svn co http://anonsvn.wireshark.org/wireshark/trunk/ wireshark
+ svn co https://anonsvn.wireshark.org/wireshark/trunk/ wireshark
  cd wireshark/
  ./autogen.sh
  ./configure

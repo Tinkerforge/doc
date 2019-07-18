@@ -70,7 +70,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/analog-in-v3-bricklet/raw/master/hardware/analog-in-v3-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/analog_in_v3_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/analog-in-v3-bricklet/zipball/master>`__)
-* 3D model (`View online <http://autode.sk/2Ew7gh0>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/analog_in_v3/analog-in-v3.step>`__,  `FreeCAD <http://download.tinkerforge.com/3d/bricklets/analog_in_v3/analog-in-v3.FCStd>`__)
+* 3D model (`View online <https://autode.sk/2Ew7gh0>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricklets/analog_in_v3/analog-in-v3.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricklets/analog_in_v3/analog-in-v3.FCStd>`__)
 
 
 Connectivity

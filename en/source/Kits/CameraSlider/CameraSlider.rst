@@ -80,7 +80,7 @@ Resources
 ---------
 
 * Camera Slider Brackets as FreeCAD CAD files (`Download <https://github.com/Tinkerforge/camera-slider/tree/master/brackets>`__)
-* :ref:`starter_kit_camera_slider_demo` (Download: `Windows <http://download.tinkerforge.com/kits/camera_slider/windows/starter_kit_camera_slider_demo_windows_latest.exe>`__, `Linux <http://download.tinkerforge.com/kits/camera_slider/linux/starter-kit-camera-slider-demo_linux_latest.deb>`__, `macOS <http://download.tinkerforge.com/kits/camera_slider/macos/starter_kit_camera_slider_demo_macos_latest.dmg>`__, `RED Brick <http://download.tinkerforge.com/kits/camera_slider/red_brick/starter_kit_camera_slider_demo_red_brick_latest.tfrba>`__, `Source Code <https://github.com/Tinkerforge/camera-slider/tree/master/demo>`__)
+* :ref:`starter_kit_camera_slider_demo` (Download: `Windows <https://download.tinkerforge.com/kits/camera_slider/windows/starter_kit_camera_slider_demo_windows_latest.exe>`__, `Linux <https://download.tinkerforge.com/kits/camera_slider/linux/starter-kit-camera-slider-demo_linux_latest.deb>`__, `macOS <https://download.tinkerforge.com/kits/camera_slider/macos/starter_kit_camera_slider_demo_macos_latest.dmg>`__, `RED Brick <https://download.tinkerforge.com/kits/camera_slider/red_brick/starter_kit_camera_slider_demo_red_brick_latest.tfrba>`__, `Source Code <https://github.com/Tinkerforge/camera-slider/tree/master/demo>`__)
 
 
 Firmware updating and first tests
@@ -271,7 +271,7 @@ Normally gphoto2 works out-of-the-box on Linux, but needs some preparation on
 Windows and macOS.
 
 On **Windows** the "Time Lapse" tab has an additional button called "Start
-Zadig" at the top. `Zadig <http://zadig.akeo.ie/>`__ can install a USB driver
+Zadig" at the top. `Zadig <https://zadig.akeo.ie/>`__ can install a USB driver
 for your camera that allows gphoto2 to communicate with it:
 
 * Connect your camera to USB.
@@ -320,7 +320,7 @@ act as such as switch to trigger the camera instead of gphoto2.
 
 The Canon EOS camera series uses a 2.5mm 3-pole stereo jack as connector for
 the external focus and shutter trigger. You can find the exact pinout for this
-and several other cameras `here <http://www.doc-diy.net/photo/remote_pinout/>`__.
+and several other cameras `here <https://www.doc-diy.net/photo/remote_pinout/>`__.
 With the appropriate cable and an Industrial Quad Relay Bricklet we built our
 own external trigger cable:
 
@@ -376,7 +376,7 @@ Import on RED Brick
 
 The demo application can also be uploaded to a :ref:`RED Brick <red_brick>`
 for stand-alone use-cases. Download the latest version as `archive for the RED Brick
-<http://download.tinkerforge.com/kits/camera_slider/red_brick/starter_kit_camera_slider_demo_red_brick_latest.tfrba>`__
+<https://download.tinkerforge.com/kits/camera_slider/red_brick/starter_kit_camera_slider_demo_red_brick_latest.tfrba>`__
 and import it using the :ref:`RED Brick Import/Export
 <red_brick_brickv_import_export_tab>` tab of Brick Viewer. The demo will then
 autostart in fullscreen mode.

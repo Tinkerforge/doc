@@ -83,7 +83,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/rgb-led-v2-bricklet/raw/master/hardware/rgb-led-v2-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/rgb_led_v2_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/rgb-led-v2-bricklet/zipball/master>`__)
-* 3D model (`View online <https://autode.sk/30ouYWQ>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/rgb_led_v2/rgb-led-v2.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/rgb_led_v2/rgb-led-v2.FCStd>`__)
+* 3D model (`View online <https://autode.sk/30ouYWQ>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricklets/rgb_led_v2/rgb-led-v2.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricklets/rgb_led_v2/rgb-led-v2.FCStd>`__)
 
 
 .. _rgb_led_v2_bricklet_test:

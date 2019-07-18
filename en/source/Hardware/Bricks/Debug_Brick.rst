@@ -67,7 +67,7 @@ Resources
 
 * Schematic (`Download <https://github.com/Tinkerforge/debug-brick/raw/master/hardware/debug-schematic.pdf>`__)
 * Design files (`Download <https://github.com/Tinkerforge/debug-brick/zipball/master>`__)
-* 3D model (`View online <http://autode.sk/2BWTrp9>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricks/debug/debug.step>`__,  `FreeCAD <http://download.tinkerforge.com/3d/bricks/debug/debug.FCStd>`__)
+* 3D model (`View online <https://autode.sk/2BWTrp9>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricks/debug/debug.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricks/debug/debug.FCStd>`__)
 
 .. FIXME: outdated. originally belongs between Schematic and Design files
 	* Outline and drilling plan (`Download <../../_images/Dimensions/debug_brick_dimensions.png>`__)

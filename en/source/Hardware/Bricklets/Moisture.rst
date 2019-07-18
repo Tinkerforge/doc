@@ -75,7 +75,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/moisture-bricklet/raw/master/hardware/moisture-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/moisture_bricklet_v11_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/moisture-bricklet/zipball/master>`__)
-* 3D model (`View online <http://autode.sk/2BcPjEW>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/moisture/moisture.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/moisture/moisture.FCStd>`__)
+* 3D model (`View online <https://autode.sk/2BcPjEW>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricklets/moisture/moisture.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricklets/moisture/moisture.FCStd>`__)
 
 
 .. _moisture_bricklet_test:

@@ -5,7 +5,7 @@ Raspberry Pi
 ============
 
 Hier wird beschrieben wie Bricks und Bricklets zusammen mit einem
-`Raspberry Pi <http://www.raspberrypi.org/>`__ und Debian genutzt werden können.
+`Raspberry Pi <https://www.raspberrypi.org/>`__ und Debian genutzt werden können.
 
 
 SD Karte vorbereiten
@@ -15,7 +15,7 @@ Als erstes musst Debian auf einer SD Karte eingerichtet werden. Es gibt zwei
 Wege das zu tun.
 
 Es gibt den empfohlenen `New Out of Box Software (NOOBS)
-<http://www.raspberrypi.org/downloads>`__ Weg. Dazu wird einfach die NOOBS ZIP
+<https://www.raspberrypi.org/downloads>`__ Weg. Dazu wird einfach die NOOBS ZIP
 Datei herunterladen, auf eine SD Karte entpackt und das Raspberry Pi damit
 gestartet. Dann den Schritten des graphischen Installers folgen und "Raspbian"
 zur Installation auswählen.
@@ -25,9 +25,9 @@ händischen Weg eines der vorgefertigten Debian Images herunterzuladen. Hier gib
 es zwei verschiedene Varianten für das Raspberry Pi: Einmal "Raspbian" (armhf)
 und "Soft-Float Debian" (armel). Raspbian nutzt die Hardware Floating Point
 Unit (FPU) des Boards und ist die empfohlene Variante. Dazu muss zuerst
-das neuste `Raspbian Image <http://www.raspberrypi.org/downloads>`__
+das neuste `Raspbian Image <https://www.raspberrypi.org/downloads>`__
 heruntergeladen werden und dann den Schritten dieser `Anleitung
-<http://elinux.org/RPi_Easy_SD_Card_Setup>`__ zum manuelle Einrichten einer
+<https://elinux.org/RPi_Easy_SD_Card_Setup>`__ zum manuelle Einrichten einer
 SD Karte folgen.
 
 Raspberry Pi starten
@@ -55,7 +55,7 @@ Befehlen installiert werden (falls ``libudev0`` nicht verfügbar ist ``libudev1`
 installieren)::
 
  sudo apt-get install libusb-1.0-0 libudev0 pm-utils
- wget http://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_armhf.deb
+ wget https://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_armhf.deb
  sudo dpkg -i brickd_linux_latest_armhf.deb
 
 Der Brick Daemon wird nach der Installation und beim Hochfahren des Systems
@@ -63,7 +63,7 @@ automatisch gestartet.
 
 Updates können durch Wiederholen der letzten beiden Befehle installiert werden::
 
- wget http://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_armhf.deb
+ wget https://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_armhf.deb
  sudo dpkg -i brickd_linux_latest_armhf.deb
 
 
@@ -94,7 +94,7 @@ Brick Viewer installieren
 Der :ref:`Brick Viewer <brickv>` kann mit folgenden Befehlen installiert werden::
 
  sudo apt-get install python3 python3-pyqt5 python3-pyqt5.qtopengl python3-serial
- wget http://download.tinkerforge.com/tools/brickv/linux/brickv_linux_latest.deb
+ wget https://download.tinkerforge.com/tools/brickv/linux/brickv_linux_latest.deb
  sudo dpkg -i brickv_linux_latest.deb
 
 Es kann vorkommen, dass ``apt-get`` meldet, dass bestimmte Abhängigkeiten nicht
@@ -104,7 +104,7 @@ die benötigten Abhängigkeiten installieren.
 
 Updates können durch Wiederholen der letzten beiden Befehle installiert werden::
 
- wget http://download.tinkerforge.com/tools/brickv/linux/brickv_linux_latest.deb
+ wget https://download.tinkerforge.com/tools/brickv/linux/brickv_linux_latest.deb
  sudo dpkg -i brickv_linux_latest.deb
 
 

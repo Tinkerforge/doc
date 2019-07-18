@@ -72,7 +72,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/joystick-v2-bricklet/raw/master/hardware/joystick-v2-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/joystick_v2_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/joystick-v2-bricklet/zipball/master>`__)
-* 3D Modell (`Online ansehen <https://autode.sk/30pO5Ab>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/joystick_v2/joystick-v2.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/joystick_v2/joystick-v2.FCStd>`__)
+* 3D Modell (`Online ansehen <https://autode.sk/30pO5Ab>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricklets/joystick_v2/joystick-v2.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricklets/joystick_v2/joystick-v2.FCStd>`__)
 
 
 .. _joystick_v2_bricklet_test:

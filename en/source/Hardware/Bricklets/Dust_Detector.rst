@@ -75,7 +75,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/dust-detector-bricklet/raw/master/hardware/dust-detector-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/dust_detector_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/dust-detector-bricklet/zipball/master>`__)
-* 3D model (`View online <http://autode.sk/2iVZbZ7>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/dust_detector/dust-detector.step>`__,  `FreeCAD <http://download.tinkerforge.com/3d/bricklets/dust_detector/dust-detector.FCStd>`__)
+* 3D model (`View online <https://autode.sk/2iVZbZ7>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricklets/dust_detector/dust-detector.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricklets/dust_detector/dust-detector.FCStd>`__)
 
 
 .. _dust_detector_bricklet_test:

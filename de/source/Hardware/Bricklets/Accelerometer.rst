@@ -81,7 +81,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/accelerometer-bricklet/raw/master/hardware/accelerometer-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/accelerometer_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/accelerometer-bricklet/zipball/master>`__)
-* 3D Modell (`Online ansehen <http://autode.sk/2kpdWE3>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/accelerometer/accelerometer.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/accelerometer/accelerometer.FCStd>`__)
+* 3D Modell (`Online ansehen <https://autode.sk/2kpdWE3>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricklets/accelerometer/accelerometer.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricklets/accelerometer/accelerometer.FCStd>`__)
 
 
 .. _accelerometer_bricklet_test:

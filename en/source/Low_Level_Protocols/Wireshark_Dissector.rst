@@ -31,7 +31,7 @@ The TFP dissector is in the Wireshark SVN trunk since
 It is not yet available in the latest stable release. The following steps 
 are necessary to build Wireshark trunk from source::
 
- svn co http://anonsvn.wireshark.org/wireshark/trunk/ wireshark
+ svn co https://anonsvn.wireshark.org/wireshark/trunk/ wireshark
  cd wireshark/
  ./autogen.sh
  ./configure

@@ -16,7 +16,7 @@ Tinkerforge ecosystem:
 
 * `build_environment_setup.sh <https://github.com/Tinkerforge/generators/blob/master/build_environment_setup.sh>`__
 
-It was tested with a Ubuntu 15.04 VirtualBox image from `osboxes.org <http://www.osboxes.org/>`__.
+It was tested with a Ubuntu 15.04 VirtualBox image from `osboxes.org <https://www.osboxes.org/>`__.
 It should work as-is on most current Debian based Linux distribution. For
 non-Debian based distribution you have to replace the ``apt-get`` calls with the
 respective counterpart (``yum``, ``emerge``, ``packman``, etc). If your
@@ -260,7 +260,7 @@ Case CAD Files
 --------------
 
 Our laser-cut acrylic cases are designed with
-`FreeCAD <http://www.freecadweb.org/>`__. The cases are in the 
+`FreeCAD <https://www.freecadweb.org/>`__. The cases are in the 
 ``cases``-git which is in ``~/tf/cases``.
 
 As an example, you can open the case project file of the Ambient Light 
@@ -274,7 +274,7 @@ Documentation
 -------------
 
 The documentation is written in
-`reStructuredText <http://docutils.sourceforge.net/rst.html>`__. It is available
+`reStructuredText <https://docutils.sourceforge.net/rst.html>`__. It is available
 in the ``doc``-git in ``~/tf/doc``.
 
 You can build the whole documentation with::

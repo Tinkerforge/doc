@@ -91,7 +91,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/e-paper-296x128-bricklet/raw/master/hardware/e-paper-296x128-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/e_paper_296x128_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/e-paper-296x128-bricklet/zipball/master>`__)
-* 3D Modell (`Online ansehen <https://autode.sk/2VyGhgF>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/e_paper_296x128/e-paper-296x128.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/e_paper_296x128/e-paper-296x128.FCStd>`__)
+* 3D Modell (`Online ansehen <https://autode.sk/2VyGhgF>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricklets/e_paper_296x128/e-paper-296x128.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricklets/e_paper_296x128/e-paper-296x128.FCStd>`__)
 
 
 .. _e_paper_296x128_bricklet_test:
@@ -141,7 +141,7 @@ Wir haben Beispiele für:
 * `Perl <https://raw.githubusercontent.com/Tinkerforge/e-paper-296x128-bricklet/master/software/examples/perl/example_load_image.pl>`__
   (mit `GD <http://search.cpan.org/~lds/GD-2.56/lib/GD.pm>`__),
 * `PHP <https://raw.githubusercontent.com/Tinkerforge/e-paper-296x128-bricklet/master/software/examples/php/ExampleLoadImage.php>`__
-  (mit `GD <http://php.net/manual/en/book.image.php>`__),
+  (mit `GD <https://php.net/manual/en/book.image.php>`__),
 * `Python <https://raw.githubusercontent.com/Tinkerforge/e-paper-296x128-bricklet/master/software/examples/python/example_load_image.py>`__
   (mit `PIL <http://python-pillow.org/>`__),
 * `Rust <https://raw.githubusercontent.com/Tinkerforge/e-paper-296x128-bricklet/master/software/examples/rust/example_load_image.rs>`__,

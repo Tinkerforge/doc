@@ -81,7 +81,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/barometer-v2-bricklet/raw/master/hardware/barometer-v2-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/barometer_v2_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/barometer-v2-bricklet/zipball/master>`__)
-* 3D model (`View online <https://autode.sk/2NYG7XC>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/barometer_v2/barometer-v2.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/barometer_v2/barometer-v2.FCStd>`__)
+* 3D model (`View online <https://autode.sk/2NYG7XC>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricklets/barometer_v2/barometer-v2.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricklets/barometer_v2/barometer-v2.FCStd>`__)
 
 
 .. _barometer_v2_bricklet_test:
@@ -134,9 +134,9 @@ the QFF value can be approximated based on the the QFE value::
 * ``Tfe`` is the temperature at the measuring location in °C
 * ``H`` is the altitude of the measuring location in Meters
 
-`Here <http://keisan.casio.com/exec/system/1224575267>`__ is an online
+`Here <https://keisan.casio.com/exec/system/1224575267>`__ is an online
 calculator for this formula. The altitude of the measuring location can be found
-with `Google Maps <http://www.mapcoordinates.net/en>`__.
+with `Google Maps <https://www.mapcoordinates.net/en>`__.
 
 Altitude Reading
 ^^^^^^^^^^^^^^^^

@@ -70,12 +70,12 @@ Grundfunktionen
  aber selbst nicht automatisch feststellen kann, wann ein Mathematica "Programm"
  ein .NET Objekt nicht mehr verwendet, muss sich das Programm selbst darum
  kümmern. Für diesen Zweck wird die `ReleaseNETObject[]
- <http://reference.wolfram.com/language/NETLink/ref/ReleaseNETObject.html>`__
+ <https://reference.wolfram.com/language/NETLink/ref/ReleaseNETObject.html>`__
  Funktion in den Beispielen verwendet.
 
  Weitere Informationen über Objekt-Verwaltung mittels .NET/Link sind in der
  entsprechende Mathematica `.NET/Link Dokumentation
- <http://reference.wolfram.com/language/NETLink/tutorial/CallingNETFromTheWolframLanguage.html#14400>`__
+ <https://reference.wolfram.com/language/NETLink/tutorial/CallingNETFromTheWolframLanguage.html#14400>`__
  zu finden.
 
 
@@ -215,7 +215,7 @@ passenden Event:
 
 Weitere Informationen über Event-Behandlung mittels .NET/Link sind in der
 entsprechende Mathematica `.NET/Link Dokumentation
-<http://reference.wolfram.com/language/NETLink/tutorial/CallingNETFromTheWolframLanguage.html#17034>`__
+<https://reference.wolfram.com/language/NETLink/tutorial/CallingNETFromTheWolframLanguage.html#17034>`__
 zu finden.
 
 Die verfügbaren Events werden im Folgenden beschrieben.
