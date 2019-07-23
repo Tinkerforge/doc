@@ -76,7 +76,7 @@ Technische Spezifikation
 Eigenschaft                       Wert
 ================================  ============================================================
 Bricklet Anschlüsse               4
-Abmessungen (B x T x H)           40 x 40 x 19mm (1,57 x 1,57 x 0,75")
+Abmessungen (B x T x H)           40 x 40 x 16mm (1,57 x 1,57 x 0,63")
 Gewicht                           12g
 Stromverbrauch                    68mA
 ================================  ============================================================
