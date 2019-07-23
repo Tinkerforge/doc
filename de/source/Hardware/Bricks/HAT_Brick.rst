@@ -179,6 +179,42 @@ Falls der Order nicht exisitiert, oder die Ausgabe nicht korrekt ist, war die In
 Dann sollte geprüft werden, ob der HAT Brick korrekt verbunden wurde und ob der Raspberry Pi nach dem aufstecken neugestartet wurde.
 
 
+.. _hat_brick_configuration_for_improved_throughput:
+
+Konfiguration für verbesserten Durchsatz
+----------------------------------------
+
+Ein HAT Brick sollte bis zu ca. 1000 SPITFP-Nachrichten (SPI Tinkerforge Protokoll)
+voller Größe (64 Byte Nutzlast) pro Sekunde übertragen können, vergleichbar mit
+einem Master Brick. Die Nachrichten werden über einen SPI-Bus welcher Bricklets
+auf dem HAT mit dem Raspberry Pi verbindet übertragen.
+
+Mit Raspbian 2019-06-20 oder neuer hängt die SPI-Geschwidigkeit von der aktuellen
+CPU-Frequenz ab.
+Die CPU-Frequenz wird unter Raspbian vom so genannten *Governor* kontrolliert.
+Standardmäßig ist der Governor auf *ondemand* eingestellt. Dies bedeutet dass die
+CPU-Frequenz anhand der Last skaliert wird.
+
+Daher ist Standardmäßig der Durchsatz höher desto höher die CPU-Auslastung ist. Die
+CPU-Frequenz-Skalierung kann ausgestellt werden in dem der Governor auf
+*performance* eingestellt wird.
+
+Dies kann über das Kommandozeilentool cpufreq-set erfolgen::
+
+ sudo apt-get install cpufrequtils
+ sudo cpufreq-set -g performance
+
+Um dies permanent zu machen kann die cpufrequtils-defaults-Datei genutzt werden::
+
+ sudo su
+ apt-get install cpufrequtils
+ echo 'GOVERNOR="performance"' > /etc/default/cpufrequtils
+ reboot
+
+Dadurch wird der Governor während des Bootvorgangs automatisch in den
+Performande-Modus gebracht.
+
+
 .. _hat_brick_low_power_sleep_mode:
 
 Low Power Sleep Modus

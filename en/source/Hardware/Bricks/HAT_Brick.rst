@@ -182,6 +182,40 @@ successful. Is the HAT Brick connected correctly? Did you restart the Raspberry 
 plugging in the HAT Brick?
 
 
+.. _hat_brick_configuration_for_improved_throughput:
+
+Configuration for Improved Throughput
+-------------------------------------
+
+A HAT Brick should be able to transfer about 1000 full-size (64 byte payload) 
+SPITFP (SPI Tinkerforge Protocol) messages per second, similar to a Master Brick.
+The messages are transferred through an SPI bus that connects the Bricklets
+on the HAT with the Raspberry Pi.
+
+With Raspbian 2019-06-20 or newer the SPI speed depends on the current CPU clock
+frequency.  
+The CPU frequency on Raspbian is controlled by the governor. By default the governor is
+configured as *ondemand*, which means that the frequency is scaled depending on the load.
+We tested this with Raspberry Pi Zero/2/3/4.
+
+This means that by default the throughput increases if the load of CPU is high. You
+can turn the frequency scaling off by putting the governor into *performance* mode.
+
+You can do this with the cpufreq-set tool::
+
+ sudo apt-get install cpufrequtils
+ sudo cpufreq-set -g performance
+
+To do this permanently you can use the cpufrequtils defaults file::
+
+ sudo su
+ apt-get install cpufrequtils
+ echo 'GOVERNOR="performance"' > /etc/default/cpufrequtils
+ reboot
+
+This will automatically put the governor into performance mode during bootup.
+
+
 .. _hat_brick_low_power_sleep_mode:
 
 Low Power Sleep Mode
