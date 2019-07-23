@@ -193,12 +193,11 @@ The messages are transferred through an SPI bus that connects the Bricklets
 on the HAT with the Raspberry Pi.
 
 With Raspbian 2019-06-20 or newer the SPI speed depends on the current CPU clock
-frequency.  
-The CPU frequency on Raspbian is controlled by the governor. By default the governor is
-configured as *ondemand*, which means that the frequency is scaled depending on the load.
-We tested this with Raspberry Pi Zero/2/3/4.
+frequency. The CPU frequency on Raspbian is controlled by the Linux governor. 
+By default the governor is configured as *ondemand*, which means that the frequency 
+is scaled depending on the load.
 
-This means that by default the throughput increases if the load of CPU is high. You
+This means that by default the throughput increases if the load of CPU is higher. You
 can turn the frequency scaling off by putting the governor into *performance* mode.
 
 You can do this with the cpufreq-set tool::
