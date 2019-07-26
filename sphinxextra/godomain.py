@@ -82,7 +82,7 @@ class DefinitionParser(object):
         self.skip_ws()
         ptr = self.skip_string("*")
         self.skip_ws()
-        
+
         array = self.skip_string("[")
         if array:
             self.skip_ws()
@@ -95,7 +95,7 @@ class DefinitionParser(object):
             self.skip_ws()
             element_type = self._parse_type()
             return "{ptr}[{count}]{type}".format(ptr='*' if ptr else '', type=element_type, count=element_count)
-        
+
         if self.match(_identifier_re):
             type_ = self.matched_text
         else:
@@ -116,7 +116,7 @@ class DefinitionParser(object):
             param_name = self.matched_text
         else:
             self.fail('Expected parameter name (identifier)')
-                
+
         if param_name == "func": #closure parameter
             if not self.skip_string("("):
                 self.fail('Expected "(" as start of a callback function parameter definition')
@@ -139,7 +139,7 @@ class DefinitionParser(object):
             self.fail('Expected "func" as start of signature')
 
         self.skip_ws()
-        
+
         is_method = False
         if self.skip_string('(*'):
             is_method = True
@@ -161,7 +161,7 @@ class DefinitionParser(object):
                 bricklet_name = fn_name.replace("New", "")
             else:
                 self.fail('Found function ' + self.definition + ' which was neither a method nor a constructor (thus the bricklet name is unknown).')
-    
+
         if not self.skip_string('('):
             self.fail('Expected "(" as start of parameter list')
 
@@ -174,12 +174,12 @@ class DefinitionParser(object):
         self.skip_ws()
 
         returns = []
-        if self.skip_string('('):            
+        if self.skip_string('('):
             while not self.skip_string(')'):
                 returns.append(self._parse_param())
                 self.skip_ws()
                 self.skip_string(',')
-        
+
         result = addnodes.desc_signature(self.definition)
         result['struct'] = "(*"+bricklet_name+")"
         result['fn'] = fn_name
@@ -187,7 +187,7 @@ class DefinitionParser(object):
         if is_method:
             result += addnodes.desc_addname("(*" + bricklet_name + ")", "(*" + bricklet_name + ")")        
         result += addnodes.desc_name(fn_name, fn_name)
-        
+
         paramList = addnodes.desc_parameterlist()
         for param in params:
             paramList += param
@@ -209,17 +209,18 @@ class DefinitionParser(object):
 
         if not self.skip_string("."):
             self.fail('Expected "." between device name and constant name')
-        
+
         if self.match(_identifier_re):
             constant_name = self.matched_text
         else:
             self.fail('Expected constant name (identifier)')
-        
+
         result = addnodes.desc_signature("const " + self.definition)
         result += addnodes.desc_addname(device_name, device_name)
-        result += addnodes.desc_name(constant_name, constant_name)        
-        result['struct'] = device_name+constant_name
-        result['fn'] = ''        
+        result += addnodes.desc_name(constant_name, constant_name)
+        result['struct'] = device_name + constant_name
+        result['fn'] = ''
+
         return result
 
     def assert_end(self):
@@ -234,7 +235,7 @@ class GoObject(ObjectDescription):
 
     def get_index_text(self, name_cls):
         if self.objtype == 'function':
-            return _('%s() (built-in function)') % name_cls            
+            return _('%s() (built-in function)') % name_cls
         elif self.objtype == 'callback':
             return _('%s() (built-in callback)') % name_cls
         elif self.objtype == 'data':
@@ -244,15 +245,15 @@ class GoObject(ObjectDescription):
 
     def add_target_and_index(self, sigobj, sig, signode):
         objects = self.env.domaindata['go']['objects']
-        if len(signode['fn'] ) > 0:
-            fullname = signode['struct'] + " " + signode['fn']        
+        if len(signode['fn']) > 0:
+            fullname = signode['struct'] + " " + signode['fn']
         else:
             fullname = signode['struct']
         signode['ids'].append(fullname)
-        
+
         # has to happen _after_ the fullname is added to the signodes' ids, as note_explicit_target generates the html id-attributes (i.e. link anchors)
         self.state.document.note_explicit_target(signode)
-        
+
         if fullname in objects:
             self.env.warn(
                     self.env.docname,
@@ -266,7 +267,7 @@ class GoObject(ObjectDescription):
         indextext = self.get_index_text(fullname)
         if indextext:
             self.indexnode['entries'].append(fixup_index_entry(('single', indextext, fullname, fullname, 'foobar')))
-   
+
     def parse_definition(self, parser):
         raise NotImplementedError()
 
@@ -323,7 +324,7 @@ class GoConstantObject(GoObject):
 class GoXRefRole(XRefRole):
     def _fix_parens(self, env, has_explicit_title, title, target):
         # remove parentheses
-        if not has_explicit_title and title.endswith('()'):                
+        if not has_explicit_title and title.endswith('()'):
             title = title[:-2]
         # remove parentheses from the target too
         if target.endswith('()'):
@@ -353,13 +354,13 @@ class GoDomain(Domain):
     }
 
     directives = {
-        'function':     GoFunctionObject,     
-        'constant':     GoConstantObject,   
+        'function': GoFunctionObject,
+        'constant': GoConstantObject,
     }
     roles = {
-        'func' :  GoXRefRole(fix_parens=True),
-        'const' :  GoXRefRole(fix_parens=True)
-     }
+        'func': GoXRefRole(fix_parens=True),
+        'const': GoXRefRole(fix_parens=True)
+    }
     initial_data = {
         'objects': {},  # fullname -> docname, objtype
     }
@@ -373,12 +374,11 @@ class GoDomain(Domain):
         splt = string.split("_")
         return "".join(x.title() for x in splt)
 
-    def resolve_xref(self, env, fromdocname, builder,
-                     typ, target, node, contnode):
+    def resolve_xref(self, env, fromdocname, builder, typ, target, node, contnode):
         name, obj, node = self.data['objects'][target]
 
-        return make_refnode(builder, fromdocname, name, target,
-                                contnode, target)
+        return make_refnode(builder, fromdocname, name, target, contnode, target)
+
     def get_objects(self):
         for refname, (docname, type, sig_node) in self.data['objects'].iteritems():
             yield (refname, refname, type, docname, refname, 1)
