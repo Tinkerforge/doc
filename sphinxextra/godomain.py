@@ -144,7 +144,7 @@ class DefinitionParser(object):
         if self.skip_string('(*'):
             is_method = True
             if self.match(_identifier_re):
-                bricklet_name = self.matched_text            
+                device_name = self.matched_text
             else:
                 self.fail('Expected device name (identifier)')
             self.skip_string(')')
@@ -158,7 +158,7 @@ class DefinitionParser(object):
 
         if not is_method:
             if "New" in fn_name:
-                bricklet_name = fn_name.replace("New", "")
+                device_name = fn_name.replace("New", "")
             else:
                 self.fail('Found function ' + self.definition + ' which was neither a method nor a constructor (thus the bricklet name is unknown).')
 
@@ -181,11 +181,12 @@ class DefinitionParser(object):
                 self.skip_string(',')
 
         result = addnodes.desc_signature(self.definition)
-        result['struct'] = "(*"+bricklet_name+")"
+        result['struct'] = "(*" + device_name + ")"
         result['fn'] = fn_name
-        result += addnodes.desc_addname("func ", "func ")
+        result += addnodes.desc_annotation("func ", "func ")
         if is_method:
-            result += addnodes.desc_addname("(*" + bricklet_name + ")", "(*" + bricklet_name + ")")        
+            result += addnodes.desc_addname("(*" + device_name + ")", "(*" + device_name + ")")
+            result += addnodes.desc_annotation(" ", " ")
         result += addnodes.desc_name(fn_name, fn_name)
 
         paramList = addnodes.desc_parameterlist()
@@ -194,6 +195,7 @@ class DefinitionParser(object):
         result += paramList
 
         if len(returns) > 0:
+            result += addnodes.desc_annotation(" ", " ")
             returnList = addnodes.desc_parameterlist()
             for ret in returns:
                 returnList += ret
