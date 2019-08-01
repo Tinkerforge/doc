@@ -4,6 +4,8 @@
 Brick Viewer Installation auf Linux
 ===================================
 
+**Voraussetzungen**: Python 3.5 und PyQt 5.5 mit QtOpenGL oder neuer
+
 Der :ref:`Brick Viewer <brickv>` kann auf einer Debian basierten Distribution
 (Ubuntu, Mint, etc.) aus einer ``.deb`` Datei installiert werden. Für Arch Linux
 steht im AUR das Paket `brickv <https://aur.archlinux.org/packages/brickv/>`_ zur Verfügung.
@@ -51,8 +53,8 @@ Sonstiges gestartet werden, oder aus einem Terminal heraus mit::
 Statt mittels eines graphischen Installationsprogramms kann der Brick Viewer
 auch über einen Terminal durch folgende Befehle installiert werden::
 
+ sudo apt-get install python3 python3-pyqt5 python3-pyqt5.qtopengl python3-serial python3-tz python3-tzlocal
  wget https://download.tinkerforge.com/tools/brickv/linux/brickv_linux_latest.deb
- sudo apt-get install python3 python3-pyqt5 python3-pyqt5.qtopengl python3-serial
  sudo dpkg -i brickv_linux_latest.deb
 
 
@@ -63,15 +65,17 @@ Um den Brick Viewer aus dem Quelltext heraus zu verwenden kann der Quelltext
 ebenfalls im :ref:`Downloadbereich <downloads_tools>` heruntergeladen werden.
 Auch hier müssen die benötigten Abhängigkeiten installiert werden:
 
-* python3
-* python3-pyqt5
+* python3 (>= 3.5)
+* python3-pyqt5 (>= 5.5)
 * python3-pyqt5.qtopengl
 * python3-serial
+* python3-tz
+* python3-tzlocal
 
 Auf Debian basierte Distributionen können diese Pakete wie zuvor per ``apt-get``
 installiert werden. Für andere Distributionen sollte es äquivalente Pakete geben::
 
- sudo apt-get install python3 python3-pyqt5 python3-pyqt5.qtopengl python3-serial
+ sudo apt-get install python3 python3-pyqt5 python3-pyqt5.qtopengl python3-serial python3-tz python3-tzlocal
 
 Als erstes müssen die Qt ``.ui`` Dateien übersetzt werden. Dazu in den ``src/`` Ordner innerhalb des entpackten
 Quelltexts wechseln und dort folgenden Befehl ausführen::
