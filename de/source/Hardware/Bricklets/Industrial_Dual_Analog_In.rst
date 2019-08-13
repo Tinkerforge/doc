@@ -1,6 +1,4 @@
 
-:shoplink: ../../../shop/bricklets/industrial-dual-analog-in-bricklet.html
-
 .. include:: Industrial_Dual_Analog_In.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
@@ -23,7 +21,7 @@ Industrial Dual Analog In Bricklet
 
 .. note::
 
- Das Industrial Dual Analog In Bricklet ist abgekündigt. Wir verkaufen noch unseren restlichen Lagerbestand.
+ Das Industrial Dual Analog In Bricklet ist abgekündigt und wird nicht mehr verkauft.
  Als Ersatz wird das :ref:`Industrial Dual Analog In Bricklet 2.0 <industrial_dual_analog_in_v2_bricklet>`
  empfohlen.
 
