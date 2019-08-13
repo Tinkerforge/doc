@@ -192,7 +192,7 @@ change back to the default mode every few hours and in the default mode cycle be
 three available colors a few times. This will get rid of the ghosting and after that you can
 go back to the delta mode with flicker-free updates.
 
-.. __e_paper_296x128_bricklet_font:
+.. _e_paper_296x128_bricklet_font:
 
 Font
 ----
