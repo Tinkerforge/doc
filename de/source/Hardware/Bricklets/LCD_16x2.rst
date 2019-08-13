@@ -125,6 +125,21 @@ LCD Kontrast einstellen
 Auf dem Bricklet befindet sich neben dem Bricklet Stecker ein Potentiometer.
 Mit diesem kann der Kontrast des LCDs eingestellt werden.
 
+.. _lcd_16x2_bricklet_font:
+
+Zeichensatz
+-----------
+
+Das Bricklet beinhaltet folgenden Zeichensatz (ASCII ist grün markiert), mit
+dem schnell und einfach Text (bis zu 16x2 Zeichen) auf dem Display angezeigt
+werden kann:
+
+.. image:: /Images/Bricklets/bricklet_lcd_16x2_font.png
+   :scale: 100 %
+   :alt: LCD 16x2 Bricklet Zeichensatz
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_lcd_16x2_font.png
+
 
 .. _lcd_16x2_bricklet_programming_interface:
 

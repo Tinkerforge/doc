@@ -195,6 +195,21 @@ entsteht wieder entfernt. Danach kann dann wieder in den Delta-Modus gewechselt 
 flackerfreie Aktualisierungen.
 
 
+.. _e_paper_296x128_bricklet_font:
+
+Zeichensatz
+-----------
+
+Das Bricklet beinhaltet folgenden Zeichensatz (ASCII ist grün markiert), mit
+dem schnell und einfach Text auf dem Display angezeigt werden kann:
+
+.. image:: /Images/Bricklets/bricklet_e_paper_296x128_font.png
+   :scale: 100 %
+   :alt: E-Paper 296x128 Bricklet Zeichensatz
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_e_paper_296x128_font.png
+
+
 .. _e_paper_296x128_bricklet_case:
 
 Gehäuse

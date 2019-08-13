@@ -123,6 +123,20 @@ To modify the contrast you have to
 turn the potentiometer on the Bricklet with a screwdriver.
 The potentiometer is attached next to the Bricklet connector.
 
+.. _lcd_16x2_bricklet_font:
+
+Font
+----
+
+The Bricklet has an embedded font (ASCII subset in green) that allows fast and
+easy text rendering (up to 16x2 characters):
+
+.. image:: /Images/Bricklets/bricklet_lcd_16x2_font.png
+   :scale: 100 %
+   :alt: LCD 16x2 Bricklet font
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_lcd_16x2_font.png
+
 
 .. _lcd_16x2_bricklet_programming_interface:
 

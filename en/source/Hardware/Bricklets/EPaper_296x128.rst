@@ -192,6 +192,20 @@ change back to the default mode every few hours and in the default mode cycle be
 three available colors a few times. This will get rid of the ghosting and after that you can
 go back to the delta mode with flicker-free updates.
 
+.. __e_paper_296x128_bricklet_font:
+
+Font
+----
+
+The Bricklet has an embedded font (ASCII subset in green) that allows fast and
+easy text rendering:
+
+.. image:: /Images/Bricklets/bricklet_e_paper_296x128_font.png
+   :scale: 100 %
+   :alt: E-Paper 296x128 Bricklet font
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_e_paper_296x128_font.png
+
 
 .. _e_paper_296x128_bricklet_case:
 

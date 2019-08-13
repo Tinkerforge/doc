@@ -129,6 +129,20 @@ The LCD Bricklet can be equipped with a pin header on the right hand side.
 To attach a switch or a button you have to connect on pin
 with one input (BTN0 to BTN3) and the other with GND.
 
+.. _lcd_20x4_bricklet_font:
+
+Font
+----
+
+The Bricklet has an embedded font (ASCII subset in green) that allows fast and
+easy text rendering (up to 20x4 characters):
+
+.. image:: /Images/Bricklets/bricklet_lcd_20x4_font.png
+   :scale: 100 %
+   :alt: LCD 20x4 Bricklet font
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_lcd_20x4_font.png
+
 
 .. _lcd_20x4_bricklet_case:
 

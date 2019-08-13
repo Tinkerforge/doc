@@ -132,6 +132,21 @@ werden. Über diese können externe Schalter oder Taster
 angeschlossen werden. Normalerweise verbindet man jeweils einen Eingang
 (BTN0 bis BTN3) über einen Taster oder Schalter mit GND.
 
+.. _lcd_20x4_bricklet_font:
+
+Zeichensatz
+-----------
+
+Das Bricklet beinhaltet folgenden Zeichensatz (ASCII ist grün markiert), mit
+dem schnell und einfach Text (bis zu 20x4 Zeichen) auf dem Display angezeigt
+werden kann:
+
+.. image:: /Images/Bricklets/bricklet_lcd_20x4_font.png
+   :scale: 100 %
+   :alt: LCD 20x4 Bricklet Zeichensatz
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_lcd_20x4_font.png
+
 .. _lcd_20x4_bricklet_case:
 
 Gehäuse
