@@ -4,7 +4,7 @@ Perl
 Name                           Version          Description                                                          full
 ============================== ================ ==================================================================== ====
 RPC::Simple                    1.002            Perl classes to handle simple asynchronous RPC calls with  call-back |c|
-Thread::Queue                  3.12             Thread-safe queues                                                   |c|
+Thread::Queue                  3.13             Thread-safe queues                                                   |c|
 cpanminus                      1.7042-2         script to get, unpack, build and install modules from CPAN           |c|
 libcrypt-blowfish-perl         2.14-1+b4        Blowfish cryptography for Perl                                       |c|
 libcrypt-des-perl              2.07-1+b4        Perl DES encryption module                                           |c|
@@ -39,7 +39,7 @@ libterm-readline-gnu-perl      1.35-1           Perl extension for the GNU ReadL
 libwww-curl-perl               4.17-4           Perl bindings to libcurl                                             |c|
 libxml-simple-perl             2.22-1           Perl module for reading and writing XML                              |c|
 libyaml-perl                   1.21-1           YAML Ain't Markup Language                                           |c|
-perl                           5.24.1-3+deb9u3  Larry Wall's Practical Extraction and Report Language                |c|
-perl-doc                       5.24.1-3+deb9u3  Perl documentation                                                   |c|
+perl                           5.24.1-3+deb9u5  Larry Wall's Practical Extraction and Report Language                |c|
+perl-doc                       5.24.1-3+deb9u5  Perl documentation                                                   |c|
 pmtools                        2.0.0-1          Perl module tools                                                    |c|
 ============================== ================ ==================================================================== ====

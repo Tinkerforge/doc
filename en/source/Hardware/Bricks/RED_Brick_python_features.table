@@ -3,7 +3,9 @@ Python
 =========================== ======================== ========================================================================= ====
 Name                        Version                  Description                                                               full
 =========================== ======================== ========================================================================= ====
-libpython2.7                2.7.13-2+deb9u2          Shared Python runtime library (version 2.7)                               |c|
+libpython2.7                2.7.13-2+deb9u3          Shared Python runtime library (version 2.7)                               |c|
+pycrypto                    2.6.1                                                                                              |c|
+pynag                       0.9.1                                                                                              |c|
 python                      2.7.13-2                 interactive high-level object-oriented language (default version)         |c|
 python-flask                0.12.1-1                 micro web framework based on Werkzeug and Jinja2 - Python 2.7             |c|
 python-gtk2                 2.24.0-5.1               Python bindings for the GTK+ widget set                                   |c|
@@ -18,7 +20,8 @@ python-numpy                1:1.12.1-3               Numerical Python adds a fas
 python-opencv               2.4.9.1+dfsg1-2          Python bindings for the computer vision library                           |c|
 python-opengl               3.1.0+dfsg-1             Python bindings to OpenGL (Python 2)                                      |c|
 python-pcapy                0.10.8-1+b1              Python interface to the libpcap packet capture library                    |c|
-python-pip                  9.0.1-2                  Python package installer                                                  |c|
+python-pil                  4.0.0-4                  Python Imaging Library (Pillow fork)                                      |c|
+python-pip                  9.0.1-2+deb9u1           Python package installer                                                  |c|
 python-psutil               5.0.1-1                  module providing convenience functions for managing processes             |c|
 python-pycurl               7.43.0-2                 Python bindings to libcurl                                                |c|
 python-pypdf2               1.26.0-2                 Pure-Python library built as a PDF toolkit (Python 2)                     |c|
@@ -34,14 +37,23 @@ python-setuptools           33.1.1-1                 Python Distutils Enhancemen
 python-sip                  4.18.1+dfsg-2            Python/C++ bindings generator runtime library                             |c|
 python-sqlite               1.0.1-12                 Python interface to SQLite 2                                              |c|
 python-sqlitecachec         1.1.4-1                  Fast metadata parser for yum                                              |c|
+python-wheel                0.29.0-2                 built-package format for Python                                           |c|
 python3                     3.5.3-1                  interactive high-level object-oriented language (default python3 version) |c|
 python3-numpy               1:1.12.1-3               Fast array facility to the Python 3 language                              |c|
-python3-pip                 9.0.1-2                  Python package installer                                                  |c|
+python3-pil                 4.0.0-4                  Python Imaging Library (Python3)                                          |c|
+python3-pil.imagetk         4.0.0-4                  Python Imaging Library - ImageTk Module (Python3)                         |c|
+python3-pip                 9.0.1-2+deb9u1           Python package installer                                                  |c|
 python3-pyqt4               4.11.4+dfsg-2+b1         Python3 bindings for Qt4                                                  |c|
 python3-pyqt4.qtopengl      4.11.4+dfsg-2+b1         Python 3 bindings for Qt4's OpenGL module                                 |c|
+python3-pyqt5               5.7+dfsg-5               Python 3 bindings for Qt5                                                 |c|
+python3-pyqt5.qtopengl      5.7+dfsg-5               Python 3 bindings for Qt5's OpenGL module                                 |c|
 python3-scipy               0.18.1-2                 scientific tools for Python 3                                             |c|
 python3-serial              3.2.1-1                  pyserial - module encapsulating access for the serial port                |c|
 python3-setuptools          33.1.1-1                 Python3 Distutils Enhancements                                            |c|
 python3-sip                 4.18.1+dfsg-2            Python 3/C++ bindings generator runtime library                           |c|
 python3-software-properties 0.96.20.2-1              manage the repositories that you install software from                    |c|
+python3-tz                  2016.7-0.3               Python3 version of the Olson timezone database                            |c|
+python3-tzlocal             1.3-1                    tzinfo object for the local timezone (Python 3 version)                   |c|
+python3-wheel               0.29.0-2                 built-package format for Python                                           |c|
+watchdog                    0.9.0                                                                                              |c|
 =========================== ======================== ========================================================================= ====
