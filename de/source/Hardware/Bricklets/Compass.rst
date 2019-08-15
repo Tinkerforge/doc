@@ -31,8 +31,10 @@ Compass Bricklet
 Features
 --------
 
-* TBD
-* TBD
+* 3-Achs Kompass
+* Misst den Kurs (0.1° Auflösung / bis zu 1° Genauigkeit)
+* Misst die magnetische Flussdichte (Auflösung 0.1mG / Milli Gauss)
+* Updates mit bis zu 600Hz
 
 
 .. _compass_bricklet_description:
@@ -40,29 +42,44 @@ Features
 Beschreibung
 ------------
 
-TBD
+
+Das Kompass :ref:`Bricklet <primer_bricklets>` ist mit einem 3-Achs ±8 Gauss Magnetsensor
+ausgestattet. Der Sensor kann die magnetische Flussdichte für alle drei Achsen messen.
+Kurs/ die Richtung wird mit einer Auflösung von 0.1° und einer Genauigkeit von bis zu 1° 
+gemessen.
+
+Die Updaterate ist einstellbar und beträgt bis zu 600Hz.
 
 
 Technische Spezifikation
 ------------------------
 
-================================  ============================================================
-Eigenschaft                       Wert
-================================  ============================================================
-Stromverbrauch                    TBDmA
---------------------------------  ------------------------------------------------------------
---------------------------------  ------------------------------------------------------------
-E TBD                             W TBD
---------------------------------  ------------------------------------------------------------
---------------------------------  ------------------------------------------------------------
-Abmessungen (B x T x H)           TBD x TBD x TBDmm (TBD x TBD x TBD")
-Gewicht                           TBDg
-================================  ============================================================
+===================================  ============================================================
+Eigenschaft                          Wert
+===================================  ============================================================
+Sensor                               MMC5883MA
+Stromverbrauch                       40mW (8mA bei 5V)
+-----------------------------------  ------------------------------------------------------------
+-----------------------------------  ------------------------------------------------------------
+Magnetische Flussdichte Messbereich  -8G bis 8G (Gauss)
+Magnetische Flussdichte Auflösung    0.1mG (Milli-Gauss)
+Kurs Messbereich                     0° to 360°
+Kurs Auflösung                       0.1°
+Kurs Genauigkeit                     Bis zu 1° bei 100Hz Updaterate*
+Updaterate                           100Hz-600Hz (einstellbar)
+-----------------------------------  ------------------------------------------------------------
+-----------------------------------  ------------------------------------------------------------
+Abmessungen (B x T x H)              25 x 20 x 5mm (0,98 x 0,79 x 0,19")
+Gewicht                              2g
+===================================  ============================================================
+
+\*: Hängt von der Qualität der Kalibrierung für die spezifische Umgebung des Bricklets ab.
 
 
 Ressourcen
 ----------
 
+* MMC5883MA Datenblatt (`Download <https://github.com/Tinkerforge/compass-bricklet/raw/master/datasheets/MMC5883MA-RevC.pdf>`__)
 * Schaltplan (`Download <https://github.com/Tinkerforge/compass-bricklet/raw/master/hardware/compass-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/compass_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/compass-bricklet/zipball/master>`__)
@@ -79,14 +96,14 @@ Erster Test
 |test_connect|.
 
 |test_tab|
-Wenn alles wie erwartet funktioniert ... TBD.
+Wenn alles wie erwartet funktioniert wird nun die gemessene magnetische Flussdichte,
+der Kurs und die Neigung angezeigt.
 
-..
-	.. image:: /Images/Bricklets/bricklet_compass_brickv.jpg
-	   :scale: 100 %
-	   :alt: Compass Bricklet im Brick Viewer
-	   :align: center
-	   :target: ../../_images/Bricklets/bricklet_compass_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_compass_brickv.jpg
+   :scale: 100 %
+   :alt: Compass Bricklet in Brick Viewer
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_compass_brickv.jpg
 
 |test_pi_ref|
 
@@ -96,7 +113,7 @@ Wenn alles wie erwartet funktioniert ... TBD.
 Gehäuse
 -------
 
-..
+
 	Ein `laser-geschnittenes Gehäuse für das Compass Bricklet
 	<https://www.tinkerforge.com/de/shop/cases/case-compass-bricklet.html>`__ ist verfügbar.
 
