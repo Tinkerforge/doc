@@ -76,7 +76,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/xmc1400-breakout-bricklet/raw/master/hardware/xmc1400-breakout-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/xmc1400_breakout_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/xmc1400-breakout-bricklet/zipball/master>`__)
-* 3D model (`View online <https://autode.sk/TBD>`__ | Download: `STEP <https://download.tinkerforge.com/3d/TBD/TBD.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/TBD/TBD.FCStd>`__)
+* 3D model (`View online <https://autode.sk/2TzY9Dl>`__ | Download: `STEP <https://download.tinkerforge.com/3d/xmc1400_breakout/xmc1400_breakout.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/xmc1400_breakout/xmc1400_breakout.FCStd>`__)
 
 
 .. _xmc1400_breakout_bricklet_test:
