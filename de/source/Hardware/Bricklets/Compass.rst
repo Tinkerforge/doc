@@ -66,7 +66,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/compass-bricklet/raw/master/hardware/compass-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/compass_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/compass-bricklet/zipball/master>`__)
-* 3D Modell (`Online ansehen <https://autode.sk/TBD>`__ | Download: `STEP <https://download.tinkerforge.com/3d/TBD/TBD.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/TBD/TBD.FCStd>`__)
+* 3D Modell (`Online ansehen <https://autode.sk/33AQJo8>`__ | Download: `STEP <https://download.tinkerforge.com/3d/compass/compass.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/compass/compass.FCStd>`__)
 
 
 .. _compass_bricklet_test:
