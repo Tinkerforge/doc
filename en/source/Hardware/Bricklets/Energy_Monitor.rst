@@ -92,13 +92,95 @@ Resources
 * 3D model (`View online <https://autode.sk/31FfjlR>`__ | Download: `STEP <https://download.tinkerforge.com/3d/energy_monitor/energy_monitor.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/energy_monitor/energy_monitor.FCStd>`__)
 
 
+.. _energy_monitor_bricklet_example_heater:
+
+Example: Monitor Power Usage of Heater
+--------------------------------------
+
+As an example we want to monitor the power of a small electric heater.
+
+To do this we have to connect the voltage transformer and the current clamp
+to the same circuit that the electric heater runs on.
+
+A typical european mains power cable will have three wires:
+
+* Neutral conductor (N)
+* Protective earth (PE)
+* Phase (L1)
+
+In case of three-phase power there are two more phases (L2 and L3).
+
+The current clamp has to be connected to L1 (in case of three phase you need
+three Energy Monitor Bricklets connected to L1, L2 and L3).
+
+.. image:: /Images/Bricklets/bricklet_energy_monitor_tutorial_2_600.jpg
+   :scale: 100 %
+   :alt: Energy Monitor Bricklet heater example
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_energy_monitor_tutorial_2_1200.jpg
+
+On the Bricklet side you have to connect the clamp to the *AC Current* input.
+
+Put the voltage transformer into a socket that is as near to the load that you want
+to monitor as possible.
+
+.. image:: /Images/Bricklets/bricklet_energy_monitor_tutorial_3_600.jpg
+   :scale: 100 %
+   :alt: Energy Monitor Bricklet example
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_energy_monitor_tutorial_3_1200.jpg
+
+On the Bricklet side you have to connect the transformer to the *AC Voltage* input.
+
+The resulting setup will look like this:
+
+.. image:: /Images/Bricklets/bricklet_energy_monitor_tutorial_1_w_caption_800.jpg
+   :scale: 100 %
+   :alt: Energy Monitor Bricklet heater example
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_energy_monitor_tutorial_1_w_caption_1200.jpg
+
+In the Brick Viewer this setup looks as follows:
+
+.. image:: /Images/Bricklets/bricklet_energy_monitor_heater_brickv.jpg
+   :scale: 100 %
+   :alt: Energy Monitor Bricklet in Brick Viewer (heater)
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_energy_monitor_heater_brickv.jpg
+
+
+
 .. _energy_monitor_bricklet_connectivity:
 
 Connectivity
 ------------
 
-TODO: Photos of simple setup with instructions.
+TODO: Top down photo with caption.
 
+
+Transformer Ratios
+------------------
+
+Both transformers (the voltage transformer and the current clamp) that
+are connected to the Energy Monitor Bricklet have a ratio.
+
+The current clamps that we sell are 5A:1V and 30A:1V, while the voltage
+transformer delivers about 12V without load and 230V input. We measured
+an exact ratio of 19.23V:1V.
+
+The Bricklet has a default current ratio of 30 and a default voltage ratio
+of 19.23. You can change the ratios in Brick Viewer:
+
+.. image:: /Images/Bricklets/bricklet_energy_monitor_brickv_ratios.jpg
+   :scale: 100 %
+   :alt: Energy Monitor Bricklet ratio configuration
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_energy_monitor_brickv_ratios.jpg
+
+If you use the 5A:1V current clamp, change the current ratio to 5.
+
+If you use your own current clamp or voltage transformer, you
+have to measure the ratio and change it accordingly in Brick Viewer.
 
 .. _energy_monitor_bricklet_waveforms:
 
