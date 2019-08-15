@@ -105,15 +105,24 @@ If everything went as expected you can now see the example plugin.
 Tutorial: Add Getter Function
 -----------------------------
 
-TODO: Write tutorial for:
+.. note::
 
-* Add function to generator
-* Generate stubs
-* Copy stubs
-* Implement stubs in firmware
+ This tutorial is unfortunately not yet ready. It is on our TODO list.
+ If you are interested in it write us an email to info@tinkerforge.com,
+ so we know that there is a demand for it.
+
+
+We plan to write a tutorial that goes through the whole process
+of adding functions to the API, implementing them in the firmware
+and adding a GUI element for it in Brick Viewer through the
+following steps:
+
+* Add getter function to generator
+* Generate/copy stubs
+* Implement functionality of stub in firmware
 * Generate bindings
-* Write program that uses new getter
-* Add GUI element to Brick Viewer
+* Write program with new bindings that uses new getter
+* Add GUI element to Brick Viewer that uses new getter
 
 
 .. _xmc1400_breakout_bricklet_programming_interface:
