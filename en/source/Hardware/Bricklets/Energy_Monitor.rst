@@ -135,7 +135,7 @@ times to increase the resolution. This looks like a typical AC/DC power supply.
    :align: center
    :target: ../../_images/Bricklets/bricklet_energy_monitor_led_lamp_brickv.jpg
 
-Waveform 3: 12W energy saving lightbulb. The conductor is threaded through the current
+Waveform 4: 12W energy saving lightbulb. The conductor is threaded through the current
 clamp eight times to increase the resolution. You can see that the energy saving
 lightbulb only uses about 1/4 of the waveform.
 
