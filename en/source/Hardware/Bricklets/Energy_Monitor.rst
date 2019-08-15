@@ -58,9 +58,10 @@ to make the measurements.
 The Energy Monitor Bricklet can do all of the measurements without the
 need for any exposed mains voltage wiring!
 
-We offer a `230V voltage transformer <TBD>`__ as well as a `5A <TBD>`__ and
-`30A current clamp <TBD>`__. The Bricklet comes factory-calibrated for these
-transformers.
+We offer a `230V voltage transformer <https://www.tinkerforge.com/en/shop/ac-ac-voltage-transformer.html>`__
+as well as a `5A <https://www.tinkerforge.com/en/shop/5a-1v-current-clamp.html>`__ and
+`30A current clamp <https://www.tinkerforge.com/en/shop/30a-1v-current-clamp.html>`__.
+The Bricklet comes factory-calibrated for these transformers.
 
 
 Technical Specifications
