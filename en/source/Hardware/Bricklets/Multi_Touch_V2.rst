@@ -100,12 +100,11 @@ Test your Multi Touch Bricklet 2.0
 Touch single pins of the Multi Touch Bricklet and you should see their
 state changing in the Brick Viewer:
 
-..
-	.. image:: /Images/Bricklets/bricklet_multi_touch_v2_brickv.jpg
-	   :scale: 100 %
-	   :alt: Multi Touch Bricklet 2.0 in Brick Viewer
-	   :align: center
-	   :target: ../../_images/Bricklets/bricklet_multi_touch_v2_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_multi_touch_v2_brickv.jpg
+   :scale: 100 %
+   :alt: Multi Touch Bricklet 2.0 in Brick Viewer
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_multi_touch_v2_brickv.jpg
 
 |test_pi_ref|
 

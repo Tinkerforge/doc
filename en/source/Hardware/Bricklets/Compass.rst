@@ -93,14 +93,14 @@ Test your Compass Bricklet
 |test_connect|.
 
 |test_tab|
-If everything went as expected you can now see the measured magnetic flux density and heading.
+If everything went as expected you can now see the measured magnetic flux density as well as
+the heading and inclination.
 
-..
-	.. image:: /Images/Bricklets/bricklet_compass_brickv.jpg
-	   :scale: 100 %
-	   :alt: Compass Bricklet in Brick Viewer
-	   :align: center
-	   :target: ../../_images/Bricklets/bricklet_compass_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_compass_brickv.jpg
+   :scale: 100 %
+   :alt: Compass Bricklet in Brick Viewer
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_compass_brickv.jpg
 
 |test_pi_ref|
 

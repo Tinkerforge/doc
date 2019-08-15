@@ -111,14 +111,14 @@ Test your Color Bricklet 2.0
 |test_connect|.
 
 |test_tab|
-If everything went as expected ... TBD.
+If everything went as expected you can now see the changing measured values 
+depending on the illumination.
 
-..
-	.. image:: /Images/Bricklets/bricklet_color_v2_brickv.jpg
-	   :scale: 100 %
-	   :alt: Color Bricklet 2.0 in Brick Viewer
-	   :align: center
-	   :target: ../../_images/Bricklets/bricklet_color_v2_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_color_v2_brickv.jpg
+   :scale: 100 %
+   :alt: Color Bricklet 2.0 in Brick Viewer
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_color_v2_brickv.jpg
 
 |test_pi_ref|
 

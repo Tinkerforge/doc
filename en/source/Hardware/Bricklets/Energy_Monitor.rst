@@ -99,6 +99,53 @@ Connectivity
 
 TODO: Photos of simple setup with instructions.
 
+
+.. _energy_monitor_bricklet_waveforms:
+
+Waveforms
+---------
+
+The Energy Monitor Bricklet can show the voltage as well as the current
+waveform. The voltage waveform should always look sinusoidal, while the
+current waveform can heavily vary depending on the measured load. Below
+you can see waveforms for four different loads.
+
+Waveform 1: 1.7kW electric heater.
+
+.. image:: /Images/Bricklets/bricklet_energy_monitor_heater_brickv.jpg
+   :scale: 100 %
+   :alt: Energy Monitor Bricklet in Brick Viewer (heater)
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_energy_monitor_heater_brickv.jpg
+
+Waveform 2: 125W fan.
+
+.. image:: /Images/Bricklets/bricklet_energy_monitor_fan_brickv.jpg
+   :scale: 100 %
+   :alt: Energy Monitor Bricklet in Brick Viewer (fan)
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_energy_monitor_fan_brickv.jpg
+
+Waveform 3: 10W LED lamp. The conductor is threaded through the current clamp eight
+times to increase the resolution. This looks like a typical AC/DC power supply.
+
+.. image:: /Images/Bricklets/bricklet_energy_monitor_led_lamp_brickv.jpg
+   :scale: 100 %
+   :alt: Energy Monitor Bricklet in Brick Viewer (led lamp)
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_energy_monitor_led_lamp_brickv.jpg
+
+Waveform 3: 12W energy saving lightbulb. The conductor is threaded through the current
+clamp eight times to increase the resolution. You can see that the energy saving
+lightbulb only uses about 1/4 of the waveform.
+
+.. image:: /Images/Bricklets/bricklet_energy_monitor_energy_saving_lightbulb_brickv.jpg
+   :scale: 100 %
+   :alt: Energy Monitor Bricklet in Brick Viewer (energy saving lightbulb)
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_energy_monitor_energy_saving_lightbulb_brickv.jpg
+
+
 .. _energy_monitor_bricklet_test:
 
 Test your Energy Monitor Bricklet
@@ -109,14 +156,18 @@ Test your Energy Monitor Bricklet
 |test_connect|.
 
 |test_tab|
-If everything went as expected ... TBD.
+Connect the voltage and current clamp (see :ref:`energy_monitor_bricklet_connectivity`).
 
-..
-	.. image:: /Images/Bricklets/bricklet_energy_monitor_brickv.jpg
-	   :scale: 100 %
-	   :alt: Energy Monitor Bricklet in Brick Viewer
-	   :align: center
-	   :target: ../../_images/Bricklets/bricklet_energy_monitor_brickv.jpg
+You can now see the voltage/current waveforms as well as the voltage, current, power factor,
+frequency, energy and real/apparent/Reactive power.
+
+.. image:: /Images/Bricklets/bricklet_energy_monitor_heater_brickv.jpg
+   :scale: 100 %
+   :alt: Energy Monitor Bricklet in Brick Viewer
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_energy_monitor_heater_brickv.jpg
+
+The current waveform heavily depends on the measured load (see :ref:`energy_monitor_bricklet_waveforms`).
 
 |test_pi_ref|
 

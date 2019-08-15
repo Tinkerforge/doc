@@ -91,12 +91,11 @@ Test your XMC1400 Breakout Bricklet
 |test_tab|
 If everything went as expected you can now see the example plugin.
 
-..
-	.. image:: /Images/Bricklets/bricklet_xmc1400_breakout_brickv.jpg
-	   :scale: 100 %
-	   :alt: XMC1400 Breakout Bricklet in Brick Viewer
-	   :align: center
-	   :target: ../../_images/Bricklets/bricklet_xmc1400_breakout_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_xmc1400_breakout_brickv.jpg
+   :scale: 100 %
+   :alt: XMC1400 Breakout Bricklet in Brick Viewer
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_xmc1400_breakout_brickv.jpg
 
 |test_pi_ref|
 
