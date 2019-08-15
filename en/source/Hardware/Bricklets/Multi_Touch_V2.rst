@@ -84,7 +84,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/multi-touch-v2-bricklet/raw/master/hardware/multi-touch-v2-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/multi_touch_v2_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/multi-touch-v2-bricklet/zipball/master>`__)
-* 3D model (`View online <https://autode.sk/TBD>`__ | Download: `STEP <https://download.tinkerforge.com/3d/TBD/TBD.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/TBD/TBD.FCStd>`__)
+* 3D model (`View online <https://autode.sk/31GkD8A>`__ | Download: `STEP <https://download.tinkerforge.com/3d/multi_touch_v2/multi_touch_v2.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/multi_touch_v2/multi_touch_v2.FCStd>`__)
 
 
 .. _multi_touch_v2_bricklet_test:
