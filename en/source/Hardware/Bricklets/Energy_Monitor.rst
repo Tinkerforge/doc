@@ -47,20 +47,21 @@ The Energy Monitor :ref:`Bricklet <primer_bricklets>` is equipped with
 a 3.5mm jack plug for a current transformer and a 3.5mm OD/1.35mm ID barrel
 plug for a voltage transformer. The transformer voltages are used to calculate
 voltage, current, energy, real/apparent/reactive power, power factor and
-frequency of mains voltage. Additionally the waveform for voltage and
-current is provided.
+frequency of mains voltage of one phase conductor. 
+Additionally the waveform for voltage and current is provided.
 
-To use the Bricklet you have to connect a current clamp around a single
-phase conductor and connect an AC voltage transformer to the same power
-line. The Energy Monitor Bricklet will use the low-level voltages
-to make the measurements.
+To use the Bricklet you have to connect a current transformer clamp around 
+a single phase conductor and connect an AC voltage transformer to the same power
+line. The Energy Monitor Bricklet will use the low-level output voltages of the
+transformers to make the measurements. This ensures that the Bricklet is safe to
+handle, since no mains voltage has a direct connection to the Bricklet.
 
 The Energy Monitor Bricklet can do all of the measurements without the
 need for any exposed mains voltage wiring!
 
 We offer a `230V voltage transformer <https://www.tinkerforge.com/en/shop/ac-ac-voltage-transformer.html>`__
-as well as a `5A <https://www.tinkerforge.com/en/shop/5a-1v-current-clamp.html>`__ and
-`30A current clamp <https://www.tinkerforge.com/en/shop/30a-1v-current-clamp.html>`__.
+as well as a `5A current transformer clamp <https://www.tinkerforge.com/en/shop/5a-1v-current-transformer-clamp.html>`__
+or `30A current transformer clamp <https://www.tinkerforge.com/en/shop/30a-1v-current-transformer-clamp.html>`__.
 The Bricklet comes factory-calibrated for these transformers.
 
 
@@ -98,21 +99,29 @@ Resources
 Example: Monitor Power Usage of Heater
 --------------------------------------
 
+.. warning::
+ Never you should work at current-carring parts! Remove mains connection before!
+
 As an example we want to monitor the power of a small electric heater.
 
-To do this we have to connect the voltage transformer and the current clamp
-to the same circuit that the electric heater runs on.
+To do this we have to connect the voltage transformer and the current transformer
+clamp to the same circuit that the electric heater runs on.
 
 A typical european mains power cable will have three wires:
 
 * Neutral conductor (N)
 * Protective earth (PE)
-* Phase (L1)
+* Phase (L)
 
-In case of three-phase power there are two more phases (L2 and L3).
+In case of three-phase power there are two more phases (L2 and L3). If you want to
+measure the power for a three-phase system you have to use three Bricklets, for each phase one.
+Each Bricklet has to be equipped with its own voltage and current transformer for its phase.
 
-The current clamp has to be connected to L1 (in case of three phase you need
-three Energy Monitor Bricklets connected to L1, L2 and L3).
+In our single phase example, the current transformer clamp has to be connected to L. For
+that the wire has to be passed through the current transformer. You can open the current transformer
+for that. It is absolutly important that only L is passed through the transformer.
+If you for example pass N and L through it, you will not be able to measure the
+current.
 
 .. image:: /Images/Bricklets/bricklet_energy_monitor_tutorial_2_600.jpg
    :scale: 100 %
@@ -122,12 +131,12 @@ three Energy Monitor Bricklets connected to L1, L2 and L3).
 
 On the Bricklet side you have to connect the clamp to the *AC Current* input.
 
-Put the voltage transformer into a socket that is as near to the load that you want
+Put the AC/AC voltage transformer into a socket that is as near to the load that you want
 to monitor as possible.
 
 .. image:: /Images/Bricklets/bricklet_energy_monitor_tutorial_3_600.jpg
    :scale: 100 %
-   :alt: Energy Monitor Bricklet example
+   :alt: Energy Monitor Bricklet heate example, photo 2
    :align: center
    :target: ../../_images/Bricklets/bricklet_energy_monitor_tutorial_3_1200.jpg
 
@@ -137,7 +146,7 @@ The resulting setup will look like this:
 
 .. image:: /Images/Bricklets/bricklet_energy_monitor_tutorial_1_w_caption_800.jpg
    :scale: 100 %
-   :alt: Energy Monitor Bricklet heater example
+   :alt: Energy Monitor Bricklet heater example, photo 3
    :align: center
    :target: ../../_images/Bricklets/bricklet_energy_monitor_tutorial_1_w_caption_1200.jpg
 
@@ -151,13 +160,6 @@ In the Brick Viewer this setup looks as follows:
 
 
 
-.. _energy_monitor_bricklet_connectivity:
-
-Connectivity
-------------
-
-TODO: Top down photo with caption.
-
 
 Transformer Ratios
 ------------------
@@ -166,8 +168,9 @@ Both transformers (the voltage transformer and the current clamp) that
 are connected to the Energy Monitor Bricklet have a ratio.
 
 The current clamps that we sell are 5A:1V and 30A:1V, while the voltage
-transformer delivers about 12V without load and 230V input. We measured
-an exact ratio of 19.23V:1V.
+transformer delivers about 12V without load and 230V input. The voltage
+is higher than specified (9V) since no current is flowing while connected
+to the Bricklet. We measured an exact ratio of 19.23V:1V.
 
 The Bricklet has a default current ratio of 30 and a default voltage ratio
 of 19.23. You can change the ratios in Brick Viewer:
@@ -183,12 +186,38 @@ If you use the 5A:1V current clamp, change the current ratio to 5.
 If you use your own current clamp or voltage transformer, you
 have to measure the ratio and change it accordingly in Brick Viewer.
 
+
+Increase Current Measurement Resolution
+---------------------------------------
+
+Current Transformer measure the current in a wire by measuring its
+magnetic field (see 
+`Wikipedia Current Transformer <https://en.wikipedia.org/wiki/Current_transformer>`__).
+With a trick you can increase the resolution of your current measurement. For that
+you have to pass the wire multiple times through the current transformer.
+
+TODO Picture current transformer with multiple times passed trough wire 
+
+With that the ratio changes:
+
+* 2-times passed through: Factor 2 ratio
+* 3-times passed through: Factor 3 ratio
+* etc.
+
+If the real current is too high, the measurement will be cut.
+The Bricklet will not be damaged by that. But of course the measurement
+is not correct anymore. It is the same problem when you choose a current
+transformer with a too high ratio.
+
+If you pass the wire multiple times through the transformer that will 
+increase the noise. Therefore it is the best to choose a proper transformer.
+
 .. _energy_monitor_bricklet_waveforms:
 
 Waveforms
 ---------
 
-The Energy Monitor Bricklet can show the voltage as well as the current
+The Energy Monitor Bricklet can deliver the voltage as well as the current
 waveform. The voltage waveform should always look sinusoidal, while the
 current waveform can heavily vary depending on the measured load. Below
 you can see waveforms for four different loads.
@@ -214,7 +243,7 @@ times to increase the resolution. This looks like a typical AC/DC power supply.
 
 .. image:: /Images/Bricklets/bricklet_energy_monitor_led_lamp_brickv.jpg
    :scale: 100 %
-   :alt: Energy Monitor Bricklet in Brick Viewer (led lamp)
+   :alt: Energy Monitor Bricklet in Brick Viewer (LED lamp)
    :align: center
    :target: ../../_images/Bricklets/bricklet_energy_monitor_led_lamp_brickv.jpg
 
@@ -239,7 +268,7 @@ Test your Energy Monitor Bricklet
 |test_connect|.
 
 |test_tab|
-Connect the voltage and current clamp (see :ref:`energy_monitor_bricklet_connectivity`).
+Connect the voltage and current transformer clamp.
 
 You can now see the voltage/current waveforms as well as the voltage, current, power factor,
 frequency, energy and real/apparent/Reactive power.
