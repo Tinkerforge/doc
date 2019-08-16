@@ -100,7 +100,9 @@ Example: Monitor Power Usage of Heater
 --------------------------------------
 
 .. warning::
- Never you should work at current-carring parts! Remove mains connection before!
+
+ Never work on live mains electrical wiring. Remove the mains connection before you
+ cut the wire or add the current transformer or similar!
 
 As an example we want to monitor the power of a small electric heater.
 
