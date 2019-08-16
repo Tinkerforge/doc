@@ -164,10 +164,10 @@ In the Brick Viewer this setup looks as follows:
 Transformer Ratios
 ------------------
 
-Both transformers (the voltage transformer and the current clamp) that
+Both transformers (the voltage transformer and the current transformer) that
 are connected to the Energy Monitor Bricklet have a ratio.
 
-The current clamps that we sell are 5A:1V and 30A:1V, while the voltage
+The current transformers that we sell are 5A:1V and 30A:1V, while the voltage
 transformer delivers about 12V without load and 230V input. The voltage
 is higher than specified (9V) since no current is flowing while connected
 to the Bricklet. We measured an exact ratio of 19.23V:1V.
@@ -181,9 +181,9 @@ of 19.23. You can change the ratios in Brick Viewer:
    :align: center
    :target: ../../_images/Bricklets/bricklet_energy_monitor_brickv_ratios.jpg
 
-If you use the 5A:1V current clamp, change the current ratio to 5.
+If you use the 5A:1V current transformer, change the current ratio to 5.
 
-If you use your own current clamp or voltage transformer, you
+If you use your own current transformer or voltage transformer, you
 have to measure the ratio and change it accordingly in Brick Viewer.
 
 
@@ -193,24 +193,24 @@ Increase Current Measurement Resolution
 Current Transformer measure the current in a wire by measuring its
 magnetic field (see 
 `Wikipedia Current Transformer <https://en.wikipedia.org/wiki/Current_transformer>`__).
-With a trick you can increase the resolution of your current measurement. For that
-you have to pass the wire multiple times through the current transformer.
+You can increase the resolution of the current measurement by passing
+the wire through the current transformer multiple times.
 
 TODO Picture current transformer with multiple times passed trough wire 
 
-With that the ratio changes:
+The ratio changes accordingly:
 
-* 2-times passed through: Factor 2 ratio
-* 3-times passed through: Factor 3 ratio
+* 2-times passed through: Ratio factor 2
+* 3-times passed through: Ratio factor 3
 * etc.
 
-If the real current is too high, the measurement will be cut.
-The Bricklet will not be damaged by that. But of course the measurement
-is not correct anymore. It is the same problem when you choose a current
-transformer with a too high ratio.
+If the real current becomes too high, the measurement will be cut off.
+The measurement is not correct anymore, but the Bricklet can not be damaged by
+this. The same is true if the current transformer ratio is too high
 
-If you pass the wire multiple times through the transformer that will 
-increase the noise. Therefore it is the best to choose a proper transformer.
+Passing the wire multiple times through the transformer will 
+increase the noise. If available, it is the better to choose a 
+matching transformer.
 
 .. _energy_monitor_bricklet_waveforms:
 
@@ -238,7 +238,7 @@ Waveform 2: 125W fan.
    :align: center
    :target: ../../_images/Bricklets/bricklet_energy_monitor_fan_brickv.jpg
 
-Waveform 3: 10W LED lamp. The conductor is threaded through the current clamp eight
+Waveform 3: 10W LED lamp. The conductor is threaded through the current transformer clamp eight
 times to increase the resolution. This looks like a typical AC/DC power supply.
 
 .. image:: /Images/Bricklets/bricklet_energy_monitor_led_lamp_brickv.jpg
@@ -248,7 +248,7 @@ times to increase the resolution. This looks like a typical AC/DC power supply.
    :target: ../../_images/Bricklets/bricklet_energy_monitor_led_lamp_brickv.jpg
 
 Waveform 4: 12W energy saving lightbulb. The conductor is threaded through the current
-clamp eight times to increase the resolution. You can see that the energy saving
+transformer clamp eight times to increase the resolution. You can see that the energy saving
 lightbulb only uses about 1/4 of the waveform.
 
 .. image:: /Images/Bricklets/bricklet_energy_monitor_energy_saving_lightbulb_brickv.jpg
