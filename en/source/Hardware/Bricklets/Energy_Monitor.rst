@@ -198,6 +198,12 @@ magnetic field (see
 You can increase the resolution of the current measurement by passing
 the wire through the current transformer multiple times.
 
+.. image:: /Images/Bricklets/bricklet_energy_monitor_multiwire_600.jpg
+   :scale: 100 %
+   :alt: Energy Monitor Bricklet with wires passed through multiple times
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_energy_monitor_multiwire_1200.jpg
+
 TODO Picture current transformer with multiple times passed trough wire 
 
 The ratio changes accordingly:
