@@ -136,7 +136,7 @@ to monitor as possible.
 
 .. image:: /Images/Bricklets/bricklet_energy_monitor_tutorial_3_600.jpg
    :scale: 100 %
-   :alt: Energy Monitor Bricklet heate example, photo 2
+   :alt: Energy Monitor Bricklet heater example, photo 2
    :align: center
    :target: ../../_images/Bricklets/bricklet_energy_monitor_tutorial_3_1200.jpg
 
