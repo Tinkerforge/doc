@@ -113,21 +113,21 @@ Case
 A `laser-cut case for the Compass Bricklet
 <https://www.tinkerforge.com/en/shop/cases/case-accelerometer-bricklet.html>`__ is available.
 
-	.. image:: /Images/Cases/bricklet_compass_case_350.jpg
-	   :scale: 100 %
-	   :alt: Gehäuse für Compass Bricklet
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_compass_case_1000.jpg
+.. image:: /Images/Cases/bricklet_accelerometer_case_built_up_350.jpg
+   :scale: 100 %
+   :alt: Case for Compass Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_accelerometer_case_built_up_1000.jpg
 
-	.. include:: Compass.substitutions
-	   :start-after: >>>bricklet_case_steps
-	   :end-before: <<<bricklet_case_steps
+.. include:: Compass.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
 
-	.. image:: /Images/Exploded/compass_exploded_350.png
-	   :scale: 100 %
-	   :alt: Explosionszeichnung für Compass Bricklet
-	   :align: center
-	   :target: ../../_images/Exploded/compass_exploded.png
+.. image:: /Images/Exploded/accelerometer_exploded_350.png
+   :scale: 100 %
+   :alt: Exploded assembly drawing for Compass Bricklet
+   :align: center
+   :target: ../../_images/Exploded/accelerometer_exploded.png
 
 |bricklet_case_hint|
 
