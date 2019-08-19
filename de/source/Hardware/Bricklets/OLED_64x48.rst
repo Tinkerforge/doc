@@ -19,7 +19,7 @@ OLED 64x48 Bricklet
 	Bricklets/bricklet_oled_64x48_horizontal_[?|?].jpg       OLED 64x48 Bricklet
 	Bricklets/bricklet_oled_64x48_bottom_[?|?].jpg           OLED 64x48 Bricklet
 	Bricklets/bricklet_oled_64x48_brickv_[100|].jpg          OLED 64x48 Bricklet im Brick Viewer
-	Bricklets/bricklet_oled_font_[100|314].png               OLED 64x48 Bricklet Zeichensatz
+	Bricklets/bricklet_oled_font_[100|].png                  OLED 64x48 Bricklet Zeichensatz
 	Dimensions/oled_64x48_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
 
 	{% tfgalleryend %}

@@ -19,7 +19,7 @@ OLED 128x64 Bricklet
 	Bricklets/bricklet_oled_128x64_horizontal_[?|?].jpg         OLED 128x64 Bricklet
 	Bricklets/bricklet_oled_128x64_bottom_[?|?].jpg             OLED 128x64 Bricklet
 	Bricklets/bricklet_oled_128x64_brickv_[100|].jpg            OLED 128x64 Bricklet im Brick Viewer
-	Bricklets/bricklet_oled_font_[100|314].png                  OLED 128x64 Bricklet Zeichensatz
+	Bricklets/bricklet_oled_font_[100|].png                     OLED 128x64 Bricklet Zeichensatz
 	Bricklets/bricklet_oled_128x64_w_servo_brick_[100|600].jpg  OLED 128x64 Bricklet mit Servo und Poti
 	Dimensions/oled_128x64_bricklet_dimensions_[100|600].png    Umriss und Bohrplan
 
