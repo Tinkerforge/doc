@@ -79,7 +79,7 @@ Technische Spezifikation
 Eigenschaft                       Wert
 ================================  ============================================================
 Sensor                            TCS34725
-Stromverbrauch                    TBDmA (LED aus), TBDmA (LED an)
+Stromverbrauch                    LED aus: 30mW (6mA bei 5V), LED an 50mW (10mA bei 5V)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dynamikbereich                    3800000:1
@@ -89,7 +89,7 @@ Auflösung Helligkeit              16Bit (0-65535)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Abmessungen (B x T x H)           25 x 20 x 5mm (0,98 x 0,79 x 0,19")
-Gewicht                           TBDg
+Gewicht                           2g
 ================================  ============================================================
 
 
@@ -113,9 +113,9 @@ Erster Test
 |test_connect|.
 
 |test_tab|
-Wenn alles wie erwartet funktioniert ... TBD.
+Wenn alles wie erwartet funktioniert können nun die gemessenen Werte, 
+abhängig von der Helligkeit betrachtet werden.
 
-..
 	.. image:: /Images/Bricklets/bricklet_color_v2_brickv.jpg
 	   :scale: 100 %
 	   :alt: Color Bricklet 2.0 im Brick Viewer
