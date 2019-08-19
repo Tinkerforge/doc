@@ -66,14 +66,14 @@ Technische Spezifikation
 Eigenschaft                       Wert
 ================================  ============================================================
 Sensor                            MPR121
-Stromverbrauch                    TBD
+Stromverbrauch                    30mW (6mA bei 5V)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Anzahl Elektroden                 12 + simulierte 13te Elektrode für Naherkennung
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Abmessungen (B x T x H)           30 x 25 x 7mm (1,18 x 0,98 x 0,28")
-Gewicht                           TBDg
+Gewicht                           4g
 ================================  ============================================================
 
 
@@ -100,7 +100,6 @@ Erster Test
 Bei Berührung von einzelnen Pins des Multi Touch Bricklets sollte sich der 
 angezeigte Zustand im Brick Viewer verändern:
 
-..
 	.. image:: /Images/Bricklets/bricklet_multi_touch_v2_brickv.jpg
 	   :scale: 100 %
 	   :alt: Multi Touch Bricklet 2.0 im Brick Viewer

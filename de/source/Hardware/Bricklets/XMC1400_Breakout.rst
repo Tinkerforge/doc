@@ -31,8 +31,8 @@ XMC1400 Breakout Bricklet
 Features
 --------
 
-* TBD
-* TBD
+* Bricklet Entwicklungsboard
+* Nutzbar um eigene Bricklets zu entwickeln
 
 
 .. _xmc1400_breakout_bricklet_description:
@@ -40,7 +40,19 @@ Features
 Beschreibung
 ------------
 
-TBD
+Das XMC1400 Breakout :ref:`Bricklet <primer_bricklets>` ist ein Breakout-Board
+für Infineon's XMC1400 Mikrocontroller im Bricklet Formfaktor.
+
+Das Bricklet kann als Basis dienen um neue Bricklets zu entwickeln.
+
+Ausgestattet ist das Bricklet mit dem standard Brickletstecker, einer Status-LED,
+einem 16MHz Quarz und einem Bootpad. Der Bootloader und eine Beispielfirmware ist bereits auf dem Bricklet
+vorhanden. Alle zur verfügung stehenden Pins sind nach außen geführt und können
+über Stiftleisten angeschlossen werden.
+
+Wenn ein eigenes Bricklet entwickelt werden soll, kann das Board als Einstieg dienen,
+da nicht direkt eigene Hardware entwickelt werden muss.
+
 
 
 Technische Spezifikation
@@ -49,14 +61,14 @@ Technische Spezifikation
 ================================  ============================================================
 Eigenschaft                       Wert
 ================================  ============================================================
-Stromverbrauch                    TBDmA
+Stromverbrauch                    55mW (11mA bei 5V)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-E TBD                             W TBD
+Anzahl verfügbarer I/Os           42
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Abmessungen (B x T x H)           TBD x TBD x TBDmm (TBD x TBD x TBD")
-Gewicht                           TBDg
+Abmessungen (B x T x H)           50 x 45 x 15mm (1.97 x 1.77 x 0.59")
+Gewicht                           12g
 ================================  ============================================================
 
 
@@ -79,9 +91,8 @@ Erster Test
 |test_connect|.
 
 |test_tab|
-Wenn alles wie erwartet funktioniert ... TBD.
+Wenn alles wie erwartet funktioniert wird das Beispiel Brick Viewer Plugin angezeigt.
 
-..
 	.. image:: /Images/Bricklets/bricklet_xmc1400_breakout_brickv.jpg
 	   :scale: 100 %
 	   :alt: XMC1400 Breakout Bricklet im Brick Viewer
@@ -91,32 +102,27 @@ Wenn alles wie erwartet funktioniert ... TBD.
 |test_pi_ref|
 
 
-.. _xmc1400_breakout_bricklet_case:
+.. _xmc1400_breakout_bricklet_tutorial:
 
-Gehäuse
--------
+Tutorial: Eine Getter Funktion hinzufügen
+-----------------------------------------
 
-..
-	Ein `laser-geschnittenes Gehäuse für das XMC1400 Breakout Bricklet
-	<https://www.tinkerforge.com/de/shop/cases/case-xmc1400-breakout-bricklet.html>`__ ist verfügbar.
+.. note::
 
-	.. image:: /Images/Cases/bricklet_xmc1400_breakout_case_350.jpg
-	   :scale: 100 %
-	   :alt: Gehäuse für XMC1400 Breakout Bricklet
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_xmc1400_breakout_case_1000.jpg
+ Dieses Tutorial ist leider noch nicht vollständig. Bei Interesse schreibe
+ bitte eine E-Mail an info@tinkerforge.com, so wissen wir, dass Interesse
+ besteht.
 
-	.. include:: XMC1400_Breakout.substitutions
-	   :start-after: >>>bricklet_case_steps
-	   :end-before: <<<bricklet_case_steps
+Es ist geplant ein Tutorial hier zu präsentieren, indem der ganze Prozess,
+wie API Funktionen hinzugefügt werden können, dargestellt wird:
 
-	.. image:: /Images/Exploded/xmc1400_breakout_exploded_350.png
-	   :scale: 100 %
-	   :alt: Explosionszeichnung für XMC1400 Breakout Bricklet
-	   :align: center
-	   :target: ../../_images/Exploded/xmc1400_breakout_exploded.png
+* Getter-Funktion zum Generator hinzufügen
+* Stubs generieren/kopieren
+* Stub-Funktion in der Firmware implementieren
+* Bindings-Generieren
+* Programm für neue Bindings schreiben
+* GUI-Element im Brick Viewer hinzufügen, welches den Getter nutzt
 
-	|bricklet_case_hint|
 
 
 .. _xmc1400_breakout_bricklet_programming_interface:

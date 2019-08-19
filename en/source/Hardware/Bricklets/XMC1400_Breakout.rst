@@ -32,7 +32,7 @@ Features
 --------
 
 * Bricklet development board
-* Used for development of new Bricklets
+* Useable for development of own Bricklets
 
 
 .. _xmc1400_breakout_bricklet_description:
@@ -45,7 +45,7 @@ the XMC1400 microcontroller from Infineon in the Bricklet form factor.
 
 It can be used as a basis for prototypes of new Bricklets.
 
-It has the standard Bricklet connector, status LED and boot pad. The bootloader
+It has the standard Bricklet connector, status LED, 16Mhz crystal and boot pad. The bootloader
 as well as an example firmware is already flashed. All available pins are routed out
 and can be accessed through a pin header.
 
@@ -89,7 +89,7 @@ Test your XMC1400 Breakout Bricklet
 |test_connect|.
 
 |test_tab|
-If everything went as expected you can now see the example plugin.
+If everything went as expected you can now see the example brickviewer plugin.
 
 .. image:: /Images/Bricklets/bricklet_xmc1400_breakout_brickv.jpg
    :scale: 100 %
