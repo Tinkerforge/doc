@@ -13,15 +13,17 @@ Multi Touch Bricklet 2.0
 .. note::
   This Bricklet is currently work-in-progress!
 
-..
-    .. raw:: html
+.. raw:: html
 
 	{% tfgallery %}
 
 	Bricklets/bricklet_multi_touch_v2_tilted_[?|?].jpg           Multi Touch Bricklet 2.0
-	Bricklets/bricklet_multi_touch_v2_horizontal_[?|?].jpg       Multi Touch Bricklet 2.0
-	Bricklets/bricklet_multi_touch_v2_master_[100|600].jpg       Multi Touch Bricklet 2.0 with Master Brick
-	Cases/bricklet_multi_touch_v2_case_[100|600].jpg             Multi Touch Bricklet 2.0 with case
+	Bricklets/bricklet_multi_touch_v2_top_[?|?].jpg              Multi Touch Bricklet 2.0
+	Cases/bricklet_multi_touch_case_tilted_[?|?].jpg             Multi Touch Bricklet in Case
+	Bricklets/button_pad_w_multi_touch_tilted_[?|?].jpg          Multi Touch Bricklet with Button Pads
+	Bricklets/cursor_pad_w_cable_[100|600].jpg                   Cursor Pad with Cable
+	Bricklets/key_pad_w_multi_touch_[100|600].jpg                Multi Touch Bricklet with Key Pad
+	Bricklets/slider_pad_w_multi_touch_[100|600].jpg             Multi Touch Bricklet with Slider Pad
 	Bricklets/bricklet_multi_touch_v2_brickv_[100|].jpg          Multi Touch Bricklet 2.0 in Brick Viewer
 	Dimensions/multi_touch_v2_bricklet_dimensions_[100|600].png  Outline and drilling plan
 

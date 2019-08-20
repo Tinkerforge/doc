@@ -13,17 +13,18 @@ Energy Monitor Bricklet
 .. note::
   This Bricklet is currently work-in-progress!
 
-..
-    .. raw:: html
+.. raw:: html
 
 	{% tfgallery %}
 
-	Bricklets/bricklet_energy_monitor_tilted_[?|?].jpg           Energy Monitor Bricklet
-	Bricklets/bricklet_energy_monitor_horizontal_[?|?].jpg       Energy Monitor Bricklet
-	Bricklets/bricklet_energy_monitor_master_[100|600].jpg       Energy Monitor Bricklet with Master Brick
-	Cases/bricklet_energy_monitor_case_[100|600].jpg             Energy Monitor Bricklet with case
-	Bricklets/bricklet_energy_monitor_brickv_[100|].jpg          Energy Monitor Bricklet in Brick Viewer
-	Dimensions/energy_monitor_bricklet_dimensions_[100|600].png  Outline and drilling plan
+	Bricklets/bricklet_energy_monitor_tilted_[?|?].jpg                          Energy Monitor Bricklet
+	Bricklets/bricklet_energy_monitor_top_[?|?].jpg                             Energy Monitor Bricklet
+	Bricklets/bricklet_energy_monitor_w_transformer_[?|?].jpg                   Energy Monitor Bricklet
+	Bricklets/bricklet_energy_monitor_heater_brickv_[100|].jpg                  Energy Monitor Bricklet in Brick Viewer
+	Bricklets/bricklet_energy_monitor_led_lamp_brickv_[100|].jpg                Energy Monitor Bricklet in Brick Viewer
+	Bricklets/bricklet_energy_monitor_fan_brickv_[100|].jpg                     Energy Monitor Bricklet in Brick Viewer
+	Bricklets/bricklet_energy_monitor_energy_saving_lightbulb_brickv_[100|].jpg Energy Monitor Bricklet in Brick Viewer
+	Dimensions/energy_monitor_bricklet_dimensions_[100|600].png                 Outline and drilling plan
 
 	{% tfgalleryend %}
 
@@ -146,11 +147,11 @@ On the Bricklet side you have to connect the transformer to the *AC Voltage* inp
 
 The resulting setup will look like this:
 
-.. image:: /Images/Bricklets/bricklet_energy_monitor_tutorial_1_w_caption_800.jpg
+.. image:: /Images/Bricklets/bricklet_energy_monitor_tutorial_1_800.jpg
    :scale: 100 %
    :alt: Energy Monitor Bricklet heater example, photo 3
    :align: center
-   :target: ../../_images/Bricklets/bricklet_energy_monitor_tutorial_1_w_caption_1200.jpg
+   :target: ../../_images/Bricklets/bricklet_energy_monitor_tutorial_1_1200.jpg
 
 In the Brick Viewer this setup looks as follows:
 

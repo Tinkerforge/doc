@@ -13,15 +13,12 @@ Compass Bricklet
 .. note::
   Dieses Bricklet befindet sich aktuell noch in der Entwicklung!
 
-..
-    .. raw:: html
+.. raw:: html
 
 	{% tfgallery %}
 
 	Bricklets/bricklet_compass_tilted_[?|?].jpg           Compass Bricklet
-	Bricklets/bricklet_compass_horizontal_[?|?].jpg       Compass Bricklet
-	Bricklets/bricklet_compass_master_[100|600].jpg       Compass Bricklet mit Master Brick
-	Cases/bricklet_compass_case_[100|600].jpg             Compass Bricklet im Gehäuse
+	Bricklets/bricklet_compass_top_[?|?].jpg              Compass Bricklet
 	Bricklets/bricklet_compass_brickv_[100|].jpg          Compass Bricklet im Brick Viewer
 	Dimensions/compass_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
 

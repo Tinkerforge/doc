@@ -13,15 +13,12 @@ XMC1400 Breakout Bricklet
 .. note::
   Dieses Bricklet befindet sich aktuell noch in der Entwicklung!
 
-..
-    .. raw:: html
+.. raw:: html
 
 	{% tfgallery %}
 
 	Bricklets/bricklet_xmc1400_breakout_tilted_[?|?].jpg           XMC1400 Breakout Bricklet
-	Bricklets/bricklet_xmc1400_breakout_horizontal_[?|?].jpg       XMC1400 Breakout Bricklet
-	Bricklets/bricklet_xmc1400_breakout_master_[100|600].jpg       XMC1400 Breakout Bricklet mit Master Brick
-	Cases/bricklet_xmc1400_breakout_case_[100|600].jpg             XMC1400 Breakout Bricklet im Gehäuse
+	Bricklets/bricklet_xmc1400_breakout_top_[?|?].jpg              XMC1400 Breakout Bricklet
 	Bricklets/bricklet_xmc1400_breakout_brickv_[100|].jpg          XMC1400 Breakout Bricklet im Brick Viewer
 	Dimensions/xmc1400_breakout_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
 

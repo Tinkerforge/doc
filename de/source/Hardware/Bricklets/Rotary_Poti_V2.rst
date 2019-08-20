@@ -13,15 +13,14 @@ Rotary Poti Bricklet 2.0
 .. note::
   Dieses Bricklet befindet sich aktuell noch in der Entwicklung!
 
-..
-    .. raw:: html
+.. raw:: html
 
 	{% tfgallery %}
 
 	Bricklets/bricklet_rotary_poti_v2_tilted_[?|?].jpg           Rotary Poti Bricklet 2.0
-	Bricklets/bricklet_rotary_poti_v2_horizontal_[?|?].jpg       Rotary Poti Bricklet 2.0
-	Bricklets/bricklet_rotary_poti_v2_master_[100|600].jpg       Rotary Poti Bricklet 2.0 mit Master Brick
-	Cases/bricklet_rotary_poti_v2_case_[100|600].jpg             Rotary Poti Bricklet 2.0 im Gehäuse
+	Bricklets/bricklet_rotary_poti_v2_top_[?|?].jpg              Rotary Poti Bricklet 2.0
+	Bricklets/bricklet_rotary_poti_v2_knob_[?|?].jpg             Rotary Poti Bricklet 2.0
+	Bricklets/bricklet_rotary_poti_v2_side_[?|?].jpg             Rotary Poti Bricklet 2.0
 	Bricklets/bricklet_rotary_poti_v2_brickv_[100|].jpg          Rotary Poti Bricklet 2.0 im Brick Viewer
 	Dimensions/rotary_poti_v2_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
 

@@ -13,17 +13,18 @@ Energy Monitor Bricklet
 .. note::
   Dieses Bricklet befindet sich aktuell noch in der Entwicklung!
 
-..
-    .. raw:: html
+.. raw:: html
 
 	{% tfgallery %}
 
-	Bricklets/bricklet_energy_monitor_tilted_[?|?].jpg           Energy Monitor Bricklet
-	Bricklets/bricklet_energy_monitor_horizontal_[?|?].jpg       Energy Monitor Bricklet
-	Bricklets/bricklet_energy_monitor_master_[100|600].jpg       Energy Monitor Bricklet mit Master Brick
-	Cases/bricklet_energy_monitor_case_[100|600].jpg             Energy Monitor Bricklet im Gehäuse
-	Bricklets/bricklet_energy_monitor_brickv_[100|].jpg          Energy Monitor Bricklet im Brick Viewer
-	Dimensions/energy_monitor_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
+	Bricklets/bricklet_energy_monitor_tilted_[?|?].jpg                          Energy Monitor Bricklet
+	Bricklets/bricklet_energy_monitor_top_[?|?].jpg                             Energy Monitor Bricklet
+	Bricklets/bricklet_energy_monitor_w_transformer_[?|?].jpg                   Energy Monitor Bricklet
+	Bricklets/bricklet_energy_monitor_heater_brickv_[100|].jpg                  Energy Monitor Bricklet im Brick Viewer
+	Bricklets/bricklet_energy_monitor_led_lamp_brickv_[100|].jpg                Energy Monitor Bricklet im Brick Viewer
+	Bricklets/bricklet_energy_monitor_fan_brickv_[100|].jpg                     Energy Monitor Bricklet im Brick Viewer
+	Bricklets/bricklet_energy_monitor_energy_saving_lightbulb_brickv_[100|].jpg Energy Monitor Bricklet im Brick Viewer
+	Dimensions/energy_monitor_bricklet_dimensions_[100|600].png                 Umriss und Bohrplan
 
 	{% tfgalleryend %}
 
