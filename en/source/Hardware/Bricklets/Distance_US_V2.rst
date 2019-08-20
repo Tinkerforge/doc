@@ -13,15 +13,14 @@ Distance US Bricklet 2.0
 .. note::
   This Bricklet is currently work-in-progress!
 
-..
-    .. raw:: html
+.. raw:: html
 
 	{% tfgallery %}
 
 	Bricklets/bricklet_distance_us_v2_tilted_[?|?].jpg           Distance US Bricklet 2.0
-	Bricklets/bricklet_distance_us_v2_horizontal_[?|?].jpg       Distance US Bricklet 2.0
-	Bricklets/bricklet_distance_us_v2_master_[100|600].jpg       Distance US Bricklet 2.0 with Master Brick
-	Cases/bricklet_distance_us_v2_case_[100|600].jpg             Distance US Bricklet 2.0 with case
+	Bricklets/bricklet_distance_us_v2_top_[?|?].jpg              Distance US Bricklet 2.0
+	Bricklets/bricklet_distance_us_v2_bottom_[?|?].jpg           Distance US Bricklet 2.0
+	Bricklets/bricklet_distance_us_v2_side_[?|?].jpg             Distance US Bricklet 2.0
 	Bricklets/bricklet_distance_us_v2_brickv_[100|].jpg          Distance US Bricklet 2.0 in Brick Viewer
 	Dimensions/distance_us_v2_bricklet_dimensions_[100|600].png  Outline and drilling plan
 
