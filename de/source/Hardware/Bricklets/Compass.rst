@@ -28,10 +28,10 @@ Compass Bricklet
 Features
 --------
 
-* 3-Achs Kompass
-* Misst den Kurs (0.1° Auflösung / bis zu 1° Genauigkeit)
+* 3-Achsen Kompass
+* Misst die Himmelsrichtung (0.1° Auflösung / bis zu 1° Genauigkeit)
 * Misst die magnetische Flussdichte (Auflösung 0.1mG / Milli Gauss)
-* Updates mit bis zu 600Hz
+* Messfrequenz von bis zu 600Hz
 
 
 .. _compass_bricklet_description:
@@ -40,9 +40,9 @@ Beschreibung
 ------------
 
 
-Das Kompass :ref:`Bricklet <primer_bricklets>` ist mit einem 3-Achs ±8 Gauss Magnetsensor
+Das Kompass :ref:`Bricklet <primer_bricklets>` ist mit einem 3-Achsen ±8 Gauss Magnetsensor
 ausgestattet. Der Sensor kann die magnetische Flussdichte für alle drei Achsen messen.
-Kurs/ die Richtung wird mit einer Auflösung von 0.1° und einer Genauigkeit von bis zu 1° 
+Die Himmelsrichtung wird mit einer Auflösung von 0.1° und einer Genauigkeit von bis zu 1° 
 gemessen.
 
 Die Updaterate ist einstellbar und beträgt bis zu 600Hz.

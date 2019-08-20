@@ -44,7 +44,7 @@ capability to measure `color <https://en.wikipedia.org/wiki/Color>`__,
 `illuminance <https://en.wikipedia.org/wiki/Illuminance>`__ of a light source.
 Thus the Bricklet can measure the color of an object via its reflected light.
 To create a defined illumination and color temperature the Bricklet is equipped 
-with a API switchable LED.
+with an API switchable LED.
 
 The Bricklet can be used for many purposes, e.g. sorting of objects by their
 color.
@@ -55,10 +55,10 @@ color.
    :align: center
    :target: ../../_images/Bricklets/bricklet_color_wavelength_chart_600.jpg
 
-The Sensor is equipped with color filters for the colors red, green and blue 
+The sensor is equipped with color filters for the colors red, green and blue 
 (RGB). In the chart above the responsivity of the sensor in the given color 
-range is shown. Additional to the color information (RGB) a fourth value is 
-measured called "clear value" (C). This is the sensors value without any color
+range is shown. Additional to the color information (RGB) a fourth value called "clear value" (C) 
+is measured. This is the sensors value without any color
 filter. Each value of RGB and C is measured as 16bit value. From these sensor
 values the Bricklet computes two additional values: illuminance and color 
 temperature each with 16bit resolution.

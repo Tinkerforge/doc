@@ -38,13 +38,13 @@ Beschreibung
 ------------
 
 Das XMC1400 Breakout :ref:`Bricklet <primer_bricklets>` ist ein Breakout-Board
-für Infineon's XMC1400 Mikrocontroller im Bricklet Formfaktor.
+für Infineons XMC1400 Mikrocontroller im Bricklet-Formfaktor.
 
 Das Bricklet kann als Basis dienen um neue Bricklets zu entwickeln.
 
-Ausgestattet ist das Bricklet mit dem standard Brickletstecker, einer Status-LED,
-einem 16MHz Quarz und einem Bootpad. Der Bootloader und eine Beispielfirmware ist bereits auf dem Bricklet
-vorhanden. Alle zur verfügung stehenden Pins sind nach außen geführt und können
+Ausgestattet ist das Bricklet mit dem Standard-Brickletstecker, einer Status-LED,
+einem 16MHz Quarz und einem Bootpad. Der Bootloader und eine Beispielfirmware sind bereits auf dem Bricklet
+vorhanden. Alle zur Verfügung stehenden Pins sind nach außen geführt und können
 über Stiftleisten angeschlossen werden.
 
 Wenn ein eigenes Bricklet entwickelt werden soll, kann das Board als Einstieg dienen,

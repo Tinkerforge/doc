@@ -36,7 +36,7 @@ Features
 * Misst Spannung (V), Strom (A) und Energie (Wh)
 * Misst Wirkleistung, Scheinleistung und Blindleistung (W/VA/VAR)
 * Misst Leistungsfaktor und Frequenz (Hz)
-* Liefert Spannung- und Stromwellenform
+* Liefert Spannungs- und Stromwellenform
 
 
 .. _energy_monitor_bricklet_description:
@@ -51,14 +51,17 @@ werden Spannung, Strom, Energie, Wirkleistung/Scheinleistung und Blindleistung, 
 Leistungsfaktor und die Frequenz einer Phase der Netzspannung berechnet. 
 Zusätzlich liefert das Bricklet die Wellenformen von Strom und Spannung.
 
-Um das Bricklet zu nutzen muss ein Stromwandler um den Leiter einer Phase gelegt werden.
+Das Energy Monitor Bricklet kann alle diese Messungen vornehmen, ohne dass
+Kabel aufgetrennt werden müssen!
+
+Um das Bricklet zu nutzen, muss ein Stromwandler um den Leiter einer Phase gelegt werden.
 Zusätzlich muss über einen Spannungswandler (z.B. Transformator) die Spannung der gleichen
 Phase gemessen werden. Das Energy Monitor Bricklet nutzt die niedrigen Ausgangsspannungen
-der Wandler um die Messungen durchzuführen. Damit wird sichergestellt, dass die potentiell
+der Wandler, um die Messungen durchzuführen. Damit wird sichergestellt, dass die potentiell
 gefährliche Netzspannung nicht direkt am Bricklet anliegt.
 
-Mit dem `230V Spannungstransformator <https://www.tinkerforge.com/de/shop/ac-ac-voltage-transformer.html>`__
-und dem `5A Stromwandler <https://www.tinkerforge.com/de/shop/5a-1v-current-transformer-clamp.html>`__ bzw.
+Separat erhältlich sind der `230V Spannungstransformator <https://www.tinkerforge.com/de/shop/ac-ac-voltage-transformer.html>`__
+und der `5A Stromwandler <https://www.tinkerforge.com/de/shop/5a-1v-current-transformer-clamp.html>`__ bzw. der
 `30A Stromwandler <https://www.tinkerforge.com/en/shop/30a-1v-current-transformer-clamp.html>`__.
 Das Bricklet liefern wir kalibriert für diese Wandler aus.
 

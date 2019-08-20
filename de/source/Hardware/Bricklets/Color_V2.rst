@@ -46,7 +46,7 @@ Lichtquelle messen.
 Mit dem Bricklet kann somit die Farbe eines Gegenstandes über dessen
 reflektiertes Licht gemessen werden.
 Um eine gleichmäßige Beleuchtung mit einer definierter Farbtemperatur zu
-erhalten ist das Bricklet mit einer API-schaltbaren LED ausgestattet.
+erhalten, ist das Bricklet mit einer API-schaltbaren LED ausgestattet.
 
 Das Bricklet kann für viele Anwendungen genutzt werden, z.B. für das Sortieren
 von Objekten nach deren Farbe.

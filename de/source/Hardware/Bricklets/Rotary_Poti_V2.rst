@@ -41,11 +41,11 @@ Beschreibung
 
 Das Rotary Poti :ref:`Bricklet <primer_bricklets>` ist mit einem
 Dreh-`Potentiometer <https://en.wikipedia.org/wiki/Potentiometer>`__ ausgestattet,
-dessen Position über ein :ref:`Brick <primer_bricks>` ausgelesen werden kann. 
-Zusätzlich können Events konfiguriert werden die ausgelöst werden wenn eine 
+dessen Position über einen :ref:`Brick <primer_bricks>` ausgelesen werden kann. 
+Zusätzlich können Events konfiguriert werden, die ausgelöst werden, wenn eine 
 spezifizierte Position erreicht wird.
 
-Dieses Bricklet kann für Steueraufgaben benutzt werden wie z.B. das Steuern
+Dieses Bricklet kann für Steueraufgaben benutzt werden, wie z.B. das Steuern
 einer Lautstärke.
 
 Das Rotary Poti Bricklet 2.0 hat einen 7 Pol Bricklet Stecker und wird

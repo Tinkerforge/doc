@@ -33,9 +33,9 @@ Multi Touch Bricklet 2.0
 Features
 --------
 
-* Kapazitiver Touch Sensor
-* Unterstützt bis zu 12 Elektroden nutzbar als Touchflächen 
-* Berührung kann durch eine dünne Schicht Glas/Plastik/Papier erkannt werden
+* Kapazitiver Touch-Sensor
+* Unterstützt bis zu 12 als Touchflächen nutzbare Elektroden
+* Berührung kann durch eine dünne Schicht Glas/Plastik/Papier hindurch erkannt werden
 * Größe und Positionierung der Berührungsfläche wird vom Nutzer festgelegt
 * Kann genutzt werden um ein maßgeschneidertes Touchpanel zu bauen
 
@@ -53,9 +53,9 @@ unterschiedlichen Stellen zu erkennen.
 Das zu berührende Teil wird "Elektrode" genannt. Die Elektrode kann
 ein Kabel, elektrisch leitendes Klebeband oder die Kupferlage einer 
 Leiterplatte sein. Elektroden können eine Berührung durch eine dünne
-Schicht Glas, Plastik, Papier o.ä. erkennen.
+Schicht Glas, Plastik, Papier o.ä. hindurch erkennen.
 
-Mit dem Multi Touch Bricklet ist es möglich eine individuelles Touchpanel
+Mit dem Multi Touch Bricklet ist es möglich ein individuelles Touchpanel
 zu bauen, in dem man eine dünne Abdeckung auf die Elektroden klebt.
 
 Das Multi Touch Bricklet 2.0 hat einen 7 Pol Bricklet Stecker und wird

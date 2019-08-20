@@ -29,8 +29,8 @@ Features
 --------
 
 * 3-axis compass
-* Measures Heading with resolution of 0.1° and accuracy up to 1°
-* Measures Magnetic flux density with 0.1mG (milli Gauss) resolution
+* Measures heading with resolution of 0.1° and accuracy up to 1°
+* Measures magnetic flux density with 0.1mG (milli Gauss) resolution
 * Update rate of up to 600Hz
 
 .. _compass_bricklet_description:

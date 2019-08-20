@@ -48,17 +48,17 @@ The Energy Monitor :ref:`Bricklet <primer_bricklets>` is equipped with
 a 3.5mm jack plug for a current transformer and a 3.5mm OD/1.35mm ID barrel
 plug for a voltage transformer. The transformer voltages are used to calculate
 voltage, current, energy, real/apparent/reactive power, power factor and
-frequency of mains voltage of one phase conductor. 
+frequency of mains voltage of a single phase conductor. 
 Additionally the waveform for voltage and current is provided.
+
+The Energy Monitor Bricklet can do all of the measurements without the
+need for any exposed mains voltage wiring!
 
 To use the Bricklet you have to connect a current transformer clamp around 
 a single phase conductor and connect an AC voltage transformer to the same power
 line. The Energy Monitor Bricklet will use the low-level output voltages of the
 transformers to make the measurements. This ensures that the Bricklet is safe to
 handle, since no mains voltage has a direct connection to the Bricklet.
-
-The Energy Monitor Bricklet can do all of the measurements without the
-need for any exposed mains voltage wiring!
 
 We offer a `230V voltage transformer <https://www.tinkerforge.com/en/shop/ac-ac-voltage-transformer.html>`__
 as well as a `5A current transformer clamp <https://www.tinkerforge.com/en/shop/5a-1v-current-transformer-clamp.html>`__

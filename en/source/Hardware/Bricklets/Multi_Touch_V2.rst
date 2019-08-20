@@ -33,11 +33,11 @@ Multi Touch Bricklet 2.0
 Features
 --------
 
-* Capacitive Touch Sensor
+* Capacitive touch sensor
 * Can handle up to 12 electrodes used as touch locations
 * Touch can be detected through a thin layer of glass/plastic/paper
 * Size and placement of touch area can be user defined
-* Can be used to build custom touch panel
+* Can be used to build custom touch panels
 
 
 .. _multi_touch_v2_bricklet_description:
