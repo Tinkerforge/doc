@@ -103,6 +103,23 @@ Wenn alles wie erwartet funktioniert wird die Entfernungsmessung angezeigt.
 |test_pi_ref|
 
 
+
+.. _distance_us_v2_bricklet_beam_pattern:
+
+Beam Pattern
+------------
+
+Das Distance US Bricklet 2.0 nutzt den MB1013-Sensor von MaxBotix.
+
+Der Sensor hat folgendes *Beam Pattern* (2d-Darstellung von
+Entfernungsmessungen mit unterschiedlichem Winkel):
+
+.. image:: /Images/Bricklets/bricklet_distance_us_v2_beam_pattern.png
+   :scale: 100 %
+   :alt: Distance US Bricklet 2.0 beam pattern
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_distance_us_v2_beam_pattern.png
+
 .. _distance_us_v2_bricklet_case:
 
 Gehäuse

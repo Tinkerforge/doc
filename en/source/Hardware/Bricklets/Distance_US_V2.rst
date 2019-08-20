@@ -102,6 +102,23 @@ If everything went as expected you can now see the measured distance.
 |test_pi_ref|
 
 
+.. _distance_us_v2_bricklet_beam_pattern:
+
+Beam Pattern
+------------
+
+The Distance US Bricklet 2.0 uses the MB1013 sensor from MaxBotix.
+
+You can find the beam pattern (2d-representation of measured distances
+with different angles) below:
+
+.. image:: /Images/Bricklets/bricklet_distance_us_v2_beam_pattern.png
+   :scale: 100 %
+   :alt: Distance US Bricklet 2.0 beam pattern
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_distance_us_v2_beam_pattern.png
+
+
 .. _distance_us_v2_bricklet_case:
 
 Case
