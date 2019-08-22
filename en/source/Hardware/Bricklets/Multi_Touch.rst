@@ -29,6 +29,12 @@ Multi Touch Bricklet
 
 	{% tfgalleryend %}
 
+.. note::
+
+ The Multi Touch Detector Bricklet is discontinued. We are selling our remaining stock. The
+ :ref:`Multi Touch Detector Bricklet 2.0 <multi_touch_v2_bricklet>` is the recommended
+ replacement.
+
 
 Features
 --------

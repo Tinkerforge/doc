@@ -24,6 +24,12 @@ LCD 20x4 Bricklet
 
 	{% tfgalleryend %}
 
+.. note::
+
+ The LCD 20x4 Bricklet is discontinued. We are selling our remaining stock. The
+ :ref:`LCD 128x64 Bricklet <lcd_128x64_bricklet>` is the recommended
+ replacement.
+
 
 Features
 --------

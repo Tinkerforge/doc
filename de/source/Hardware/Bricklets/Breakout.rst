@@ -16,6 +16,12 @@ Breakout Bricklet
 
 	{% tfgalleryend %}
 
+.. note::
+
+ Das Breakout Bricklet ist abgekündigt. Wir verkaufen noch unseren restlichen Lagerbestand.
+ Als Ersatz wird das :ref:`XMC1400 Breakout Bricklet <xmc1400_breakout_bricklet>`
+ empfohlen.
+
 
 Features
 --------

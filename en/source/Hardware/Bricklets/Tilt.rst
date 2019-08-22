@@ -25,6 +25,12 @@ Tilt Bricklet
 
 	{% tfgalleryend %}
 
+.. note::
+
+ The Tilt Bricklet is discontinued. We are selling our remaining stock. The
+ :ref:`Accelerometer Bricklet 2.0 <accelerometer_v2_bricklet>` is the recommended
+ replacement.
+
 
 Features
 --------

@@ -26,6 +26,12 @@ Line Bricklet
 
 	{% tfgalleryend %}
 
+.. note::
+
+ The Line Bricklet is discontinued. We are selling our remaining stock. The
+ :ref:`Color Bricklet 2.0 <color_v2_bricklet>` is the recommended
+ replacement.
+
 
 Features
 --------

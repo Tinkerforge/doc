@@ -24,7 +24,7 @@ LCD 16x2 Bricklet
 .. note::
 
  Das LCD 16x2 Bricklet ist abgekündigt und wird nicht mehr verkauft.
- Als Ersatz wird das :ref:`LCD 20x4 Bricklet <lcd_20x4_bricklet>` empfohlen.
+ Als Ersatz wird das :ref:`LCD 128x64 Bricklet <lcd_128x64_bricklet>` empfohlen.
 
 
 Features

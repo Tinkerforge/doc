@@ -24,6 +24,12 @@ OLED 64x48 Bricklet
 
 	{% tfgalleryend %}
 
+.. note::
+
+ Das OLED 64x48 Bricklet ist abgekündigt. Wir verkaufen noch unseren restlichen Lagerbestand.
+ Als Ersatz wird das :ref:`OLED 128x64 Bricklet 2.0 <oled_128x64_v2_bricklet>`
+ empfohlen.
+
 
 Features
 --------

@@ -24,6 +24,12 @@ OLED 64x48 Bricklet
 
 	{% tfgalleryend %}
 
+.. note::
+
+ The OLED 64x48 Bricklet is discontinued. We are selling our remaining stock. The
+ :ref:`OLED 128x64 Bricklet 2.0 <oled_128x64_v2_bricklet>` is the recommended
+ replacement.
+
 
 Features
 --------

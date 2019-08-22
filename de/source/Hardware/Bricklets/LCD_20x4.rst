@@ -24,6 +24,12 @@ LCD 20x4 Bricklet
 
 	{% tfgalleryend %}
 
+.. note::
+
+ Das LCD 20x4 Bricklet ist abgekündigt. Wir verkaufen noch unseren restlichen Lagerbestand.
+ Als Ersatz wird das :ref:`LCD 128x64 Bricklet <lcd_128x64_bricklet>`
+ empfohlen.
+
 
 Features
 --------

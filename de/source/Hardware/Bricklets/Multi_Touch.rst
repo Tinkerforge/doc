@@ -28,6 +28,12 @@ Multi Touch Bricklet
 
 	{% tfgalleryend %}
 
+.. note::
+
+ Das Multi Touch Bricklet ist abgekündigt. Wir verkaufen noch unseren restlichen Lagerbestand.
+ Als Ersatz wird das :ref:`Multi Touch Bricklet 2.0 <multi_touch_v2_bricklet>`
+ empfohlen.
+
 
 Features
 --------

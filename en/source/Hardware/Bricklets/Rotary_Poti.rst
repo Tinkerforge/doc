@@ -26,6 +26,12 @@ Rotary Poti Bricklet
 
 	{% tfgalleryend %}
 
+.. note::
+
+ The Rotary Poti Bricklet is discontinued. We are selling our remaining stock. The
+ :ref:`Rotary Poti Bricklet 2.0 <rotary_poti_v2_bricklet>` is the recommended
+ replacement.
+
 
 Features
 --------
