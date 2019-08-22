@@ -25,10 +25,8 @@ Distance US Bricklet
 
 .. note::
 
- Das Distance US Bricklet ist abgekündigt und wird nicht mehr verkauft. Das
- Distance US Bricklet 2.0 befindet sich aktuell noch in der Entwicklung.
- Bis dahin werden als möglicher Ersatz das :ref:`Distance IR Bricklet 2.0 <distance_ir_v2_bricklet>`
- und das :ref:`Laser Range Finder Bricklet 2.0 <laser_range_finder_v2_bricklet>`
+ Das Distance US Bricklet ist abgekündigt und wird nicht mehr verkauft.
+ Als Ersatz wird das :ref:`Distance US Bricklet 2.0 <distance_us_v2_bricklet>`
  empfohlen.
 
 
