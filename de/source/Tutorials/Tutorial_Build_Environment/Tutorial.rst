@@ -288,7 +288,7 @@ Dokumentation
 -------------
 
 Die Dokumentation ist in
-`reStructuredText <https://docutils.sourceforge.net/rst.html>`__ geschrieben.
+`reStructuredText <https://de.wikipedia.org/wiki/ReStructuredText>`__ geschrieben.
 Sie ist im ``doc``-git welches in ``~/tf/doc`` zu finden ist.
 
 Die komplette Dokumentation kann gebaut werden mit::

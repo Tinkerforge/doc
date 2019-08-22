@@ -92,7 +92,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/energy-monitor-bricklet/raw/master/hardware/energy-monitor-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/energy_monitor_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/energy-monitor-bricklet/zipball/master>`__)
-* 3D model (`View online <https://autode.sk/31FfjlR>`__ | Download: `STEP <https://download.tinkerforge.com/3d/energy_monitor/energy_monitor.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/energy_monitor/energy_monitor.FCStd>`__)
+* 3D model (`View online <https://autode.sk/31FfjlR>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricklets/energy_monitor/energy-monitor.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricklets/energy_monitor/energy-monitor.FCStd>`__)
 
 
 .. _energy_monitor_bricklet_example_heater:

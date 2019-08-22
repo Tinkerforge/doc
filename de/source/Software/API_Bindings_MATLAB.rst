@@ -52,7 +52,7 @@ eingerichtet werden kann.
 Um die Bindings verwenden zu können muss MATLAB die ``Tinkerforge.jar`` Datei
 finden können. Diese kann auf verschiedene Art und Weisen erreicht werden.
 Die `MATLAB Dokumentation
-<https://www.mathworks.com/help/matlab/matlab_external/bringing-java-classes-and-methods-into-matlab-workspace.html>`__
+<https://de.mathworks.com/help/matlab/matlab_external/java-class-path.html>`__
 beschreibt alle Art und Weisen.
 Das empfohlene Vorgehen ist die Bindings dem Preferences-Ordner hinzuzufügen.
 

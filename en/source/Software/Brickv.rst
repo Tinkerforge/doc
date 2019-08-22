@@ -154,7 +154,7 @@ operating system:
 
 * If you have an **old Linux** kernel version you might need to install this
   `SAM-BA Linux USB kernel driver
-  <http://www.embedded-it.de/en/microcontroller/eNet-sam7X.php>`__.
+  <http://mail.embedded-it.de/microcontroller/eNet-sam7X.php>`__.
 
 * On **macOS** a Brick might auto detected as DVB-T device and start EyeTV or
   a similar program automatically is started. Just close EyeTV and proceed with

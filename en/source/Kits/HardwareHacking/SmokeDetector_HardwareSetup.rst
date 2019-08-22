@@ -7,10 +7,8 @@ Smoke Detector Hardware Setup
 Typically a smoke Detector is equipped with one or more LEDs that signal the
 state. The number and behavior of the LEDs will depend on the used model.
 
-In this example we use an `ELRO FA20RF/2
-<https://www.elro.eu/en/products/cat/flamingo/security1/smoke-detectors/wireless-interconnectable-smoke-detectors>`__
-smoke detector. This smoke detector is wirelessly
-interconnectable. That means, you can put a smoke detector in different rooms
+In this example we use a wirelessly interconnectable smoke detector.
+That means, you can put a smoke detector in different rooms
 and if smoke is detected, all of the smoke detectors will start making
 noise.
 

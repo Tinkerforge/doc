@@ -159,7 +159,7 @@ richtig als serielle Schnittstelle erkannt:
 
 * Für **alte Linux** Kernel Versionen kann es notwendig sein diesen
   `SAM-BA Linux USB Kernel Treiber
-  <http://www.embedded-it.de/en/microcontroller/eNet-sam7X.php>`__
+  <http://mail.embedded-it.de/microcontroller/eNet-sam7X.php>`__
   zu installieren, damit ein Brick im Bootloader Modus richtig funktioniert.
 
 * Auf **macOS** kann einen Brick im Bootloader Modus als DVB-T Stick erkannt

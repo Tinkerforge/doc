@@ -75,7 +75,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/distance-us-v2-bricklet/raw/master/hardware/distance-us-v2-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/distance_us_v2_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/distance-us-v2-bricklet/zipball/master>`__)
-* 3D model (`View online <https://autode.sk/2TyiysF>`__ | Download: `STEP <https://download.tinkerforge.com/3d/distance_us_v2/distance_us_v2.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/distance_us_v2/distance_us_v2.FCStd>`__)
+* 3D model (`View online <https://autode.sk/2TyiysF>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricklets/distance_us_v2/distance-us-v2.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricklets/distance_us_v2/distance-us-v2.FCStd>`__)
 
 
 .. _distance_us_v2_bricklet_test:

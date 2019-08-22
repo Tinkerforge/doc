@@ -245,10 +245,8 @@ Es gibt viele Geräte die gehackt werden können. Hier sind ein paar Beispiele:
 Funksteckdosen fernsteuern
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-In diesem Kit ist das Funksteckdosenset `ELRO AB440WD/2
-<https://www.elro.eu/de/products/cat/home-automation/home-control/outdoor1/2-outdoor-switches-with-remote-control>`__
-enthalten. Diese Funksteckdosen können als erster Schritt in die 
-Hausautomatisierung genutzt werden. Wir werden die Fernbedienung dieser
+In diesem Kit sind zwei Funksteckdosen enthalten die als erster Schritt in die
+Hausautomatisierung genutzt werden können. Wir werden die Fernbedienung dieser
 Funksteckdosen hacken, so dass wir die Steckdosen über den PC schalten können.
 
 .. image:: /Images/Kits/hardware_hacking_remote_finished_350.jpg
@@ -258,10 +256,8 @@ Funksteckdosen hacken, so dass wir die Steckdosen über den PC schalten können.
    :target: ../../_images/Kits/hardware_hacking_remote_finished_1200.jpg
 
 Dazu schließen wir ein :ref:`Industrial Quad Relay Bricklet
-<industrial_quad_relay_bricklet>` an die Taster der `ELRO AB440RA
-<https://www.elro.eu/de/products/cat/home-automation/home-control1/transmitters1/remote-control1>`__
-Fernbedienung. Es gibt eine große Anzahl an Funksteckdosen und 
-Fernbedienungen auf dem Markt. 
+<industrial_quad_relay_bricklet>` an die Taster der Fernbedienung an.
+Es gibt eine große Anzahl an Funksteckdosen und Fernbedienungen auf dem Markt.
 Die meisten kommerziell erhältlichen Fernbedienungen nutzen einen HX2262 IC
 mit einem Hardwaredesign welches identisch zu der hier verwendeten ELRO 
 Fernbedienung ist.
@@ -325,10 +321,9 @@ E-Mail oder Textnachricht verschicken.
    :align: center
    :target: ../../_images/Kits/hardware_hacking_smoke_detector_finished_1200.jpg
 
-Für dieses Projekt nutzen wir das drahtlose Rauchmelderset `ELRO FA20RF/2
-<https://www.elro.eu/de/products/cat/flamingo/security1/smoke-detectors/wireless-interconnectable-smoke-detectors>`__
+Für dieses Projekt nutzen wir ein drahtlose Rauchmelderset
 und schließen ein :ref:`Industrial Digital In 4 Bricklet
-<industrial_digital_in_4_bricklet>` an eine der LED die im Alarmfall aufleuchtet.
+<industrial_digital_in_4_bricklet>` an eine der LEDs an, die im Alarmfall aufleuchtet.
 
 Eine ausführliche Beschreibung des Hardware-Aufbaus ist
 :ref:`hier <starter_kit_hardware_hacking_smoke_detector_hardware_setup>` zu

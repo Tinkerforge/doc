@@ -91,7 +91,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/energy-monitor-bricklet/raw/master/hardware/energy-monitor-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/energy_monitor_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/energy-monitor-bricklet/zipball/master>`__)
-* 3D Modell (`Online ansehen <https://autode.sk/31FfjlR>`__ | Download: `STEP <https://download.tinkerforge.com/3d/energy_monitor/energy_monitor.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/energy_monitor/energy_monitor.FCStd>`__)
+* 3D Modell (`Online ansehen <https://autode.sk/31FfjlR>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricklets/energy_monitor/energy-monitor.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricklets/energy_monitor/energy-monitor.FCStd>`__)
 
 .. _energy_monitor_bricklet_beispiel_heizluefter:
 

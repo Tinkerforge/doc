@@ -240,10 +240,8 @@ There are many low voltage appliances that can be hacked. Here are some examples
 Control Mains Switches Remotely
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-This kit includes the remote switch set `ELRO AB440WD/2
-<https://www.elro.eu/en/products/cat/home-automation/home-control/outdoor1/2-outdoor-switches-with-remote-control>`__.
-These remote control mains switches can be used as a first step
-towards home automation. We are going to hack the remote control of these 
+This kit includes two remote control mains switches that can be used as a first
+step towards home automation. We are going to hack the remote control of these
 switches and connect it to a PC to create software controlled remote switches.
 
 .. image:: /Images/Kits/hardware_hacking_remote_finished_350.jpg
@@ -253,9 +251,8 @@ switches and connect it to a PC to create software controlled remote switches.
    :target: ../../_images/Kits/hardware_hacking_remote_finished_1200.jpg
 
 We connect an :ref:`Industrial Quad Relay Bricklet
-<industrial_quad_relay_bricklet>` to the buttons of the `ELRO AB440RA
-<https://www.elro.eu/en/products/cat/home-automation/home-control1/transmitters1/remote-control1>`__
-remote control. There are a vast number of remote switches available on the
+<industrial_quad_relay_bricklet>` to the buttons of the remote control.
+There are a vast number of remote switches available on the
 market. Most of the commercially available remote controls use the HX2262 IC
 with the same hardware design as the ELRO remote control.
 So this guide can be applied to most remote switches.
@@ -315,10 +312,9 @@ alarm.
    :align: center
    :target: ../../_images/Kits/hardware_hacking_smoke_detector_finished_1200.jpg
 
-For this project we use the wireless smoke detector set `ELRO FA20RF/2
-<https://www.elro.eu/en/products/cat/flamingo/security1/smoke-detectors/wireless-interconnectable-smoke-detectors>`__
-and connect an :ref:`Industrial Digital In 4 <industrial_digital_in_4_bricklet>` to one of its
-LEDs that light up during an alarm.
+For this project we use the wireless smoke detector set
+and connect an :ref:`Industrial Digital In 4 <industrial_digital_in_4_bricklet>`
+to one of its LEDs that light up during an alarm.
 
 The full description of the hardware setup can be found
 :ref:`here <starter_kit_hardware_hacking_smoke_detector_hardware_setup>`.

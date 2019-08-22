@@ -46,8 +46,8 @@ Mit dieser WIFI Extension können :ref:`Bricks <primer_bricks>` und
 :ref:`Bricklets <primer_bricklets>` drahtlos mittels
 Smartphone, Tablet oder PC gesteuert werden.
 Weitere Informationen zum Master Extension Konzept gibt es in der allgemeinen
-:ref:`Beschreibung <primer_master_extensions>`. Die Extension ist mit einem `GainSpan <http://www.gainspan.com>`__
-`GS1011MEES <http://www.gainspan.com/gs1011mees>`__ WLAN Modul mit integriertem Leistungsverstärker ausgestattet
+:ref:`Beschreibung <primer_master_extensions>`. Die Extension ist mit einem GainSpan
+GS1011MEES WLAN Modul mit integriertem Leistungsverstärker ausgestattet
 der eine erweiterte Reichweite im Vergleich zu ähnlichen Modulen erlaubt.
 
 Die Extension unterstützt zwei Modi. Im Full Speed Modus ist der WLAN Transceiver permanent eingeschaltet.
@@ -102,7 +102,6 @@ Gewicht                                       18g
 Ressourcen
 ----------
 
-* GS1011MEES Homepage (`here <http://www.gainspan.com/gs1011mees>`__)
 * Schaltplan (`Download <https://github.com/Tinkerforge/wifi-extension/raw/master/hardware/wifi-extension-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/wifi_extension_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/wifi-extension/zipball/master>`__)

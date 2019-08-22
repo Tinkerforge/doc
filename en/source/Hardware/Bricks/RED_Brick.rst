@@ -733,10 +733,10 @@ The webserver on the RED Brick (Apache) uses WSGI
 (`mod_wsgi <https://github.com/GrahamDumpleton/mod_wsgi>`__) to interface with
 Python programs. It is configured to recognize an ``index.py`` as the
 starting point for a WSGI script. All of the common Python web frameworks
-support WSGI. The `Flask framework <https://flask.pocoo.org/>`__ is
+support WSGI. The `Flask framework <https://palletsprojects.com/p/flask/>`__ is
 preinstalled on the RED Brick (including
-`Werkzeug <https://werkzeug.pocoo.org/>`__ and
-`Jinja <https://jinja.pocoo.org/>`__).
+`Werkzeug <https://palletsprojects.com/p/werkzeug/>`__ and
+`Jinja <https://palletsprojects.com/p/jinja/>`__).
 
 A minimal flask web interface that can be uploaded to the RED Brick
 is an ``index.py`` with the following content:

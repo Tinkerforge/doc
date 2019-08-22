@@ -8,12 +8,9 @@ Typischerweise ist ein Rauchmelder mit einer oder mehreren LEDs ausgestattet,
 die den Zustand repräsentieren. Die Anzahl und das Verhalten der LEDs hängt
 vom Modell ab.
 
-In diesem Beispiel nutzen wir einen 
-`ELRO FA20RF/2
-<https://www.elro.eu/en/products/cat/flamingo/security1/smoke-detectors/wireless-interconnectable-smoke-detectors>`__
-Rauchmelder. Dieser Rauchmelder ist drahtlos vernetzbar. Das heißt, dass
-Rauchmelder in verschiedenen Räumen installiert werden können und alle auslösen
-wenn ein Melder Rauch detektiert.
+In diesem Beispiel nutzen wir einen drahtlos vernetzbaren Rauchmelder. Das heißt,
+dass Rauchmelder in verschiedenen Räumen installiert werden können und alle
+auslösen wenn ein Melder Rauch detektiert.
 Wir können einen Rauchmelder hacken und diesen in der Nähe eines PCs 
 installieren, so dass dieser von anderen Rauchmeldern im Haus ausgelöst 
 werden kann. Auf diesem Wege können wir mitlesen ob die Rauchmelder ausgelöst 

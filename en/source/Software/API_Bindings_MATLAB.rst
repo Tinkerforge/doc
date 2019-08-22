@@ -48,7 +48,7 @@ about how to configure `Java for MATLAB
 
 To use the bindings MATLAB needs to know where to find the ``Tinkerforge.jar``
 file. There are several ways to archive this, see the `MATLAB documentation
-<https://www.mathworks.com/help/matlab/matlab_external/bringing-java-classes-and-methods-into-matlab-workspace.html>`__
+<https://www.mathworks.com/help/matlab/matlab_external/java-class-path.html>`__
 for more details on all of them.
 The recommended way is to the add the bindings to the preferences folder.
 
