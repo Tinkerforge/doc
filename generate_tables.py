@@ -439,7 +439,7 @@ def make_download_brick_firmwares_table():
 """
     }
 
-    row = ' :ref:`{0} <{1}>` | `Firmware <https://download.tinkerforge.com/firmwares/{6}s/{2}/{6}_{2}_firmware_{7}_{8}_{9}.bin>`__, `{3} <https://github.com/Tinkerforge/{4}/archive/v{7}.{8}.{9}.zip>`__ | {7}.{8}.{9} | `{5} <https://download.tinkerforge.com/firmwares/{6}s/{2}/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/{4}/master/software/changelog>`__'
+    row = ' :ref:`{0} <{1}>` | `Firmware <https://download.tinkerforge.com/firmwares/{6}s/{2}/{6}_{2}_firmware_{8}_{9}_{10}.{7}>`__, `{3} <https://github.com/Tinkerforge/{4}/archive/v{8}.{9}.{10}.zip>`__ | {8}.{9}.{10} | `{5} <https://download.tinkerforge.com/firmwares/{6}s/{2}/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/{4}/master/software/changelog>`__'
     rows = []
 
     for brick_info in sorted(brick_infos, key=lambda x: x.short_display_name.lower()):
@@ -447,9 +447,11 @@ def make_download_brick_firmwares_table():
             if brick_info.firmware_url_part in ['hat', 'hat_zero']:
                 firmware_version = plugin_versions.get(brick_info.firmware_url_part, (0,0,0))
                 category = 'bricklet'
+                extension = 'zbin'
             else:
                 firmware_version = firmware_versions.get(brick_info.firmware_url_part, (0,0,0))
                 category = 'brick'
+                extension = 'bin'
 
             rows.append(row.format(brick_info.short_display_name,
                                    brick_info.ref_name,
@@ -458,6 +460,7 @@ def make_download_brick_firmwares_table():
                                    brick_info.git_name,
                                    archive[lang],
                                    category,
+                                   extension,
                                    *firmware_version))
 
     return table_head[lang] + '\n'.join(rows) + '\n'
