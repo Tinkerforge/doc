@@ -50,6 +50,14 @@ Die Updaterate ist einstellbar und beträgt bis zu 600Hz.
 Das Compass Bricklet hat einen 7 Pol Bricklet Stecker und wird
 mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
 
+.. raw:: html
+ 
+	<video class="align-center" max-width="100%" width="100%" height="auto" controls autoplay loop>
+	  <source src="../../_images/Videos/bricklet_compass_video.mp4"  type="video/mp4">
+	  <source src="../../_images/Videos/bricklet_compass_video.ogg" type="video/ogg">
+	  <source src="../../_images/Videos/bricklet_compass_video.webm" type="video/webm">
+	</video>
+
 Technische Spezifikation
 ------------------------
 
