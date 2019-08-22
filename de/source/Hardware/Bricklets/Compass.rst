@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/compass-bricklet.html
+:shoplink: ../../../shop/bricklets/compass-bricklet.html
 
 .. include:: Compass.substitutions
    :start-after: >>>substitutions
@@ -9,9 +9,6 @@
 
 Compass Bricklet
 ================
-
-.. note::
-  Dieses Bricklet befindet sich aktuell noch in der Entwicklung!
 
 .. raw:: html
 

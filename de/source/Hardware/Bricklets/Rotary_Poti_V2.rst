@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/rotary-poti-v2-bricklet.html
+:shoplink: ../../../shop/bricklets/rotary-poti-v2-bricklet.html
 
 .. include:: Rotary_Poti_V2.substitutions
    :start-after: >>>substitutions
@@ -9,9 +9,6 @@
 
 Rotary Poti Bricklet 2.0
 ========================
-
-.. note::
-  Dieses Bricklet befindet sich aktuell noch in der Entwicklung!
 
 .. raw:: html
 

@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/distance-us-v2-bricklet.html
+:shoplink: ../../../shop/bricklets/distance-us-v2-bricklet.html
 
 .. include:: Distance_US_V2.substitutions
    :start-after: >>>substitutions
@@ -9,9 +9,6 @@
 
 Distance US Bricklet 2.0
 ========================
-
-.. note::
-  Dieses Bricklet befindet sich aktuell noch in der Entwicklung!
 
 .. raw:: html
 

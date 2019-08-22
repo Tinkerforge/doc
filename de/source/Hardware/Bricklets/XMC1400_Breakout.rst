@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/xmc1400-breakout-bricklet.html
+:shoplink: ../../../shop/bricklets/xmc1400-breakout-bricklet.html
 
 .. include:: XMC1400_Breakout.substitutions
    :start-after: >>>substitutions
@@ -9,9 +9,6 @@
 
 XMC1400 Breakout Bricklet
 =========================
-
-.. note::
-  Dieses Bricklet befindet sich aktuell noch in der Entwicklung!
 
 .. raw:: html
 

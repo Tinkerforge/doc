@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/energy-monitor-bricklet.html
+:shoplink: ../../../shop/bricklets/energy-monitor-bricklet.html
 
 .. include:: Energy_Monitor.substitutions
    :start-after: >>>substitutions
@@ -9,9 +9,6 @@
 
 Energy Monitor Bricklet
 =======================
-
-.. note::
-  Dieses Bricklet befindet sich aktuell noch in der Entwicklung!
 
 .. raw:: html
 
