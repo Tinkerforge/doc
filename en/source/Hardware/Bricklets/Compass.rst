@@ -45,6 +45,8 @@ accuracy up to 1°.
 
 The update rate is configurable and can go as high as 600Hz.
 
+The Compass Bricklet has a 7 pole Bricklet connector and is connected to a
+Brick with a ``7p-10p`` Bricklet cable.
 
 Technical Specifications
 ------------------------
