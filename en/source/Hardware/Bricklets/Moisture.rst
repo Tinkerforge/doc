@@ -122,8 +122,7 @@ occur anymore.
 Case
 ----
 
-A `laser-cut case for the Moisture Bricklet
-<https://www.tinkerforge.com/en/shop/cases/case-moisture-bricklet.html>`__ is available.
+A laser-cut case for the Moisture Bricklet was available.
 
 .. image:: /Images/Cases/bricklet_moisture_v11_case_built_up_350.jpg
    :scale: 100 %

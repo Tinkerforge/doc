@@ -121,8 +121,7 @@ habe kann.
 Gehäuse
 -------
 
-Ein `laser-geschnittenes Gehäuse für das Moisture Bricklet
-<https://www.tinkerforge.com/de/shop/cases/case-moisture-bricklet.html>`__ ist verfügbar.
+Ein laser-geschnittenes Gehäuse für das Moisture Bricklet war verfügbar.
 
 .. image:: /Images/Cases/bricklet_moisture_v11_case_built_up_350.jpg
    :scale: 100 %
