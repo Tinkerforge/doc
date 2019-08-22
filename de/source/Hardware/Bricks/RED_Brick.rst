@@ -769,7 +769,7 @@ Bindings, wie bei jedem Python Programm, eingebunden werden::
 
 Das standardmäßig installierte Web Interface auf dem RED Brick nutzt
 Python/Flask. Der Code steht auf
-`GitHub <https://github.com/Tinkerforge/red-brick/blob/master/image/patches/root-fs/common/tmp/index.wsgi>`__
+`GitHub <https://github.com/Tinkerforge/red-brick/blob/master/image/patches/root-fs/common/tmp/index.py>`__
 zur Verfügung.
 
 Es können natürlich auch Templates, statische Dateien und so weiter benutzt
