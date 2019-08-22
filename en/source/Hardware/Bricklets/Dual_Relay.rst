@@ -209,7 +209,7 @@ length for the cables and the stripping:
    :scale: 100 %
    :alt: Recommended lengths
    :align: center
-   :target: ../../_images/Cases/bricklet_dual_relay_case_cable_1000.jpg
+   :target: ../../_images/Cases/bricklet_dual_relay_case_cables_1000.jpg
 
 The assembly is easiest if you follow the following steps:
 
