@@ -79,8 +79,8 @@ Luftfeuchte Genauigkeit           ± 3 %RH
 Messfrequenz                      0,5 Messungen pro Sekunde
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Dimensions (W x D x H)            35 x 40 x 18mm (1.38 x 1.57 x 0.71")
-Weight                            9g
+Abmessungen (B x T x H)           35 x 40 x 18mm (1,38 x 1,57 x 0,71")
+Gewicht                           9g
 ================================  ============================================================
 
 \* Die Temperatur wird direkt am Sensor gemessen. Wenn sich das Bricklet 
