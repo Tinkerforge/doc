@@ -65,6 +65,9 @@ as well as a `5A current transformer clamp <https://www.tinkerforge.com/en/shop/
 or `30A current transformer clamp <https://www.tinkerforge.com/en/shop/30a-1v-current-transformer-clamp.html>`__.
 The Bricklet comes factory-calibrated for these transformers.
 
+The Energy Monitor Bricklet has a 7 pole Bricklet connector and is connected to a
+Brick with a ``7p-10p`` Bricklet cable.
+
 
 Technical Specifications
 ------------------------

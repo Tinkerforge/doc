@@ -49,6 +49,8 @@ and can be accessed through a pin header.
 If you want to develop your own Bricklet, you can use the XMC1400 Breakout Bricklet to get started without
 having to develop your own custom hardware first.
 
+The XMC1400 Breakout Bricklet has a 7 pole Bricklet connector and is connected to a
+Brick with a ``7p-10p`` Bricklet cable.
 
 Technical Specifications
 ------------------------
