@@ -26,8 +26,8 @@ Features
 --------
 
 * 3-Achsen Kompass
-* Misst die Himmelsrichtung (0.1° Auflösung / bis zu 1° Genauigkeit)
-* Misst die magnetische Flussdichte (Auflösung 0.1mG / Milli Gauss)
+* Misst die Himmelsrichtung (0,1° Auflösung / bis zu 1° Genauigkeit)
+* Misst die magnetische Flussdichte (Auflösung 0,1mG / Milligauß)
 * Messfrequenz von bis zu 600Hz
 
 
@@ -36,8 +36,7 @@ Features
 Beschreibung
 ------------
 
-
-Das Kompass :ref:`Bricklet <primer_bricklets>` ist mit einem 3-Achsen ±8 Gauss Magnetsensor
+Das Compass :ref:`Bricklet <primer_bricklets>` ist mit einem 3-Achsen ±8 Gauß Magnetsensor
 ausgestattet. Der Sensor kann die magnetische Flussdichte für alle drei Achsen messen.
 Die Himmelsrichtung wird mit einer Auflösung von 0.1° und einer Genauigkeit von bis zu 1° 
 gemessen.
@@ -65,11 +64,11 @@ Sensor                               MMC5883MA
 Stromverbrauch                       40mW (8mA bei 5V)
 -----------------------------------  ------------------------------------------------------------
 -----------------------------------  ------------------------------------------------------------
-Magnetische Flussdichte Messbereich  -8G bis 8G (Gauss)
-Magnetische Flussdichte Auflösung    0.1mG (Milli-Gauss)
-Kurs Messbereich                     0° to 360°
-Kurs Auflösung                       0.1°
-Kurs Genauigkeit                     Bis zu 1° bei 100Hz Updaterate*
+Magnetische Flussdichte Messbereich  -8G bis 8G (Gauß)
+Magnetische Flussdichte Auflösung    0,1mG (Milligauß)
+Himmelsrichtung Messbereich          0° bis 360°
+Himmelsrichtung Auflösung            0,1°
+Himmelsrichtung Genauigkeit          Bis zu 1° bei 100Hz Updaterate*
 Updaterate                           100Hz-600Hz (einstellbar)
 -----------------------------------  ------------------------------------------------------------
 -----------------------------------  ------------------------------------------------------------

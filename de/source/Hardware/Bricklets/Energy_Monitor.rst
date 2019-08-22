@@ -59,7 +59,7 @@ gefährliche Netzspannung nicht direkt am Bricklet anliegt.
 
 Separat erhältlich sind der `230V Spannungstransformator <https://www.tinkerforge.com/de/shop/ac-ac-voltage-transformer.html>`__
 und der `5A Stromwandler <https://www.tinkerforge.com/de/shop/5a-1v-current-transformer-clamp.html>`__ bzw. der
-`30A Stromwandler <https://www.tinkerforge.com/en/shop/30a-1v-current-transformer-clamp.html>`__.
+`30A Stromwandler <https://www.tinkerforge.com/de/shop/30a-1v-current-transformer-clamp.html>`__.
 Das Bricklet liefern wir kalibriert für diese Wandler aus.
 
 Das Energy Monitor Bricklet hat einen 7 Pol Bricklet Stecker und wird
@@ -110,9 +110,9 @@ anschließen über die der Heizlüfter betrieben wird.
 
 Ein typisches europäisches Netzkabel besitzt drei Leiter:
 
+* Phase (L)
 * Neutralleiter (N)
 * Erde (PE)
-* Phase (L)
 
 Bei Dreiphasen Anschlüssen (Drehstrom), gibt es zwei weitere Leiter so
 dass es die Phasen L1, L2 und L3 gibt. Möchte man die Leistung hier messen,

@@ -110,11 +110,11 @@ As an example we want to monitor the power of a small electric heater.
 To do this we have to connect the voltage transformer and the current transformer
 clamp to the same circuit that the electric heater runs on.
 
-A typical european mains power cable will have three wires:
+A typical european mains power cable does have three wires:
 
+* Phase (L)
 * Neutral conductor (N)
 * Protective earth (PE)
-* Phase (L)
 
 In case of three-phase power there are two more phases (L2 and L3). If you want to
 measure the power for a three-phase system you have to use three Bricklets, for each phase one.
@@ -160,8 +160,6 @@ In the Brick Viewer this setup looks as follows:
    :alt: Energy Monitor Bricklet in Brick Viewer (heater)
    :align: center
    :target: ../../_images/Bricklets/bricklet_energy_monitor_heater_brickv.jpg
-
-
 
 
 Transformer Ratios
@@ -256,13 +254,13 @@ times to increase the resolution. This looks like a typical AC/DC power supply.
    :align: center
    :target: ../../_images/Bricklets/bricklet_energy_monitor_led_lamp_brickv.jpg
 
-Waveform 4: 12W energy saving lightbulb. The conductor is threaded through the current
+Waveform 4: 12W energy saving light bulb. The conductor is threaded through the current
 transformer clamp eight times to increase the resolution. You can see that the energy saving
-lightbulb only uses about 1/4 of the waveform.
+light bulb only uses about 1/4 of the waveform.
 
 .. image:: /Images/Bricklets/bricklet_energy_monitor_energy_saving_lightbulb_brickv.jpg
    :scale: 100 %
-   :alt: Energy Monitor Bricklet in Brick Viewer (energy saving lightbulb)
+   :alt: Energy Monitor Bricklet in Brick Viewer (energy saving light bulb)
    :align: center
    :target: ../../_images/Bricklets/bricklet_energy_monitor_energy_saving_lightbulb_brickv.jpg
 
