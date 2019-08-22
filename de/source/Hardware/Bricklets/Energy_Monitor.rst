@@ -42,7 +42,7 @@ Beschreibung
 ------------
 
 Das Energy Monitor :ref:`Bricklet <primer_bricklets>` ist mit einer
-3,5mm Hohlsteckerbuchse für einen Stromwandler und einer 3,5mm (1,35mm Innendurchmesser) 
+3,5mm Klinkenstecker für einen Stromwandler und einer 3,5mm (1,35mm Innendurchmesser) 
 Buchse für einen Spannungswandler (Transformator) ausgestattet. Über beide Wandler
 werden Spannung, Strom, Energie, Wirkleistung/Scheinleistung und Blindleistung, sowie der
 Leistungsfaktor und die Frequenz einer Phase der Netzspannung berechnet. 
