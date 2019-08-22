@@ -148,11 +148,11 @@ Eingang eingesteckt werden.
 
 Das Resultat sollte in etwa so aussehen:
 
-.. image:: /Images/Bricklets/bricklet_energy_monitor_tutorial_1_w_caption_800.jpg
+.. image:: /Images/Bricklets/bricklet_energy_monitor_tutorial_1_800.jpg
    :scale: 100 %
    :alt: Energy Monitor Bricklet Heizlüfter Beispiel Foto 3
    :align: center
-   :target: ../../_images/Bricklets/bricklet_energy_monitor_tutorial_1_w_caption_1200.jpg
+   :target: ../../_images/Bricklets/bricklet_energy_monitor_tutorial_1_1200.jpg
 
 Im Brick Viewer sieht der Aufbau wie folgt aus:
 
