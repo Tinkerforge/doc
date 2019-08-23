@@ -296,27 +296,26 @@ Die Wellenform des Stroms hängt dabei massiv on der Last ab (siehe :ref:`energy
 Gehäuse
 -------
 
-..
-	Ein `laser-geschnittenes Gehäuse für das Energy Monitor Bricklet
-	<https://www.tinkerforge.com/de/shop/cases/case-energy-monitor-bricklet.html>`__ ist verfügbar.
+Ein `laser-geschnittenes Gehäuse für das Energy Monitor Bricklet
+<https://www.tinkerforge.com/de/shop/cases/case-energy-monitor-bricklet.html>`__ ist verfügbar.
 
-	.. image:: /Images/Cases/bricklet_energy_monitor_case_350.jpg
-	   :scale: 100 %
-	   :alt: Gehäuse für Energy Monitor Bricklet
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_energy_monitor_case_1000.jpg
+.. image:: /Images/Cases/bricklet_energy_monitor_case_350.jpg
+   :scale: 100 %
+   :alt: Gehäuse für Energy Monitor Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_energy_monitor_case_1000.jpg
 
-	.. include:: Energy_Monitor.substitutions
-	   :start-after: >>>bricklet_case_steps
-	   :end-before: <<<bricklet_case_steps
+.. include:: Energy_Monitor.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
 
-	.. image:: /Images/Exploded/energy_monitor_exploded_350.png
-	   :scale: 100 %
-	   :alt: Explosionszeichnung für Energy Monitor Bricklet
-	   :align: center
-	   :target: ../../_images/Exploded/energy_monitor_exploded.png
+.. image:: /Images/Exploded/energy_monitor_exploded_350.png
+   :scale: 100 %
+   :alt: Explosionszeichnung für Energy Monitor Bricklet
+   :align: center
+   :target: ../../_images/Exploded/energy_monitor_exploded.png
 
-	|bricklet_case_hint|
+|bricklet_case_hint|
 
 
 .. _energy_monitor_bricklet_programming_interface:

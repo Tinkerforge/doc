@@ -150,29 +150,26 @@ and the volume range of 5-10 for loud and annoying alarm sounds.
 Case
 ----
 
-Comming soon...
+A `laser-cut case for the Piezo Speaker Bricklet 2.0
+<https://www.tinkerforge.com/en/shop/cases/case-piezo-speaker-v2-bricklet.html>`__ is available.
 
-..
-	A `laser-cut case for the Piezo Speaker Bricklet 2.0
-	<https://www.tinkerforge.com/en/shop/cases/case-piezo-speaker-v2-bricklet.html>`__ is available.
+.. image:: /Images/Cases/bricklet_piezo_speaker_v2_case_front_350.jpg
+   :scale: 100 %
+   :alt: Case for Piezo Speaker Bricklet 2.0
+   :align: center
+   :target: ../../_images/Cases/bricklet_piezo_speaker_v2_case_front_1000.jpg
 
-	.. image:: /Images/Cases/bricklet_piezo_speaker_v2_case_350.jpg
-	   :scale: 100 %
-	   :alt: Case for Piezo Speaker Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_piezo_speaker_v2_case_1000.jpg
+.. include:: Piezo_Speaker_V2.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
 
-	.. include:: Piezo_Speaker_V2.substitutions
-	   :start-after: >>>bricklet_case_steps
-	   :end-before: <<<bricklet_case_steps
+.. image:: /Images/Exploded/piezo_speaker_v2_exploded_350.png
+   :scale: 100 %
+   :alt: Exploded assembly drawing for Piezo Speaker Bricklet 2.0
+   :align: center
+   :target: ../../_images/Exploded/piezo_speaker_v2_exploded.png
 
-	.. image:: /Images/Exploded/piezo_speaker_v2_exploded_350.png
-	   :scale: 100 %
-	   :alt: Exploded assembly drawing for Piezo Speaker Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Exploded/piezo_speaker_v2_exploded.png
-
-	|bricklet_case_hint|
+|bricklet_case_hint|
 
 
 .. _piezo_speaker_v2_bricklet_programming_interface:

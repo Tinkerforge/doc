@@ -215,29 +215,26 @@ dem schnell und einfach Text auf dem Display angezeigt werden kann:
 Gehäuse
 -------
 
-Comming soon...
+Ein `laser-geschnittenes Gehäuse für das E-Paper 296x128 Bricklet
+<https://www.tinkerforge.com/de/shop/cases/case-e-paper-296x128-bricklet.html>`__ ist verfügbar.
 
-..
-	Ein `laser-geschnittenes Gehäuse für das E-Paper 296x128 Bricklet
-	<https://www.tinkerforge.com/de/shop/cases/case-e-paper-296x128-bricklet.html>`__ ist verfügbar.
+.. image:: /Images/Cases/bricklet_e_paper_296x128_case_front_350.jpg
+   :scale: 100 %
+   :alt: Gehäuse für E-Paper 296x128 Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_e_paper_296x128_case_front_1000.jpg
 
-	.. image:: /Images/Cases/bricklet_e_paper_296x128_case_350.jpg
-	   :scale: 100 %
-	   :alt: Gehäuse für E-Paper 296x128 Bricklet
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_e_paper_296x128_case_1000.jpg
+.. include:: EPaper_296x128.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
 
-	.. include:: EPaper_296x128.substitutions
-	   :start-after: >>>bricklet_case_steps
-	   :end-before: <<<bricklet_case_steps
+.. image:: /Images/Exploded/e_paper_296x128_exploded_350.png
+   :scale: 100 %
+   :alt: Explosionszeichnung für E-Paper 296x128 Bricklet
+   :align: center
+   :target: ../../_images/Exploded/e_paper_296x128_exploded.png
 
-	.. image:: /Images/Exploded/e_paper_296x128_exploded_350.png
-	   :scale: 100 %
-	   :alt: Explosionszeichnung für E-Paper 296x128 Bricklet
-	   :align: center
-	   :target: ../../_images/Exploded/e_paper_296x128_exploded.png
-
-	|bricklet_case_hint|
+|bricklet_case_hint|
 
 
 .. _e_paper_296x128_bricklet_programming_interface:

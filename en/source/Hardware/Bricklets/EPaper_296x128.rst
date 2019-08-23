@@ -212,29 +212,26 @@ easy text rendering:
 Case
 ----
 
-Comming soon...
+A `laser-cut case for the E-Paper 296x128 Bricklet
+<https://www.tinkerforge.com/en/shop/cases/case-e-paper-296x128-bricklet.html>`__ is available.
 
-..
-	A `laser-cut case for the E-Paper 296x128 Bricklet
-	<https://www.tinkerforge.com/en/shop/cases/case-e-paper-296x128-bricklet.html>`__ is available.
+.. image:: /Images/Cases/bricklet_e_paper_296x128_case_front_350.jpg
+   :scale: 100 %
+   :alt: Case for E-Paper 296x128 Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_e_paper_296x128_case_front_1000.jpg
 
-	.. image:: /Images/Cases/bricklet_e_paper_296x128_case_350.jpg
-	   :scale: 100 %
-	   :alt: Case for E-Paper 296x128 Bricklet
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_e_paper_296x128_case_1000.jpg
+.. include:: EPaper_296x128.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
 
-	.. include:: EPaper_296x128.substitutions
-	   :start-after: >>>bricklet_case_steps
-	   :end-before: <<<bricklet_case_steps
+.. image:: /Images/Exploded/e_paper_296x128_exploded_350.png
+   :scale: 100 %
+   :alt: Exploded assembly drawing for E-Paper 296x128 Bricklet
+   :align: center
+   :target: ../../_images/Exploded/e_paper_296x128_exploded.png
 
-	.. image:: /Images/Exploded/e_paper_296x128_exploded_350.png
-	   :scale: 100 %
-	   :alt: Exploded assembly drawing for E-Paper 296x128 Bricklet
-	   :align: center
-	   :target: ../../_images/Exploded/e_paper_296x128_exploded.png
-
-	|bricklet_case_hint|
+|bricklet_case_hint|
 
 
 .. _e_paper_296x128_bricklet_programming_interface:
