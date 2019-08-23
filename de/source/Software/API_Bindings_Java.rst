@@ -22,7 +22,7 @@ Die Java Bibliothek hat keine weiteren Abhängigkeiten.
 Voraussetzungen
 ---------------
 
-* Java JDK 1.6 oder neuer
+* Java JDK 8 oder neuer
 
 
 .. _api_bindings_java_install:
