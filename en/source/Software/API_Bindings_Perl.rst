@@ -138,7 +138,7 @@ Known Problems
 --------------
 
 There are known deadlock problems on Windows with `Strawberry Perl
-<https://strawberryperl.com/>`__ and `Active State Perl
+<http://strawberryperl.com/>`__ and `Active State Perl
 <https://www.activestate.com/activeperl>`__. The recommended workaround is to
 use `Cygwin <https://www.cygwin.com/>`__ Perl that doesn't
 suffer from this problem. See this `PerlMonks thread

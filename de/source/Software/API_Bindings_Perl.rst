@@ -141,7 +141,7 @@ Bekannte Probleme
 -----------------
 
 Es sind Deadlock-Probleme auf Windows mit `Strawberry Perl
-<https://strawberryperl.com/>`__ und `Active State Perl
+<http://strawberryperl.com/>`__ und `Active State Perl
 <https://www.activestate.com/activeperl>`__ bekannt. Der empfohlene Workaround
 dafür ist `Cygwin <https://www.cygwin.com/>`__ Perl zu verwenden, das von
 diesen Problemen nicht betroffen ist. Siehe diesen `PerlMonks Thread
