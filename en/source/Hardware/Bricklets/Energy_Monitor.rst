@@ -65,6 +65,11 @@ The Bricklet comes factory-calibrated for these transformers.
 The Energy Monitor Bricklet has a 7 pole Bricklet connector and is connected to a
 Brick with a ``7p-10p`` Bricklet cable.
 
+.. raw:: html
+
+ <div style="position: relative; height: 0; padding-bottom: 56.25%;">
+ <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" class="youtube" src="https://www.youtube-nocookie.com/embed/RHulIqFu-iA" frameborder="0" allowfullscreen></iframe>
+ </div>
 
 Technical Specifications
 ------------------------
