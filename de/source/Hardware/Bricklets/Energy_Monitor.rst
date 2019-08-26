@@ -199,7 +199,11 @@ umschlossene Leiter erzeugt (siehe
 Über einen einfachen Trick, kann die Auflösung der Strommessung erhöht werden. 
 Dazu muss einfach der Leiter mehrfach durch den Stromwandler geführt werden.
 
-TODO Foto Stromwandler mit mehrfach durchgeführten Leiter
+.. image:: /Images/Bricklets/bricklet_energy_monitor_multiwire_600.jpg
+   :scale: 100 %
+   :alt: Stromwandler mit mehrfach durchgeführten Leiter
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_energy_monitor_multiwire_1200.jpg
 
 Dadurch ändert sich das Verhältnis der Strommessung:
 
