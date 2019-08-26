@@ -203,8 +203,6 @@ the wire through the current transformer multiple times.
    :align: center
    :target: ../../_images/Bricklets/bricklet_energy_monitor_multiwire_1200.jpg
 
-TODO Picture current transformer with multiple times passed trough wire 
-
 The ratio changes accordingly:
 
 * 2-times passed through: Ratio factor 2
