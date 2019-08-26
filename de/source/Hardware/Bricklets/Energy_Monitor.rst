@@ -196,7 +196,7 @@ Die Auflösung der Strommessung erhöhen
 Die Stromwandler messen den Strom über das magnetische Feld, welches der 
 umschlossene Leiter erzeugt (siehe 
 `Wikipedia Stromwandler <https://de.wikipedia.org/wiki/Stromwandler>`__).
-Über einen einfachen Trick, kann die Auflösung der Strommessung erhöht werden. 
+Über einen einfachen Trick kann die Auflösung der Strommessung erhöht werden.
 Dazu muss einfach der Leiter mehrfach durch den Stromwandler geführt werden.
 
 .. image:: /Images/Bricklets/bricklet_energy_monitor_multiwire_600.jpg
