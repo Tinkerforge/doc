@@ -70,6 +70,11 @@ connector, which can be used by programs to show a graphical user interface. A
 `USB 2.0 <https://en.wikipedia.org/wiki/USB>`__ Host connector can be used to
 connect USB Wi-Fi adapters, mouses, keyboards, touchscreens and similar.
 
+.. note::
+ There are no Bricklet ports available on the RED Brick. To be able to use Bricklets, you
+ will need at least one other Brick, for example the :ref:`Master Brick <master_brick>`.
+ You can stack the RED Brick and Master Brick as usual.
+
 With an :ref:`Ethernet Master Extension <ethernet_extension>` the RED Brick can
 be extended by an Ethernet interface. The
 :ref:`RS485 Master Extension <rs485_extension>` can be used to connect

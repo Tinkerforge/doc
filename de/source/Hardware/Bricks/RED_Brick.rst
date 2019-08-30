@@ -73,6 +73,12 @@ Programme mit grafischer Benutzeroberfläche ausgeführt werden können. Eine
 werden, um Eingabe- und Zeigegeräte, wie Tastaturen, Mäuse oder Touchscreens,
 zu nutzen.
 
+.. note::
+ Der RED Brick hat keine Bricklet-Anschlüsse. Um Bricklets anschließen zu können,
+ wird mindestens ein weiterer Brick mit Bricklet-Anschlüssen benötigt, zum Beispiel
+ der :ref:`Master Brick <master_brick>`. Dieser kann wie gewohnt mit dem RED Brick
+ zu einem Stapel verbunden werden.
+
 Mit der :ref:`Ethernet Master Extension <ethernet_extension>` kann der RED Brick
 um eine Ethernet-Schnittstelle erweitert werden. Die
 :ref:`RS485 Master Extension <rs485_extension>` wird ebenfalls unterstützt, so
