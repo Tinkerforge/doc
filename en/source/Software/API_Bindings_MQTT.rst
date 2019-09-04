@@ -201,18 +201,18 @@ and configures the period of the callback to 100ms::
 Since version 2.0.8, it is possible to separate between messages to be processed before and after the connection to the Brick Daemon, Wifi, or Ethernet Extension is established. This allows registration of callbacks (i.e. the connected callback of the IP connection) before connecting. The syntax is as follows::
 
  {
-     "pre-connect": {
+     "pre_connect": {
          "tinkerforge/register/ip_connection/connected": {"register": true},
          "tinkerforge/register/ip_connection/enumerate": {"register": true}
      },
-     "post-connect": {
+     "post_connect": {
          "tinkerforge/request/ip_connection/enumerate": ""
      }
  }
 
 This will register the connected and enumerate callbacks before connecting and immediatly trigger an enumeration when connected.
 
-Init files using the old syntax without pre/post-connect, will be executed after the connection is established.
+Init files using the old syntax without pre/post_connect, will be executed after the connection is established.
  
 Topic prefix
 ^^^^^^^^^^^^

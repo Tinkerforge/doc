@@ -208,18 +208,18 @@ IMU Brick 2.0 registriert und dessen Periode auf 100ms konfiguriert::
 Seit Version 2.0.8 kann zwischen Nachrichten, die vor oder nach dem Verbindungsaufbau zum Brick Daemon, der Wifi oder der Ethernet Extension verarbeitet werden sollen, unterschieden weden. Das erlaubt es, Callback zu registrieren, bevor eine Verbindung besteht (zum Beispiel das connected-Callback der IP-Connection). Die Syntax ist wie folgt::
 
  {
-     "pre-connect": {
+     "pre_connect": {
          "tinkerforge/register/ip_connection/connected": {"register": true},
          "tinkerforge/register/ip_connection/enumerate": {"register": true}
      },
-     "post-connect": {
+     "post_connect": {
          "tinkerforge/request/ip_connection/enumerate": ""
      }
  }
 
 Diese Datei registriert das connected- und enumerate-Callback vor dem Verbindungsaufbau und löst sofort danach eine Enumerierung aus.
 
-Init-Dateien, die die alte Syntax ohne pre/post-connect verwenden, werden ausgeführt, nachdem die Verbindung hergestellt wurde.
+Init-Dateien, die die alte Syntax ohne pre/post_connect verwenden, werden ausgeführt, nachdem die Verbindung hergestellt wurde.
  
 Topic-Präfixe
 ^^^^^^^^^^^^^
