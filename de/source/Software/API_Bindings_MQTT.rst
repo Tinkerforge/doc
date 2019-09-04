@@ -84,9 +84,9 @@ Die Struktur der MQTT-Topics ist wie folgt: ``[<GLOBAL_PREFIX>/]<OPERATION>/<DEV
 Er kann mit dem ``--global-topic-prefix`` Kommandozeilenargument geändert werden. Der Präfix
 kann verwendet werden um zwischen mehreren Instanzen der MQTT-Bindings zu unterscheiden. Außerdem
 kann er mehrere Topic-Levels beinhalten, zum Beispiel ``tinkerforge/wohnzimmer/sensoren``. Wenn
-der konfiguriere Präfix nicht mit einem '/' endet, wird es von den Bindings eingefügt, es sei denn
+der konfiguriere Präfix nicht mit einem ``/`` endet, wird es von den Bindings eingefügt, es sei denn
 ein leerer Prefix wurde konfiguriert. Dann beginnen alle Topics mit der Operation. Dieses Vorgehen wird wegen
-möglichen Namenskonflikten nicht empfohlen. Außerdem ist zu beachten, dass '/' ein gültiger Präfix ist.
+möglichen Namenskonflikten nicht empfohlen. Außerdem ist zu beachten, dass ``/`` ein gültiger Präfix ist.
 
 ``<OPERATION>`` ist der Typ der Anfrage. Dieser kann ``request``, ``response``, ``register`` oder ``callback`` sein.
 Die Bindings subscriben auf ``request``- und ``register``-Topics und publishen Antworten auf ``request``- unter
@@ -96,15 +96,13 @@ Die Bindings subscriben auf ``request``- und ``register``-Topics und publishen A
 oder Bricklets in snake_case, oder ``ip_connection`` sein. Siehe die Dokumentation der Geräte für die
 genaue Schreibweise.
 
-``[/<UID>]`` ist die UID des Gerätes. Wenn das Gerät die ``ip_connection`` ist, muss die UID leer und ohne '/' sein,
+``[/<UID>]`` ist die UID des Gerätes. Wenn das Gerät die ``ip_connection`` ist, muss die UID leer und ohne ``/`` sein,
 zum Beispiel ``.../ip_connection/enumerate``.
 
 ``<FUNCTION>`` ist die Funktion, die aufgerufen, oder das Callback, das registriert werden soll (in snake_case).
 
 ``</[SUFFIX]>`` ist der optionale Suffix der an Antworten angehangen wird. Dieser kann verwendet werden, um Nachrichten
-zu filtern. Zum Beispiel kann er für Requests oder Callback-Registrierungen, die Statusinformationen abfragen
-auf ``/STATUS`` gesetzt werden. Ein anderer MQTT-Client kann sich dann auf ``[<GLOBAL_PREFIX>/]+/+/+/+/STATUS`` registrieren
-um alle Statusmeldungen zu erhalten.
+zu filtern. Siehe :ref:`hier <mqtt_topic_suffixes>` für Details.
 
 Ein typisches Request-Topic sieht aus wie folgt: ``tinkerforge/request/rgb_led_button_bricklet/Dod/get_color``.
 Die Antwort auf diesen Request wird von den Bindungs unter
@@ -137,17 +135,17 @@ Requests und Responses
 ^^^^^^^^^^^^^^^^^^^^^^
 
 Um eine Funktion eines Bricks oder Bricklets aufzurufen, muss eine Nachricht im JSON-Format im entsprechenden
-'request'-Topic gepublisht werden. Um zum Beispiel mit mosquitto_pub die Farbe des RGB LED Button Bricklets mit der UID Enx auf Gelb zu setzen,
+``request``-Topic gepublisht werden. Um zum Beispiel mit mosquitto_pub die Farbe des RGB LED Button Bricklets mit der UID Enx auf Gelb zu setzen,
 kann folgender Befehl verwendet werden::
     
   mosquitto_pub -t tinkerforge/request/rgb_led_button_bricklet/Enx/set_color -m '{"red":255, "green":127, "blue":0}'
 
-Funktionen geben Werte unter 'response'-Topics zurück. Folgendermaßen kann die aktuelle Farbe des selben Bricklets abgefragt werden::
+Funktionen geben Werte unter ``response``-Topics zurück. Folgendermaßen kann die aktuelle Farbe des selben Bricklets abgefragt werden::
     
   mosquitto_sub -t tinkerforge/response/rgb_led_button_bricklet/Enx/get_color
   mosquitto_pub -t tinkerforge/request/rgb_led_button_bricklet/Enx/get_color -m ''
   
-Auch aufgetretene Fehler werden unter 'response'-Topics gepublisht, zum Beispiel wird, falls ein Parameter fehlt::
+Auch aufgetretene Fehler werden unter ``response``-Topics gepublisht, zum Beispiel wird, falls ein Parameter fehlt::
   
   mosquitto_sub -t tinkerforge/response/rgb_led_button_bricklet/Enx/set_color
   mosquitto_pub -t tinkerforge/request/rgb_led_button_bricklet/Enx/set_color -m '{"red":255, "blue":0}'
@@ -162,11 +160,11 @@ Fehler werden auch auf der Standardausgabe der Bindings ausgegeben.
 Callbacks
 ^^^^^^^^^
 
-Callbacks können auf 'register'-Topics registriert werden::
+Callbacks können auf ``register``-Topics registriert werden::
   
   mosquitto_pub -t tinkerforge/register/rgb_led_button_bricklet/Enx/button_state_changed -m 'true'
   
-und werden auf den entsprechenden 'callback'-Topics ausgelöst::
+und werden auf den entsprechenden ``callback``-Topics ausgelöst::
 
   mosquitto_sub -t tinkerforge/callback/rgb_led_button_bricklet/Enx/button_state_changed
   
@@ -177,16 +175,20 @@ gibt Nachrichten der Form::
 
 zurück, wenn der Taster gedrückt und losgelassen wird.
 
-Um ein Callback zu deregistrieren, kann als Payload 'false' statt 'true' verwendet werden.
+Um ein Callback zu deregistrieren, kann als Payload ``false`` statt ``true`` verwendet werden.
 Außerdem ist es möglich, stattdessen ``{"register":  true}`` und ``{"register": false}`` zu verwenden.
 
 Die Callback-Konfiguration funktioniert analog zu den anderen Bindings. Wenn ein Callback aktiviert
 und/oder konfiguriert werden muss, müssen folgende Schritte durchgeführt werden:
 
-  - Subscriben auf dem 'callback'-Topic
-  - Publishen der Registrierung auf dem 'register'-Topic
-  - Publishen der Konfiguration der Callback-Eigenschaften wie z.B. der Periode
-  - Publishen der Aktivierung des Callbacks über das 'request'-Topic
+* Subscriben des ``callback``-Topics
+* Publishen der Registrierung auf das ``register``-Topic
+* Publishen der Konfiguration der Callback-Eigenschaften wie z.B. der Periode
+* Publishen der Aktivierung des Callbacks über das ``request``-Topic
+
+Um alle Callbacks der Devices und IP-Connection zu deregistrieren, kann folgendes Topic benutzt werden::
+
+  mosquitto_pub -t tinkerforge/request/bindings/reset_callbacks -m ''
 
 Laden initialer Nachrichten aus einer Datei
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -203,12 +205,30 @@ IMU Brick 2.0 registriert und dessen Periode auf 100ms konfiguriert::
      "tinkerforge/request/imu_v2_brick/XXYYZZ/set_all_data_period": {"period": 100}
  }
 
+Seit Version 2.0.8 kann zwischen Nachrichten, die vor oder nach dem Verbindungsaufbau zum Brick Daemon, der Wifi oder der Ethernet Extension verarbeitet werden sollen, unterschieden weden. Das erlaubt es, Callback zu registrieren, bevor eine Verbindung besteht (zum Beispiel das connected-Callback der IP-Connection). Die Syntax ist wie folgt::
+
+ {
+     "pre-connect": {
+         "tinkerforge/register/ip_connection/connected": {"register": true},
+         "tinkerforge/register/ip_connection/enumerate": {"register": true}
+     },
+     "post-connect": {
+         "tinkerforge/request/ip_connection/enumerate": ""
+     }
+ }
+
+Diese Datei registriert das connected- und enumerate-Callback vor dem Verbindungsaufbau und löst sofort danach eine Enumerierung aus.
+
+Init-Dateien, die die alte Syntax ohne pre/post-connect verwenden, werden ausgeführt, nachdem die Verbindung hergestellt wurde.
+ 
 Topic-Präfixe
 ^^^^^^^^^^^^^
 
-Die Bindings können mit dem '--global-topic-prefix'-Parameter auf einen anderen globalen Präfix konfiguriert werden.
+Die Bindings können mit dem ``--global-topic-prefix``-Parameter auf einen anderen globalen Präfix konfiguriert werden.
 Der Präfix kann beispielsweise verwendet werden, um mehrere Binding-Instanzen die mit dem selben Broker verbunden sind zu trennen.
 Der Präfix kann beliebig lang sein, zum Beispiel ``tf/instance/1/foo/bar``.
+
+.. _mqtt_topic_suffixes:
 
 Topic-Suffixe
 ^^^^^^^^^^^^^
@@ -224,7 +244,7 @@ Um alle Callbacks von Bricks/Bricklets in Raum 1 zu empfangen, kann auf folgende
   
   mosquitto_sub -t tinkerforge/callback/+/+/+/room/1
 
-Es werden dann Callback-Nachrichten von 'Enx' und 'Dod' empfangen, aber nicht von 'gBs'.
+Es werden dann Callback-Nachrichten von ``Enx`` und ``Dod`` empfangen, aber nicht von ``gBs``.
 
 Um alle Nachrichten zu erhalten kann sich auf::
 
@@ -233,12 +253,17 @@ Um alle Nachrichten zu erhalten kann sich auf::
  
 subscribt werden.
 
-Start der Bindings
-------------------
+Start und Stop der Bindings
+---------------------------
 
-Die Bindings publishen beim Start eine Nachricht auf ``[GLOBAL_PREFIX]/callback/bindings/restart`` mit ``null``
+Die Bindings publishen beim Start, direkt nachdem sie zum MQTT-Broker verbunden sind, eine Nachricht auf ``tinkerforge/callback/bindings/restart`` mit ``null``
 als Payload. Diese Nachricht kann als Neustart-Signal verwendet werden. Es müssen dann alle verwendeten Callbacks neugestartet werden.
 
+Wenn die Bindungs normal beendet werden, publishen sie eine ``null``-Nachticht auf ``tinkerforge/callback/bindings/shutdown``, bevor die Verbindung zum MQTT-Broker geschlossen wird.
+
+Falls die Verbindung zum Broker unerwartet abbricht, wird durch den Last-Will-Mechanismus von MQTT eine ``null``-Nachricht auf ``tinkerforge/callback/bindings/last_will`` gepublisht.
+
+Diese Nachrichten werden gesendet, bevor die Verbindung zum Brick Daemon, der Wifi- oder Ethernet-Extension besteht, beziehungweise nachdem diese geschlossen wurde. Falls auf Änderungen des Zustands dieser Verbindung reagiert werden soll, können stattdessen die Callbacks der :ref:`IP-Connection <ipcon_mqtt>` verwendet werden.
 
 Kommandozeilenargumente
 -----------------------

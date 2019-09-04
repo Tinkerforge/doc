@@ -54,6 +54,23 @@ Grundfunktionen
  Broadcast einer Enumerierungsanfrage. Alle Bricks und Bricklets werden mit einem
  Enumerate Callback antworten.
 
+.. mqtt:function:: request/ip_connection/get_connection_state
+
+ :response connection_state: int `(hat Symbole)`
+
+ Kann die folgenden Zustände zurückgeben:
+ 
+ * 0: Keine Verbindung aufgebaut.
+ * 1: Eine Verbindung zum Brick Daemon oder der WIFI/Ethernet Extension ist aufgebaut.
+ * 2: IP-Connection versucht im Moment eine Verbindung aufzubauen.
+ 
+ Die folgenden Symbole sind für diese Funktion verfügbar:
+ 
+ für connection_state: 
+ 
+ * 0: "disconnected"
+ * 1: "connected"
+ * 2: "pending"
  
 Callbacks
 ^^^^^^^^^
@@ -96,9 +113,9 @@ Mit diesem Suffix kann das Callback später deregistriert werden.
    Für einen Brick ist es die UID des untersten Master Bricks in einem Stapel.
    Der unterste Master Brick hat die Connected-UID "0". Mit diesen Informationen
    sollte es möglich sein die komplette Netzwerktopologie zu rekonstruieren.
- * ``position``: Für Bricks: '0' - '8' (Position in Stapel). Für Bricklets:
-   'a' - 'h' (Position an Brick) oder 'i' (Position des Raspberry Pi (Zero) HAT)
-   oder 'z' (Bricklet an :ref:`Isolator Bricklet <isolator_bricklet>`).
+ * ``position``: Für Bricks: ``0`` - ``8`` (Position in Stapel). Für Bricklets:
+   ``a`` - ``h`` (Position an Brick) oder ``i`` (Position des Raspberry Pi (Zero) HAT)
+   oder ``z`` (Bricklet an :ref:`Isolator Bricklet <isolator_bricklet>`).
  * ``hardware_version``: Major, Minor und Release Nummer der Hardwareversion.
  * ``firmware_version``: Major, Minor und Release Nummer der Firmwareversion.
  * ``device_identifier``: Eine Zahl, welche den Brick/Bricklet repräsentiert. Falls die symbolische Ausgabe nicht 
@@ -114,7 +131,7 @@ Mit diesem Suffix kann das Callback später deregistriert werden.
  für enumeration_type:
 
  * 0: "available": Gerät ist verfügbar (Enumerierung vom Benutzer ausgelöst: :mqtt:func:`enumerate <register/ip_connection/enumerate>`). Diese Enumerierungsart kann mehrfach für das selbe Gerät auftreten.
- * 0: "available": Gerät wurde neu verbunden (Automatisch vom Brick gesendet nachdem die Kommunikation aufgebaut wurde). Dies kann bedeuten, dass das Gerät die vorher eingestellte Konfiguration verloren hat und neu konfiguriert werden muss.
+ * 1: "connected": Gerät wurde neu verbunden (Automatisch vom Brick gesendet nachdem die Kommunikation aufgebaut wurde). Dies kann bedeuten, dass das Gerät die vorher eingestellte Konfiguration verloren hat und neu konfiguriert werden muss.
  * 2: "disconnected": Gerät wurde getrennt (Nur bei USB-Verbindungen möglich). In diesem Fall haben nur ``uid`` und ``enumeration_type`` einen gültigen Wert.
 
  Es sollte möglich sein Plug-and-Play-Funktionalität mit diesem Callback zu implementieren (wie es im Brick Viewer geschieht).

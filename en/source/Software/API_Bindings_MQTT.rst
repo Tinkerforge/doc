@@ -78,8 +78,8 @@ MQTT topics are structured as follows: ``[<GLOBAL_PREFIX>/]<OPERATION>/<DEVICE>[
 It can be changed using the ``--global-topic-prefix`` command line flag.
 The  prefix can be used to disambiguate multiple instances of the MQTT Bindings.
 It can contain multiple topic levels, for example ``tinkerforge/living_room/sensors/``.
-If the prefix does not end with a '/', one is inserted, except if you select an empty prefix.
-Then all topics start with the operation. Note that this is not recommended. Also note, that '/'
+If the prefix does not end with a ``/``, one is inserted, except if you select an empty prefix.
+Then all topics start with the operation. Note that this is not recommended. Also note, that ``/``
 is a valid prefix.
 
 ``<OPERATION>`` denotes the type of request. It can be one of ``request``, ``response``, ``register`` or ``callback``.
@@ -95,10 +95,8 @@ this has to be empty and with no slashes, for example: ``.../ip_connection/enume
 
 ``<FUNCTION>`` is the function to call, or the callback to register to, written in snake_case.
 
-``[/<SUFFIX>]`` is the optional suffix to attach to responses. This can be used to allow message
-filtering, for example by setting it to ``/STATUS`` for requests or callback registrations which
-query status information. Another MQTT client can then register to ``[<GLOBAL_PREFIX>/]+/+/+/+/STATUS`` to
-receive all status information tagged as such.
+``[/<SUFFIX>]`` is the optional suffix to attach to responses. This can be for example used to allow message
+filtering. See :ref:`here <mqtt_topic_suffixes>` for details.
 
 A typical request topic looks like this: ``tinkerforge/request/rgb_led_button_bricklet/Dod/get_color``.
 The response to this request (or an error) will be published under
@@ -130,19 +128,19 @@ Callback (de)registrations can use either ``{"register": true/false}`` or ``true
 Requests and Responses
 ^^^^^^^^^^^^^^^^^^^^^^
 
-To call a Brick or Bricklet function, publish a JSON encoded message under the corresponding 'request' topic.
+To call a Brick or Bricklet function, publish a JSON encoded message under the corresponding ``request`` topic.
 For example to set the color of a RGB LED Button Bricklet with UID Enx to yellow using
 the mosquitto_pub tool::
     
   mosquitto_pub -t tinkerforge/request/rgb_led_button_bricklet/Enx/set_color -m '{"red":255, "green":127, "blue":0}'
 
-Functions which return values do so under the corresponding 'response' topic.
+Functions which return values do so under the corresponding ``response`` topic.
 To query the current color of the same Bricklet use::
     
   mosquitto_sub -t tinkerforge/response/rgb_led_button_bricklet/Enx/get_color
   mosquitto_pub -t tinkerforge/request/rgb_led_button_bricklet/Enx/get_color -m ''
 
-Occured errors are published under the 'response' topic. If for example a parameter is missing::
+Occured errors are published under the ``response`` topic. If for example a parameter is missing::
     
   mosquitto_sub -t tinkerforge/response/rgb_led_button_bricklet/Enx/set_color
   mosquitto_pub -t tinkerforge/request/rgb_led_button_bricklet/Enx/set_color -m '{"red":255, "blue":0}'
@@ -157,11 +155,11 @@ Error messages are also printed to the binding's stdout.
 Callbacks
 ^^^^^^^^^
 
-Callbacks can be registered under the 'register' topic::
+Callbacks can be registered under the ``register`` topic::
   
   mosquitto_pub -t tinkerforge/register/rgb_led_button_bricklet/Enx/button_state_changed -m 'true'
   
-and will be published under the 'callback' topic::
+and will be published under the ``callback`` topic::
 
   mosquitto_sub -t tinkerforge/callback/rgb_led_button_bricklet/Enx/button_state_changed
   
@@ -172,15 +170,19 @@ returns::
 
 whenever the button is pressed and released.
 
-To deregister a callback, pass 'false' as payload instead of 'true'. It is also possible to use ``{"register":  true}`` and ``{"register": false}`` as (de)registration arguments.
+To deregister a callback, pass ``false`` as payload instead of ``true``. It is also possible to use ``{"register":  true}`` and ``{"register": false}`` as (de)registration arguments.
 
 Callback configuration functions work exactly like in other bindings,
 so if a callback has to be activated and/or configured you need to:
 
-  - subscribe to the 'callback' topic
-  - publish the registation to the callback using the 'register' topic
-  - publish the configuration of the callbacks properties such as period
-  - publish the callback activation with the corresponding 'request' topic
+* subscribe to the ``callback`` topic
+* publish the registation to the callback using the ``register`` topic
+* publish the configuration of the callbacks properties such as period
+* publish the callback activation with the corresponding ``request`` topic
+
+To deregister all callbacks from all devices and the IP connection, you can use the following topic::
+  
+  mosquitto_pub -t tinkerforge/request/bindings/reset_callbacks -m ''
 
 Loading initial messages from a file
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -196,14 +198,31 @@ and configures the period of the callback to 100ms::
      "tinkerforge/request/imu_v2_brick/XXYYZZ/set_all_data_period": {"period": 100}
  } 
 
+Since version 2.0.8, it is possible to separate between messages to be processed before and after the connection to the Brick Daemon, Wifi, or Ethernet Extension is established. This allows registration of callbacks (i.e. the connected callback of the IP connection) before connecting. The syntax is as follows::
 
+ {
+     "pre-connect": {
+         "tinkerforge/register/ip_connection/connected": {"register": true},
+         "tinkerforge/register/ip_connection/enumerate": {"register": true}
+     },
+     "post-connect": {
+         "tinkerforge/request/ip_connection/enumerate": ""
+     }
+ }
+
+This will register the connected and enumerate callbacks before connecting and immediatly trigger an enumeration when connected.
+
+Init files using the old syntax without pre/post-connect, will be executed after the connection is established.
+ 
 Topic prefix
 ^^^^^^^^^^^^
 
 The bindings can be configured to use another global prefix for all topics
-using the '--global-topic-prefix' parameter. The prefix can be used to disambiguate
+using the ``--global-topic-prefix`` parameter. The prefix can be used to disambiguate
 between two or more binding instances connected to the same broker.
-The prefix can be as long as needed, for example tf/instance/1/foo/bar.
+The prefix can be as long as needed, for example ``tf/instance/1/foo/bar``.
+
+.. _mqtt_topic_suffixes:
 
 Topic suffixes
 ^^^^^^^^^^^^^^
@@ -219,39 +238,46 @@ To receive all callbacks sent from devices in room 1 subscribe to::
   
   mosquitto_sub -t tinkerforge/callback/+/+/+/room/1
 
-This subscription will receive callback events generated by 'Enx' and 'Dod' but not 'gBs'.
+This subscription will receive callback events generated by ``Enx`` and ``Dod`` but not ``gBs``.
 
 To receive all messages subscribe to::
 
   mosquitto_sub -t tinkerforge/callback/#
   mosquitto_sub -t tinkerforge/response/#
  
-Start up
---------
+Start up and shut down
+----------------------
 
-The bindings will publish a message to ``[GLOBAL_PREFIX]/callback/bindings/restart`` with 'null' as payload.
+The bindings will publish a message to ``tinkerforge/callback/bindings/restart`` with ``null`` as payload directly after connecting to the MQTT broker.
 This message can be used as a signal that the bindings where restarted. You then need to re-register all required callbacks.
+
+If the bindings are shutting down normally, they will publish a ``null`` message to ``tinkerforge/callback/bindings/shutdown`` before disconnecting from the MQTT broker.
+
+If the connection between the bindings and the broker is lost unexpectedly, a ``null`` message is published to ``tinkerforge/callback/bindings/last_will`` using MQTT's last will mechanism.
+
+Note that these messages are sent before the the connection to the Brick Daemon, Wifi or Ethernet Extension is established respectively after this connection is disconnected. If you want to react to changes to the state of this connection, it is recommended to use the callbacks of the :ref:`IP connection <ipcon_mqtt>`.
+
 
 
 Command line arguments
 ----------------------
 
- * ``-h, --help`` show this help message and exit
- * ``--ipcon-host <IPCON_HOST>`` hostname or IP address of Brick Daemon, WIFI or Ethernet Extension (default: localhost)
- * ``--ipcon-port <IPCON_PORT>`` port number of Brick Daemon, WIFI or Ethernet Extension (default: 4223)
- * ``--ipcon-auth-secret <IPCON_AUTH_SECRET>`` authentication secret of Brick Daemon, WIFI or Ethernet Extension
- * ``--ipcon-timeout <IPCON_TIMEOUT>`` timeout in milliseconds for communication with Brick Daemon, WIFI or Ethernet Extension (default: 2500)
- * ``--broker-host <BROKER_HOST>`` hostname or IP address of MQTT broker (default: localhost)
- * ``--broker-port <BROKER_PORT>`` port number of MQTT broker (default: 1883)
- * ``--broker-username <BROKER_USERNAME>`` username for the MQTT broker connection
- * ``--broker-password <BROKER_PASSWORD>`` password for the MQTT broker connection
- * ``--broker-certificate <BROKER_CERTIFICATE>`` Certificate Authority certificate file used for SSL/TLS connections to the broker
- * ``--broker-tls-insecure`` disable verification of the server hostname in the server certificate for the MQTT broker connection
- * ``--global-topic-prefix <GLOBAL_TOPIC_PREFIX>`` global MQTT topic prefix (default: tinkerforge/)
- * ``--debug`` enable debug output
- * ``--no-symbolic-response`` disable translation into string constants for responses
- * ``--show-payload`` show received payload if JSON parsing fails
- * ``--init-file <INIT_FILE>`` file from where to load initial messages to publish
+* ``-h, --help`` show this help message and exit
+* ``--ipcon-host <IPCON_HOST>`` hostname or IP address of Brick Daemon, WIFI or Ethernet Extension (default: localhost)
+* ``--ipcon-port <IPCON_PORT>`` port number of Brick Daemon, WIFI or Ethernet Extension (default: 4223)
+* ``--ipcon-auth-secret <IPCON_AUTH_SECRET>`` authentication secret of Brick Daemon, WIFI or Ethernet Extension
+* ``--ipcon-timeout <IPCON_TIMEOUT>`` timeout in milliseconds for communication with Brick Daemon, WIFI or Ethernet Extension (default: 2500)
+* ``--broker-host <BROKER_HOST>`` hostname or IP address of MQTT broker (default: localhost)
+* ``--broker-port <BROKER_PORT>`` port number of MQTT broker (default: 1883)
+* ``--broker-username <BROKER_USERNAME>`` username for the MQTT broker connection
+* ``--broker-password <BROKER_PASSWORD>`` password for the MQTT broker connection
+* ``--broker-certificate <BROKER_CERTIFICATE>`` Certificate Authority certificate file used for SSL/TLS connections to the broker
+* ``--broker-tls-insecure`` disable verification of the server hostname in the server certificate for the MQTT broker connection
+* ``--global-topic-prefix <GLOBAL_TOPIC_PREFIX>`` global MQTT topic prefix (default: tinkerforge/)
+* ``--debug`` enable debug output
+* ``--no-symbolic-response`` disable translation into string constants for responses
+* ``--show-payload`` show received payload if JSON parsing fails
+* ``--init-file <INIT_FILE>`` file from where to load initial messages to publish
 
 
 API Reference and Examples

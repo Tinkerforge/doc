@@ -54,6 +54,23 @@ Basic Functions
  Broadcasts an enumerate request. All devices will respond with an enumerate
  callback.
 
+.. mqtt:function:: request/ip_connection/get_connection_state
+
+ :response connection_state: int `(has symbols)`
+
+ Can return the following states:
+ 
+ * 0: No connection is established.
+ * 1: A connection to the Brick Daemon or the WIFI/Ethernet Extension is established.
+ * 2: IP Connection is currently trying to connect.
+ 
+ The following symbols are available for this function:
+ 
+ for connection_state: 
+ 
+ * 0: "disconnected"
+ * 1: "connected"
+ * 2: "pending"
  
 Callbacks
 ^^^^^^^^^
@@ -115,7 +132,7 @@ This suffix can be used to deregister the callback later.
  * 0: "available": Device is available
    (enumeration triggered by user: :mqtt:func:`enumerate <register/ip_connection/enumerate>`).
    This enumeration type can occur multiple times for the same device.
- * 0: "available":: Device is newly connected
+ * 1: "connected": Device is newly connected
    (automatically send by Brick after establishing a communication connection).
    This indicates that the device has potentially lost its previous
    configuration and needs to be reconfigured.
