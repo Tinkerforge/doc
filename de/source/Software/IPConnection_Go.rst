@@ -1,6 +1,6 @@
 
 .. |ref_api_bindings| replace:: :ref:`Go API bindings <api_bindings_go>`
-.. |ref_install_guide| replace:: :ref:`installation guide <api_bindings_go_install>`
+.. |ref_install_guide| replace:: :ref:`Installationanleitung <api_bindings_go_install>`
 .. |bindings_name| replace:: Go
 
 .. _ipcon_go:
