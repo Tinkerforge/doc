@@ -263,7 +263,9 @@ werden weiter unten beschrieben.
 
  Die Device Identifier Werte sind :ref:`hier <device_identifier>` zu finden.
  Es gibt auch Konstanten für diese Werte, welche nach dem folgenden Muster
- benannt sind::
+ benannt sind:
+
+ .. code-block:: none
 
   <device-type>_DEVICE_IDENTIFIER
 

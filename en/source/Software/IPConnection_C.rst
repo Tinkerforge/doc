@@ -257,7 +257,9 @@ described below.
  (as is done in Brick Viewer).
 
  The device identifier numbers can be found :ref:`here <device_identifier>`.
- There are also constants for these numbers named following this pattern::
+ There are also constants for these numbers named following this pattern:
+
+ .. code-block:: none
 
   <device-type>_DEVICE_IDENTIFIER
 
