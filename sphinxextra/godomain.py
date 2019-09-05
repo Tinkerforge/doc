@@ -25,6 +25,7 @@ from sphinx.util.docfields import TypedField
 
 from sphinxextra.utils import fixup_index_entry
 
+_module_re = re.compile(r'[a-z0-9_]+\.')
 _identifier_re = re.compile(r'\b(~?[a-zA-Z_][a-zA-Z0-9_]*[\[\]]*)')
 _whitespace_re = re.compile(r'\s+(?u)')
 
@@ -140,6 +141,11 @@ class DefinitionParser(object):
 
         self.skip_ws()
 
+        if self.match(_module_re):
+            module_name = self.matched_text[:-1]
+        else:
+            module_name = None
+
         is_method = False
         if self.skip_string('(*'):
             is_method = True
@@ -159,8 +165,9 @@ class DefinitionParser(object):
         if not is_method:
             if "New" in fn_name:
                 device_name = fn_name.replace("New", "")
+                fn_name = "New"
             else:
-                self.fail('Found function ' + self.definition + ' which was neither a method nor a constructor (thus the bricklet name is unknown).')
+                self.fail('Found function ' + self.definition + ' which was neither a method nor a constructor (thus the device name is unknown).')
 
         if not self.skip_string('('):
             self.fail('Expected "(" as start of parameter list')
@@ -186,7 +193,9 @@ class DefinitionParser(object):
         result += addnodes.desc_annotation("func ", "func ")
         if is_method:
             result += addnodes.desc_addname("(*" + device_name + ")", "(*" + device_name + ")")
-            result += addnodes.desc_annotation(" ", " ")
+            result += nodes.Text(' ')
+        else:
+            result += addnodes.desc_addname(module_name + ".", module_name + ".")
         result += addnodes.desc_name(fn_name, fn_name)
 
         paramList = addnodes.desc_parameterlist()
@@ -195,7 +204,7 @@ class DefinitionParser(object):
         result += paramList
 
         if len(returns) > 0:
-            result += addnodes.desc_annotation(" ", " ")
+            result += nodes.Text(' ')
             returnList = addnodes.desc_parameterlist()
             for ret in returns:
                 returnList += ret
@@ -205,7 +214,7 @@ class DefinitionParser(object):
 
     def parse_constant(self):
         if self.match(_identifier_re):
-            device_name = self.matched_text + "."
+            module_name = self.matched_text + "."
         else:
             self.fail('Expected device name (identifier)')
 
@@ -218,9 +227,9 @@ class DefinitionParser(object):
             self.fail('Expected constant name (identifier)')
 
         result = addnodes.desc_signature("const " + self.definition)
-        result += addnodes.desc_addname(device_name, device_name)
+        result += addnodes.desc_addname(module_name, module_name)
         result += addnodes.desc_name(constant_name, constant_name)
-        result['struct'] = device_name + constant_name
+        result['struct'] = module_name + constant_name
         result['fn'] = ''
 
         return result
