@@ -110,7 +110,7 @@ Grundfunktionen
  ist, versucht die IP Connection eine Verbindung zum vorher angegebenen Host
  und Port wieder herzustellen, falls die aktuell bestehende Verbindung verloren
  geht. Auto-Reconnect greift also erst nach einem erfolgreichen Aufruf von
- :go:func:`connect() <(*IPConnection) Connect>`.
+ :go:func:`Connect() <(*IPConnection) Connect>`.
 
  Standardwert ist *true*.
 
@@ -130,7 +130,7 @@ Grundfunktionen
 
 .. go:function:: func (*IPConnection) GetTimeout() (timeout time.Duration)
 
- Gibt den Timeout zurück, wie er von :go:func:`set_timeout() <(*IPConnection) SetTimeout>` gesetzt wurde.
+ Gibt den Timeout zurück, wie er von :go:func:`SetTimeout() <(*IPConnection) SetTimeout>` gesetzt wurde.
 
 
 .. go:function:: func (*IPConnection) Enumerate()
@@ -157,23 +157,23 @@ hinzuzufügen und auch mit einem korrespondierenden ``Deregister*Callback()``-Au
 wieder zu entfernen. Dieser erwartet eine Registrierungs-ID, die von ``Register*Callback()`` zurückgegeben wurde
 
 
-.. go:function:: func (*IPConnection) RegisterEnumerateCallback(func(response EnumerateResponse)) (registrationId uint64)
+.. go:function:: func (*IPConnection) RegisterEnumerateCallback(func(uid string, connectedUid string, position rune, hardwareVersion [3]uint8, firmwareVersion [3]uint8, deviceIdentifier uint16, enumerationType EnumerationType)) (registrationId uint64)
 
- Dieses Callback empfängt eine Struktur mit sieben Feldern:
+ Dieses Callback empfängt sieben Parameter:
 
- * ``UID``: Die UID des Bricks/Bricklets.
- * ``ConnectedUID``: Die UID des Bricks mit dem das Brick/Bricklet verbunden
+ * ``uid``: Die UID des Bricks/Bricklets.
+ * ``connectedUid``: Die UID des Bricks mit dem das Brick/Bricklet verbunden
    ist. Für ein Bricklet ist dies die UID des Bricks mit dem es verbunden ist.
    Für einen Brick ist es die UID des untersten Master Bricks in einem Stapel.
    Der unterste Master Brick hat die Connected-UID "0". Mit diesen Informationen
    sollte es möglich sein die komplette Netzwerktopologie zu rekonstruieren.
- * ``Position``: Für Bricks: '0' - '8' (Position in Stapel). Für Bricklets:
+ * ``position``: Für Bricks: '0' - '8' (Position in Stapel). Für Bricklets:
    'a' - 'h' (Position an Brick) oder 'i' (Position des Raspberry Pi (Zero) HAT)
    oder 'z' (Bricklet an :ref:`Isolator Bricklet <isolator_bricklet>`).
- * ``HardwareVersion``: Major, Minor und Release Nummer der Hardwareversion.
- * ``FirmwareVersion``: Major, Minor und Release Nummer der Firmwareversion.
- * ``DeviceIdentifier``: Eine Zahl, welche den Brick/Bricklet repräsentiert.
- * ``EnumerationType``: Art der Enumerierung.
+ * ``hardwareVersion``: Major, Minor und Release Nummer der Hardwareversion.
+ * ``firmwareVersion``: Major, Minor und Release Nummer der Firmwareversion.
+ * ``deviceIdentifier``: Eine Zahl, welche den Brick/Bricklet repräsentiert.
+ * ``enumerationType``: Art der Enumerierung.
 
  Mögliche Enumerierungsarten sind:
 
@@ -192,7 +192,7 @@ wieder zu entfernen. Dieser erwartet eine Registrierungs-ID, die von ``Register*
  Zum Beispiel: :go:const:`master_brick.DeviceIdentifier` oder :go:const:`ambient_light_bricklet.DeviceIdentifier`.
 
 
-.. go:function:: func (*IPConnection) RegisterConnectCallback(func(reason uint8)) (registrationId uint64)
+.. go:function:: func (*IPConnection) RegisterConnectCallback(func(reason ConnectReason)) (registrationId uint64)
 
  Dieses Callback wird aufgerufen wenn die IP Connection eine Verbindung zu einem Brick Daemon oder einer WIFI/Ethernet Extension aufgebaut hat, mögliche Gründe sind:
 
@@ -200,7 +200,7 @@ wieder zu entfernen. Dieser erwartet eine Registrierungs-ID, die von ``Register*
  * ConnectReasonAutoReconnect: Verbindung aufgebaut durch Auto-Reconnect.
 
 
-.. go:function:: func (*IPConnection) RegisterDisconnectCallback(func(reason uint8)) (registrationId uint64)
+.. go:function:: func (*IPConnection) RegisterDisconnectCallback(func(reason DisconnectReason)) (registrationId uint64)
 
  Dieses Callback wird aufgerufen wenn die Verbindung der IP Connection zu einem Brick Daemon oder einer WIFI/Ethernet Extension getrennt wurde, mögliche Gründe sind:
 

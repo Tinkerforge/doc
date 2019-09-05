@@ -107,7 +107,7 @@ Basic Functions
  the IP Connection will try to reconnect to the previously given
  address, if the currently existing connection is lost.
  Therefore, auto-reconnect only does something after a successful
- :go:func:`connect() <(*IPConnection) Connect>` call.
+ :go:func:`Connect() <(*IPConnection) Connect>` call.
 
  Default value is *true*.
 
@@ -127,7 +127,7 @@ Basic Functions
 
 .. go:function:: func (*IPConnection) GetTimeout() (timeout time.Duration)
 
- Returns the timeout as set by :go:func:`set_timeout() <(*IPConnection) SetTimeout>`.
+ Returns the timeout as set by :go:func:`SetTimeout() <(*IPConnection) SetTimeout>`.
 
 
 .. go:function:: func (*IPConnection) Enumerate()
@@ -153,23 +153,23 @@ to remove them with the corresponding ``Deregister*Callback()`` function, which 
 registration ID returned by ``Register*Callback()``.
 
 
-.. go:function:: func (*IPConnection) RegisterEnumerateCallback(func(response EnumerateResponse)) (registrationId uint64)
+.. go:function:: func (*IPConnection) RegisterEnumerateCallback(func(uid string, connectedUid string, position rune, hardwareVersion [3]uint8, firmwareVersion [3]uint8, deviceIdentifier uint16, enumerationType EnumerationType)) (registrationId uint64)
 
- The callback receives a struct with seven members:
+ The callback receives seven parameters:
 
- * ``UID``: The UID of the device.
- * ``ConnectedUID``: UID where the device is connected to. For a Bricklet this
+ * ``uid``: The UID of the device.
+ * ``connectedUid``: UID where the device is connected to. For a Bricklet this
    will be a UID of the Brick where it is connected to. For a Brick it will be
    the UID of the bottom Master Brick in the stack. For the bottom Master Brick
    in a stack this will be "0". With this information it is possible to
    reconstruct the complete network topology.
- * ``Position``: For Bricks: '0' - '8' (position in stack). For Bricklets:
+ * ``position``: For Bricks: '0' - '8' (position in stack). For Bricklets:
    'a' - 'h' (position on Brick) or 'i' (position of the Raspberry Pi (Zero) HAT)
    or 'z' (Bricklet on :ref:`Isolator Bricklet <isolator_bricklet>`).
- * ``HardwareVersion``: Major, minor and release number for hardware version.
- * ``FirmwareVersion``: Major, minor and release number for firmware version.
- * ``DeviceIdentifier``: A number that represents the device.
- * ``EnumerationType``: Type of enumeration.
+ * ``hardwareVersion``: Major, minor and release number for hardware version.
+ * ``firmwareVersion``: Major, minor and release number for firmware version.
+ * ``deviceIdentifier``: A number that represents the device.
+ * ``enumerationType``: Type of enumeration.
 
  Possible enumeration types are:
 
@@ -197,7 +197,7 @@ registration ID returned by ``Register*Callback()``.
  or :go:const:`ambient_light_bricklet.DeviceIdentifier`.
 
 
-.. go:function:: func (*IPConnection) RegisterConnectCallback(func(reason uint8)) (registrationId uint64)
+.. go:function:: func (*IPConnection) RegisterConnectCallback(func(reason ConnectReason)) (registrationId uint64)
 
  This event is triggered whenever the IP Connection got connected to a
  Brick Daemon or to a WIFI/Ethernet Extension, possible reasons are:
@@ -208,7 +208,7 @@ registration ID returned by ``Register*Callback()``.
    auto-reconnect.
 
 
-.. go:function:: func (*IPConnection) RegisterDisconnectCallback(func(reason uint8)) (registrationId uint64)
+.. go:function:: func (*IPConnection) RegisterDisconnectCallback(func(reason DisconnectReason)) (registrationId uint64)
 
  This event is triggered whenever the IP Connection got disconnected from a
  Brick Daemon or to a WIFI/Ethernet Extension, possible reasons are:
