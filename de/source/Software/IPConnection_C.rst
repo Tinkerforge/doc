@@ -217,7 +217,7 @@ Callback ID, der Callback Funktion und optionalen Benutzer Daten:
         printf("parameter: %d\n", p);
     }
 
-    ipcon_register_callback(&ipcon, IPCON_CALLBACK_EXAMPLE, (void *)my_callback, NULL);
+    ipcon_register_callback(&ipcon, IPCON_CALLBACK_EXAMPLE, (void (*)(void))my_callback, NULL);
 
 Die verfügbaren IDs mit den zugehörigen Callback Funktionssignaturen
 werden weiter unten beschrieben.

@@ -212,7 +212,7 @@ optional user data:
         printf("parameter: %d\n", p);
     }
 
-    ipcon_register_callback(&ipcon, IPCON_CALLBACK_EXAMPLE, (void *)my_callback, NULL);
+    ipcon_register_callback(&ipcon, IPCON_CALLBACK_EXAMPLE, (void (*)(void))my_callback, NULL);
 
 The available constants with corresponding callback function signatures are
 described below.
