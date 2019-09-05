@@ -66,8 +66,8 @@ Technical Specifications
 Property                            Value
 ==================================  ============================================================
 Relay                               Omron G5LE-1-36
-Current Consumption                 | 27mw (5.4mA at 5V) 
-                                    | + 350mw (70mA at 5V) per activated relay
+Current Consumption                 | 27mW (5.4mA at 5V)
+                                    | + 350mW (70mA at 5V) per activated relay
 ----------------------------------  ------------------------------------------------------------
 ----------------------------------  ------------------------------------------------------------
 Maximum Voltage/Current             | AC: 240V/10A

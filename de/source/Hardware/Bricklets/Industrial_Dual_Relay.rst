@@ -67,8 +67,8 @@ Technische Spezifikation
 Eigenschaft                         Wert
 ==================================  ============================================================
 Relais                              Omron G5LE-1-36
-Stromverbrauch                      | 27mw (5.4mA bei 5V) 
-                                    | + 350mw (70mA bei 5V) pro aktiviertem Relais
+Stromverbrauch                      | 27mW (5.4mA bei 5V)
+                                    | + 350mW (70mA bei 5V) pro aktiviertem Relais
 ----------------------------------  ------------------------------------------------------------
 ----------------------------------  ------------------------------------------------------------
 Maximale Spannung/Strom             | AC: 240V/10A
