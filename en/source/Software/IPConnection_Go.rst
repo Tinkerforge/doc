@@ -53,7 +53,7 @@ The IPConnection is defined in the package ``github.com/Tinkerforge/go-api-bindi
 Basic Functions
 ^^^^^^^^^^^^^^^
 
-.. go:function:: func NewIPConnection() (ipcon IPConnection)
+.. go:function:: func ipconnection.NewIPConnection() (ipcon IPConnection)
 
  Creates an IP Connection instance that can be used to enumerate the available
  devices. It is also required for the constructor of Bricks and Bricklets.
@@ -61,7 +61,7 @@ Basic Functions
 .. go:function:: func (*IPConnection) Close()
 
  Destroys this IP Connection and stops it's internal goroutines.
- 
+
 .. go:function:: func (*IPConnection) Connect(addr string) (err error)
 
  Creates a TCP/IP connection to the given ``addr`` with the form "host:port", as described `here <https://golang.org/pkg/net/#Dial>`_ . The host and port can refer to a Brick Daemon or to a WIFI/Ethernet Extension.
@@ -123,7 +123,7 @@ Basic Functions
  response expected flag is activated.
 
  Default timeout is 2500 ms.
- 
+
 
 .. go:function:: func (*IPConnection) GetTimeout() (timeout time.Duration)
 
@@ -135,24 +135,25 @@ Basic Functions
  Broadcasts an enumerate request. All devices will respond with an enumerate
  callback.
 
- 
+
 Callbacks
 ^^^^^^^^^
 
 Callbacks can be registered to be notified about events.  The registration is
-done with "Register*Callback" functions of the IPConnection object. For example:
+done with ``Register*Callback()`` functions of the IPConnection object. For example:
 
 .. code-block:: go
 
-    registrationID := ipcon.RegisterExampleCallback(func(param type) {
+    registrationId := ipcon.RegisterExampleCallback(func(param type) {
         fmt.Println(param)
-    });    
-    
+    });
+
 The available events are described below.  It is possible to add several callbacks and
-to remove them with the corresponding "Deregister*Callback" function, which expects a registration ID returned by "Register*Callback".
+to remove them with the corresponding ``Deregister*Callback()`` function, which expects a
+registration ID returned by ``Register*Callback()``.
 
 
-.. go:function:: func (*IPConnection) RegisterEnumerateCallback(func(response EnumerateResponse)) (registrationID uint64)
+.. go:function:: func (*IPConnection) RegisterEnumerateCallback(func(response EnumerateResponse)) (registrationId uint64)
 
  The callback receives a struct with seven members:
 
@@ -196,7 +197,7 @@ to remove them with the corresponding "Deregister*Callback" function, which expe
  or :go:const:`ambient_light_bricklet.DeviceIdentifier`.
 
 
-.. go:function:: func (*IPConnection) RegisterConnectCallback(func(reason ConnectReason)) (registrationID uint64)
+.. go:function:: func (*IPConnection) RegisterConnectCallback(func(reason uint8)) (registrationId uint64)
 
  This event is triggered whenever the IP Connection got connected to a
  Brick Daemon or to a WIFI/Ethernet Extension, possible reasons are:
@@ -207,7 +208,7 @@ to remove them with the corresponding "Deregister*Callback" function, which expe
    auto-reconnect.
 
 
-.. go:function:: func (*IPConnection) RegisterDisconnectCallback(func(reason DisconnectReason)) (registrationID uint64)
+.. go:function:: func (*IPConnection) RegisterDisconnectCallback(func(reason uint8)) (registrationId uint64)
 
  This event is triggered whenever the IP Connection got disconnected from a
  Brick Daemon or to a WIFI/Ethernet Extension, possible reasons are:
