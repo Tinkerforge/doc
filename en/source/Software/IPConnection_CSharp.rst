@@ -59,7 +59,7 @@ Basic Functions
  devices. It is also required for the constructor of Bricks and Bricklets.
 
 
-.. csharp:function:: public void IPConnection::Connect(String host, int port)
+.. csharp:function:: void IPConnection::Connect(String host, int port)
 
  Creates a TCP/IP connection to the given ``host`` and ``port``. The host and port
  can refer to a Brick Daemon or to a WIFI/Ethernet Extension.
@@ -72,13 +72,13 @@ Basic Functions
  and port.
 
 
-.. csharp:function:: public void IPConnection::Disconnect()
+.. csharp:function:: void IPConnection::Disconnect()
 
  Disconnects the TCP/IP connection from the Brick Daemon or the WIFI/Ethernet
  Extension.
 
 
-.. csharp:function:: public void IPConnection::Authenticate(string secret)
+.. csharp:function:: void IPConnection::Authenticate(string secret)
 
  Performs an authentication handshake with the connected Brick Daemon or
  WIFI/Ethernet Extension.
@@ -94,7 +94,7 @@ Basic Functions
  .. versionadded:: 2.1.0
 
 
-.. csharp:function:: public byte IPConnection::GetConnectionState()
+.. csharp:function:: byte IPConnection::GetConnectionState()
 
  Can return the following states:
 
@@ -105,7 +105,7 @@ Basic Functions
    trying to connect.
 
 
-.. csharp:function:: public void IPConnection::SetAutoReconnect(bool autoReconnect)
+.. csharp:function:: void IPConnection::SetAutoReconnect(bool autoReconnect)
 
  Enables or disables auto-reconnect. If auto-reconnect is enabled,
  the IP Connection will try to reconnect to the previously given
@@ -116,12 +116,12 @@ Basic Functions
  Default value is *true*.
 
 
-.. csharp:function:: public bool IPConnection::GetAutoReconnect()
+.. csharp:function:: bool IPConnection::GetAutoReconnect()
 
  Returns *true* if auto-reconnect is enabled, *false* otherwise.
 
 
-.. csharp:function:: public void IPConnection::SetTimeout(int timeout)
+.. csharp:function:: void IPConnection::SetTimeout(int timeout)
 
  Sets the timeout in milliseconds for getters and for setters for which the
  response expected flag is activated.
@@ -129,18 +129,18 @@ Basic Functions
  Default timeout is 2500.
 
 
-.. csharp:function:: public int IPConnection::GetTimeout()
+.. csharp:function:: int IPConnection::GetTimeout()
 
  Returns the timeout as set by :csharp:func:`SetTimeout() <IPConnection::SetTimeout>`.
 
 
-.. csharp:function:: public void IPConnection::Enumerate()
+.. csharp:function:: void IPConnection::Enumerate()
 
  Broadcasts an enumerate request. All devices will respond with an enumerate
  callback.
 
 
-.. csharp:function:: public void IPConnection::Wait()
+.. csharp:function:: void IPConnection::Wait()
 
  Stops the current thread until :csharp:func:`Unwait() <IPConnection::Unwait>`
  is called.
@@ -152,7 +152,7 @@ Basic Functions
  semaphore.
 
 
-.. csharp:function:: public void IPConnection::Unwait()
+.. csharp:function:: void IPConnection::Unwait()
 
  Unwaits the thread previously stopped by :csharp:func:`Wait() <IPConnection::Wait>`
 
@@ -178,7 +178,7 @@ done by appending your callback handler to the corresponding event:
 The available events are described below.
 
 
-.. csharp:function:: public event IPConnection::EnumerateCallback(IPConnection sender, string uid, string connectedUid, char position, short[] hardwareVersion, short[] firmwareVersion, int deviceIdentifier, short enumerationType)
+.. csharp:function:: event IPConnection::EnumerateCallback(IPConnection sender, string uid, string connectedUid, char position, short[] hardwareVersion, short[] firmwareVersion, int deviceIdentifier, short enumerationType)
 
  The event receives seven parameters:
 
@@ -218,11 +218,11 @@ The available events are described below.
 
   <device-class>.DEVICE_IDENTIFIER
 
- For example: :csharp:member:`BrickMaster.DEVICE_IDENTIFIER <BrickMaster::DEVICE_IDENTIFIER>`
- or :csharp:member:`BrickletAmbientLight.DEVICE_IDENTIFIER <BrickletAmbientLight::DEVICE_IDENTIFIER>`.
+ For example: :csharp:member:`BrickMaster::DEVICE_IDENTIFIER`
+ or :csharp:member:`BrickletAmbientLight::DEVICE_IDENTIFIER`.
 
 
-.. csharp:function:: public event IPConnection::ConnectedCallback(IPConnection sender, short connectReason)
+.. csharp:function:: event IPConnection::ConnectedCallback(IPConnection sender, short connectReason)
 
  This event is triggered whenever the IP Connection got connected to a
  Brick Daemon or to a WIFI/Ethernet Extension, possible reasons are:
@@ -233,7 +233,7 @@ The available events are described below.
    auto-reconnect.
 
 
-.. csharp:function:: public event IPConnection::DisconnectedCallback(IPConnection sender, short disconnectReason)
+.. csharp:function:: event IPConnection::DisconnectedCallback(IPConnection sender, short disconnectReason)
 
  This event is triggered whenever the IP Connection got disconnected from a
  Brick Daemon or to a WIFI/Ethernet Extension, possible reasons are:

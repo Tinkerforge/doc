@@ -57,7 +57,7 @@ Basic Functions
  devices. It is also required for the constructor of Bricks and Bricklets.
 
 
-.. java:function:: public void IPConnection::connect(String host, int port)
+.. java:function:: void IPConnection::connect(String host, int port)
 
  Creates a TCP/IP connection to the given ``host`` and ``port``. The host and port
  can refer to a Brick Daemon or to a WIFI/Ethernet Extension.
@@ -70,13 +70,13 @@ Basic Functions
  and port.
 
 
-.. java:function:: public void IPConnection::disconnect()
+.. java:function:: void IPConnection::disconnect()
 
  Disconnects the TCP/IP connection from the Brick Daemon or the WIFI/Ethernet
  Extension.
 
 
-.. java:function:: public void IPConnection::authenticate(String secret)
+.. java:function:: void IPConnection::authenticate(String secret)
 
  Performs an authentication handshake with the connected Brick Daemon or
  WIFI/Ethernet Extension.
@@ -92,7 +92,7 @@ Basic Functions
  .. versionadded:: 2.1.0
 
 
-.. java:function:: public byte IPConnection::getConnectionState()
+.. java:function:: byte IPConnection::getConnectionState()
 
  Can return the following states:
 
@@ -103,7 +103,7 @@ Basic Functions
    to connect.
 
 
-.. java:function:: public void IPConnection::setAutoReconnect(boolean autoReconnect)
+.. java:function:: void IPConnection::setAutoReconnect(boolean autoReconnect)
 
  Enables or disables auto-reconnect. If auto-reconnect is enabled,
  the IP Connection will try to reconnect to the previously given
@@ -114,12 +114,12 @@ Basic Functions
  Default value is *true*.
 
 
-.. java:function:: public boolean IPConnection::getAutoReconnect()
+.. java:function:: boolean IPConnection::getAutoReconnect()
 
  Returns *true* if auto-reconnect is enabled, *false* otherwise.
 
 
-.. java:function:: public void IPConnection::setTimeout(int timeout)
+.. java:function:: void IPConnection::setTimeout(int timeout)
 
  Sets the timeout in milliseconds for getters and for setters for which the
  response expected flag is activated.
@@ -127,12 +127,12 @@ Basic Functions
  Default timeout is 2500.
 
 
-.. java:function:: public int IPConnection::getTimeout()
+.. java:function:: int IPConnection::getTimeout()
 
  Returns the timeout as set by :java:func:`setTimeout() <IPConnection::setTimeout>`.
 
 
-.. java:function:: public void IPConnection::enumerate()
+.. java:function:: void IPConnection::enumerate()
 
  Broadcasts an enumerate request. All devices will respond with an enumerate
  callback.
@@ -159,12 +159,12 @@ are described below. It is possible to add several listeners and
 to remove them with the corresponding "removeListener" function.
 
 
-.. java:function:: public class IPConnection.EnumerateListener()
+.. java:function:: class IPConnection::EnumerateListener()
 
  This listener can be added with the ``addEnumerateListener()`` function.
  An added listener can be removed with the ``removeEnumerateListener()`` function.
 
- .. java:function:: public void enumerate(String uid, String connectedUid, char position, short[] hardwareVersion, short[] firmwareVersion, int deviceIdentifier, short enumerationType)
+ .. java:function:: void enumerate(String uid, String connectedUid, char position, short[] hardwareVersion, short[] firmwareVersion, int deviceIdentifier, short enumerationType)
   :noindex:
 
   The listener receives seven parameters:
@@ -205,16 +205,16 @@ to remove them with the corresponding "removeListener" function.
 
    <device-class>.DEVICE_IDENTIFIER
 
-  For example: :java:member:`BrickMaster.DEVICE_IDENTIFIER`
-  or :java:member:`BrickletAmbientLight.DEVICE_IDENTIFIER`.
+  For example: :java:member:`BrickMaster::DEVICE_IDENTIFIER`
+  or :java:member:`BrickletAmbientLight::DEVICE_IDENTIFIER`.
 
 
-.. java:function:: public class IPConnection.ConnectedListener()
+.. java:function:: class IPConnection::ConnectedListener()
 
  This listener can be added with the ``addConnectedListener()`` function.
  An added listener can be removed with the ``removeConnectedListener()`` function.
 
- .. java:function:: public void connected(short connectReason)
+ .. java:function:: void connected(short connectReason)
   :noindex:
 
   This listener is called whenever the IP Connection got connected to a
@@ -226,12 +226,12 @@ to remove them with the corresponding "removeListener" function.
     auto-reconnect.
 
 
-.. java:function:: public class IPConnection.DisconnectedListener()
+.. java:function:: class IPConnection::DisconnectedListener()
 
  This listener can be added with the ``addDisconnectedListener()`` function.
  An added listener can be removed with the ``removeDisconnectedListener()`` function.
 
- .. java:function:: public void disconnected(short disconnectReason)
+ .. java:function:: void disconnected(short disconnectReason)
   :noindex:
 
   This listener is called whenever the IP Connection got disconnected from a
