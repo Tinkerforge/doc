@@ -13,6 +13,8 @@ class CustomHTMLTranslator(BaseTranslator):
     def __init__(self, builder, *args, **kwds):
         BaseTranslator.__init__(self, builder, *args, **kwds)
 
+        self.settings.field_name_limit = 0 # stop docutils.writers.html4css1 from wrapping field names
+
     def visit_desc_parameterlist(self, node):
         if '.mathematicadomain.' in str(node.__class__):
             self.body.append('[')
