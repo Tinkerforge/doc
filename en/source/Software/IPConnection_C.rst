@@ -189,7 +189,7 @@ Basic Functions
 Callback Configuration Functions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. c:function:: void ipcon_register_callback(IPConnection *ipcon, int16_t callback_id, void *callback, void *user_data)
+.. c:function:: void ipcon_register_callback(IPConnection *ipcon, int16_t callback_id, void (*function)(void), void *user_data)
 
  Registers the given ``function`` with the given ``callback_id``. The
  ``user_data`` will be passed as the last parameter to the ``function``.
