@@ -96,8 +96,8 @@ Basic Functions
 
  Can return the following states:
 
- * IPConnection::CONNECTION_STATE_DISCONNECTED (0): No connection is established.
- * IPConnection::CONNECTION_STATE_CONNECTED (1): A connection to the Brick
+ * IPConnection::\ **CONNECTION_STATE**\ _DISCONNECTED = 0: No connection is established.
+ * IPConnection::\ **CONNECTION_STATE**\ _CONNECTED = 1: A connection to the Brick
    Daemon or the WIFI/Ethernet Extension  is established.
 
 
@@ -192,15 +192,15 @@ described below.
 
  Possible enumeration types are:
 
- * IPConnection::ENUMERATION_TYPE_AVAILABLE (0): Device is available
+ * IPConnection::\ **ENUMERATION_TYPE**\ _AVAILABLE = 0: Device is available
    (enumeration triggered by user: :php:func:`enumerate()
    <IPConnection::enumerate>`). This enumeration type can occur multiple times
    for the same device.
- * IPConnection::ENUMERATION_TYPE_CONNECTED (1): Device is newly connected
+ * IPConnection::\ **ENUMERATION_TYPE**\ _CONNECTED = 1: Device is newly connected
    (automatically send by Brick after establishing a communication connection).
    This indicates that the device has potentially lost its previous
    configuration and needs to be reconfigured.
- * IPConnection::ENUMERATION_TYPE_DISCONNECTED (2): Device is disconnected
+ * IPConnection::\ **ENUMERATION_TYPE**\ _DISCONNECTED = 2: Device is disconnected
    (only possible for USB connection). In this case only ``$uid`` and
    ``$enumerationType`` are valid.
 
@@ -225,7 +225,7 @@ described below.
  This callback is called whenever the IP Connection got connected to a
  Brick Daemon or to a WIFI/Ethernet Extension, possible reasons are:
 
- * IPConnection::CONNECT_REASON_REQUEST (0): Connection established after
+ * IPConnection::\ **CONNECT_REASON**\ _REQUEST = 0: Connection established after
    request from user.
 
 
@@ -238,8 +238,8 @@ described below.
  This callback is called whenever the IP Connection got disconnected from a
  Brick Daemon or from a WIFI/Ethernet Extension, possible reasons are:
 
- * IPConnection::DISCONNECT_REASON_REQUEST (0): Disconnect was requested by user.
- * IPConnection::DISCONNECT_REASON_ERROR (1): Disconnect because of an
+ * IPConnection::\ **DISCONNECT_REASON**\ _REQUEST = 0: Disconnect was requested by user.
+ * IPConnection::\ **DISCONNECT_REASON**\ _ERROR = 1: Disconnect because of an
    unresolvable error.
- * IPConnection::DISCONNECT_REASON_SHUTDOWN (2): Disconnect initiated by Brick
+ * IPConnection::\ **DISCONNECT_REASON**\ _SHUTDOWN = 2: Disconnect initiated by Brick
    Daemon or WIFI/Ethernet Extension.

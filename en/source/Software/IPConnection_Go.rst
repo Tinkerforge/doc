@@ -94,10 +94,10 @@ Basic Functions
 
  Can return the following states:
 
- * ConnectionStateDisconnected: No connection is established.
- * ConnectionStateConnected: A connection to the Brick
+ * ipconnection.\ **ConnectionState**\ Disconnected = 0: No connection is established.
+ * ipconnection.\ **ConnectionState**\ Connected = 1: A connection to the Brick
    Daemon or the WIFI/Ethernet Extension is established.
- * ConnectionStatePending: IP Connection is currently
+ * ipconnection.\ **ConnectionState**\ Pending = 2: IP Connection is currently
    trying to connect.
 
 
@@ -173,15 +173,15 @@ registration ID returned by ``Register*Callback()``.
 
  Possible enumeration types are:
 
- * EnumerationTypeAvailable: Device is available
+ * ipconnection.\ **EnumerationType**\ Available = 0: Device is available
    (enumeration triggered by user: :go:func:`Enumerate()
    <(*IPConnection) Enumerate>`). This enumeration type can occur multiple times
    for the same device.
- * EnumerationTypeConnected: Device is newly connected
+ * ipconnection.\ **EnumerationType**\ Connected = 1: Device is newly connected
    (automatically send by Brick after establishing a communication connection).
    This indicates that the device has potentially lost its previous
    configuration and needs to be reconfigured.
- * EnumerationTypeDisconnected: Device is disconnected
+ * ipconnection.\ **EnumerationType**\ Disconnected = 2: Device is disconnected
    (only possible for USB connection). In this case only ``UID`` and
    ``EnumerationType`` are valid.
 
@@ -202,10 +202,8 @@ registration ID returned by ``Register*Callback()``.
  This event is triggered whenever the IP Connection got connected to a
  Brick Daemon or to a WIFI/Ethernet Extension, possible reasons are:
 
- * ConnectReasonRequest: Connection established after
-   request from user.
- * ConnectReasonAutoReconnect: Connection after
-   auto-reconnect.
+ * ipconnection.\ **ConnectReason**\ Request = 0: Connection established after request from user.
+ * ipconnection.\ **ConnectReason**\ AutoReconnect = 1: Connection after auto-reconnect.
 
 
 .. go:function:: func (*IPConnection) RegisterDisconnectCallback(func(reason DisconnectReason)) (registrationId uint64)
@@ -213,8 +211,8 @@ registration ID returned by ``Register*Callback()``.
  This event is triggered whenever the IP Connection got disconnected from a
  Brick Daemon or to a WIFI/Ethernet Extension, possible reasons are:
 
- * DisconnectReasonRequest: Disconnect was requested by user.
- * DisconnectReasonError: Disconnect because of an
+ * ipconnection.\ **DisconnectReason**\ Request = 0: Disconnect was requested by user.
+ * ipconnection.\ **DisconnectReason**\ Error = 1: Disconnect because of an
    unresolvable error.
- * DisconnectReasonShutdown: Disconnect initiated by Brick
+ * ipconnection.\ **DisconnectReason**\ Shutdown = 2: Disconnect initiated by Brick
    Daemon or WIFI/Ethernet Extension.

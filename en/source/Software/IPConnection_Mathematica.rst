@@ -122,10 +122,10 @@ Basic Functions
 
  Can return the following states:
 
- * IPConnection`CONNECTIONUSTATEUDISCONNECTED (0): No connection is established.
- * IPConnection`CONNECTIONUSTATEUCONNECTED (1): A connection to the Brick
+ * IPConnection`\ **CONNECTIONUSTATE**\ UDISCONNECTED = 0: No connection is established.
+ * IPConnection`\ **CONNECTIONUSTATE**\ UCONNECTED = 1: A connection to the Brick
    Daemon or the WIFI/Ethernet Extension  is established.
- * IPConnection`CONNECTIONUSTATEUPENDING (2): IP Connection is currently
+ * IPConnection`\ **CONNECTIONUSTATE**\ UPENDING = 2: IP Connection is currently
    trying to connect.
 
 
@@ -240,15 +240,15 @@ The available events are described below.
 
  Possible enumeration types are:
 
- * IPConnection`ENUMERATIONUTYPEUAVAILABLE (0): Device is available
+ * IPConnection`\ **ENUMERATIONUTYPE**\ UAVAILABLE = 0: Device is available
    (enumeration triggered by user: :mathematica:func:`Enumerate[]
    <IPConnection@Enumerate>`). This enumeration type can occur multiple times
    for the same device.
- * IPConnection`ENUMERATIONUTYPEUCONNECTED (1): Device is newly connected
+ * IPConnection`\ **ENUMERATIONUTYPE**\ UCONNECTED = 1: Device is newly connected
    (automatically send by Brick after establishing a communication connection).
    This indicates that the device has potentially lost its previous
    configuration and needs to be reconfigured.
- * IPConnection`ENUMERATIONUTYPEUDISCONNECTED (2): Device is disconnected
+ * IPConnection`\ **ENUMERATIONUTYPE**\ UDISCONNECTED = 2: Device is disconnected
    (only possible for USB connection). In this case only ``uid`` and
    ``enumerationType`` are valid.
 
@@ -272,9 +272,9 @@ The available events are described below.
  This event is triggered whenever the IP Connection got connected to a
  Brick Daemon or to a WIFI/Ethernet Extension, possible reasons are:
 
- * IPConnection`CONNECTUREASONUREQUEST (0): Connection established after
+ * IPConnection`\ **CONNECTUREASON**\ UREQUEST = 0: Connection established after
    request from user.
- * IPConnection`CONNECTUREASONUAUTOURECONNECT (1): Connection after
+ * IPConnection`\ **CONNECTUREASON**\ UAUTOURECONNECT = 1: Connection after
    auto-reconnect.
 
 
@@ -286,8 +286,8 @@ The available events are described below.
  This event is triggered whenever the IP Connection got disconnected from a
  Brick Daemon or to a WIFI/Ethernet Extension, possible reasons are:
 
- * IPConnection`DISCONNECTUREASONUREQUEST (0): Disconnect was requested by user.
- * IPConnection`DISCONNECTUREASONUERROR (1): Disconnect because of an
+ * IPConnection`\ **DISCONNECTUREASON**\ UREQUEST = 0: Disconnect was requested by user.
+ * IPConnection`\ **DISCONNECTUREASON**\ UERROR = 1: Disconnect because of an
    unresolvable error.
- * IPConnection`DISCONNECTUREASONUSHUTDOWN (2): Disconnect initiated by Brick
+ * IPConnection`\ **DISCONNECTUREASON**\ USHUTDOWN = 2: Disconnect initiated by Brick
    Daemon or WIFI/Ethernet Extension.

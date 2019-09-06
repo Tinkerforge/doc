@@ -56,21 +56,15 @@ Grundfunktionen
 
 .. mqtt:function:: request/ip_connection/get_connection_state
 
- :response connection_state: int `(hat Symbole)`
+ :response connection_state: int (hat Symbole)
 
- Kann die folgenden Zustände zurückgeben:
- 
- * 0: Keine Verbindung aufgebaut.
- * 1: Eine Verbindung zum Brick Daemon oder der WIFI/Ethernet Extension ist aufgebaut.
- * 2: IP-Connection versucht im Moment eine Verbindung aufzubauen.
- 
  Die folgenden Symbole sind für diese Funktion verfügbar:
  
  für connection_state: 
  
- * 0: "disconnected"
- * 1: "connected"
- * 2: "pending"
+ * "disconnected" = 0: Keine Verbindung aufgebaut.
+ * "connected" = 1: Eine Verbindung zum Brick Daemon oder der WIFI/Ethernet Extension ist aufgebaut.
+ * "pending" = 2: IP-Connection versucht im Moment eine Verbindung aufzubauen.
  
 Callbacks
 ^^^^^^^^^
@@ -95,8 +89,8 @@ Mit diesem Suffix kann das Callback später deregistriert werden.
  :response position: string
  :response hardware_version: [int,int,int]
  :response firmware_version: [int,int,int]
- :response device_identifier: int `(hat Symbole)`
- :response enumeration_type: int `(hat Symbole)`
+ :response device_identifier: int (hat Symbole)
+ :response enumeration_type: int (hat Symbole)
  :response _display_name: string
 
  Ein Callback für dieses Event kann durch Senden des Payloads "true" an das ``.../register/ip_connection/enumerate[/SUFFIX]``-Topic hinzugefügt werden.
@@ -130,16 +124,16 @@ Mit diesem Suffix kann das Callback später deregistriert werden.
  
  für enumeration_type:
 
- * 0: "available": Gerät ist verfügbar (Enumerierung vom Benutzer ausgelöst: :mqtt:func:`enumerate <register/ip_connection/enumerate>`). Diese Enumerierungsart kann mehrfach für das selbe Gerät auftreten.
- * 1: "connected": Gerät wurde neu verbunden (Automatisch vom Brick gesendet nachdem die Kommunikation aufgebaut wurde). Dies kann bedeuten, dass das Gerät die vorher eingestellte Konfiguration verloren hat und neu konfiguriert werden muss.
- * 2: "disconnected": Gerät wurde getrennt (Nur bei USB-Verbindungen möglich). In diesem Fall haben nur ``uid`` und ``enumeration_type`` einen gültigen Wert.
+ * "available" = 0: Gerät ist verfügbar (Enumerierung vom Benutzer ausgelöst: :mqtt:func:`enumerate <request/ip_connection/enumerate>`). Diese Enumerierungsart kann mehrfach für das selbe Gerät auftreten.
+ * "connected" = 1: Gerät wurde neu verbunden (Automatisch vom Brick gesendet nachdem die Kommunikation aufgebaut wurde). Dies kann bedeuten, dass das Gerät die vorher eingestellte Konfiguration verloren hat und neu konfiguriert werden muss.
+ * "disconnected" = 2: Gerät wurde getrennt (Nur bei USB-Verbindungen möglich). In diesem Fall haben nur ``uid`` und ``enumeration_type`` einen gültigen Wert.
 
  Es sollte möglich sein Plug-and-Play-Funktionalität mit diesem Callback zu implementieren (wie es im Brick Viewer geschieht).
 
 .. mqtt:function:: register/ip_connection/connected
 
  :register register: bool
- :response connect_reason: int `(hat Symbole)`
+ :response connect_reason: int (hat Symbole)
 
  Ein Callback für dieses Event kann durch Senden des Payloads "true" an das ``.../register/ip_connection/connected[/SUFFIX]``-Topic hinzugefügt werden.
  Ein hinzugefügtes Callback kann durch Senden des Payloads "false" an das selbe Topic wieder entfernt werden.
@@ -153,14 +147,14 @@ Mit diesem Suffix kann das Callback später deregistriert werden.
  
  für connect_reason:
 
- * 0: "request": Verbindung aufgebaut nach Anfrage vom Benutzer.
- * 1: "auto-reconnect": Verbindung aufgebaut durch Auto-Reconnect.
+ * "request" = 0: Verbindung aufgebaut nach Anfrage vom Benutzer.
+ * "auto-reconnect" = 1: Verbindung aufgebaut durch Auto-Reconnect.
 
 
 .. mqtt:function:: register/ip_connection/disconnected
 
  :register register: bool
- :response disconnect_reason: int `(hat Symbole)`
+ :response disconnect_reason: int (hat Symbole)
 
  Ein Callback für dieses Event kann durch Senden des Payloads "true" an das ``.../register/ip_connection/disconnected[/SUFFIX]``-Topic hinzugefügt werden.
  Ein hinzugefügtes Callback kann durch Senden des Payloads "false" an das selbe Topic wieder entfernt werden.
@@ -174,6 +168,6 @@ Mit diesem Suffix kann das Callback später deregistriert werden.
  
  für disconnect_reason:
  
- * 0: "request": Trennung wurde vom Benutzer angefragt.
- * 1: "error": Trennung aufgrund eines unlösbaren Problems.
- * 2: "shutdown": Trennung wurde vom Brick Daemon oder WIFI/Ethernet Extension eingeleitet.
+ * "request" = 0: Trennung wurde vom Benutzer angefragt.
+ * "error" = 1: Trennung aufgrund eines unlösbaren Problems.
+ * "shutdown" = 2: Trennung wurde vom Brick Daemon oder WIFI/Ethernet Extension eingeleitet.

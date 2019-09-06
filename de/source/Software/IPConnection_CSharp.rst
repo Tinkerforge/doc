@@ -101,10 +101,10 @@ Grundfunktionen
 
  Kann die folgenden Zustände zurückgeben:
 
- * IPConnection.CONNECTION_STATE_DISCONNECTED (0): Keine Verbindung aufgebaut.
- * IPConnection.CONNECTION_STATE_CONNECTED (1): Eine Verbindung zum Brick
-   Daemon oder der WIFI/Ethernet Extension ist aufgebaut.
- * IPConnection.CONNECTION_STATE_PENDING (2): IP Connection versucht im Moment
+ * IPConnection.\ **CONNECTION_STATE**\ _DISCONNECTED = 0: Keine Verbindung aufgebaut.
+ * IPConnection.\ **CONNECTION_STATE**\ _CONNECTED = 1: Eine Verbindung zum Brick
+   Daemon oder der WIFI/Ethernet**\  Extension ist aufgebaut.
+ * IPConnection.\ **CONNECTION_STATE**\ _PENDING = 2: IP Connection versucht im Moment
    eine Verbindung aufzubauen.
 
 
@@ -205,15 +205,15 @@ Die verfügbaren Events werden im Folgenden beschrieben.
 
  Mögliche Enumerierungsarten sind:
 
- * IPConnection.ENUMERATION_TYPE_AVAILABLE (0): Gerät ist verfügbar
+ * IPConnection.\ **ENUMERATION_TYPE**\ _AVAILABLE = 0: Gerät ist verfügbar
    (Enumerierung vom Benutzer ausgelöst: :csharp:func:`Enumerate()
    <IPConnection::Enumerate>`). Diese Enumerierungsart kann mehrfach für das
    selbe Gerät auftreten.
- * IPConnection.ENUMERATION_TYPE_CONNECTED (1): Gerät wurde neu verbunden
+ * IPConnection.\ **ENUMERATION_TYPE**\ _CONNECTED = 1: Gerät wurde neu verbunden
    (Automatisch vom Brick gesendet nachdem die Kommunikation aufgebaut wurde).
    Dies kann bedeuten, dass das Gerät die vorher eingestellte Konfiguration
    verloren hat und neu konfiguriert werden muss.
- * IPConnection.ENUMERATION_TYPE_DISCONNECTED (2): Gerät wurde getrennt (Nur
+ * IPConnection.\ **ENUMERATION_TYPE**\ _DISCONNECTED = 2: Gerät wurde getrennt (Nur
    bei USB-Verbindungen möglich). In diesem Fall haben nur ``uid`` und
    ``enumerationType`` einen gültigen Wert.
 
@@ -236,9 +236,9 @@ Die verfügbaren Events werden im Folgenden beschrieben.
  zu einem Brick Daemon oder einer WIFI/Ethernet Extension aufgebaut hat,
  mögliche Gründe sind:
 
- * IPConnection.CONNECT_REASON_REQUEST (0): Verbindung aufgebaut nach Anfrage
+ * IPConnection.\ **CONNECT_REASON**\ _REQUEST = 0: Verbindung aufgebaut nach Anfrage
    vom Benutzer.
- * IPConnection.CONNECT_REASON_AUTO_RECONNECT (1): Verbindung aufgebaut durch
+ * IPConnection.\ **CONNECT_REASON**\ _AUTO_RECONNECT = 1: Verbindung aufgebaut durch
    Auto-Reconnect.
 
 
@@ -248,9 +248,9 @@ Die verfügbaren Events werden im Folgenden beschrieben.
  zu einem Brick Daemon oder einer WIFI/Ethernet Extension getrennt wurde,
  mögliche Gründe sind:
 
- * IPConnection.DISCONNECT_REASON_REQUEST (0): Trennung wurde vom Benutzer
+ * IPConnection.\ **DISCONNECT_REASON**\ _REQUEST = 0: Trennung wurde vom Benutzer
    angefragt.
- * IPConnection.DISCONNECT_REASON_ERROR (1): Trennung aufgrund eines unlösbaren
+ * IPConnection.\ **DISCONNECT_REASON**\ _ERROR = 1: Trennung aufgrund eines unlösbaren
    Problems.
- * IPConnection.DISCONNECT_REASON_SHUTDOWN (2): Trennung wurde vom Brick Daemon
+ * IPConnection.\ **DISCONNECT_REASON**\ _SHUTDOWN = 2: Trennung wurde vom Brick Daemon
    oder WIFI/Ethernet Extension eingeleitet.

@@ -56,21 +56,13 @@ Basic Functions
 
 .. mqtt:function:: request/ip_connection/get_connection_state
 
- :response connection_state: int `(has symbols)`
+ :response connection_state: int (has symbols)
 
  Can return the following states:
  
- * 0: No connection is established.
- * 1: A connection to the Brick Daemon or the WIFI/Ethernet Extension is established.
- * 2: IP Connection is currently trying to connect.
- 
- The following symbols are available for this function:
- 
- for connection_state: 
- 
- * 0: "disconnected"
- * 1: "connected"
- * 2: "pending"
+ * "disconnected" = 0: No connection is established.
+ * "connected" = 1: A connection to the Brick Daemon or the WIFI/Ethernet Extension is established.
+ * "pending" = 2: IP Connection is currently trying to connect.
  
 Callbacks
 ^^^^^^^^^
@@ -95,8 +87,8 @@ This suffix can be used to deregister the callback later.
  :response position: string
  :response hardware_version: [int,int,int]
  :response firmware_version: [int,int,int]
- :response device_identifier: int `(has symbols)`
- :response enumeration_type: int `(has symbols)`
+ :response device_identifier: int (has symbols)
+ :response enumeration_type: int (has symbols)
  :response _display_name: string
 
  A callback can be registered for this event by publishing to the ``.../register/ip_connection/enumerate[/SUFFIX]`` topic with the payload "true".
@@ -129,14 +121,14 @@ This suffix can be used to deregister the callback later.
  
  for enumeration_type:
 
- * 0: "available": Device is available
-   (enumeration triggered by user: :mqtt:func:`enumerate <register/ip_connection/enumerate>`).
+ * "available" = 0: Device is available
+   (enumeration triggered by user: :mqtt:func:`enumerate <request/ip_connection/enumerate>`).
    This enumeration type can occur multiple times for the same device.
- * 1: "connected": Device is newly connected
+ * "connected" = 1: Device is newly connected
    (automatically send by Brick after establishing a communication connection).
    This indicates that the device has potentially lost its previous
    configuration and needs to be reconfigured.
- * 2: "disconnected": Device is disconnected
+ * "disconnected" = 2: Device is disconnected
    (only possible for USB connection). In this case only ``uid`` and
    ``enumeration_type`` are valid.
 
@@ -146,7 +138,7 @@ This suffix can be used to deregister the callback later.
 .. mqtt:function:: register/ip_connection/connected
 
  :register register: bool
- :response connect_reason: int `(has symbols)`
+ :response connect_reason: int (has symbols)
 
  A callback can be registered for this event by publishing to the ``.../register/ip_connection/connected[/SUFFIX]`` topic with the payload "true".
  An added callback can be removed by publishing to the same topic with the payload "false".
@@ -161,16 +153,14 @@ This suffix can be used to deregister the callback later.
  
  for connect_reason:
 
- * 0: "request": Connection established after
-   request from user.
- * 1: "auto-reconnect": Connection after
-   auto-reconnect.
+ * "request" = 0: Connection established after request from user.
+ * "auto-reconnect" = 1: Connection after auto-reconnect.
 
 
 .. mqtt:function:: register/ip_connection/disconnected
 
  :register register: bool
- :response disconnect_reason: int `(has symbols)`
+ :response disconnect_reason: int (has symbols)
 
  A callback can be registered for this event by publishing to the ``.../register/ip_connection/disconnected[/SUFFIX]`` topic with the payload "true".
  An added callback can be removed by publishing to the same topic with the payload "false".
@@ -185,8 +175,6 @@ This suffix can be used to deregister the callback later.
  
  for disconnect_reason:
 
- * 0: "request": Disconnect was requested by user.
- * 1: "error": Disconnect because of an
-   unresolvable error.
- * 2: "shutdown": Disconnect initiated by Brick
-   Daemon or WIFI/Ethernet Extension.
+ * "request" = 0: Disconnect was requested by user.
+ * "error" = 1: Disconnect because of an unresolvable error.
+ * "shutdown" = 2: Disconnect initiated by Brick Daemon or WIFI/Ethernet Extension.

@@ -103,10 +103,10 @@ Basic Functions
 
  Can return the following states:
 
- * IPCON_CONNECTION_DISCONNECTED (0): No connection is established.
- * IPCON_CONNECTION_CONNECTED (1): A connection to the Brick Daemon or the
+ * IPCON\_\ **CONNECTION_STATE**\ _DISCONNECTED = 0: No connection is established.
+ * IPCON\_\ **CONNECTION_STATE**\ _CONNECTED = 1: A connection to the Brick Daemon or the
    WIFI/Ethernet Extension  is established.
- * IPCON_CONNECTION_PENDING (2): IP Connection is currently trying to connect.
+ * IPCON\_\ **CONNECTION_STATE**\ _PENDING = 2: IP Connection is currently trying to connect.
 
 
 .. delphi:function:: procedure TIPConnection.SetAutoReconnect(const autoReconnect: boolean)
@@ -207,14 +207,14 @@ The available callback property and their type of parameters are described below
 
  Possible enumeration types are:
 
- * IPCON_ENUMERATION_TYPE_AVAILABLE (0): Device is available (enumeration
+ * IPCON\_\ **ENUMERATION_TYPE**\ _AVAILABLE = 0: Device is available (enumeration
    triggered by user: :delphi:func:`Disconnect <TIPConnection.Disconnect>`).
    This enumeration type can occur multiple times for the same device.
- * IPCON_ENUMERATION_TYPE_CONNECTED (1): Device is newly connected
+ * IPCON\_\ **ENUMERATION_TYPE**\ _CONNECTED = 1: Device is newly connected
    (automatically send by Brick after establishing a communication connection).
    This indicates that the device has potentially lost its previous
    configuration and needs to be reconfigured.
- * IPCON_ENUMERATION_TYPE_DISCONNECTED (2): Device is disconnected (only
+ * IPCON\_\ **ENUMERATION_TYPE**\ _DISCONNECTED = 2: Device is disconnected (only
    possible for USB connection). In this case only ``uid`` and
    ``enumerationType`` are valid.
 
@@ -239,8 +239,8 @@ The available callback property and their type of parameters are described below
  This callback is called whenever the IP Connection got connected to a
  Brick Daemon or to a WIFI/Ethernet Extension, possible reasons are:
 
- * IPCON_CONNECT_REASON_REQUEST (0): Connection established after request from user.
- * IPCON_CONNECT_REASON_AUTO_RECONNECT (1): Connection after auto-reconnect.
+ * IPCON\_\ **CONNECT_REASON**\ _REQUEST = 0: Connection established after request from user.
+ * IPCON\_\ **CONNECT_REASON**\ _AUTO_RECONNECT = 1: Connection after auto-reconnect.
 
 
 .. delphi:function:: property TIPConnection.OnDisconnected
@@ -252,7 +252,7 @@ The available callback property and their type of parameters are described below
  This callback is called whenever the IP Connection got disconnected from a
  Brick Daemon or from a WIFI/Ethernet Extension, possible reasons are:
 
- * IPCON_DISCONNECT_REASON_REQUEST (0): Disconnect was requested by user.
- * IPCON_DISCONNECT_REASON_ERROR (1): Disconnect because of an unresolvable error.
- * IPCON_DISCONNECT_REASON_SHUTDOWN (2): Disconnect initiated by Brick Daemon or
+ * IPCON\_\ **DISCONNECT_REASON**\ _REQUEST = 0: Disconnect was requested by user.
+ * IPCON\_\ **DISCONNECT_REASON**\ _ERROR = 1: Disconnect because of an unresolvable error.
+ * IPCON\_\ **DISCONNECT_REASON**\ _SHUTDOWN = 2: Disconnect initiated by Brick Daemon or
    WIFI/Ethernet Extension.

@@ -237,14 +237,14 @@ Basic Functions
 
  Possible enumeration types are:
 
- * ``available`` = 0, the device is available (enumeration triggered by user:
+ * ``available`` = 0: The device is available (enumeration triggered by user:
    :sh:func:`enumerate <tinkerforge enumerate>`). This enumeration type can
    occur multiple times for the same device.
- * ``connected`` = 1, the device is newly connected (automatically send by Brick
+ * ``connected`` = 1: The device is newly connected (automatically send by Brick
    after establishing a communication connection). This indicates that the
    device has potentially lost its previous configuration and needs to be
    reconfigured.
- * ``disconnected`` = 2, the device is disconnected (only possible for USB
+ * ``disconnected`` = 2: The device is disconnected (only possible for USB
    connection). In this case only ``uid`` and ``enumeration-type`` are valid.
 
  The device identifier numbers can be found :ref:`here <device_identifier>`.

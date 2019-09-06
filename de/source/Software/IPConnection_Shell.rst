@@ -254,14 +254,14 @@ Grundfunktionen
 
  Mögliche Enumerierungsarten sind:
 
- * ``available`` = 0, das Gerät ist verfügbar (Enumerierung vom Benutzer
+ * ``available`` = 0: Das Gerät ist verfügbar (Enumerierung vom Benutzer
    ausgelöst: :sh:func:`enumerate <tinkerforge enumerate>`). Diese
    Enumerierungsart kann mehrfach für das selbe Gerät auftreten.
- * ``connected`` = 1, das Gerät wurde neu verbunden (Automatisch vom Brick
+ * ``connected`` = 1: Das Gerät wurde neu verbunden (Automatisch vom Brick
    gesendet nachdem die Kommunikation aufgebaut wurde). Dies kann bedeuten,
    dass das Gerät die vorher eingestellte Konfiguration verloren hat und neu
    konfiguriert werden muss.
- * ``disconnected`` = 2, das Gerät wurde getrennt (Nur bei USB-Verbindungen
+ * ``disconnected`` = 2: Das Gerät wurde getrennt (Nur bei USB-Verbindungen
    möglich). In diesem Fall haben nur ``uid`` und ``enumeration-type`` einen
    gültigen Wert.
 

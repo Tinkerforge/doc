@@ -103,10 +103,10 @@ Grundfunktionen
 
  Kann die folgenden Zustände zurückgeben:
 
- * ConnectionState::Disconnected: Keine Verbindung aufgebaut.
- * ConnectionState::Connected: Eine Verbindung zum Brick
+ * **ConnectionState**\ ::Disconnected = 0: Keine Verbindung aufgebaut.
+ * **ConnectionState**\ ::Connected = 1: Eine Verbindung zum Brick
    Daemon oder der WIFI/Ethernet Extension ist aufgebaut.
- * ConnectionState::Pending: IP Connection versucht im Moment
+ * **ConnectionState**\ ::Pending = 2: IP Connection versucht im Moment
    eine Verbindung aufzubauen.
 
 
@@ -156,7 +156,7 @@ Empfangene Nachrichten können in einem neuen Thread asynchron verarbeitet werde
 .. code-block:: rust
 
     let receiver = ipcon.get_example_callback_receiver();
-    //No join is needed here, as the iteration over the receiver ends when the ipcon is dropped.
+    // No join is needed here, as the iteration over the receiver ends when the ipcon is dropped.
     thread::spawn(move || {
         for value in receiver {
             println!("Value: {:?}", value);
@@ -186,15 +186,15 @@ Die verfügbaren Events werden im Folgenden beschrieben.
 
  Mögliche Enumerierungsarten sind:
 
- * EnumerationType::Available: Gerät ist verfügbar
+ * **EnumerationType**\ ::Available = 0: Gerät ist verfügbar
    (Enumerierung vom Benutzer ausgelöst: :rust:func:`enumerate()
    <IpConnection::enumerate>`). Diese Enumerierungsart kann mehrfach für das
    selbe Gerät auftreten.
- * EnumerationType::Connected: Gerät wurde neu verbunden
+ * **EnumerationType**\ ::Connected = 1: Gerät wurde neu verbunden
    (Automatisch vom Brick gesendet nachdem die Kommunikation aufgebaut wurde).
    Dies kann bedeuten, dass das Gerät die vorher eingestellte Konfiguration
    verloren hat und neu konfiguriert werden muss.
- * EnumerationType::Disconnected: Gerät wurde getrennt (Nur
+ * **EnumerationType**\ ::Disconnected = 2: Gerät wurde getrennt (Nur
    bei USB-Verbindungen möglich). In diesem Fall haben nur ``uid`` und
    ``enumerationType`` einen gültigen Wert.
 
@@ -216,9 +216,9 @@ Die verfügbaren Events werden im Folgenden beschrieben.
  zu einem Brick Daemon oder einer WIFI/Ethernet Extension aufgebaut hat,
  mögliche Gründe sind:
 
- * ConnectReason::Request: Verbindung aufgebaut nach Anfrage
+ * **ConnectReason**\ ::Request = 0: Verbindung aufgebaut nach Anfrage
    vom Benutzer.
- * ConnectReason::AutoReconnect: Verbindung aufgebaut durch
+ * **ConnectReason**\ ::AutoReconnect = 1: Verbindung aufgebaut durch
    Auto-Reconnect.
 
 
@@ -228,9 +228,9 @@ Die verfügbaren Events werden im Folgenden beschrieben.
  zu einem Brick Daemon oder einer WIFI/Ethernet Extension getrennt wurde,
  mögliche Gründe sind:
 
- * DisconnectReason::Request: Trennung wurde vom Benutzer
+ * **DisconnectReason**\ ::Request = 0: Trennung wurde vom Benutzer
    angefragt.
- * DisconnectReason::Error: Trennung aufgrund eines unlösbaren
+ * **DisconnectReason**\ ::Error = 1: Trennung aufgrund eines unlösbaren
    Problems.
- * DisconnectReason::Shutdown: Trennung wurde vom Brick Daemon
+ * **DisconnectReason**\ ::Shutdown = 2: Trennung wurde vom Brick Daemon
    oder WIFI/Ethernet Extension eingeleitet.

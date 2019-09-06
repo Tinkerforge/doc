@@ -99,10 +99,10 @@ Basic Functions
 
  Can return the following states:
 
- * ConnectionState::Disconnected: No connection is established.
- * ConnectionState::Connected: A connection to the Brick
+ * **ConnectionState**\ ::Disconnected = 0: No connection is established.
+ * **ConnectionState**\ ::Connected = 1: A connection to the Brick
    Daemon or the WIFI/Ethernet Extension is established.
- * ConnectionState::Pending: IP Connection is currently
+ * **ConnectionState**\ ::Pending = 2: IP Connection is currently
    trying to connect.
 
 
@@ -149,7 +149,7 @@ Callbacks can be registered to be notified about events. The registration is don
 .. code-block:: rust
 
     let receiver = ipcon.get_example_callback_receiver();
-    //No join is needed here, as the iteration over the receiver ends when the ipcon is dropped.
+    // No join is needed here, as the iteration over the receiver ends when the ipcon is dropped.
     thread::spawn(move || {
         for value in receiver {
             println!("Value: {:?}", value);
@@ -179,15 +179,15 @@ The available events are described below.
 
  Possible enumeration types are:
 
- * EnumerationType::Available: Device is available
+ * **EnumerationType**\ ::Available = 0: Device is available
    (enumeration triggered by user: :rust:func:`enumerate()
    <IpConnection::enumerate>`). This enumeration type can occur multiple times
    for the same device.
- * EnumerationType::Connected: Device is newly connected
+ * **EnumerationType**\ ::Connected = 1: Device is newly connected
    (automatically send by Brick after establishing a communication connection).
    This indicates that the device has potentially lost its previous
    configuration and needs to be reconfigured.
- * EnumerationType::Disconnected: Device is disconnected
+ * **EnumerationType**\ ::Disconnected = 2: Device is disconnected
    (only possible for USB connection). In this case only ``uid`` and
    ``enumeration_type`` are valid.
 
@@ -208,10 +208,8 @@ The available events are described below.
  This event is triggered whenever the IP Connection got connected to a
  Brick Daemon or to a WIFI/Ethernet Extension, possible reasons are:
 
- * ConnectReason::Request: Connection established after
-   request from user.
- * ConnectReason::AutoReconnect: Connection after
-   auto-reconnect.
+ * **ConnectReason**\ ::Request = 0: Connection established after request from user.
+ * **ConnectReason**\ ::AutoReconnect = 1: Connection after auto-reconnect.
 
 
 .. rust:function:: IpConnection::get_disconnect_callback_receiver(&self) -> Receiver<DisconnectReason>
@@ -219,8 +217,7 @@ The available events are described below.
  This event is triggered whenever the IP Connection got disconnected from a
  Brick Daemon or to a WIFI/Ethernet Extension, possible reasons are:
 
- * DisconnectReason::Request: Disconnect was requested by user.
- * DisconnectReason::Error: Disconnect because of an
-   unresolvable error.
- * DisconnectReason::Shutdown: Disconnect initiated by Brick
+ * **DisconnectReason**\ ::Request = 0: Disconnect was requested by user.
+ * **DisconnectReason**\ ::Error = 1: Disconnect because of an unresolvable error.
+ * **DisconnectReason**\ ::Shutdown = 2: Disconnect initiated by Brick
    Daemon or WIFI/Ethernet Extension.

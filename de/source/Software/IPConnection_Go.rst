@@ -97,10 +97,10 @@ Grundfunktionen
 
  Kann die folgenden Zustände zurückgeben:
 
- * ConnectionStateDisconnected: Keine Verbindung aufgebaut.
- * ConnectionStateConnected: Eine Verbindung zum Brick Daemon
+ * ipconnection.\ **ConnectionState**\ Disconnected = 0: Keine Verbindung aufgebaut.
+ * ipconnection.\ **ConnectionState**\ Connected = 1: Eine Verbindung zum Brick Daemon
    oder der WIFI/Ethernet Extension ist aufgebaut.
- * ConnectionStatePending: IP Connection versucht im Moment
+ * ipconnection.\ **ConnectionState**\ Pending = 2: IP Connection versucht im Moment
    eine Verbindung aufzubauen.
 
 
@@ -177,9 +177,16 @@ wieder zu entfernen. Dieser erwartet eine Registrierungs-ID, die von ``Register*
 
  Mögliche Enumerierungsarten sind:
 
- * EnumerationTypeAvailable: Gerät ist verfügbar (Enumerierung vom Benutzer ausgelöst: :go:func:`Enumerate() <(*IPConnection) Enumerate>`). Diese Enumerierungsart kann mehrfach für das selbe Gerät auftreten.
- * EnumerationTypeConnected: Gerät wurde neu verbunden (Automatisch vom Brick gesendet nachdem die Kommunikation aufgebaut wurde). Dies kann bedeuten, dass das Gerät die vorher eingestellte Konfiguration verloren hat und neu konfiguriert werden muss.
- * EnumerationTypeDisconnected: Gerät wurde getrennt (Nur bei USB-Verbindungen möglich). In diesem Fall haben nur ``UID`` und ``EnumerationType`` einen gültigen Wert.
+ * ipconnection.\ **EnumerationType**\ Available = 0: Gerät ist verfügbar (Enumerierung
+   vom Benutzer ausgelöst: :go:func:`Enumerate() <(*IPConnection) Enumerate>`).
+   Diese Enumerierungsart kann mehrfach für das selbe Gerät auftreten.
+ * ipconnection.\ **EnumerationType**\ Connected = 1: Gerät wurde neu verbunden
+   (Automatisch vom Brick gesendet nachdem die Kommunikation aufgebaut wurde).
+   Dies kann bedeuten, dass das Gerät die vorher eingestellte Konfiguration
+   verloren hat und neu konfiguriert werden muss.
+ * ipconnection.\ **EnumerationType**\ Disconnected = 2: Gerät wurde getrennt (Nur
+   bei USB-Verbindungen möglich). In diesem Fall haben nur ``UID`` und
+   ``EnumerationType`` einen gültigen Wert.
 
  Es sollte möglich sein Plug-and-Play-Funktionalität mit diesem Listener zu implementieren (wie es im Brick Viewer geschieht).
 
@@ -196,17 +203,15 @@ wieder zu entfernen. Dieser erwartet eine Registrierungs-ID, die von ``Register*
 
  Dieses Callback wird aufgerufen wenn die IP Connection eine Verbindung zu einem Brick Daemon oder einer WIFI/Ethernet Extension aufgebaut hat, mögliche Gründe sind:
 
- * ConnectReasonRequest: Verbindung aufgebaut nach Anfrage vom Benutzer.
- * ConnectReasonAutoReconnect: Verbindung aufgebaut durch Auto-Reconnect.
+ * ipconnection.\ **ConnectReason**\ Request = 0: Verbindung aufgebaut nach Anfrage vom Benutzer.
+ * ipconnection.\ **ConnectReason**\ AutoReconnect = 1: Verbindung aufgebaut durch Auto-Reconnect.
 
 
 .. go:function:: func (*IPConnection) RegisterDisconnectCallback(func(reason DisconnectReason)) (registrationId uint64)
 
  Dieses Callback wird aufgerufen wenn die Verbindung der IP Connection zu einem Brick Daemon oder einer WIFI/Ethernet Extension getrennt wurde, mögliche Gründe sind:
 
- * DisconnectReasonRequest: Trennung wurde vom Benutzer
-    angefragt.
- * DisconnectReasonError: Trennung aufgrund eines unlösbaren
-    Problems.
- * DisconnectReasonShutdown: rennung wurde vom Brick Daemon
-    oder WIFI/Ethernet Extension eingeleitet.
+ * ipconnection.\ **DisconnectReason**\ Request = 0: Trennung wurde vom Benutzer angefragt.
+ * ipconnection.\ **DisconnectReason**\ Error = 1: Trennung aufgrund eines unlösbaren Problems.
+ * ipconnection.\ **DisconnectReason**\ Shutdown = 2: rennung wurde vom Brick Daemon
+   oder WIFI/Ethernet Extension eingeleitet.

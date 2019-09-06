@@ -106,10 +106,10 @@ Grundfunktionen
 
  Kann die folgenden Zustände zurückgeben:
 
- * IPCON_CONNECTION_STATE_DISCONNECTED (0): Keine Verbindung aufgebaut.
- * IPCON_CONNECTION_STATE_CONNECTED (1): Eine Verbindung zum Brick Daemon oder
+ * IPCON\_\ **CONNECTION_STATE**\ _DISCONNECTED = 0: Keine Verbindung aufgebaut.
+ * IPCON\_\ **CONNECTION_STATE**\ _CONNECTED = 1: Eine Verbindung zum Brick Daemon oder
    der WIFI/Ethernet Extension ist aufgebaut.
- * IPCON_CONNECTION_STATE_PENDING (2): IP Connection versucht im Moment eine
+ * IPCON\_\ **CONNECTION_STATE**\ _PENDING = 2: IP Connection versucht im Moment eine
    Verbindung aufzubauen.
 
 
@@ -215,14 +215,14 @@ beschrieben.
 
  Mögliche Enumerierungsarten sind:
 
- * IPCON_ENUMERATION_TYPE_AVAILABLE (0): Gerät ist verfügbar (Enumerierung vom
+ * IPCON\_\ **ENUMERATION_TYPE**\ _AVAILABLE = 0: Gerät ist verfügbar (Enumerierung vom
    Benutzer ausgelöst: :delphi:func:`Disconnect <TIPConnection.Disconnect>`).
    Diese Enumerierungsart kann mehrfach für das selbe Gerät auftreten.
- * IPCON_ENUMERATION_TYPE_CONNECTED (1): Gerät wurde neu verbunden (automatisch
+ * IPCON\_\ **ENUMERATION_TYPE**\ _CONNECTED = 1: Gerät wurde neu verbunden (automatisch
    vom Brick gesendet nachdem die Kommunikation aufgebaut wurde). Dies kann
    bedeuten, dass das Gerät die vorher eingestellte Konfiguration verloren hat
    und neu konfiguriert werden muss.
- * IPCON_ENUMERATION_TYPE_DISCONNECTED (2): Gerät wurde getrennt (Nur bei
+ * IPCON\_\ **ENUMERATION_TYPE**\ _DISCONNECTED = 2: Gerät wurde getrennt (Nur bei
    USB-Verbindungen möglich). In diesem Fall haben nur ``uid`` und
    ``enumerationType`` einen gültigen Wert.
 
@@ -249,8 +249,8 @@ beschrieben.
  zu einem Brick Daemon oder einer WIFI/Ethernet Extension aufgebaut hat,
  mögliche Gründe sind:
 
- * IPCON_CONNECT_REASON_REQUEST (0): Verbindung aufgebaut nach Anfrage vom Benutzer.
- * IPCON_CONNECT_REASON_AUTO_RECONNECT (1): Verbindung aufgebaut durch
+ * IPCON\_\ **CONNECT_REASON**\ _REQUEST = 0: Verbindung aufgebaut nach Anfrage vom Benutzer.
+ * IPCON\_\ **CONNECT_REASON**\ _AUTO_RECONNECT = 1: Verbindung aufgebaut durch
    Auto-Reconnect.
 
 
@@ -264,7 +264,7 @@ beschrieben.
  zu einem Brick Daemon oder einer WIFI/Ethernet Extension getrennt wurde,
  mögliche Gründe sind:
 
- * IPCON_DISCONNECT_REASON_REQUEST (0): Trennung wurde vom Benutzer angefragt.
- * IPCON_DISCONNECT_REASON_ERROR (1): Trennung aufgrund eines unlösbaren Problems.
- * IPCON_DISCONNECT_REASON_SHUTDOWN (2): Trennung wurde vom Brick Daemon oder
+ * IPCON\_\ **DISCONNECT_REASON**\ _REQUEST = 0: Trennung wurde vom Benutzer angefragt.
+ * IPCON\_\ **DISCONNECT_REASON**\ _ERROR = 1: Trennung aufgrund eines unlösbaren Problems.
+ * IPCON\_\ **DISCONNECT_REASON**\ _SHUTDOWN = 2: Trennung wurde vom Brick Daemon oder
    WIFI/Ethernet Extension eingeleitet.

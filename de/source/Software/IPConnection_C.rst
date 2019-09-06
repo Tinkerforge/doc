@@ -53,18 +53,20 @@ Fehlercode beschreibt.
 
 Mögliche Fehlercodes sind:
 
-* E_OK = 0
-* E_TIMEOUT = -1
-* E_NO_STREAM_SOCKET = -2
-* E_HOSTNAME_INVALID = -3
-* E_NO_CONNECT = -4
-* E_NO_THREAD = -5
-* E_NOT_ADDED = -6 (seit Bindings Version 2.0.0 nicht mehr verwendet)
-* E_ALREADY_CONNECTED = -7
-* E_NOT_CONNECTED = -8
-* E_INVALID_PARAMETER = -9
-* E_NOT_SUPPORTED = -10
-* E_UNKNOWN_ERROR_CODE = -11
+* **E**\ _OK = 0
+* **E**\ _TIMEOUT = -1
+* **E**\ _NO_STREAM_SOCKET = -2
+* **E**\ _HOSTNAME_INVALID = -3
+* **E**\ _NO_CONNECT = -4
+* **E**\ _NO_THREAD = -5
+* **E**\ _NOT_ADDED = -6 (seit Bindings Version 2.0.0 nicht mehr verwendet)
+* **E**\ _ALREADY_CONNECTED = -7
+* **E**\ _NOT_CONNECTED = -8
+* **E**\ _INVALID_PARAMETER = -9
+* **E**\ _NOT_SUPPORTED = -10
+* **E**\ _UNKNOWN_ERROR_CODE = -11
+* **E**\ _STREAM_OUT_OF_SYNC = -12
+* **E**\ _INVALID_UID = -13
 
 wie in :file:`ip_connection.h` definiert.
 
@@ -127,10 +129,10 @@ Grundfunktionen
 
  Kann die folgenden Zustände zurückgeben:
 
- * IPCON_CONNECTION_STATE_DISCONNECTED (0): Keine Verbindung aufgebaut.
- * IPCON_CONNECTION_STATE_CONNECTED (1): Eine Verbindung zum Brick Daemon oder
+ * IPCON\_\ **CONNECTION_STATE**\ _DISCONNECTED = 0: Keine Verbindung aufgebaut.
+ * IPCON\_\ **CONNECTION_STATE**\ _CONNECTED = 1: Eine Verbindung zum Brick Daemon oder
    der WIFI/Ethernet Extension ist aufgebaut.
- * IPCON_CONNECTION_STATE_PENDING (2): IP Connection versucht im Moment eine
+ * IPCON\_\ **CONNECTION_STATE**\ _PENDING = 2: IP Connection versucht im Moment eine
    Verbindung aufzubauen.
 
 
@@ -247,14 +249,14 @@ werden weiter unten beschrieben.
 
  Mögliche Enumerierungsarten sind:
 
- * IPCON_ENUMERATION_TYPE_AVAILABLE (0): Gerät ist verfügbar (Enumerierung vom
+ * IPCON\_\ **ENUMERATION_TYPE**\ _AVAILABLE = 0: Gerät ist verfügbar (Enumerierung vom
    Benutzer ausgelöst: :c:func:`ipcon_enumerate`). Diese Enumerierungsart kann
    mehrfach für das selbe Gerät auftreten.
- * IPCON_ENUMERATION_TYPE_CONNECTED (1): Gerät wurde neu verbunden (Automatisch
+ * IPCON\_\ **ENUMERATION_TYPE**\ _CONNECTED = 1: Gerät wurde neu verbunden (Automatisch
    vom Brick gesendet nachdem die Kommunikation aufgebaut wurde). Dies kann
    bedeuten, dass das Gerät die vorher eingestellte Konfiguration verloren hat
    und neu konfiguriert werden muss.
- * IPCON_ENUMERATION_TYPE_DISCONNECTED (2): Gerät wurde getrennt (Nur bei
+ * IPCON\_\ **ENUMERATION_TYPE**\ _DISCONNECTED = 2: Gerät wurde getrennt (Nur bei
    USB-Verbindungen möglich). In diesem Fall haben nur ``uid`` und
    ``enumeration_type`` einen gültigen Wert.
 
@@ -283,8 +285,8 @@ werden weiter unten beschrieben.
  zu einem Brick Daemon oder einer WIFI/Ethernet Extension aufgebaut hat,
  mögliche Gründe sind:
 
- * IPCON_CONNECT_REASON_REQUEST (0): Verbindung aufgebaut nach Anfrage vom Benutzer.
- * IPCON_CONNECT_REASON_AUTO_RECONNECT (1): Verbindung aufgebaut nach durch
+ * IPCON\_\ **CONNECT_REASON**\ _REQUEST = 0: Verbindung aufgebaut nach Anfrage vom Benutzer.
+ * IPCON\_\ **CONNECT_REASON**\ _AUTO_RECONNECT = 1: Verbindung aufgebaut nach durch
    Auto-Reconnect.
 
 
@@ -298,7 +300,7 @@ werden weiter unten beschrieben.
  zu einem Brick Daemon oder einer WIFI/Ethernet Extension getrennt wurde,
  mögliche Gründe sind:
 
- * IPCON_DISCONNECT_REASON_REQUEST (0): Trennung wurde vom Benutzer angefragt.
- * IPCON_DISCONNECT_REASON_ERROR (1): Trennung aufgrund eines unlösbaren Problems.
- * IPCON_DISCONNECT_REASON_SHUTDOWN (2): Trennung wurde vom Brick Daemon oder
+ * IPCON\_\ **DISCONNECT_REASON**\ _REQUEST = 0: Trennung wurde vom Benutzer angefragt.
+ * IPCON\_\ **DISCONNECT_REASON**\ _ERROR = 1: Trennung aufgrund eines unlösbaren Problems.
+ * IPCON\_\ **DISCONNECT_REASON**\ _SHUTDOWN = 2: Trennung wurde vom Brick Daemon oder
    WIFI/Ethernet Extension eingeleitet.

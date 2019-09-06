@@ -53,18 +53,20 @@ error code.
 
 Possible error codes are:
 
-* E_OK = 0
-* E_TIMEOUT = -1
-* E_NO_STREAM_SOCKET = -2
-* E_HOSTNAME_INVALID = -3
-* E_NO_CONNECT = -4
-* E_NO_THREAD = -5
-* E_NOT_ADDED = -6 (unused since bindings version 2.0.0)
-* E_ALREADY_CONNECTED = -7
-* E_NOT_CONNECTED = -8
-* E_INVALID_PARAMETER = -9
-* E_NOT_SUPPORTED = -10
-* E_UNKNOWN_ERROR_CODE = -11
+* **E**\ _OK = 0
+* **E**\ _TIMEOUT = -1
+* **E**\ _NO_STREAM_SOCKET = -2
+* **E**\ _HOSTNAME_INVALID = -3
+* **E**\ _NO_CONNECT = -4
+* **E**\ _NO_THREAD = -5
+* **E**\ _NOT_ADDED = -6 (unused since bindings version 2.0.0)
+* **E**\ _ALREADY_CONNECTED = -7
+* **E**\ _NOT_CONNECTED = -8
+* **E**\ _INVALID_PARAMETER = -9
+* **E**\ _NOT_SUPPORTED = -10
+* **E**\ _UNKNOWN_ERROR_CODE = -11
+* **E**\ _STREAM_OUT_OF_SYNC = -12
+* **E**\ _INVALID_UID = -13
 
 as defined in :file:`ip_connection.h`.
 
@@ -124,11 +126,10 @@ Basic Functions
 
  Can return the following states:
 
- * IPCON_CONNECTION_STATE_DISCONNECTED (0): No connection is established.
- * IPCON_CONNECTION_STATE_CONNECTED (1): A connection to the Brick Daemon or
+ * IPCON\_\ **CONNECTION_STATE**\ _DISCONNECTED = 0: No connection is established.
+ * IPCON\_\ **CONNECTION_STATE**\ _CONNECTED = 1: A connection to the Brick Daemon or
    the WIFI/Ethernet Extension is established.
- * IPCON_CONNECTION_STATE_PENDING (2): IP Connection is currently trying to
-   connect.
+ * IPCON\_\ **CONNECTION_STATE**\ _PENDING = 2: IP Connection is currently trying to connect.
 
 
 .. c:function:: void ipcon_set_auto_reconnect(IPConnection *ipcon, bool auto_reconnect)
@@ -242,14 +243,14 @@ described below.
 
  Possible enumeration types are:
 
- * IPCON_ENUMERATION_TYPE_AVAILABLE (0): Device is available (enumeration
+ * IPCON\_\ **ENUMERATION_TYPE**\ _AVAILABLE = 0: Device is available (enumeration
    triggered by user: :c:func:`ipcon_enumerate`). This enumeration type can
    occur multiple times for the same device.
- * IPCON_ENUMERATION_TYPE_CONNECTED (1): Device is newly connected
+ * IPCON\_\ **ENUMERATION_TYPE**\ _CONNECTED = 1: Device is newly connected
    (automatically send by Brick after establishing a communication connection).
    This indicates that the device has potentially lost its previous
    configuration and needs to be reconfigured.
- * IPCON_ENUMERATION_TYPE_DISCONNECTED (2): Device is disconnected (only
+ * IPCON\_\ **ENUMERATION_TYPE**\ _DISCONNECTED = 2: Device is disconnected (only
    possible for USB connection). In this case only ``uid`` and
    ``enumeration_type`` are valid.
 
@@ -276,9 +277,8 @@ described below.
  This callback is called whenever the IP Connection got connected to a
  Brick Daemon or to a WIFI/Ethernet Extension, possible reasons are:
 
- * IPCON_CONNECT_REASON_REQUEST (0): Connection established after request
-   from user.
- * IPCON_CONNECT_REASON_AUTO_RECONNECT (1): Connection after auto-reconnect.
+ * IPCON\_\ **CONNECT_REASON**\ _REQUEST = 0: Connection established after request from user.
+ * IPCON\_\ **CONNECT_REASON**\ _AUTO_RECONNECT = 1: Connection after auto-reconnect.
 
 
 .. c:var:: IPCON_CALLBACK_DISCONNECTED
@@ -290,8 +290,7 @@ described below.
  This callback is called whenever the IP Connection got disconnected from a
  Brick Daemon or from a WIFI/Ethernet Extension, possible reasons are:
 
- * IPCON_DISCONNECT_REASON_REQUEST (0): Disconnect was requested by user.
- * IPCON_DISCONNECT_REASON_ERROR (1): Disconnect because of an unresolvable
-   error.
- * IPCON_DISCONNECT_REASON_SHUTDOWN (2): Disconnect initiated by Brick Daemon
+ * IPCON\_\ **DISCONNECT_REASON**\ _REQUEST = 0: Disconnect was requested by user.
+ * IPCON\_\ **DISCONNECT_REASON**\ _ERROR = 1: Disconnect because of an unresolvable error.
+ * IPCON\_\ **DISCONNECT_REASON**\ _SHUTDOWN = 2: Disconnect initiated by Brick Daemon
    or WIFI/Ethernet Extension.
