@@ -226,8 +226,8 @@ Die verfügbaren Events werden im Folgenden beschrieben.
 
   <device-class>.DEVICE_IDENTIFIER
 
- Zum Beispiel: :csharp:member:`BrickMaster::DEVICE_IDENTIFIER`
- oder :csharp:member:`BrickletAmbientLight::DEVICE_IDENTIFIER`.
+ Zum Beispiel: :csharp:member:`BrickMaster.DEVICE_IDENTIFIER <BrickMaster::DEVICE_IDENTIFIER>`
+ oder :csharp:member:`BrickletAmbientLight.DEVICE_IDENTIFIER <BrickletAmbientLight::DEVICE_IDENTIFIER>`.
 
 
 .. csharp:function:: event IPConnection::ConnectedCallback(IPConnection sender, short connectReason)

@@ -205,8 +205,8 @@ to remove them with the corresponding "removeListener" function.
 
    <device-class>.DEVICE_IDENTIFIER
 
-  For example: :java:member:`BrickMaster::DEVICE_IDENTIFIER`
-  or :java:member:`BrickletAmbientLight::DEVICE_IDENTIFIER`.
+  For example: :java:member:`BrickMaster.DEVICE_IDENTIFIER <BrickMaster::DEVICE_IDENTIFIER>`
+  or :java:member:`BrickletAmbientLight.DEVICE_IDENTIFIER <BrickletAmbientLight::DEVICE_IDENTIFIER>`.
 
 
 .. java:function:: class IPConnection::ConnectedListener()

@@ -213,8 +213,8 @@ wieder zu entfernen.
 
    <device-class>.DEVICE_IDENTIFIER
 
-  Zum Beispiel: :java:member:`BrickMaster::DEVICE_IDENTIFIER`
-  oder :java:member:`BrickletAmbientLight::DEVICE_IDENTIFIER`.
+  Zum Beispiel: :java:member:`BrickMaster.DEVICE_IDENTIFIER <BrickMaster::DEVICE_IDENTIFIER>`
+  oder :java:member:`BrickletAmbientLight.DEVICE_IDENTIFIER <BrickletAmbientLight::DEVICE_IDENTIFIER>`.
 
 
 .. java:function:: class IPConnection::ConnectedListener()

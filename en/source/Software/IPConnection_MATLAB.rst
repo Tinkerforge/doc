@@ -255,8 +255,8 @@ below.
 
   <device-class>.DEVICE_IDENTIFIER
 
- For example: :matlab:member:`BrickMaster.DEVICE_IDENTIFIER`
- or :matlab:member:`BrickletAmbientLight.DEVICE_IDENTIFIER`.
+ For example: :matlab:member:`BrickMaster.DEVICE_IDENTIFIER <BrickMaster::DEVICE_IDENTIFIER>`
+ or :matlab:member:`BrickletAmbientLight.DEVICE_IDENTIFIER <BrickletAmbientLight::DEVICE_IDENTIFIER>`.
 
  In MATLAB the ``set()`` function can be used to register a callback function
  to this callback.

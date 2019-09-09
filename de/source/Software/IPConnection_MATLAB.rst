@@ -260,8 +260,8 @@ Strukturfeldern werden unterhalb beschrieben.
 
   <device-class>.DEVICE_IDENTIFIER
 
- Zum Beispiel: :matlab:member:`BrickMaster.DEVICE_IDENTIFIER`
- oder :matlab:member:`BrickletAmbientLight.DEVICE_IDENTIFIER`.
+ Zum Beispiel: :matlab:member:`BrickMaster.DEVICE_IDENTIFIER <BrickMaster::DEVICE_IDENTIFIER>`
+ oder :matlab:member:`BrickletAmbientLight.DEVICE_IDENTIFIER <BrickletAmbientLight::DEVICE_IDENTIFIER>`.
 
  In MATLAB kann die ``set()`` Function verwendet werden um diesem Callback eine
  Callback-Function zuzuweisen.
