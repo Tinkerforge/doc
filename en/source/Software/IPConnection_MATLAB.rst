@@ -90,7 +90,7 @@ Basic Functions
   ipcon = java_new("com.tinkerforge.IPConnection");
 
 
-.. matlab:function:: public void IPConnection::connect(String host, int port)
+.. matlab:function:: void IPConnection::connect(String host, int port)
 
  Creates a TCP/IP connection to the given ``host`` and ``port``. The host and port
  can refer to a Brick Daemon or to a WIFI/Ethernet Extension.
@@ -103,13 +103,13 @@ Basic Functions
  and port.
 
 
-.. matlab:function:: public void IPConnection::disconnect()
+.. matlab:function:: void IPConnection::disconnect()
 
  Disconnects the TCP/IP connection from the Brick Daemon or the WIFI/Ethernet
  Extension.
 
 
-.. matlab:function:: public void IPConnection::authenticate(String secret)
+.. matlab:function:: void IPConnection::authenticate(String secret)
 
  Performs an authentication handshake with the connected Brick Daemon or
  WIFI/Ethernet Extension.
@@ -123,7 +123,7 @@ Basic Functions
  information.
 
 
-.. matlab:function:: public byte IPConnection::getConnectionState()
+.. matlab:function:: byte IPConnection::getConnectionState()
 
  Can return the following states:
 
@@ -134,7 +134,7 @@ Basic Functions
    to connect.
 
 
-.. matlab:function:: public void IPConnection::setAutoReconnect(boolean autoReconnect)
+.. matlab:function:: void IPConnection::setAutoReconnect(boolean autoReconnect)
 
  Enables or disables auto-reconnect. If auto-reconnect is enabled,
  the IP Connection will try to reconnect to the previously given
@@ -145,12 +145,12 @@ Basic Functions
  Default value is *true*.
 
 
-.. matlab:function:: public boolean IPConnection::getAutoReconnect()
+.. matlab:function:: boolean IPConnection::getAutoReconnect()
 
  Returns *true* if auto-reconnect is enabled, *false* otherwise.
 
 
-.. matlab:function:: public void IPConnection::setTimeout(int timeout)
+.. matlab:function:: void IPConnection::setTimeout(int timeout)
 
  Sets the timeout in milliseconds for getters and for setters for which the
  response expected flag is activated.
@@ -158,12 +158,12 @@ Basic Functions
  Default timeout is 2500.
 
 
-.. matlab:function:: public int IPConnection::getTimeout()
+.. matlab:function:: int IPConnection::getTimeout()
 
  Returns the timeout as set by :matlab:func:`setTimeout() <IPConnection::setTimeout>`.
 
 
-.. matlab:function:: public void IPConnection::enumerate()
+.. matlab:function:: void IPConnection::enumerate()
 
  Broadcasts an enumerate request. All devices will respond with an enumerate
  callback.
@@ -206,7 +206,7 @@ The available callback names with corresponding structure fields are described
 below.
 
 
-.. matlab:member:: public callback IPConnection.EnumerateCallback
+.. matlab:member:: callback IPConnection::EnumerateCallback
 
  :param uid: String
  :param connectedUid: String
@@ -266,7 +266,7 @@ below.
  the ``removeEnumerateCallback()`` function.
 
 
-.. matlab:member:: public callback IPConnection.ConnectedCallback
+.. matlab:member:: callback IPConnection::ConnectedCallback
 
  :param connectReason: short
 
@@ -286,7 +286,7 @@ below.
  the ``removeConnectedCallback()`` function.
 
 
-.. matlab:member:: public callback IPConnection.DisconnectedCallback
+.. matlab:member:: callback IPConnection::DisconnectedCallback
 
  :param disconnectReason: short
 

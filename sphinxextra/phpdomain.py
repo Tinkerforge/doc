@@ -821,10 +821,10 @@ class PHPObject(ObjectDescription):
         node += pnode
 
     def attach_modifiers(self, node, obj):
-#        if obj.visibility != 'public':
-        node += addnodes.desc_annotation(obj.visibility,
-                                         obj.visibility)
-        node += nodes.Text(' ')
+        if obj.visibility != 'public':
+            node += addnodes.desc_annotation(obj.visibility,
+                                             obj.visibility)
+            node += nodes.Text(' ')
         if obj.static:
             node += addnodes.desc_annotation('static', 'static')
             node += nodes.Text(' ')

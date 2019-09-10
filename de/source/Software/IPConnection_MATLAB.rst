@@ -91,7 +91,7 @@ Grundfunktionen
   ipcon = java_new("com.tinkerforge.IPConnection");
 
 
-.. matlab:function:: public void IPConnection::connect(String host, int port)
+.. matlab:function:: void IPConnection::connect(String host, int port)
 
  Erstellt eine TCP/IP Verbindung zum gegebenen ``host`` und ``port``. Host und Port
  können auf einen Brick Daemon oder eine WIFI/Ethernet Extension verweisen.
@@ -104,13 +104,13 @@ Grundfunktionen
  Host und Port horcht.
 
 
-.. matlab:function:: public void IPConnection::disconnect()
+.. matlab:function:: void IPConnection::disconnect()
 
  Trennt die TCP/IP Verbindung zum Brick Daemon oder einer WIFI/Ethernet
  Extension.
 
 
-.. matlab:function:: public void IPConnection::authenticate(String secret)
+.. matlab:function:: void IPConnection::authenticate(String secret)
 
  Führt einen Authentifizierungs-Handshake mit dem verbundenen Brick Daemon
  oder WIFI/Ethernet Extension durch.
@@ -126,7 +126,7 @@ Grundfunktionen
  :ref:`Tutorial <tutorial_authentication>`.
 
 
-.. matlab:function:: public byte IPConnection::getConnectionState()
+.. matlab:function:: byte IPConnection::getConnectionState()
 
  Kann die folgenden Zustände zurückgeben:
 
@@ -137,7 +137,7 @@ Grundfunktionen
    eine Verbindung aufzubauen.
 
 
-.. matlab:function:: public void IPConnection::setAutoReconnect(boolean autoReconnect)
+.. matlab:function:: void IPConnection::setAutoReconnect(boolean autoReconnect)
 
  Aktiviert oder deaktiviert Auto-Reconnect. Falls Auto-Reconnect aktiviert
  ist, versucht die IP Connection eine Verbindung zum vorher angegebenen Host
@@ -148,12 +148,12 @@ Grundfunktionen
  Standardwert ist *true*.
 
 
-.. matlab:function:: public boolean IPConnection::getAutoReconnect()
+.. matlab:function:: boolean IPConnection::getAutoReconnect()
 
  Gibt *true* zurück wenn Auto-Reconnect aktiviert ist und *false* sonst.
 
 
-.. matlab:function:: public void IPConnection::setTimeout(int timeout)
+.. matlab:function:: void IPConnection::setTimeout(int timeout)
 
  Setzt den Timeout in Millisekunden für Getter und für Setter die das
  Response-Expected-Flag aktiviert haben.
@@ -161,13 +161,13 @@ Grundfunktionen
  Standardwert ist 2500.
 
 
-.. matlab:function:: public int IPConnection::getTimeout()
+.. matlab:function:: int IPConnection::getTimeout()
 
  Gibt den Timeout zurück, wie er von :matlab:func:`setTimeout()
  <IPConnection::setTimeout>` gesetzt wurde.
 
 
-.. matlab:function:: public void IPConnection::enumerate()
+.. matlab:function:: void IPConnection::enumerate()
 
  Broadcast einer Enumerierungsanfrage. Alle Bricks und Bricklets werden mit einem
  Enumerate Callback antworten.
@@ -211,7 +211,7 @@ abgeleitete. Die verfügbaren Callback-Namen mit den entsprechenden
 Strukturfeldern werden unterhalb beschrieben.
 
 
-.. matlab:member:: public callback IPConnection.EnumerateCallback
+.. matlab:member:: callback IPConnection::EnumerateCallback
 
  :param uid: String
  :param connectedUid: String
@@ -271,7 +271,7 @@ Strukturfeldern werden unterhalb beschrieben.
  kann mit ``removeEnumerateCallback()`` wieder entfernt werden.
 
 
-.. matlab:member:: public callback IPConnection.ConnectedCallback
+.. matlab:member:: callback IPConnection::ConnectedCallback
 
  :param connectReason: short
 
@@ -292,7 +292,7 @@ Strukturfeldern werden unterhalb beschrieben.
  kann mit ``removeConnectedCallback()`` wieder entfernt werden.
 
 
-.. matlab:member:: public callback IPConnection.DisconnectedCallback
+.. matlab:member:: callback IPConnection::DisconnectedCallback
 
  :param disconnectReason: short
 
