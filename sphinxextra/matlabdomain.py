@@ -837,10 +837,8 @@ class MATLABObject(ObjectDescription):
     def attach_name(self, node, name):
         owner, name = name.split_owner()
         varname = unicode(name)
-        # Olaf: Never show Class::
-        owner = None
         if owner is not None:
-            owner = unicode(owner) + '::'
+            owner = unicode(owner) + '.'
             node += addnodes.desc_addname(owner, owner)
         node += addnodes.desc_name(varname, varname)
 
@@ -974,10 +972,8 @@ class MATLABFunctionObject(MATLABObject):
 
     def attach_function(self, node, func):
         owner, name = func.name.split_owner()
-        # Olaf: Never show Class::
-        owner = None
         if owner is not None:
-            owner = unicode(owner) + '::'
+            owner = unicode(owner) + '.'
             node += addnodes.desc_addname(owner, owner)
 
         # cast operator is special.  in this case the return value
