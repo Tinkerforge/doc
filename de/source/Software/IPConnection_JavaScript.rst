@@ -85,6 +85,7 @@ folgenden Werte sein:
 * IPConnection.\ **ERROR**\ _FUNCTION_NOT_SUPPORTED = 42
 * IPConnection.\ **ERROR**\ _UNKNOWN_ERROR = 43
 * IPConnection.\ **ERROR**\ _STREAM_OUT_OF_SYNC = 51
+* IPConnection.\ **ERROR**\ _NON_ASCII_CHAR_IN_SECRET = 71
 
 Der Namespace der JavaScript Bindings ist ``Tinkerforge.*``.
 

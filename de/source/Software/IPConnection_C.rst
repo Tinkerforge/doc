@@ -59,7 +59,7 @@ Mögliche Fehlercodes sind:
 * **E**\ _HOSTNAME_INVALID = -3
 * **E**\ _NO_CONNECT = -4
 * **E**\ _NO_THREAD = -5
-* **E**\ _NOT_ADDED = -6 (seit Bindings Version 2.0.0 nicht mehr verwendet)
+* **E**\ _NOT_ADDED = -6 (seit C/C++ Bindings Version 2.0.0 nicht mehr verwendet)
 * **E**\ _ALREADY_CONNECTED = -7
 * **E**\ _NOT_CONNECTED = -8
 * **E**\ _INVALID_PARAMETER = -9
@@ -67,6 +67,7 @@ Mögliche Fehlercodes sind:
 * **E**\ _UNKNOWN_ERROR_CODE = -11
 * **E**\ _STREAM_OUT_OF_SYNC = -12
 * **E**\ _INVALID_UID = -13
+* **E**\ _NON_ASCII_CHAR_IN_SECRET = -14
 
 wie in :file:`ip_connection.h` definiert.
 

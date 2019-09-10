@@ -53,7 +53,7 @@ Generally, every method of the Python bindings can throw an
 ``description`` property. ``value`` can have different values:
 
 * Error.TIMEOUT = -1
-* Error.NOT_ADDED = -6 (unused since bindings version 2.0.0)
+* Error.NOT_ADDED = -6 (unused since Python bindings version 2.0.0)
 * Error.ALREADY_CONNECTED = -7
 * Error.NOT_CONNECTED = -8
 * Error.INVALID_PARAMETER = -9
@@ -61,6 +61,7 @@ Generally, every method of the Python bindings can throw an
 * Error.UNKNOWN_ERROR_CODE = -11
 * Error.STREAM_OUT_OF_SYNC = -12
 * Error.INVALID_UID = -13
+* Error.NON_ASCII_CHAR_IN_SECRET = -14
 
 All methods listed below are thread-safe.
 
