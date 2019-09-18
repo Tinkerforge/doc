@@ -155,7 +155,7 @@ class DefinitionParser(object):
 
     def parse_function(self):
         if self.match(_identifier_re):
-            bricklet_name = self.matched_text            
+            device_name = self.matched_text
         else:
             self.fail('Expected device name (identifier)')
 
@@ -189,10 +189,10 @@ class DefinitionParser(object):
             return_type = self._parse_type()
 
         result = addnodes.desc_signature("pub fn " + self.definition)
-        result['struct'] = bricklet_name + "::"
+        result['struct'] = device_name + "::"
         result['fn'] = fn_name
         result += addnodes.desc_annotation("pub fn ", "pub fn ")
-        result += addnodes.desc_addname(bricklet_name + "::", bricklet_name + "::")        
+        result += addnodes.desc_addname(device_name + "::", device_name + "::")
         result += addnodes.desc_name(fn_name, fn_name)
         if is_generic:
             result += addnodes.desc_addname(type_params,type_params)
