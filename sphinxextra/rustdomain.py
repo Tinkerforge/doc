@@ -25,7 +25,7 @@ from sphinx.util.docfields import TypedField
 
 from sphinxextra.utils import fixup_index_entry
 
-_identifier_re = re.compile(r'\b(~?[a-zA-Z_][a-zA-Z0-9_\.]*[\[\]]*)')
+_identifier_re = re.compile(r'\b(~?[a-zA-Z_][a-zA-Z0-9_\.]*)')
 _whitespace_re = re.compile(r'\s+(?u)')
 
 class DefinitionParser(object):
@@ -97,17 +97,18 @@ class DefinitionParser(object):
         if array:
             element_type = self._parse_type()
             self.skip_ws()
-            if not self.skip_string(";"):
-                self.fail("Expected ';' (between element type and count of array type)")
-            self.skip_ws()
-            if self.match(re.compile("\d*")):
-                element_count = self.matched_text
+            if self.skip_string(";"):
+                self.skip_ws()
+                if self.match(re.compile("\d*")):
+                    element_count = self.matched_text
+                else:
+                    self.fail('Expected element count of array type')
             else:
-                self.fail('Expected element count of array type')
+                element_count = None
             if not self.skip_string("]"):
                 self.fail("Expected ']' as end of array type")
-            return "{ref}{mut}[{type}; {count}]".format(ref='&' if ref else '', mut="mut" if mut else '', type=element_type, count=element_count)
-        
+            return "{ref}{mut}[{type}{count}]".format(ref='&' if ref else '', mut="mut" if mut else '', type=element_type, count='; ' + str(element_count) if element_count else '')
+
         type_ = ""
 
         while self.match(_identifier_re):
