@@ -118,7 +118,7 @@ class DefinitionParser(object):
                 type_ += "::"
 
         if type_ == "":
-            self.fail('Expected type (identifier)')            
+            self.fail('Expected type (identifier)')
 
         generic = self.skip_string("<")
         if generic:
@@ -143,7 +143,7 @@ class DefinitionParser(object):
             param_name = self.matched_text
         else:
             self.fail('Expected parameter name (identifier)')
-        
+
         if not self.skip_string(':'):
             self.fail('Expected ":"')
         self.skip_ws()
@@ -152,7 +152,7 @@ class DefinitionParser(object):
         param_text = "{name}: {t}".format(name=param_name, t=param_type)
         return addnodes.desc_parameter(param_text,param_text)
 
-    def parse_function(self):        
+    def parse_function(self):
         if self.match(_identifier_re):
             bricklet_name = self.matched_text            
         else:
@@ -160,7 +160,7 @@ class DefinitionParser(object):
 
         if not self.skip_string('::'):
             self.fail('Expected "::"')
-        
+
         if self.match(_identifier_re):
             fn_name = self.matched_text
         else:
@@ -169,7 +169,7 @@ class DefinitionParser(object):
         is_generic = self.skip_string('<')
         if is_generic:
             if self.match(re.compile(".*>\(")):
-               type_params = '<' + self.matched_text[:-1]               
+               type_params = '<' + self.matched_text[:-1]
             else:
                 self.fail('Could not find end of generic type parameters')
         if not is_generic and not self.skip_string('('):
@@ -186,7 +186,7 @@ class DefinitionParser(object):
         if returns_something:
             self.skip_ws()
             return_type = self._parse_type()
-        
+
         result = addnodes.desc_signature("pub fn " + self.definition)
         result['struct'] = bricklet_name + "::"
         result['fn'] = fn_name
@@ -200,18 +200,18 @@ class DefinitionParser(object):
             paramList += param
         result += paramList
         if returns_something:
-            result += addnodes.desc_returns(return_type, return_type)        
+            result += addnodes.desc_returns(return_type, return_type)
         return result
 
     def parse_constant(self):
         if self.match(_identifier_re):
-            device_name = self.matched_text            
+            device_name = self.matched_text
         else:
             self.fail('Expected device name (identifier)')
 
         if not self.skip_string('::'):
             self.fail('Expected "::"')
-        
+
         if self.match(_identifier_re):
             constant_name = self.matched_text
         else:
@@ -220,7 +220,7 @@ class DefinitionParser(object):
         if not self.skip_string(':'):
             self.fail('Expected ":"')
         t = self._parse_type()
-        
+
         result = addnodes.desc_signature("pub const " + self.definition)
         result += addnodes.desc_addname(device_name + "::", device_name + "::")
         result += addnodes.desc_name(constant_name, constant_name)
@@ -241,7 +241,7 @@ class RustObject(ObjectDescription):
 
     def get_index_text(self, name_cls):
         if self.objtype == 'function':
-            return _('%s() (built-in function)') % name_cls            
+            return _('%s() (built-in function)') % name_cls
         elif self.objtype == 'callback':
             return _('%s() (built-in callback)') % name_cls
         elif self.objtype == 'data':
@@ -253,10 +253,10 @@ class RustObject(ObjectDescription):
         objects = self.env.domaindata['rust']['objects']
         fullname = signode['struct'] + signode['fn']
         signode['ids'].append(fullname)
-        
+
         # has to happen _after_ the fullname is added to the signodes' ids, as note_explicit_target generates the html id-attributes (i.e. link anchors)
         self.state.document.note_explicit_target(signode)
-        
+
         if fullname in objects:
             self.env.warn(
                     self.env.docname,
@@ -270,7 +270,7 @@ class RustObject(ObjectDescription):
         indextext = self.get_index_text(fullname)
         if indextext:
             self.indexnode['entries'].append(fixup_index_entry(('single', indextext, fullname, fullname, 'foobar')))
-   
+
     def parse_definition(self, parser):
         raise NotImplementedError()
 
@@ -327,7 +327,7 @@ class RustConstantObject(RustObject):
 class RustXRefRole(XRefRole):
     def _fix_parens(self, env, has_explicit_title, title, target):
         # remove parentheses
-        if not has_explicit_title and title.endswith('()'):                
+        if not has_explicit_title and title.endswith('()'):
             title = title[:-2]
         # remove parentheses from the target too
         if target.endswith('()'):
@@ -357,8 +357,8 @@ class RustDomain(Domain):
     }
 
     directives = {
-        'function':     RustFunctionObject,     
-        'constant':     RustConstantObject,   
+        'function':     RustFunctionObject,
+        'constant':     RustConstantObject,
     }
     roles = {
         'func' :  RustXRefRole(fix_parens=True),
