@@ -191,7 +191,7 @@ class DefinitionParser(object):
         result = addnodes.desc_signature("pub fn " + self.definition)
         result['struct'] = bricklet_name + "::"
         result['fn'] = fn_name
-        result += addnodes.desc_addname("pub fn ", "pub fn ")
+        result += addnodes.desc_annotation("pub fn ", "pub fn ")
         result += addnodes.desc_addname(bricklet_name + "::", bricklet_name + "::")        
         result += addnodes.desc_name(fn_name, fn_name)
         if is_generic:
