@@ -47,13 +47,13 @@ class Translatable:
 
 # REs for LabVIEW signatures
 labview_sig_re = re.compile(
-    r'''^ (event[ ])?\s*
-          (?:([\w]+\.))?         # class name(s)
-          (\w+)  \s*             # thing name
-          (?: \((.*)\)           # optional: arguments
-           (?:\s* -> \s* (.*))?  #           return annotation
-          )? $                   # and nothing more
-          ''', re.VERBOSE)
+    r'''^(event[ ])?\s*
+         (?:([\w]+\.))?    # class name(s)
+         (\w+)\s*          # thing name
+         (?:\((.*)\))?     # optional: arguments
+         (?:\s*->\s*(.*))? #           return annotation
+        $                  # and nothing more
+         ''', re.VERBOSE)
 
 class desc_parameterlist(nodes.Part, nodes.Inline, nodes.TextElement):
     child_text_separator = ', '
@@ -204,21 +204,17 @@ class LabVIEWObject(ObjectDescription):
         anno = self.options.get('annotation')
 
         signode += addnodes.desc_name(name, name)
-        if not arglist:
-            if self.needs_arglist():
-                # for callables, add an empty parameter list
-                signode += desc_parameterlist()
-            if retann:
-                signode += addnodes.desc_returns(retann, retann)
-            if anno:
-                signode += addnodes.desc_annotation(' ' + anno, ' ' + anno)
-            return fullname, name_prefix
+        if arglist:
+            _pseudo_parse_arglist(signode, arglist)
+        elif not kind and self.needs_arglist():
+            # for functions, add an empty parameter list
+            signode += desc_parameterlist()
 
-        _pseudo_parse_arglist(signode, arglist)
         if retann:
             signode += addnodes.desc_returns(retann, retann)
         if anno:
             signode += addnodes.desc_annotation(' ' + anno, ' ' + anno)
+
         return fullname, name_prefix
 
     def get_index_text(self, modname, name):
