@@ -223,11 +223,12 @@ class DefinitionParser(object):
         t = self._parse_type()
 
         result = addnodes.desc_signature("pub const " + self.definition)
+        result['struct'] = device_name + "::"
+        result['fn'] = constant_name
+        result += addnodes.desc_annotation("pub const ", "pub const ")
         result += addnodes.desc_addname(device_name + "::", device_name + "::")
         result += addnodes.desc_name(constant_name, constant_name)
         result += addnodes.desc_type(t)
-        result['struct'] = device_name + "::"
-        result['fn'] = constant_name
         return result
 
     def assert_end(self):
