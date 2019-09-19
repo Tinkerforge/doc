@@ -26,6 +26,12 @@ Bricks
        :align: center
        :target: ../../_images/Bricks/brick_dc_tilted_front_800.jpg
 
+    - .. image:: /Images/Bricks/brick_hat_tilted_top_100.jpg
+       :scale: 100 %
+       :alt: HAT Brick
+       :align: center
+       :target: ../../_images/Bricks/brick_hat_tilted_top_800.jpg
+
     - .. image:: /Images/Bricks/brick_stepper_tilted_front_100.jpg
        :scale: 100 %
        :alt: Stepper Brick
