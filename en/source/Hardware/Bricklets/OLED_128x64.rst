@@ -1,6 +1,4 @@
 
-:shoplink: ../../../shop/bricklets/oled-128x64-bricklet.html
-
 .. include:: OLED_128x64.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
@@ -27,7 +25,7 @@ OLED 128x64 Bricklet
 
 .. note::
 
- The OLED 128x64 Bricklet is discontinued. We are selling our remaining stock. The
+ The OLED 128x64 Bricklet is discontinued and is no longer sold. The
  :ref:`OLED 128x64 Bricklet 2.0 <oled_128x64_v2_bricklet>` is the recommended
  replacement.
 
