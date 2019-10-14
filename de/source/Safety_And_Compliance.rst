@@ -3,8 +3,8 @@
 Sicherheitshinweise
 ===================
 
-Allgemeine Sicherheitshinweise für Bricks, Bricklets und Extensions
--------------------------------------------------------------------
+Allgemeine Sicherheitshinweise für Bricks, Bricklets, Extensions und Step-Down Power Supply
+-------------------------------------------------------------------------------------------
 
 * Nicht mit Wasser oder hoher Feuchtigkeit in Kontakt bringen.
 * Nicht auf leitender Oberfläche benutzen.

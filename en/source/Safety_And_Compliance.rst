@@ -3,8 +3,8 @@
 Safety Instructions
 ===================
 
-General safety instructions for Bricks, Bricklets and Extensions
-----------------------------------------------------------------
+General safety instructions for Bricks, Bricklets, Extensions and Step-Down Power Supply
+----------------------------------------------------------------------------------------
 
 * Do not expose to water or high moisture.
 * Do not place on a conductive surface.
