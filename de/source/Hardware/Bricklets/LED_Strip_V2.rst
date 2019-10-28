@@ -228,8 +228,8 @@ Die Eingangsklemme verfügt über zwei Signale:
 
 .. _led_strip_v2_bricklet_ws2812b_led_strips:
 
-LED Streifen mit Taktleitung (z.B. WS2812B)
--------------------------------------------
+LED Streifen ohne Taktleitung (z.B. WS2812B)
+--------------------------------------------
 
 Es existiert keine allgemeine farbliche Kennzeichnung für LED Streifen.
 Insbesondere verstoßen die Farben oftmals gegen Konventionen. In diesem WS2812B
@@ -263,8 +263,8 @@ Das nachfolgende Bild zeigt ein Beispiel.
 
 .. _led_strip_v2_bricklet_ws2801_led_strips:
 
-LED Steifen ohne Taktleitung (z.B. WS2801)
-------------------------------------------
+LED Steifen mit Taktleitung (z.B. WS2801)
+-----------------------------------------
 
 Es existiert keine allgemeine farbliche Kennzeichnung für LED Streifen.
 Insbesondere verstoßen die Farben oftmals gegen Konventionen. In diesem WS2801 

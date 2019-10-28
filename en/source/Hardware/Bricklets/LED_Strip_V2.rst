@@ -225,8 +225,8 @@ The input terminal consisting of two signals:
 
 .. _led_strip_v2_bricklet_ws2812b_led_strips:
 
-LED Strips with Clock Signal (e.g. WS2812B)
--------------------------------------------
+LED Strips without Clock Signal (e.g. WS2812B)
+----------------------------------------------
 
 There is no general color code for LED strips. Especially sometimes the color 
 codes are against any agreements. In this WS2812B LED strip example the red 
@@ -255,8 +255,8 @@ See the following image as an example for it.
 
 .. _led_strip_v2_bricklet_ws2801_led_strips:
 
-LED Strips without Clock signal (e.g. WS2801)
----------------------------------------------
+LED Strips with Clock signal (e.g. WS2801)
+------------------------------------------
 
 There is no general color code for LED strips. Especially sometimes the color 
 codes are against any agreements. In this WS2801 LED strip example the black 
