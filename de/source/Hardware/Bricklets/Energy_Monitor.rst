@@ -68,7 +68,7 @@ mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
 .. raw:: html
 
  <div style="position: relative; height: 0; padding-bottom: 56.25%;">
- <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" class="youtube" src="https://www.youtube-nocookie.com/embed/Aq3SqVen5AQ" frameborder="0" allowfullscreen></iframe>
+ <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" class="youtube" src="https://www.youtube-nocookie.com/embed/RHulIqFu-iA" frameborder="0" allowfullscreen></iframe>
  </div>
 
 Technische Spezifikation
