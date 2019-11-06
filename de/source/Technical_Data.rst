@@ -137,10 +137,10 @@ Beschreibung
   (5V -> 3V3) auf der Platine erzeugt.
 * **Current**: Signal zur Messung des Stromverbrauchs über die
   :ref:`Stromversorgung <primer_power_supplies>` (max. 3,3V). Kann
-  von Master Bricks verwendet wird.
+  von Master Bricks verwendet werden.
 * **Voltage**: Signal zur Messung der externen Versorgungsspannung der
   :ref:`Stromversorgung <primer_power_supplies>` (max. 3,3V). Kann
-  von Master Bricks verwendet wird.
+  von Master Bricks verwendet werden.
 
 
 .. _connector_bricklet:
