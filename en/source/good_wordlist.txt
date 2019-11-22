@@ -9,6 +9,7 @@ mA
 Hz
 lux
 mbar
+hPa
 mV
 dBm
 Vrms

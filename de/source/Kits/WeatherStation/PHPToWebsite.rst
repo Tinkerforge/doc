@@ -129,7 +129,7 @@ Danach müssen die Werte abgerufen werden und in einem Array gespeichert werden.
     $response = array (
         "illuminance"  => "Illuminance: $illuminance Lux",
         "humidity"     => "Humidity: $humidity %RH",
-        "air_pressure" => "Air Pressure: $air_pressure mbar",
+        "air_pressure" => "Air Pressure: $air_pressure hPa",
         "temperature"  => "Temperature: $temperature &deg;C",
     );
 

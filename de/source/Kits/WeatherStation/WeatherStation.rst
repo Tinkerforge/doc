@@ -33,7 +33,7 @@ Features
 * Misst Temperatur, Luftfeuchtigkeit, Luftdruck und Helligkeit
 * Hohe Präzision und Auflösung
 
-  * z.B. Luftdruck 0,012mbar und Temperatur 0,01°C
+  * z.B. Luftdruck 0,012hPa und Temperatur 0,01°C
 
 * Steuerung über USB, WLAN und Ethernet oder mit RED Brick und Raspberry Pi
 * Modifizierbar: Mehr Taster, mehr Sensoren und eigene Software
@@ -94,7 +94,7 @@ Technische Spezifikation
 ================================  ============================================================
 Eigenschaft                       Wert 
 ================================  ============================================================
-Luftdruck                         10mbar - 1200mbar in 0,012mbar Schritten
+Luftdruck                         10hPa - 1200hPa in 0,012hPa Schritten
 Beleuchtungsstärke                0Lux - 64000Lux in 0,01Lux Schritten
 Relative Luftfeuchtigkeit         0% RH - 100% RH in 0,1% RH Schritten
 Temperatur                        -40°C - 85°C in 0,01°C Schritten

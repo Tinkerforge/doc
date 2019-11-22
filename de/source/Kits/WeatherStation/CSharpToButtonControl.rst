@@ -324,7 +324,7 @@ der letzten 24h an:
 
             case MODE_AIR_PRESSURE:
                 UpdateMinMaxAvgWrite("Air Pressure   " + TimeFromSeconds(airPressureQueue.Count),
-                                     "mbar",
+                                     "hPa",
                                      GetMinMaxAvg(airPressureQueue));
                 break;
 

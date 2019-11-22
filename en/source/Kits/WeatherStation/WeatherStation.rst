@@ -33,7 +33,7 @@ Features
 * Measures Temperature, Humidity, Air Pressure and Illuminance
 * High Precision and Resolution
 
-  * e.g. Air Pressure 0.012mbar and Temperature 0.01°C
+  * e.g. Air Pressure 0.012hPa and Temperature 0.01°C
 
 * Control over USB, Wi-Fi and Ethernet or with RED Brick and Raspberry Pi
 * Modifiable: more buttons, more sensors and customized software
@@ -91,9 +91,9 @@ Technical Specifications
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
-Air Pressure                      10mbar - 1200mbar in 0.012mbar steps
-Illumination                      0lux - 64000lux in 0.01lux steps
-Relative Humidity                 0% RH - 100% RH in 0.1% RH steps
+Air Pressure                      10hPa - 1200hPa in 0.012hPa steps
+Illumination                      0lx - 64000lx in 0.01lx steps
+Relative Humidity                 0%RH - 100%RH in 0.1%RH steps
 Temperature                       -40°C - 85°C in 0.01°C steps
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------

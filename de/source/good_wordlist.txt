@@ -117,6 +117,7 @@ höchstwertigste
 niederwertigste
 anfährt
 mbar
+hPa
 mV
 µs
 dBi

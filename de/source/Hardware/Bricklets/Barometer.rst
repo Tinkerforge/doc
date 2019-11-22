@@ -34,8 +34,8 @@ Features
 --------
 
 * Misst Luftdruck und Höhenänderungen
-* Auflösung 0,012mbar / 0,1m
-* Bereich 10 bis 1200mbar
+* Auflösung 0,012hPa / 0,1m
+* Bereich 10 bis 1200hPa
 
 
 .. _barometer_bricklet_description:
@@ -45,7 +45,7 @@ Beschreibung
 
 Mit dem Barometer :ref:`Bricklet <primer_bricklets>` können 
 :ref:`Bricks <primer_bricks>` den Luftdruck im Bereich von 10 bis
-1200mbar mit einer Auflösung von 0,012mbar messen. Die Messung ist intern
+1200hPa mit einer Auflösung von 0,012hPa messen. Die Messung ist intern
 temperaturkompensiert.
 
 Das Bricklet ist mit einem MS5611-01BA01 Sensor ausgestattet der auch als
@@ -66,9 +66,9 @@ Sensor                            MS5611-01BA01
 Stromverbrauch                    1mA
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Luftdruck Bereich                 10 - 1200mbar
-Auflösung                         0,012mbar / 0,1m
-Genauigkeit (25°C, 750mbar)       ±1,5mbar
+Luftdruck Bereich                 10 - 1200hPa
+Auflösung                         0,012hPa / 0,1m
+Genauigkeit (25°C, 750hPa)        ±1,5hPa
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Abmessungen (B x T x H)           25 x 15 x 5mm (0,98 x 0,59 x 0,19")
@@ -96,7 +96,7 @@ Erster Test
 |test_connect|.
 
 |test_tab|
-Wenn alles wie erwartet funktioniert wird der Luftdruck in mbar angezeigt.
+Wenn alles wie erwartet funktioniert wird der Luftdruck in hPa angezeigt.
 Der Graph gibt den zeitlichen Verlauf des Luftdrucks wieder.
 
 .. image:: /Images/Bricklets/bricklet_barometer_brickv.jpg
@@ -146,7 +146,7 @@ Höhenangabe
 ^^^^^^^^^^^
 
 Die Höhenangabe des Barometer Bricklets bezieht sich standardmäßig auf einen
-Referenzluftdruck von 1013,25 mbar und wird mittels einer Approximation
+Referenzluftdruck von 1013,25 hPa und wird mittels einer Approximation
 des `International Standard Atmosphere <https://de.wikipedia.org/wiki/Normatmosph%C3%A4re>`__
 Modells berechnet. Eine so bestimmte Höhe ist in der Luftfahrt als `QNE
 <https://de.wikipedia.org/wiki/Barometrische_H%C3%B6henmessung_in_der_Luftfahrt#QNE>`__

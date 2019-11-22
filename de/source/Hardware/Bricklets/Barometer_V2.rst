@@ -26,8 +26,8 @@ Features
 --------
 
 * Misst Luftdruck, Temperatur und Höhenänderungen
-* Auflösung 0,0075mbar / 6,25cm
-* Bereich 260 bis 1260mbar
+* Auflösung 0,0075hPa / 6,25cm
+* Bereich 260 bis 1260hPa
 
 
 .. _barometer_v2_bricklet_description:
@@ -37,7 +37,7 @@ Beschreibung
 
 Mit dem Barometer :ref:`Bricklet <primer_bricklets>` 2.0 können 
 :ref:`Bricks <primer_bricks>` den Luftdruck im Bereich von 260 bis
-1260mbar mit einer Auflösung von 0,0075mbar messen. Die Messung ist intern
+1260hPa mit einer Auflösung von 0,0075hPa messen. Die Messung ist intern
 temperaturkompensiert.
 
 Das Bricklet ist mit einem LPS22HB Sensor ausgestattet der auch als
@@ -61,9 +61,9 @@ Sensor                            LPS22HB
 Stromverbrauch                    30mW (6mA bei 5V)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Luftdruckbereich                  260 bis 1260mbar
-Auflösung                         0,0075mbar / 6,25cm
-Genauigkeit (0-65°C)              ±1,1mbar unkalibriert, ±0,2mbar kalibriert
+Luftdruckbereich                  260 bis 1260hPa
+Auflösung                         0,0075hPa / 6,25cm
+Genauigkeit (0-65°C)              ±1,1hPa unkalibriert, ±0,2hPa kalibriert
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Temperaturbereich                 -40 bis +85°C
@@ -97,7 +97,7 @@ Erster Test
 |test_connect|.
 
 |test_tab|
-Wenn alles wie erwartet funktioniert wird der Luftdruck in mbar angezeigt.
+Wenn alles wie erwartet funktioniert wird der Luftdruck in hPa angezeigt.
 Der Graph gibt den zeitlichen Verlauf des Luftdrucks wieder.
 
 .. image:: /Images/Bricklets/bricklet_barometer_v2_brickv.jpg
@@ -147,7 +147,7 @@ Höhenangabe
 ^^^^^^^^^^^
 
 Die Höhenangabe des Barometer Bricklets bezieht sich standardmäßig auf einen
-Referenzluftdruck von 1013,25mbar und wird mittels einer Approximation
+Referenzluftdruck von 1013,25hPa und wird mittels einer Approximation
 des `International Standard Atmosphere <https://de.wikipedia.org/wiki/Normatmosph%C3%A4re>`__
 Modells berechnet. Eine so bestimmte Höhe ist in der Luftfahrt als `QNE
 <https://de.wikipedia.org/wiki/Barometrische_H%C3%B6henmessung_in_der_Luftfahrt#QNE>`__

@@ -33,8 +33,8 @@ Features
 --------
 
 * Measures air pressure and altitude changes
-* Resolution 0.012mbar / 0.1m
-* Range 10 to 1200mbar
+* Resolution 0.012hPa / 0.1m
+* Range 10 to 1200hPa
 
 
 .. _barometer_bricklet_description:
@@ -44,8 +44,8 @@ Description
 
 The Barometer :ref:`Bricklet <primer_bricklets>` can be used to extend the 
 features of :ref:`Bricks <primer_bricks>` by the
-capability to measure air pressure in range of 10 to 1200mbar with a resolution
-of 0.012mbar. The measurement is temperature compensated internally.
+capability to measure air pressure in range of 10 to 1200hPa with a resolution
+of 0.012hPa. The measurement is temperature compensated internally.
 
 The Bricklet is equipped with a MS5611-01BA01 sensor which is designed to be
 used as an altimeter, too. But since the air pressure is changing significantly
@@ -65,9 +65,9 @@ Sensor                            MS5611-01BA01
 Current Consumption               1mA
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Pressure Range                    10 - 1200mbar
-Resolution                        0.012mbar / 0.1m
-Accuracy (25°C, 750mbar)          ± 1.5mbar
+Pressure Range                    10 - 1200hPa
+Resolution                        0.012hPa / 0.1m
+Accuracy (25°C, 750hPa)           ± 1.5hPa
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)            25 x 15 x 5mm (0.98 x 0.59 x 0.19")
@@ -95,7 +95,7 @@ Test your Barometer Bricklet
 |test_connect|.
 
 |test_tab|
-If everything went as expected you can now see the air pressure in mbar
+If everything went as expected you can now see the air pressure in hPa
 and a graph that shows the air pressure over time.
 
 .. image:: /Images/Bricklets/bricklet_barometer_brickv.jpg
@@ -143,7 +143,7 @@ Altitude Reading
 ^^^^^^^^^^^^^^^^
 
 The altitude value for the Barometer Bricklets is by default calculated for a
-reference air pressure of 1013.25mbar using an approximation of the
+reference air pressure of 1013.25hPa using an approximation of the
 `International Standard Atmosphere <https://en.wikipedia.org/wiki/International_Standard_Atmosphere>`__
 model. An altitude value calculated like this is known as `QNE
 <https://en.wikipedia.org/wiki/Pressure_altitude>`__ value in aviation.

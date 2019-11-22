@@ -318,7 +318,7 @@ In MinMaxAvg mode we show minimum, maximum and average values of the last 24 hou
 
             case MODE_AIR_PRESSURE:
                 UpdateMinMaxAvgWrite("Air Pressure   " + TimeFromSeconds(airPressureQueue.Count),
-                                     "mbar",
+                                     "hPa",
                                      GetMinMaxAvg(airPressureQueue));
                 break;
 

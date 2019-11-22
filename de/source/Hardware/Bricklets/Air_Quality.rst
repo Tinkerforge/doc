@@ -39,7 +39,7 @@ Beschreibung
 Das Air Quality :ref:`Bricklet <primer_bricklets>` kann
 
 * IAQ (Indoor Air Quality = Innenraumluftqualität) Index,
-* Luftdruck in mbar,
+* Luftdruck in hPa,
 * Luftfeuchte in %RH und
 * Temperatur in °C messen.
 
@@ -83,12 +83,12 @@ Stromverbrauch                    100mW (20mA bei 5V)
 --------------------------------  ---------------------------------------------------------------------
 --------------------------------  ---------------------------------------------------------------------
 IAQ Index-Auflösung               1
-Luftdruck-Auflösung               0,0018mbar
+Luftdruck-Auflösung               0,0018hPa
 Luftfeuchte-Auflösung             0,008%RH
 Temperatur-Auflösung              0,01°C
 --------------------------------  ---------------------------------------------------------------------
 IAQ Index-Genauigkeit             ±15 und ±15% des Wertes
-Luftdruck-Genauigkeit             ±0,12mbar (700-900mbar bei 25-40°C), ±0,6mbar (gesamter Messbereich)
+Luftdruck-Genauigkeit             ±0,12hPa (700-900hPa bei 25-40°C), ±0,6hPa (gesamter Messbereich)
 Luftfeuchte-Genauigkeit           ±3%RH (20-80%RH bei 25°C)
 Temperatur-Genauigkeit            ±0,5°C (at 25°C), ±1,0°C (0-65°C)*
 --------------------------------  ---------------------------------------------------------------------

@@ -39,7 +39,7 @@ Description
 The Air Quality :ref:`Bricklet <primer_bricklets>` can measure
 
 * IAQ (indoor air quality) index,
-* Air pressure in mbar,
+* Air pressure in hPa,
 * Humidity in %RH and
 * Temperature in °C.
 
@@ -82,12 +82,12 @@ Current Consumption               100mW (20mA at 5V)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 IAQ Index Resolution              1
-Air Pressure Resolution           0.0018mbar
+Air Pressure Resolution           0.0018hPa
 Humidity Resolution               0.008%RH
 Temperature Resolution            0.01°C
 --------------------------------  ------------------------------------------------------------
 IAQ Index Accuracy                ±15 and ±15% of reading
-Air Pressure Accuracy             ±0.12mbar (700-900mbar at 25-40°C), ±0.6mbar (full scale)
+Air Pressure Accuracy             ±0.12hPa (700-900hPa at 25-40°C), ±0.6hPa (full scale)
 Humidity Accuracy                 ±3%RH (20-80%RH at 25°C)
 Temperature Accuracy              ±0.5°C (at 25°C), ±1.0°C (0-65°C)*
 --------------------------------  ------------------------------------------------------------
