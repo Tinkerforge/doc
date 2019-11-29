@@ -105,7 +105,7 @@ Preparation
 Flashing a Brick requires that it is connected via USB to the PC that runs the
 Brick Viewer. Depending on the type of Brick the following hints may apply:
 
-* Before you flash a new firmware on a **IMU Brick** you might want to backup
+* Before you flash a new firmware on a **IMU Brick (1.0)** you might want to backup
   its calibration data, because it is lost during the flashing process. This is
   only important if you did your own calibration, because the factory calibration
   can be restored automatically during the flashing process since Brick Viewer
