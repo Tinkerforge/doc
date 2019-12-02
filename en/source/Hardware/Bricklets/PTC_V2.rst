@@ -31,7 +31,7 @@ Features
 
 * Supports Pt100 and Pt1000 sensors
 * Supports 2-wire, 3-wire and 4-wire type
-* Measures temperature with 0.5% accuracy at the full scale of -246 to 849°C
+* Measures temperature with 0.05% accuracy at the full scale of -246 to 849°C
 * Resolution of 0.03125°C (15bit)
 
 
@@ -71,7 +71,7 @@ Current Consumption               40mW (8mA at 5V)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Supported Pt-Sensor Types         Pt100 and Pt1000 with 2-wire, 3-wire or 4-wire
-Accuracy                          min 0.5% full scale
+Accuracy                          min 0.05% full scale
 Input Protection                  +-50V
 Temperature Resolution            0.03125°C (15bit)
 Conversion Time                   21ms

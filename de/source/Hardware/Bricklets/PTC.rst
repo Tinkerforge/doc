@@ -34,7 +34,7 @@ Features
 
 * Unterstützt Pt100 und Pt1000 Sensoren
 * Unterstützt 2-Leiter, 3-Leiter und 4-Leiter Typ
-* Misst Temperaturen mit 0,5% Genauigkeit auf der vollen Skala von -246 bis 849°C
+* Misst Temperaturen mit 0,05% Genauigkeit auf der vollen Skala von -246 bis 849°C
 * Auflösung von 0,03125°C (15Bit), Ausgabe in 0,01°C Schritten
 
 
@@ -66,7 +66,7 @@ Stromverbrauch                    2mA
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Unterstütze Pt-Sensor Typen       Pt100 und Pt1000 mit 2-Leiter, 3-Leiter oder 4-Leiter
-Genauigkeit                       Mindestens 0,5% auf voller Skala
+Genauigkeit                       Mindestens 0,05% auf voller Skala
 Eingangsschutz                    +-50V
 Temperaturauflösung               0,03125°C (15Bit)
 Konvertierungszeit                21ms
