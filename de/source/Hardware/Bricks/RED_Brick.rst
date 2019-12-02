@@ -316,7 +316,7 @@ Brick Viewer >= 2.2.2) kann der RED Brick in einen WLAN Access
 Point verwandelt werden. Dieser Abschnitt ist erst verfügbar, wenn der
 :ref:`Access Point Service <red_brick_brickv_settings_services>` aktiviert ist
 und ein `WLAN USB Stick
-<https://www.tinkerforge.com/de/shop/accessories/red-brick/wifi-usb-adapter.html>`__
+<https://www.tinkerforge.com/de/shop/accessories/red-brick.html>`__
 eingesteckt ist.
 
 .. image:: /Images/Screenshots/brickv_red_tab_settings_access_point.jpg

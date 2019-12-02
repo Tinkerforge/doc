@@ -303,7 +303,7 @@ Brick Viewer >= 2.2.2) of this tab, you can turn
 the RED Brick into a wireless access point. This section is only
 available if the :ref:`Access Point service <red_brick_brickv_settings_services>`
 is activated and you have connected the `Wi-Fi USB Adapter
-<https://www.tinkerforge.com/en/shop/accessories/red-brick/wifi-usb-adapter.html>`__
+<https://www.tinkerforge.com/en/shop/accessories/red-brick.html>`__
 to the RED Brick USB port.
 
 .. image:: /Images/Screenshots/brickv_red_tab_settings_access_point.jpg
