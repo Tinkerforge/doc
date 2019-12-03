@@ -10,11 +10,10 @@ god          0.13.7         Process monitoring framework.                       
 integration  0.1.4          Numerical integration for Ruby with a simple interface.                                                |c|
 minimization 0.2.5          A suite for minimization in Ruby                                                                       |c|
 msgpack-rpc  0.6.0          MessagePack-RPC, asynchronous RPC library using MessagePack                                            |c|
-mysql2       0.5.2          A simple, fast Mysql library for Ruby, binding to libmysql                                             |c|
-plotrb       0.0.1          Plotrb is a plotting tool in Ruby, built on Vega and D3, and is part of the SciRuby Project.           |c|
+mysql2       0.5.3          A simple, fast Mysql library for Ruby, binding to libmysql                                             |c|
 prawn        2.2.2, 0.8.4   A fast and nimble PDF generator for Ruby                                                               |c|
-rake         12.3.3, 10.5.0 Rake is a Make-like program implemented in Ruby                                                        |c|
-rubocop      0.74.0         Automatic Ruby code style checking tool.                                                               |c|
+rake         13.0.1, 10.5.0 Rake is a Make-like program implemented in Ruby                                                        |c|
+rubocop      0.77.0         Automatic Ruby code style checking tool.                                                               |c|
 ruby-full    1:2.3.3        Ruby full installation (default version)                                                               |c|
 ruby-pcap    0.7.9          Ruby interface to LBL Packet Capture library.                                                          |c|
 rubyvis      0.7.0, 0.6.1   Rubyvis                                                                                                |c|
