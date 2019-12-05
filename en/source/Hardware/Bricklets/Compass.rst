@@ -27,7 +27,7 @@ Features
 
 * 3-axis compass
 * Measures heading with resolution of 0.1° and accuracy up to 1°
-* Measures magnetic flux density with 0.1mG (milli Gauss) resolution
+* Measures magnetic flux density with 0.01µT (microtesla) resolution
 * Update rate of up to 600Hz
 
 .. _compass_bricklet_description:
@@ -64,8 +64,8 @@ Sensor                            MMC5883MA
 Current Consumption               40mW (8mA at 5V)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Magnetic Flux Density Range       -8G to 8G (Gauss)
-Magnetic Flux Density Resolution  0.1mG (milli Gauss)
+Magnetic Flux Density Range       -800µT to 800µT (microtesla)
+Magnetic Flux Density Resolution  0.01µT (microtesla)
 Heading Range                     0° to 360°
 Heading Resolution                0.1°
 Heading Accuracy                  Up to 1° at 100Hz update rate*

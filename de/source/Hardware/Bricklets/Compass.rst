@@ -27,7 +27,7 @@ Features
 
 * 3-Achsen Kompass
 * Misst die Himmelsrichtung (0,1° Auflösung / bis zu 1° Genauigkeit)
-* Misst die magnetische Flussdichte (Auflösung 0,1mG / Milligauß)
+* Misst die magnetische Flussdichte (Auflösung 0,01µT / Mikrotesla)
 * Messfrequenz von bis zu 600Hz
 
 
@@ -64,8 +64,8 @@ Sensor                               MMC5883MA
 Stromverbrauch                       40mW (8mA bei 5V)
 -----------------------------------  ------------------------------------------------------------
 -----------------------------------  ------------------------------------------------------------
-Magnetische Flussdichte Messbereich  -8G bis 8G (Gauß)
-Magnetische Flussdichte Auflösung    0,1mG (Milligauß)
+Magnetische Flussdichte Messbereich  -800µT bis 800µT (Mikrotesla)
+Magnetische Flussdichte Auflösung    0,01µG (Mikrotesla)
 Himmelsrichtung Messbereich          0° bis 360°
 Himmelsrichtung Auflösung            0,1°
 Himmelsrichtung Genauigkeit          Bis zu 1° bei 100Hz Updaterate*
