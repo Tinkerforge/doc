@@ -309,13 +309,13 @@ def make_download_tools_table():
     'en': """.. csv-table::
  :header: "Tool", "Downloads", "Version", "Archive", "Changelog"
  :delim: |
- :widths: 17, 32, 5, 5, 8
+ :widths: 25, 50, 7, 7, 10
 
 """,
     'de': """.. csv-table::
  :header: "Tool", "Downloads", "Version", "Archiv", "Changelog"
  :delim: |
- :widths: 17, 32, 5, 5, 8
+ :widths: 25, 50, 7, 7, 10
 
 """
     }
@@ -356,13 +356,13 @@ def make_download_bindings_table():
     'en': """.. csv-table::
  :header: "Language", "Downloads", "Version", "Archive", "Changelog"
  :delim: |
- :widths: 17, 32, 5, 5, 8
+ :widths: 25, 50, 7, 7, 10
 
 """,
     'de': """.. csv-table::
  :header: "Sprache", "Downloads", "Version", "Archiv", "Changelog"
  :delim: |
- :widths: 17, 32, 5, 5, 8
+ :widths: 25, 50, 7, 7, 10
 
 """
     }
@@ -392,13 +392,13 @@ def make_download_red_images_table():
     'en': """.. csv-table::
  :header: "Type", "Downloads", "Version", "Archive", "Changelog"
  :delim: |
- :widths: 17, 32, 5, 5, 8
+ :widths: 25, 50, 7, 7, 10
 
 """,
     'de': """.. csv-table::
  :header: "Typ", "Downloads", "Version", "Archiv", "Changelog"
  :delim: |
- :widths: 17, 32, 5, 5, 8
+ :widths: 25, 50, 7, 7, 10
 
 """
     }
@@ -428,13 +428,13 @@ def make_download_brick_firmwares_table():
     'en': """.. csv-table::
  :header: "Brick", "Downloads", "Version", "Archive", "Changelog"
  :delim: |
- :widths: 17, 32, 5, 5, 8
+ :widths: 25, 50, 7, 7, 10
 
 """,
     'de': """.. csv-table::
  :header: "Brick", "Downloads", "Version", "Archiv", "Changelog"
  :delim: |
- :widths: 17, 32, 5, 5, 8
+ :widths: 25, 50, 7, 7, 10
 
 """
     }
@@ -480,13 +480,13 @@ def make_download_bricklet_plugins_table():
     'en': """.. csv-table::
  :header: "Bricklet", "Downloads", "Version", "Archive", "Changelog"
  :delim: |
- :widths: 17, 32, 5, 5, 8
+ :widths: 25, 50, 7, 7, 10
 
 """,
     'de': """.. csv-table::
  :header: "Bricklet", "Downloads", "Version", "Archiv", "Changelog"
  :delim: |
- :widths: 17, 32, 5, 5, 8
+ :widths: 25, 50, 7, 7, 10
 
 """
     }
@@ -533,13 +533,13 @@ def make_download_extension_firmwares_table():
     'en': """.. csv-table::
  :header: "Brick", "Downloads", "Version", "Archive", "Changelog"
  :delim: |
- :widths: 17, 32, 5, 5, 8
+ :widths: 25, 50, 7, 7, 10
 
 """,
     'de': """.. csv-table::
  :header: "Brick", "Downloads", "Version", "Archiv", "Changelog"
  :delim: |
- :widths: 17, 32, 5, 5, 8
+ :widths: 25, 50, 7, 7, 10
 
 """
     }
@@ -576,13 +576,13 @@ def make_download_kits_table():
     'en': """.. csv-table::
  :header: "Kit", "Downloads", "Version", "Archive", "Changelog"
  :delim: |
- :widths: 17, 32, 5, 5, 8
+ :widths: 25, 50, 7, 7, 10
 
 """,
     'de': """.. csv-table::
  :header: "Kit", "Downloads", "Version", "Archiv", "Changelog"
  :delim: |
- :widths: 17, 32, 5, 5, 8
+ :widths: 25, 50, 7, 7, 10
 
 """
     }
