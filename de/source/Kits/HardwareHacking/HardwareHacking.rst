@@ -1,6 +1,4 @@
 
-:shoplink: ../../../shop/kits/starter-kit-hardware-hacking.html
-
 .. include:: HardwareHacking.substitutions
 
 .. _starter_kit_hardware_hacking:
@@ -23,6 +21,10 @@ Starterkit: Hardware Hacking
 
 	{% tfgalleryend %}
 
+.. note::
+
+ Das *Starterkit: Hardware Hacking* ist abgekündigt und wird nicht mehr verkauft.
+ Die in dem Kit verwendeten Funksteckdosen sind leider nicht mehr verfügbar.
 
 Features
 --------
