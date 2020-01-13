@@ -1,4 +1,6 @@
 
+:shoplink: ../../../shop/kits/starter-kit-hardware-hacking.html
+
 .. include:: HardwareHacking.substitutions
 
 .. _starter_kit_hardware_hacking:
@@ -21,10 +23,6 @@ Starter Kit: Hardware Hacking
 
 	{% tfgalleryend %}
 
-.. note::
-
- The *Starter Kit: Hardware Hacking* is discontinued and is no longer sold. The
- remote control mains switches used in this kit are not available anymore.
 
 Features
 --------
@@ -45,7 +43,6 @@ Features
 
 Description
 -----------
-
 
 The *Starter Kit: Hardware Hacking* is about hacking low voltage mainstream
 devices to connect them with Tinkerforge modules. Any (Embedded-) PC,
