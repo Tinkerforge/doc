@@ -94,7 +94,7 @@ Doppelklick auf den Umschaltknopf um die ``MainPage.xaml.cs`` zu bearbeiten:
          // Change to the IP address of your host
          private static string HOST = "192.168.178.35";
          private static int PORT = 4223;
-         private static string UID = "batti"; // Change to your UID
+         private static string UID = "XYZ"; // Change XYZ to the UID of your Dual Relay Bricklet
          private BrickletDualRelay relay;
 
          public MainPage()

@@ -158,7 +158,7 @@ connected Stepper Brick, which you can figure out using Brick Viewer:
 
   HOST = 'localhost';
   PORT = 4223;
-  UID = 'XYZ'; % Change to your UID
+  UID = 'XXYYZZ'; % Change XXYYZZ to the UID of your Stepper Brick
 
 Now you're ready to test the examples.
 
@@ -178,7 +178,7 @@ connected Stepper Brick, which you can figure out using Brick Viewer:
 
   HOST = "localhost";
   PORT = 4223;
-  UID = "XYZ"; % Change to your UID
+  UID = "XXYYZZ"; % Change XXYYZZ to the UID of your Stepper Brick
 
 Now you're ready to test the examples.
 

@@ -92,7 +92,7 @@ connected Stepper Brick, which you can figure out using Brick Viewer:
 
   private static final String HOST = "localhost";
   private static final int PORT = 4223;
-  private static final String UID = "XYZ"; // Change to your UID
+  private static final String UID = "XXYYZZ"; // Change XXYYZZ to the UID of your Stepper Brick
 
 Now we can execute the Java compiler in the ``example_project/`` folder like
 this on Windows (replace ``;`` in class path with ``:`` on Linux and macOS)::

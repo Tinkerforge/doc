@@ -103,7 +103,7 @@ connected Stepper Brick, which you can figure out using Brick Viewer:
 
   var HOST = 'localhost';
   var PORT = 4223;
-  var UID = 'XYZ'; // Change to your UID
+  var UID = 'XXYYZZ'; // Change XXYYZZ to the UID of your Stepper Brick
 
 If you did install the bindings using the NPM package then you're now ready to
 test this example::

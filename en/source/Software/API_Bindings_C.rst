@@ -72,7 +72,7 @@ connected Stepper Brick, which you can figure out using Brick Viewer:
 
   #define HOST "localhost"
   #define PORT 4223
-  #define UID "XYZ" // Change to your UID
+  #define UID "XXYYZZ" // Change XXYYZZ to the UID of your Stepper Brick
 
 
 GCC

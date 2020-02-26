@@ -116,8 +116,7 @@ diese kann über den Brick Viewer ermittelt werden:
 
 .. code-block:: bash
 
-  # change to your UID
-  uid=XYZ
+  uid=XXYYZZ # Change XXYYZZ to the UID of your Stepper Brick
 
 Dann ist auch schon alles bereit, um dieses Beispiel testen zu können::
 

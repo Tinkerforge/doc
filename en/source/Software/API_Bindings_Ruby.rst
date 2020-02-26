@@ -82,7 +82,7 @@ connected Stepper Brick, which you can figure out using Brick Viewer:
 
   HOST = 'localhost'
   PORT = 4223
-  UID = 'XYZ' # Change to your UID
+  UID = 'XXYYZZ' # Change XXYYZZ to the UID of your Stepper Brick
 
 If you did install the bindings then you're now ready to test this example::
 

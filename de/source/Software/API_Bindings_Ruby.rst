@@ -87,7 +87,7 @@ Brick Viewer ermittelt werden:
 
   HOST = 'localhost'
   PORT = 4223
-  UID = 'XYZ' # Change to your UID
+  UID = 'XXYYZZ' # Change XXYYZZ to the UID of your Stepper Brick
 
 Wenn die Bindings installiert wurden, dann kann das Beispiele jetzt direkt
 ausgeführt werden::

@@ -105,7 +105,7 @@ Brick Viewer ermittelt werden:
 
   var HOST = 'localhost';
   var PORT = 4223;
-  var UID = 'XYZ'; // Change to your UID
+  var UID = 'XXYYZZ'; // Change XXYYZZ to the UID of your Stepper Brick
 
 Wenn die Bindings mittels NPM Package installiert wurden, dann kann
 das Beispiele jetzt direkt ausgeführt werden::

@@ -105,7 +105,7 @@ Brick Viewer ermittelt werden:
 
   HOST = "localhost"
   PORT = 4223
-  UID = "XYZ" # Change to your UID
+  UID = "XXYYZZ" # Change XXYYZZ to the UID of your Stepper Brick
 
 Wenn die Bindings vom :ref:`Quelltext <api_bindings_python_install_source>` oder
 von :ref:`PyPI <api_bindings_python_install_pypi>` installiert wurden, dann kann

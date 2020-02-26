@@ -82,7 +82,7 @@ der Zustand beider Relais umgeschaltet.
  {
      // Change to the IP address of your host
      ipcon_create(&ipcon);
-     dual_relay_create(&dr, "a27", &ipcon); // Change to your UID
+     dual_relay_create(&dr, "XYZ", &ipcon); // Change XYZ to the UID of your Dual Relay Brick
      ipcon_connect(&ipcon, "192.168.178.46", 4223);
      dual_relay_set_state(&dr, true, true);
 

@@ -165,7 +165,7 @@ Brick Viewer ermittelt werden:
 
   HOST = 'localhost';
   PORT = 4223;
-  UID = 'XYZ'; % Change to your UID
+  UID = 'XXYYZZ'; % Change XXYYZZ to the UID of your Stepper Brick
 
 Dann ist auch schon alles bereit, um dieses Beispiel testen zu können.
 
@@ -186,7 +186,7 @@ Brick Viewer ermittelt werden:
 
   HOST = "localhost";
   PORT = 4223;
-  UID = "XYZ"; % Change to your UID
+  UID = "XXYYZZ"; % Change XXYYZZ to the UID of your Stepper Brick
 
 Dann ist auch schon alles bereit, um dieses Beispiel testen zu können.
 

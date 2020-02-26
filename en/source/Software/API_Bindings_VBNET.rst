@@ -80,7 +80,7 @@ connected Stepper Brick, which you can figure out using Brick Viewer:
 
   Const HOST As String = "localhost"
   Const PORT As Integer = 4223
-  Const UID As String = "XYZ" ' Change to your UID
+  Const UID As String = "XXYYZZ" ' Change XXYYZZ to the UID of your Stepper Brick
 
 Now add ``Tinkerforge.dll`` as a reference to the project:
 
@@ -126,7 +126,7 @@ connected Stepper Brick, which you can figure out using Brick Viewer:
 
   Const HOST As String = "localhost"
   Const PORT As Integer = 4223
-  Const UID As String = "XYZ" ' Change to your UID
+  Const UID As String = "XXYYZZ" ' Change XXYYZZ to the UID of your Stepper Brick
 
 Now add ``Tinkerforge.dll`` as a reference to the project:
 

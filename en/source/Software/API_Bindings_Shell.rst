@@ -112,8 +112,7 @@ which you can figure out using Brick Viewer:
 
 .. code-block:: bash
 
-  # change to your UID
-  uid=XYZ
+  uid=XXYYZZ # Change XXYYZZ to the UID of your Stepper Brick
 
 Now you're ready to test this example::
 

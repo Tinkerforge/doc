@@ -238,7 +238,7 @@ angles. The base position will be (0,0,0):
     class Q:
         HOST = "localhost"
         PORT = 4223
-        UID = "9yEBJVEHaem" # Change to your UID
+        UID = "XXYYZZ" # Change XXYYZZ to the UID of your IMU Brick
 
         def __init__(self):
             self.base_x = 0.0

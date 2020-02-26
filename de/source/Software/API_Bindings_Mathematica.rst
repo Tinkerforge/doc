@@ -208,7 +208,7 @@ Brick Viewer ermittelt werden:
 
   host="localhost"
   port=4223
-  uid="XYZ"(* Change to your UID *)
+  uid="XXYYZZ"(* Change XXYYZZ to the UID of your Stepper Brick *)
 
 Dann ist auch schon alles bereit, um dieses Beispiel testen zu können. Dazu
 alle Zellen des Notebooks von oben nach unten auswerten.

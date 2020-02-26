@@ -96,7 +96,7 @@ Brick Viewer ermittelt werden:
 
   private static final String HOST = "localhost";
   private static final int PORT = 4223;
-  private static final String UID = "XYZ"; // Change to your UID
+  private static final String UID = "XXYYZZ"; // Change XXYYZZ to the UID of your Stepper Brick
 
 Im ``example_project/`` Ordner kann jetzt der Java Compiler mit den folgenden
 Parametern auf Windows aufgerufen werden (für Linux und macOS das ``;`` im

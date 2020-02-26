@@ -1,16 +1,17 @@
 <?php
+
 require_once('Tinkerforge/IPConnection.php');
-require_once('Tinkerforge/BrickletTemperature.php');
+require_once('Tinkerforge/BrickletTemperatureV2.php');
 
 use Tinkerforge\IPConnection;
 use Tinkerforge\BrickletTemperature;
 
 const HOST = 'localhost';
 const PORT = 4223;
-const UID = 'XYZ'; // Change to your UID
+const UID = 'XYZ'; // Change XYZ to the UID of your Temperature Bricklet 2.0
 
 $ipcon = new IPConnection(); // Create IP connection
-$t = new BrickletTemperature(UID, $ipcon); // Create device object
+$t = new BrickletTemperatureV2(UID, $ipcon); // Create device object
 
 $ipcon->connect(HOST, PORT); // Connect to brickd
 // Don't use device before ipcon is connected
@@ -21,6 +22,7 @@ $temperature = $t->getTemperature() / 100.0;
 $ipcon->disconnect();
 
 header('content-type: text/html; charset=utf-8');
+
 ?>
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />

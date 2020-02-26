@@ -201,7 +201,7 @@ connected Stepper Brick, which you can figure out using Brick Viewer:
 
   host="localhost"
   port=4223
-  uid="XYZ"(* Change to your UID *)
+  uid="XXYYZZ"(*Change XXYYZZ to the UID of your Stepper Brick*)
 
 Now you're ready to test this example. Evaluate all cells in top-down order
 to do this.

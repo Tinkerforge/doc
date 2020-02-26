@@ -85,7 +85,7 @@ Brick Viewer ermittelt werden:
 
   Const HOST As String = "localhost"
   Const PORT As Integer = 4223
-  Const UID As String = "XYZ" ' Change to your UID
+  Const UID As String = "XXYYZZ" ' Change XXYYZZ to the UID of your Stepper Brick
 
 Jetzt muss noch ``Tinkerforge.dll`` dem Projekt als Verweis hinzugefügt werden:
 
@@ -134,7 +134,7 @@ Brick Viewer ermittelt werden:
 
   Const HOST As String = "localhost"
   Const PORT As Integer = 4223
-  Const UID As String = "XYZ" ' Change to your UID
+  Const UID As String = "XXYYZZ" ' Change XXYYZZ to the UID of your Stepper Brick
 
 Jetzt muss noch ``Tinkerforge.dll`` dem Projekt als Verweis hinzugefügt werden:
 

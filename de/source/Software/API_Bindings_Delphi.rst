@@ -79,7 +79,7 @@ Brick Viewer ermittelt werden:
   const
     HOST = 'localhost';
     PORT = 4223;
-    UID = 'XYZ'; { Change to your UID }
+    UID = 'XXYYZZ'; { Change XXYYZZ to the UID of your Stepper Brick }
 
 
 Free Pascal Compiler (FPC)

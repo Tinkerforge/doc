@@ -76,7 +76,7 @@ connected Stepper Brick, which you can figure out using Brick Viewer:
   const
     HOST = 'localhost';
     PORT = 4223;
-    UID = 'XYZ'; { Change to your UID }
+    UID = 'XXYYZZ'; { Change XXYYZZ to the UID of your Stepper Brick }
 
 
 Free Pascal Compiler (FPC)

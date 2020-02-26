@@ -102,7 +102,7 @@ connected Stepper Brick, which you can figure out using Brick Viewer:
 
   HOST = "localhost"
   PORT = 4223
-  UID = "XYZ" # Change to your UID
+  UID = "XXYYZZ" # Change XXYYZZ to the UID of your Stepper Brick
 
 If you did install the bindings from :ref:`source
 <api_bindings_python_install_source>` or :ref:`PyPI

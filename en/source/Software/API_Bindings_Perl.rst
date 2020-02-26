@@ -104,7 +104,7 @@ connected Stepper Brick, which you can figure out using Brick Viewer:
 
   use constant HOST => 'localhost';
   use constant PORT => 4223;
-  use constant UID => 'XYZ'; # Change to your UID
+  use constant UID => 'XXYYZZ'; # Change XXYYZZ to the UID of your Stepper Brick
 
 If you did install the bindings from :ref:`source
 <api_bindings_perl_install_source>` or :ref:`CPAN
