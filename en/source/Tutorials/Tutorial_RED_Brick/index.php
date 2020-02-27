@@ -4,7 +4,7 @@ require_once('Tinkerforge/IPConnection.php');
 require_once('Tinkerforge/BrickletTemperatureV2.php');
 
 use Tinkerforge\IPConnection;
-use Tinkerforge\BrickletTemperature;
+use Tinkerforge\BrickletTemperatureV2;
 
 const HOST = 'localhost';
 const PORT = 4223;
