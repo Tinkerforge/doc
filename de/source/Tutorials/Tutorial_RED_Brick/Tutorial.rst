@@ -18,7 +18,7 @@ hochgeladen und ausgeführt werden.
 In diesem Tutorial werden wir die verschiedenen Fähigkeiten des RED Bricks
 vorstellen. Um das Beispiel einfach zu halten nutzen wir einen kleinen Aufbau,
 bestehend aus einem RED Brick, einem :ref:`Master Brick <master_brick>` und
-einem :ref:`Temperature Bricklet <temperature_bricklet>`. Später stecken wir
+einem :ref:`Temperature Bricklet 2.0 <temperature_v2_bricklet>`. Später stecken wir
 eine :ref:`Ethernet Extension <ethernet_extension>` hinzu um Zugriff auf das
 Internet zu bekommen.
 
@@ -80,17 +80,17 @@ Bricks/Bricklets hinzugesteckt werden, sollte der RED Brick heruntergefahren
 werden. Dazu klickt man im RED Brick Tab des Brick Viewers in der oberen
 rechten Ecke auf **System**, wählt **Shutdown** und wartet bis alle LEDs aus
 sind. Anschließend stecken wir den Master Brick auf den RED Brick und verbinden
-das Temperature Bricklet mit diesem.
+das Temperature Bricklet 2.0 mit diesem.
 
 .. image:: /Images/Bricks/brick_red_master_temp_600.jpg
    :scale: 100 %
-   :alt: RED Brick mit Master Brick und Temperature Bricklet
+   :alt: RED Brick mit Master Brick und Temperature Bricklet 2.0
    :align: center
    :target: ../../_images/Bricks/brick_red_master_temp_800.jpg
 
 Danach wird der RED Brick wieder mit dem Computer verbunden, der Brick Viewer
 geöffnet und auf **Connect** geklickt. Es sollten Tabs für den RED Brick,
-Master Brick und das Temperature Bricklet angezeigt werden. Klicke durch die
+Master Brick und das Temperature Bricklet 2.0 angezeigt werden. Klicke durch die
 Tabs um die angeschlossene Hardware zu testen.
 
 Beispielprogramm ausführen
@@ -101,20 +101,20 @@ Dokumentation der genutzten Bricks/Bricklets geworfen werden, um einen Eindruck
 von deren unterstützen Funktionen zu bekommen. Jede Dokumentationsseite beginnt
 mit Beispielen. Wir empfehlen diese
 Beispielprogramm zuerst auszuführen. Wir nehmen das "Simple" Beispiel des
-:ref:`Temperature Bricklet API Dokumentation <temperature_bricklet_python>` und
+:ref:`Temperature Bricklet 2.0 API Dokumentation <temperature_v2_bricklet_python>` und
 führen es aus.
 
-`Download (example_simple.py) <https://github.com/Tinkerforge/temperature-bricklet/raw/master/software/examples/python/example_simple.py>`__
+`Download (example_simple.py) <https://github.com/Tinkerforge/temperature_v2-bricklet/raw/master/software/examples/python/example_simple.py>`__
 
-.. literalinclude:: ../../Software/Bricklets/Temperature_Bricklet_Python_example_simple.py
+.. literalinclude:: ../../Software/Bricklets/TemperatureV2_Bricklet_Python_example_simple.py
  :language: python
  :linenos:
  :tab-width: 4
 
 Dazu laden wir das ``example_simple.py`` Python Programm herunter und ersetzen
-die UID in der Zeile ``UID = "XYZ"`` mit der UID des Temperature Bricklets.
+die UID in der Zeile ``UID = "XYZ"`` mit der UID des Temperature Bricklet 2.0.
 Die UID kann im **Setup** Tab des Brick Viewers oder im Tab des Temperature
-Bricklets ermittelt werden.
+Bricklet 2.0 ermittelt werden.
 
 Führe dieses Programm auf dem PC aus. Wenn alles wie erwartet funktioniert
 sollte die aktuelle Temperatur in der Kommandozeile ausgegeben werden.
@@ -174,7 +174,7 @@ Programm. Klicke auf **Next**.
    :alt: Screenshot des RED Brick Programm Uploads Schritt 4
    :align: center
 
-Wir werden Python Version **2.7.3**, **Script File** als Start Mode und unsere
+Wir werden Python Version **3.5.3**, **Script File** als Start Mode und unsere
 Datei als Script File nutzen. Diese Einstellungen sind alle voreingestellt.
 Wir klicken wieder auf **Next**.
 
@@ -241,7 +241,7 @@ verbunden werden. In diesem Beispiel werden wir eine Ethernet Extension nutzen:
 
 .. image:: /Images/Bricks/brick_red_master_temp_eth_600.jpg
    :scale: 100 %
-   :alt: RED Brick mit Master Brick, Temperature Bricklet und Ethernet Extension
+   :alt: RED Brick mit Master Brick, Temperature Bricklet 2.0 und Ethernet Extension
    :align: center
    :target: ../../_images/Bricks/brick_red_master_temp_eth_800.jpg
 
@@ -288,7 +288,7 @@ Eine weitere Art von Programmen, die auf dem RED Brick ausgeführt werden könne
 sind Programme mit grafischer Nutzerschnittstelle (GUI), die über die HDMI
 Schnittstelle des Bricks angezeigt werden. In diesem Beispiel fügen wir eine
 `PyQt <https://sourceforge.net/projects/pyqt/>`__ GUI unserem einfachen
-Temperature Bricklet Programm hinzu.
+Temperature Bricklet 2.0 Programm hinzu.
 
 `Download (example_gui_red.py) <https://raw.githubusercontent.com/Tinkerforge/doc/master/en/source/Tutorials/Tutorial_RED_Brick/example_gui_red.py>`__
 
@@ -342,7 +342,7 @@ Die Beschreibung der
 gibt mehr Informationen dazu. Im wesentlichen kann eine als Startpunkt eines
 Pfades dienende ``index.html``, ``index.php`` oder ``index.py`` genutzt werden.
 
-Unser einfaches Temperature Bricklet Programm mit Web Interface sieht wie folgt
+Unser einfaches Temperature Bricklet 2.0 Programm mit Web Interface sieht wie folgt
 aus (Python und PHP):
 
 `Download (index.py) <https://raw.githubusercontent.com/Tinkerforge/doc/master/en/source/Tutorials/Tutorial_RED_Brick/index.py>`__
