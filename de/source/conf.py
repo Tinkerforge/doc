@@ -230,6 +230,25 @@ latex_documents = [
 gettext_auto_build = False
 
 
+# -- Monkey patch pygments ----------------------------------------------------
+
+from pygments.lexers.perl import PerlLexer as PygmentsPerlLexer
+from pygments.token import String as PygmentsString
+
+# The Perl lexer wrongly parses any two slashed as a regex, even if one slash is
+# in a division and the other one is in a string, for example:
+#
+# print "Acceleration [X]: " . @{$acceleration}[0]/100.0 . " m/s²\n";
+#
+# Completely remove regex parsing from the Perl lexer to workaround this problem.
+
+PygmentsPerlLexer.tokens.pop('balanced-regex', None)
+
+for i in reversed(range(len(PygmentsPerlLexer.tokens['root']))):
+    if PygmentsPerlLexer.tokens['root'][i][1] == PygmentsString.Regex:
+        del PygmentsPerlLexer.tokens['root'][i]
+
+
 # -- Monkey patch sphinx ------------------------------------------------------
 
 def setup(app):
