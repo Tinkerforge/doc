@@ -48,7 +48,7 @@ the specific version of the bindings to be used, e.g. ``2.1.1``:
 
 .. code-block:: xml
 
-  <project ...>
+  <project>
     ...
     <dependencies>
       ...

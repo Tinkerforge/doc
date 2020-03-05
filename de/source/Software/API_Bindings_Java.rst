@@ -50,7 +50,7 @@ der Bindings, z.B. ``2.1.1``:
 
 .. code-block:: xml
 
-  <project ...>
+  <project>
     ...
     <dependencies>
       ...
