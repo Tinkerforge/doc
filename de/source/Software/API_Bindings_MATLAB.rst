@@ -213,7 +213,7 @@ aufrufen:
 Bekannte Probleme
 -----------------
 
-**Callbacks functioneren nicht in Octave 3.8 oder neuer** (gelöst)
+**Callbacks funktioneren nicht in Octave 3.8 oder neuer** (gelöst)
 
 In Bindings Version 2.0.13 oder älter in Octave 3.8 funktioniert die Invoke
 Funktion nicht und wirft eine ``java.lang.UnsatisfiedLinkError`` Exception.
