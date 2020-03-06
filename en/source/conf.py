@@ -232,9 +232,6 @@ gettext_auto_build = False
 
 # -- Monkey patch pygments ----------------------------------------------------
 
-from pygments.lexers.perl import PerlLexer as PygmentsPerlLexer
-from pygments.token import String as PygmentsString
-
 # The Perl lexer wrongly parses any two slashed as a regex, even if one slash is
 # in a division and the other one is in a string, for example:
 #
@@ -242,11 +239,20 @@ from pygments.token import String as PygmentsString
 #
 # Completely remove regex parsing from the Perl lexer to workaround this problem.
 
+from pygments.lexers.perl import PerlLexer as PygmentsPerlLexer
+from pygments.token import String as PygmentsString
+
 PygmentsPerlLexer.tokens.pop('balanced-regex', None)
 
+# Use Rust lexer from Pygments 2.2.0 to fix some Rust parsing errors
 for i in reversed(range(len(PygmentsPerlLexer.tokens['root']))):
     if PygmentsPerlLexer.tokens['root'][i][1] == PygmentsString.Regex:
         del PygmentsPerlLexer.tokens['root'][i]
+
+from sphinxextra.pygments_rust_fixed import RustLexerFixed as PygmentsRustLexerFixed
+import pygments.lexers.rust
+
+pygments.lexers.rust.RustLexer = PygmentsRustLexerFixed
 
 
 # -- Monkey patch sphinx ------------------------------------------------------
