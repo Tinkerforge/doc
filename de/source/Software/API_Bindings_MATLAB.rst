@@ -95,10 +95,6 @@ Die Verfügbarkeit der Java Unterstützung in Octave hängt von der Octave
 Version ab. Bis Version 3.6 einschließlich war die Java Unterstürzung ein
 einiges Modul. Ab Version 3.8 ist sie standardmäßiger Teil von Octave.
 
-Allerdings funktionieren Callbacks nicht mit der Java Unterstützung in Octave
-3.8, siehe dazu den Abschnitt über :ref:`bekannte Probleme
-<api_bindings_matlab_known_problems>`. Wir empfehlen daher derzeit Octave 3.6.
-
 Unter Linux muss die Java Unterstützung für Octave 3.6 separat installiert
 werden::
 
@@ -212,10 +208,12 @@ aufrufen:
 
   octave_example_configuration(); % Add this line
 
-.. _api_bindings_matlab_known_problems:
+.. _api_bindings_matlab_known_issues:
 
 Bekannte Probleme
 -----------------
+
+**Callbacks functioneren nicht in Octave 3.8 oder neuer** (gelöst)
 
 In Bindings Version 2.0.13 oder älter in Octave 3.8 funktioniert die Invoke
 Funktion nicht und wirft eine ``java.lang.UnsatisfiedLinkError`` Exception.
@@ -223,9 +221,9 @@ Die Invoke Funktion erlaubt es von Java aus Octave Funktionen aufzurufen.
 Dies wird von den Bindings für Callbacks benutzt. Dies bedeutet, dass in
 Octave 3.8 keine Callbacks verwendet werden können. Eine `Diskussion
 <http://octave.1599824.n4.nabble.com/Problem-with-invoke-call-from-Java-td4664495.html>`__
-auf der Octave Mailing Liste hat noch zu keinem Erfolg geführt. Daher
-empfehlen wir derzeit Octave 3.6, in dieser Version tritt das Problem nicht auf
-und die Bindings funktionieren in vollem Umfang.
+auf der Octave Mailing Liste hat zu keinem Erfolg geführt.
+
+Das Problem ist sein Bindings Version 2.0.14 behoben.
 
 
 API Referenz und Beispiele
