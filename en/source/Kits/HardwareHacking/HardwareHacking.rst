@@ -339,8 +339,7 @@ Control Garage Doors Remotely
 Garage door openers are quite useful. Typically they come with a remote control
 and we are going to hack one. After the hack your smart phone can control the garage
 door and you don't need to carry around the original remote control
-anymore. This project is based on this
-`project <https://www.tinkerunity.org/wiki/index.php/EN/Projects/Android_Garagedoor_Control>`__.
+anymore.
 
 .. image:: /Images/Kits/hardware_hacking_garage_remote_finished_350.jpg
    :scale: 100 %

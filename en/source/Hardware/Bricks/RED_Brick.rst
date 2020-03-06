@@ -1080,9 +1080,6 @@ power other USB devices with up to 7.5W (5V/1.5A) and is short circuit
 protected. Typical USB devices such as Wi-Fi or Ethernet USB adapter, webcams,
 printers, keyboards, mouses or USB touch screens are supported, if the required
 drivers are present on the RED Brick.
-The wiki has a growing `list of USB devices
-<https://www.tinkerunity.org/wiki/index.php/EN/RED_USB>`__ that users have
-successfully tested with a RED Brick.
 
 Some Ethernet or Wi-Fi USB adapters can be directly configured with the Brick Viewer.
 `Supported USB adapters <https://www.tinkerforge.com/en/shop/accessories/red-brick.html>`__

@@ -31,8 +31,7 @@ Basic Nagios/Icinga Script
 
 For this example we use the :ref:`Python bindings <api_bindings_python>`.
 The script (`download <https://raw.githubusercontent.com/Tinkerforge/server-room-monitoring/master/nagios_icinga/check_tf_temp.py>`__)
-is based on a `Wiki project <https://www.tinkerunity.org/wiki/index.php/EN/Projects/IT_Infrastructure_Monitoring_-_Nagios_Plugin>`__
-and uses the a Temperature or PTC Bricklet to measure the temperature
+uses the a Temperature or PTC Bricklet to measure the temperature
 and to warn if high temperatures are detected.
 
 The small script, called ``check_tf_temp.py``, uses the following interface:
