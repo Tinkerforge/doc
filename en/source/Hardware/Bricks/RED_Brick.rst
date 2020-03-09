@@ -446,8 +446,8 @@ the RED Brick is powered down.
 
 If you need the correct time after bootup but you can't guarantee
 or can't obtain Internet access, you can also use the
-:ref:`GPS Bricklet <gps_bricklet>` or the :ref:`Real-Time Clock Bricklet
-<real_time_clock_bricklet>`. You can find a small
+:ref:`GPS Bricklet 2.0 <gps_v2_bricklet>` or the :ref:`Real-Time Clock Bricklet 2.0
+<real_time_clock_v2_bricklet>`. You can find a small
 `programs on GitHub <https://github.com/Tinkerforge/red-brick/tree/master/programs>`__
 that could be uploaded to the RED Brick to sync the Linux system time with
 the GPS time (``gps_time`` program) or the Real-Time Clock's time
