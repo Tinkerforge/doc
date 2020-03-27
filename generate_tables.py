@@ -56,6 +56,9 @@ bindings_infos = \
     BindingsInfo('MQTT', 'mqtt', 'MQTT', True, True,
                  {'en': 'FIXME',
                   'de': 'FIXME'}),
+    BindingsInfo('openHAB', 'openhab', 'openHAB', True, True,
+                 {'en': 'FIXME',
+                  'de': 'FIXME'}),
     BindingsInfo('Perl', 'perl', 'Perl', True, True,
                  {'en': 'FIXME',
                   'de': 'FIXME'}),
@@ -378,7 +381,7 @@ def make_download_bindings_table():
                                bindings_info.url_part,
                                archive[lang],
                                bindings_and_examples[lang],
-                               *bindings_versions[bindings_info.url_part]))
+                               *(bindings_versions[bindings_info.url_part] if bindings_info.display_name != 'openHAB' else (2, 0 ,0))))
 
     return table_head[lang] + '\n'.join(rows) + '\n'
 
