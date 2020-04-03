@@ -102,9 +102,9 @@ Nun folgt ein Blick auf ``example_configuration.py``:
  :linenos:
  :tab-width: 4
 
-**Zeile 12** erstellt ein IP-Connection-Objekt.
+**Zeile 14** erstellt ein IP-Connection-Objekt.
 
-**Zeile 13** erzeugt ein DC Brick Objekt, über welches der eigentliche DC Brick
+**Zeile 15** erzeugt ein DC Brick Objekt, über welches der eigentliche DC Brick
 gesteuert werden kann. Dabei müssen die eindeutige Identifikationsnummer (UID)
 des DC Bricks (in diesem Falle steht sie in **Zeile 6**), sowie das ``ipcon``
 Objekt übergeben werden.
@@ -114,16 +114,18 @@ Objekt übergeben werden.
  Brick Viewer. Wenn der Brick über USB an den PC angeschlossen ist, zeigt der
  Brick Viewer dessen UID im "Setup"-Tab an.
 
-In **Zeile 15** wird die IP-Connection verbunden. Es ist möglich, das Programm 
+In **Zeile 17** wird die IP-Connection verbunden. Es ist möglich, das Programm
 auf einem anderen PC, als dem, auf dem der Brick Daemon läuft, auszuführen.
 Zum Beispiel kann das Programm für ein Smartphone geschrieben werden, das den Brick 
 steuert, der am PC angeschlossen ist.
 
-Die **Zeilen 18-23** konfigurieren den DC Brick und lassen den Motor mit voller
+Die **Zeile 20-24** konfigurieren den DC Brick und lassen den Motor mit voller
 Geschwindigkeit vorwärts laufen.
 
-Die **Zeilen 25-27** sorgen dafür, dass das Programm weiter läuft, bis die Enter-Taste
+Die **Zeile 26** sorgen dafür, dass das Programm weiter läuft, bis die Enter-Taste
 gedrückt wird. Danach wird der Motor abgeschaltet.
+
+In **Zeile 29-32** wird der Motor gestoppt und danach abgeschaltet.
 
 Dieses Python-Skript oder eines der anderen Beispiele kann nun ausgeführt, oder als
 Ausgangspunkt für ein eigenes Projekt verwendet werden.
@@ -186,28 +188,30 @@ Motors bestimmt. Das abgeänderte Programm sieht wie folgt aus (`Download
  :linenos:
  :tab-width: 4
 
-Die **Zeilen 4-7** sind die typische Konfiguration. Die UIDs müssen die der
+Die **Zeile 4-7** sind die typische Konfiguration. Die UIDs müssen die der
 verwendeten Bricks und Bricklets sein.
 
-Die **Zeilen 22-27** erstellen die IP-Connection zum Brick Daemon. Die Brick- und
+Die **Zeile 24-29** erstellen die IP-Connection zum Brick Daemon. Die Brick- und
 Bricklet-Objekte werden erzeugt.
 
 Das Rotary Poti Bricklet wird so konfiguriert, das die Funktion ``cb_position``
 jedes Mal aufgerufen wird, wenn sich die Position des Potentiometers ändert.
-**Zeile 29** stellt diesen Callback so ein, dass er mit einer Periode von
+**Zeile 31** stellt diesen Callback so ein, dass er mit einer Periode von
 50 ms ausgelöst wird, wenn sich die Position ändert. Wenn sich die Position nicht
 ändert werden keine Callbacks ausgelöst. Dieses Vorgehen ist effizient, es wird
 nur die unbedingt notwendige USB-Bandbreite verwendet.
-Die Callback-Funktion wird in **Zeile 30** registriert. ``cb_position``
-(definiert in den **Zeilen 16-19**) setzt abhängig von der aktuelle Position des
+Die Callback-Funktion wird in **Zeile 32** registriert. ``cb_position``
+(definiert in den **Zeile 16-21**) setzt abhängig von der aktuelle Position des
 Potentiometers eine neue Geschwindigkeit für den Motor.
 
-Die **Zeilen 32-33** schalten die Motorsteuerung ein und setzen die
+Die **Zeile 34-35** schalten die Motorsteuerung ein und setzen die
 Beschleunigung auf Maximum. Dadurch kann die Motorgeschwindigkeit den Änderungen
 der Potentiometerposition direkt folgen.
 
-Die **Zeilen 35-37** sorgt dafür, dass das Programm weiter läuft, bis die 
-Enter-Taste gedrückt wird. Der Motor wird danach abgeschaltet.
+Die **Zeile 37** sorgt dafür, dass das Programm weiter läuft, bis die
+Enter-Taste gedrückt wird.
+
+In **Zeile 40-34** wird der Motor gestoppt und danach abgeschaltet.
 
 
 .. _tutorial_first_steps_build_stacks:

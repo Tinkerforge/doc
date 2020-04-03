@@ -103,9 +103,9 @@ In this tutorial we take a look at ``example_configuration.py``:
  :linenos:
  :tab-width: 4
 
-**Line 12** creates an IP Connection object.
+**Line 14** creates an IP Connection object.
 
-**Line 13** creates an object that allows us to control the DC Brick.
+**Line 15** creates an object that allows us to control the DC Brick.
 It is necessary to pass the Unique Identifier (UID) of the Brick
 (in this example defined in **Line 6**) and the ``ipcon`` object.
 Change the UID corresponding to your device! 
@@ -115,16 +115,17 @@ Change the UID corresponding to your device!
  If you connect a device to the PC, the Viewer will display the UID in
  the "Setup" tab.
 
-In **Line 15** the IP Connection is connected. It is possible to run 
+In **Line 17** the IP Connection is connected. It is possible to run
 your program on another PC than the one which has the Brick Daemon 
 running (e.g. you can write a program for your smart phone that
 controls a Brick connected to your PC).
 
-The **Lines 18-23** configure the DC Brick and let the motor run forwards at full
+The **Lines 20-24** configure the DC Brick and let the motor run forwards at full
 speed.
 
-**Line 25-27** is used to prevent program termination until you
-press enter. After this the motor is stopped before the program ends.
+**Line 26** is used to prevent program termination until you press enter.
+
+**Line 29-32** stops the motor before the program ends.
 
 Run this Python script and use it or other examples as a starting point
 for your own project.
@@ -191,23 +192,24 @@ velocity with the rotary poti:
 **Lines 4-7** are the typical configurations, the UID has to be changed
 according to the Bricks and Bricklets you use.
 
-In **Lines 22-27** an IP Connection to the Brick Daemon is established and
+In **Lines 24-29** an IP Connection to the Brick Daemon is established and
 the Brick and Bricklet device objects are created.
 
 We configure the Rotary Poti Bricklet, to call the function
 ``cb_position`` every time the position of the potentiometer changes.
-**Line 29** configures this callback to be triggered with a period of
+**Line 31** configures this callback to be triggered with a period of
 50ms if the position changes. If the position is unchanged there won't
 be any callbacks. This is an efficient implementation, only the bare minimum
-of USB bandwidth is used. The callback function is registered in **Line 30**.
-``cb_position`` is defined in **Lines 16-19**, it sets a new velocity based on
+of USB bandwidth is used. The callback function is registered in **Line 32**.
+``cb_position`` is defined in **Lines 16-21**, it sets a new velocity based on
 the current position of the potentiometer.
 
-In **Lines 32-33** we enable the motor and set a maximum acceleration. This
+In **Lines 34-35** we enable the motor and set a maximum acceleration. This
 allows the motor to follow the potentiometer movements immediately.
 
-In **Lines 35-37** we wait for user input to prevent program termination.
-After this the motor is stopped before the program ends.
+In **Lines 37** we wait for user input to prevent program termination.
+
+**Line 40-43** stops the motor before the program ends.
 
 
 .. _tutorial_first_steps_build_stacks:
