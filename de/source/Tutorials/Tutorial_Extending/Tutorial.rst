@@ -219,7 +219,7 @@ Um Verkabelung und Raum zu sparen, können Bricks gestapelt werden.
 Der unterste Brick eines Stapels muss ein :ref:`Master Brick <master_brick>` sein.
 Dieser kümmert sich um das Routen von Nachrichten zwischen PC und allen
 Stapelteilnehmern. Nachrichten vom PC werden per USB, oder über eine
-::ref:`Master Extension <primer_master_extensions>` an den Stapel übertragen.
+:ref:`Master Extension <primer_master_extensions>` an den Stapel übertragen.
 
 Das Stapeln ist transparent, das bedeutet, dass **keine Änderungen am Programm**
 notwendig sind, um zwischen mehreren einzelner Bricks und einem Stapel
