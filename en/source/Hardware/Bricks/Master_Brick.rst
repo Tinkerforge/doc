@@ -62,7 +62,8 @@ devices inside a network (WIFI or Ethernet) or can be interconnected over
 large distances (RS485).
 
 The maximum stack consists of (bottom to top): 1x Step-Down Power Supply,
-1x Master Brick, 8x arbitrary Bricks, 2x Master Extensions. With all Bricks 
+1x Master Brick or 1x RED Brick, 8x arbitrary Bricks (excluding RED Brick),
+2x Master Extensions. With all Bricks
 being Master Bricks in a stack up to 9 Master Bricks x 4 Bricklets each = 36 
 Bricklets can be connected to a single stack.
 

@@ -63,7 +63,8 @@ Beispiel direkt aus dem eigenen Netzwerk gesteuert werden (WLAN, Ethernet) oder
 aber über größere Strecken vernetzt werden (RS485).
 
 Der größtmögliche Stapel besteht aus (von unten nach oben)
-1x Step-Down Power Supply, 1x Master Brick, 8x beliebige andere Bricks, 
+1x Step-Down Power Supply, 1x Master Brick oder 1x RED Brick, 8x beliebige
+andere Bricks (ausgenommen RED Brick),
 2x Master Extensions. Wenn alle Bricks im Stapel Master Bricks sind können bis 
 zu 9 Master Bricks x je 4 Bricklets = 36 Bricklets an einem Stapel 
 angeschlossen werden.
