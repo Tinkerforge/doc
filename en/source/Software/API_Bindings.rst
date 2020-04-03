@@ -30,7 +30,7 @@ Installation and usage instructions for each supported programming language:
 * :ref:`Mathematica <api_bindings_mathematica>`
 * :ref:`MATLAB/Octave <api_bindings_matlab>`
 * :ref:`MQTT <api_bindings_mqtt>`
-* :ref:`openHAB <api_bindings_openhab>`
+* :ref:`openHAB <api_bindings_openHAB>`
 * :ref:`Perl <api_bindings_perl>`
 * :ref:`PHP <api_bindings_php>`
 * :ref:`Python <api_bindings_python>`

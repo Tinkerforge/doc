@@ -56,7 +56,7 @@ bindings_infos = \
     BindingsInfo('MQTT', 'mqtt', 'MQTT', True, True,
                  {'en': 'FIXME',
                   'de': 'FIXME'}),
-    BindingsInfo('openHAB', 'openhab', 'openHAB', True, True,
+    BindingsInfo('openHAB', 'openHAB', 'openHAB', True, True,
                  {'en': 'FIXME',
                   'de': 'FIXME'}),
     BindingsInfo('Perl', 'perl', 'Perl', True, True,
