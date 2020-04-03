@@ -229,15 +229,18 @@ but only the Master Brick at the bottom of the stack acts as the master of
 the stack. The other Master Bricks can however be used to connect more
 Bricklets.
 
-The Master of a stack powers each device of the stack over its USB
-connection with a maximum of 500mA. Every driver Brick in the stack can
-to be powered by its own on-board power-connector. To again reduce wiring and
-save space it is possible to use a
+The Master of a stack powers each device in the stack over its USB
+connection with a maximum of 500mA. The motor power of each motor driver Brick
+in the stack can to be supplied by its own black on-board power-connector.
+To reduce wiring once more and save space it is possible to use a
 :ref:`Power Supply <primer_power_supplies>`, which
 is attached at the bottom of the stack (below the lowest Master Brick).
-These boards power the stacks internal power pins.
-That means, that each driver Brick which is not powered by its on-board
-power-connector is powered through the stack by the Power Supply.
+These boards power the stacks 5V pins and internal power pins.
+That means, that the motor power for each motor driver Brick which is not
+supplied by its on-board power-connector is supplied through the stack by the
+Power Supplies supply voltage directly. If the Power Supply is supplied with
+20V then this 20V is also available as the motor power for each motor driver
+Brick in the stack.
 
 Additionally the Power Supply creates a 5V line to power the devices of
 the stack. No power is drawn from the PC if a Power Supply

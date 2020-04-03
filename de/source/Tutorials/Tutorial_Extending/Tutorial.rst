@@ -232,14 +232,16 @@ Nachrichten. Die anderen Master Bricks im Stapel können genutzt werden, um
 mehr Bricklets an den Stapel anzuschließen.
 
 Der Master des Stapels versorgt alle Teilnehmer des Stapels über seine USB-Verbindung
-mit in Summe maximal 500mA. Jeder Motortreiber-Brick kann über
-seinen schwarzen Stromversorgungsstecker auf der Platine extern versorgt werden.
+mit in Summe maximal 500mA. Die Motorspannung kann bei jedem Motortreiber-Brick über
+seinen schwarzen Stromversorgungsstecker auf der Platine eingespeist werden.
 Um nochmal Verkabelung zu sparen und den Stapel mit mehr Strom versorgen
 zu können, kann eine :ref:`Stromversorgung <primer_power_supplies>`
 unter den Stapel gesteckt werden (unter den Master des Stapels). Von dort stellt
 sie die 5V bereit, die von Bricks und Bricklets benötigt werden. Motortreiber-Bricks,
-die nicht über ihren schwarzen Stromversorgungsstecker extern versorgt
-werden, beziehen den Strom für die Motoren über die 5V-Versorgung des Stapels.
+deren Motorspannung nicht über ihren eigenen schwarzen Stromversorgungsstecker eingespeist
+wird, beziehen die Motorspannung direkt von der Versorgung der Stromversorgungsplatine.
+Wenn also die Stromversorgungsplatine mit 20V gespeist wird, dann stehen diese
+20V den Motortreiber-Brick auch als Motorspannung zur Verfügung.
 
 Da bei Verwendung einer Stromversorgung im Stapel die USB-Verbindung nicht mehr
 für die Stromversorgung verwendet wird, erlaubt dieser Aufbau die Verwendung von
