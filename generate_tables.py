@@ -828,7 +828,6 @@ def make_api_bindings_links_table(bindings_info):
  :widths: 20, 10, 10
 
 {0}
- | |
  **Bricks** | |
 {1}
  | |
@@ -892,7 +891,19 @@ def make_api_bindings_links_table(bindings_info):
             else:
                 bricklet_lines[1].append(line)
 
-    return table_head[lang].format(ipcon_row[lang].format(bindings_info.url_part),
+    has_ipcon = False
+
+    for misc_doc in bindings_info.misc_docs:
+        if misc_doc[0].startswith('IPConnection'):
+            has_ipcon = True
+            break
+
+    if has_ipcon:
+        ipcon = ipcon_row[lang].format(bindings_info.url_part) + '\n | |'
+    else:
+        ipcon = ''
+
+    return table_head[lang].format(ipcon,
                                    '\n'.join(brick_lines[0]),
                                    '\n'.join(brick_lines[1]),
                                    '\n'.join(bricklet_lines[0]),
