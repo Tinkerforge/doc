@@ -4,6 +4,9 @@
 openHAB - Bindings
 ==================
 
+.. note::
+ The openHAB bindings are currently still in beta.
+
 The openHAB bindings allow you to control :ref:`Bricks <primer_bricks>` and
 :ref:`Bricklets <primer_bricklets>` from your openHAB installation. The
 :ref:`ZIP file <downloads_bindings_examples>` for the bindings contains:
@@ -22,6 +25,11 @@ Requirements
 
 Installation
 ------------
+
+.. note::
+ Currently the bindings also require installation of the Java bindings. They are available
+ in the `Central Maven Repository <https://search.maven.org/search?q=a:tinkerforge>`__.
+ Download the jar and put it into the addons directory, next to the openHAB bindings jar.
 
 To install the bindings, just copy the JAR into the addons directory
 of your installation. openHAB will then load the bindings.
@@ -55,7 +63,7 @@ Actions
 There are actions available for each thing. To use
 actions of a thing in a rule, first the actions have to be loaded with:
 ``var devActions = getActions("tinkerforge", "tinkerforge:[devicetype]:[Device UID]")``
-Then they can be used with devActions.[actionname]([parameters]).
+Then they can be used with ``devActions.[actionname]([parameters])``.
 The following example shows how to show a GUI on an LCD 128x64 Bricklet
 with the UID "HQ6":
 
