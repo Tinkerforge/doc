@@ -129,6 +129,9 @@ The Bricklet is building a database of measurements and uses this data to do an
 automatic background calibration and calculate an accurate IAQ index over time.
 It will take a few days until the IAQ index has a high reliability.
 
+..
+ Please also remove the note from the openhab configuration when removing it here.
+
 The IAQ accuracy is reflects the current state of the background calibration process.
 
 * Accuracy 0: The Bricklet was just started and the sensor is stabilizing.
