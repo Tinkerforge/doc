@@ -22,73 +22,285 @@ tool_infos = \
     ToolInfo('Brick Logger', 'brick_logger')
 ]
 
-BindingsInfo = namedtuple('BindingsInfo', 'display_name url_part software_doc_suffix is_programming_language is_released tutorial')
+BindingsInfo = namedtuple('BindingsInfo', 'display_name url_part software_doc_suffix is_programming_language is_released has_authentication_example has_download misc_docs tutorial')
 
 bindings_infos = \
 [
-    BindingsInfo('C/C++', 'c', 'C', True, True,
-                 {'en': 'https://www.cprogramming.com/',
-                  'de': 'https://www.cprogramming.com/'}), # http://www.c-howto.de/
-    BindingsInfo('C#', 'csharp', 'CSharp', True, True,
-                 {'en': 'https://csharp.net-tutorials.com/',
-                  'de': 'https://csharp.net-tutorials.com/'}),
-    BindingsInfo('Delphi/Lazarus', 'delphi', 'Delphi', True, True,
-                 {'en': 'http://www.delphibasics.co.uk/',
-                  'de': 'https://www.delphi-treff.de/tutorials/grundlagen-tutorials/'}),
-    BindingsInfo('Go', 'go', 'Go', True, True,
-                 {'en': 'https://tour.golang.org',
-                  'de': 'https://tour.golang.org'}),
-    BindingsInfo('Java', 'java', 'Java', True, True,
-                 {'en': 'https://docs.oracle.com/javase/tutorial/',
-                  'de': 'https://docs.oracle.com/javase/tutorial/'}), # http://openbook.galileocomputing.de/javainsel/
-    BindingsInfo('JavaScript',  'javascript', 'JavaScript', True, True,
-                 {'en': 'FIXME',
-                  'de': 'FIXME'}),
-    BindingsInfo('LabVIEW', 'labview', 'LabVIEW', True, True,
-                 {'en': 'FIXME',
-                  'de': 'FIXME'}),
-    BindingsInfo('Mathematica', 'mathematica', 'Mathematica', True, True,
-                 {'en': 'FIXME',
-                  'de': 'FIXME'}),
-    BindingsInfo('MATLAB/Octave', 'matlab', 'MATLAB', True, True,
-                 {'en': 'FIXME',
-                  'de': 'FIXME'}),
-    BindingsInfo('MQTT', 'mqtt', 'MQTT', True, True,
-                 {'en': 'FIXME',
-                  'de': 'FIXME'}),
-    BindingsInfo('openHAB', 'openHAB', 'openHAB', True, True,
-                 {'en': 'FIXME',
-                  'de': 'FIXME'}),
-    BindingsInfo('Perl', 'perl', 'Perl', True, True,
-                 {'en': 'FIXME',
-                  'de': 'FIXME'}),
-    BindingsInfo('PHP', 'php', 'PHP', True, True,
-                 {'en': 'https://www.php.net/manual/en/getting-started.php',
-                  'de': 'https://www.php.net/manual/de/getting-started.php'}),
-    BindingsInfo('Python', 'python', 'Python', True, True,
-                 {'en': 'https://www.python.org/about/gettingstarted/', # http://getpython3.com/diveintopython3/
-                  'de': 'https://www.python.org/about/gettingstarted/'}),
-    BindingsInfo('Ruby', 'ruby', 'Ruby',  True, True,
-                 {'en': 'https://www.ruby-lang.org/en/documentation/quickstart/',
-                  'de': 'https://www.ruby-lang.org/de/documentation/quickstart/'}),
-    BindingsInfo('Rust', 'rust', 'Rust', True, True,
-                 {'en': 'https://doc.rust-lang.org/tutorial.html',
-                  'de': 'https://doc.rust-lang.org/tutorial.html'}),
-    BindingsInfo('Shell', 'shell', 'Shell', True, True,
-                 {'en': 'FIXME',
-                  'de': 'FIXME'}),
-    #BindingsInfo('Tinkerforge Visual Programming Language (TVPL)', 'tvpl', 'TVPL', True, False,
-    #             {'en': 'FIXME',
-    #              'de': 'FIXME'}),
-    BindingsInfo('Visual Basic .NET', 'vbnet', 'VBNET', True, True,
-                 {'en': 'http://howtostartprogramming.com/vb-net/',
-                  'de': 'http://howtostartprogramming.com/vb-net/'}), # http://openbook.galileocomputing.de/vb_net/index.htm
-    BindingsInfo('TCP/IP', 'tcpip', 'TCPIP', False, True,
-                 {'en': 'FIXME',
-                  'de': 'FIXME'}),
-    BindingsInfo('Modbus', 'modbus', 'Modbus', False, True,
-                 {'en': 'FIXME',
-                  'de': 'FIXME'}),
+    BindingsInfo(display_name='C/C++',
+                 url_part='c',
+                 software_doc_suffix='C',
+                 is_programming_language=True,
+                 is_released=True,
+                 has_authentication_example=True,
+                 has_download=True,
+                 misc_docs=[
+                     ('IPConnection_{suffix}', {'en': 'IP Connection', 'de': 'IP Connection'}),
+                     ('API_Bindings_{suffix}', {'en': 'Usage', 'de': 'Benutzung'}),
+                     ('API_Bindings_{suffix}_iOS', {'en': 'Usage (iOS)', 'de': 'Benutzung (iOS)'})
+                 ],
+                 tutorial={'en': 'https://www.cprogramming.com/',
+                           'de': 'https://www.cprogramming.com/'}), # http://www.c-howto.de/
+    BindingsInfo(display_name='C#',
+                 url_part='csharp',
+                 software_doc_suffix='CSharp',
+                 is_programming_language=True,
+                 is_released=True,
+                 has_authentication_example=True,
+                 has_download=True,
+                 misc_docs=[
+                     ('IPConnection_{suffix}', {'en': 'IP Connection', 'de': 'IP Connection'}),
+                     ('API_Bindings_{suffix}', {'en': 'Usage', 'de': 'Benutzung'}),
+                     ('API_Bindings_{suffix}_Windows_Phone', {'en': 'Usage (Windows Phone)', 'de': 'Benutzung (Win Phone)'})
+                 ],
+                 tutorial={'en': 'https://csharp.net-tutorials.com/',
+                           'de': 'https://csharp.net-tutorials.com/'}),
+    BindingsInfo(display_name='Delphi/Lazarus',
+                 url_part='delphi',
+                 software_doc_suffix='Delphi',
+                 is_programming_language=True,
+                 is_released=True,
+                 has_authentication_example=True,
+                 has_download=True,
+                 misc_docs=[
+                     ('IPConnection_{suffix}', {'en': 'IP Connection', 'de': 'IP Connection'}),
+                     ('API_Bindings_{suffix}', {'en': 'Usage', 'de': 'Benutzung'})
+                 ],
+                 tutorial={'en': 'http://www.delphibasics.co.uk/',
+                           'de': 'https://www.delphi-treff.de/tutorials/grundlagen-tutorials/'}),
+    BindingsInfo(display_name='Go',
+                 url_part='go',
+                 software_doc_suffix='Go',
+                 is_programming_language=True,
+                 is_released=True,
+                 has_authentication_example=True,
+                 has_download=True,
+                 misc_docs=[
+                     ('IPConnection_{suffix}', {'en': 'IP Connection', 'de': 'IP Connection'}),
+                     ('API_Bindings_{suffix}', {'en': 'Usage', 'de': 'Benutzung'})
+                 ],
+                 tutorial={'en': 'https://tour.golang.org',
+                           'de': 'https://tour.golang.org'}),
+    BindingsInfo(display_name='Java',
+                 url_part='java',
+                 software_doc_suffix='Java',
+                 is_programming_language=True,
+                 is_released=True,
+                 has_authentication_example=True,
+                 has_download=True,
+                 misc_docs=[
+                     ('IPConnection_{suffix}', {'en': 'IP Connection', 'de': 'IP Connection'}),
+                     ('API_Bindings_{suffix}', {'en': 'Usage', 'de': 'Benutzung'}),
+                     ('API_Bindings_{suffix}_Android', {'en': 'Usage (Android)', 'de': 'Benutzung (Android)'})
+                 ],
+                 tutorial={'en': 'https://docs.oracle.com/javase/tutorial/',
+                           'de': 'https://docs.oracle.com/javase/tutorial/'}), # http://openbook.galileocomputing.de/javainsel/
+    BindingsInfo(display_name='JavaScript',
+                 url_part='javascript',
+                 software_doc_suffix='JavaScript',
+                 is_programming_language=True,
+                 is_released=True,
+                 has_authentication_example=True,
+                 has_download=True,
+                 misc_docs=[
+                     ('IPConnection_{suffix}', {'en': 'IP Connection', 'de': 'IP Connection'}),
+                     ('API_Bindings_{suffix}', {'en': 'Usage', 'de': 'Benutzung'})
+                 ],
+                 tutorial={'en': 'FIXME',
+                           'de': 'FIXME'}),
+    BindingsInfo(display_name='LabVIEW',
+                 url_part='labview',
+                 software_doc_suffix='LabVIEW',
+                 is_programming_language=True,
+                 is_released=True,
+                 has_authentication_example=True,
+                 has_download=True,
+                 misc_docs=[
+                     ('IPConnection_{suffix}', {'en': 'IP Connection', 'de': 'IP Connection'}),
+                     ('API_Bindings_{suffix}', {'en': 'Usage', 'de': 'Benutzung'})
+                 ],
+                 tutorial={'en': 'FIXME',
+                           'de': 'FIXME'}),
+    BindingsInfo(display_name='Mathematica',
+                 url_part='mathematica',
+                 software_doc_suffix='Mathematica',
+                 is_programming_language=True,
+                 is_released=True,
+                 has_authentication_example=True,
+                 has_download=True,
+                 misc_docs=[
+                     ('IPConnection_{suffix}', {'en': 'IP Connection', 'de': 'IP Connection'}),
+                     ('API_Bindings_{suffix}', {'en': 'Usage', 'de': 'Benutzung'})
+                 ],
+                 tutorial={'en': 'FIXME',
+                           'de': 'FIXME'}),
+    BindingsInfo(display_name='MATLAB/Octave',
+                 url_part='matlab',
+                 software_doc_suffix='MATLAB',
+                 is_programming_language=True,
+                 is_released=True,
+                 has_authentication_example=True,
+                 has_download=True,
+                 misc_docs=[
+                     ('IPConnection_{suffix}', {'en': 'IP Connection', 'de': 'IP Connection'}),
+                     ('API_Bindings_{suffix}', {'en': 'Usage', 'de': 'Benutzung'})
+                 ],
+                 tutorial={'en': 'FIXME',
+                           'de': 'FIXME'}),
+    BindingsInfo(display_name='MQTT',
+                 url_part='mqtt',
+                 software_doc_suffix='MQTT',
+                 is_programming_language=True,
+                 is_released=True,
+                 has_authentication_example=True,
+                 has_download=True,
+                 misc_docs=[
+                     ('IPConnection_{suffix}', {'en': 'IP Connection', 'de': 'IP Connection'}),
+                     ('API_Bindings_{suffix}', {'en': 'Usage', 'de': 'Benutzung'})
+                 ],
+                 tutorial={'en': 'FIXME',
+                           'de': 'FIXME'}),
+    BindingsInfo(display_name='openHAB',
+                 url_part='openhab',
+                 software_doc_suffix='openHAB',
+                 is_programming_language=True,
+                 is_released=True,
+                 has_authentication_example=False,
+                 has_download=False, # FIXME
+                 misc_docs=[
+                     ('API_Bindings_{suffix}', {'en': 'Usage', 'de': 'Benutzung'})
+                 ],
+                 tutorial={'en': 'FIXME',
+                           'de': 'FIXME'}),
+    BindingsInfo(display_name='Perl',
+                 url_part='perl',
+                 software_doc_suffix='Perl',
+                 is_programming_language=True,
+                 is_released=True,
+                 has_authentication_example=True,
+                 has_download=True,
+                 misc_docs=[
+                     ('IPConnection_{suffix}', {'en': 'IP Connection', 'de': 'IP Connection'}),
+                     ('API_Bindings_{suffix}', {'en': 'Usage', 'de': 'Benutzung'})
+                 ],
+                 tutorial={'en': 'FIXME',
+                           'de': 'FIXME'}),
+    BindingsInfo(display_name='PHP',
+                 url_part='php',
+                 software_doc_suffix='PHP',
+                 is_programming_language=True,
+                 is_released=True,
+                 has_authentication_example=True,
+                 has_download=True,
+                 misc_docs=[
+                     ('IPConnection_{suffix}', {'en': 'IP Connection', 'de': 'IP Connection'}),
+                     ('API_Bindings_{suffix}', {'en': 'Usage', 'de': 'Benutzung'})
+                 ],
+                 tutorial={'en': 'https://www.php.net/manual/en/getting-started.php',
+                           'de': 'https://www.php.net/manual/de/getting-started.php'}),
+    BindingsInfo(display_name='Python',
+                 url_part='python',
+                 software_doc_suffix='Python',
+                 is_programming_language=True,
+                 is_released=True,
+                 has_authentication_example=True,
+                 has_download=True,
+                 misc_docs=[
+                     ('IPConnection_{suffix}', {'en': 'IP Connection', 'de': 'IP Connection'}),
+                     ('API_Bindings_{suffix}', {'en': 'Usage', 'de': 'Benutzung'})
+                 ],
+                 tutorial={'en': 'https://www.python.org/about/gettingstarted/', # http://getpython3.com/diveintopython3/
+                           'de': 'https://www.python.org/about/gettingstarted/'}),
+    BindingsInfo(display_name='Ruby',
+                 url_part='ruby',
+                 software_doc_suffix='Ruby',
+                 is_programming_language=True,
+                 is_released=True,
+                 has_authentication_example=True,
+                 has_download=True,
+                 misc_docs=[
+                     ('IPConnection_{suffix}', {'en': 'IP Connection', 'de': 'IP Connection'}),
+                     ('API_Bindings_{suffix}', {'en': 'Usage', 'de': 'Benutzung'})
+                 ],
+                 tutorial={'en': 'https://www.ruby-lang.org/en/documentation/quickstart/',
+                           'de': 'https://www.ruby-lang.org/de/documentation/quickstart/'}),
+    BindingsInfo(display_name='Rust',
+                 url_part='rust',
+                 software_doc_suffix='Rust',
+                 is_programming_language=True,
+                 is_released=True,
+                 has_authentication_example=True,
+                 has_download=True,
+                 misc_docs=[
+                     ('IPConnection_{suffix}', {'en': 'IP Connection', 'de': 'IP Connection'}),
+                     ('API_Bindings_{suffix}', {'en': 'Usage', 'de': 'Benutzung'})
+                 ],
+                 tutorial={'en': 'https://doc.rust-lang.org/tutorial.html',
+                           'de': 'https://doc.rust-lang.org/tutorial.html'}),
+    BindingsInfo(display_name='Shell',
+                 url_part='shell',
+                 software_doc_suffix='Shell',
+                 is_programming_language=True,
+                 is_released=True,
+                 has_authentication_example=True,
+                 has_download=True,
+                 misc_docs=[
+                     ('IPConnection_{suffix}', {'en': 'IP Connection', 'de': 'IP Connection'}),
+                     ('API_Bindings_{suffix}', {'en': 'Usage', 'de': 'Benutzung'})
+                 ],
+                 tutorial={'en': 'FIXME',
+                           'de': 'FIXME'}),
+    #BindingsInfo(display_name='Tinkerforge Visual Programming Language (TVPL)',
+    #             url_part='tvpl',
+    #             software_doc_suffix='TVPL',
+    #             is_programming_language=True,
+    #             is_released=False,
+    #             has_authentication_example=False,
+    #             has_download=True,
+    #             misc_docs=[
+    #                 ('IPConnection_{suffix}', {'en': 'IP Connection', 'de': 'IP Connection'}),
+    #                 ('API_Bindings_{suffix}', {'en': 'Usage', 'de': 'Benutzung'})
+    #             ],
+    #             tutorial={'en': 'FIXME',
+    #                       'de': 'FIXME'}),
+    BindingsInfo(display_name='Visual Basic .NET',
+                 url_part='vbnet',
+                 software_doc_suffix='VBNET',
+                 is_programming_language=True,
+                 is_released=True,
+                 has_authentication_example=True,
+                 has_download=True,
+                 misc_docs=[
+                     ('IPConnection_{suffix}', {'en': 'IP Connection', 'de': 'IP Connection'}),
+                     ('API_Bindings_{suffix}', {'en': 'Usage', 'de': 'Benutzung'})
+                 ],
+                 tutorial={'en': 'http://howtostartprogramming.com/vb-net/',
+                           'de': 'http://howtostartprogramming.com/vb-net/'}), # http://openbook.galileocomputing.de/vb_net/index.htm
+    BindingsInfo(display_name='TCP/IP',
+                 url_part='tcpip',
+                 software_doc_suffix='TCPIP',
+                 is_programming_language=False,
+                 is_released=True,
+                 has_authentication_example=False,
+                 has_download=False,
+                 misc_docs=[
+                     ('IPConnection_{suffix}', {'en': 'IP Connection', 'de': 'IP Connection'}),
+                     ('API_Bindings_{suffix}', {'en': 'Usage', 'de': 'Benutzung'})
+                 ],
+                 tutorial={'en': 'FIXME',
+                           'de': 'FIXME'}),
+    BindingsInfo(display_name='Modbus',
+                 url_part='modbus',
+                 software_doc_suffix='Modbus',
+                 is_programming_language=False,
+                 is_released=True,
+                 has_authentication_example=False,
+                 has_download=False,
+                 misc_docs=[
+                     ('IPConnection_{suffix}', {'en': 'IP Connection', 'de': 'IP Connection'}),
+                     ('API_Bindings_{suffix}', {'en': 'Usage', 'de': 'Benutzung'})
+                 ],
+                 tutorial={'en': 'FIXME',
+                           'de': 'FIXME'}),
 ]
 
 extension_infos = \
@@ -374,7 +586,7 @@ def make_download_bindings_table():
     rows = []
 
     for bindings_info in bindings_infos:
-        if not bindings_info.is_programming_language or not bindings_info.is_released:
+        if not bindings_info.is_released or not bindings_info.has_download:
             continue
 
         rows.append(row.format(bindings_info.display_name,
@@ -977,55 +1189,32 @@ def make_index_api_device(device_infos, category, language):
     return ret
 
 def make_index_api_misc(binding, lang):
-    misc_html_en = """
+    misc_html = """
 <ul>
-    <li><a class="reference internal" href="Software/IPConnection_{0}.html">IP Connection</a></li>
-    <li><a class="reference internal" href="Software/API_Bindings_{0}.html">Usage</a></li>
-    {1}
+    {0}
 </ul>
 """
-
     llp_html_en = """
 <ul>
     <li><a class="reference internal" href="Low_Level_Protocols/{0}.html">Specification</a></li>
 </ul>
 """
-
-    additional_li_en = '<li><a class="reference internal" href="Software/API_Bindings_{0}_{1}.html">Usage ({2})</a></li>'
-
-    misc_html = {
-    'en': misc_html_en,
-    'de': misc_html_en.replace('Usage', 'Benutzung')
-    }
+    misc_li = '<li><a class="reference internal" href="Software/{0}.html">{1}</a></li>'
 
     llp_html = {
     'en': llp_html_en,
     'de': llp_html_en.replace('Specification', 'Spezifikation')
     }
 
-    additional_li = {
-    'en': additional_li_en,
-    'de': additional_li_en.replace('Usage', 'Benutzung')
-    }
-
-    windows_phone = {
-    'en': 'Windows Phone',
-    'de': 'Win Phone'
-    }
-
     if not binding.is_programming_language:
         return llp_html[lang].format(binding.software_doc_suffix)
     else:
-        if binding.url_part == 'c':
-            add = additional_li[lang].format(binding.software_doc_suffix, 'iOS', 'iOS')
-        elif binding.url_part == 'csharp':
-            add = additional_li[lang].format(binding.software_doc_suffix, 'Windows_Phone', windows_phone[lang])
-        elif binding.url_part == 'java':
-            add = additional_li[lang].format(binding.software_doc_suffix, 'Android', 'Android')
-        else:
-            add = ''
+        misc_lis = []
 
-        return misc_html[lang].format(binding.software_doc_suffix, add)
+        for misc_doc in binding.misc_docs:
+            misc_lis.append(misc_li.format(misc_doc[0].format(suffix=binding.software_doc_suffix), misc_doc[1][lang]))
+
+        return misc_html.format('\n'.join(misc_lis))
 
     return ''
 
@@ -1229,7 +1418,7 @@ def make_authentication_tutorial_examples_table():
     rows = []
 
     for bindings_info in bindings_infos:
-        if bindings_info.is_programming_language and bindings_info.is_released:
+        if bindings_info.has_authentication_example and bindings_info.is_released:
             rows.append(row.format(bindings_info.display_name, bindings_info.url_part))
 
     return '\n'.join(rows) + '\n'
@@ -1462,6 +1651,7 @@ def generate(path):
     for bindings_info in bindings_infos:
         if not bindings_info.is_programming_language:
             continue
+
         template = {'en': u"""
 {lang} - {device_type}{discontinued_title_parenthesis}
 {equal_signs}
