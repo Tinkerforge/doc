@@ -14,6 +14,7 @@ The openHAB bindings allow you to control :ref:`Bricks <primer_bricks>` and
 * ``org.openhab.binding.tinkerforge-[version].jar``, a precompiled version of the bindings
 * in ``org.openhab.binding.tinkerforge/`` the source code of the bindings
 * in ``examples/`` example DSL rules for some Bricks and Bricklets
+* ``tinkerforge-2.1.26.jar``, the currently required version of the Java bindings
 
 Requirements
 ------------
@@ -27,9 +28,10 @@ Installation
 ------------
 
 .. note::
- Currently the bindings also require installation of the Java bindings. They are available
- in the `Central Maven Repository <https://search.maven.org/search?q=a:tinkerforge>`__.
- Download the jar and put it into the addons directory, next to the openHAB bindings jar.
+ Currently the bindings also require installation of the Java bindings version 2.1.26 or higher.
+ They are available in in the zip file or alternatively in the
+ `Central Maven Repository <https://search.maven.org/search?q=a:tinkerforge>`__.
+ Put the jar into the addons directory, next to the openHAB bindings jar.
 
 To install the bindings, just copy the JAR into the addons directory
 of your installation. openHAB will then load the bindings.
