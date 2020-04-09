@@ -236,9 +236,9 @@ Grundfunktionen
  Der Befehl hat sieben Ausgabewerte:
 
  * ``uid`` ist die UID des Bricks/Bricklets.
- * ``connected-uid`` ist die UID des Bricks mit dem das Brick/Bricklet verbunden
-   ist. Für ein Bricklet ist dies die UID des Bricks mit dem es verbunden ist.
-   Für einen Brick ist es die UID des untersten Master Bricks in einem Stapel.
+ * ``connected-uid`` ist die UID des Gerätes mit dem der Brick/das Bricklet verbunden
+   ist. Für ein Bricklet ist dies die UID des Bricks oder Bricklets mit dem es verbunden ist.
+   Für einen Brick ist es die UID des untersten Bricks im Stapel.
    Der unterste Master Brick hat die Connected-UID "0". Mit diesen Informationen
    sollte es möglich sein die komplette Netzwerktopologie zu rekonstruieren.
  * ``position`` ist für Bricks: '0' - '8' (Position in Stapel). Für Bricklets:
