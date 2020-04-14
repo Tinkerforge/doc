@@ -305,33 +305,33 @@ bindings_infos = \
 
 extension_infos = \
 [
-    DeviceInfo(None, 'Chibi Extension', 'Chibi', 'chibi_extension', 'Chibi_Extension', None, 'chibi-extension', None, False, True, True, True, False,
+    DeviceInfo(None, 'Extension', 'Chibi Extension', 'Chibi', 'chibi_extension', 'Chibi_Extension', None, 'chibi-extension', None, False, True, True, True, False,
                {'en': 'Wireless Chibi connection between stacks',
                 'de': 'Drahtlose Chibi Verbindung zwischen Stapeln'}),
-    DeviceInfo(None, 'Ethernet Extension', 'Ethernet', 'ethernet_extension', 'Ethernet_Extension', None, 'ethernet-extension', None, False, True, True, False, False,
+    DeviceInfo(None, 'Extension', 'Ethernet Extension', 'Ethernet', 'ethernet_extension', 'Ethernet_Extension', None, 'ethernet-extension', None, False, True, True, False, False,
                {'en': 'Cable based Ethernet connection between stack and PC',
                 'de': 'Kabelgebundene Ethernet Verbindung zwischen Stapel und PC'}),
-    DeviceInfo(None, 'RS485 Extension', 'RS485', 'rs485_extension', 'RS485_Extension', None, 'rs485-extension', None, False, True, True, False, False,
+    DeviceInfo(None, 'Extension', 'RS485 Extension', 'RS485', 'rs485_extension', 'RS485_Extension', None, 'rs485-extension', None, False, True, True, False, False,
                {'en': 'Cable based RS485 connection between stacks',
                 'de': 'Kabelgebundene RS485 Verbindung zwischen Stapeln'}),
-    DeviceInfo(None, 'WIFI Extension', 'WIFI', 'wifi_extension', 'WIFI_Extension', None, 'wifi-extension', None, False, True, True, False, False,
+    DeviceInfo(None, 'Extension', 'WIFI Extension', 'WIFI', 'wifi_extension', 'WIFI_Extension', None, 'wifi-extension', None, False, True, True, False, False,
                {'en': 'Wireless Wi-Fi connection between stack and PC',
                 'de': 'Drahtlose WLAN Verbindung zwischen Stapel und PC'}),
-    DeviceInfo(None, 'WIFI Extension 2.0', 'WIFI 2.0', 'wifi_v2_extension', 'WIFI_V2_Extension', None, 'wifi-v2-extension', 'wifi_v2', False, True, True, False, False,
+    DeviceInfo(None, 'Extension', 'WIFI Extension 2.0', 'WIFI 2.0', 'wifi_v2_extension', 'WIFI_V2_Extension', None, 'wifi-v2-extension', 'wifi_v2', False, True, True, False, False,
                {'en': 'Wireless Wi-Fi connection between stack and PC',
                 'de': 'Drahtlose WLAN Verbindung zwischen Stapel und PC'})
 ]
 
 power_supply_infos = \
 [
-    DeviceInfo(None, 'Step-Down Power Supply', 'Step-Down', 'step_down_power_supply', 'Step_Down', None, 'step-down-powersupply', None, False, True, True, False, False,
+    DeviceInfo(None, 'PowerSupply', 'Step-Down Power Supply', 'Step-Down', 'step_down_power_supply', 'Step_Down', None, 'step-down-powersupply', None, False, True, True, False, False,
                {'en': 'Powers a stack of Bricks with 5V',
                 'de': 'Versorgt einen Stapel von Bricks mit 5V'})
 ]
 
 accessory_infos = \
 [
-    DeviceInfo(None, 'DC Jack Adapter', 'DC Jack Adapter', 'dc_jack_adapter', 'DC_Jack_Adapter', None, 'dc-adapter', None, False, True, True, False, False,
+    DeviceInfo(None, 'Accessory', 'DC Jack Adapter', 'DC Jack Adapter', 'dc_jack_adapter', 'DC_Jack_Adapter', None, 'dc-adapter', None, False, True, True, False, False,
                {'en': 'Adapter between a 5mm DC jack and 2 Pole Black Connector',
                 'de': 'Adapter zwischen einem 5mm DC Stecker und 2 Pin Stecker Schwarz'})
 ]
@@ -356,8 +356,7 @@ extension_versions = {}
 kit_versions = {}
 red_image_versions = {}
 
-has_brick_examples = {}
-has_bricklet_examples = {}
+has_examples = {}
 
 def collect_latest_version_info():
     print 'Discovering latest versions on tinkerforge.com'
@@ -405,13 +404,13 @@ def collect_latest_version_info():
             red_image_versions[parts[1]] = latest_version
 
 def collect_example_info(path):
-    for brick_info in brick_infos:
-        if not brick_info.has_bindings:
+    for device_info in brick_infos + bricklet_infos:
+        if not device_info.has_bindings:
             continue
 
-        assert brick_info.identifier != None, brick_info
+        assert device_info.identifier != None, device_info
 
-        has_brick_examples[brick_info.identifier] = {}
+        has_examples[device_info.identifier] = {}
 
         for bindings_info in bindings_infos:
             if not bindings_info.is_programming_language:
@@ -419,29 +418,15 @@ def collect_example_info(path):
 
             assert bindings_info.url_part != None, bindings_info
 
-            examples_label = '_{0}_{1}_examples'.format(brick_info.ref_name, bindings_info.url_part)
+            category = device_info.category
 
-            with open(os.path.join(path, 'source', 'Software', 'Bricks', '{0}_{1}.rst'.format(brick_info.software_doc_prefix, bindings_info.software_doc_suffix)), 'r') as f:
-                has_brick_examples[brick_info.identifier][bindings_info.url_part] = examples_label in f.read()
+            if category.startswith('Brick'):
+                category += 's'
 
-    for bricklet_info in bricklet_infos:
-        if not bricklet_info.has_bindings:
-            continue
+            examples_label = '_{0}_{1}_examples'.format(device_info.ref_name, bindings_info.url_part)
 
-        assert bricklet_info.identifier != None, bricklet_info
-
-        has_bricklet_examples[bricklet_info.identifier] = {}
-
-        for bindings_info in bindings_infos:
-            if not bindings_info.is_programming_language:
-                continue
-
-            assert bindings_info.url_part != None, bindings_info
-
-            examples_label = '_{0}_{1}_examples'.format(brick_info.ref_name, bindings_info.url_part)
-
-            with open(os.path.join(path, 'source', 'Software', 'Bricklets', '{0}_{1}.rst'.format(bricklet_info.software_doc_prefix, bindings_info.software_doc_suffix)), 'r') as f:
-                has_bricklet_examples[bricklet_info.identifier][bindings_info.url_part] = examples_label in f.read()
+            with open(os.path.join(path, 'source', 'Software', category, '{0}_{1}.rst'.format(device_info.software_doc_prefix, bindings_info.software_doc_suffix)), 'r') as f:
+                has_examples[device_info.identifier][bindings_info.url_part] = examples_label in f.read()
 
 def make_primer_table(device_infos):
     table_head = {
@@ -923,7 +908,7 @@ def make_api_bindings_links_table(bindings_info):
         if not brick_info.is_documented or not brick_info.has_bindings:
             continue
 
-        if has_brick_examples[brick_info.identifier][bindings_info.url_part]:
+        if has_examples[brick_info.identifier][bindings_info.url_part]:
             device_row = device_with_examples_row
         else:
             device_row = device_without_examples_row
@@ -940,7 +925,7 @@ def make_api_bindings_links_table(bindings_info):
         if not bricklet_info.is_documented or not bricklet_info.has_bindings:
             continue
 
-        if has_bricklet_examples[bricklet_info.identifier][bindings_info.url_part]:
+        if has_examples[bricklet_info.identifier][bindings_info.url_part]:
             device_row = device_with_examples_row
         else:
             device_row = device_without_examples_row
@@ -1045,18 +1030,10 @@ def make_api_bindings_devices_table(bindings_info, device_infos, category, disco
     lines = []
     for device_info in sorted(device_infos, key=lambda x: x.short_display_name.lower()):
         if device_info.is_documented and device_info.has_bindings and device_info.is_discontinued == discontinued:
-            if category == 'Brick':
-                if has_brick_examples[device_info.identifier][bindings_info.url_part]:
-                    device_row = device_with_examples_row
-                else:
-                    device_row = device_without_examples_row
-            elif category == 'Bricklet':
-                if has_bricklet_examples[device_info.identifier][bindings_info.url_part]:
-                    device_row = device_with_examples_row
-                else:
-                    device_row = device_without_examples_row
+            if has_examples[device_info.identifier][bindings_info.url_part]:
+                device_row = device_with_examples_row
             else:
-                assert False, category
+                device_row = device_without_examples_row
 
             lines.append(device_row[lang].format(device_info.ref_name, bindings_info.url_part, device_info.short_display_name))
 
@@ -1459,9 +1436,14 @@ def make_hlpi_table(device_info):
 """
     }
 
-    row_source = {
+    row_with_examples_source = {
     'en': '   "{0}", ":ref:`API <{1}_{2}_api>`", ":ref:`Examples <{1}_{2}_examples>`", ":ref:`Installation <api_bindings_{2}_install>`"',
     'de': '   "{0}", ":ref:`API <{1}_{2}_api>`", ":ref:`Beispiele <{1}_{2}_examples>`", ":ref:`Installation <api_bindings_{2}_install>`"'
+    }
+
+    row_without_examples_source = {
+    'en': '   "{0}", ":ref:`API <{1}_{2}_api>`", , ":ref:`Installation <api_bindings_{2}_install>`"',
+    'de': '   "{0}", ":ref:`API <{1}_{2}_api>`", , ":ref:`Installation <api_bindings_{2}_install>`"'
     }
 
     row = '   "{0}", ":ref:`API <{1}_{2}_api>`"'
@@ -1472,6 +1454,11 @@ def make_hlpi_table(device_info):
             continue
 
         if bindings_info.is_programming_language:
+            if has_examples[device_info.identifier][bindings_info.url_part]:
+                row_source = row_with_examples_source
+            else:
+                row_source = row_without_examples_source
+
             rows.append(row_source[lang].format(bindings_info.display_name, device_info.ref_name, bindings_info.url_part))
         else:
             rows.append(row.format(bindings_info.display_name, device_info.ref_name, bindings_info.url_part))
