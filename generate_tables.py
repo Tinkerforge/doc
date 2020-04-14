@@ -356,7 +356,10 @@ extension_versions = {}
 kit_versions = {}
 red_image_versions = {}
 
-def get_latest_version_info():
+has_brick_examples = {}
+has_bricklet_examples = {}
+
+def collect_latest_version_info():
     print 'Discovering latest versions on tinkerforge.com'
 
     try:
@@ -400,6 +403,45 @@ def get_latest_version_info():
             kit_versions[parts[1]] = latest_version
         elif parts[0] == 'red_images':
             red_image_versions[parts[1]] = latest_version
+
+def collect_example_info(path):
+    for brick_info in brick_infos:
+        if not brick_info.has_bindings:
+            continue
+
+        assert brick_info.identifier != None, brick_info
+
+        has_brick_examples[brick_info.identifier] = {}
+
+        for bindings_info in bindings_infos:
+            if not bindings_info.is_programming_language:
+                continue
+
+            assert bindings_info.url_part != None, bindings_info
+
+            examples_label = '_{0}_{1}_examples'.format(brick_info.ref_name, bindings_info.url_part)
+
+            with open(os.path.join(path, 'source', 'Software', 'Bricks', '{0}_{1}.rst'.format(brick_info.software_doc_prefix, bindings_info.software_doc_suffix)), 'r') as f:
+                has_brick_examples[brick_info.identifier][bindings_info.url_part] = examples_label in f.read()
+
+    for bricklet_info in bricklet_infos:
+        if not bricklet_info.has_bindings:
+            continue
+
+        assert bricklet_info.identifier != None, bricklet_info
+
+        has_bricklet_examples[bricklet_info.identifier] = {}
+
+        for bindings_info in bindings_infos:
+            if not bindings_info.is_programming_language:
+                continue
+
+            assert bindings_info.url_part != None, bindings_info
+
+            examples_label = '_{0}_{1}_examples'.format(brick_info.ref_name, bindings_info.url_part)
+
+            with open(os.path.join(path, 'source', 'Software', 'Bricklets', '{0}_{1}.rst'.format(bricklet_info.software_doc_prefix, bindings_info.software_doc_suffix)), 'r') as f:
+                has_bricklet_examples[bricklet_info.identifier][bindings_info.url_part] = examples_label in f.read()
 
 def make_primer_table(device_infos):
     table_head = {
@@ -866,30 +908,49 @@ def make_api_bindings_links_table(bindings_info):
     'de': ' IP Connection | :ref:`API <ipcon_{0}_api>` | :ref:`Beispiele <ipcon_{0}_examples>`'
     }
 
-    device_row = {
+    device_with_examples_row = {
     'en': ' :ref:`{2} <{0}>` | :ref:`API <{0}_{1}_api>` | :ref:`Examples <{0}_{1}_examples>`',
     'de': ' :ref:`{2} <{0}>` | :ref:`API <{0}_{1}_api>` | :ref:`Beispiele <{0}_{1}_examples>`'
     }
 
+    device_without_examples_row = {
+    'en': ' :ref:`{2} <{0}>` | :ref:`API <{0}_{1}_api>` |',
+    'de': ' :ref:`{2} <{0}>` | :ref:`API <{0}_{1}_api>` |'
+    }
+
     brick_lines = [[], []]
     for brick_info in sorted(brick_infos, key=lambda x: x.short_display_name.lower()):
+        if not brick_info.is_documented or not brick_info.has_bindings:
+            continue
+
+        if has_brick_examples[brick_info.identifier][bindings_info.url_part]:
+            device_row = device_with_examples_row
+        else:
+            device_row = device_without_examples_row
+
         line = device_row[lang].format(brick_info.ref_name, bindings_info.url_part, brick_info.short_display_name)
 
-        if brick_info.is_documented and brick_info.has_bindings:
-            if not brick_info.is_discontinued:
-                brick_lines[0].append(line)
-            else:
-                brick_lines[1].append(line)
+        if not brick_info.is_discontinued:
+            brick_lines[0].append(line)
+        else:
+            brick_lines[1].append(line)
 
     bricklet_lines = [[], []]
     for bricklet_info in sorted(bricklet_infos, key=lambda x: x.short_display_name.lower()):
+        if not bricklet_info.is_documented or not bricklet_info.has_bindings:
+            continue
+
+        if has_bricklet_examples[bricklet_info.identifier][bindings_info.url_part]:
+            device_row = device_with_examples_row
+        else:
+            device_row = device_without_examples_row
+
         line = device_row[lang].format(bricklet_info.ref_name, bindings_info.url_part, bricklet_info.short_display_name)
 
-        if bricklet_info.is_documented and bricklet_info.has_bindings:
-            if not bricklet_info.is_discontinued:
-                bricklet_lines[0].append(line)
-            else:
-                bricklet_lines[1].append(line)
+        if not bricklet_info.is_discontinued:
+            bricklet_lines[0].append(line)
+        else:
+            bricklet_lines[1].append(line)
 
     has_ipcon = False
 
@@ -971,14 +1032,32 @@ def make_api_bindings_devices_table(bindings_info, device_infos, category, disco
 """
     }
 
-    device_row = {
+    device_with_examples_row = {
     'en': ' :ref:`{2} <{0}>` | :ref:`API <{0}_{1}_api>` | :ref:`Examples <{0}_{1}_examples>`',
     'de': ' :ref:`{2} <{0}>` | :ref:`API <{0}_{1}_api>` | :ref:`Beispiele <{0}_{1}_examples>`'
+    }
+
+    device_without_examples_row = {
+    'en': ' :ref:`{2} <{0}>` | :ref:`API <{0}_{1}_api>` |',
+    'de': ' :ref:`{2} <{0}>` | :ref:`API <{0}_{1}_api>` |'
     }
 
     lines = []
     for device_info in sorted(device_infos, key=lambda x: x.short_display_name.lower()):
         if device_info.is_documented and device_info.has_bindings and device_info.is_discontinued == discontinued:
+            if category == 'Brick':
+                if has_brick_examples[device_info.identifier][bindings_info.url_part]:
+                    device_row = device_with_examples_row
+                else:
+                    device_row = device_without_examples_row
+            elif category == 'Bricklet':
+                if has_bricklet_examples[device_info.identifier][bindings_info.url_part]:
+                    device_row = device_with_examples_row
+                else:
+                    device_row = device_without_examples_row
+            else:
+                assert False, category
+
             lines.append(device_row[lang].format(device_info.ref_name, bindings_info.url_part, device_info.short_display_name))
 
     return table_head[lang].format(category, '\n'.join(lines))
@@ -1521,7 +1600,8 @@ def generate(path):
         print('Wrong working directory')
         sys.exit(1)
 
-    get_latest_version_info()
+    collect_latest_version_info()
+    collect_example_info(path)
 
     print('Generating index_hardware.html')
     write_if_changed(os.path.join(path, 'source', 'index_hardware.html'), make_index_hardware())
