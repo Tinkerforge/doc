@@ -171,9 +171,9 @@ to remove them with the corresponding "removeListener" function.
 
   * ``uid``: The UID of the device.
   * ``connectedUID``: UID where the device is connected to. For a Bricklet this
-   is the UID of the Brick or Bricklet it is connected to. For a Brick it is
-   the UID of the bottommost Brick in the stack. For the bottommost Brick
-   in a stack it is "0". With this information it is
+    is the UID of the Brick or Bricklet it is connected to. For a Brick it is
+    the UID of the bottommost Brick in the stack. For the bottommost Brick
+    in a stack it is "0". With this information it is
     possible to reconstruct the complete network topology.
   * ``position``: For Bricks: '0' - '8' (position in stack). For Bricklets:
     'a' - 'h' (position on Brick) or 'i' (position of the Raspberry Pi (Zero) HAT)
