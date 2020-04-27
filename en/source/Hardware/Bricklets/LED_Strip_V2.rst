@@ -69,6 +69,9 @@ of up to 100Hz. A possible application can be found in the
 :ref:`Starter Kit: Blinken Lights <starter_kit_blinkenlights>`: 
 `Video <https://www.youtube.com/watch?v=mmNRa-lLaXM>`__
 
+.. note::
+ The maximum update rate depends on type and number of attached LEDs (:ref:`see here <led_strip_v2_bricklet_fixed_frame_rate>`).
+
 The LED Strip Bricklet 2.0 has a 7 pole Bricklet connector and is connected to a
 Brick with a ``7p-10p`` Bricklet cable.
 
@@ -341,6 +344,22 @@ until the ``FrameStarted`` callback is triggered, write the next frame and so on
 If you receive a ``FrameStarted`` callback before all LEDs are set, your frame
 rate is too high.
 
+The maximum frame rate depends on the type and number of attached LEDs. For example
+SK6812 LEDs allow a maximum data rate of about 800 kbit/s (or 100 kByte/s). As one LED requires 4 bytes
+of data (RGBW), this means, that only 25000 LEDs can be set per second. Also the LEDs
+require a reset time of 80 µs between frames. The maximum frame rate can then be calculated as follows:
+Divide the number of attached LEDs by 25000.
+This yields the duration of one frame (e.g. 0.02s for 500 attached LEDs). Add the reset time of 80µs
+and take the inverse: 1 / (0.02s + 0.0008s) ~ 48 Hz. Note that this is a theoretical maximum.
+
+Another factor to keep in mind is the communication between your PC and the Bricklet.
+Depending on the setup, the communication is typically limited to around 1000 messages per second.
+One message contains 60 bytes of LED data, so when using RGBW LEDs, you can transfer up to
+15000 RGBW values per second (assuming responses from the Bricklet are disabled).
+Assuming 500 LEDs (as per the example above), it is possible to transfer 30 complete images per second
+to the Bricklet. The Bricklet's API allows to refresh parts of the image, so if you don't need to
+change the complete image every frame, a lot of optimization is possible here: For example when
+updating only half the image per frame, 60 updates per second are possible.
 
 .. _led_strip_v2_bricklet_case:
 

@@ -69,6 +69,9 @@ Aktualisierungsrate von bis zu 100Hz gesteuert werden.  Ein Anwendungsbeispiel
 findet man im :ref:`Starterkit: Blinkenlights <starter_kit_blinkenlights>`:
 `Video <https://www.youtube.com/watch?v=mmNRa-lLaXM>`__
 
+.. note::
+ Die maximale Aktualisierungsrate hängt von Typ und Anzahl der verwendeten LEDs ab (:ref:`siehe hier <led_strip_v2_bricklet_fixed_frame_rate>`).
+
 Das LED Strip Bricklet 2.0 hat einen 7 Pol Bricklet Stecker und wird
 mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
 
@@ -357,6 +360,27 @@ Nachdem die Framelänge gesetzt ist, muss das erste Frame übertragen werden
 Wenn ein ``FrameStarted`` Callback empfangen wird bevor alle LEDs eines Frames
 gesetzt wurden, ist die Aktualisierungsrate zu hoch.
 
+Die maximale Aktualisierungsrate hängt von Typ und Anzahl der verwendeten LEDs ab.
+Zum Beispiel erlauben SK6812-LEDs eine maximale Datenrate von 800 kbit/s (oder 100 kByte/s).
+Da eine LED 4 Byte an Daten benötigt (RGBW), können maximal
+25000 LEDs pro Sekunde aktualisiert werden.
+Zudem benötigen die LEDs eine Reset-Zeit von 80µs zwischen Frames.
+Die maximale Aktualisierungsrate kann dann wie folgt berechnet werden:
+Die Anzahl angeschlossener LEDs geteilt durch 25000 ergibt die Dauer eines Frames
+(z.B. 0,02s für 500 angeschlossene LEDs). Das Reziproke der Frame-Dauer und Reset-Zeit
+ergibt eine Aktualisierungsrate von 1 / (0,02s + 0,0008s) ~ 48Hz.
+Das ist ein theoretisches Maximum.
+
+Ein weiterer Faktor, der berücksichtigt werden muss, ist die Kommunikation
+zwischen PC und Bricklet. Abhängig vom Aufbau ist diese typischerweise auf
+ungefähr 1000 Nachrichten pro Sekunde limitiert. Eine Nachricht enthält
+60 Bytes an LED-Daten, also können bei RGBW-LEDs maximal 15000 RGBW-Werte pro
+Sekunde transferiert werden (unter der Annahme, dass die Antworten des Bricklets
+deaktiviert wurden). Wenn analog zum letzten Beispiel 500 LEDs verwendet
+werden, ist es möglich, 30 komplette Bilder pro Sekunde zu übertragen. Die API
+des Bricklets unterstützt es, Teile des Bildes zu aktualisieren, was viele
+Optimierungen ermöglicht: Wenn zum Beispiel nur das halbe Bild pro Frame aktualisiert
+werden muss, sind 60 Updates pro Sekunde möglich.
 
 .. _led_strip_v2_bricklet_case:
 
