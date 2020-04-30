@@ -332,9 +332,7 @@ In the Mobile Internet section (requires Image >= 1.7 and
 Brick Viewer >= 2.2.6) of this tab, you can configure the RED Brick to connect
 to the Internet using a GSM modem. This section is only
 available if the :ref:`Mobile Internet service <red_brick_brickv_settings_services>`
-is activated and you have connected the `3G USB Adapter
-<https://www.tinkerforge.com/en/shop/accessories/red-brick/3g-usb-adapter.html>`__
-to the RED Brick USB port.
+is activated and you have connected the 3G USB adapter to the RED Brick USB port.
 
 .. image:: /Images/Screenshots/brickv_red_tab_settings_mobile_internet.jpg
    :scale: 60 %

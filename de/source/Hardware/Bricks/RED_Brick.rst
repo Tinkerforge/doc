@@ -344,8 +344,7 @@ Mobile Internet
 Im Mobile Internet Abschnitt (benötigt Image >= 1.7 und Brick Viewer >= 2.2.6)
 kann eine mobile Internet-Verbindung konfiguriert werden. Dieser Abschnitt
 ist erst verfügbar, wenn der :ref:`Mobile Internet Service
-<red_brick_brickv_settings_services>` aktiviert ist und ein `3G USB Stick
-<https://www.tinkerforge.com/de/shop/accessories/red-brick/3g-usb-adapter.html>`__
+<red_brick_brickv_settings_services>` aktiviert ist und ein 3G USB Stick
 eingesteckt ist.
 
 .. image:: /Images/Screenshots/brickv_red_tab_settings_mobile_internet.jpg
