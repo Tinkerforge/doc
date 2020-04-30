@@ -106,7 +106,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/gps-v2-bricklet/raw/master/hardware/gps-v2-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/gps_v2_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/gps-v2-bricklet/zipball/master>`__)
-* 3D model (`View online <https://autode.sk/2BgLPRK>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricklets/gps_v2/gps-v2.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricklets/gps_v2/gps-v2.FCStd>`__)
+* 3D model (`View online <https://autode.sk/2BgLPRK>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricklets/gps_v2/gps-v2.1.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricklets/gps_v2/gps-v2.1.FCStd>`__)
 
 External Antenna
 ----------------
