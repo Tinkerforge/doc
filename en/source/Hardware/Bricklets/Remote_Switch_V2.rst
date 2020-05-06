@@ -179,13 +179,14 @@ Intertechno         CMR-300                              Dimmer (flush-mounted) 
 |nbsp|              CMR-1001                             Impulse Switch (flush-mounted)     C
 |nbsp|              CMR-1224                             12/24V Switch (flush-mounted)      C
 |nbsp|              HDR-105                              12V Dimmer                         C
-|nbsp|              PA3-1000                             Switch Set                         C
 |nbsp|              GR-300                               Outdoor Dimmer                     C
 |nbsp|              GRR-300                              Outdoor Dimmer                     B
 |nbsp|              GRR-3500                             Outdoor Switch                     B
 |nbsp|              IT-1500                              Switch Set                         B
 |nbsp|              IT-2300                              4x Switch                          B
 |nbsp|              IT-3500L                             Switch                             B
+|nbsp|              ITDL-1000                            Switch (flush-mounted)             B
+|nbsp|              ITDM-250                             LED Dimmer (flush-mounted)         B
 |nbsp|              ITE-300                              Dimmer (flush-mounted)             C
 |nbsp|              ITE-1000                             Switch (flush-mounted)             C
 |nbsp|              ITL-150                              Dimmer (flush-mounted)             B
@@ -196,15 +197,14 @@ Intertechno         CMR-300                              Dimmer (flush-mounted) 
 |nbsp|              ITL-500                              Blind Switch (flush-mounted)       B
 |nbsp|              ITL-1000                             Timer Switch (flush-mounted)       B
 |nbsp|              ITL-3500                             Switch (flush-mounted)             B
+|nbsp|              ITLR-300                             Dimmer                             B
+|nbsp|              ITLR-3500                            Switch                             B
 |nbsp|              ITR-300                              Dimmer                             C
 |nbsp|              ITR-1500                             Switch Set                         B
 |nbsp|              ITR-3500                             Switch                             C
 |nbsp|              ITR-7000                             Gong                               B
-|nbsp|              ITLR-300                             Dimmer                             B
-|nbsp|              ITLR-3500                            Switch                             B
-|nbsp|              ITDL-1000                            Switch (flush-mounted)             B
-|nbsp|              ITDM-250                             LED Dimmer (flush-mounted)         B 
 |nbsp|              LBUR-100                             Bulb Holder Switch                 B
+|nbsp|              PA3-1000                             Switch Set                         C
 ------------------- ------------------------------------ ---------------------------------- -------
 ------------------- ------------------------------------ ---------------------------------- -------
 Mumbi               m-FS300                              Switch Set                         A

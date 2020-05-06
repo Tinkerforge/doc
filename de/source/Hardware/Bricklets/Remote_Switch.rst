@@ -179,13 +179,14 @@ Intertechno         CMR-300                              Dimmer (unter Putz)    
 |nbsp|              CMR-1001                             Impulseschalter (unter Putz)       C
 |nbsp|              CMR-1224                             12/24V Schalter (unter Putz)       C
 |nbsp|              HDR-105                              12V Dimmer                         C
-|nbsp|              PA3-1000                             Schalter Set                       C
 |nbsp|              GR-300                               Außendimmer                        C
 |nbsp|              GRR-300                              Außendimmer                        B
 |nbsp|              GRR-3500                             Außenschalter                      B
 |nbsp|              IT-1500                              Schalter Set                       B
 |nbsp|              IT-2300                              4x Schalter                        B
 |nbsp|              IT-3500L                             Schalter                           B
+|nbsp|              ITDL-1000                            Schalter (unter Putz)              B
+|nbsp|              ITDM-250                             LED Dimmer (unter Putz)            B
 |nbsp|              ITL-150                              Dimmer (unter Putz)                B
 |nbsp|              ITL-210                              Dimmer (unter Putz)                B
 |nbsp|              ITL-230                              Schalter (unter Putz)              B
@@ -194,15 +195,14 @@ Intertechno         CMR-300                              Dimmer (unter Putz)    
 |nbsp|              ITL-500                              Jalousieschalter (unter Putz)      B
 |nbsp|              ITL-1000                             Zeitschalter (unter Putz)          B
 |nbsp|              ITL-3500                             Schalter (unter Putz)              B
+|nbsp|              ITLR-300                             Dimmer                             B
+|nbsp|              ITLR-3500                            Schalter                           B
 |nbsp|              ITR-300                              Dimmer                             C
 |nbsp|              ITR-1500                             Schalter Set                       B
 |nbsp|              ITR-3500                             Schalter                           C
 |nbsp|              ITR-7000                             Gong                               B
-|nbsp|              ITLR-300                             Dimmer                             B
-|nbsp|              ITLR-3500                            Schalter                           B
-|nbsp|              ITDL-1000                            Schalter (unter Putz)              B
-|nbsp|              ITDM-250                             LED Dimmer (unter Putz)            B 
 |nbsp|              LBUR-100                             Lampenfassung-Schalter             B
+|nbsp|              PA3-1000                             Schalter Set                       C
 ------------------- ------------------------------------ ---------------------------------- -------
 ------------------- ------------------------------------ ---------------------------------- -------
 Mumbi               m-FS300                              Schalter Set                       A
