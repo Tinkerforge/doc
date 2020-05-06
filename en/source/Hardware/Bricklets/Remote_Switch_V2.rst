@@ -138,6 +138,7 @@ ELRO                AB440D                               Dimmer                 
 |nbsp|              AB440ID                              Dimmer (flush-mounted)             A
 |nbsp|              AB440IS                              Switch (flush-mounted)             A
 |nbsp|              AB440L                               Bulb Holder Dimmer                 A
+|nbsp|              AB440R                               Remote                             A
 |nbsp|              AB440S                               Switch                             A
 |nbsp|              AB440W                               Outdoor Switch                     A
 ------------------- ------------------------------------ ---------------------------------- -------
@@ -155,6 +156,7 @@ ELRO Home Easy      HE801S                               Switch Set             
 |nbsp|              HE821S                               Gong with light                    B
 |nbsp|              HE831S                               Outdoor Switch Set                 B
 |nbsp|              HE834S                               Outdoor Switch Set                 B
+|nbsp|              HE844A                               Remote                             B
 |nbsp|              HE866                                Outdoor build-in Switch            B
 |nbsp|              HE867                                Outdoor Switch                     B
 |nbsp|              HE871                                Bulb Holder Switch                 B
@@ -189,6 +191,7 @@ Intertechno         CMR-300                              Dimmer (flush-mounted) 
 |nbsp|              ITDM-250                             LED Dimmer (flush-mounted)         B
 |nbsp|              ITE-300                              Dimmer (flush-mounted)             C
 |nbsp|              ITE-1000                             Switch (flush-mounted)             C
+|nbsp|              ITK-200                              Remote                             C
 |nbsp|              ITL-150                              Dimmer (flush-mounted)             B
 |nbsp|              ITL-210                              Dimmer (flush-mounted)             B
 |nbsp|              ITL-230                              Switch (flush-mounted)             B
@@ -203,6 +206,7 @@ Intertechno         CMR-300                              Dimmer (flush-mounted) 
 |nbsp|              ITR-1500                             Switch Set                         B
 |nbsp|              ITR-3500                             Switch                             C
 |nbsp|              ITR-7000                             Gong                               B
+|nbsp|              ITT-1500                             Remote                             B
 |nbsp|              LBUR-100                             Bulb Holder Switch                 B
 |nbsp|              PA3-1000                             Switch Set                         C
 ------------------- ------------------------------------ ---------------------------------- -------

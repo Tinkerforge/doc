@@ -139,6 +139,7 @@ ELRO                AB440D                               Dimmer                 
 |nbsp|              AB440ID                              Dimmer (unter Putz)                A
 |nbsp|              AB440IS                              Schalter (unter Putz)              A
 |nbsp|              AB440L                               Lampenfassung-Dimmer               A
+|nbsp|              AB440R                               Fernbedienung                      A
 |nbsp|              AB440S                               Schalter                           A
 |nbsp|              AB440W                               Außenschalter                      A
 ------------------- ------------------------------------ ---------------------------------- -------
@@ -156,6 +157,7 @@ ELRO Home Easy      HE801S                               Schalter Set           
 |nbsp|              HE821S                               Gong mit Blinklicht                B
 |nbsp|              HE831S                               Außenschalter Set                  B
 |nbsp|              HE834S                               Außenschalter Set                  B
+|nbsp|              HE844A                               Fernbedienung                      B
 |nbsp|              HE866                                Einbauschalter für Außenbereich    B
 |nbsp|              HE867                                Außenschalter                      B
 |nbsp|              HE871                                Lampenfassung-Schalter             B
@@ -190,6 +192,7 @@ Intertechno         CMR-300                              Dimmer (unter Putz)    
 |nbsp|              ITDM-250                             LED Dimmer (unter Putz)            B
 |nbsp|              ITE-300                              Dimmer (unter Putz)                C
 |nbsp|              ITE-1000                             Schalter (unter Putz)              C
+|nbsp|              ITK-200                              Fernbedienung                      C
 |nbsp|              ITL-150                              Dimmer (unter Putz)                B
 |nbsp|              ITL-210                              Dimmer (unter Putz)                B
 |nbsp|              ITL-230                              Schalter (unter Putz)              B
@@ -204,6 +207,7 @@ Intertechno         CMR-300                              Dimmer (unter Putz)    
 |nbsp|              ITR-1500                             Schalter Set                       B
 |nbsp|              ITR-3500                             Schalter                           C
 |nbsp|              ITR-7000                             Gong                               B
+|nbsp|              ITT-1500                             Fernbedienung                      B
 |nbsp|              LBUR-100                             Lampenfassung-Schalter             B
 |nbsp|              PA3-1000                             Schalter Set                       C
 ------------------- ------------------------------------ ---------------------------------- -------
