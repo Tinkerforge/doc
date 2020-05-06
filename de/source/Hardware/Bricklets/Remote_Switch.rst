@@ -125,7 +125,7 @@ BAT                 RC 3500-A                            Schalter               
 |nbsp|              RC AAA3680-A                         Schalter                           A
 ------------------- ------------------------------------ ---------------------------------- -------
 ------------------- ------------------------------------ ---------------------------------- -------
-Brennstuhl          RCS 1000 N Comfort                   Schalter Set                       A
+Brennenstuhl        RCS 1000 N Comfort                   Schalter Set                       A
 |nbsp|              RCS 1044 N Comfort                   Außenschalter Set                  A
 |nbsp|              RCS 2044 N Comfort Indoor            Schalter Set                       A
 |nbsp|              RCS 2044 N Comfort Outdoor           Außenschalter Set                  A
@@ -208,7 +208,7 @@ Intertechno         CMR-300                              Dimmer (unter Putz)    
 Mumbi               m-FS300                              Schalter Set                       A
 ------------------- ------------------------------------ ---------------------------------- -------
 ------------------- ------------------------------------ ---------------------------------- -------
-ONE FOR ALL         HC-8000                              Switch Set                         C
+ONE FOR ALL         HC-8000                              Schalter Set                       C
 ------------------- ------------------------------------ ---------------------------------- -------
 ------------------- ------------------------------------ ---------------------------------- -------
 Vivanco             FSS 31000W                           Schalter Set                       A
