@@ -30,7 +30,7 @@ Features
 
 * Raspberry Pi HAT im Standard-HAT-Formfaktor
 * **Acht** Anschlüsse für Bricklets
-* Integrierte 5.3V Stromversorgung (5V-28V Eingang, bis zu 4A)
+* Integrierte 5,3V Stromversorgung (5,3V-28V Eingang, bis zu 4A)
 * Misst USB- und DC-Spannungsversorgung
 * Bietet eine Real-Time-Clock für den Raspberry Pi
 * Bietet Schlafmodus (low power) und Watchdog
@@ -51,7 +51,7 @@ angeschlossen werden.
   Der HAT Brick besitzt 7-Pol-Bricklet-Anschlüsse. Über ein 7-Pol- <-> 7-Pol-Kabel können Bricklets
   an den Brick angeschlossen werden. Es werden nur Bricklets unterstützt, die über einen 7-poligen Anschluss verfügen. 
 
-Der Raspberry Pi kann über den HAT Brick mit einer externen 5V-28V DC Stromversorgung betrieben werden.
+Der Raspberry Pi kann über den HAT Brick mit einer externen 5,3V-28V DC Stromversorgung betrieben werden.
 Die integrierte Stromversorgung liefert auch unter großer Last stabile 5V für den Raspberry Pi. Somit können
 auch angeschlossene Bricklets und verbundene USB-Geräte versorgt werden. Das HAT Brick liefert hierfür eine etwas erhöhte Spannung von 5,3V.
 
@@ -97,7 +97,7 @@ Stromverbrauch                        100mW (20mA bei 5V)
 ------------------------------------  ------------------------------------------------------------
 ------------------------------------  ------------------------------------------------------------
 Bricklet-Anschlüsse                   8
-DC Eingangsspannungsbereich           5-28V
+DC Eingangsspannungsbereich           5,3-28V
 DC Ausgang                            5,3V, max. 4A
 Stromverbrauch im Sleepmodus (≤1.4)*  70mW (14mA bei 5V) + 1.5mW wenn die Sleep-LED aktiv ist
 ------------------------------------  ------------------------------------------------------------
