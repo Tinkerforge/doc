@@ -7,4 +7,5 @@ Protokolle:
 * :ref:`llproto_modbus`
 
 Ein :ref:`Wireshark Dissector <wireshark_dissector>` für das Tinkerforge-Protokoll (TFP)
-ist verfügbar.
+ist verfügbar. Außerdem ist ein `High-Level-Analyzer <saleae_high_level_analyzer>` für
+Saleae Logic 2 verfügbar.
