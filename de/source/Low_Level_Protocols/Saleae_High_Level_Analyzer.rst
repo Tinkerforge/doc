@@ -5,8 +5,8 @@ Saleae Logic High Level Analyzer
 ================================
 
 Der Tinkerforge Saleae Logic High Level Analyzer ist eine
-Erweiterung für `Saleae Logic 2 <https://www.saleae.com/downloads/>`__ .
-Er vereinfacht die Analyse der Kommunikation mit Bricklets extrem.
+Erweiterung für `Saleae Logic 2 <https://www.saleae.com/downloads/>`__.
+Er vereinfacht die Analyse der Kommunikation mit Co-MCU Bricklets deutlich.
 
 Der Analyzer kann mitgelesene SPI-Kommunikation in SPITFP- und TFP-Pakete
 parsen. Er enthält eine Datenbank aller Funktionen von Bricks und Bricklets.
