@@ -873,7 +873,6 @@ def make_api_bindings_links_table(bindings_info):
  :widths: 20, 10, 10
 
 {0}
- | |
  **Bricks** | |
 {1}
  | |
