@@ -110,8 +110,9 @@ werden können. Befestigungslöcher für verschiedene
 :ref:`Bricklets <primer_bricklets>` sind bereits vorhanden.
 
 In der Frontblende können zusätzlich ein
-:ref:`Motion Detector Bricklet 2.0 <motion_detector_v2_bricklet>`
-und ein :ref:`Segment Display 4x7 Bricklet<segment_display_4x7_bricklet>`
+:ref:`Motion Detector Bricklet 2.0 <motion_detector_v2_bricklet>`,
+ein :ref:`Segment Display 4x7 Bricklet 2.0 <segment_display_4x7_v2_bricklet>`
+und ein :ref:`E-Paper 296x128 Bricklet<e_paper_296x128_bricklet>`
 befestigt werden.
 
 Technische Spezifikation
@@ -163,11 +164,11 @@ Firmwares aktuell sind. Falls nicht so sollten diese aktualisiert werden
 (:ref:`Bricks aktualisieren <brickv_flash_brick_firmware>`,
 :ref:`Bricklets aktualisieren <brickv_flash_bricklet_plugin>`):
 
-.. image:: /Images/Kits/server_room_monitoring_update_350.jpg
+.. image:: /Images/Kits/server_room_monitoring_update_600.png
    :scale: 100 %
    :alt: Serverraum-Überwachung Hardware Update im Brick Viewer
    :align: center
-   :target: ../../_images/Kits/server_room_monitoring_update_orig.jpg
+   :target: ../../_images/Kits/server_room_monitoring_update_orig.png
 
 Im nächsten Schritt sollte jedes Modul überprüft werden. Im Brick Viewer besitzt
 jedes Modul einen Reiter über dem eine modulspezifische Ansicht geöffnet werden
@@ -268,50 +269,90 @@ Enumerierung der Bricks und Bricklets ("Ist alles angeschlossen?"):
 .. code-block:: bash
 
  $ tinkerforge --host ServerMonitoring enumerate
- uid=6Dct25
+ uid=5VGUhR
  connected-uid=0
  position=0
- hardware-version=1,0,0
- firmware-version=2,1,0
+ hardware-version=2,1,0
+ firmware-version=2,4,10
  device-identifier=master-brick
  enumeration-type=available
-
- uid=fow
- connected-uid=6Dct25
+ 
+ uid=Jn6
+ connected-uid=5VGUhR
  position=a
  hardware-version=1,0,0
- firmware-version=2,0,0
- device-identifier=ptc-bricklet
- enumeration-type=available
-
- uid=SCT31
- connected-uid=6Dct25
- position=b
- hardware-version=1,1,0
  firmware-version=2,0,1
- device-identifier=temperature-bricklet
+ device-identifier=e-paper-296x128-bricklet
  enumeration-type=available
-
- uid=ajC
- connected-uid=6Dct25
+ 
+ uid=Jk3
+ connected-uid=5VGUhR
+ position=b
+ hardware-version=1,0,0
+ firmware-version=2,0,1
+ device-identifier=temperature-v2-bricklet
+ enumeration-type=available
+ 
+ uid=HyH
+ connected-uid=5VGUhR
+ position=c
+ hardware-version=1,0,0
+ firmware-version=2,0,1
+ device-identifier=ambient-light-v3-bricklet
+ enumeration-type=available
+ 
+ uid=Dkq
+ connected-uid=5VGUhR
  position=d
- hardware-version=2,0,0
- firmware-version=2,0,0
- device-identifier=ambient-light_v2-bricklet
+ hardware-version=1,0,0
+ firmware-version=2,0,6
+ device-identifier=humidity-v2-bricklet
+ enumeration-type=available
+ 
+ uid=6esErP
+ connected-uid=5VGUhR
+ position=1
+ hardware-version=2,1,0
+ firmware-version=2,4,10
+ device-identifier=master-brick
+ enumeration-type=available
+ 
+ uid=JmM
+ connected-uid=6esErP
+ position=a
+ hardware-version=1,0,0
+ firmware-version=2,0,2
+ device-identifier=motion-detector-v2-bricklet
+ enumeration-type=available
+ 
+ uid=Jop
+ connected-uid=6esErP
+ position=b
+ hardware-version=1,0,0
+ firmware-version=2,0,1
+ device-identifier=segment-display-4x7-v2-bricklet
+ enumeration-type=available
+ 
+ uid=J7d
+ connected-uid=6esErP
+ position=c
+ hardware-version=1,0,0
+ firmware-version=2,0,2
+ device-identifier=ptc-v2-bricklet
  enumeration-type=available
 
 Auslesen der verbundenen Sensoren (die UID ist anzupassen):
 
 .. code-block:: bash
 
- $ tinkerforge --host ServerMonitoring call temperature-bricklet SCT31 get-temperature
- temperature=2487
-
- $ tinkerforge --host ServerMonitoring call ambient-light-v2-bricklet ajC get-illuminance
+ $ tinkerforge --host ServerMonitoring call temperature-v2-bricklet Jk3 get-temperature
+ temperature=2460
+ 
+ $ tinkerforge --host ServerMonitoring call ambient-light-v3-bricklet HyH get-illuminance
  illuminance=410
-
- $ tinkerforge --host ServerMonitoring call ptc-bricklet fow get-temperature
- temperature=2603
+ 
+ $ tinkerforge --host ServerMonitoring call ptc-v2-bricklet J7d get-temperature
+ temperature=2389
 
 Die Shell Bindings unterstützen die Ausführung von weiteren Shell Befehlen mit der
 ``--execute`` Option (siehe :ref:`Shell Bindings <ipcon_shell_output>` für weitere 
@@ -322,17 +363,46 @@ weitere Benutzung gespeichert werden kann.
 .. code-block:: bash
 
  #!/bin/sh
-
+ 
  HOST=ServerMonitoring
- UID=SCT31
-
- temp=$(tinkerforge --host $HOST call temperature-bricklet $UID get-temperature\
-        --execute "echo '{temperature} / 100' | bc | xargs printf '%.2f\n'")
+ TEMP_UID=Jk3
+ 
+ temp=$(tinkerforge --host $HOST call temperature-v2-bricklet $TEMP_UID get-temperature\
+        --execute "echo '{temperature} / 100' | bc -l | xargs printf '%.2f\n'")
  echo $temp
 
 
 .. _starter_kit_server_room_monitoring_nagios_or_icinga_index:
 
+Das nächste Skript zeigt, wie Text auf ein angeschlossenes
+:ref:`E-Paper 296x128 Bricklet<e_paper_296x128_bricklet>`
+ausgegeben werden kann.
+
+.. code-block:: bash
+
+ #!/bin/sh
+ 
+ HOST=ServerMonitoring
+ E_PAPER_UID=Jn6
+ 
+ tinkerforge --host $HOST call e-paper-296x128-bricklet $E_PAPER_UID fill-display 1
+ tinkerforge --host $HOST call e-paper-296x128-bricklet $E_PAPER_UID draw-text 0 0 4 2 0 $1
+ tinkerforge --host $HOST call e-paper-296x128-bricklet $E_PAPER_UID draw
+
+Durch Kombination der des letzten Skripts (gespeichert als print_e_paper.sh) mit dem folgenden
+kann die aktuelle Temperatur auf dem E-Paper Bricklet angezeigt werden.
+
+.. code-block:: bash
+
+ #!/bin/sh
+ 
+ HOST=ServerMonitoring
+ TEMP_UID=Jk3
+ 
+ temp=$(./tinkerforge_shell --host $HOST call temperature-v2-bricklet $TEMP_UID get-temperature\
+        --execute "echo '{temperature} / 100' | bc -l | xargs printf '%.2f\n'")
+ ./print_e_paper.sh "Temperature:$temp\xF8C"
+ 
 Serverraum-Überwachung mit Nagios oder Icinga
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
