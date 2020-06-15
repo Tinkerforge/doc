@@ -25,8 +25,8 @@ another PC.
 Requirements
 ------------
 
-* Windows XP or newer
 * Linux with libusb 1.0.6 or newer
+* Windows XP or newer
 * macOS 10.8 (Mountain Lion) or newer
 
 
@@ -35,15 +35,15 @@ Requirements
 Installation
 ------------
 
-* :ref:`Windows <brickd_install_windows>`
 * :ref:`Linux <brickd_install_linux>`
+* :ref:`Windows <brickd_install_windows>`
 * :ref:`macOS <brickd_install_macos>`
 
 .. toctree::
    :hidden:
 
-   Windows <Brickd_Install_Windows>
    Linux <Brickd_Install_Linux>
+   Windows <Brickd_Install_Windows>
    macOS <Brickd_Install_MacOSX>
 
 
@@ -52,6 +52,10 @@ Logging
 
 By default Brick Daemon logs messages about information, warnings and errors.
 This includes basic information about USB hotplug and TCP/IP connections.
+
+* Linux and macOS: Log messages are written to::
+
+   /var/log/brickd.log
 
 * Windows: Log messages are written to a log file called ``brickd.log`` in the
   Brick Daemon data directory:
@@ -66,9 +70,6 @@ This includes basic information about USB hotplug and TCP/IP connections.
 
   You can use the ``logviewer.exe`` tool (part of the brickd installation) to
   view this log file. The tool also includes a Live Log view.
-* Linux and macOS: Log messages are written to::
-
-   /var/log/brickd.log
 
 If the default logging configuration has not enough details to debug a problem
 then there is the debug level log. This is not enable by default because it
@@ -105,8 +106,6 @@ The Brick Daemon configuration is stored in a file using a key-value format:
 After changing the configuration file Brick Daemon has to be restarted to pick
 up the changes:
 
-* Windows: You can use the ``logviewer.exe`` tool (part of the brickd
-  installation) to restart the Brick Daemon service.
 * Linux (systemd)::
 
    sudo systemctl restart brickd
@@ -115,6 +114,8 @@ up the changes:
 
    sudo /etc/init.d/brickd restart
 
+* Windows: You can use the ``logviewer.exe`` tool (part of the brickd
+  installation) to restart the Brick Daemon service.
 * macOS::
 
    sudo launchctl stop com.tinkerforge.brickd
@@ -182,6 +183,10 @@ Checking Installed Version
 Since Brick Daemon version 1.0.8 you can check which Brick Daemon is currently
 installed with the `--version` commandline argument:
 
+* Linux::
+
+   brickd --version
+
 * Windows XP:
 
   .. code-block:: none
@@ -193,10 +198,6 @@ installed with the `--version` commandline argument:
   .. code-block:: none
 
     "C:\Program Files (x86)\Tinkerforge\Brickd\brickd.exe" --version
-
-* Linux::
-
-   brickd --version
 
 * macOS (until Brick Daemon 2.2.1)::
 

@@ -20,15 +20,15 @@ quality and to flash :ref:`Brick firmwares <brickv_flash_brick_firmware>` and
 Installation
 ------------
 
-* :ref:`Windows <brickv_install_windows>`
 * :ref:`Linux <brickv_install_linux>`
+* :ref:`Windows <brickv_install_windows>`
 * :ref:`macOS <brickv_install_macos>`
 
 .. toctree::
    :hidden:
 
-   Windows <Brickv_Install_Windows>
    Linux <Brickv_Install_Linux>
+   Windows <Brickv_Install_Windows>
    macOS <Brickv_Install_MacOSX>
 
 
