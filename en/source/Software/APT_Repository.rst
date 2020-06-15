@@ -7,7 +7,7 @@ APT Repository
 The software available in the :ref:`download section <downloads>` is also available
 for installation as Debian packages in our `APT repository <https://download.tinkerforge.com/apt/>`__.
 
-Currently, theses distributions and architectures are supported:
+Currently, these distributions and architectures are supported:
 
 * Debian: amd64, i386, armhf
 * Ubuntu: amd64, i386, armhf
