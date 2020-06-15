@@ -17,10 +17,10 @@ Setup
 -----
 
 Before executing the command lines below, make sure to replace the placeholder
-`DISTRIBUTION` in the command line with either `debian` or `ubuntu` or `raspios`
+``DISTRIBUTION`` in the command line with either ``debian``, ``ubuntu`` or ``raspios``
 according to the distribution in use.
 
-**Step 1:** Import public key::
+**Step 1:** Import public GPG key::
 
  curl -s https://download.tinkerforge.com/apt/DISTRIBUTION/archive.key | sudo apt-key add -
 

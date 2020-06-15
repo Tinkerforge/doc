@@ -18,10 +18,10 @@ Einrichtung
 -----------
 
 Bevor die unten aufgeführten Befehle ausgeführt werden, muss der Platzhalter
-`DISTRIBUTION` jeweils durch `debian`, `ubuntu` oder `raspios` ersetzen werden,
+``DISTRIBUTION`` jeweils durch ``debian``, ``ubuntu`` oder ``raspios`` ersetzen werden,
 entsprechend der verwendeten Distribution.
 
-**Schritt 1:** Öffentlichen Schlüssel importieren::
+**Schritt 1:** Öffentlichen GPG Schlüssel importieren::
 
  curl -s https://download.tinkerforge.com/apt/DISTRIBUTION/archive.key | sudo apt-key add -
 
