@@ -41,9 +41,14 @@ Der Brick Daemon wird benötigt für jegliche USB-gebundene Verwendung von Brick
 und Bricklets. Der Brick Viewer dient dem Testen und Flashen neuer Firmwares
 und Plugins auf Bricks und Bricklets.
 
-Für Linux Distributionen die kein ``.deb`` verwenden, können der
+Für Debian basierte Linux Distributionen stehen die Tools auch in unserem
+:ref:`APT Repository <apt_repository>` bereit.
+
+Für Linux Distributionen, die kein ``.deb`` verwenden, können der
 Brick Daemon und Brick Viewer auch basierend auf dem Quelltext installiert
-werden. Für Arch Linux stehen im AUR die Pakete
+werden.
+
+Für Arch Linux stehen im AUR die Pakete
 `brickd <https://aur.archlinux.org/packages/brickd/>`_ und
 `brickv <https://aur.archlinux.org/packages/brickv/>`_ zur Verfügung.
 
@@ -107,7 +112,7 @@ Master Extension Firmwares können mit dem Brick Viewer aktualisiert werden
 .. _downloads_demos:
 
 Kit Demos
-----------
+---------
 
 Zu vielen :ref:`Kits <index_kits>` gehört auch eine Demo Anwendung die
 dessen Fähigkeiten vorführt.

@@ -7,9 +7,10 @@ with Bricks and Bricklets, as well as their firmwares and plugins:
 * :ref:`api_bindings`
 * :ref:`brick_logger`
 
-All software is available in the :ref:`downloads section <downloads>`. The
-:ref:`source code and links for bug trackers <source_code>` can be found in
-their own section.
+All software is available in the :ref:`downloads section <downloads>` and is
+also hosted in our :ref:`APT repository <apt_repository>` for Debian based Linux
+distributions. The :ref:`source code and links for bug trackers <source_code>`
+can be found in their own section.
 
 The basics of the programming interface are described :ref:`here
 <programming_interface>`.

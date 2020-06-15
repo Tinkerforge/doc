@@ -7,9 +7,10 @@ der Bricks und Bricklets, sowie deren Firmwares und Plugins:
 * :ref:`api_bindings`
 * :ref:`brick_logger`
 
-Die Software kann im :ref:`Downloadbereich <downloads>` heruntergeladen werden.
-Die :ref:`Quelltexte und Links zu Bug-Trackern <source_code>` befinden sich in
-einem eigenen Bereich.
+Die Software kann im :ref:`Downloadbereich <downloads>` heruntergeladen werden
+und wird auch über unser :ref:`APT Repository <apt_repository>` für Debian
+basierte Linux Distributionen bereitgestellt. Die :ref:`Quelltexte und Links zu
+Bug-Trackern <source_code>` befinden sich in einem eigenen Bereich.
 
 Die Grundlagen der Programmierschnittstelle werden :ref:`hier
 <programming_interface>` beschrieben.

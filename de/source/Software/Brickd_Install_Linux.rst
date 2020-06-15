@@ -9,9 +9,27 @@ Der :ref:`Brick Daemon <brickd>` kann auf einer Debian basierten Distribution
 steht im AUR das Paket `brickd <https://aur.archlinux.org/packages/brickd/>`_ zur Verfügung.
 Auf anderen Distributionen kann der Brick Daemon aus dem Quelltext installiert werden.
 
+Debian Paket
+------------
 
-Debian Package
---------------
+Das Brick Daemon Debian Paket steht in unserem `APT Repository
+<https://download.tinkerforge.com/apt/>`__ bereit, kann aber auch händisch
+installiert werden.
+
+APT Repository
+^^^^^^^^^^^^^^
+
+Zuerst entsprechend der :ref:`Anleitung <apt_repository>` das APT Repository
+hinzufügen. Dann das Brick Daemon Paket installieren::
+
+ sudo apt install brickd
+
+Der Brick Daemon wird nach der Installation und beim Hochfahren des Systems
+automatisch gestartet.
+
+
+Händische Installation
+^^^^^^^^^^^^^^^^^^^^^^
 
 Als erstes muss das passende Brick Daemon ``.deb`` von
 der :ref:`Download-Seite <downloads_tools>` heruntergeladen werden.
@@ -44,7 +62,7 @@ Auf Ubuntu kann auch das Ubuntu Software Center benutzt werden. Andere
 Desktopumgebungen haben ähnliche Werkzeuge die praktisch genauso
 funktionieren.
 
-Der Brick Daemon kann von der Console mit folgendem Befehl installiert
+Der Brick Daemon kann von der Konsole mit folgendem Befehl installiert
 werden::
 
  # Use libudev1 instead of libudev0 in Ubuntu 13.04

@@ -9,9 +9,26 @@ The :ref:`Brick Daemon <brickd>` can be installed on Debian based distribution
 `brickd <https://aur.archlinux.org/packages/brickd/>`_ is available in the AUR.
 On other distributions the Brick Daemon can be installed from source.
 
-
 Debian Package
 --------------
+
+The Brick Daemon Debian package is available in our `APT pepository
+<https://download.tinkerforge.com/apt/>`__, but can also be installed manually.
+
+
+APT Repository
+^^^^^^^^^^^^^^
+
+First, set up our APT repository on your system according to this
+:ref:`guide <apt_repository>`. Then install the Brick Viewer package::
+
+ sudo apt install brickd
+
+The Brick Daemon will be started after the installation and at startup
+automatically.
+
+Manual Installation
+^^^^^^^^^^^^^^^^^^^
 
 First, download the correct Brick Daemon ``.deb`` for your architecture from
 :ref:`here <downloads_tools>`.

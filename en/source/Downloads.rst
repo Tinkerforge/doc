@@ -36,8 +36,13 @@ You will need the Brick Daemon if you want to use any Bricks and Bricklets.
 The Brick Viewer is for testing purposes and flashing new firmwares and plugins
 onto Bricks and Bricklets.
 
+For Debian based Linux distributions the tools are also available in our
+:ref:`APT repository <apt_repository>`.
+
 If you use a Linux distribution that does not use ``.deb``, you can
-install the Brick Daemon and the Brick Viewer from source. For Arch Linux the packages
+install the Brick Daemon and the Brick Viewer from source.
+
+For Arch Linux the packages
 `brickd <https://aur.archlinux.org/packages/brickd/>`_ and
 `brickv <https://aur.archlinux.org/packages/brickv/>`_  are available in the AUR.
 

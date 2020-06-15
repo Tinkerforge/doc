@@ -11,9 +11,27 @@ The :ref:`Brick Viewer <brickv>` can be installed on Debian based distribution
 `brickv <https://aur.archlinux.org/packages/brickv/>`_ is available in the AUR.
 On other distributions the Brick Viewer can be installed from source.
 
-
 Debian Package
 --------------
+
+The Brick Viewer Debian package is available via our `APT pepository
+<https://download.tinkerforge.com/apt/>`__, but can also be installed manually.
+
+APT Repository
+^^^^^^^^^^^^^^
+
+First, set up our APT repository on your system according to this
+:ref:`guide <apt_repository>`. Then install the Brick Viewer package::
+
+ sudo apt install brickv
+
+You can start the Brick Viewer in the application menu under electronic
+or in a terminal with::
+
+ brickv
+
+Manual Installation
+^^^^^^^^^^^^^^^^^^^
 
 First, download the Brick Viewer ``.deb`` from :ref:`here <downloads_tools>`.
 Right-click on the file and choose "Open with GDebi Package Installer":
