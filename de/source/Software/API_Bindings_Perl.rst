@@ -49,7 +49,6 @@ Dann ist auch schon alles bereit, um Beispiele testen zu können. Das Debian
 Package beinhaltet keine Beispiele. Diese sind als Teil der :ref:`ZIP Datei
 <downloads_bindings_examples>` der Bindings verfügbar.
 
-
 .. _api_bindings_perl_install_cpan:
 
 Von CPAN
