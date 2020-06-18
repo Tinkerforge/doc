@@ -12,8 +12,8 @@ Die Java Bindings ermöglichen es :ref:`Bricks <primer_bricks>` und
 heraus zu steuern. Die :ref:`ZIP Datei <downloads_bindings_examples>` für
 die Bindings beinhaltet:
 
-* ``Tinkerforge.jar``, eine vorkompilierte Java Bibliothek
-* in ``source/`` den Quelltext für ``Tinkerforge.jar``
+* ``tinkerforge.jar``, eine vorkompilierte Java Bibliothek
+* in ``source/`` den Quelltext für ``tinkerforge.jar``
 * in ``examples/`` die Beispiele für alle Bricks und Bricklets
 
 Die Java Bibliothek hat keine weiteren Abhängigkeiten.
@@ -32,16 +32,37 @@ Installation
 
 Ob und wie die Java Bindings installiert werden müssen hängt stark davon ab wie
 sie benutzt werden sollen. Wenn der Java Compiler direkt von der Kommandozeile
-aufgerufen wird genügt es die ``Tinkerforge.jar`` Datei im gleichen Verzeichnis
+aufgerufen wird genügt es die ``tinkerforge.jar`` Datei im gleichen Verzeichnis
 wie den Java Quelltext des Programms abzulegen und sie im Class Path mit anzugeben.
 
 Wie die Bindings in einer bestimmten IDE zu verwenden sind hängt von der IDE ab
 und wird in der Dokumentation der jeweiligen IDE erklärt.
 
-Maven
-^^^^^
+.. _api_bindings_java_install_apt:
 
-Die Bindings steht auch im `Central Maven Repository
+Vom APT Repository
+^^^^^^^^^^^^^^^^^^
+
+Die Bindings stehen in unserem APT Repository für Debian basierte Linux
+Distributionen bereit (dazu wird die ZIP Datei der Bindings nicht benötigt).
+Zuerst das :ref:`APT Repository einrichten <apt_repository_setup>` dann
+die Bindings installieren::
+
+ sudo apt install libtinkerforge-java
+
+Die Bindings JAR Datei ist hier installiert:
+
+ /usr/share/java/tinkerforge.jar
+
+Das Debian Package beinhaltet keine Beispiele. Diese sind als Teil der
+:ref:`ZIP Datei <downloads_bindings_examples>` der Bindings verfügbar.
+
+.. _api_bindings_java_install_maven:
+
+Vom Maven Central Repository
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Die Bindings steht auch im `Maven Central Repository
 <https://search.maven.org/search?q=a:tinkerforge>`__ zur Verfügung.
 Dadurch können sie direkt in Maven Projekte eingebunden werden. Dazu einfach
 ``tinkerforge`` als Abhängigkeit in die Maven Projektdatei (``pom.xml``)
@@ -78,12 +99,12 @@ Bindings. Brick Viewer kann sich mit Brick Daemon verbinden und gibt
 Informationen über die angeschlossenen Bricks und Bricklets aus.
 
 Als Beispiel wird im Folgenden das Konfigurationsbeispiel des Stepper Bricks
-kompiliert. Dafür müssen zuerst die ``Tinkerforge.jar`` Datei und die
+kompiliert. Dafür müssen zuerst die ``tinkerforge.jar`` Datei und die
 ``ExampleConfiguration.java`` Datei aus dem ``examples/Brick/Stepper/`` in
 einen neuen Ordern kopiert werden::
 
  example_project/
-  -> Tinkerforge.jar
+  -> tinkerforge.jar
   -> ExampleConfiguration.java
 
 Am Anfang des Beispiels ist mit ``HOST`` und ``PORT`` angegeben unter welcher
@@ -102,12 +123,12 @@ Im ``example_project/`` Ordner kann jetzt der Java Compiler mit den folgenden
 Parametern auf Windows aufgerufen werden (für Linux und macOS das ``;`` im
 Class Path durch ``:`` ersetzen)::
 
- javac -cp Tinkerforge.jar;. ExampleConfiguration.java
+ javac -cp tinkerforge.jar;. ExampleConfiguration.java
 
 Und ausgeführt wird es mit dem folgenden Befehl (für Linux und macOS wieder
 das ``;`` im Class Path durch ``:`` ersetzen)::
 
- java -cp Tinkerforge.jar;. ExampleConfiguration
+ java -cp tinkerforge.jar;. ExampleConfiguration
 
 Alternativ können die Beispiele auch in einer Java IDE deiner Wahl verwendet
 werden, wie z.B. Eclipse oder NetBeans.
