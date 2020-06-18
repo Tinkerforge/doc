@@ -26,11 +26,32 @@ Voraussetzungen
 Installation
 ------------
 
-Die Ruby Bindings können installiert werden, können aber auch ohne Installation
-verwendet werden.
+Die Ruby Bindings können auf zwei Weisen installiert werden:
+von unserem :ref:`APT Repository <api_bindings_ruby_install_apt>` für Debian
+basierte Linux Distributionen oder vom
+:ref:`GEM <api_bindings_ruby_install_gem>`. Die Bindings können aber auch
+:ref:`ohne Installation <api_bindings_ruby_install_without>` genutzt werden.
 
-Vom Ruby GEM
-^^^^^^^^^^^^
+.. _api_bindings_ruby_install_apt:
+
+Vom APT Repository
+^^^^^^^^^^^^^^^^^^
+
+Die Bindings stehen in unserem APT Repository für Debian basierte Linux
+Distributionen bereit (dazu wird die ZIP Datei der Bindings nicht benötigt).
+Zuerst das :ref:`APT Repository einrichten <apt_repository_setup>` dann
+die Bindings installieren::
+
+ sudo apt install ruby-tinkerforge
+
+Dann ist auch schon alles bereit, um Beispiele testen zu können. Das Debian
+Package beinhaltet keine Beispiele. Diese sind als Teil der :ref:`ZIP Datei
+<downloads_bindings_examples>` der Bindings verfügbar.
+
+.. _api_bindings_ruby_install_gem:
+
+Vom GEM
+^^^^^^^
 
 Die Bindings stehen als GEM auf `rubygems.org
 <https://rubygems.org/gems/tinkerforge>`__ bereit. Von dort können sie mit
@@ -51,6 +72,7 @@ Dann ist auch schon alles bereit, um Beispiele testen zu können. Der GEM
 beinhaltet keine Beispiele. Diese sind als Teil der :ref:`ZIP Datei
 <downloads_bindings_examples>` der Bindings verfügbar.
 
+.. _api_bindings_ruby_install_without:
 
 Ohne Installation
 ^^^^^^^^^^^^^^^^^

@@ -25,10 +25,32 @@ Requirements
 Installation
 ------------
 
-The Ruby bindings can be installed, but can also be used without installation.
+There are two ways to install the Ruby bindings:
+from our :ref:`APT repository <api_bindings_ruby_install_apt>` for Debian
+based Linux distributions or
+from :ref:`GEM <api_bindings_ruby_install_gem>`.
+But the bindings can also be used
+:ref:`without installing <api_bindings_ruby_install_without>` them first.
 
-From Ruby GEM
-^^^^^^^^^^^^^
+.. _api_bindings_ruby_install_apt:
+
+From APT Repository
+^^^^^^^^^^^^^^^^^^^
+
+The bindings are available in our APT repository for Debian based Linux
+distributions (in this case you don't even need the ZIP file for the bindings).
+Follow the :ref:`setup guide <apt_repository_setup>` then install the bindings::
+
+ sudo apt install ruby-tinkerforge
+
+Now you're ready to test the examples. The Debian package does not include the
+examples. Those are available as part of the bindings :ref:`ZIP file
+<downloads_bindings_examples>`.
+
+.. _api_bindings_ruby_install_gem:
+
+From GEM
+^^^^^^^^
 
 The bindings are available as a GEM on `rubygems.org
 <https://rubygems.org/gems/tinkerforge>`__. You can install them with the
@@ -48,6 +70,8 @@ to execute with ``sudo`` or as administrator::
 Now you're ready to test the examples. The GEM does not include the
 examples. Those are available as part of the bindings :ref:`ZIP file
 <downloads_bindings_examples>`.
+
+.. _api_bindings_ruby_install_without:
 
 Without Installation
 ^^^^^^^^^^^^^^^^^^^^

@@ -24,11 +24,34 @@ Requirements
 Installation
 ------------
 
-There are two ways to install the Python bindings:
+There are three ways to install the Python bindings:
+from our :ref:`APT repository <api_bindings_python_install_apt>` for Debian
+based Linux distributions or
 from :ref:`PyPI <api_bindings_python_install_pypi>` or
 from :ref:`source <api_bindings_python_install_source>`.
 But the bindings can also be used
 :ref:`without installing <api_bindings_python_install_without>` them first.
+
+.. _api_bindings_python_install_apt:
+
+From APT Repository
+^^^^^^^^^^^^^^^^^^^
+
+The bindings are available in our APT repository for Debian based Linux
+distributions (in this case you don't even need the ZIP file for the bindings).
+Follow the :ref:`setup guide <apt_repository_setup>` then install the bindings:
+
+* For Python 3::
+
+   sudo apt install python3-tinkerforge
+
+* For Python 2::
+
+   sudo apt install python-tinkerforge
+
+Now you're ready to test the examples. The Debian package does not include the
+examples. Those are available as part of the bindings :ref:`ZIP file
+<downloads_bindings_examples>`.
 
 
 .. _api_bindings_python_install_pypi:
@@ -36,7 +59,7 @@ But the bindings can also be used
 From PyPI
 ^^^^^^^^^
 
-The bindings are also available on the Python Package Index `PyPI
+The bindings are available on the Python Package Index `PyPI
 <https://pypi.python.org/pypi/tinkerforge>`__. You can install them with the
 Python Package Installer `pip <https://pip.pypa.io>`__ using the following
 command (in this case you don't even need the ZIP file for the bindings).

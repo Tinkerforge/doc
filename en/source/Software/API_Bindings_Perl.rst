@@ -25,10 +25,27 @@ Requirements
 Installation
 ------------
 
-There are two ways to install the Perl bindings: from :ref:`CPAN
+There are three ways to install the Perl bindings:
+from our :ref:`APT repository <api_bindings_perl_install_apt>` for Debian
+based Linux distributions or from :ref:`CPAN
 <api_bindings_perl_install_cpan>` or from :ref:`source
 <api_bindings_perl_install_source>`. But the bindings can also be used
 :ref:`without installing <api_bindings_perl_install_without>` them first.
+
+.. _api_bindings_perl_install_apt:
+
+From APT Repository
+^^^^^^^^^^^^^^^^^^^
+
+The bindings are available in our APT repository for Debian based Linux
+distributions (in this case you don't even need the ZIP file for the bindings).
+Follow the :ref:`setup guide <apt_repository_setup>` then install the bindings::
+
+ sudo apt install libtinkerforge-perl
+
+Now you're ready to test the examples. The Debian package does not include the
+examples. Those are available as part of the bindings :ref:`ZIP file
+<downloads_bindings_examples>`.
 
 
 .. _api_bindings_perl_install_cpan:
@@ -36,7 +53,7 @@ There are two ways to install the Perl bindings: from :ref:`CPAN
 From CPAN
 ^^^^^^^^^
 
-The bindings are also available on the Comprehensive Perl Archive Network `CPAN
+The bindings are available on the Comprehensive Perl Archive Network `CPAN
 <https://search.cpan.org/dist/Tinkerforge/>`__. You can install them with the
 CPANminus tool `cpanm
 <https://search.cpan.org/dist/App-cpanminus/lib/App/cpanminus.pm>`__ using the

@@ -19,16 +19,39 @@ Voraussetzungen
 
 * Python 2.6 oder neuer, Python 3 wird auch unterstützt
 
-
 .. _api_bindings_python_install:
 
 Installation
 ------------
 
-Die Python Bindings können auf zwei Weisen installiert werden: von
+Die Python Bindings können auf drei Weisen installiert werden:
+von unserem :ref:`APT Repository <api_bindings_python_install_apt>` für Debian
+basierte Linux Distributionen oder von
 :ref:`PyPI <api_bindings_python_install_pypi>` oder vom
 :ref:`Quelltext <api_bindings_python_install_source>`. Die Bindings können aber auch
 :ref:`ohne Installation <api_bindings_python_install_without>` genutzt werden.
+
+.. _api_bindings_python_install_apt:
+
+Vom APT Repository
+^^^^^^^^^^^^^^^^^^
+
+Die Bindings stehen in unserem APT Repository für Debian basierte Linux
+Distributionen bereit (dazu wird die ZIP Datei der Bindings nicht benötigt).
+Zuerst das :ref:`APT Repository einrichten <apt_repository_setup>` dann
+die Bindings installieren:
+
+* Für Python 3::
+
+   sudo apt install python3-tinkerforge
+
+* Für Python 2::
+
+   sudo apt install python-tinkerforge
+
+Dann ist auch schon alles bereit, um Beispiele testen zu können. Das Debian
+Package beinhaltet keine Beispiele. Diese sind als Teil der :ref:`ZIP Datei
+<downloads_bindings_examples>` der Bindings verfügbar.
 
 
 .. _api_bindings_python_install_pypi:
@@ -36,7 +59,7 @@ Die Python Bindings können auf zwei Weisen installiert werden: von
 Von PyPI
 ^^^^^^^^
 
-Die Bindings stehen auch im Python Package Index `PyPI
+Die Bindings stehen im Python Package Index `PyPI
 <https://pypi.python.org/pypi/tinkerforge>`__ bereit. Von dort können sie mit
 dem Python Package Installer `pip <https://pip.pypa.io>`__ und folgendem Befehl
 installiert werden (dazu wird die ZIP Datei der Bindings nicht benötigt).
