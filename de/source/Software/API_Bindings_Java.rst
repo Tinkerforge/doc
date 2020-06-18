@@ -50,7 +50,7 @@ die Bindings installieren::
 
  sudo apt install libtinkerforge-java
 
-Die Bindings JAR Datei ist hier installiert:
+Die Bindings JAR Datei ist hier installiert::
 
  /usr/share/java/tinkerforge.jar
 
