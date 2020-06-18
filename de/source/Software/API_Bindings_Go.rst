@@ -12,23 +12,64 @@ die Bindings beinhaltet:
 * in ``github.com/Tinkerforge/go-api-bindings`` den Quelltext der Bindings
 * in ``examples/`` die Beispiele für alle Bricks und Bricklets
 
-Die Go-Bindings sind auch auf `GitHub <https://github.com/Tinkerforge/go-api-bindings>`_ zu finden.
-
-
 Voraussetzungen
 ---------------
 
-* Der Go-Compiler.
-
+* Go Compiler
 
 .. _api_bindings_go_install:
 
 Installation
 ------------
 
-Die Go-Bindings können mit der Zip-Datei oder mit ``go get -u github.com/Tinkerforge/go-api-bindings`` installiert werden.
+Die Go Bindings können auf drei Weisen installiert werden:
+von unserem :ref:`APT Repository <api_bindings_go_install_apt>` für Debian
+basierte Linux Distributionen oder von
+:ref:`GitHub <api_bindings_go_install_github>` oder vom
+:ref:`Quelltext <api_bindings_go_install_source>`.
 
-Um die Bindings aus der Zip-Datei zu installieren, muss der ``github.com``-Ordner aus diesen extrahiert und im ``src``-Ordner des `Go-Pfades <https://golang.org/cmd/go/#hdr-GOPATH_environment_variable>`_ eingefügt werden.
+.. _api_bindings_go_install_apt:
+
+Vom APT Repository
+^^^^^^^^^^^^^^^^^^
+
+Die Bindings stehen in unserem APT Repository für Debian basierte Linux
+Distributionen bereit (dazu wird die ZIP Datei der Bindings nicht benötigt).
+Zuerst das :ref:`APT Repository einrichten <apt_repository_setup>` dann
+die Bindings installieren::
+
+ sudo apt install golang-tinkerforge-dev
+
+Dann ist auch schon alles bereit, um Beispiele testen zu können. Das Debian
+Package beinhaltet keine Beispiele. Diese sind als Teil der :ref:`ZIP Datei
+<downloads_bindings_examples>` der Bindings verfügbar.
+
+.. _api_bindings_go_install_github:
+
+Von GitHub
+^^^^^^^^^^
+
+Die Bindings stehen auf `GitHub
+<https://github.com/Tinkerforge/go-api-bindings>`__ bereit (dazu wird die ZIP
+Datei der Bindings nicht benötigt). Von dort können sie mit
+dem ``go get`` Tool installiert werden::
+
+ go get -u github.com/Tinkerforge/go-api-bindings
+
+Dann ist auch schon alles bereit, um Beispiele testen zu können. Das GitHub
+Repository beinhaltet keine Beispiele. Diese sind als Teil der :ref:`ZIP Datei
+<downloads_bindings_examples>` der Bindings verfügbar.
+
+.. _api_bindings_go_install_source:
+
+Vom Quelltext
+^^^^^^^^^^^^^
+
+Dazu muss das ``github.com`` Verzeichnis aus der ZIP Datei in das ``src``
+Verzeichnis des `GOPATH <https://golang.org/cmd/go/#hdr-GOPATH_environment_variable>`__
+entpackt werden.
+
+Dann ist auch schon alles bereit, um Beispiele testen zu können.
 
 Test eines Beispiels
 --------------------

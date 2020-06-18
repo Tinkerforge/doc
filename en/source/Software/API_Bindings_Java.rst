@@ -60,7 +60,7 @@ of the bindings :ref:`ZIP file <downloads_bindings_examples>`.
 From Maven Central Repository
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The bindings are also available from the `Maven Central Repository
+The bindings are available from the `Maven Central Repository
 <https://search.maven.org/search?q=a:tinkerforge>`__. This allows
 to use them directly in Maven project. Just add ``tinkerforge`` as a dependency
 to your Maven project file (``pom.xml``). The placeholder ``X.Y.Z`` represents

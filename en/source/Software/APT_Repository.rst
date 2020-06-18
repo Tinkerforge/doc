@@ -37,9 +37,15 @@ Packages
 
 Currently, these packages are available:
 
-* :ref:`Brick Daemon <brickd>`: ``brickd``
-* :ref:`Brick Viewer <brickv>`: ``brickv``
-* :ref:`Java API Bindings <api_bindings_java>`: ``libtinkerforge-java`` and ``libtinkerforge-java-doc``
-* :ref:`Perl API Bindings <api_bindings_perl>`: ``libtinkerforge-perl``
-* :ref:`Python API Bindings <api_bindings_python>`: ``python3-tinkerforge`` (Python 3) and ``python-tinkerforge`` (Python 2)
-* :ref:`Ruby API Bindings <api_bindings_perl>`: ``ruby-tinkerforge``
+* Tools
+
+  * :ref:`Brick Daemon <brickd>`: ``brickd``
+  * :ref:`Brick Viewer <brickv>`: ``brickv``
+
+* API Bindings
+
+  * :ref:`Go <api_bindings_go>`: ``golang-tinkerforge-dev``
+  * :ref:`Java <api_bindings_java>`: ``libtinkerforge-java`` and ``libtinkerforge-java-doc``
+  * :ref:`Perl <api_bindings_perl>`: ``libtinkerforge-perl``
+  * :ref:`Python <api_bindings_python>`: ``python3-tinkerforge`` (Python 3) and ``python-tinkerforge`` (Python 2)
+  * :ref:`Ruby <api_bindings_perl>`: ``ruby-tinkerforge``

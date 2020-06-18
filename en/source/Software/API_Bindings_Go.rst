@@ -11,24 +11,60 @@ The Go bindings allow you to control :ref:`Bricks <primer_bricks>` and
 * in ``github.com/Tinkerforge/go-api-bindings`` the source code of the bindings
 * in ``examples/`` the examples for every Brick and Bricklet
 
-The Go bindings are also hosted on `GitHub <https://github.com/Tinkerforge/go-api-bindings>`_.
-
-
 Requirements
 ------------
 
-* The Go compiler.
-
+* Go compiler
 
 .. _api_bindings_go_install:
 
 Installation
 ------------
 
-The Go bindings can either be installed from the zip file, or by running ``go get -u github.com/Tinkerforge/go-api-bindings``.
+There are three ways to install the Go bindings:
+from our :ref:`APT repository <api_bindings_go_install_apt>` for Debian
+based Linux distributions or from :ref:`GitHub
+<api_bindings_go_install_github>` or from :ref:`source
+<api_bindings_go_install_source>`.
 
-If you want to install them from the zip file, extract the ``github.com`` folder and emplace it in the ``src`` folder of the `go path <https://golang.org/cmd/go/#hdr-GOPATH_environment_variable>`_.
+.. _api_bindings_go_install_apt:
 
+From APT Repository
+^^^^^^^^^^^^^^^^^^^
+
+The bindings are available in our APT repository for Debian based Linux
+distributions (in this case you don't even need the ZIP file for the bindings).
+Follow the :ref:`setup guide <apt_repository_setup>` then install the bindings::
+
+ sudo apt install golang-tinkerforge-dev
+
+The Debian package does not include the examples. Those are available as part
+of the bindings :ref:`ZIP file <downloads_bindings_examples>`.
+
+.. _api_bindings_go_install_github:
+
+From GitHub
+^^^^^^^^^^^
+
+The bindings are available from the `GitHub
+<https://github.com/Tinkerforge/go-api-bindings>`__ (in this case you don't
+even need the ZIP file for the bindings). Install the bindings using the
+``go get`` tool::
+
+ go get -u github.com/Tinkerforge/go-api-bindings
+
+This does not include the examples. Those are available as part of
+the bindings :ref:`ZIP file <downloads_bindings_examples>`.
+
+.. _api_bindings_go_install_source:
+
+From Source
+^^^^^^^^^^^
+
+Extract the ``github.com`` directory from the ZIP file to the ``src`` directory
+of your `GOPATH <https://golang.org/cmd/go/#hdr-GOPATH_environment_variable>`__.
+
+Now you're ready to test the examples.
 
 Testing an Example
 ------------------
