@@ -35,8 +35,30 @@ von der Art der Verwendung ab.
 Node.js
 ^^^^^^^
 
-Die Node.js Version der Bindings können mit dem Node.js Package Manager
-`npm <https://www.npmjs.com/>`__ installiert werden, müssen aber nicht.
+Die Node.js Version der Bindings können auf zwei Weisen installiert werden:
+von unserem :ref:`APT Repository <api_bindings_javascript_install_apt>` für
+Debian basierte Linux Distributionen oder vom
+:ref:`NPM Package <api_bindings_javascript_install_npm>`. Die Bindings können
+aber auch :ref:`ohne Installation <api_bindings_javascript_install_without>`
+genutzt werden.
+
+.. _api_bindings_javascript_install_apt:
+
+Vom APT Repository
+""""""""""""""""""
+
+Die Bindings stehen in unserem APT Repository für Debian basierte Linux
+Distributionen bereit (dazu wird die ZIP Datei der Bindings nicht benötigt).
+Zuerst das :ref:`APT Repository einrichten <apt_repository_setup>` dann
+die Bindings installieren::
+
+ sudo apt install node-tinkerforge
+
+Dann ist auch schon alles bereit, um Beispiele testen zu können. Das Debian
+Package beinhaltet keine Beispiele. Diese sind als Teil der :ref:`ZIP Datei
+<downloads_bindings_examples>` der Bindings verfügbar.
+
+.. _api_bindings_javascript_install_npm:
 
 Vom NPM Package
 """""""""""""""
@@ -57,6 +79,8 @@ mit ``sudo`` bzw. als Administrator ausgeführt werden::
 Dann ist auch schon alles bereit, um Beispiele testen zu können. Das NPM Package
 beinhaltet keine Beispiele. Diese sind als Teil der :ref:`ZIP Datei
 <downloads_bindings_examples>` der Bindings verfügbar.
+
+.. _api_bindings_javascript_install_without:
 
 Ohne Installation
 """""""""""""""""
@@ -107,8 +131,8 @@ Brick Viewer ermittelt werden:
   var PORT = 4223;
   var UID = 'XXYYZZ'; // Change XXYYZZ to the UID of your Stepper Brick
 
-Wenn die Bindings mittels NPM Package installiert wurden, dann kann
-das Beispiele jetzt direkt ausgeführt werden::
+Wenn die Bindings installiert wurden, dann kann das Beispiele jetzt direkt
+ausgeführt werden::
 
  node ExampleConfiguration.js
 

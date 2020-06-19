@@ -22,7 +22,6 @@ Requirements
 * Node.js 0.10 or newer, or any recent browser with WebSocket support (tested
   with Chrome, Firefox and Internet Explorer)
 
-
 .. _api_bindings_javascript_install:
 
 Installation
@@ -34,8 +33,28 @@ how they should be used.
 Node.js
 ^^^^^^^
 
-The Node.js version of the bindings can be installed with the Node.js Package
-Manager `npm <https://www.npmjs.com/>`__, but you don't have to.
+There are two ways to install the Node.js version of the bindings:
+from our :ref:`APT repository <api_bindings_javascript_install_apt>` for Debian
+based Linux distributions or from :ref:`NPM package
+<api_bindings_javascript_install_npm>`. But the bindings can also be used
+:ref:`without installing <api_bindings_javascript_install_without>` them first.
+
+.. _api_bindings_javascript_install_apt:
+
+From APT Repository
+"""""""""""""""""""
+
+The bindings are available in our APT repository for Debian based Linux
+distributions (in this case you don't even need the ZIP file for the bindings).
+Follow the :ref:`setup guide <apt_repository_setup>` then install the bindings::
+
+ sudo apt install node-tinkerforge
+
+Now you're ready to test the examples. The Debian package does not include the
+examples. Those are available as part of the bindings :ref:`ZIP file
+<downloads_bindings_examples>`.
+
+.. _api_bindings_javascript_install_npm:
 
 From NPM Package
 """"""""""""""""
@@ -57,6 +76,8 @@ might has to execute with ``sudo`` or as administrator::
 Now you're ready to test the examples. The NPM package does not include the
 examples. Those are available as part of the bindings :ref:`ZIP file
 <downloads_bindings_examples>`.
+
+.. _api_bindings_javascript_install_without:
 
 Without Installation
 """"""""""""""""""""
@@ -105,8 +126,7 @@ connected Stepper Brick, which you can figure out using Brick Viewer:
   var PORT = 4223;
   var UID = 'XXYYZZ'; // Change XXYYZZ to the UID of your Stepper Brick
 
-If you did install the bindings using the NPM package then you're now ready to
-test this example::
+If you did install the bindings then you're now ready to test this example::
 
  node ExampleConfiguration.js
 
@@ -136,7 +156,6 @@ use:
 Now you're ready to test this example::
 
  node ExampleConfiguration.js
-
 
 HTML
 ^^^^
