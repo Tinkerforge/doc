@@ -13,19 +13,39 @@ The PHP bindings allow you to control :ref:`Bricks <primer_bricks>` and
 * in ``source/`` the source code of ``Tinkerforge.tgz``
 * in ``examples/`` the examples for every Brick and Bricklet
 
-
 Requirements
 ------------
 
 * PHP 5.3 or newer with ``bcmath`` and ``sockets`` extension
-
 
 .. _api_bindings_php_install:
 
 Installation
 ------------
 
-The bindings can be installed, but can also be used without installation.
+There are three ways to install the PHP bindings:
+from our :ref:`APT repository <api_bindings_php_install_apt>` for Debian
+based Linux distributions or from :ref:`PEAR package
+<api_bindings_php_install_pear>` or from :ref:`source
+<api_bindings_php_install_source>`. But the bindings can also be used
+:ref:`without installing <api_bindings_php_install_without>` them first.
+
+.. _api_bindings_php_install_apt:
+
+From APT Repository
+^^^^^^^^^^^^^^^^^^^
+
+The bindings are available in our APT repository for Debian based Linux
+distributions (in this case you don't even need the ZIP file for the bindings).
+Follow the :ref:`setup guide <apt_repository_setup>` then install the bindings::
+
+ sudo apt install php-tinkerforge
+
+Now you're ready to test the examples. The Debian package does not include the
+examples. Those are available as part of the bindings :ref:`ZIP file
+<downloads_bindings_examples>`.
+
+.. _api_bindings_php_install_pear:
 
 From PEAR Package
 ^^^^^^^^^^^^^^^^^
@@ -41,13 +61,14 @@ Now you're ready to test the examples. The PEAR package does not include the
 examples. Those are available as part of the bindings :ref:`ZIP file
 <downloads_bindings_examples>`.
 
+.. _api_bindings_php_install_without:
+
 Without Installation
 ^^^^^^^^^^^^^^^^^^^^
 
 You can use the bindings without having to install them. Just copy the
 ``Tinkerforge/`` folder from the ``source/`` folder in the same folder as your
 PHP script. The section about testing an example has more details about this.
-
 
 Testing an Example
 ------------------
@@ -96,7 +117,6 @@ automatically find the bindings::
 Now you're ready to test this example::
 
  php ExampleConfiguration.php
-
 
 API Reference and Examples
 --------------------------

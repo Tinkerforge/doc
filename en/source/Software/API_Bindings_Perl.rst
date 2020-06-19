@@ -47,7 +47,6 @@ Now you're ready to test the examples. The Debian package does not include the
 examples. Those are available as part of the bindings :ref:`ZIP file
 <downloads_bindings_examples>`.
 
-
 .. _api_bindings_perl_install_cpan:
 
 From CPAN
@@ -84,7 +83,6 @@ with ``sudo`` or as administrator::
  make install
 
 Now you're ready to test the examples.
-
 
 .. _api_bindings_perl_install_without:
 

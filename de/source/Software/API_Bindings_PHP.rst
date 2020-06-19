@@ -14,20 +14,40 @@ die Bindings beinhaltet:
 * in ``source/`` den Quelltext für ``Tinkerforge.tgz``
 * in ``examples/`` die Beispiele für alle Bricks und Bricklets
 
-
 Voraussetzungen
 ---------------
 
 * PHP 5.3 oder neuer mit ``bcmath`` und ``sockets`` Erweiterung
-
 
 .. _api_bindings_php_install:
 
 Installation
 ------------
 
-Die PHP Bindings können installiert werden, können aber auch ohne Installation
-verwendet werden.
+Die PHP Bindings können auf drei Weisen installiert werden:
+von unserem :ref:`APT Repository <api_bindings_php_install_apt>` für Debian
+basierte Linux Distributionen oder vom
+:ref:`PEAR Package <api_bindings_php_install_pear>` oder vom
+:ref:`Quelltext <api_bindings_php_install_source>`. Die Bindings können aber
+auch :ref:`ohne Installation <api_bindings_php_install_without>` genutzt werden.
+
+.. _api_bindings_php_install_apt:
+
+Vom APT Repository
+^^^^^^^^^^^^^^^^^^
+
+Die Bindings stehen in unserem APT Repository für Debian basierte Linux
+Distributionen bereit (dazu wird die ZIP Datei der Bindings nicht benötigt).
+Zuerst das :ref:`APT Repository einrichten <apt_repository_setup>` dann
+die Bindings installieren::
+
+ sudo apt install php-tinkerforge
+
+Dann ist auch schon alles bereit, um Beispiele testen zu können. Das Debian
+Package beinhaltet keine Beispiele. Diese sind als Teil der :ref:`ZIP Datei
+<downloads_bindings_examples>` der Bindings verfügbar.
+
+.. _api_bindings_php_install_pear:
 
 Vom PEAR Package
 ^^^^^^^^^^^^^^^^
@@ -43,6 +63,8 @@ Dann ist auch schon alles bereit, um Beispiele testen zu können. Das PEAR
 Package beinhaltet keine Beispiele. Diese sind als Teil der :ref:`ZIP Datei
 <downloads_bindings_examples>` der Bindings verfügbar.
 
+.. _api_bindings_php_install_without:
+
 Ohne Installation
 ^^^^^^^^^^^^^^^^^
 
@@ -50,7 +72,6 @@ Die Bindings müssen nicht unbedingt installiert werden. Stattdessen kann auch
 einfach der ``Tinkerforge/`` Ordner vom ``source/`` Ordner in den gleichen
 Ordner wie dein PHP Skript kopiert werden. Der Abschnitt über den Test eines
 Beispiels vermittelt mehr Details darüber.
-
 
 Test eines Beispiels
 --------------------

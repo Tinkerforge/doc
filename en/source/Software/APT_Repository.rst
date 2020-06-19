@@ -47,5 +47,6 @@ Currently, these packages are available:
   * :ref:`Go <api_bindings_go>`: ``golang-tinkerforge-dev``
   * :ref:`Java <api_bindings_java>`: ``libtinkerforge-java`` and ``libtinkerforge-java-doc``
   * :ref:`Perl <api_bindings_perl>`: ``libtinkerforge-perl``
+  * :ref:`PHP <api_bindings_php>`: ``php-tinkerforge``
   * :ref:`Python <api_bindings_python>`: ``python3-tinkerforge`` (Python 3) and ``python-tinkerforge`` (Python 2)
   * :ref:`Ruby <api_bindings_perl>`: ``ruby-tinkerforge``
