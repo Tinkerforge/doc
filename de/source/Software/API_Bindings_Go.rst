@@ -36,12 +36,11 @@ Vom APT Repository
 .. note::
   Gemäß den `Debian Go Packaging Richtlinien
   <https://go-team.pages.debian.net/packaging.html#_library_or_binary_library_packages>`__
-  steht der Inhalt diese Paketes normale Entwicklern nicht zur Verfügung. Der
-  einzige Zweck dieses Paketes is es als Abhängigkeit für andere Debian Pakete
-  zu dienen.
-
-  Normale Entwickler sollen das ``go get`` Tool verwenden, um die Bindings von
-  von :ref:`GitHub <api_bindings_go_install_github>` herunterzuladen.
+  steht der Inhalt diese Paketes normale Entwicklern standardmäßig nicht zur
+  Verfügung. Der einzige Zweck dieses Paketes is es als Abhängigkeit für andere
+  Debian Pakete zu dienen. Die Richtlinien empfehlen normalen Entwickler das
+  ``go get`` Tool verwenden, um die Bindings von von :ref:`GitHub
+  <api_bindings_go_install_github>` herunterzuladen.
 
 Die Bindings stehen in unserem APT Repository für Debian basierte Linux
 Distributionen bereit (dazu wird die ZIP Datei der Bindings nicht benötigt).
@@ -49,6 +48,19 @@ Zuerst das :ref:`APT Repository einrichten <apt_repository_setup>` dann
 die Bindings installieren::
 
  sudo apt install golang-tinkerforge-dev
+
+Die Bindings werden hier installiert::
+
+ /usr/share/gocode/src/github.com/Tinkerforge/go-api-bindings
+
+Um diese Bindings entgegen der Debian Richtlinien dennoch verwenden zu können
+muss ``/usr/share/gocode`` dem `GOPATH
+<https://golang.org/cmd/go/#hdr-GOPATH_environment_variable>`__ hinzugefügt
+werden.
+
+Dann ist auch schon alles bereit, um Beispiele testen zu können. Das Debian
+Package beinhaltet keine Beispiele. Diese sind als Teil der :ref:`ZIP Datei
+<downloads_bindings_examples>` der Bindings verfügbar.
 
 .. _api_bindings_go_install_github:
 
