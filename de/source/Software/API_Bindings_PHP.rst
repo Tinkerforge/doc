@@ -24,11 +24,10 @@ Voraussetzungen
 Installation
 ------------
 
-Die PHP Bindings können auf drei Weisen installiert werden:
+Die PHP Bindings können auf zwei Weisen installiert werden:
 von unserem :ref:`APT Repository <api_bindings_php_install_apt>` für Debian
 basierte Linux Distributionen oder vom
-:ref:`PEAR Package <api_bindings_php_install_pear>` oder vom
-:ref:`Quelltext <api_bindings_php_install_source>`. Die Bindings können aber
+:ref:`PEAR Package <api_bindings_php_install_pear>`. Die Bindings können aber
 auch :ref:`ohne Installation <api_bindings_php_install_without>` genutzt werden.
 
 .. _api_bindings_php_install_apt:

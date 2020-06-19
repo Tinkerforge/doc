@@ -23,11 +23,10 @@ Requirements
 Installation
 ------------
 
-There are three ways to install the PHP bindings:
+There are two ways to install the PHP bindings:
 from our :ref:`APT repository <api_bindings_php_install_apt>` for Debian
 based Linux distributions or from :ref:`PEAR package
-<api_bindings_php_install_pear>` or from :ref:`source
-<api_bindings_php_install_source>`. But the bindings can also be used
+<api_bindings_php_install_pear>`. But the bindings can also be used
 :ref:`without installing <api_bindings_php_install_without>` them first.
 
 .. _api_bindings_php_install_apt:
