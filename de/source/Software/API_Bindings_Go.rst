@@ -33,16 +33,22 @@ basierte Linux Distributionen oder von
 Vom APT Repository
 ^^^^^^^^^^^^^^^^^^
 
+.. note::
+  Gemäß den `Debian Go Packaging Richtlinien
+  <https://go-team.pages.debian.net/packaging.html#_library_or_binary_library_packages>`__
+  steht der Inhalt diese Paketes normale Entwicklern nicht zur Verfügung. Der
+  einzige Zweck dieses Paketes is es als Abhängigkeit für andere Debian Pakete
+  zu dienen.
+
+  Normale Entwickler sollen das ``go get`` Tool verwenden, um die Bindings von
+  von :ref:`GitHub <api_bindings_go_install_github>` herunterzuladen.
+
 Die Bindings stehen in unserem APT Repository für Debian basierte Linux
 Distributionen bereit (dazu wird die ZIP Datei der Bindings nicht benötigt).
 Zuerst das :ref:`APT Repository einrichten <apt_repository_setup>` dann
 die Bindings installieren::
 
  sudo apt install golang-tinkerforge-dev
-
-Dann ist auch schon alles bereit, um Beispiele testen zu können. Das Debian
-Package beinhaltet keine Beispiele. Diese sind als Teil der :ref:`ZIP Datei
-<downloads_bindings_examples>` der Bindings verfügbar.
 
 .. _api_bindings_go_install_github:
 
@@ -83,7 +89,7 @@ Informationen über die angeschlossenen Bricks und Bricklets aus.
 Als Beispiel wird im Folgenden das Konfigurationsbeispiel des Stepper Bricks
 auf der Kommandozeile kompiliert. Dafür nutzen wir die Datei
 ``example_configuration.go`` aus dem ``examples/StepperBrick/``-Ordner der
-Zip.
+ZIP Datei.
 
 Am Anfang des Beispiels ist mit ``ADDR`` angegeben unter welcher
 Netzwerkadresse der Stepper Brick zu erreichen ist. Ist er lokal per USB
