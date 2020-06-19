@@ -126,9 +126,8 @@ Brick Viewer ermittelt werden:
   use constant PORT => 4223;
   use constant UID => 'XXYYZZ'; # Change XXYYZZ to the UID of your Stepper Brick
 
-Wenn die Bindings vom :ref:`Quelltext <api_bindings_perl_install_source>` oder
-von :ref:`CPAN <api_bindings_perl_install_cpan>` installiert wurden, dann kann
-das Beispiele jetzt direkt ausgeführt werden::
+Wenn die Bindings installiert wurden, dann kann das Beispiele jetzt direkt
+ausgeführt werden::
 
  perl example_configuration.pl
 

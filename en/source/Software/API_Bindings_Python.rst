@@ -127,9 +127,7 @@ connected Stepper Brick, which you can figure out using Brick Viewer:
   PORT = 4223
   UID = "XXYYZZ" # Change XXYYZZ to the UID of your Stepper Brick
 
-If you did install the bindings from :ref:`source
-<api_bindings_python_install_source>` or :ref:`PyPI
-<api_bindings_python_install_pypi>` then you're now ready to test this example::
+If you did install the bindings then you're now ready to test this example::
 
  python example_configuration.py
 

@@ -121,9 +121,7 @@ connected Stepper Brick, which you can figure out using Brick Viewer:
   use constant PORT => 4223;
   use constant UID => 'XXYYZZ'; # Change XXYYZZ to the UID of your Stepper Brick
 
-If you did install the bindings from :ref:`source
-<api_bindings_perl_install_source>` or :ref:`CPAN
-<api_bindings_perl_install_cpan>` then you're now ready to test this example::
+If you did install the bindings then you're now ready to test this example::
 
  perl example_configuration.pl
 

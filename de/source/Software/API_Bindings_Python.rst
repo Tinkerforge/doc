@@ -130,9 +130,8 @@ Brick Viewer ermittelt werden:
   PORT = 4223
   UID = "XXYYZZ" # Change XXYYZZ to the UID of your Stepper Brick
 
-Wenn die Bindings vom :ref:`Quelltext <api_bindings_python_install_source>` oder
-von :ref:`PyPI <api_bindings_python_install_pypi>` installiert wurden, dann kann
-das Beispiel jetzt direkt ausgeführt werden::
+Wenn die Bindings installiert wurden, dann kann das Beispiel jetzt direkt
+ausgeführt werden::
 
  python example_configuration.py
 
