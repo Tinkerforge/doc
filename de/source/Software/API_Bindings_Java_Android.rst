@@ -34,7 +34,7 @@ Starte eine neues Android Projekt:
 * Wähle "Package Name" (e.g. ``org.example``)
 * Klicke Finish
 
-Als nächstes muss das ``Tinkerforge.jar` aus den Java bindings in
+Als nächstes muss das ``Tinkerforge.jar`` aus den Java bindings in
 den ``PROJECTFOLDER/libs/`` Ordner kopiert werden.
 
 Dann den Quelltext wie unten dargestellt bearbeiten. Vergiss nicht die Host IP
