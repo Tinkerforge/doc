@@ -291,7 +291,7 @@ Octave
    :alt: Screenshot des RED Brick Wizard Schritt 3 (Octave).
    :align: center
 
-Der Java Pfad zur ``Tinkerforge.jar`` ist bereits zur ``octaverc`` hinzugefügt worden.
+Der Java Pfad zur ``Tinkerforge.jar`` ist bereits zur ``.octaverc`` hinzugefügt worden.
 Das eigene Programm kann daher annehmen, dass ``javaaddpath("Tinkerforge.jar")``
 bereits mit dem korrekten Verzeichnis aufgerufen wurde.
 

@@ -291,7 +291,7 @@ Octave
    :align: center
 
 For Octave the Java path to the ``Tinkerforge.jar`` is already added
-in the ``octaverc`` file. This means that in your program you can assume
+in the ``.octaverc`` file. This means that in your program you can assume
 that ``javaaddpath("Tinkerforge.jar")`` was already called with
 the correct directory.
 
