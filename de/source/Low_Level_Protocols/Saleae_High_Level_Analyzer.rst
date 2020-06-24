@@ -38,15 +38,10 @@ mitgelesen werden
 Installation
 ------------
 
-Der Analyzer benötigt eine aktuelle Version der Saleae Logic 2 Alpha.
-Er wurde mit Version 2.2.15 getestet, sollte aber mit Versionen ab 2.2.9
-funktionieren.
+Der Analyzer benötigt eine aktuelle Version der Saleae Logic 2 Alpha, mindestens 2.3.0.
 
-Der Analyzer kann `hier heruntergeladen <https://download.tinkerforge.com/bindings/saleae/>`__ werden. Danach
-muss die ZIP-Datei entpackt werden.
-
-In Logic 2 kann der Analyzer als Extension hinzugefügt werden. Dann sollte
-es möglich sein, den SPITFP Analyzer hinzuzufügen.
+In Logic 2 kann der Analyzer vom Marketplace als Extension hinzugefügt werden.
+Dann sollte es möglich sein, den SPITFP Analyzer hinzuzufügen.
 
 Konfiguration
 -------------

@@ -37,15 +37,10 @@ you can capture the SPI communication from the pins marked with CS, CLK, MOSI an
 Installation
 ------------
 
-The analyzer requires an up-to-date version of the Saleae Logic 2 alpha.
-It was tested with version 2.2.15, but should work with versions
-starting from 2.2.9.
+The analyzer requires an up-to-date version of the Saleae Logic 2 alpha, at least 2.3.0.
 
-Download the analyzer `from here <https://download.tinkerforge.com/bindings/saleae/>`__
-and extract the zip file.
-
-In Logic 2 you can add the analyzer as an extension. It should then be possible
-to add the SPITFP analyzer.
+In Logic 2 you can add the analyzer as an extension from the marketplace.
+It should then be possible to add the SPITFP analyzer.
 
 Configuration
 -------------
