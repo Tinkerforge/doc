@@ -23,7 +23,7 @@ Die MATLAB/Octave Bindings basieren auf den :ref:`Java Bindings
 Voraussetzungen
 ---------------
 
-* MATLAB oder Octave 3.6 mit Java Unterstützung
+* MATLAB oder Octave 3.6 oder neuer mit Java Unterstützung
 
 
 .. _api_bindings_matlab_install:
@@ -112,9 +112,27 @@ getestet werden:
 
   octave_config_info("features").JAVA
 
-Um die Bindings in Octave verfügbar zu machen muss die ``Tinkerforge.jar`` Datei
-aus dem ``octave/`` Ordner zu Octaves Class Path hinzugefügt werden werden. Zum
-Beispiel durch folgenden Octave Befehl unter Windows:
+Die Bindings stehen in unserem APT Repository für Debian basierte Linux
+Distributionen bereit. Zuerst das :ref:`APT Repository einrichten
+<apt_repository_setup>` dann die Bindings installieren::
+
+ sudo apt install octave-tinkerforge
+
+Die Bindings JAR Datei ist hier installiert::
+
+ /usr/share/octave/packages/tinkerforge/tinkerforge.jar
+
+Um die Bindings in Octave verfügbar zu machen muss die Bindings JAR Datei zu
+Octaves Class Path hinzugefügt werden werden. Zum Beispiel durch folgenden
+Octave Befehl unter Debian basierte Linux Distributionen:
+
+.. code-block:: octave
+
+  javaaddpath("/usr/share/octave/packages/tinkerforge/tinkerforge.jar");
+
+Alternativ muss die ``Tinkerforge.jar`` Datei aus dem ``octave/`` Ordner der
+ZIP Datei zu Octaves Class Path hinzugefügt werden werden. Zum Beispiel durch
+folgenden Octave Befehl unter Windows:
 
 .. code-block:: octave
 
