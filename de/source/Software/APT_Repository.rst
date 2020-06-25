@@ -48,6 +48,7 @@ Aktuell sind folgende Pakete verfügbar:
   * :ref:`Go <api_bindings_go>`: ``golang-tinkerforge-dev``
   * :ref:`Java <api_bindings_java>`: ``libtinkerforge-java`` und ``libtinkerforge-java-doc``
   * :ref:`JavaScript (Node.js) <api_bindings_javascript>`: ``node-tinkerforge``
+  * JSON: ``tinkerforge-json``
   * :ref:`Octave <api_bindings_matlab>`: ``octave-tinkerforge``
   * :ref:`Perl <api_bindings_perl>`: ``libtinkerforge-perl``
   * :ref:`PHP <api_bindings_php>`: ``php-tinkerforge``
