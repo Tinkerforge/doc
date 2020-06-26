@@ -262,7 +262,9 @@ Note that these messages are sent before the the connection to the Brick Daemon,
 Command line arguments
 ----------------------
 
-* ``-h, --help`` show this help message and exit
+* ``-h``, ``--help`` show this help message and exit
+* ``-v``, ``--version`` show version and exit
+* ``--cmdline-file <CMDLINE_FILE>`` file from where to load command line options
 * ``--ipcon-host <IPCON_HOST>`` hostname or IP address of Brick Daemon, WIFI or Ethernet Extension (default: localhost)
 * ``--ipcon-port <IPCON_PORT>`` port number of Brick Daemon, WIFI or Ethernet Extension (default: 4223)
 * ``--ipcon-auth-secret <IPCON_AUTH_SECRET>`` authentication secret of Brick Daemon, WIFI or Ethernet Extension
@@ -272,13 +274,17 @@ Command line arguments
 * ``--broker-username <BROKER_USERNAME>`` username for the MQTT broker connection
 * ``--broker-password <BROKER_PASSWORD>`` password for the MQTT broker connection
 * ``--broker-certificate <BROKER_CERTIFICATE>`` Certificate Authority certificate file used for SSL/TLS connections to the broker
-* ``--broker-tls-insecure`` disable verification of the server hostname in the server certificate for the MQTT broker connection
+* ``--broker-tls-secure`` verify the server hostname in the server certificate for the MQTT broker connection (enabled by default)
+* ``--broker-tls-insecure`` do not verify the server hostname in the server certificate for the MQTT broker connection
 * ``--global-topic-prefix <GLOBAL_TOPIC_PREFIX>`` global MQTT topic prefix (default: tinkerforge/)
-* ``--debug`` enable debug output
-* ``--no-symbolic-response`` disable translation into string constants for responses
+* ``--debug`` show debug output
+* ``--no-debug`` hide debug output (enabled by default)
+* ``--symbolic-response`` translate constant values into string constants for responses (enabled by default)
+* ``--no-symbolic-response`` do not translate constants values for responses
 * ``--show-payload`` show received payload if JSON parsing fails
-* ``--init-file <INIT_FILE>`` file from where to load initial messages to publish
-
+* ``--hide-payload`` hide received payload if JSON parsing fails (enabled by default)
+* ``--init-file <INIT_FILE>`` file from where to load initial messages to process
+* ``--no-init-file`` do not process initial messages (enabled by default)
 
 API Reference and Examples
 --------------------------

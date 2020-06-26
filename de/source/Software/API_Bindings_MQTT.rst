@@ -268,23 +268,29 @@ Diese Nachrichten werden gesendet, bevor die Verbindung zum Brick Daemon, der Wi
 Kommandozeilenargumente
 -----------------------
 
- * ``-h, --help`` Listet die Kommandozeilenargumente auf
- * ``--ipcon-host <IPCON_HOST>`` Hostname oder IP-Addresse des Brick Daemons, der WIFI- oder Ethernet-Extension (Standard: localhost)
- * ``--ipcon-port <IPCON_PORT>`` Port des Brick Daemons, der WIFI- oder Ethernet-Extension (Standard: 4223)
- * ``--ipcon-auth-secret <IPCON_AUTH_SECRET>`` Authentisierungsgeheimnis des Brick Daemons, der WIFI- oder Ethernet-Extension
- * ``--ipcon-timeout <IPCON_TIMEOUT>`` Timeout in Millisekunden für Kommunikation mit dem Brick Daemons, der WIFI- oder Ethernet-Extension (Standard: 2500)
- * ``--broker-host <BROKER_HOST>`` Hostname oder IP-Addresse des MQTT-Brokers (Standard: localhost)
- * ``--broker-port <BROKER_PORT>`` Port des MQTT-Brokers (Standard: 1883)
- * ``--broker-username <BROKER_USERNAME>`` Username für die Verbindung zum MQTT-Broker
- * ``--broker-password <BROKER_PASSWORD>`` Passwort für die Verbindung zum MQTT-Broker
- * ``--broker-certificate <BROKER_CERTIFICATE>`` CA-Zertifikat für SSL/TLS-Verbindung zum Broker
- * ``--broker-tls-insecure`` Deaktiviert Verifikation des Hostnames und Zertifikates für die Verbindung zum MQTT-Broker
- * ``--global-topic-prefix <GLOBAL_TOPIC_PREFIX>`` Globaler Präfix für MQTT-Topics (Standard: tinkerforge/)
- * ``--debug`` Aktiviert die Debug-Ausgabe
- * ``--no-symbolic-response`` Deaktiviert die Übersetzung von Antwort-Konstanten in Strings
- * ``--show-payload`` Aktiviert die Anzeige empfangenen Payloads falls das JSON-Parsing fehlschlägt
- * ``--init-file <INIT_FILE>`` Läd Nachrichten, die initial verarbeitet werden sollen, aus einer Datei.
-
+* ``-h``, ``--help`` Listet die Kommandozeilenargumente auf
+* ``-v``, ``--version`` Zeigt die Version an
+* ``--cmdline-file <CMDLINE_FILE>`` Lädt Kommandozeilenargumente aus einer Datei
+* ``--ipcon-host <IPCON_HOST>`` Hostname oder IP-Addresse des Brick Daemons, der WIFI- oder Ethernet-Extension (Standard: localhost)
+* ``--ipcon-port <IPCON_PORT>`` Port des Brick Daemons, der WIFI- oder Ethernet-Extension (Standard: 4223)
+* ``--ipcon-auth-secret <IPCON_AUTH_SECRET>`` Authentisierungsgeheimnis des Brick Daemons, der WIFI- oder Ethernet-Extension
+* ``--ipcon-timeout <IPCON_TIMEOUT>`` Timeout in Millisekunden für Kommunikation mit dem Brick Daemons, der WIFI- oder Ethernet-Extension (Standard: 2500)
+* ``--broker-host <BROKER_HOST>`` Hostname oder IP-Addresse des MQTT-Brokers (Standard: localhost)
+* ``--broker-port <BROKER_PORT>`` Port des MQTT-Brokers (Standard: 1883)
+* ``--broker-username <BROKER_USERNAME>`` Benutzername für die Verbindung zum MQTT-Broker
+* ``--broker-password <BROKER_PASSWORD>`` Passwort für die Verbindung zum MQTT-Broker
+* ``--broker-certificate <BROKER_CERTIFICATE>`` CA-Zertifikat für SSL/TLS-Verbindung zum Broker
+* ``--broker-tls-secure`` Verifikation des Hostnames und Zertifikates für die Verbindung zum MQTT-Broker (standardmäßig aktiv)
+* ``--broker-tls-insecure`` Deaktiviert Verifikation des Hostnames und Zertifikates für die Verbindung zum MQTT-Broker
+* ``--global-topic-prefix <GLOBAL_TOPIC_PREFIX>`` Globaler Präfix für MQTT-Topics (Standard: tinkerforge/)
+* ``--debug`` Zeigt die Debug-Ausgabe
+* ``--no-debug`` Versteckt die Debug-Ausgabe (standardmäßig aktiv)
+* ``--symbolic-response`` Übersetzung von Antwort-Konstanten in Strings
+* ``--no-symbolic-response`` Keine Übersetzung von Antwort-Konstanten in Strings (standardmäßig aktiv)
+* ``--show-payload`` Empfangenen Payloads anzeigen falls das JSON-Parsing fehlschlägt
+* ``--hide-payload`` Empfangenen Payloads nicht anzeigen falls das JSON-Parsing fehlschlägt (standardmäßig aktiv)
+* ``--init-file <INIT_FILE>`` Lädt Nachrichten, die initial verarbeitet werden sollen, aus einer Datei
+* ``--no-init-file`` Keine Nachrichten werden initial verarbeitet (standardmäßig aktiv)
 
 API Referenz und Beispiele
 --------------------------
