@@ -137,23 +137,23 @@ Requests und Responses
 Um eine Funktion eines Bricks oder Bricklets aufzurufen, muss eine Nachricht im JSON-Format im entsprechenden
 ``request``-Topic gepublisht werden. Um zum Beispiel mit mosquitto_pub die Farbe des RGB LED Button Bricklets mit der UID Enx auf Gelb zu setzen,
 kann folgender Befehl verwendet werden::
-    
+
   mosquitto_pub -t tinkerforge/request/rgb_led_button_bricklet/Enx/set_color -m '{"red":255, "green":127, "blue":0}'
 
 Funktionen geben Werte unter ``response``-Topics zurück. Folgendermaßen kann die aktuelle Farbe des selben Bricklets abgefragt werden::
-    
+
   mosquitto_sub -t tinkerforge/response/rgb_led_button_bricklet/Enx/get_color
   mosquitto_pub -t tinkerforge/request/rgb_led_button_bricklet/Enx/get_color -m ''
-  
+
 Auch aufgetretene Fehler werden unter ``response``-Topics gepublisht, zum Beispiel wird, falls ein Parameter fehlt::
-  
+
   mosquitto_sub -t tinkerforge/response/rgb_led_button_bricklet/Enx/set_color
   mosquitto_pub -t tinkerforge/request/rgb_led_button_bricklet/Enx/set_color -m '{"red":255, "blue":0}'
 
 die Nachricht::
 
-  {"_ERROR": "The arguments ['green'] where missing for a call of set_color of device Enx of type rgb_led_button_bricklet."} 
-  
+  {"_ERROR": "The arguments ['green'] where missing for a call of set_color of device Enx of type rgb_led_button_bricklet."}
+
 auf dem Topic ``tinkerforge/response/rgb_led_button_bricklet/Enx/set_color`` zurückgegeben.
 Fehler werden auch auf der Standardausgabe der Bindings ausgegeben.
 
@@ -161,15 +161,15 @@ Callbacks
 ^^^^^^^^^
 
 Callbacks können auf ``register``-Topics registriert werden::
-  
+
   mosquitto_pub -t tinkerforge/register/rgb_led_button_bricklet/Enx/button_state_changed -m 'true'
-  
+
 und werden auf den entsprechenden ``callback``-Topics ausgelöst::
 
   mosquitto_sub -t tinkerforge/callback/rgb_led_button_bricklet/Enx/button_state_changed
-  
+
 gibt Nachrichten der Form::
-    
+
   {"state": 0}
   {"state": 1}
 
@@ -220,7 +220,7 @@ Seit Version 2.0.8 kann zwischen Nachrichten, die vor oder nach dem Verbindungsa
 Diese Datei registriert das connected- und enumerate-Callback vor dem Verbindungsaufbau und löst sofort danach eine Enumerierung aus.
 
 Init-Dateien, die die alte Syntax ohne pre/post_connect verwenden, werden ausgeführt, nachdem die Verbindung hergestellt wurde.
- 
+
 Topic-Präfixe
 ^^^^^^^^^^^^^
 
@@ -235,13 +235,13 @@ Topic-Suffixe
 
 Die Bindings unterstützen beliebige Suffixe pro Topic. Mit diesen können zum Beispiel alle Bricks/Bricklets
 in einem Raum mit einer Raumnummer markiert werden::
-  
+
   mosquitto_pub -t tinkerforge/register/rgb_led_button_bricklet/Enx/button_state_changed/room/1 -m 'true'
   mosquitto_pub -t tinkerforge/register/rgb_led_button_bricklet/gBs/button_state_changed/room/2 -m 'true'
   mosquitto_pub -t tinkerforge/register/rgb_led_button_bricklet/Dod/button_state_changed/room/1 -m 'true'
-  
+
 Um alle Callbacks von Bricks/Bricklets in Raum 1 zu empfangen, kann auf folgendes Topic subscribt werden::
-  
+
   mosquitto_sub -t tinkerforge/callback/+/+/+/room/1
 
 Es werden dann Callback-Nachrichten von ``Enx`` und ``Dod`` empfangen, aber nicht von ``gBs``.
@@ -250,7 +250,7 @@ Um alle Nachrichten zu erhalten kann sich auf::
 
   mosquitto_sub -t tinkerforge/callback/#
   mosquitto_sub -t tinkerforge/response/#
- 
+
 subscribt werden.
 
 Start und Stop der Bindings
