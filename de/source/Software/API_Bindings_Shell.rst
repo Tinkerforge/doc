@@ -27,8 +27,16 @@ Voraussetzungen
 Installation
 ------------
 
-Die Shell Bindings können installiert werden, können aber auch ohne Installation
-verwendet werden.
+Die Shell Bindings können auf zwei Weisen installiert werden:
+von unserem :ref:`APT Repository <api_bindings_shell_install_apt>` für Debian
+basierte Linux Distributionen oder durch
+:ref:`händisches <api_bindings_shell_install_manual>` Kopieren der Dateien an
+die richtige Stelle. Die Bindings können aber auch ohne Installation genutzt werden.
+
+.. _api_bindings_shell_install_apt:
+
+Vom APT Repository
+^^^^^^^^^^^^^^^^^^
 
 Die Bindings stehen in unserem APT Repository für Debian basierte Linux
 Distributionen bereit. Zuerst das :ref:`APT Repository einrichten
@@ -36,7 +44,16 @@ Distributionen bereit. Zuerst das :ref:`APT Repository einrichten
 
  sudo apt install tinkerforge-shell
 
-Alternativ muss zur händischen Installation die ``tinkerforge`` Datei in einen
+Dann ist auch schon alles bereit, um Beispiele testen zu können. Das Debian
+Package beinhaltet keine Beispiele. Diese sind als Teil der :ref:`ZIP Datei
+<downloads_bindings_examples>` der Bindings verfügbar.
+
+.. _api_bindings_shell_install_manual:
+
+Händische Installation
+^^^^^^^^^^^^^^^^^^^^^^
+
+Zur händischen Installation die ``tinkerforge`` Datei in einen
 Ordner kopiert werden, der sich im PATH befindet. Das kann unter Linux und macOS
 folgender Ordner sein::
 

@@ -26,7 +26,16 @@ Requirements
 Installation
 ------------
 
-The Shell bindings can be installed, but can also be used without installation.
+There are two ways to install the Shell bindings:
+from our :ref:`APT repository <api_bindings_shell_install_apt>` for Debian
+based Linux distributions or by :ref:`manually <api_bindings_shell_install_manual>`
+copying the files to the correct location. But can also be used without
+installation.
+
+.. _api_bindings_shell_install_apt:
+
+From APT Repository
+^^^^^^^^^^^^^^^^^^^
 
 The bindings are available in our APT repository for Debian based Linux
 distributions. Follow the :ref:`setup guide <apt_repository_setup>` then install
@@ -34,7 +43,16 @@ the bindings::
 
  sudo apt install tinkerforge-shell
 
-Alternatively, to install the bindings manually copy the ``tinkerforge`` file to
+Now you're ready to test an example. The Debian package does not include the
+examples. Those are available as part of the bindings :ref:`ZIP file
+<downloads_bindings_examples>`.
+
+.. _api_bindings_shell_install_manual:
+
+Manual Installation
+^^^^^^^^^^^^^^^^^^^
+
+To install the bindings manually copy the ``tinkerforge`` file to
 a folder that is in the ``PATH``. For example, this folder on Linux and macOS::
 
  /usr/local/bin/
