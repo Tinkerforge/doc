@@ -233,7 +233,10 @@ IMU Brick 2.0 registriert und dessen Periode auf 100ms konfiguriert::
      "tinkerforge/request/imu_v2_brick/XXYYZZ/set_all_data_period": {"period": 100}
  }
 
-Seit Version 2.0.8 kann zwischen Nachrichten, die vor oder nach dem Verbindungsaufbau zum Brick Daemon, der Wifi oder der Ethernet Extension verarbeitet werden sollen, unterschieden weden. Das erlaubt es, Callback zu registrieren, bevor eine Verbindung besteht (zum Beispiel das connected-Callback der IP-Connection). Die Syntax ist wie folgt::
+Seit Version 2.0.8 kann zwischen Nachrichten, die vor oder nach dem Verbindungsaufbau
+zum Brick Daemon, der Wifi oder der Ethernet Extension verarbeitet werden sollen,
+unterschieden weden. Das erlaubt es, Callback zu registrieren, bevor eine Verbindung
+besteht (zum Beispiel das connected-Callback der IP-Connection). Die Syntax ist wie folgt::
 
  {
      "pre_connect": {
@@ -245,9 +248,11 @@ Seit Version 2.0.8 kann zwischen Nachrichten, die vor oder nach dem Verbindungsa
      }
  }
 
-Diese Datei registriert das connected- und enumerate-Callback vor dem Verbindungsaufbau und löst sofort danach eine Enumerierung aus.
+Diese Datei registriert das connected- und enumerate-Callback vor dem
+Verbindungsaufbau und löst sofort danach eine Enumerierung aus.
 
-Init-Dateien, die die alte Syntax ohne pre/post_connect verwenden, werden ausgeführt, nachdem die Verbindung hergestellt wurde.
+Init-Dateien, die die alte Syntax ohne pre/post_connect verwenden, werden ausgeführt,
+nachdem die Verbindung hergestellt wurde.
 
 Topic-Präfixe
 ^^^^^^^^^^^^^
@@ -287,11 +292,19 @@ Start und Stop der Bindings
 Die Bindings publishen beim Start, direkt nachdem sie zum MQTT-Broker verbunden sind, eine Nachricht auf ``tinkerforge/callback/bindings/restart`` mit ``null``
 als Payload. Diese Nachricht kann als Neustart-Signal verwendet werden. Es müssen dann alle verwendeten Callbacks neugestartet werden.
 
-Wenn die Bindungs normal beendet werden, publishen sie eine ``null``-Nachticht auf ``tinkerforge/callback/bindings/shutdown``, bevor die Verbindung zum MQTT-Broker geschlossen wird.
+Wenn die Bindungs normal beendet werden, publishen sie eine ``null``-Nachticht auf
+``tinkerforge/callback/bindings/shutdown``, bevor die Verbindung zum MQTT-Broker
+geschlossen wird.
 
-Falls die Verbindung zum Broker unerwartet abbricht, wird durch den Last-Will-Mechanismus von MQTT eine ``null``-Nachricht auf ``tinkerforge/callback/bindings/last_will`` gepublisht.
+Falls die Verbindung zum Broker unerwartet abbricht, wird durch den
+Last-Will-Mechanismus von MQTT eine ``null``-Nachricht auf
+``tinkerforge/callback/bindings/last_will`` gepublisht.
 
-Diese Nachrichten werden gesendet, bevor die Verbindung zum Brick Daemon, der Wifi- oder Ethernet-Extension besteht, beziehungsweise nachdem diese geschlossen wurde. Falls auf Änderungen des Zustands dieser Verbindung reagiert werden soll, können stattdessen die Callbacks der :ref:`IP-Connection <ipcon_mqtt>` verwendet werden.
+Diese Nachrichten werden gesendet, bevor die Verbindung zum Brick Daemon, der
+WIFI- oder Ethernet-Extension besteht, beziehungsweise nachdem diese geschlossen
+wurde. Falls auf Änderungen des Zustands dieser Verbindung reagiert werden soll,
+können stattdessen die Callbacks der :ref:`IP-Connection <ipcon_mqtt>`
+verwendet werden.
 
 Kommandozeilenargumente
 -----------------------

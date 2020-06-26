@@ -195,7 +195,8 @@ returns::
 
 whenever the button is pressed and released.
 
-To deregister a callback, pass ``false`` as payload instead of ``true``. It is also possible to use ``{"register":  true}`` and ``{"register": false}`` as (de)registration arguments.
+To deregister a callback, pass ``false`` as payload instead of ``true``. It is also
+possible to use ``{"register":  true}`` and ``{"register": false}`` as (de)registration arguments.
 
 Callback configuration functions work exactly like in other bindings,
 so if a callback has to be activated and/or configured you need to:
@@ -223,7 +224,10 @@ and configures the period of the callback to 100ms::
      "tinkerforge/request/imu_v2_brick/XXYYZZ/set_all_data_period": {"period": 100}
  }
 
-Since version 2.0.8, it is possible to separate between messages to be processed before and after the connection to the Brick Daemon, WIFI, or Ethernet Extension is established. This allows registration of callbacks (i.e. the connected callback of the IP connection) before connecting. The syntax is as follows::
+Since version 2.0.8, it is possible to separate between messages to be processed
+before and after the connection to the Brick Daemon, WIFI, or Ethernet Extension
+is established. This allows registration of callbacks (i.e. the connected callback
+of the IP connection) before connecting. The syntax is as follows::
 
  {
      "pre_connect": {
@@ -235,9 +239,11 @@ Since version 2.0.8, it is possible to separate between messages to be processed
      }
  }
 
-This will register the connected and enumerate callbacks before connecting and immediately trigger an enumeration when connected.
+This will register the connected and enumerate callbacks before connecting and
+immediately trigger an enumeration when connected.
 
-Init files using the old syntax without pre/post_connect, will be executed after the connection is established.
+Init files using the old syntax without pre/post_connect, will be executed after
+the connection is established.
 
 Topic prefix
 ^^^^^^^^^^^^
@@ -273,16 +279,22 @@ To receive all messages subscribe to::
 Start up and shut down
 ----------------------
 
-The bindings will publish a message to ``tinkerforge/callback/bindings/restart`` with ``null`` as payload directly after connecting to the MQTT broker.
-This message can be used as a signal that the bindings where restarted. You then need to re-register all required callbacks.
+The bindings will publish a message to ``tinkerforge/callback/bindings/restart``
+with ``null`` as payload directly after connecting to the MQTT broker.
+This message can be used as a signal that the bindings where restarted. You then
+need to re-register all required callbacks.
 
-If the bindings are shutting down normally, they will publish a ``null`` message to ``tinkerforge/callback/bindings/shutdown`` before disconnecting from the MQTT broker.
+If the bindings are shutting down normally, they will publish a ``null`` message
+to ``tinkerforge/callback/bindings/shutdown`` before disconnecting from the MQTT broker.
 
-If the connection between the bindings and the broker is lost unexpectedly, a ``null`` message is published to ``tinkerforge/callback/bindings/last_will`` using MQTT's last will mechanism.
+If the connection between the bindings and the broker is lost unexpectedly, a
+``null`` message is published to ``tinkerforge/callback/bindings/last_will``
+using MQTT's last will mechanism.
 
-Note that these messages are sent before the the connection to the Brick Daemon, Wifi or Ethernet Extension is established respectively after this connection is disconnected. If you want to react to changes to the state of this connection, it is recommended to use the callbacks of the :ref:`IP connection <ipcon_mqtt>`.
-
-
+Note that these messages are sent before the the connection to the Brick Daemon,
+WIFI or Ethernet Extension is established respectively after this connection is
+disconnected. If you want to react to changes to the state of this connection,
+it is recommended to use the callbacks of the :ref:`IP connection <ipcon_mqtt>`.
 
 Command line arguments
 ----------------------
