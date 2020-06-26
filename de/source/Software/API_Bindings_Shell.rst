@@ -30,8 +30,15 @@ Installation
 Die Shell Bindings können installiert werden, können aber auch ohne Installation
 verwendet werden.
 
-Zur Installation wird die ``tinkerforge`` Datei in einen Ordner kopiert der
-sich im PATH befindet. Das kann unter Linux und macOS folgender Ordner sein::
+Die Bindings stehen in unserem APT Repository für Debian basierte Linux
+Distributionen bereit. Zuerst das :ref:`APT Repository einrichten
+<apt_repository_setup>` dann die Bindings installieren::
+
+ sudo apt install tinkerforge-shell
+
+Alternativ muss zur händischen Installation die ``tinkerforge`` Datei in einen
+Ordner kopiert werden, der sich im PATH befindet. Das kann unter Linux und macOS
+folgender Ordner sein::
 
  /usr/local/bin/
 
@@ -53,15 +60,18 @@ Bash Completion
 ^^^^^^^^^^^^^^^
 
 Wird Bash als Shell verwendet so kann auch das Bash Completion Skript
-``tinkerforge-bash-completion.sh`` installiert werden. Dazu die
-``tinkerforge-bash-completion.sh`` Datei in den ``/etc/bash_completion.d/``
-Ordner kopieren und dann die Bash Completions mit folgendem Befehl neu laden::
+``tinkerforge-bash-completion.sh`` installiert werden. Falls die Bindings über
+unser APT Repository installiert wurden, dann isr das Bash Completion Skript
+schon korrekt installiert und die folgenden Schritt können übersprungen werden.
+
+Zur Installation die ``tinkerforge-bash-completion.sh`` Datei in den
+``/etc/bash_completion.d/`` Ordner kopieren und dann die Bash Completions mit
+folgendem Befehl neu laden::
 
  . /etc/bash_completion
 
 Die Bash Completion für ``tinkerforge`` kann Optionen, UIDs, Brick und Bricklet
 Namen sowie Funktions- und Callback-Namen vervollständigen.
-
 
 Test eines Beispiels
 --------------------

@@ -54,3 +54,4 @@ Aktuell sind folgende Pakete verfügbar:
   * :ref:`PHP <api_bindings_php>`: ``php-tinkerforge``
   * :ref:`Python <api_bindings_python>`: ``python3-tinkerforge`` (Python 3) und ``python-tinkerforge`` (Python 2)
   * :ref:`Ruby <api_bindings_perl>`: ``ruby-tinkerforge``
+  * :ref:`Shell <api_bindings_shell>`: ``tinkerforge-shell``

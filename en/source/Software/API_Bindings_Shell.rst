@@ -28,8 +28,14 @@ Installation
 
 The Shell bindings can be installed, but can also be used without installation.
 
-To install the bindings copy the ``tinkerforge`` file to a folder that is in
-the ``PATH``. For example, this folder on Linux and macOS::
+The bindings are available in our APT repository for Debian based Linux
+distributions. Follow the :ref:`setup guide <apt_repository_setup>` then install
+the bindings::
+
+ sudo apt install tinkerforge-shell
+
+Alternatively, to install the bindings manually copy the ``tinkerforge`` file to
+a folder that is in the ``PATH``. For example, this folder on Linux and macOS::
 
  /usr/local/bin/
 
@@ -48,16 +54,19 @@ content of the ``tinkerforge.bat`` file accordingly.
 Bash Completion
 ^^^^^^^^^^^^^^^
 
-IF you're using Bash as your shell then you can use the Bash completion script
-``tinkerforge-bash-completion.sh``. To install it copy the
-``tinkerforge-bash-completion.sh`` file to the ``/etc/bash_completion.d/``
-an reload the Bash completions with the following command::
+If you're using Bash as your shell then you can use the Bash completion script
+``tinkerforge-bash-completion.sh``. If you installed the bindings from our APT
+repository, then the Bash completion script is already installed correctly and
+you can skip the following steps.
+
+To install it copy the ``tinkerforge-bash-completion.sh`` file to the
+``/etc/bash_completion.d/`` an reload the Bash completions with the following
+command::
 
  . /etc/bash_completion
 
 The Bash completion for ``tinkerforge`` can complete options, UIDs, Brick and
 Bricklet names as well as function and callback names.
-
 
 Testing an Example
 ------------------
