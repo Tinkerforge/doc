@@ -17,19 +17,45 @@ The MQTT bindings are based on the :ref:`Python bindings <api_bindings_python>`.
 Requirements
 ------------
 
-* Python 2.7.9 or newer with ``argparse`` module, Python 3.4 or newer is also supported.
-* Paho's Python library 1.3.1 or newer.
-
+* Python 2.7.9 or newer with ``argparse`` module, Python 3.4 or newer is also supported
+* Paho's Python library 1.3.1 or newer
 
 .. _api_bindings_mqtt_install:
 
 Installation
 ------------
 
-The MQTT bindings can be installed, but can also be used without installation.
+There are two ways to install the MQTT bindings:
+from our :ref:`APT repository <api_bindings_mqtt_install_apt>` for Debian
+based Linux distributions or by :ref:`manually <api_bindings_mqtt_install_manual>`
+copying the files to the correct location. But can also be used without
+installation.
 
-To install the bindings copy the ``tinkerforge_mqtt`` file to a folder that is in
-the ``PATH``. For example, this folder on Linux and macOS::
+.. _api_bindings_mqtt_install_apt:
+
+From APT Repository
+^^^^^^^^^^^^^^^^^^^
+
+The bindings are available in our APT repository for Debian based Linux
+distributions. Follow the :ref:`setup guide <apt_repository_setup>` then install
+the bindings::
+
+ sudo apt install tinkerforge-mqtt
+
+The Debian package also installs and starts the systemd services
+``tinkerforge_mqtt`` that runs the MQTT bindings.
+
+Now you're ready to test an example. The Debian package does not include the
+examples. Those are available as part of the bindings :ref:`ZIP file
+<downloads_bindings_examples>`.
+
+.. _api_bindings_mqtt_install_manual:
+
+Manual Installation
+^^^^^^^^^^^^^^^^^^^
+
+To install the bindings manually copy the ``tinkerforge_mqtt`` file to a folder
+that is in the ``PATH``. For example, this folder on Linux and macOS::
 
  /usr/local/bin/
 
@@ -44,7 +70,6 @@ To be able to call the bindings directly on Windows you have to create a
 
 If your Python is not installed in ``C:\Python27\`` then you have to adapt the
 content of the ``tinkerforge_mqtt.bat`` file accordingly.
-
 
 Testing an Example
 ------------------

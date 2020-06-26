@@ -20,13 +20,41 @@ Voraussetzungen
 ---------------
 
 * Python 2.7.9 oder neuer mit dem ``argparse`` Modul, Python 3.4 oder neuer wird auch unterstützt
-* Die Python-Bibliothek von Paho, Version 1.3.1 oder neuer.
-
+* Die Python-Bibliothek von Paho, Version 1.3.1 oder neuer
 
 .. _api_bindings_mqtt_install:
 
 Installation
 ------------
+
+Die MQTT Bindings können auf zwei Weisen installiert werden:
+von unserem :ref:`APT Repository <api_bindings_mqtt_install_apt>` für Debian
+basierte Linux Distributionen oder durch
+:ref:`händisches <api_bindings_mqtt_install_manual>` Kopieren der Dateien an
+die richtige Stelle. Die Bindings können aber auch ohne Installation genutzt werden.
+
+.. _api_bindings_mqtt_install_apt:
+
+Vom APT Repository
+^^^^^^^^^^^^^^^^^^
+
+Die Bindings stehen in unserem APT Repository für Debian basierte Linux
+Distributionen bereit. Zuerst das :ref:`APT Repository einrichten
+<apt_repository_setup>` dann die Bindings installieren::
+
+ sudo apt install tinkerforge-mqtt
+
+Das Debian Package installiert und startet auch den systemd Service
+``tinkerforge_mqtt`` der die MQTT Bindings ausführt.
+
+Dann ist auch schon alles bereit, um Beispiele testen zu können. Das Debian
+Package beinhaltet keine Beispiele. Diese sind als Teil der :ref:`ZIP Datei
+<downloads_bindings_examples>` der Bindings verfügbar.
+
+.. _api_bindings_mqtt_install_manual:
+
+Händische Installation
+^^^^^^^^^^^^^^^^^^^^^^
 
 Die MQTT-Bindings können installiert werden, können aber auch ohne Installation
 verwendet werden.

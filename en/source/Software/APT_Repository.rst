@@ -48,6 +48,7 @@ Currently, these packages are available:
   * :ref:`Java <api_bindings_java>`: ``libtinkerforge-java`` and ``libtinkerforge-java-doc``
   * :ref:`JavaScript (Node.js) <api_bindings_javascript>`: ``node-tinkerforge``
   * JSON: ``tinkerforge-json``
+  * :ref:`MQTT <api_bindings_mqtt>`: ``tinkerforge-mqtt``
   * :ref:`Octave <api_bindings_matlab>`: ``octave-tinkerforge``
   * :ref:`Perl <api_bindings_perl>`: ``libtinkerforge-perl``
   * :ref:`PHP <api_bindings_php>`: ``php-tinkerforge``
