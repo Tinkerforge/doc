@@ -41,7 +41,7 @@ Follow the :ref:`setup guide <apt_repository_setup>` then install the bindings::
 
  sudo apt install libtinkerforge-perl
 
-Now you're ready to test the examples. The Debian package does not include the
+Now you're ready to test an example. The Debian package does not include the
 examples. Those are available as part of the bindings :ref:`ZIP file
 <downloads_bindings_examples>`.
 
@@ -60,7 +60,7 @@ with ``sudo`` or as administrator::
 
  cpanm Tinkerforge
 
-Now you're ready to test the examples. The CPAN package does not include the
+Now you're ready to test an example. The CPAN package does not include the
 examples. Those are available as part of the bindings :ref:`ZIP file
 <downloads_bindings_examples>`.
 
@@ -79,7 +79,7 @@ with ``sudo`` or as administrator::
  make test
  make install
 
-Now you're ready to test the examples.
+Now you're ready to test an example.
 
 .. _api_bindings_perl_install_without:
 

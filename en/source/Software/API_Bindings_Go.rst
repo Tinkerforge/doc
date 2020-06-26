@@ -80,7 +80,7 @@ From Source
 Extract the ``github.com`` directory from the ZIP file to the ``src`` directory
 of your `GOPATH <https://golang.org/cmd/go/#hdr-GOPATH_environment_variable>`__.
 
-Now you're ready to test the examples.
+Now you're ready to test an example.
 
 Testing an Example
 ------------------

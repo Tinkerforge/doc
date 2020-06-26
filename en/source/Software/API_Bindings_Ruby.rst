@@ -43,7 +43,7 @@ Follow the :ref:`setup guide <apt_repository_setup>` then install the bindings::
 
  sudo apt install ruby-tinkerforge
 
-Now you're ready to test the examples. The Debian package does not include the
+Now you're ready to test an example. The Debian package does not include the
 examples. Those are available as part of the bindings :ref:`ZIP file
 <downloads_bindings_examples>`.
 
@@ -67,7 +67,7 @@ to execute with ``sudo`` or as administrator::
 
  gem install tinkerforge.gem
 
-Now you're ready to test the examples. The GEM does not include the
+Now you're ready to test an example. The GEM does not include the
 examples. Those are available as part of the bindings :ref:`ZIP file
 <downloads_bindings_examples>`.
 

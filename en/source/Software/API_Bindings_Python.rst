@@ -47,7 +47,7 @@ Follow the :ref:`setup guide <apt_repository_setup>` then install the bindings:
 
    sudo apt install python-tinkerforge
 
-Now you're ready to test the examples. The Debian package does not include the
+Now you're ready to test an example. The Debian package does not include the
 examples. Those are available as part of the bindings :ref:`ZIP file
 <downloads_bindings_examples>`.
 
@@ -65,7 +65,7 @@ Depending on your Python installation you might have to execute this with
 
  pip install tinkerforge
 
-Now you're ready to test the examples. The PyPI package does not include the
+Now you're ready to test an example. The PyPI package does not include the
 examples. Those are available as part of the bindings :ref:`ZIP file
 <downloads_bindings_examples>`.
 
@@ -82,7 +82,7 @@ execute this with ``sudo`` or as administrator::
 
  python setup.py install
 
-Now you're ready to test the examples.
+Now you're ready to test an example.
 
 .. _api_bindings_python_install_without:
 

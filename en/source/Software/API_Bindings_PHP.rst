@@ -40,7 +40,7 @@ Follow the :ref:`setup guide <apt_repository_setup>` then install the bindings::
 
  sudo apt install php-tinkerforge
 
-Now you're ready to test the examples. The Debian package does not include the
+Now you're ready to test an example. The Debian package does not include the
 examples. Those are available as part of the bindings :ref:`ZIP file
 <downloads_bindings_examples>`.
 
@@ -56,7 +56,7 @@ administrator::
 
  pear install Tinkerforge.tgz
 
-Now you're ready to test the examples. The PEAR package does not include the
+Now you're ready to test an example. The PEAR package does not include the
 examples. Those are available as part of the bindings :ref:`ZIP file
 <downloads_bindings_examples>`.
 

@@ -175,7 +175,7 @@ connected Stepper Brick, which you can figure out using Brick Viewer:
   PORT = 4223;
   UID = 'XXYYZZ'; % Change XXYYZZ to the UID of your Stepper Brick
 
-Now you're ready to test the examples.
+Now you're ready to test an example.
 
 Octave
 ^^^^^^
@@ -195,7 +195,7 @@ connected Stepper Brick, which you can figure out using Brick Viewer:
   PORT = 4223;
   UID = "XXYYZZ"; % Change XXYYZZ to the UID of your Stepper Brick
 
-Now you're ready to test the examples.
+Now you're ready to test an example.
 
 .. _api_bindings_matlab_octave_function_vs_script_files:
 
