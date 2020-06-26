@@ -15,12 +15,10 @@ die Bindings beinhaltet:
 
 Die Shell Bindings basieren auf den :ref:`Python Bindings <api_bindings_python>`.
 
-
 Voraussetzungen
 ---------------
 
 * Python 2.6 oder neuer mit ``argparse`` Modul, Python 3 wird auch unterstützt
-
 
 .. _api_bindings_shell_install:
 
@@ -148,7 +146,6 @@ diese kann über den Brick Viewer ermittelt werden:
 Dann ist auch schon alles bereit, um dieses Beispiel testen zu können::
 
  ./example-configuration.sh
-
 
 .. _api_bindings_shell_links:
 

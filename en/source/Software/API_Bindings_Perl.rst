@@ -12,13 +12,11 @@ The Perl bindings allow you to control :ref:`Bricks <primer_bricks>` and
   ``Makefile.PL`` script)
 * in ``examples/`` the examples for every Brick and Bricklet
 
-
 Requirements
 ------------
 
 * Perl 5.14 or newer with thread support, ``Digest::HMAC_SHA1`` module and
   ``Thread::Queue`` module 3.02 or newer
-
 
 .. _api_bindings_perl_install:
 
@@ -66,7 +64,6 @@ Now you're ready to test the examples. The CPAN package does not include the
 examples. Those are available as part of the bindings :ref:`ZIP file
 <downloads_bindings_examples>`.
 
-
 .. _api_bindings_perl_install_source:
 
 From Source
@@ -92,7 +89,6 @@ Without Installation
 You can use the bindings without having to install them. Just put the
 ``Tinkerforge/`` folder from ``source/lib/`` folder in the same folder as your
 Perl script. The section about testing an example has more details about this.
-
 
 Testing an Example
 ------------------
@@ -144,7 +140,6 @@ Now you're ready to test this example::
 
  perl example_configuration.pl
 
-
 .. _api_bindings_perl_known_problems:
 
 Known Problems
@@ -156,7 +151,6 @@ There are known deadlock problems on Windows with `Strawberry Perl
 use `Cygwin <https://www.cygwin.com/>`__ Perl that doesn't
 suffer from this problem. See this `PerlMonks thread
 <https://perlmonks.org/?node_id=1078634>`__ for some details.
-
 
 API Reference and Examples
 --------------------------

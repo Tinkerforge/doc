@@ -197,7 +197,6 @@ connected Stepper Brick, which you can figure out using Brick Viewer:
 
 Now you're ready to test the examples.
 
-
 .. _api_bindings_matlab_octave_function_vs_script_files:
 
 Function vs Script Files

@@ -12,12 +12,10 @@ The Python bindings allow you to control :ref:`Bricks <primer_bricks>` and
   install script)
 * in ``examples/`` the examples for every Brick and Bricklet
 
-
 Requirements
 ------------
 
 * Python 2.6 or newer, Python 3 is also supported
-
 
 .. _api_bindings_python_install:
 
@@ -53,7 +51,6 @@ Now you're ready to test the examples. The Debian package does not include the
 examples. Those are available as part of the bindings :ref:`ZIP file
 <downloads_bindings_examples>`.
 
-
 .. _api_bindings_python_install_pypi:
 
 From PyPI
@@ -72,7 +69,6 @@ Now you're ready to test the examples. The PyPI package does not include the
 examples. Those are available as part of the bindings :ref:`ZIP file
 <downloads_bindings_examples>`.
 
-
 .. _api_bindings_python_install_source:
 
 From Source
@@ -88,7 +84,6 @@ execute this with ``sudo`` or as administrator::
 
 Now you're ready to test the examples.
 
-
 .. _api_bindings_python_install_without:
 
 Without Installation
@@ -98,7 +93,6 @@ You can use the bindings without having to install them. Just put the
 ``tinkerforge/`` folder from ``source/`` folder in the same folder as your
 Python script and Python will automatically find the bindings. The section
 about testing an example has more details about this.
-
 
 Testing an Example
 ------------------
@@ -143,7 +137,6 @@ the bindings::
 Now you're ready to test this example::
 
  python example_configuration.py
-
 
 API Reference and Examples
 --------------------------

@@ -15,7 +15,6 @@ The JavaScript bindings allow you to control :ref:`Bricks <primer_bricks>` and
 * in ``browser/source/`` the source code of the browser version of the bindings
 * in ``browser/examples/`` the HTML examples for every Brick and Bricklet
 
-
 Requirements
 ------------
 
@@ -94,7 +93,6 @@ The browser version of the bindings can be found in the ``browser/source/``
 folder. The ``Tinkerforge.js`` file contains the complete bindings. Just copy
 this file into the same directory as your HTML file using the bindings. The
 section about testing an example has more details about this.
-
 
 Testing an Example
 ------------------
