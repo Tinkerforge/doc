@@ -176,7 +176,7 @@ Callback configuration functions work exactly like in other bindings,
 so if a callback has to be activated and/or configured you need to:
 
 * subscribe to the ``callback`` topic
-* publish the registation to the callback using the ``register`` topic
+* publish the registration to the callback using the ``register`` topic
 * publish the configuration of the callbacks properties such as period
 * publish the callback activation with the corresponding ``request`` topic
 
@@ -198,7 +198,7 @@ and configures the period of the callback to 100ms::
      "tinkerforge/request/imu_v2_brick/XXYYZZ/set_all_data_period": {"period": 100}
  }
 
-Since version 2.0.8, it is possible to separate between messages to be processed before and after the connection to the Brick Daemon, Wifi, or Ethernet Extension is established. This allows registration of callbacks (i.e. the connected callback of the IP connection) before connecting. The syntax is as follows::
+Since version 2.0.8, it is possible to separate between messages to be processed before and after the connection to the Brick Daemon, WIFI, or Ethernet Extension is established. This allows registration of callbacks (i.e. the connected callback of the IP connection) before connecting. The syntax is as follows::
 
  {
      "pre_connect": {
@@ -210,7 +210,7 @@ Since version 2.0.8, it is possible to separate between messages to be processed
      }
  }
 
-This will register the connected and enumerate callbacks before connecting and immediatly trigger an enumeration when connected.
+This will register the connected and enumerate callbacks before connecting and immediately trigger an enumeration when connected.
 
 Init files using the old syntax without pre/post_connect, will be executed after the connection is established.
 

@@ -9,7 +9,7 @@ Die MQTT-Bindings ermöglichen es :ref:`Bricks <primer_bricks>` und
 Die :ref:`ZIP Datei <downloads_bindings_examples>` für
 die Bindings beinhaltet:
 
-* ``tinkerforge_mqtt`` ein Pythonscript, dass als Übersetzungs-Proxy zwischen
+* ``tinkerforge_mqtt`` ein Python Script, dass als Übersetzungs-Proxy zwischen
   einem MQTT-Broker und einem Brick Daemon agiert
 * in ``examples/`` die Beispiele für alle Bricks und Bricklets
 
@@ -263,7 +263,7 @@ Wenn die Bindungs normal beendet werden, publishen sie eine ``null``-Nachticht a
 
 Falls die Verbindung zum Broker unerwartet abbricht, wird durch den Last-Will-Mechanismus von MQTT eine ``null``-Nachricht auf ``tinkerforge/callback/bindings/last_will`` gepublisht.
 
-Diese Nachrichten werden gesendet, bevor die Verbindung zum Brick Daemon, der Wifi- oder Ethernet-Extension besteht, beziehungweise nachdem diese geschlossen wurde. Falls auf Änderungen des Zustands dieser Verbindung reagiert werden soll, können stattdessen die Callbacks der :ref:`IP-Connection <ipcon_mqtt>` verwendet werden.
+Diese Nachrichten werden gesendet, bevor die Verbindung zum Brick Daemon, der Wifi- oder Ethernet-Extension besteht, beziehungsweise nachdem diese geschlossen wurde. Falls auf Änderungen des Zustands dieser Verbindung reagiert werden soll, können stattdessen die Callbacks der :ref:`IP-Connection <ipcon_mqtt>` verwendet werden.
 
 Kommandozeilenargumente
 -----------------------
