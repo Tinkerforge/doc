@@ -1,6 +1,4 @@
 
-:shoplink: ../../../shop/bricklets/motion-detector-bricklet.html
-
 .. include:: Motion_Detector.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
@@ -26,7 +24,7 @@ Motion Detector Bricklet
 
 .. note::
 
- The Motion Detector Bricklet is discontinued. We are selling our remaining stock. The
+ The Motion Detector Bricklet is discontinued and is no longer sold. The
  :ref:`Motion Detector Bricklet 2.0 <motion_detector_v2_bricklet>` is the recommended
  replacement.
 

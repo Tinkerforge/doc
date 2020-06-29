@@ -1,6 +1,4 @@
 
-:shoplink: ../../../shop/bricklets/motion-detector-bricklet.html
-
 .. include:: Motion_Detector.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
@@ -24,7 +22,7 @@ Motion Detector Bricklet
 
 .. note::
 
- Das Motion Detector Bricklet ist abgekündigt. Wir verkaufen noch unseren restlichen Lagerbestand.
+ Das Motion Detector Bricklet ist abgekündigt und wird nicht mehr verkauft.
  Als Ersatz wird das :ref:`Motion Detector Bricklet 2.0 <motion_detector_v2_bricklet>`
  empfohlen.
 
