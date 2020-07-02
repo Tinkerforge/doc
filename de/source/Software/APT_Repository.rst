@@ -21,7 +21,7 @@ Einrichtung
 
 **Schritt 1:** Öffentlichen GPG Schlüssel importieren::
 
- curl -s https://download.tinkerforge.com/apt/$(lsb_release -is | tr [A-Z] [a-z])/archive.key | sudo apt-key add -
+ wget https://download.tinkerforge.com/apt/$(lsb_release -is | tr [A-Z] [a-z])/archive.key -q -O - | sudo apt-key add -
 
 **Schritt 2:** APT Repository hinzufügen::
 

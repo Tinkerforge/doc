@@ -20,7 +20,7 @@ Setup
 
 **Step 1:** Import public GPG key::
 
- curl -s https://download.tinkerforge.com/apt/$(lsb_release -is | tr [A-Z] [a-z])/archive.key | sudo apt-key add -
+ wget https://download.tinkerforge.com/apt/$(lsb_release -is | tr [A-Z] [a-z])/archive.key -q -O - | sudo apt-key add -
 
 **Step 2:** Add APT repository::
 
