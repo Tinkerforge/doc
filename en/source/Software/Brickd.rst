@@ -21,15 +21,6 @@ from the machine running the user code. This allows e.g. a Brick connected
 to a PC to be controlled from a smart phone or over the Internet from
 another PC.
 
-
-Requirements
-------------
-
-* Linux with libusb 1.0.6 or newer
-* Windows XP or newer
-* macOS 10.8 (Mountain Lion) or newer
-
-
 .. _brickd_installation:
 
 Installation
