@@ -1,6 +1,4 @@
 
-:shoplink: ../../../shop/bricklets/industrial-analog-out-bricklet.html
-
 .. include:: Industrial_Analog_Out.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
@@ -23,7 +21,7 @@ Industrial Analog Out Bricklet
 
 .. note::
 
- Das Industrial Analog Out Bricklet ist abgekündigt. Wir verkaufen noch unseren restlichen Lagerbestand.
+ Das Industrial Analog Out Bricklet ist abgekündigt und wird nicht mehr verkauft.
  Als Ersatz wird das :ref:`Industrial Analog Out Bricklet 2.0 <industrial_analog_out_v2_bricklet>`
  empfohlen.
 
