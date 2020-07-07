@@ -73,9 +73,9 @@ Brick with a ``7p-10p`` Bricklet cable.
 .. note::
 
  Hardware version 2.0 does not work properly with a HAT (Zero) Brick, due to a
- hardware design flaw on the Bricklet. This flaw will be fixed in future
- hardware version 2.1. Existing GPS Bricklets can be successfully connected to
- a HAT (Zero) Brick using an :ref:`Isolator Bricklet <isolator_bricklet>`.
+ hardware design flaw on the Bricklet. This flaw is fixed in hardware version 2.1.
+ Existing hardware version 2.0 GPS Bricklets can be successfully connected to a
+ HAT (Zero) Brick using an :ref:`Isolator Bricklet <isolator_bricklet>`.
 
 Technical Specifications
 ------------------------
