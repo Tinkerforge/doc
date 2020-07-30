@@ -7,8 +7,8 @@ Software
 
    Software/Brickd
    Software/Brickv
-   Software/API_Bindings
    Software/Brick_Logger
+   Software/API_Bindings
    Software/APT_Repository
    Software/Device_Identifier
    Source_Code

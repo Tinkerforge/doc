@@ -41,6 +41,7 @@ Currently, these packages are available:
 
   * :ref:`Brick Daemon <brickd>`: ``brickd``
   * :ref:`Brick Viewer <brickv>`: ``brickv``
+  * :ref:`Brick Flash <brick_flash>`: ``brick-flash``
 
 * API Bindings
 

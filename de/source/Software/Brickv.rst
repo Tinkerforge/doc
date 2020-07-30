@@ -194,6 +194,8 @@ Anstatt den Brick Viewer die jeweils neuste Firmware herunterladen zu lassen,
 kann auch "Custom..." als Firmware gewählt werden und dann die zu flashende
 Firmware als lokale Datei über den "Browse..." Knopf ausgewählt werden.
 
+.. _brick_flash:
+
 Mit brick-flash auf Linux
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 

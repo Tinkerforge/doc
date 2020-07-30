@@ -2,10 +2,11 @@
 Die Software umfasst Dienst- und Testprogramme, die API Bindings zur Verwendung
 der Bricks und Bricklets, sowie deren Firmwares und Plugins:
 
-* :ref:`brickd`
-* :ref:`brickv`
-* :ref:`api_bindings`
-* :ref:`brick_logger`
+* :ref:`Brick Daemon (brickd) <brickd>`
+* :ref:`Brick Viewer (brickv) <brickv>`
+* :ref:`Brick Flash (brick-flash, nur Linux) <brick_flash>`
+* :ref:`Brick Logger <brick_logger>`
+* :ref:`API Bindings <api_bindings>`
 
 Die Software kann im :ref:`Downloadbereich <downloads>` heruntergeladen werden
 und wird auch über unser :ref:`APT Repository <apt_repository>` für Debian

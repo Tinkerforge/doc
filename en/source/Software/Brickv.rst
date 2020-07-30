@@ -184,6 +184,7 @@ Instead of letting the Brick Viewer download the latest firmware you can also
 select "Custom..." from the drop-down box and specify a local file via the
 "Browse..." button.
 
+.. _brick_flash:
 
 Using brick-flash on Linux
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
