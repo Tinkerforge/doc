@@ -66,7 +66,7 @@ HAT/Raspberry Pi through Micro-USB. In that case you have to ensure that the HAT
 for example by using the official Raspberry Pi universal power supply.
 The USB/DC supply voltages are measured and accessible through the API.
 
-The HAT Brick has a :ref:`real-time clock with battery backup <hat_brick_real_time_clock>`
+The HAT Brick has a :ref:`real-time clock with super-cap backup <hat_brick_real_time_clock>`
 that is directly connected to the Raspberry Pi. It can :ref:`turn the Raspberry Pi off for a specified time <hat_brick_low_power_sleep_mode>`.
 Therefore you can use the Raspberry Pi in battery powered
 applications, for example to send sensor information every hour to a cloud.

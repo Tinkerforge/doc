@@ -32,8 +32,8 @@ Features
 * **Acht** Anschlüsse für Bricklets
 * Integrierte 5,3V Stromversorgung (5,3V-28V Eingang, bis zu 4A)
 * Misst USB- und DC-Spannungsversorgung
-* Bietet eine Real-Time-Clock für den Raspberry Pi
-* Bietet Schlafmodus (low power) und Watchdog
+* Bietet eine Real-Time Clock für den Raspberry Pi
+* Bietet Schlafmodus (Low Power) und Watchdog
 
 
 .. _hat_brick_description:
@@ -60,7 +60,7 @@ dass die Stromversorgung stabile 5V bietet. Dies ist zum Beispiel mit dem offizi
 Universal-Netzteil möglich.
 Die USB/DC Versorgungsspannungen werden vom HAT gemessen und sind über die API zugänglich.
 
-Der HAT Brick bietet eine :ref:`Real-Time-Clock mit Batteriebackup <hat_brick_real_time_clock>`,
+Der HAT Brick bietet eine :ref:`Real-Time Clock mit Super-Cap Backup <hat_brick_real_time_clock>`,
 die direkt mit dem Raspberry Pi verbunden ist. Mit dieser kann :ref:`der Raspberry Pi für eine angegebene Zeit ausgeschaltet werden <hat_brick_low_power_sleep_mode>`. 
 Somit kann der Raspberry Pi auch in batteriebetriebenen
 Anwendungen eingesetzt werden, zum Beispiel in einer Anwendung, in der Sensorinformationen jede Stunde
@@ -131,7 +131,7 @@ Erste Schritte
 Um den HAT Brick verwenden zu können, muss zuerst der :ref:`Brick Daemon <brickd>`
 auf dem Raspberry Pi installiert werden. Der Brick Daemon agiert als Proxy zwischen 
 den Brickletanschlüssen des HAT Brickss und den API Bindings. Er kümmert sich auch um die
-Real-Time-Clock.
+Real-Time Clock.
 
 Der Brick Daemon kann auf dem Raspberry Pi im Terminal mit folgenden Kommandos 
 installiert werden:
@@ -225,7 +225,7 @@ Der HAT Brick kann den Raspberry Pi mit einer konfigurierbaren Ausschaltzeit aus
 Es kann auch konfiguriert werden, dass die Bricklets ebenfalls abgeschaltet werden sollen. Zusätzlich
 kann die blaue Status-LED deaktiviert, oder, um den Sleep-Modus anzuzeigen, auf ein Blink-Intervall von einer Sekunde konfiguriert werden.
 
-Während der Raspberry Pi ausgeschaltet ist, läuft die Real-Time-Clock weiter. Die Uhrzeit wird beim Neustart
+Während der Raspberry Pi ausgeschaltet ist, läuft die Real-Time Clock weiter. Die Uhrzeit wird beim Neustart
 wieder korrekt gesetzt.
 
 Die Sleep-Modi werden in der API-Beschreibung der Funktion ``SetSleepMode`` genauer beschrieben.
@@ -258,10 +258,10 @@ Aufruf in der Hauptschleife einer eigenen Anwendung, die auf dem Raspberry Pi l�
 
 .. _hat_brick_real_time_clock:
 
-Real-Time-Clock
+Real-Time Clock
 ---------------
 
-Der HAT Brick bietet eine I2C Real-Time-Clock (Echtzeituhr), welche direkt mit 
+Der HAT Brick bietet eine I2C Real-Time Clock (Echtzeituhr), welche direkt mit
 dem Raspberry Pi verbunden ist. Die Uhr wird automatisch vom Raspberry Pi erkannt. Mit ``dmesg``
 kann überprüft werden ob die Uhr korrekt erkannt wurde. Es sollte ein Eintrag
 wie der folgende existieren::
@@ -275,12 +275,12 @@ werden. Anschließend kann mit folgenden Kommando:
 
 	hwclock --systohc
 
-die Uhrzeit des Raspberry Pi auf die Real-Time-Clock übertragen werden. Dies ist nur einmal notwendig.
+die Uhrzeit des Raspberry Pi auf die Real-Time Clock übertragen werden. Dies ist nur einmal notwendig.
 
-Steht NTP zur Verfügung, so wird die Real-Time-Clock automatisch aktualisiert.
+Steht NTP zur Verfügung, so wird die Real-Time Clock automatisch aktualisiert.
 
 Der Brick Daemon stellt sicher, dass Datum und Uhrzeit automatisch nach einem Neustart von der
-Real-Time-Clock übernommen werden.
+Real-Time Clock übernommen werden.
 
 Ohne Brick Daemon kann dies mit dem folgenden Kommando durchgeführt werden:
 
