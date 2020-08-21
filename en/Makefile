@@ -1,9 +1,15 @@
 # Makefile for Sphinx documentation
 #
 
+# Use virtualenv on tinkerforge.com
+ifeq ($(shell hostname -f),tinkerforge)
+        SPHINXBUILD = /home/${USER}/sphinx-virtualenv/bin/sphinx-build
+else
+        SPHINXBUILD = sphinx-build
+endif
+
 # You can set these variables from the command line.
 SPHINXOPTS    =
-SPHINXBUILD   = sphinx-build
 PAPER         =
 BUILDDIR      = build-in-progress
 
