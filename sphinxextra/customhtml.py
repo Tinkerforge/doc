@@ -69,10 +69,10 @@ class CustomHTMLTranslator_v12(CustomHTMLTranslator):
             text = text.replace('$nbsp;', '&nbsp;')
         return text
 
-if sphinx_version.startswith('1.2'):
-    sphinx.writers.html.SmartyPantsHTMLTranslator = CustomHTMLTranslator_v12
-else:
+if sphinx_version.startswith('1.1'):
     sphinx.writers.html.SmartyPantsHTMLTranslator = CustomHTMLTranslator_v11
+else:
+    sphinx.writers.html.SmartyPantsHTMLTranslator = CustomHTMLTranslator_v12
 
 def setup(app):
     pass
