@@ -33,7 +33,9 @@ tool_infos = \
     ToolInfo('Brick Logger', 'brick_logger')
 ]
 
-BindingsInfo = namedtuple('BindingsInfo', 'display_name url_part software_doc_suffix is_programming_language is_released has_authentication_example has_download misc_docs tutorial')
+BindingsInfo = namedtuple('BindingsInfo', 'display_name url_part software_doc_suffix is_programming_language is_released has_authentication_example has_download misc_docs tutorial is_hardware_supported')
+
+MiscDoc = namedtuple('miscdoc', 'html_link rst_link name_dict has_examples show_in_api_table')
 
 bindings_infos = \
 [
@@ -45,12 +47,30 @@ bindings_infos = \
                  has_authentication_example=True,
                  has_download=True,
                  misc_docs=[
-                     ('IPConnection_{suffix}', {'en': 'IP Connection', 'de': 'IP Connection'}),
-                     ('API_Bindings_{suffix}', {'en': 'Usage', 'de': 'Benutzung'}),
-                     ('API_Bindings_{suffix}_iOS', {'en': 'Usage (iOS)', 'de': 'Benutzung (iOS)'})
+                     MiscDoc('IPConnection_{suffix}', 'ip_connection_{suffix}', {'en': 'IP Connection', 'de': 'IP Connection'}, True, True),
+                     MiscDoc('API_Bindings_{suffix}', 'api_bindings_{suffix}',  {'en': 'Usage', 'de': 'Benutzung'}, False, False),
+                     MiscDoc('API_Bindings_{suffix}_iOS', 'api_bindings_{suffix}_ios', {'en': 'Usage (iOS)', 'de': 'Benutzung (iOS)'}, False, False)
                  ],
                  tutorial={'en': 'https://www.cprogramming.com/',
-                           'de': 'https://www.cprogramming.com/'}), # http://www.c-howto.de/
+                           'de': 'https://www.cprogramming.com/'}, # http://www.c-howto.de/
+                 is_hardware_supported=lambda device_info: True),
+    BindingsInfo(display_name='C/C++ for Microcontrollers',
+                 url_part='uc',
+                 software_doc_suffix='uC',
+                 is_programming_language=True,
+                 is_released=True,
+                 has_authentication_example=False,
+                 has_download=True,
+                 misc_docs=[
+                     MiscDoc('API_Bindings_{suffix}', 'api_bindings_{suffix}',  {'en': 'Usage', 'de': 'Benutzung'}, False, False),
+                     MiscDoc('API_Bindings_{suffix}_HAL_Arduino', 'api_bindings_{suffix}_hal_arduino', {'en': 'HAL Arduino', 'de': 'HAL Arduino'}, True, True),
+                     MiscDoc('API_Bindings_{suffix}_HAL_Arduino_ESP32', 'api_bindings_{suffix}_hal_arduino_esp32', {'en': 'HAL Arduino ESP32', 'de': 'HAL Arduino ESP32'}, True, True),
+                     MiscDoc('API_Bindings_{suffix}_HAL_Linux', 'api_bindings_{suffix}_hal_linux', {'en': 'HAL Linux', 'de': 'HAL Linux'}, True, True),
+                     MiscDoc('API_Bindings_{suffix}_HAL_Raspberry_Pi', 'api_bindings_{suffix}_hal_raspberry_pi', {'en': 'HAL Raspberry Pi', 'de': 'HAL Raspberry Pi'}, True, True),
+                 ],
+                 tutorial={'en': 'https://www.cprogramming.com/',
+                           'de': 'https://www.cprogramming.com/'}, # http://www.c-howto.de/
+                 is_hardware_supported=lambda device_info: device_info.has_comcu),
     BindingsInfo(display_name='C#',
                  url_part='csharp',
                  software_doc_suffix='CSharp',
@@ -59,12 +79,13 @@ bindings_infos = \
                  has_authentication_example=True,
                  has_download=True,
                  misc_docs=[
-                     ('IPConnection_{suffix}', {'en': 'IP Connection', 'de': 'IP Connection'}),
-                     ('API_Bindings_{suffix}', {'en': 'Usage', 'de': 'Benutzung'}),
-                     ('API_Bindings_{suffix}_Windows_Phone', {'en': 'Usage (Windows Phone)', 'de': 'Benutzung (Win Phone)'})
+                     MiscDoc('IPConnection_{suffix}', 'ip_connection_{suffix}', {'en': 'IP Connection', 'de': 'IP Connection'}, True, True),
+                     MiscDoc('API_Bindings_{suffix}', 'api_bindings_{suffix}',  {'en': 'Usage', 'de': 'Benutzung'}, False, False),
+                     MiscDoc('API_Bindings_{suffix}_Windows_Phone', 'api_bindings_{suffix}_windows_phone', {'en': 'Usage (Windows Phone)', 'de': 'Benutzung (Win Phone)'}, False, False)
                  ],
                  tutorial={'en': 'https://csharp.net-tutorials.com/',
-                           'de': 'https://csharp.net-tutorials.com/'}),
+                           'de': 'https://csharp.net-tutorials.com/'},
+                 is_hardware_supported=lambda device_info: True),
     BindingsInfo(display_name='Delphi/Lazarus',
                  url_part='delphi',
                  software_doc_suffix='Delphi',
@@ -73,11 +94,12 @@ bindings_infos = \
                  has_authentication_example=True,
                  has_download=True,
                  misc_docs=[
-                     ('IPConnection_{suffix}', {'en': 'IP Connection', 'de': 'IP Connection'}),
-                     ('API_Bindings_{suffix}', {'en': 'Usage', 'de': 'Benutzung'})
+                     MiscDoc('IPConnection_{suffix}', 'ip_connection_{suffix}', {'en': 'IP Connection', 'de': 'IP Connection'}, True, True),
+                     MiscDoc('API_Bindings_{suffix}', 'api_bindings_{suffix}',  {'en': 'Usage', 'de': 'Benutzung'}, False, False)
                  ],
                  tutorial={'en': 'http://www.delphibasics.co.uk/',
-                           'de': 'https://www.delphi-treff.de/tutorials/grundlagen-tutorials/'}),
+                           'de': 'https://www.delphi-treff.de/tutorials/grundlagen-tutorials/'},
+                 is_hardware_supported=lambda device_info: True),
     BindingsInfo(display_name='Go',
                  url_part='go',
                  software_doc_suffix='Go',
@@ -86,11 +108,12 @@ bindings_infos = \
                  has_authentication_example=True,
                  has_download=True,
                  misc_docs=[
-                     ('IPConnection_{suffix}', {'en': 'IP Connection', 'de': 'IP Connection'}),
-                     ('API_Bindings_{suffix}', {'en': 'Usage', 'de': 'Benutzung'})
+                     MiscDoc('IPConnection_{suffix}', 'ip_connection_{suffix}', {'en': 'IP Connection', 'de': 'IP Connection'}, True, True),
+                     MiscDoc('API_Bindings_{suffix}', 'api_bindings_{suffix}',  {'en': 'Usage', 'de': 'Benutzung'}, False, False)
                  ],
                  tutorial={'en': 'https://tour.golang.org',
-                           'de': 'https://tour.golang.org'}),
+                           'de': 'https://tour.golang.org'},
+                 is_hardware_supported=lambda device_info: True),
     BindingsInfo(display_name='Java',
                  url_part='java',
                  software_doc_suffix='Java',
@@ -99,12 +122,13 @@ bindings_infos = \
                  has_authentication_example=True,
                  has_download=True,
                  misc_docs=[
-                     ('IPConnection_{suffix}', {'en': 'IP Connection', 'de': 'IP Connection'}),
-                     ('API_Bindings_{suffix}', {'en': 'Usage', 'de': 'Benutzung'}),
-                     ('API_Bindings_{suffix}_Android', {'en': 'Usage (Android)', 'de': 'Benutzung (Android)'})
+                     MiscDoc('IPConnection_{suffix}', 'ip_connection_{suffix}', {'en': 'IP Connection', 'de': 'IP Connection'}, True, True),
+                     MiscDoc('API_Bindings_{suffix}', 'api_bindings_{suffix}',  {'en': 'Usage', 'de': 'Benutzung'}, False, False),
+                     MiscDoc('API_Bindings_{suffix}_Android', 'api_bindings_{suffix}_android', {'en': 'Usage (Android)', 'de': 'Benutzung (Android)'}, False, False)
                  ],
                  tutorial={'en': 'https://docs.oracle.com/javase/tutorial/',
-                           'de': 'https://docs.oracle.com/javase/tutorial/'}), # http://openbook.galileocomputing.de/javainsel/
+                           'de': 'https://docs.oracle.com/javase/tutorial/'}, # http://openbook.galileocomputing.de/javainsel/
+                 is_hardware_supported=lambda device_info: True),
     BindingsInfo(display_name='JavaScript',
                  url_part='javascript',
                  software_doc_suffix='JavaScript',
@@ -113,11 +137,12 @@ bindings_infos = \
                  has_authentication_example=True,
                  has_download=True,
                  misc_docs=[
-                     ('IPConnection_{suffix}', {'en': 'IP Connection', 'de': 'IP Connection'}),
-                     ('API_Bindings_{suffix}', {'en': 'Usage', 'de': 'Benutzung'})
+                     MiscDoc('IPConnection_{suffix}', 'ip_connection_{suffix}', {'en': 'IP Connection', 'de': 'IP Connection'}, True, True),
+                     MiscDoc('API_Bindings_{suffix}', 'api_bindings_{suffix}',  {'en': 'Usage', 'de': 'Benutzung'}, False, False)
                  ],
                  tutorial={'en': 'FIXME',
-                           'de': 'FIXME'}),
+                           'de': 'FIXME'},
+                 is_hardware_supported=lambda device_info: True),
     BindingsInfo(display_name='LabVIEW',
                  url_part='labview',
                  software_doc_suffix='LabVIEW',
@@ -126,11 +151,12 @@ bindings_infos = \
                  has_authentication_example=True,
                  has_download=True,
                  misc_docs=[
-                     ('IPConnection_{suffix}', {'en': 'IP Connection', 'de': 'IP Connection'}),
-                     ('API_Bindings_{suffix}', {'en': 'Usage', 'de': 'Benutzung'})
+                     MiscDoc('IPConnection_{suffix}', 'ip_connection_{suffix}', {'en': 'IP Connection', 'de': 'IP Connection'}, True, True),
+                     MiscDoc('API_Bindings_{suffix}', 'api_bindings_{suffix}',  {'en': 'Usage', 'de': 'Benutzung'}, False, False)
                  ],
                  tutorial={'en': 'FIXME',
-                           'de': 'FIXME'}),
+                           'de': 'FIXME'},
+                 is_hardware_supported=lambda device_info: True),
     BindingsInfo(display_name='Mathematica',
                  url_part='mathematica',
                  software_doc_suffix='Mathematica',
@@ -139,11 +165,12 @@ bindings_infos = \
                  has_authentication_example=True,
                  has_download=True,
                  misc_docs=[
-                     ('IPConnection_{suffix}', {'en': 'IP Connection', 'de': 'IP Connection'}),
-                     ('API_Bindings_{suffix}', {'en': 'Usage', 'de': 'Benutzung'})
+                     MiscDoc('IPConnection_{suffix}', 'ip_connection_{suffix}', {'en': 'IP Connection', 'de': 'IP Connection'}, True, True),
+                     MiscDoc('API_Bindings_{suffix}', 'api_bindings_{suffix}',  {'en': 'Usage', 'de': 'Benutzung'}, False, False)
                  ],
                  tutorial={'en': 'FIXME',
-                           'de': 'FIXME'}),
+                           'de': 'FIXME'},
+                 is_hardware_supported=lambda device_info: True),
     BindingsInfo(display_name='MATLAB/Octave',
                  url_part='matlab',
                  software_doc_suffix='MATLAB',
@@ -152,11 +179,12 @@ bindings_infos = \
                  has_authentication_example=True,
                  has_download=True,
                  misc_docs=[
-                     ('IPConnection_{suffix}', {'en': 'IP Connection', 'de': 'IP Connection'}),
-                     ('API_Bindings_{suffix}', {'en': 'Usage', 'de': 'Benutzung'})
+                     MiscDoc('IPConnection_{suffix}', 'ip_connection_{suffix}', {'en': 'IP Connection', 'de': 'IP Connection'}, True, True),
+                     MiscDoc('API_Bindings_{suffix}', 'api_bindings_{suffix}',  {'en': 'Usage', 'de': 'Benutzung'}, False, False)
                  ],
                  tutorial={'en': 'FIXME',
-                           'de': 'FIXME'}),
+                           'de': 'FIXME'},
+                 is_hardware_supported=lambda device_info: True),
     BindingsInfo(display_name='MQTT',
                  url_part='mqtt',
                  software_doc_suffix='MQTT',
@@ -165,11 +193,12 @@ bindings_infos = \
                  has_authentication_example=True,
                  has_download=True,
                  misc_docs=[
-                     ('IPConnection_{suffix}', {'en': 'IP Connection', 'de': 'IP Connection'}),
-                     ('API_Bindings_{suffix}', {'en': 'Usage', 'de': 'Benutzung'})
+                     MiscDoc('IPConnection_{suffix}', 'ip_connection_{suffix}', {'en': 'IP Connection', 'de': 'IP Connection'}, True, True),
+                     MiscDoc('API_Bindings_{suffix}', 'api_bindings_{suffix}',  {'en': 'Usage', 'de': 'Benutzung'}, False, False)
                  ],
                  tutorial={'en': 'FIXME',
-                           'de': 'FIXME'}),
+                           'de': 'FIXME'},
+                 is_hardware_supported=lambda device_info: True),
     BindingsInfo(display_name='openHAB',
                  url_part='openhab',
                  software_doc_suffix='openHAB',
@@ -178,10 +207,11 @@ bindings_infos = \
                  has_authentication_example=False,
                  has_download=False, # FIXME
                  misc_docs=[
-                     ('API_Bindings_{suffix}', {'en': 'Usage', 'de': 'Benutzung'})
+                     MiscDoc('API_Bindings_{suffix}', 'api_bindings_{suffix}',  {'en': 'Usage', 'de': 'Benutzung'}, False, False)
                  ],
                  tutorial={'en': 'FIXME',
-                           'de': 'FIXME'}),
+                           'de': 'FIXME'},
+                 is_hardware_supported=lambda device_info: True),
     BindingsInfo(display_name='Perl',
                  url_part='perl',
                  software_doc_suffix='Perl',
@@ -190,11 +220,12 @@ bindings_infos = \
                  has_authentication_example=True,
                  has_download=True,
                  misc_docs=[
-                     ('IPConnection_{suffix}', {'en': 'IP Connection', 'de': 'IP Connection'}),
-                     ('API_Bindings_{suffix}', {'en': 'Usage', 'de': 'Benutzung'})
+                     MiscDoc('IPConnection_{suffix}', 'ip_connection_{suffix}', {'en': 'IP Connection', 'de': 'IP Connection'}, True, True),
+                     MiscDoc('API_Bindings_{suffix}', 'api_bindings_{suffix}',  {'en': 'Usage', 'de': 'Benutzung'}, False, False)
                  ],
                  tutorial={'en': 'FIXME',
-                           'de': 'FIXME'}),
+                           'de': 'FIXME'},
+                 is_hardware_supported=lambda device_info: True),
     BindingsInfo(display_name='PHP',
                  url_part='php',
                  software_doc_suffix='PHP',
@@ -203,11 +234,12 @@ bindings_infos = \
                  has_authentication_example=True,
                  has_download=True,
                  misc_docs=[
-                     ('IPConnection_{suffix}', {'en': 'IP Connection', 'de': 'IP Connection'}),
-                     ('API_Bindings_{suffix}', {'en': 'Usage', 'de': 'Benutzung'})
+                     MiscDoc('IPConnection_{suffix}', 'ip_connection_{suffix}', {'en': 'IP Connection', 'de': 'IP Connection'}, True, True),
+                     MiscDoc('API_Bindings_{suffix}', 'api_bindings_{suffix}',  {'en': 'Usage', 'de': 'Benutzung'}, False, False)
                  ],
                  tutorial={'en': 'https://www.php.net/manual/en/getting-started.php',
-                           'de': 'https://www.php.net/manual/de/getting-started.php'}),
+                           'de': 'https://www.php.net/manual/de/getting-started.php'},
+                 is_hardware_supported=lambda device_info: True),
     BindingsInfo(display_name='Python',
                  url_part='python',
                  software_doc_suffix='Python',
@@ -216,11 +248,12 @@ bindings_infos = \
                  has_authentication_example=True,
                  has_download=True,
                  misc_docs=[
-                     ('IPConnection_{suffix}', {'en': 'IP Connection', 'de': 'IP Connection'}),
-                     ('API_Bindings_{suffix}', {'en': 'Usage', 'de': 'Benutzung'})
+                     MiscDoc('IPConnection_{suffix}', 'ip_connection_{suffix}', {'en': 'IP Connection', 'de': 'IP Connection'}, True, True),
+                     MiscDoc('API_Bindings_{suffix}', 'api_bindings_{suffix}',  {'en': 'Usage', 'de': 'Benutzung'}, False, False)
                  ],
                  tutorial={'en': 'https://www.python.org/about/gettingstarted/', # http://getpython3.com/diveintopython3/
-                           'de': 'https://www.python.org/about/gettingstarted/'}),
+                           'de': 'https://www.python.org/about/gettingstarted/'},
+                 is_hardware_supported=lambda device_info: True),
     BindingsInfo(display_name='Ruby',
                  url_part='ruby',
                  software_doc_suffix='Ruby',
@@ -229,11 +262,12 @@ bindings_infos = \
                  has_authentication_example=True,
                  has_download=True,
                  misc_docs=[
-                     ('IPConnection_{suffix}', {'en': 'IP Connection', 'de': 'IP Connection'}),
-                     ('API_Bindings_{suffix}', {'en': 'Usage', 'de': 'Benutzung'})
+                     MiscDoc('IPConnection_{suffix}', 'ip_connection_{suffix}', {'en': 'IP Connection', 'de': 'IP Connection'}, True, True),
+                     MiscDoc('API_Bindings_{suffix}', 'api_bindings_{suffix}',  {'en': 'Usage', 'de': 'Benutzung'}, False, False)
                  ],
                  tutorial={'en': 'https://www.ruby-lang.org/en/documentation/quickstart/',
-                           'de': 'https://www.ruby-lang.org/de/documentation/quickstart/'}),
+                           'de': 'https://www.ruby-lang.org/de/documentation/quickstart/'},
+                 is_hardware_supported=lambda device_info: True),
     BindingsInfo(display_name='Rust',
                  url_part='rust',
                  software_doc_suffix='Rust',
@@ -242,11 +276,12 @@ bindings_infos = \
                  has_authentication_example=True,
                  has_download=True,
                  misc_docs=[
-                     ('IPConnection_{suffix}', {'en': 'IP Connection', 'de': 'IP Connection'}),
-                     ('API_Bindings_{suffix}', {'en': 'Usage', 'de': 'Benutzung'})
+                     MiscDoc('IPConnection_{suffix}', 'ip_connection_{suffix}', {'en': 'IP Connection', 'de': 'IP Connection'}, True, True),
+                     MiscDoc('API_Bindings_{suffix}', 'api_bindings_{suffix}',  {'en': 'Usage', 'de': 'Benutzung'}, False, False)
                  ],
                  tutorial={'en': 'https://doc.rust-lang.org/tutorial.html',
-                           'de': 'https://doc.rust-lang.org/tutorial.html'}),
+                           'de': 'https://doc.rust-lang.org/tutorial.html'},
+                 is_hardware_supported=lambda device_info: True),
     BindingsInfo(display_name='Shell',
                  url_part='shell',
                  software_doc_suffix='Shell',
@@ -255,11 +290,12 @@ bindings_infos = \
                  has_authentication_example=True,
                  has_download=True,
                  misc_docs=[
-                     ('IPConnection_{suffix}', {'en': 'IP Connection', 'de': 'IP Connection'}),
-                     ('API_Bindings_{suffix}', {'en': 'Usage', 'de': 'Benutzung'})
+                     MiscDoc('IPConnection_{suffix}', 'ip_connection_{suffix}', {'en': 'IP Connection', 'de': 'IP Connection'}, True, True),
+                     MiscDoc('API_Bindings_{suffix}', 'api_bindings_{suffix}',  {'en': 'Usage', 'de': 'Benutzung'}, False, False)
                  ],
                  tutorial={'en': 'FIXME',
-                           'de': 'FIXME'}),
+                           'de': 'FIXME'},
+                 is_hardware_supported=lambda device_info: True),
     #BindingsInfo(display_name='Tinkerforge Visual Programming Language (TVPL)',
     #             url_part='tvpl',
     #             software_doc_suffix='TVPL',
@@ -268,8 +304,8 @@ bindings_infos = \
     #             has_authentication_example=False,
     #             has_download=True,
     #             misc_docs=[
-    #                 ('IPConnection_{suffix}', {'en': 'IP Connection', 'de': 'IP Connection'}),
-    #                 ('API_Bindings_{suffix}', {'en': 'Usage', 'de': 'Benutzung'})
+    #                 ('IPConnection_{suffix}', 'ip_connection_{suffix}', {'en': 'IP Connection', 'de': 'IP Connection'}),
+    #                 ('API_Bindings_{suffix}', 'api_bindings_{suffix}',  {'en': 'Usage', 'de': 'Benutzung'})
     #             ],
     #             tutorial={'en': 'FIXME',
     #                       'de': 'FIXME'}),
@@ -281,11 +317,12 @@ bindings_infos = \
                  has_authentication_example=True,
                  has_download=True,
                  misc_docs=[
-                     ('IPConnection_{suffix}', {'en': 'IP Connection', 'de': 'IP Connection'}),
-                     ('API_Bindings_{suffix}', {'en': 'Usage', 'de': 'Benutzung'})
+                     MiscDoc('IPConnection_{suffix}', 'ip_connection_{suffix}', {'en': 'IP Connection', 'de': 'IP Connection'}, True, True),
+                     MiscDoc('API_Bindings_{suffix}', 'api_bindings_{suffix}',  {'en': 'Usage', 'de': 'Benutzung'}, False, False)
                  ],
                  tutorial={'en': 'http://howtostartprogramming.com/vb-net/',
-                           'de': 'http://howtostartprogramming.com/vb-net/'}), # http://openbook.galileocomputing.de/vb_net/index.htm
+                           'de': 'http://howtostartprogramming.com/vb-net/'}, # http://openbook.galileocomputing.de/vb_net/index.htm
+                 is_hardware_supported=lambda device_info: True),
     BindingsInfo(display_name='TCP/IP',
                  url_part='tcpip',
                  software_doc_suffix='TCPIP',
@@ -294,11 +331,12 @@ bindings_infos = \
                  has_authentication_example=False,
                  has_download=False,
                  misc_docs=[
-                     ('IPConnection_{suffix}', {'en': 'IP Connection', 'de': 'IP Connection'}),
-                     ('API_Bindings_{suffix}', {'en': 'Usage', 'de': 'Benutzung'})
+                     MiscDoc('IPConnection_{suffix}', 'ip_connection_{suffix}', {'en': 'IP Connection', 'de': 'IP Connection'}, True, True),
+                     MiscDoc('API_Bindings_{suffix}', 'api_bindings_{suffix}',  {'en': 'Usage', 'de': 'Benutzung'}, False, False)
                  ],
                  tutorial={'en': 'FIXME',
-                           'de': 'FIXME'}),
+                           'de': 'FIXME'},
+                 is_hardware_supported=lambda device_info: True),
     BindingsInfo(display_name='Modbus',
                  url_part='modbus',
                  software_doc_suffix='Modbus',
@@ -307,11 +345,12 @@ bindings_infos = \
                  has_authentication_example=False,
                  has_download=False,
                  misc_docs=[
-                     ('IPConnection_{suffix}', {'en': 'IP Connection', 'de': 'IP Connection'}),
-                     ('API_Bindings_{suffix}', {'en': 'Usage', 'de': 'Benutzung'})
+                     MiscDoc('IPConnection_{suffix}', 'ip_connection_{suffix}', {'en': 'IP Connection', 'de': 'IP Connection'}, True, True),
+                     MiscDoc('API_Bindings_{suffix}', 'api_bindings_{suffix}',  {'en': 'Usage', 'de': 'Benutzung'}, False, False)
                  ],
                  tutorial={'en': 'FIXME',
-                           'de': 'FIXME'}),
+                           'de': 'FIXME'},
+                 is_hardware_supported=lambda device_info: True),
 ]
 
 extension_infos = \
@@ -426,6 +465,8 @@ def collect_example_info(path):
         for bindings_info in bindings_infos:
             if not bindings_info.is_programming_language:
                 continue
+            if not bindings_info.is_hardware_supported(device_info):
+                continue
 
             assert bindings_info.url_part != None, bindings_info
 
@@ -436,8 +477,13 @@ def collect_example_info(path):
 
             examples_label = '_{0}_{1}_examples'.format(device_info.ref_name, bindings_info.url_part)
 
-            with open(os.path.join(path, 'source', 'Software', category, '{0}_{1}.rst'.format(device_info.software_doc_prefix, bindings_info.software_doc_suffix)), 'r') as f:
-                has_examples[device_info.identifier][bindings_info.url_part] = examples_label in f.read()
+            doc_path = os.path.join(path, 'source', 'Software', category, '{0}_{1}.rst'.format(device_info.software_doc_prefix, bindings_info.software_doc_suffix))
+
+            if not os.path.exists(doc_path):
+                has_examples[device_info.identifier][bindings_info.url_part] = False
+            else:
+                with open(doc_path, 'r') as f:
+                    has_examples[device_info.identifier][bindings_info.url_part] = examples_label in f.read()
 
 def make_primer_table(device_infos):
     table_head = {
@@ -634,7 +680,7 @@ def make_download_bindings_table():
                                bindings_info.url_part,
                                archive[lang],
                                bindings_and_examples[lang],
-                               *(bindings_versions[bindings_info.url_part] if bindings_info.display_name != 'openHAB' else (2, 0 ,0))))
+                               *(bindings_versions[bindings_info.url_part] if bindings_info.url_part not in ('openhab', 'uc') else (2, 0 ,0))))
 
     return table_head[lang] + '\n'.join(rows) + '\n'
 
@@ -700,7 +746,7 @@ def make_download_brick_firmwares_table():
 
     for brick_info in sorted(brick_infos, key=lambda x: x.short_display_name.lower()):
         if brick_info.firmware_url_part != None and brick_info.is_documented:
-            if brick_info.firmware_url_part in ['hat', 'hat_zero']:
+            if brick_info.has_comcu:
                 firmware_version = plugin_versions.get(brick_info.firmware_url_part, (0,0,0))
                 category = 'bricklet'
                 extension = 'zbin'
@@ -869,17 +915,6 @@ def make_api_bindings_links_table(bindings_info):
  :widths: 20, 10, 10
 
 {0}
- **Bricks** | |
-{1}
- | |
- **Bricks (Discontinued)** | |
-{2}
- | |
- **Bricklets** | |
-{3}
- | |
- **Bricklets (Discontinued)** | |
-{4}
 """,
     'de': """.. csv-table::
  :header: "", "API", "Beispiele"
@@ -887,23 +922,17 @@ def make_api_bindings_links_table(bindings_info):
  :widths: 20, 10, 10
 
 {0}
- **Bricks** | |
-{1}
- | |
- **Bricks (Abgekündigt)** | |
-{2}
- | |
- **Bricklets** | |
-{3}
- | |
- **Bricklets (Abgekündigt)** | |
-{4}
 """
     }
 
-    ipcon_row = {
-    'en': ' IP Connection | :ref:`API <ipcon_{0}_api>` | :ref:`Examples <ipcon_{0}_examples>`',
-    'de': ' IP Connection | :ref:`API <ipcon_{0}_api>` | :ref:`Beispiele <ipcon_{0}_examples>`'
+    misc_with_examples_row = {
+    'en': ' :ref:`{0} <{1}>` | :ref:`API <{1}_api>` | :ref:`Examples <{1}_examples>`',
+    'de': ' :ref:`{0} <{1}>` | :ref:`API <{1}_api>` | :ref:`Beispiele <{1}_examples>`'
+    }
+
+    misc_without_examples_row = {
+    'en': ' :ref:`{0} <{1}>` | :ref:`API <{1}_api>` |',
+    'de': ' :ref:`{0} <{1}>` | :ref:`API <{1}_api>` |'
     }
 
     device_with_examples_row = {
@@ -919,6 +948,9 @@ def make_api_bindings_links_table(bindings_info):
     brick_lines = [[], []]
     for brick_info in sorted(brick_infos, key=lambda x: x.short_display_name.lower()):
         if not brick_info.is_documented or not brick_info.has_bindings:
+            continue
+
+        if not bindings_info.is_hardware_supported(brick_info):
             continue
 
         if has_examples[brick_info.identifier][bindings_info.url_part]:
@@ -938,6 +970,9 @@ def make_api_bindings_links_table(bindings_info):
         if not bricklet_info.is_documented or not bricklet_info.has_bindings:
             continue
 
+        if not bindings_info.is_hardware_supported(bricklet_info):
+            continue
+
         if has_examples[bricklet_info.identifier][bindings_info.url_part]:
             device_row = device_with_examples_row
         else:
@@ -950,23 +985,29 @@ def make_api_bindings_links_table(bindings_info):
         else:
             bricklet_lines[1].append(line)
 
-    has_ipcon = False
+    misc_lines = []
+    for m in bindings_info.misc_docs:
+        if not m.show_in_api_table:
+            continue
+        if m.has_examples:
+            misc_lines.append(misc_with_examples_row[lang].format(m.name_dict[lang], m.rst_link.format(suffix=bindings_info.software_doc_suffix)))
+        else:
+            misc_lines.append(misc_without_examples_row[lang].format(m.name_dict[lang], m.rst_link.format(suffix=bindings_info.software_doc_suffix)))
 
-    for misc_doc in bindings_info.misc_docs:
-        if misc_doc[0].startswith('IPConnection'):
-            has_ipcon = True
-            break
+    subtables = []
+    for name, subtable in [
+                     ({'en': 'Miscellaneous', 'de': 'Sonstiges'}, misc_lines),
+                     ({'en': 'Bricks', 'de': 'Bricks'}, brick_lines[0]),
+                     ({'en': 'Bricks (Discontinued)', 'de': 'Bricks (Abgekündigt)'}, brick_lines[1]),
+                     ({'en': 'Bricklets', 'de': 'Bricklets'}, bricklet_lines[0]),
+                     ({'en': 'Bricklets (Discontinued)', 'de': 'Bricklets (Abgekündigt)'}, bricklet_lines[1]),
+                     ]:
+        if len(subtable) > 0:
+            template = """ **{name}** | |
+{lines}"""
+            subtables.append(template.format(name=name[lang], lines='\n'.join(subtable)))
 
-    if has_ipcon:
-        ipcon = ipcon_row[lang].format(bindings_info.url_part) + '\n | |'
-    else:
-        ipcon = ''
-
-    return table_head[lang].format(ipcon,
-                                   '\n'.join(brick_lines[0]),
-                                   '\n'.join(brick_lines[1]),
-                                   '\n'.join(bricklet_lines[0]),
-                                   '\n'.join(bricklet_lines[1]))
+    return table_head[lang].format('\n | |\n'.join(subtables))
 
 def make_llproto_links_table(bindings_info):
     table_head = {
@@ -975,22 +1016,14 @@ def make_llproto_links_table(bindings_info):
  :delim: |
  :widths: 20, 20
 
- **Bricks** |
 {0}
- |
- **Bricklets** |
-{1}
 """,
     'de': """.. csv-table::
  :header: "", "API"
  :delim: |
  :widths: 20, 20
 
- **Bricks** |
 {0}
- |
- **Bricklets** |
-{1}
 """
     }
 
@@ -1001,16 +1034,24 @@ def make_llproto_links_table(bindings_info):
 
     brick_lines = []
     for brick_info in sorted(brick_infos, key=lambda x: x.short_display_name.lower()):
-        if brick_info.is_documented and brick_info.has_bindings:
+        if brick_info.is_documented and brick_info.has_bindings and bindings_info.is_hardware_supported(brick_info):
             brick_lines.append(device_row[lang].format(brick_info.ref_name, bindings_info.url_part, brick_info.short_display_name))
 
     bricklet_lines = []
     for bricklet_info in sorted(bricklet_infos, key=lambda x: x.short_display_name.lower()):
-        if bricklet_info.is_documented and bricklet_info.has_bindings:
+        if bricklet_info.is_documented and bricklet_info.has_bindings and bindings_info.is_hardware_supported(bricklet_info):
             bricklet_lines.append(device_row[lang].format(bricklet_info.ref_name, bindings_info.url_part, bricklet_info.short_display_name))
 
-    return table_head[lang].format('\n'.join(brick_lines),
-                                   '\n'.join(bricklet_lines))
+    subtables = []
+    for name, subtable in [({'en': 'Bricks', 'de': 'Bricks'}, brick_lines),
+                     ({'en': 'Bricklets', 'de': 'Bricklets'}, bricklet_lines),
+                     ]:
+        if len(subtable) > 0:
+            template = """ **{name}** |
+{lines}"""
+            subtables.append(template.format(name=name[lang], lines='\n'.join(subtable)))
+
+    return table_head[lang].format('\n |\n'.join(subtables))
 
 def make_api_bindings_devices_table(bindings_info, device_infos, category, discontinued):
     table_head = {
@@ -1042,6 +1083,8 @@ def make_api_bindings_devices_table(bindings_info, device_infos, category, disco
 
     lines = []
     for device_info in sorted(device_infos, key=lambda x: x.short_display_name.lower()):
+        if not bindings_info.is_hardware_supported(device_info):
+            continue
         if device_info.is_documented and device_info.has_bindings and device_info.is_discontinued == discontinued:
             if has_examples[device_info.identifier][bindings_info.url_part]:
                 device_row = device_with_examples_row
@@ -1050,7 +1093,9 @@ def make_api_bindings_devices_table(bindings_info, device_infos, category, disco
 
             lines.append(device_row[lang].format(device_info.ref_name, bindings_info.url_part, device_info.short_display_name))
 
-    return table_head[lang].format(category, '\n'.join(lines))
+    if len(lines) > 0:
+        return table_head[lang].format(category, '\n'.join(lines))
+    return ''
 
 def make_llproto_devices_table(bindings_info, device_infos, category, discontinued):
     table_head = {
@@ -1077,10 +1122,14 @@ def make_llproto_devices_table(bindings_info, device_infos, category, discontinu
 
     lines = []
     for device_info in sorted(device_infos, key=lambda x: x.short_display_name.lower()):
+        if not bindings_info.is_hardware_supported(device_info):
+            continue
         if device_info.is_documented and device_info.has_bindings and device_info.is_discontinued == discontinued:
             lines.append(device_row[lang].format(device_info.ref_name, bindings_info.url_part, device_info.short_display_name))
 
-    return table_head[lang].format(category, '\n'.join(lines))
+    if len(lines) > 0:
+        return table_head[lang].format(category, '\n'.join(lines))
+    return ''
 
 def make_source_code_gits_table():
     table_head = {
@@ -1292,7 +1341,7 @@ def make_index_api_misc(binding, lang):
         misc_lis = []
 
         for misc_doc in binding.misc_docs:
-            misc_lis.append(misc_li.format(misc_doc[0].format(suffix=binding.software_doc_suffix), misc_doc[1][lang]))
+            misc_lis.append(misc_li.format(misc_doc.html_link.format(suffix=binding.software_doc_suffix), misc_doc.name_dict[lang]))
 
         return misc_html.format('\n'.join(misc_lis))
 
@@ -1421,9 +1470,9 @@ def make_index_api():
             else:
                 directory = 'Low_Level_Protocols'
 
-            html += index_html.format(make_index_api_device(brick_infos, 'Bricks', bindings_info.software_doc_suffix),
+            html += index_html.format(make_index_api_device([x for x in brick_infos if bindings_info.is_hardware_supported(x)], 'Bricks', bindings_info.software_doc_suffix),
                                       make_index_api_misc(bindings_info, lang),
-                                      make_index_api_device(bricklet_infos, 'Bricklets', bindings_info.software_doc_suffix),
+                                      make_index_api_device([x for x in bricklet_infos if bindings_info.is_hardware_supported(x)], 'Bricklets', bindings_info.software_doc_suffix),
                                       bindings_info.display_name,
                                       bindings_info.url_part,
                                       style,
@@ -1464,6 +1513,9 @@ def make_hlpi_table(device_info):
 
     for bindings_info in bindings_infos:
         if not bindings_info.is_released:
+            continue
+
+        if not bindings_info.is_hardware_supported(device_info):
             continue
 
         if bindings_info.is_programming_language:
@@ -1567,6 +1619,9 @@ def make_software_devices_toctree(bindings_info, device_infos, category, ref_pre
     lines = []
 
     for device_info in sorted(device_infos, key=lambda x: x.short_display_name.lower()):
+        if not bindings_info.is_hardware_supported(device_info):
+            continue
+
         long_display_name = device_info.long_display_name
 
         if not device_info.is_documented:
