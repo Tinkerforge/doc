@@ -3,7 +3,7 @@
 .. |ref_install_guide| replace:: :ref:`installation guide <api_bindings_shell_install>`
 .. |bindings_name| replace:: Shell
 
-.. _ipcon_shell:
+.. _ip_connection_shell:
 
 Shell - IP Connection
 =====================
@@ -13,7 +13,7 @@ Shell - IP Connection
    :end-before: <<<intro
 
 
-.. _ipcon_shell_examples:
+.. _ip_connection_shell_examples:
 
 Examples
 --------
@@ -43,7 +43,7 @@ Authenticate
  :tab-width: 4
 
 
-.. _ipcon_shell_api:
+.. _ip_connection_shell_api:
 
 API
 ---
@@ -95,7 +95,7 @@ At first some information about the general command structure:
  The group separator is used for formatting the output of callbacks. The group
  separator is printed before each callback output with more than one line,
  except before the first one, to separate the output of multiple callback
- invocations. See the section about :ref:`output formatting <ipcon_shell_output>`
+ invocations. See the section about :ref:`output formatting <ip_connection_shell_output>`
  for details.
 
  Since version 2.1.5 an array ellipsis can be used to specify partial arrays.
@@ -215,7 +215,7 @@ Basic Functions
  ``enumeration-type=available`` are dispatched.
 
  The ``--execute`` option allows for advanced output formatting. See the
- :ref:`section about this <ipcon_shell_output>` for details.
+ :ref:`section about this <ip_connection_shell_output>` for details.
 
  The command has seven output values:
 
@@ -285,12 +285,12 @@ Advanced Functions
  ``--enable-execute`` to enable this option for incoming commands.
 
  Incoming commands have to be terminated by ``\n``. The output is also
- terminated by ``\n``. See the :ref:`output formatting <ipcon_shell_output>`
+ terminated by ``\n``. See the :ref:`output formatting <ip_connection_shell_output>`
  section for details.
 
  .. versionadded:: 2.0.3
 
-.. _ipcon_shell_output:
+.. _ip_connection_shell_output:
 
 Output Formatting
 ^^^^^^^^^^^^^^^^^

@@ -3,7 +3,7 @@
 .. |ref_install_guide| replace:: :ref:`Installationanleitung <api_bindings_python_install>`
 .. |bindings_name| replace:: Python
 
-.. _ipcon_python:
+.. _ip_connection_python:
 
 Python - IP Connection
 ======================
@@ -13,7 +13,7 @@ Python - IP Connection
    :end-before: <<<intro
 
 
-.. _ipcon_python_examples:
+.. _ip_connection_python_examples:
 
 Beispiele
 ---------
@@ -43,7 +43,7 @@ Authenticate
  :tab-width: 4
 
 
-.. _ipcon_python_api:
+.. _ip_connection_python_api:
 
 API
 ---

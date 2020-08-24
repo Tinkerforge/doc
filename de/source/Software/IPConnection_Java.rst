@@ -3,7 +3,7 @@
 .. |ref_install_guide| replace:: :ref:`Installationanleitung <api_bindings_java_install>`
 .. |bindings_name| replace:: Java
 
-.. _ipcon_java:
+.. _ip_connection_java:
 
 Java - IP Connection
 ====================
@@ -13,7 +13,7 @@ Java - IP Connection
    :end-before: <<<intro
 
 
-.. _ipcon_java_examples:
+.. _ip_connection_java_examples:
 
 Beispiele
 ---------
@@ -43,7 +43,7 @@ Authenticate
  :tab-width: 4
 
 
-.. _ipcon_java_api:
+.. _ip_connection_java_api:
 
 API
 ---

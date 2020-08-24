@@ -3,7 +3,7 @@
 .. |ref_install_guide| replace:: :ref:`Installationanleitung <api_bindings_mqtt_install>`
 .. |bindings_name| replace:: MQTT
 
-.. _ipcon_mqtt:
+.. _ip_connection_mqtt:
 
 MQTT - IP Connection
 ====================
@@ -13,7 +13,7 @@ MQTT - IP Connection
    :end-before: <<<intro
 
 
-.. _ipcon_mqtt_examples:
+.. _ip_connection_mqtt_examples:
 
 Beispiele
 ---------
@@ -41,7 +41,7 @@ Authenticate
  :tab-width: 4
 
 
-.. _ipcon_mqtt_api:
+.. _ip_connection_mqtt_api:
 
 API
 ---

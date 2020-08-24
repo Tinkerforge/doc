@@ -3,7 +3,7 @@
 .. |ref_install_guide| replace:: :ref:`Installationanleitung <api_bindings_delphi_install>`
 .. |bindings_name| replace:: Delphi/Lazarus
 
-.. _ipcon_delphi:
+.. _ip_connection_delphi:
 
 Delphi/Lazarus - IP Connection
 ==============================
@@ -13,7 +13,7 @@ Delphi/Lazarus - IP Connection
    :end-before: <<<intro
 
 
-.. _ipcon_delphi_examples:
+.. _ip_connection_delphi_examples:
 
 Beispiele
 ---------
@@ -43,7 +43,7 @@ Authenticate
  :tab-width: 4
 
 
-.. _ipcon_delphi_api:
+.. _ip_connection_delphi_api:
 
 API
 ---

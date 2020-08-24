@@ -159,7 +159,7 @@ clumsy due to the fact that the Temperature Bricklet reports its value in
 The Shell bindings have the ability to fed the output of a command to an
 arbitrary shell command line that can then take care of formatting the output
 as desired. The ``--execute`` option is used for this. See the :ref:`output
-formatting <ipcon_shell_output>` section for more details. Because the
+formatting <ip_connection_shell_output>` section for more details. Because the
 ``--execute`` option can be used to execute arbitrary shell command lines it is
 disabled by default in listen mode. You have to enable it with the
 ``--enable-execute`` option::

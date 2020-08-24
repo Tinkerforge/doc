@@ -3,7 +3,7 @@
 .. |ref_install_guide| replace:: :ref:`installation guide <api_bindings_php_install>`
 .. |bindings_name| replace:: PHP
 
-.. _ipcon_php:
+.. _ip_connection_php:
 
 PHP - IP Connection
 ===================
@@ -13,7 +13,7 @@ PHP - IP Connection
    :end-before: <<<intro
 
 
-.. _ipcon_php_examples:
+.. _ip_connection_php_examples:
 
 Examples
 --------
@@ -43,7 +43,7 @@ Authenticate
  :tab-width: 4
 
 
-.. _ipcon_php_api:
+.. _ip_connection_php_api:
 
 API
 ---

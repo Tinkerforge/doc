@@ -3,7 +3,7 @@
 .. |ref_install_guide| replace:: :ref:`installation guide <api_bindings_perl_install>`
 .. |bindings_name| replace:: Perl
 
-.. _ipcon_perl:
+.. _ip_connection_perl:
 
 Perl - IP Connection
 ======================
@@ -13,7 +13,7 @@ Perl - IP Connection
    :end-before: <<<intro
 
 
-.. _ipcon_perl_examples:
+.. _ip_connection_perl_examples:
 
 Examples
 --------
@@ -43,7 +43,7 @@ Authenticate
  :tab-width: 4
 
 
-.. _ipcon_perl_api:
+.. _ip_connection_perl_api:
 
 API
 ---

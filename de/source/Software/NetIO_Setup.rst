@@ -160,7 +160,7 @@ umständlich, bedingt dadurch, dass das Temperature Bricklet seinen Wert in
 Die Shell Bindings können die Ausgabe der Befehle an einen beliebigen
 Kommandozeilenbefehl übergeben, so dass sich dieser dann um die Formatierung
 der Ausgabe kümmern kann. Die ``--execute`` Option ist dafür zuständig. Siehe
-den Abschnitt über :ref:`Ausgabeformatierung <ipcon_shell_output>` für mehr
+den Abschnitt über :ref:`Ausgabeformatierung <ip_connection_shell_output>` für mehr
 Details. Da die ``--execute`` Option verwendet werden kann um beliebige
 Kommandozeilenbefehle auszuführen ist sie standardmäßig im Listen Modus
 deaktiviert und muss erst über die ``--enable-execute`` Option aktiviert

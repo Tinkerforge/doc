@@ -294,7 +294,7 @@ using MQTT's last will mechanism.
 Note that these messages are sent before the the connection to the Brick Daemon,
 WIFI or Ethernet Extension is established respectively after this connection is
 disconnected. If you want to react to changes to the state of this connection,
-it is recommended to use the callbacks of the :ref:`IP connection <ipcon_mqtt>`.
+it is recommended to use the callbacks of the :ref:`IP connection <ip_connection_mqtt>`.
 
 Command line arguments
 ----------------------

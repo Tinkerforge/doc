@@ -3,7 +3,7 @@
 .. |ref_install_guide| replace:: :ref:`Installationanleitung <api_bindings_shell_install>`
 .. |bindings_name| replace:: Shell
 
-.. _ipcon_shell:
+.. _ip_connection_shell:
 
 Shell - IP Connection
 =====================
@@ -13,7 +13,7 @@ Shell - IP Connection
    :end-before: <<<intro
 
 
-.. _ipcon_shell_examples:
+.. _ip_connection_shell_examples:
 
 Beispiele
 ---------
@@ -43,7 +43,7 @@ Authenticate
  :tab-width: 4
 
 
-.. _ipcon_shell_api:
+.. _ip_connection_shell_api:
 
 API
 ---
@@ -101,7 +101,7 @@ Als erstes einige Information über die allgemeine Struktur der Befehle:
  Callbacks verwendet. Das Trennzeichen wird vor jeder Callback-Ausgabe mit mehr
  als einer Zeile ausgegeben, außer der ersten, um die Ausgabe von mehreren
  Callback-Aufrufen zu trennen. Siehe den Abschnitt über
- :ref:`Ausgabeformatierung <ipcon_shell_output>` für mehr Details.
+ :ref:`Ausgabeformatierung <ip_connection_shell_output>` für mehr Details.
 
  Seit Version 2.1.5 kann ein Auslassungszeichen für Arrays verwendet
  werden, um unvollständig Arrays anzugeben. Zum Beispiel nimmt die
@@ -231,7 +231,7 @@ Grundfunktionen
  ``enumeration-type=available`` abgefertigt.
 
  Die ``--execute`` Option ermöglicht erweiterte Ausgabeformatierung. Siehe dazu
- den Abschnitt über :ref:`Ausgabeformatierung <ipcon_shell_output>` für Details.
+ den Abschnitt über :ref:`Ausgabeformatierung <ip_connection_shell_output>` für Details.
 
  Der Befehl hat sieben Ausgabewerte:
 
@@ -305,11 +305,11 @@ Fortgeschrittene Funktionen
 
  Eingehende Befehle müssen mit ``\n`` terminiert werden. Die Ausgabe ist
  ebenfalls mit ``\n`` terminiert. Siehe den Abschnitt über
- :ref:`Ausgabeformatierung <ipcon_shell_output>` für weitere Details.
+ :ref:`Ausgabeformatierung <ip_connection_shell_output>` für weitere Details.
 
  .. versionadded:: 2.0.3
 
-.. _ipcon_shell_output:
+.. _ip_connection_shell_output:
 
 Ausgabeformatierung
 ^^^^^^^^^^^^^^^^^^^

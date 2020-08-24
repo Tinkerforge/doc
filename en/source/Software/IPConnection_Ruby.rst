@@ -3,7 +3,7 @@
 .. |ref_install_guide| replace:: :ref:`installation guide <api_bindings_ruby_install>`
 .. |bindings_name| replace:: Ruby
 
-.. _ipcon_ruby:
+.. _ip_connection_ruby:
 
 Ruby - IP Connection
 ====================
@@ -13,7 +13,7 @@ Ruby - IP Connection
    :end-before: <<<intro
 
 
-.. _ipcon_ruby_examples:
+.. _ip_connection_ruby_examples:
 
 Examples
 --------
@@ -43,7 +43,7 @@ Authenticate
  :tab-width: 4
 
 
-.. _ipcon_ruby_api:
+.. _ip_connection_ruby_api:
 
 API
 ---

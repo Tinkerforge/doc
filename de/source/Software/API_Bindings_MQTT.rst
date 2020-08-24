@@ -303,7 +303,7 @@ Last-Will-Mechanismus von MQTT eine ``null``-Nachricht auf
 Diese Nachrichten werden gesendet, bevor die Verbindung zum Brick Daemon, der
 WIFI- oder Ethernet-Extension besteht, beziehungsweise nachdem diese geschlossen
 wurde. Falls auf Änderungen des Zustands dieser Verbindung reagiert werden soll,
-können stattdessen die Callbacks der :ref:`IP-Connection <ipcon_mqtt>`
+können stattdessen die Callbacks der :ref:`IP-Connection <ip_connection_mqtt>`
 verwendet werden.
 
 Kommandozeilenargumente

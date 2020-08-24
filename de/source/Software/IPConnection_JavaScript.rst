@@ -3,7 +3,7 @@
 .. |ref_install_guide| replace:: :ref:`Installationanleitung <api_bindings_javascript_install>`
 .. |bindings_name| replace:: JavaScript
 
-.. _ipcon_javascript:
+.. _ip_connection_javascript:
 
 JavaScript - IP Connection
 ==========================
@@ -13,7 +13,7 @@ JavaScript - IP Connection
    :end-before: <<<intro
 
 
-.. _ipcon_javascript_examples:
+.. _ip_connection_javascript_examples:
 
 Beispiele
 ---------
@@ -64,7 +64,7 @@ Authenticate (HTML)
  :tab-width: 4
 
 
-.. _ipcon_javascript_api:
+.. _ip_connection_javascript_api:
 
 API
 ---

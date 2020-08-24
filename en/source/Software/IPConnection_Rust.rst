@@ -3,7 +3,7 @@
 .. |ref_install_guide| replace:: :ref:`installation guide <api_bindings_rust_install>`
 .. |bindings_name| replace:: Rust
 
-.. _ipcon_rust:
+.. _ip_connection_rust:
 
 Rust - IP Connection
 ====================
@@ -13,7 +13,7 @@ Rust - IP Connection
    :end-before: <<<intro
 
 
-.. _ipcon_rust_examples:
+.. _ip_connection_rust_examples:
 
 Examples
 --------
@@ -43,7 +43,7 @@ Authenticate
  :tab-width: 4
 
 
-.. _ipcon_rust_api:
+.. _ip_connection_rust_api:
 
 API
 ---
@@ -60,7 +60,7 @@ Basic Functions
 
 .. rust:function:: IpConnection::get_request_sender(&self) -> IpConnectionRequestSender
  
- The IP connection can not be shared with other threads. To still be able to use it's functionality in other threads, this method can create IP connection request senders. These offer the same functionality, but can be created, cloned, moved into other threads and destroyed at will, as the IP connection instance itself owns the connection.
+ The IP connection can not be shared with other threads. To still be able to use its functionality in other threads, this method can create IP connection request senders. These offer the same functionality, but can be created, cloned, moved into other threads and destroyed at will, as the IP connection instance itself owns the connection.
 
 .. rust:function:: IpConnection::connect<T: ToSocketAddrs>(&self, addr: T) -> Receiver<Result<(), ConnectError>>
 

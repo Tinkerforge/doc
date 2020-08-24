@@ -3,7 +3,7 @@
 .. |ref_install_guide| replace:: :ref:`Installationanleitung <api_bindings_csharp_install>`
 .. |bindings_name| replace:: C#
 
-.. _ipcon_csharp:
+.. _ip_connection_csharp:
 
 C# - IP Connection
 ==================
@@ -13,7 +13,7 @@ C# - IP Connection
    :end-before: <<<intro
 
 
-.. _ipcon_csharp_examples:
+.. _ip_connection_csharp_examples:
 
 Beispiele
 ---------
@@ -43,7 +43,7 @@ Authenticate
  :tab-width: 4
 
 
-.. _ipcon_csharp_api:
+.. _ip_connection_csharp_api:
 
 API
 ---

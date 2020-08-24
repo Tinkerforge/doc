@@ -3,7 +3,7 @@
 .. |ref_install_guide| replace:: :ref:`Installationanleitung <api_bindings_vbnet_install>`
 .. |bindings_name| replace:: Visual Basic .NET
 
-.. _ipcon_vbnet:
+.. _ip_connection_vbnet:
 
 Visual Basic .NET - IP Connection
 =================================
@@ -13,7 +13,7 @@ Visual Basic .NET - IP Connection
    :end-before: <<<intro
 
 
-.. _ipcon_vbnet_examples:
+.. _ip_connection_vbnet_examples:
 
 Beispiele
 ---------
@@ -43,7 +43,7 @@ Authenticate
  :tab-width: 4
 
 
-.. _ipcon_vbnet_api:
+.. _ip_connection_vbnet_api:
 
 API
 ---

@@ -3,7 +3,7 @@
 .. |ref_install_guide| replace:: :ref:`installation guide <api_bindings_c_install>`
 .. |bindings_name| replace:: C/C++
 
-.. _ipcon_c:
+.. _ip_connection_c:
 
 C/C++ - IP Connection
 =====================
@@ -13,7 +13,7 @@ C/C++ - IP Connection
    :end-before: <<<intro
 
 
-.. _ipcon_c_examples:
+.. _ip_connection_c_examples:
 
 Examples
 --------
@@ -43,7 +43,7 @@ Authenticate
  :tab-width: 4
 
 
-.. _ipcon_c_api:
+.. _ip_connection_c_api:
 
 API
 ---
@@ -75,20 +75,20 @@ as defined in :file:`ip_connection.h`.
 Basic Functions
 ^^^^^^^^^^^^^^^
 
-.. c:function:: void ipcon_create(IPConnection *ipcon)
+.. c:function:: void ip_connection_create(IPConnection *ipcon)
 
  Creates an IP Connection object that can be used to enumerate the available
  devices. It is also required for the constructor of Bricks and Bricklets.
 
 
-.. c:function:: void ipcon_destroy(IPConnection *ipcon)
+.. c:function:: void ip_connection_destroy(IPConnection *ipcon)
 
- Destroys the IP Connection object. Calls :c:func:`ipcon_disconnect` internally.
+ Destroys the IP Connection object. Calls :c:func:`ip_connection_disconnect` internally.
  The connection to the Brick Daemon gets closed and the threads of the
  IP Connection are terminated.
 
 
-.. c:function:: int ipcon_connect(IPConnection *ipcon, const char *host, uint16_t port)
+.. c:function:: int ip_connection_connect(IPConnection *ipcon, const char *host, uint16_t port)
 
  Creates a TCP/IP connection to the given ``host`` and ``port``. The host and port
  can refer to a Brick Daemon or to a WIFI/Ethernet Extension.
@@ -101,13 +101,13 @@ Basic Functions
  and port.
 
 
-.. c:function:: int ipcon_disconnect(IPConnection *ipcon)
+.. c:function:: int ip_connection_disconnect(IPConnection *ipcon)
 
  Disconnects the TCP/IP connection from the Brick Daemon or the WIFI/Ethernet
  Extension.
 
 
-.. c:function:: int ipcon_authenticate(IPConnection *ipcon, const char *secret)
+.. c:function:: int ip_connection_authenticate(IPConnection *ipcon, const char *secret)
 
  Performs an authentication handshake with the connected Brick Daemon or
  WIFI/Ethernet Extension.
@@ -123,7 +123,7 @@ Basic Functions
  .. versionadded:: 2.1.0
 
 
-.. c:function:: int ipcon_get_connection_state(IPConnection *ipcon)
+.. c:function:: int ip_connection_get_connection_state(IPConnection *ipcon)
 
  Can return the following states:
 
@@ -133,23 +133,23 @@ Basic Functions
  * IPCON\_\ **CONNECTION_STATE**\ _PENDING = 2: IP Connection is currently trying to connect.
 
 
-.. c:function:: void ipcon_set_auto_reconnect(IPConnection *ipcon, bool auto_reconnect)
+.. c:function:: void ip_connection_set_auto_reconnect(IPConnection *ipcon, bool auto_reconnect)
 
  Enables or disables auto-reconnect. If auto-reconnect is enabled,
  the IP Connection will try to reconnect to the previously given
  host and port, if the currently existing connection is lost.
  Therefore, auto-reconnect only does something after a successful
- :c:func:`ipcon_connect` call.
+ :c:func:`ip_connection_connect` call.
 
  Default value is *true*.
 
 
-.. c:function:: bool ipcon_get_auto_reconnect(IPConnection *ipcon)
+.. c:function:: bool ip_connection_get_auto_reconnect(IPConnection *ipcon)
 
  Returns *true* if auto-reconnect is enabled, *false* otherwise.
 
 
-.. c:function:: void ipcon_set_timeout(IPConnection *ipcon, uint32_t timeout)
+.. c:function:: void ip_connection_set_timeout(IPConnection *ipcon, uint32_t timeout)
 
  Sets the timeout in milliseconds for getters and for setters for which the
  response expected flag is activated.
@@ -157,20 +157,20 @@ Basic Functions
  Default timeout is 2500.
 
 
-.. c:function:: uint32_t ipcon_get_timeout(IPConnection *ipcon)
+.. c:function:: uint32_t ip_connection_get_timeout(IPConnection *ipcon)
 
- Returns the timeout as set by :c:func:`ipcon_set_timeout`.
+ Returns the timeout as set by :c:func:`ip_connection_set_timeout`.
 
 
-.. c:function:: int ipcon_enumerate(IPConnection *ipcon)
+.. c:function:: int ip_connection_enumerate(IPConnection *ipcon)
 
  Broadcasts an enumerate request. All devices will respond with an enumerate
  callback.
 
 
-.. c:function:: void ipcon_wait(IPConnection *ipcon)
+.. c:function:: void ip_connection_wait(IPConnection *ipcon)
 
- Stops the current thread until :c:func:`ipcon_unwait`
+ Stops the current thread until :c:func:`ip_connection_unwait`
  is called.
 
  This is useful if you rely solely on callbacks for events, if you want to
@@ -180,9 +180,9 @@ Basic Functions
  semaphore.
 
 
-.. c:function:: void ipcon_unwait(IPConnection *ipcon)
+.. c:function:: void ip_connection_unwait(IPConnection *ipcon)
 
- Unwaits the thread previously stopped by :c:func:`ipcon_wait`
+ Unwaits the thread previously stopped by :c:func:`ip_connection_wait`
 
  ``wait`` and ``unwait`` act in the same way as ``acquire`` and ``release`` of a
  semaphore.
@@ -191,7 +191,7 @@ Basic Functions
 Callback Configuration Functions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. c:function:: void ipcon_register_callback(IPConnection *ipcon, int16_t callback_id, void (*function)(void), void *user_data)
+.. c:function:: void ip_connection_register_callback(IPConnection *ipcon, int16_t callback_id, void (*function)(void), void *user_data)
 
  Registers the given ``function`` with the given ``callback_id``. The
  ``user_data`` will be passed as the last parameter to the ``function``.
@@ -204,7 +204,7 @@ Callbacks
 ^^^^^^^^^
 
 Callbacks can be registered to be notified about events. The registration is
-done with the :c:func:`ipcon_register_callback` function. The parameters
+done with the :c:func:`ip_connection_register_callback` function. The parameters
 consist of the IP Connection object, the callback ID, the callback function and
 optional user data:
 
@@ -214,7 +214,7 @@ optional user data:
         printf("parameter: %d\n", p);
     }
 
-    ipcon_register_callback(&ipcon, IPCON_CALLBACK_EXAMPLE, (void (*)(void))my_callback, NULL);
+    ip_connection_register_callback(&ipcon, IPCON_CALLBACK_EXAMPLE, (void (*)(void))my_callback, NULL);
 
 The available constants with corresponding callback function signatures are
 described below.
@@ -245,7 +245,7 @@ described below.
  Possible enumeration types are:
 
  * IPCON\_\ **ENUMERATION_TYPE**\ _AVAILABLE = 0: Device is available (enumeration
-   triggered by user: :c:func:`ipcon_enumerate`). This enumeration type can
+   triggered by user: :c:func:`ip_connection_enumerate`). This enumeration type can
    occur multiple times for the same device.
  * IPCON\_\ **ENUMERATION_TYPE**\ _CONNECTED = 1: Device is newly connected
    (automatically send by Brick after establishing a communication connection).

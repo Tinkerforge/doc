@@ -3,7 +3,7 @@
 .. |ref_install_guide| replace:: :ref:`Installationanleitung <api_bindings_labview_install>`
 .. |bindings_name| replace:: LabVIEW
 
-.. _ipcon_labview:
+.. _ip_connection_labview:
 
 LabVIEW - IP Connection
 =======================
@@ -13,7 +13,7 @@ LabVIEW - IP Connection
    :end-before: <<<intro
 
 
-.. _ipcon_labview_examples:
+.. _ip_connection_labview_examples:
 
 Beispiele
 ---------
@@ -62,7 +62,7 @@ Authenticate
    </div>
 
 
-.. _ipcon_labview_api:
+.. _ip_connection_labview_api:
 
 API
 ---

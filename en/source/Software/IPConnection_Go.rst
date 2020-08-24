@@ -3,7 +3,7 @@
 .. |ref_install_guide| replace:: :ref:`installation guide <api_bindings_go_install>`
 .. |bindings_name| replace:: Go
 
-.. _ipcon_go:
+.. _ip_connection_go:
 
 Go - IP Connection
 ====================
@@ -13,7 +13,7 @@ Go - IP Connection
    :end-before: <<<intro
 
 
-.. _ipcon_go_examples:
+.. _ip_connection_go_examples:
 
 Examples
 --------
@@ -43,7 +43,7 @@ Authenticate
  :tab-width: 4
 
 
-.. _ipcon_go_api:
+.. _ip_connection_go_api:
 
 API
 ---
@@ -60,7 +60,7 @@ Basic Functions
 
 .. go:function:: func (*IPConnection) Close()
 
- Destroys this IP Connection and stops it's internal goroutines.
+ Destroys this IP Connection and stops its internal goroutines.
 
 .. go:function:: func (*IPConnection) Connect(addr string) (err error)
 

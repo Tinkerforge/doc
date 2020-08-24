@@ -3,7 +3,7 @@
 .. |ref_install_guide| replace:: :ref:`Installationanleitung <api_bindings_matlab_install>`
 .. |bindings_name| replace:: MATLAB/Octave
 
-.. _ipcon_matlab:
+.. _ip_connection_matlab:
 
 MATLAB/Octave - IP Connection
 =============================
@@ -13,7 +13,7 @@ MATLAB/Octave - IP Connection
    :end-before: <<<intro
 
 
-.. _ipcon_matlab_examples:
+.. _ip_connection_matlab_examples:
 
 Beispiele
 ---------
@@ -62,7 +62,7 @@ Authenticate (Octave)
  :tab-width: 4
 
 
-.. _ipcon_matlab_api:
+.. _ip_connection_matlab_api:
 
 API
 ---

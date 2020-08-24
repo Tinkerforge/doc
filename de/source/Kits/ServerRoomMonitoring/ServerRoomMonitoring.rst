@@ -355,7 +355,7 @@ Auslesen der verbundenen Sensoren (die UID ist anzupassen):
  temperature=2389
 
 Die Shell Bindings unterstützen die Ausführung von weiteren Shell Befehlen mit der
-``--execute`` Option (siehe :ref:`Shell Bindings <ipcon_shell_output>` für weitere 
+``--execute`` Option (siehe :ref:`Shell Bindings <ip_connection_shell_output>` für weitere
 Informationen). Das nachfolgende Skript zeigt ein Beispiel wie der Rückgabewert
 in Grad Celsius umgerechnet und anschließend in einer Variable für die 
 weitere Benutzung gespeichert werden kann.

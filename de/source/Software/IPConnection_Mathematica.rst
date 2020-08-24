@@ -3,7 +3,7 @@
 .. |ref_install_guide| replace:: :ref:`Installationanleitung <api_bindings_mathematica_install>`
 .. |bindings_name| replace:: Mathematica
 
-.. _ipcon_mathematica:
+.. _ip_connection_mathematica:
 
 Mathematica - IP Connection
 ===========================
@@ -13,7 +13,7 @@ Mathematica - IP Connection
    :end-before: <<<intro
 
 
-.. _ipcon_mathematica_examples:
+.. _ip_connection_mathematica_examples:
 
 Beispiele
 ---------
@@ -43,7 +43,7 @@ Authenticate
  :tab-width: 4
 
 
-.. _ipcon_mathematica_api:
+.. _ip_connection_mathematica_api:
 
 API
 ---

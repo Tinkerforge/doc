@@ -3,7 +3,7 @@
 .. |ref_install_guide| replace:: :ref:`Installationanleitung <api_bindings_go_install>`
 .. |bindings_name| replace:: Go
 
-.. _ipcon_go:
+.. _ip_connection_go:
 
 Go - IP Connection
 ====================
@@ -13,7 +13,7 @@ Go - IP Connection
    :end-before: <<<intro
 
 
-.. _ipcon_go_examples:
+.. _ip_connection_go_examples:
 
 Beispiele
 ---------
@@ -43,7 +43,7 @@ Authenticate
  :tab-width: 4
 
 
-.. _ipcon_go_api:
+.. _ip_connection_go_api:
 
 API
 ---

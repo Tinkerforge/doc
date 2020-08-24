@@ -3,7 +3,7 @@
 .. |ref_install_guide| replace:: :ref:`installation guide <api_bindings_mqtt_install>`
 .. |bindings_name| replace:: MQTT
 
-.. _ipcon_mqtt:
+.. _ip_connection_mqtt:
 
 MQTT - IP Connection
 ====================
@@ -13,7 +13,7 @@ MQTT - IP Connection
    :end-before: <<<intro
 
 
-.. _ipcon_mqtt_examples:
+.. _ip_connection_mqtt_examples:
 
 Examples
 --------
@@ -41,7 +41,7 @@ Authenticate
  :tab-width: 4
 
 
-.. _ipcon_mqtt_api:
+.. _ip_connection_mqtt_api:
 
 API
 ---
@@ -95,7 +95,7 @@ This suffix can be used to deregister the callback later.
  An added callback can be removed by publishing to the same topic with the payload "false".
  To support multiple (de)registrations, e.g. for message filtering, an optional suffix can be used.
 
- If the callback is triggered, a message with it's payload is published under the corresponding ``.../callback/ip_connection/enumerate[/SUFFIX]`` topic for each registered suffix.
+ If the callback is triggered, a message with its payload is published under the corresponding ``.../callback/ip_connection/enumerate[/SUFFIX]`` topic for each registered suffix.
  
  The callback receives an JSON object with eight members:
 
@@ -144,7 +144,7 @@ This suffix can be used to deregister the callback later.
  An added callback can be removed by publishing to the same topic with the payload "false".
  To support multiple (de)registrations, e.g. for message filtering, an optional suffix can be used.
 
- If the callback is triggered, a message with it's payload is published under the corresponding ``.../callback/ip_connection/connected[/SUFFIX]`` topic for each registered suffix.
+ If the callback is triggered, a message with its payload is published under the corresponding ``.../callback/ip_connection/connected[/SUFFIX]`` topic for each registered suffix.
   
  This event is triggered whenever the IP Connection got connected to a
  Brick Daemon or to a WIFI/Ethernet Extension.
@@ -166,7 +166,7 @@ This suffix can be used to deregister the callback later.
  An added callback can be removed by publishing to the same topic with the payload "false".
  To support multiple (de)registrations, e.g. for message filtering, an optional suffix can be used.
 
- If the callback is triggered, a message with it's payload is published under the corresponding ``.../callback/ip_connection/disconnected[/SUFFIX]`` topic for each registered suffix.
+ If the callback is triggered, a message with its payload is published under the corresponding ``.../callback/ip_connection/disconnected[/SUFFIX]`` topic for each registered suffix.
  
  This event is triggered whenever the IP Connection got disconnected from a
  Brick Daemon or to a WIFI/Ethernet Extension.

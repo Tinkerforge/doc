@@ -3,7 +3,7 @@
 .. |ref_install_guide| replace:: :ref:`Installationanleitung <api_bindings_c_install>`
 .. |bindings_name| replace:: C/C++
 
-.. _ipcon_c:
+.. _ip_connection_c:
 
 C/C++ - IP Connection
 =====================
@@ -13,7 +13,7 @@ C/C++ - IP Connection
    :end-before: <<<intro
 
 
-.. _ipcon_c_examples:
+.. _ip_connection_c_examples:
 
 Beispiele
 ---------
@@ -43,7 +43,7 @@ Authenticate
  :tab-width: 4
 
 
-.. _ipcon_c_api:
+.. _ip_connection_c_api:
 
 API
 ---
