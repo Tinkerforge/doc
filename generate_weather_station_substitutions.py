@@ -1,6 +1,16 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+from __future__ import print_function
+
+DEBUG = False
+if __name__ == "__main__" and not DEBUG:
+    print("Suppressing output of generate_weather_station_substitutions.py")
+
+def debug(*args, **kwargs):
+    if DEBUG:
+        print(*args, **kwargs)
+
 import os
 import sys
 
@@ -568,22 +578,22 @@ def generate(path):
     elif path.endswith('/de'):
         lang = 'de'
     else:
-        print 'Wrong working directory'
+        debug('Wrong working directory')
         sys.exit(1)
 
     generate_tables.lang = lang
 
-    print 'Generating WeatherStation.substitutions'
+    debug('Generating WeatherStation.substitutions')
     write_if_changed(os.path.join(path, 'source', 'Kits', 'WeatherStation', 'WeatherStation.substitutions'), make_substitutions())
 
     for bindings_info in bindings_infos:
         if bindings_info.url_part in examples:
-            print 'Generating {0}Common.substitutions (WeatherStation)'.format(bindings_info.software_doc_suffix)
+            debug('Generating {0}Common.substitutions (WeatherStation)'.format(bindings_info.software_doc_suffix))
             write_if_changed(os.path.join(path, 'source', 'Kits', 'WeatherStation', bindings_info.software_doc_suffix + 'Common.substitutions'), make_common_substitutions(bindings_info))
 
-    print 'Generating WriteToLCD.substitutions (WeatherStation)'
+    debug('Generating WriteToLCD.substitutions (WeatherStation)')
     write_if_changed(os.path.join(path, 'source', 'Kits', 'WeatherStation', 'WriteToLCD.substitutions'), make_write_to_lcd_substitutions())
-    print 'Generating WriteToLCD.toctree (WeatherStation)'
+    debug('Generating WriteToLCD.toctree (WeatherStation)')
     write_if_changed(os.path.join(path, 'source', 'Kits', 'WeatherStation', 'WriteToLCD.toctree'), make_write_to_lcd_toctree())
 
 if __name__ == "__main__":

@@ -1,6 +1,16 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+from __future__ import print_function
+
+DEBUG = False
+if __name__ == "__main__" and not DEBUG:
+    print("Suppressing output of generate_tables.py")
+
+def debug(*args, **kwargs):
+    if DEBUG:
+        print(*args, **kwargs)
+
 import os
 import sys
 import re
@@ -360,7 +370,7 @@ red_image_versions = {}
 has_examples = {}
 
 def collect_latest_version_info():
-    print 'Discovering latest versions on tinkerforge.com'
+    debug('Discovering latest versions on tinkerforge.com')
 
     try:
         response = urllib2.urlopen(LATEST_VERSIONS_URL)
@@ -1587,146 +1597,146 @@ def generate(path):
     elif path.endswith('/de'):
         lang = 'de'
     else:
-        print('Wrong working directory')
+        debug('Wrong working directory')
         sys.exit(1)
 
     collect_latest_version_info()
     collect_example_info(path)
 
-    print('Generating index_hardware.html')
+    debug('Generating index_hardware.html')
     write_if_changed(os.path.join(path, 'source', 'index_hardware.html'), make_index_hardware())
 
-    print('Generating index_api.html')
+    debug('Generating index_api.html')
     write_if_changed(os.path.join(path, 'source', 'index_api.html'), make_index_api())
 
-    print('Generating Primer_bricks.table')
+    debug('Generating Primer_bricks.table')
     write_if_changed(os.path.join(path, 'source', 'Primer_bricks.table'), make_primer_table(brick_infos))
 
-    print('Generating Primer_bricklets.table')
+    debug('Generating Primer_bricklets.table')
     write_if_changed(os.path.join(path, 'source', 'Primer_bricklets.table'), make_primer_table(bricklet_infos))
 
-    print('Generating Primer_extensions.table')
+    debug('Generating Primer_extensions.table')
     write_if_changed(os.path.join(path, 'source', 'Primer_extensions.table'), make_primer_table(extension_infos))
 
-    print('Generating Primer_power_supplies.table')
+    debug('Generating Primer_power_supplies.table')
     write_if_changed(os.path.join(path, 'source', 'Primer_power_supplies.table'), make_primer_table(power_supply_infos))
 
-    print('Generating Primer_accessories.table')
+    debug('Generating Primer_accessories.table')
     write_if_changed(os.path.join(path, 'source', 'Primer_accessories.table'), make_primer_table(accessory_infos))
 
-    print('Generating Downloads_tools.table')
+    debug('Generating Downloads_tools.table')
     write_if_changed(os.path.join(path, 'source', 'Downloads_tools.table'), make_download_tools_table())
 
-    print('Generating Downloads_bindings.table')
+    debug('Generating Downloads_bindings.table')
     write_if_changed(os.path.join(path, 'source', 'Downloads_bindings.table'), make_download_bindings_table())
 
-    print('Generating Downloads_red_images.table')
+    debug('Generating Downloads_red_images.table')
     write_if_changed(os.path.join(path, 'source', 'Downloads_red_images.table'), make_download_red_images_table())
 
-    print('Generating Downloads_brick_firmwares.table')
+    debug('Generating Downloads_brick_firmwares.table')
     write_if_changed(os.path.join(path, 'source', 'Downloads_brick_firmwares.table'), make_download_brick_firmwares_table())
 
-    print('Generating Downloads_bricklet_plugins.table')
+    debug('Generating Downloads_bricklet_plugins.table')
     write_if_changed(os.path.join(path, 'source', 'Downloads_bricklet_plugins.table'), make_download_bricklet_plugins_table())
 
-    print('Generating Downloads_extension_firmwares.table')
+    debug('Generating Downloads_extension_firmwares.table')
     write_if_changed(os.path.join(path, 'source', 'Downloads_extension_firmwares.table'), make_download_extension_firmwares_table())
 
-    print('Generating Downloads_kits.table')
+    debug('Generating Downloads_kits.table')
     write_if_changed(os.path.join(path, 'source', 'Downloads_kits.table'), make_download_kits_table())
 
-    print('Generating Source_Code_gits.table')
+    debug('Generating Source_Code_gits.table')
     write_if_changed(os.path.join(path, 'source', 'Source_Code_gits.table'), make_source_code_gits_table())
 
-    print('Generating Bricks.toctree')
+    debug('Generating Bricks.toctree')
     write_if_changed(os.path.join(path, 'source', 'Hardware', 'Bricks', 'Bricks.toctree'), make_hardware_devices_toctree(brick_infos, False))
 
-    print('Generating Bricks_Discontinued.toctree')
+    debug('Generating Bricks_Discontinued.toctree')
     write_if_changed(os.path.join(path, 'source', 'Hardware', 'Bricks', 'Bricks_Discontinued.toctree'), make_hardware_devices_toctree(brick_infos, True))
 
-    print('Generating Bricklets.toctree')
+    debug('Generating Bricklets.toctree')
     write_if_changed(os.path.join(path, 'source', 'Hardware', 'Bricklets', 'Bricklets.toctree'), make_hardware_devices_toctree(bricklet_infos, False))
 
-    print('Generating Bricklets_Discontinued.toctree')
+    debug('Generating Bricklets_Discontinued.toctree')
     write_if_changed(os.path.join(path, 'source', 'Hardware', 'Bricklets', 'Bricklets_Discontinued.toctree'), make_hardware_devices_toctree(bricklet_infos, True))
 
-    print('Generating Master_Extensions.toctree')
+    debug('Generating Master_Extensions.toctree')
     write_if_changed(os.path.join(path, 'source', 'Hardware', 'Master_Extensions', 'Master_Extensions.toctree'), make_hardware_devices_toctree(extension_infos, False))
 
-    print('Generating Master_Extensions_Discontinued.toctree')
+    debug('Generating Master_Extensions_Discontinued.toctree')
     write_if_changed(os.path.join(path, 'source', 'Hardware', 'Master_Extensions', 'Master_Extensions_Discontinued.toctree'), make_hardware_devices_toctree(extension_infos, True))
 
-    print('Generating Power_Supplies.toctree')
+    debug('Generating Power_Supplies.toctree')
     write_if_changed(os.path.join(path, 'source', 'Hardware', 'Power_Supplies', 'Power_Supplies.toctree'), make_hardware_devices_toctree(power_supply_infos, False))
 
-    print('Generating Power_Supplies_Discontinued.toctree')
+    debug('Generating Power_Supplies_Discontinued.toctree')
     write_if_changed(os.path.join(path, 'source', 'Hardware', 'Power_Supplies', 'Power_Supplies_Discontinued.toctree'), make_hardware_devices_toctree(power_supply_infos, True))
 
-    print('Generating Accessories.toctree')
+    debug('Generating Accessories.toctree')
     write_if_changed(os.path.join(path, 'source', 'Hardware', 'Accessories', 'Accessories.toctree'), make_hardware_devices_toctree(accessory_infos, False))
 
-    print('Generating Accessories_Discontinued.toctree')
+    debug('Generating Accessories_Discontinued.toctree')
     write_if_changed(os.path.join(path, 'source', 'Hardware', 'Accessories', 'Accessories_Discontinued.toctree'), make_hardware_devices_toctree(accessory_infos, True))
 
-    print('Generating Bricks.table')
+    debug('Generating Bricks.table')
     write_if_changed(os.path.join(path, 'source', 'Hardware', 'Bricks', 'Bricks.table'), make_hardware_devices_table(brick_infos, False))
 
-    print('Generating Bricks_Discontinued.table')
+    debug('Generating Bricks_Discontinued.table')
     write_if_changed(os.path.join(path, 'source', 'Hardware', 'Bricks', 'Bricks_Discontinued.table'), make_hardware_devices_table(brick_infos, True))
 
-    print('Generating Bricklets.table')
+    debug('Generating Bricklets.table')
     write_if_changed(os.path.join(path, 'source', 'Hardware', 'Bricklets', 'Bricklets.table'), make_hardware_devices_table(bricklet_infos, False))
 
-    print('Generating Bricklets_Discontinued.table')
+    debug('Generating Bricklets_Discontinued.table')
     write_if_changed(os.path.join(path, 'source', 'Hardware', 'Bricklets', 'Bricklets_Discontinued.table'), make_hardware_devices_table(bricklet_infos, True))
 
-    print('Generating Master_Extensions.table')
+    debug('Generating Master_Extensions.table')
     write_if_changed(os.path.join(path, 'source', 'Hardware', 'Master_Extensions', 'Master_Extensions.table'), make_hardware_devices_table(extension_infos, False))
 
-    print('Generating Master_Extensions_Discontinued.table')
+    debug('Generating Master_Extensions_Discontinued.table')
     write_if_changed(os.path.join(path, 'source', 'Hardware', 'Master_Extensions', 'Master_Extensions_Discontinued.table'), make_hardware_devices_table(extension_infos, True))
 
-    print('Generating Power_Supplies.table')
+    debug('Generating Power_Supplies.table')
     write_if_changed(os.path.join(path, 'source', 'Hardware', 'Power_Supplies', 'Power_Supplies.table'), make_hardware_devices_table(power_supply_infos, False))
 
-    print('Generating Power_Supplies_Discontinued.table')
+    debug('Generating Power_Supplies_Discontinued.table')
     write_if_changed(os.path.join(path, 'source', 'Hardware', 'Power_Supplies', 'Power_Supplies_Discontinued.table'), make_hardware_devices_table(power_supply_infos, True))
 
-    print('Generating Accessories.table')
+    debug('Generating Accessories.table')
     write_if_changed(os.path.join(path, 'source', 'Hardware', 'Accessories', 'Accessories.table'), make_hardware_devices_table(accessory_infos, False))
 
-    print('Generating Accessories_Discontinued.table')
+    debug('Generating Accessories_Discontinued.table')
     write_if_changed(os.path.join(path, 'source', 'Hardware', 'Accessories', 'Accessories_Discontinued.table'), make_hardware_devices_table(accessory_infos, True))
 
-    print('Generating Discontinued_Products_table')
+    debug('Generating Discontinued_Products_table')
     write_if_changed(os.path.join(path, 'source', 'Hardware', 'Discontinued_Products.table'), make_discontinued_products_table())
 
     for brick_info in brick_infos:
         if not brick_info.has_bindings:
             continue
 
-        print('Generating {0}_hlpi.table'.format(brick_info.hardware_doc_name))
+        debug('Generating {0}_hlpi.table'.format(brick_info.hardware_doc_name))
         write_if_changed(os.path.join(path, 'source', 'Hardware', 'Bricks', brick_info.hardware_doc_name + '_hlpi.table'), make_hlpi_table(brick_info))
 
     for bricklet_info in bricklet_infos:
         if not bricklet_info.has_bindings:
             continue
 
-        print('Generating {0}_hlpi.table'.format(bricklet_info.hardware_doc_name))
+        debug('Generating {0}_hlpi.table'.format(bricklet_info.hardware_doc_name))
         write_if_changed(os.path.join(path, 'source', 'Hardware', 'Bricklets', bricklet_info.hardware_doc_name + '_hlpi.table'), make_hlpi_table(bricklet_info))
 
-    print('Generating Device_Identifier.table')
+    debug('Generating Device_Identifier.table')
     write_if_changed(os.path.join(path, 'source', 'Software', 'Device_Identifier.table'), make_device_identifier_table())
 
-    print('Generating Tutorial_authenticate_examples.table')
+    debug('Generating Tutorial_authenticate_examples.table')
     write_if_changed(os.path.join(path, 'source', 'Tutorials', 'Tutorial_Authentication', 'Tutorial_authenticate_examples.table'), make_authentication_tutorial_examples_table())
 
     for bindings_info in bindings_infos:
         if bindings_info.is_programming_language:
-            print('Generating API_Bindings_{0}_links.table'.format(bindings_info.software_doc_suffix))
+            debug('Generating API_Bindings_{0}_links.table'.format(bindings_info.software_doc_suffix))
             write_if_changed(os.path.join(path, 'source', 'Software', 'API_Bindings_{0}_links.table'.format(bindings_info.software_doc_suffix)), make_api_bindings_links_table(bindings_info))
         else:
-            print('Generating {0}_links.table'.format(bindings_info.software_doc_suffix))
+            debug('Generating {0}_links.table'.format(bindings_info.software_doc_suffix))
             write_if_changed(os.path.join(path, 'source', 'Low_Level_Protocols', '{0}_links.table'.format(bindings_info.software_doc_suffix)), make_llproto_links_table(bindings_info))
 
     for bindings_info in bindings_infos:
@@ -1764,7 +1774,7 @@ aufgelistet. Anleitungen für weiterführende Projekte finden sich im Abschnitt
         disp_name = bindings_info.display_name
         lang_path = bindings_info.software_doc_suffix
         for dev in [u"Bricks", u"Bricklets"]:
-            print('Generating {dev}_{lang}_Discontinued.rst'.format(dev=dev, lang=lang_path))
+            debug('Generating {dev}_{lang}_Discontinued.rst'.format(dev=dev, lang=lang_path))
             discontinued = template[lang].format(lang=disp_name,
                                                     lang_path = lang_path,
                                                     device_type=dev,
@@ -1774,7 +1784,7 @@ aufgelistet. Anleitungen für weiterführende Projekte finden sich im Abschnitt
                                                     discontinued_title_underscore="_Discontinued")
             write_if_changed(os.path.join(path, 'source', 'Software', "{dev}_{lang}_Discontinued.rst".format(dev=dev, lang=lang_path)), discontinued.encode('utf-8'))
 
-            print('Generating {dev}_{lang}.rst'.format(dev=dev, lang=lang_path))
+            debug('Generating {dev}_{lang}.rst'.format(dev=dev, lang=lang_path))
             normal = template[lang].format(lang=disp_name,
                                             lang_path = lang_path,
                                             device_type=dev,
@@ -1786,54 +1796,54 @@ aufgelistet. Anleitungen für weiterführende Projekte finden sich im Abschnitt
 
     for bindings_info in bindings_infos:
         if bindings_info.is_programming_language:
-            print('Generating Bricks_{0}.toctree'.format(bindings_info.software_doc_suffix))
+            debug('Generating Bricks_{0}.toctree'.format(bindings_info.software_doc_suffix))
             write_if_changed(os.path.join(path, 'source', 'Software', 'Bricks_{0}.toctree'.format(bindings_info.software_doc_suffix)), make_software_devices_toctree(bindings_info, brick_infos, 'Bricks', '', False))
 
-            print('Generating Bricks_{0}_Discontinued.toctree'.format(bindings_info.software_doc_suffix))
+            debug('Generating Bricks_{0}_Discontinued.toctree'.format(bindings_info.software_doc_suffix))
             write_if_changed(os.path.join(path, 'source', 'Software', 'Bricks_{0}_Discontinued.toctree'.format(bindings_info.software_doc_suffix)), make_software_devices_toctree(bindings_info, brick_infos, 'Bricks', '', True))
 
-            print('Generating Bricks_{0}.table'.format(bindings_info.software_doc_suffix))
+            debug('Generating Bricks_{0}.table'.format(bindings_info.software_doc_suffix))
             write_if_changed(os.path.join(path, 'source', 'Software', 'Bricks_{0}.table'.format(bindings_info.software_doc_suffix)), make_api_bindings_devices_table(bindings_info, brick_infos, 'Brick', False))
 
-            print('Generating Bricks_{0}_Discontinued.table'.format(bindings_info.software_doc_suffix))
+            debug('Generating Bricks_{0}_Discontinued.table'.format(bindings_info.software_doc_suffix))
             write_if_changed(os.path.join(path, 'source', 'Software', 'Bricks_{0}_Discontinued.table'.format(bindings_info.software_doc_suffix)), make_api_bindings_devices_table(bindings_info, brick_infos, 'Brick', True))
         else:
-            print('Generating Bricks_{0}.toctree'.format(bindings_info.software_doc_suffix))
+            debug('Generating Bricks_{0}.toctree'.format(bindings_info.software_doc_suffix))
             write_if_changed(os.path.join(path, 'source', 'Low_Level_Protocols', 'Bricks_{0}.toctree'.format(bindings_info.software_doc_suffix)), make_software_devices_toctree(bindings_info, brick_infos, 'Bricks', '../Software/', False))
 
-            print('Generating Bricks_{0}_Discontinued.toctree'.format(bindings_info.software_doc_suffix))
+            debug('Generating Bricks_{0}_Discontinued.toctree'.format(bindings_info.software_doc_suffix))
             write_if_changed(os.path.join(path, 'source', 'Low_Level_Protocols', 'Bricks_{0}_Discontinued.toctree'.format(bindings_info.software_doc_suffix)), make_software_devices_toctree(bindings_info, brick_infos, 'Bricks', '../Software/', True))
 
-            print('Generating Bricks_{0}.table'.format(bindings_info.software_doc_suffix))
+            debug('Generating Bricks_{0}.table'.format(bindings_info.software_doc_suffix))
             write_if_changed(os.path.join(path, 'source', 'Low_Level_Protocols', 'Bricks_{0}.table'.format(bindings_info.software_doc_suffix)), make_llproto_devices_table(bindings_info, brick_infos, 'Brick', False))
 
-            print('Generating Bricks_{0}_Discontinued.table'.format(bindings_info.software_doc_suffix))
+            debug('Generating Bricks_{0}_Discontinued.table'.format(bindings_info.software_doc_suffix))
             write_if_changed(os.path.join(path, 'source', 'Low_Level_Protocols', 'Bricks_{0}_Discontinued.table'.format(bindings_info.software_doc_suffix)), make_llproto_devices_table(bindings_info, brick_infos, 'Brick', True))
 
     for bindings_info in bindings_infos:
         if bindings_info.is_programming_language:
-            print('Generating Bricklets_{0}.toctree'.format(bindings_info.software_doc_suffix))
+            debug('Generating Bricklets_{0}.toctree'.format(bindings_info.software_doc_suffix))
             write_if_changed(os.path.join(path, 'source', 'Software', 'Bricklets_{0}.toctree'.format(bindings_info.software_doc_suffix)), make_software_devices_toctree(bindings_info, bricklet_infos, 'Bricklets', '', False))
 
-            print('Generating Bricklets_{0}_Discontinued.toctree'.format(bindings_info.software_doc_suffix))
+            debug('Generating Bricklets_{0}_Discontinued.toctree'.format(bindings_info.software_doc_suffix))
             write_if_changed(os.path.join(path, 'source', 'Software', 'Bricklets_{0}_Discontinued.toctree'.format(bindings_info.software_doc_suffix)), make_software_devices_toctree(bindings_info, bricklet_infos, 'Bricklets', '', True))
 
-            print('Generating Bricklets_{0}.table'.format(bindings_info.software_doc_suffix))
+            debug('Generating Bricklets_{0}.table'.format(bindings_info.software_doc_suffix))
             write_if_changed(os.path.join(path, 'source', 'Software', 'Bricklets_{0}.table'.format(bindings_info.software_doc_suffix)), make_api_bindings_devices_table(bindings_info, bricklet_infos, 'Bricklet', False))
 
-            print('Generating Bricklets_{0}_Discontinued.table'.format(bindings_info.software_doc_suffix))
+            debug('Generating Bricklets_{0}_Discontinued.table'.format(bindings_info.software_doc_suffix))
             write_if_changed(os.path.join(path, 'source', 'Software', 'Bricklets_{0}_Discontinued.table'.format(bindings_info.software_doc_suffix)), make_api_bindings_devices_table(bindings_info, bricklet_infos, 'Bricklet', True))
         else:
-            print('Generating Bricklets_{0}.toctree'.format(bindings_info.software_doc_suffix))
+            debug('Generating Bricklets_{0}.toctree'.format(bindings_info.software_doc_suffix))
             write_if_changed(os.path.join(path, 'source', 'Low_Level_Protocols', 'Bricklets_{0}.toctree'.format(bindings_info.software_doc_suffix)), make_software_devices_toctree(bindings_info, bricklet_infos, 'Bricklets', '../Software/', False))
 
-            print('Generating Bricklets_{0}_Discontinued.toctree'.format(bindings_info.software_doc_suffix))
+            debug('Generating Bricklets_{0}_Discontinued.toctree'.format(bindings_info.software_doc_suffix))
             write_if_changed(os.path.join(path, 'source', 'Low_Level_Protocols', 'Bricklets_{0}_Discontinued.toctree'.format(bindings_info.software_doc_suffix)), make_software_devices_toctree(bindings_info, bricklet_infos, 'Bricklets', '../Software/', True))
 
-            print('Generating Bricklets_{0}.table'.format(bindings_info.software_doc_suffix))
+            debug('Generating Bricklets_{0}.table'.format(bindings_info.software_doc_suffix))
             write_if_changed(os.path.join(path, 'source', 'Low_Level_Protocols', 'Bricklets_{0}.table'.format(bindings_info.software_doc_suffix)), make_llproto_devices_table(bindings_info, bricklet_infos, 'Bricklet', False))
 
-            print('Generating Bricklets_{0}_Discontinued.table'.format(bindings_info.software_doc_suffix))
+            debug('Generating Bricklets_{0}_Discontinued.table'.format(bindings_info.software_doc_suffix))
             write_if_changed(os.path.join(path, 'source', 'Low_Level_Protocols', 'Bricklets_{0}_Discontinued.table'.format(bindings_info.software_doc_suffix)), make_llproto_devices_table(bindings_info, bricklet_infos, 'Bricklet', True))
 
 if __name__ == "__main__":

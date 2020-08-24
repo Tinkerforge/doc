@@ -1,6 +1,16 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+from __future__ import print_function
+
+DEBUG = False
+if __name__ == "__main__" and not DEBUG:
+    print("Suppressing output of generate_tabletop_weather_station_substitutions.py")
+
+def debug(*args, **kwargs):
+    if DEBUG:
+        print(*args, **kwargs)
+
 import os
 import sys
 
@@ -101,12 +111,12 @@ def generate(path):
     elif path.endswith('/de'):
         lang = 'de'
     else:
-        print 'Wrong working directory'
+        debug('Wrong working directory')
         sys.exit(1)
 
     generate_tables.lang = lang
 
-    print 'Generating TabletopWeatherStation.substitutions'
+    debug('Generating TabletopWeatherStation.substitutions')
     write_if_changed(os.path.join(path, 'source', 'Kits', 'TabletopWeatherStation', 'TabletopWeatherStation.substitutions'), make_substitutions())
 
 if __name__ == "__main__":

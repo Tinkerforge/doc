@@ -1,6 +1,16 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+from __future__ import print_function
+
+DEBUG = False
+if __name__ == "__main__" and not DEBUG:
+    print("Suppressing output of generate_server_room_monitoring_substitutions.py")
+
+def debug(*args, **kwargs):
+    if DEBUG:
+        print(*args, **kwargs)
+
 import os
 import sys
 
@@ -59,12 +69,12 @@ def generate(path):
     elif path.endswith('/de'):
         lang = 'de'
     else:
-        print 'Wrong working directory'
+        debug('Wrong working directory')
         sys.exit(1)
 
     generate_tables.lang = lang
 
-    print 'Generating ServerRoomMonitoring.substitutions'
+    debug('Generating ServerRoomMonitoring.substitutions')
     write_if_changed(os.path.join(path, 'source', 'Kits', 'ServerRoomMonitoring', 'ServerRoomMonitoring.substitutions'), make_substitutions())
 
 if __name__ == "__main__":

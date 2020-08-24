@@ -1,6 +1,16 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+from __future__ import print_function
+
+DEBUG = False
+if __name__ == "__main__" and not DEBUG:
+    print("Suppressing output of generate_common_substitutions.py")
+
+def debug(*args, **kwargs):
+    if DEBUG:
+        print(*args, **kwargs)
+
 import os
 import sys
 
@@ -244,17 +254,17 @@ def generate(path):
     elif path.endswith('/de'):
         lang = 'de'
     else:
-        print 'Wrong working directory'
+        debug('Wrong working directory')
         sys.exit(1)
 
     write_if_changed(os.path.join(path, 'source', 'Software', 'IPConnection_Common.substitutions'), make_ipcon_substitutions())
 
     for brick_info in brick_infos:
-        print 'Generating {0}.substitutions (Hardware)'.format(brick_info.hardware_doc_name)
+        debug('Generating {0}.substitutions (Hardware)'.format(brick_info.hardware_doc_name))
         write_if_changed(os.path.join(path, 'source', 'Hardware', 'Bricks', brick_info.hardware_doc_name + '.substitutions'), make_brick_substitutions(brick_info))
 
     for bricklet_info in bricklet_infos:
-        print 'Generating {0}.substitutions (Hardware)'.format(bricklet_info.hardware_doc_name)
+        debug('Generating {0}.substitutions (Hardware)'.format(bricklet_info.hardware_doc_name))
         write_if_changed(os.path.join(path, 'source', 'Hardware', 'Bricklets', bricklet_info.hardware_doc_name + '.substitutions'), make_bricklet_substitutions(bricklet_info))
 
 if __name__ == "__main__":

@@ -1,6 +1,16 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+from __future__ import print_function
+
+DEBUG = False
+if __name__ == "__main__" and not DEBUG:
+    print("Suppressing output of generate_hardware_hacking_substitutions.py")
+
+def debug(*args, **kwargs):
+    if DEBUG:
+        print(*args, **kwargs)
+
 import os
 import sys
 
@@ -1231,42 +1241,42 @@ def generate(path):
     elif path.endswith('/de'):
         lang = 'de'
     else:
-        print 'Wrong working directory'
+        debug('Wrong working directory')
         sys.exit(1)
 
     generate_tables.lang = lang
 
-    print 'Generating HardwareHacking.substitutions'
+    debug('Generating HardwareHacking.substitutions')
     write_if_changed(os.path.join(path, 'source', 'Kits', 'HardwareHacking', 'HardwareHacking.substitutions'), make_substitutions())
 
     for bindings_info in bindings_infos:
         if bindings_info.url_part in examples:
-            print 'Generating {0}Common.substitutions (HardwareHacking)'.format(bindings_info.software_doc_suffix)
+            debug('Generating {0}Common.substitutions (HardwareHacking)'.format(bindings_info.software_doc_suffix))
             write_if_changed(os.path.join(path, 'source', 'Kits', 'HardwareHacking', bindings_info.software_doc_suffix + 'Common.substitutions'), make_common_substitutions(bindings_info))
 
-    print 'Generating AndroidCommon.substitutions (HardwareHacking)'
+    debug('Generating AndroidCommon.substitutions (HardwareHacking)')
     write_if_changed(os.path.join(path, 'source', 'Kits', 'HardwareHacking', 'AndroidCommon.substitutions'), make_android_common_substitutions())
 
-    print 'Generating WindowsPhoneCommon.substitutions (HardwareHacking)'
+    debug('Generating WindowsPhoneCommon.substitutions (HardwareHacking)')
     write_if_changed(os.path.join(path, 'source', 'Kits', 'HardwareHacking', 'WindowsPhoneCommon.substitutions'), make_windows_phone_common_substitutions())
 
-    print 'Generating iOSCommon.substitutions (HardwareHacking)'
+    debug('Generating iOSCommon.substitutions (HardwareHacking)')
     write_if_changed(os.path.join(path, 'source', 'Kits', 'HardwareHacking', 'iOSCommon.substitutions'), make_ios_common_substitutions())
 
-    print 'Generating SmokeDetector.substitutions (HardwareHacking)'
+    debug('Generating SmokeDetector.substitutions (HardwareHacking)')
     write_if_changed(os.path.join(path, 'source', 'Kits', 'HardwareHacking', 'SmokeDetector.substitutions'), make_smoke_detector_substitutions())
-    print 'Generating SmokeDetector.toctree (HardwareHacking)'
+    debug('Generating SmokeDetector.toctree (HardwareHacking)')
     write_if_changed(os.path.join(path, 'source', 'Kits', 'HardwareHacking', 'SmokeDetector.toctree'), make_smoke_detector_toctree())
 
-    print 'Generating RemoteSwitch.substitutions (HardwareHacking)'
+    debug('Generating RemoteSwitch.substitutions (HardwareHacking)')
     write_if_changed(os.path.join(path, 'source', 'Kits', 'HardwareHacking', 'RemoteSwitch.substitutions'), make_remote_switch_substitutions())
-    print 'Generating RemoteSwitch.toctree (HardwareHacking)'
+    debug('Generating RemoteSwitch.toctree (HardwareHacking)')
     write_if_changed(os.path.join(path, 'source', 'Kits', 'HardwareHacking', 'RemoteSwitch.toctree'), make_remote_switch_toctree())
 
-    print 'Generating GarageControl.substitutions (HardwareHacking)'
+    debug('Generating GarageControl.substitutions (HardwareHacking)')
     write_if_changed(os.path.join(path, 'source', 'Kits', 'HardwareHacking', 'GarageControl.substitutions'), make_garage_control_substitutions())
 
-    print 'Generating PowerOutletControl.substitutions (HardwareHacking)'
+    debug('Generating PowerOutletControl.substitutions (HardwareHacking)')
     write_if_changed(os.path.join(path, 'source', 'Kits', 'HardwareHacking', 'PowerOutletControl.substitutions'), make_power_outlet_control_substitutions())
 
 if __name__ == "__main__":
