@@ -58,9 +58,9 @@ bindings_infos = \
                  url_part='uc',
                  software_doc_suffix='uC',
                  is_programming_language=True,
-                 is_released=True,
+                 is_released=False,
                  has_authentication_example=False,
-                 has_download=True,
+                 has_download=False,
                  misc_docs=[
                      MiscDoc('API_Bindings_{suffix}', 'api_bindings_{suffix}',  {'en': 'Usage', 'de': 'Benutzung'}, False, False),
                      MiscDoc('API_Bindings_{suffix}_HAL_Arduino', 'api_bindings_{suffix}_hal_arduino', {'en': 'HAL Arduino', 'de': 'HAL Arduino'}, True, True),
@@ -680,7 +680,7 @@ def make_download_bindings_table():
                                bindings_info.url_part,
                                archive[lang],
                                bindings_and_examples[lang],
-                               *(bindings_versions[bindings_info.url_part] if bindings_info.url_part not in ('openhab', 'uc') else (2, 0 ,0))))
+                               *bindings_versions[bindings_info.url_part]))
 
     return table_head[lang] + '\n'.join(rows) + '\n'
 
