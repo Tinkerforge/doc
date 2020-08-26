@@ -48,8 +48,7 @@ Authenticate
 API
 ---
 
-Every function of the C/C++ bindings returns an integer which describes an
-error code.
+Most functions of the C/C++ bindings return an error code (``e_code``).
 
 Possible error codes are:
 

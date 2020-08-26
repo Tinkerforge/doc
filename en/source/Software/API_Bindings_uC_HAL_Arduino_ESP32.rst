@@ -87,8 +87,7 @@ The :file:`example_driver.c` contains an example port specification.
 API
 ---
 
-Every function of the HAL returns an integer which describes an
-error code.
+Most functions of the HAL return an error code (``e_code``).
 
 Possible error codes are:
 

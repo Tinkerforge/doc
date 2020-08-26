@@ -66,6 +66,6 @@
  No padding, grouping , l-modifiers or similar or floats are supported.
  The newline character ``\n`` is translated to the platform specific newline character(s).
 
-.. cpp:function:: const char *tf_hal_strerror(int rc)
+.. cpp:function:: const char *tf_hal_strerror(int e_code)
 
  Returns an error string for the given error code.

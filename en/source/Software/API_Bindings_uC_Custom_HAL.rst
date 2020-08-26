@@ -180,7 +180,7 @@ All functions returning an int should return ``TF_E_OK`` on success.
 
  Logs the platform specific newline character(s).
 
-.. c:function:: const char *tf_hal_strerror(int rc)
+.. c:function:: const char *tf_hal_strerror(int e_code)
 
  Returns an error description for the given error code. To be as space efficient
  as possible, this function can be customized as follows:
@@ -195,9 +195,9 @@ All functions returning an int should return ``TF_E_OK`` on success.
  .. code-block:: c
 
   #ifdef TF_IMPLEMENT_STRERROR
-  const char *tf_hal_strerror(int rc) {
+  const char *tf_hal_strerror(int e_code) {
       #define TF_CONST_STRING(x) x
-      switch(rc) {
+      switch(e_code) {
           #include "../bindings/errors.inc"
           /* Add HAL specific error codes here, for example:
           case TF_E_OPEN_GPIO_FAILED:

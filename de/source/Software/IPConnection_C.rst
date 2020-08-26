@@ -48,8 +48,8 @@ Authenticate
 API
 ---
 
-Jede Funktion der C/C++ Bindings gibt einen Integer zurück, welcher einen
-Fehlercode beschreibt.
+Die meistens Funktionen der C/C++ Bindings geben einen Fehlercode (``e_code``)
+zurück.
 
 Mögliche Fehlercodes sind:
 
