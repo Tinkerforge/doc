@@ -167,6 +167,10 @@ in :file:`bindings/config.h`:
   * ``TF_LOG_LEVEL_INFO``: Additionally logs the initial list of detected devices (default)
   * ``TF_LOG_LEVEL_DEBUG``: Additionally logs all internal state changes in the SPITFP state machine
 
+* ``TF_IMPLEMENT_STRERROR``:
+  If you remove this define, the tf_hal_strerror function will not be implemented. This saves about
+  500 bytes of flash or RAM, depending on the HAL.
+
 .. _api_bindings_uc_api_reference:
 
 API Reference and Examples

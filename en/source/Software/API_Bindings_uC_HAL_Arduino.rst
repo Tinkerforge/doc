@@ -62,7 +62,7 @@ want to communicate with the Bricklets yet. This makes sure the signals are corr
 
 As last step, you have to change the UID in the example C file to the UID of your device.
 The UID is shown in Brick Viewer if you connect the device to your PC. Also the bindings
-will print a list of connected devices to the serial console when calling :c:func:`tf_hal_init`,
+will print a list of connected devices to the serial console when calling :c:func:`tf_hal_create`,
 if the log level is unchanged.
 
 .. _api_bindings_uc_hal_arduino_port_spec:
@@ -110,16 +110,16 @@ Possible error codes are:
 * TF\_\ **E**\ _CALLBACK_EXEC = -12
 * TF\_\ **E**\ _PORT_NOT_FOUND = -13
 
+.. cpp:namespace-push:: hal_arduino
+
 (as defined in :file:`errors.h`). This HAL does not define further
-error codes. Use :c:func:`tf_strerror` (also defined in :file:`errors.h`) to get
+error codes. Use :cpp:func:`tf_hal_strerror` to get
 an error string for an error code.
 
 Basic Functions
 ^^^^^^^^^^^^^^^
 
-.. cpp:namespace-push:: hal_arduino
-
-.. cpp:function:: int tf_hal_init(TF_HalContext *hal, TF_Port *ports, size_t port_count)
+.. cpp:function:: int tf_hal_create(TF_HalContext *hal, TF_Port *ports, uint8_t port_count)
 
  Creates a HAL object that can be used to list the available devices.
  It is also requred for the constructor of Bricks and Bricklets.

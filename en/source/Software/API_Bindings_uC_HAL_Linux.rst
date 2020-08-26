@@ -81,7 +81,7 @@ The default ``"/dev/spidev0.0"`` is correct for the ::ref:`HAT Brick <hat_brick>
 
 As last step, you have to change the UID in the example C file to the UID of your device.
 The UID is shown in Brick Viewer if you connect the device to your PC. Also the bindings
-will print a list of connected devices to the standard output when calling :c:func:`tf_hal_init`,
+will print a list of connected devices to the standard output when calling :c:func:`tf_hal_create`,
 if the log level is unchanged.
 
 You can then compile the program with ``make``.
@@ -155,15 +155,17 @@ The HAL declares the following further error codes:
 * TF\_\ **E**\ _CHIP_SELECT_FAILED = -105
 * TF\_\ **E**\ _TRANSCEIVE_FAILED = -106
 
-Use :c:func:`tf_strerror` (also defined in :file:`errors.h`) to get
+.. cpp:namespace-push:: hal_linux
+
+Use :cpp:func:`tf_hal_strerror` to get
 an error string for an error code.
 
 Basic Functions
 ^^^^^^^^^^^^^^^
 
-.. cpp:namespace-push:: hal_linux
 
-.. cpp:function:: int tf_hal_init(TF_HalContext *hal, const char *spidev_path, TF_Port *ports, uint8_t port_count)
+
+.. cpp:function:: int tf_hal_create(TF_HalContext *hal, const char *spidev_path, TF_Port *ports, uint8_t port_count)
 
  Creates a HAL object that can be used to list the available devices.
  It is also requred for the constructor of Bricks and Bricklets.
