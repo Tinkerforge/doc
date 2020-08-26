@@ -78,7 +78,7 @@ The next step after defining the ``TF_HalContext`` struct is implementing its in
 
 * Set the ``TF_HalContext`` struct to a defined state.
 
-* Initialize the ``TF_HalCommon`` instance with :c:func:`tf_hal_common_icreate`
+* Initialize the ``TF_HalCommon`` instance with :c:func:`tf_hal_common_create`
 
 * Prepare the SPI communication
   When your initialization function returns, SPI communication must be possible to all attached devices.
