@@ -52,7 +52,7 @@ Installation
 ------------
 
 .. note:
- The C/C++ Bindings for Microcontrollers are available in the
+ The C/C++ bindings for microcontrollers are available in the
  `TinkerUnity`<https://www.tinkerunity.org/topic/5468-beta-version-of-the-cc-bindings-for-microcontrollers/> for the beta phase.
 
 Because there is no precompiled library for the bindings there is nothing

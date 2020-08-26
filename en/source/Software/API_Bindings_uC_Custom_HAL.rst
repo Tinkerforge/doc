@@ -4,7 +4,7 @@
 C/C++ for Microcontrollers - Custom HAL
 =======================================
 
-Using the C/C++ Bindings for Microcontrollers
+Using the C/C++ bindings for microcontrollers
 requires a hardware specific HAL. If no HAL for
 your platform is available, you can write your own
 by following this guide.
