@@ -166,7 +166,7 @@ All functions returning an int should return ``TF_E_OK`` on success.
  This name will be patched into ``get_identity`` results for devices directly connected
  to the host.
 
-.. c:function:: void tf_hal_log_message(const char *msg, uint32_t len)
+.. c:function:: void tf_hal_log_message(const char *msg, size_t len)
 
  Logs the given message. The message has a length of ``len`` and is not null-terminated.
  Depending on the platform you can use a serial console (Arduino) or
