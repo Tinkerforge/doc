@@ -62,6 +62,9 @@ Generally, every method of the Python bindings can throw an
 * Error.STREAM_OUT_OF_SYNC = -12
 * Error.INVALID_UID = -13
 * Error.NON_ASCII_CHAR_IN_SECRET = -14
+* Error.WRONG_DEVICE_TYPE = -15
+* Error.DEVICE_REPLACED = -16
+* Error.WRONG_RESPONSE_LENGTH = -17
 
 All methods listed below are thread-safe.
 

@@ -64,6 +64,9 @@ Fehlercodes definiert:
 * Error->STREAM_OUT_OF_SYNC = 51
 * Error->INVALID_UID = 61
 * Error->NON_ASCII_CHAR_IN_SECRET = 71
+* Error->WRONG_DEVICE_TYPE = 81
+* Error->DEVICE_REPLACED = 82
+* Error->WRONG_RESPONSE_LENGTH = 83
 
 Alle folgend aufgelisteten Funktionen sind Thread-sicher.
 

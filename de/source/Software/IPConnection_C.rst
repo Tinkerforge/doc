@@ -68,6 +68,9 @@ Mögliche Fehlercodes sind:
 * **E**\ _STREAM_OUT_OF_SYNC = -12
 * **E**\ _INVALID_UID = -13
 * **E**\ _NON_ASCII_CHAR_IN_SECRET = -14
+* **E**\ _WRONG_DEVICE_TYPE = -15
+* **E**\ _DEVICE_REPLACED = -16
+* **E**\ _WRONG_RESPONSE_LENGTH = -17
 
 wie in :file:`ip_connection.h` definiert.
 

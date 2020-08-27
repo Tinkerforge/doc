@@ -86,6 +86,9 @@ of the following values:
 * IPConnection.\ **ERROR**\ _UNKNOWN_ERROR = 43
 * IPConnection.\ **ERROR**\ _STREAM_OUT_OF_SYNC = 51
 * IPConnection.\ **ERROR**\ _NON_ASCII_CHAR_IN_SECRET = 71
+* IPConnection.\ **ERROR**\ _WRONG_DEVICE_TYPE = 81
+* IPConnection.\ **ERROR**\ _DEVICE_REPLACED = 82
+* IPConnection.\ **ERROR**\ _WRONG_RESPONSE_LENGTH = 83
 
 The namespace for the JavaScript bindings is ``Tinkerforge.*``.
 

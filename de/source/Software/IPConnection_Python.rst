@@ -62,6 +62,9 @@ eine ``description`` Property hat. ``value`` kann verschiedene Werte haben:
 * Error.STREAM_OUT_OF_SYNC = -12
 * Error.INVALID_UID = -13
 * Error.NON_ASCII_CHAR_IN_SECRET = -14
+* Error.WRONG_DEVICE_TYPE = -15
+* Error.DEVICE_REPLACED = -16
+* Error.WRONG_RESPONSE_LENGTH = -17
 
 Alle folgend aufgelisteten Funktionen sind Thread-sicher.
 
