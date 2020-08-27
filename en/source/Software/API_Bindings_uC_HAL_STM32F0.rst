@@ -112,6 +112,7 @@ Possible error codes are:
 * TF\_\ **E**\ _PORT_NOT_FOUND = -13
 
 .. cpp:namespace-push:: hal_stm32f0
+
 The HAL declares the following further error codes:
 
 * TF\_\ **E**\ _CHIP_SELECT_FAILED = -100

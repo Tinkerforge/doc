@@ -83,6 +83,7 @@ For other platforms, a custom HAL must be implemented.
 * :ref:`HAL Arduino ESP32 <api_bindings_uc_hal_arduino_esp32>` for Arduino compatible boards with ESP32 processor
 * :ref:`HAL Linux <api_bindings_uc_hal_linux>` for Linux systems with spidev-support
 * :ref:`HAL Raspberry Pi <api_bindings_uc_hal_raspberry_pi>` for Raspberry Pi 2, 3, 4, and Zero with the BCM2835 chip.
+* :ref:`HAL STM32F0 <api_bindings_uc_hal_stm32f0>` for the STM32F0 microcontroller.
 
 
 Implementing a Custom HAL
@@ -217,6 +218,7 @@ following table. Further project descriptions can be found in the
    HAL Arduino ESP32 <API_Bindings_uC_HAL_Arduino_ESP32>
    HAL Linux <API_Bindings_uC_HAL_Linux>
    HAL Raspberry Pi <API_Bindings_uC_HAL_Raspberry_Pi>
+   HAL STM32F0 <API_Bindings_uC_HAL_STM32F0>
    Custom HAL <API_Bindings_uC_Custom_HAL>
    Bricks <Bricks_uC>
    Bricks (Discontinued) <Bricks_uC_Discontinued>
