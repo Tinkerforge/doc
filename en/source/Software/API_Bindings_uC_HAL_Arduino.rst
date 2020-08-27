@@ -126,6 +126,10 @@ Basic Functions
  * ``ports`` is an array of port specifications, as described :ref:`here <api_bindings_uc_hal_arduino_port_spec>`
  * ``port_count`` is the length of the ``ports`` array.
 
+ .. note:
+   If the configured log level is not ``TF_LOG_LEVEL_NONE``,
+   please initialize the serial console before calling this function.
+
 .. cpp:function:: int tf_hal_destroy(TF_HalContext *hal)
 
  Destroys the given ``TF_HalContext``.
