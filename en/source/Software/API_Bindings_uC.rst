@@ -91,6 +91,35 @@ Implementing a Custom HAL
 If you want to use the bindings on another platform, you have to implement
 a custom HAL. :ref:`This guide <api_bindings_uc_custom_hal>` shows how.
 
+.. _api_bindings_uc_callbacks:
+
+Callbacks
+---------
+
+Callbacks in the C/C++ bindings for microcontrollers work differently than
+those in the other bindings. As there is no multi-threading on many of the
+target platforms, there is no automatic polling for callbacks. Instead, if
+you want to receive callbacks, you have to poll for them yourself with the
+``tf_hal_callback_tick`` available in every HAL. This function will poll any
+device with a registered callback handler for new packets.
+
+Callbacks are not dispatched by another thread, but instead while
+executing a getter, setter or the ``tf_hal_callback_tick`` function.
+Because of this, callback handlers will run while the internal state
+machines of the bindings are in states, that do not support sending other
+packets. Because of this,
+**calling getters, setters or tick functions inside a callback handler is not allowed**.
+
+To keep the bindings allocation-free, no high level callbacks are supported.
+High level callbacks are those, that use the streaming concept, I.e. send a
+payload of dynamic length or one that does not fit in a single TFP packet.
+You can instead use the low level callbacks and reassemble the payload yourself
+if you need the complete payload at the same time. For some use cases, for
+example if you want to find the pixel with the highest temperature in the
+:ref:`Thermal Imaging Bricklet <thermal_imaging_bricklet>` linear temperature
+image, you don't need to reassemble the payload, as you can just search over
+each chunk one after another.
+
 .. _api_bindings_uc_thread_safety:
 
 Thread safety
@@ -99,12 +128,8 @@ Thread safety
 As the primary target for these bindings are microcontrollers,
 the bindings are **not** thread safe. Some HALs support cooperative
 multi-tasking, however no calls to the bindings API are allowed when
-they have yielded. Callbacks are not dispatched by another thread.
-Instead they will be dispatched if they are received while calling
-a getter, setter or callback tick function.
-**Calling getters, setters or tick functions inside a callback handler is not allowed.**
-All functions will return ``TF_E_CALLBACK_EXEC`` if called inside a callback handler
-or while the bindings are yielded.
+they have yielded. All functions will return ``TF_E_LOCKED``
+if called inside a callback handler or while the bindings are yielded.
 
 .. _api_bindings_uc_performance:
 
@@ -134,6 +159,8 @@ of optimizations:
   don't use ``tf_hal_callback_tick``, instead use your own scheduling to poll
   with the specific ``tf_[device]_callback_tick`` functions. This allows spending
   more time on other tasks instead of polling the devices all the time.
+  ``tf_hal_callback_tick`` uses a round-robin scheduler to poll
+  all devices with a registered callback handler.
 
 * If multiple SPI devices are available, use multiple HAL instances. This will
   only work with HALs that support using a specific SPI device. However you can

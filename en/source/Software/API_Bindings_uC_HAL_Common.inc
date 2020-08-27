@@ -20,6 +20,15 @@
  Polls for callbacks on all devices with an registered callback handler. Will block for the given
  timeout in microseconds.
 
+ This function can be used in a non-blocking fashion by calling it with a timeout of 0. The bindings
+ will then poll a single device for one callback, by clocking out a single byte over SPI,
+ returning immediately if no callback is available. If the device starts sending a callback packet,
+ it will be received, acked and the callback handler will be called.
+
+ The polling is scheduled round-robin over multiple calls, so even if you only poll with a timeout
+ of 0, all devices will be polled as fairly as possble.
+
+
 .. cpp:function:: bool tf_hal_deadline_elapsed(TF_HalContext *hal, uint32_t deadline_us)
 
  Returns true if the deadline in microseconds is elapsed, false otherwise. Robust against

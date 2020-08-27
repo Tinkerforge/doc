@@ -103,7 +103,7 @@ Possible error codes are:
 * TF\_\ **E**\ _TOO_MANY_DEVICES = -9
 * TF\_\ **E**\ _DEVICE_NOT_FOUND = -10
 * TF\_\ **E**\ _WRONG_DEVICE_TYPE = -11
-* TF\_\ **E**\ _CALLBACK_EXEC = -12
+* TF\_\ **E**\ _LOCKED = -12
 * TF\_\ **E**\ _PORT_NOT_FOUND = -13
 
 .. cpp:namespace-push:: hal_arduino_esp32
