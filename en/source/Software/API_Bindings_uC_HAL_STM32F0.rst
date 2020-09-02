@@ -4,7 +4,7 @@
 C/C++ for Microcontrollers - STM32F0 HAL
 ========================================
 
-The Arduino Hardware Abstraction Layer (HAL) is used
+The STM32F0 Hardware Abstraction Layer (HAL) is used
 with the C/C++ bindings for microcontrollers to communicate
 with Bricklets over SPI.
 
@@ -18,7 +18,7 @@ This HAL was tested with the following devices:
 but should work with all projects that use a STM32F0 microcontroller and the stm32cubef0 library from STM.
 
 .. note::
-  Some STM32F0 microcontroller only have a small amout of flash and RAM available. See :ref:`here <api_bindings_uc_flash_size>`
+  Some STM32F0 microcontroller only have a small amout of flash and RAM available. :ref:`See here <api_bindings_uc_flash_size>`
   for some size optimizations.
 
 .. _api_bindings_uc_hal_stm32f0_examples:
@@ -40,9 +40,9 @@ will print a list of connected devices to the serial console when calling :c:fun
 if the log level is unchanged.
 
 .. note::
-  The HAL uses the 'bricklet2' from Tinkerforge to implement the timer, sleep and log functions.
+  The HAL uses the `bricklib2 <https://github.com/Tinkerforge/bricklib2>`__ to implement the timer, sleep and log functions.
   If you make your own board you will likely have to replace these implementations with
-  timer, sleep and log that are available in your project.
+  timer, sleep and log functions that are available in your project.
 
   Additionally the STM32F0 HAL uses a coop task (non-preemptive scheduling). You can either replace
   it with similar functions if available or disable the scheduling support with a define at
@@ -111,13 +111,16 @@ Possible error codes are:
 * TF\_\ **E**\ _LOCKED = -12
 * TF\_\ **E**\ _PORT_NOT_FOUND = -13
 
-.. cpp:namespace-push:: hal_stm32f0
-
-The HAL declares the following further error codes:
+The HAL defines the following further error codes:
 
 * TF\_\ **E**\ _CHIP_SELECT_FAILED = -100
 * TF\_\ **E**\ _TRANSCEIVE_FAILED = -101
 * TF\_\ **E**\ _TRANSCEIVE_TIMEOUT = -102
+
+.. cpp:namespace-push:: hal_stm32f0
+
+Use :cpp:func:`tf_hal_strerror` to get
+an error string for an error code.
 
 Basic Functions
 ^^^^^^^^^^^^^^^

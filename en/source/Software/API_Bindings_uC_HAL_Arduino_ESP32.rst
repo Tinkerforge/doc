@@ -31,17 +31,17 @@ This HAL includes an example driver sketch that can be used to run any example p
 
 The Arduino IDE has specific requirements to the sketch folder layout. A valid folder looks like this:
 
-* example_driver
+* example_driver/
 
   * example_driver.ino
-  * src
+  * src/
 
     * [copy the example C file here]
-    * bindings
+    * bindings/
 
       * [copy the content of the bindings folder here]
 
-    * hal_arduino_esp32
+    * hal_arduino_esp32/
 
       * [copy hal_arduino_esp32.cpp and hal_arduino_esp32.h here]
 

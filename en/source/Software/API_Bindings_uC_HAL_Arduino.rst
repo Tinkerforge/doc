@@ -25,7 +25,7 @@ as listed for example `here <https://en.wikipedia.org/wiki/List_of_Arduino_board
   of 5 Volt (i.e. all AVR based boards).
 
 .. note::
-  Some Arduino Boards only have a small amout of flash and RAM available. See :ref:`here <api_bindings_uc_flash_size>`
+  Some Arduino Boards only have a small amout of flash and RAM available. :ref:`See here <api_bindings_uc_flash_size>`
   for some size optimizations.
 
 .. _api_bindings_uc_hal_arduino_examples:
@@ -37,22 +37,22 @@ This HAL includes an example driver sketch that can be used to run any example p
 
 The Arduino IDE has specific requirements to the sketch folder layout. A valid folder looks like this:
 
-* example_driver
+* example_driver/
 
   * example_driver.ino
-  * src
+  * src/
 
     * [copy the example C file here]
-    * bindings
+    * bindings/
 
       * [copy the content of the bindings folder here]
 
-    * hal_arduino
+    * hal_arduino/
 
       * [copy hal_arduino.cpp and hal_arduino.h here]
 
 Note that the top-level folder has to have the same name as the sketch,
-i.e. if you rename example_driver.ino, you have to rename the folder as well.
+i.e. if you rename :file:`example_driver.ino`, you have to rename the folder as well.
 
 After creating the folder structure, you have to modify the port assignment in the sketch
 to fit to your set-up (see :ref:`this section <api_bindings_uc_hal_arduino_port_spec>`). If you connect multiple Bricklets to the same SPI bus

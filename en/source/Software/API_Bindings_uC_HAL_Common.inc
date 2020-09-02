@@ -11,7 +11,7 @@
 
 .. cpp:function:: int tf_hal_get_device_info(TF_HalContext *hal, size_t index, char ret_uid[7], char *ret_port_name, uint16_t *ret_device_id)
 
- Returns the UID, port and device identifier of the nth (=index) detected device.
+ Returns the UID, port and :ref:`device identifier <device_identifier>` of the nth (=index) detected device.
  This function returns ``TF_E_DEVICE_NOT_FOUND`` if the index was equal or higher than the number of detected devices.
  To list all devices you can call this function in a loop with growing index until ``TF_E_DEVICE_NOT_FOUND`` is returned once.
 
@@ -63,16 +63,19 @@
  This function is a minimalistic printf implementation.
  The following placeholders are supported:
 
- * ``%u``: An unsigned 32 bit value printed in base 10
- * ``%d``: An signed 32 bit value printed in base 10
- * ``%b``: An unsigned 32 bit value printed in base 2
- * ``%x`` and ``%X``: An unsigned 32 bit value printed in base 16, in both cases with lower-case letters
+ * ``%[prefix]u``: An unsigned integer value printed in base 10
+ * ``%[prefix]d``: A signed integer value printed in base 10
+ * ``%[prefix]b``: An unsigned integer value printed in base 2
+ * ``%[prefix]x`` and ``%[prefix]X``: An unsigned integer value printed in base 16, in both cases with lower-case letters
  * ``%c``: A single character
  * ``%s``: A zero terminated string
  * ``%%``: A percent sign
 
- Other placeholders don't consume a parameter and are printed unmodified.
- No padding, grouping , l-modifiers or similar or floats are supported.
+ With the prefix, you can control the width of printed integers.
+ Valid prefixes are ``I8``, ``I16``, ``I32`` and ``I64``.
+ For example using the placeholder ``%I16x`` will print a 16 bit integer hexadecimal.
+
+ No padding, grouping , l-modifiers or similar, or floats are supported.
  The newline character ``\n`` is translated to the platform specific newline character(s).
 
 .. cpp:function:: const char *tf_hal_strerror(int e_code)

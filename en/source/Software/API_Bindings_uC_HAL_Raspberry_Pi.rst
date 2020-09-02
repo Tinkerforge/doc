@@ -19,13 +19,13 @@ use the BCM2835 chip.
 .. note::
   The Raspberry Pi 3, 4 and Zero scale their clock speed dynamically. Unfortunately this
   also scales the SPI clock speed. You have lock the GPU core frequency to make sure,
-  the SPI clock is stable. We recommend setting the core_freq in config.txt to 250.
-  See `here <https://www.raspberrypi.org/documentation/configuration/config-txt/overclocking.md>`__
+  the SPI clock is stable. We recommend setting the core_freq in /boot/config.txt to 250.
+  `See here <https://www.raspberrypi.org/documentation/configuration/config-txt/overclocking.md>`__
   for details, especially for the Pi 4B, where the core_freq is influenced by other
   boot options.
 
   If you select another core_freq than 250, you have to compensate by multiplying
-  ``BRICKLET_STACK_SPI_CONFIG_MAX_SPEED_HZ`` by 250 / [your core_freq in mhz].
+  ``BRICKLET_STACK_SPI_CONFIG_MAX_SPEED_HZ`` by 250 / [your core_freq in MHz].
 
 .. _api_bindings_uc_hal_raspberry_pi_examples:
 
@@ -35,16 +35,16 @@ Testing an Example
 This HAL includes an example driver sketch that can be used to run any example provided with the bindings,
 as well as a Makefile to compile any example. To use the Makefile, create the following folder layout:
 
-* [your main folder]
+* [your main folder]/
 
   * example_driver.c
   * [copy the example C file here]
   * Makefile
-  * bindings
+  * bindings/
 
     * [copy the contents of the bindings folder here]
 
-  * hal_raspberry_pi
+  * hal_raspberry_pi/
 
     * [copy the contents of the hal_raspberry_pi folder here]
 
@@ -61,8 +61,8 @@ and add the example source file itself to ``SOURCES``, for example
 
   SOURCES :=  example_edge_count.c
 
-Next you have to modify the port assignment in the sketch
-to fit to your set-up (see :ref:`this section <api_bindings_uc_hal_linux_port_spec>`).
+Next you have to modify the port assignment in the example driver
+to fit to your set-up (:ref:`see this section <api_bindings_uc_hal_linux_port_spec>`).
 If you connect multiple Bricklets to the same SPI bus
 (this is only possible with a tri-state buffer chip), you have to connect all their
 chip select pins to the Board and list them in the port assignment, even if you don't
@@ -70,10 +70,6 @@ want to communicate with the Bricklets yet. This makes sure the signals are corr
 
 The :ref:`HAT Brick <hat_brick>` or :ref:`HAT Zero Brick <hat_zero_brick>` already
 contain the required buffer chip and their port assignment is listed in the example driver.
-
-Then you maybe have to change the path to the spidev in the example driver.
-The default ``"/dev/spidev0.0"`` is correct for the :ref:`HAT Brick <hat_brick>` and
-:ref:`HAT Zero Brick <hat_zero_brick>`.
 
 As last step, you have to change the UID in the example C file to the UID of your device.
 The UID is shown in Brick Viewer if you connect the device to your PC. Also the bindings
@@ -102,8 +98,8 @@ A port is specified as an instance of the ``TF_Port`` structure:
   }
 
 
-The chip select pin is the pin that has to be pulled to be able to communicate to the port.
-The port name is a single character that identifies the port. The name is injected into the
+The ``chip_select_pin`` is the pin that has to be pulled to be able to communicate to the port.
+The ``port_name`` is a single character that identifies the port. The name is injected into the
 result of ``tf_[device]_get_identity`` calls if the device is connected directly to the host.
 
 The :file:`example_driver.c` contains an example port specification.
@@ -133,7 +129,7 @@ Possible error codes are:
 * TF\_\ **E**\ _PORT_NOT_FOUND = -13
 
 (as defined in :file:`errors.h`).
-The HAL declares the following further error codes:
+The HAL defines the following further error codes:
 
 * TF\_\ **E**\ _BCM2835_INIT_FAILED = -100
 * TF\_\ **E**\ _BCM2835_SPI_BEGIN_FAILED = -101

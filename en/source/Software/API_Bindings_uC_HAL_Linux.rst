@@ -39,16 +39,16 @@ Testing an Example
 This HAL includes an example driver sketch that can be used to run any example provided with the bindings,
 as well as a Makefile to compile any example. To use the Makefile, create the following folder layout:
 
-* [your main folder]
+* [your main folder]/
 
   * example_driver.c
   * [copy the example C file here]
   * Makefile
-  * bindings
+  * bindings/
 
     * [copy the contents of the bindings folder here]
 
-  * hal_linux
+  * hal_linux/
 
     * [copy the contents of the hal_linux folder here]
 
@@ -143,7 +143,7 @@ Possible error codes are:
 * TF\_\ **E**\ _PORT_NOT_FOUND = -13
 
 (as defined in :file:`errors.h`).
-The HAL declares the following further error codes:
+The HAL defines the following further error codes:
 
 * TF\_\ **E**\ _EXPORT_GPIO_FAILED = -100
 * TF\_\ **E**\ _SET_GPIO_DIRECTION_FAILED = -101

@@ -36,8 +36,7 @@ To implement a HAL, the following steps are necessary:
 * Implementation of the ``tf_hal_create`` and ``tf_hal_destroy`` functions for the defined struct
 * Implementation of the required HAL functions
 
-To help with implementing a HAL, the following functions defined in :file:`bindings/hal_common.h`
-can be used:
+The following functions defined in :file:`bindings/hal_common.h` will be used:
 
 .. c:function:: int tf_hal_common_create(TF_HalContext *hal)
 
@@ -82,13 +81,11 @@ The next step after defining the ``TF_HalContext`` struct is implementing its in
 
 * Prepare the SPI communication
   When your initialization function returns, SPI communication must be possible to all attached devices.
-  All chip select pins must be set to HIGH (e.g. disabled) See below for details about the SPI communication.
+  All chip select pins must be set to HIGH (e.g. disabled).
+  :ref:`See here <api_bindings_uc_custom_hal_spi_details>` for details about the SPI communication.
 
 * Call :c:func:`tf_hal_common_prepare`
   This is typically the last step in the initialization. SPI communication must be possible here.
-  The function expects the number of usable ports as well as a timeout in micro seconds, for how long
-  the bindings should try to reach a device over one of the ports.
-  :c:func:`tf_hal_common_prepare` then builds a list of reachable devices and stores it in the ``TF_HalCommon`` instance.
 
 By convention, ``tf_hal_create`` returns an int that is set to ``TF_E_OK`` on success.
 If the initialization fails, you can return any error code defined in :file:`bindings/errors.h`
@@ -145,6 +142,13 @@ All functions returning an int should return ``TF_E_OK`` on success.
 
  Don't forget to unlock the bindings again when the transfer is done.
 
+ .. note:
+  If `length` is one, this function should not yield even if DMA is used.
+  Single byte transfers are usually triggered by the callback polling logic.
+  To be as fast as possible when polling with a timeout of 0, the ``yield``
+  should be ommited here. If a longer timeout is used, ``tf_hal_callback_tick``
+  will call :c:func:`tf_hal_sleep_us` after polling. ``yield`` can then be called there.
+
 .. c:function:: uint32_t tf_hal_current_time_us(TF_HalContext *hal)
 
  Returns the current time in microseconds. This time has no relation to any "real" time,
@@ -183,12 +187,9 @@ All functions returning an int should return ``TF_E_OK`` on success.
 .. c:function:: const char *tf_hal_strerror(int e_code)
 
  Returns an error description for the given error code. To be as space efficient
- as possible, this function can be customized as follows:
+ as possible, this function can be removed if ``TF_IMPLEMENT_STRERROR`` is not defined in :file:`bindings/config.h`
 
- * Removing ``TF_IMPLEMENT_STRERROR`` removes the function completely
- * All string literals are wrapped in ``TF_CONST_STRING`` to allow moving them into static memory
-
- Error codes used by the bindings are handled by including :file:`bindings/errors.inc`.
+ Error codes used by the bindings are handled by including :file:`bindings/error_cases.h`.
 
  Use the following skeleton when implementing this function:
 
@@ -196,16 +197,34 @@ All functions returning an int should return ``TF_E_OK`` on success.
 
   #ifdef TF_IMPLEMENT_STRERROR
   const char *tf_hal_strerror(int e_code) {
-      #define TF_CONST_STRING(x) x
       switch(e_code) {
-          #include "../bindings/errors.inc"
+          #include "../bindings/error_cases.h"
           /* Add HAL specific error codes here, for example:
           case TF_E_OPEN_GPIO_FAILED:
-              return TF_CONST_STRING("failed to open GPIO");
+              return "failed to open GPIO";
           */
           default:
-              return TF_CONST_STRING("unknown error");
+              return "unknown error";
       }
-      #undef TF_CONST_STRING
   }
   #endif
+
+.. _api_bindings_uc_custom_hal_spi_details:
+
+Details about the SPI communication
+-----------------------------------
+
+The communication between the Host and the Bricks and Bricklets uses SPI Mode 3:
+
+ * CPOL=1: Clock polarity is inverted: HIGH when inactive
+ * CPHA=1: Clock phase is shifted: Data is read on falling edge
+
+Data is transmitted MSB first.
+The default clock frequency is 1.4 MHz, but Bricks and Bricklets support
+clock frequencies between 400 kHz and 2 MHz.
+The logic level of all signals is 3.3V.
+
+Due to a bug with the XMC microcontroller used by the Bricklets, they don't correctly
+go into a floating state on the MISO signal. This results in interference when multiple
+Bricklets are used on the same SPI bus. To be able to use multiple Bricklets, a
+tri-state buffer chip controlled by the chip select signal has to be used.

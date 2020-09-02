@@ -13,9 +13,7 @@ The C/C++ bindings for microcontrollers allow you to control :ref:`Bricks <prime
 
 * in ``source/bindings`` the source code of the bindings
 * in ``source/hal*`` the source code of HALs for common platforms.
-* in ``source/examples/`` the examples for every supported Brick and Bricklet
-* in ``source/demo/`` a more complex demo program
-* in ``source/`` adapters for using the demo program with the Linux and Arduino HALs
+* in ``examples/`` the examples for every supported Brick and Bricklet
 
 .. _api_bindings_uc_supported_hardware:
 
@@ -29,7 +27,7 @@ as well as the HAT Brick and HAT Zero Brick. The older 10-pole Bricklets and oth
 As host (i.e. the device running your C/C++ program that uses the bindings), you can use a microcontroller
 that is able to communicate over SPI or an Raspberry Pi with a :ref:`HAT Brick <hat_brick>` or :ref:`HAT Zero Brick <hat_zero_brick>`.
 
-The bindings require a hardware abstraction layer (HAL). See :ref:`here <api_bindings_uc_hal>` for details.
+The bindings require a hardware abstraction layer (HAL). :ref:`See here <api_bindings_uc_hal>` for details.
 
 If you use a microcontroller, you have to make sure, that its logic level is 3.3V. If you want to use
 an AVR-based Arduino (such as the Arduino Uno or Mega), a level shifter is required.
@@ -53,12 +51,11 @@ Installation
 
 .. note:
  The C/C++ bindings for microcontrollers are available in the
- `TinkerUnity`<https://www.tinkerunity.org/topic/5468-beta-version-of-the-cc-bindings-for-microcontrollers/> for the beta phase.
+ `TinkerUnity <https://www.tinkerunity.org/topic/5468-beta-version-of-the-cc-bindings-for-microcontrollers/>`__ for the beta phase.
 
 Because there is no precompiled library for the bindings there is nothing
 to install as such. The recommended way of using the bindings is to include their
-bindings and your preferred HAL directly into your C/C++ project. The next section shows some examples
-about how to do that.
+bindings and your preferred HAL directly into your C/C++ project.
 
 Testing an Example
 ------------------
@@ -77,7 +74,7 @@ the C/C++ bindings for microcontrollers require usage of a hardware abstraction 
 The HAL is an abstraction over the platform specific way to communicate over SPI.
 
 The bindings already contain HALs for the following platforms.
-For other platforms, a custom HAL must be implemented.
+For other platforms, a custom HAL must be implemented (see below).
 
 * :ref:`HAL Arduino <api_bindings_uc_hal_arduino>` for Arduino compatible boards with an AVR or ARM processor
 * :ref:`HAL Arduino ESP32 <api_bindings_uc_hal_arduino_esp32>` for Arduino compatible boards with ESP32 processor
@@ -204,7 +201,7 @@ in :file:`bindings/config.h`:
 API Reference and Examples
 --------------------------
 
-Links to the API reference for the IP Connection, Bricks and Bricklets as
+Links to the API reference for the HALs, Bricks and Bricklets as
 well as the examples from the ZIP file of the bindings are listed in the
 following table. Further project descriptions can be found in the
 :ref:`Kits <index_kits>` section.
