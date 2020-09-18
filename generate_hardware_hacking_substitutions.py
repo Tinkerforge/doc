@@ -1109,7 +1109,7 @@ def make_substitutions():
     formated_binding_names = []
     for bindings_info in bindings_infos:
         if bindings_info.is_programming_language and bindings_info.is_released:
-            formated_binding_names.append(binding_name[lang].format(bindings_info.display_name, bindings_info.url_part))
+            formated_binding_names.append(binding_name[lang].format(bindings_info.display_name[lang], bindings_info.url_part))
 
     substitutions += binding_names[lang].format(', '.join(formated_binding_names)) + '\n'
 
@@ -1182,7 +1182,7 @@ def make_smoke_detector_toctree():
     toctree_lines = []
     for bindings_info in bindings_infos:
         if bindings_info.url_part in examples:
-            toctree_lines.append(smoke_detector_examples_toctree_line[lang].format(bindings_info.display_name, bindings_info.software_doc_suffix))
+            toctree_lines.append(smoke_detector_examples_toctree_line[lang].format(bindings_info.display_name[lang], bindings_info.software_doc_suffix))
 
     return smoke_detector_examples_toctree[lang].format('\n'.join(toctree_lines))
 
@@ -1197,7 +1197,7 @@ def make_remote_switch_toctree():
     toctree_lines = []
     for bindings_info in bindings_infos:
         if bindings_info.url_part in examples:
-            toctree_lines.append(remote_switch_examples_toctree_line[lang].format(bindings_info.display_name, bindings_info.software_doc_suffix))
+            toctree_lines.append(remote_switch_examples_toctree_line[lang].format(bindings_info.display_name[lang], bindings_info.software_doc_suffix))
 
     return remote_switch_examples_toctree[lang].format('\n'.join(toctree_lines))
 

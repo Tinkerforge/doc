@@ -73,7 +73,7 @@ def make_substitutions():
     formated_binding_names = []
     for bindings_info in bindings_infos:
         if bindings_info.is_programming_language and bindings_info.is_released:
-            formated_binding_names.append(binding_name[lang].format(bindings_info.display_name, bindings_info.url_part))
+            formated_binding_names.append(binding_name[lang].format(bindings_info.display_name[lang], bindings_info.url_part))
 
     substitutions += binding_names[lang].format(', '.join(formated_binding_names)) + '\n'
 
