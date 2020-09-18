@@ -195,7 +195,8 @@ class DefinitionParser(object):
             result += addnodes.desc_addname("(*" + device_name + ")", "(*" + device_name + ")")
             result += nodes.Text(' ')
         else:
-            result += addnodes.desc_addname(module_name + ".", module_name + ".")
+            if module_name != None: # Don't add module_name node if it was set to 'None'
+                result += addnodes.desc_addname(module_name + ".", module_name + ".")
         result += addnodes.desc_name(fn_name, fn_name)
 
         paramList = addnodes.desc_parameterlist()
