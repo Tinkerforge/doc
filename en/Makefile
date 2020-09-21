@@ -43,6 +43,7 @@ generate:
 	python ../generate_tabletop_weather_station_substitutions.py
 	python ../generate_hardware_hacking_substitutions.py
 	python ../generate_server_room_monitoring_substitutions.py
+	python ../generate_server_room_monitoring_v2_substitutions.py
 
 html: generate
 	mkdir -p $(BUILDDIR)/html/_images/
