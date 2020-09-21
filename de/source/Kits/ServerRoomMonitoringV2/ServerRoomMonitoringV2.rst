@@ -12,21 +12,20 @@ Starterkit: Serverraum-Überwachung 2.0
 
 	{% tfgallery %}
 
-	Kits/server_room_monitoring_v2_right_basic_[100|800].jpg                  Server Room Monitoring Kit 2.0
-	Kits/server_room_monitoring_v2_left_front_open_basic_[100|800].jpg        Server Room Monitoring Kit 2.0
-	Kits/server_room_monitoring_v2_left_front_close_basic_[100|800].jpg       Server Room Monitoring Kit 2.0
-	Kits/server_room_monitoring_v2_front_right_red_close_[100|800].jpg        Server Room Monitoring Kit 2.0
-	Kits/server_room_monitoring_v2_back_right_red_open_[100|800].jpg          Server Room Monitoring Kit 2.0
-	Kits/server_room_monitoring_v2_front_right_seg_motion_close_[100|800].jpg Server Room Monitoring Kit 2.0
-	Kits/server_room_monitoring_v2_back_open_[100|800].jpg                    Server Room Monitoring Kit 2.0
-	Kits/server_room_monitoring_v2_case_front_open_[100|800].jpg              Server Room Monitoring Kit 2.0
-	Kits/server_room_monitoring_v2_side_close_[100|800].jpg                   Server Room Monitoring Kit 2.0
-	Kits/server_room_monitoring_v2_top_[100|800].jpg                          Server Room Monitoring Kit 2.0: Inhalt
-	Kits/server_room_monitoring_v2_alu_surface_[100|800].jpg                  Server Room Monitoring Kit 2.0: Oberfläche Aluminium
-	Kits/server_room_monitoring_v2_alu_in_hand_[100|800].jpg                  Server Room Monitoring Kit 2.0
-	Kits/server_room_monitoring_v2_in_rack3_[100|800].jpg                     Server Room Monitoring Kit 2.0: Im Serverrack
-	Kits/server_room_monitoring_v2_in_rack1_[100|800].jpg                     Server Room Monitoring Kit 2.0: Im Serverrack
-	Kits/server_room_monitoring_v2_in_rack2_[100|800].jpg                     Server Room Monitoring Kit 2.0: Im Serverrack
+	Kits/server_room_monitoring_v2_complete_front_right_[100|800].jpg         Server Room Monitoring Kit 2.0
+	Kits/server_room_monitoring_v2_basic_parts_[100|800].jpg                  Server Room Monitoring Kit 2.0
+	Kits/server_room_monitoring_v2_complete_back_left_[100|800].jpg           Server Room Monitoring Kit 2.0
+	Kits/server_room_monitoring_v2_complete_front_left_[100|800].jpg          Server Room Monitoring Kit 2.0
+	Kits/server_room_monitoring_v2_complete_front_left_rasppi_[100|800].jpg   Server Room Monitoring Kit 2.0
+	Kits/server_room_monitoring_v2_complete_front_left_zoom[100|800].jpg      Server Room Monitoring Kit 2.0
+	Kits/server_room_monitoring_v2_exploded_[100|800].jpg                     Server Room Monitoring Kit 2.0
+	Kits/server_room_monitoring_v2_rasp_back_[100|800].jpg                    Server Room Monitoring Kit 2.0
+	Kits/server_room_monitoring_v2_rasp_front_ethernet_[100|800].jpg          Server Room Monitoring Kit 2.0
+	Kits/server_room_monitoring_v2_rasp_open_front_ethernet_[100|800].jpg     Server Room Monitoring Kit 2.0
+	Kits/server_room_monitoring_v2_standard_back_ethernet_[100|800].jpg       Server Room Monitoring Kit 2.0
+	Kits/server_room_monitoring_v2_basic_cover_[100|800].jpg                  Server Room Monitoring Kit 2.0
+	Kits/server_room_monitoring_v2_basic_ethernet_backward_[100|800].jpg      Server Room Monitoring Kit 2.0
+	Kits/server_room_monitoring_v2_basic_ethernet_backward_back_[100|800].jpg Server Room Monitoring Kit 2.0
 
 	{% tfgalleryend %}
 
