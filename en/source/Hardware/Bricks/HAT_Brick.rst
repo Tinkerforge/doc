@@ -62,7 +62,7 @@ Raspberry Pi's USB connectors as the HAT Brick delivers a slightly increased vol
 to compensate additional load.
 
 You can still power the
-HAT/Raspberry Pi through Micro-USB. In that case you have to ensure that the HAT Brick will be provided with stable 5V, 
+HAT/Raspberry Pi through USB-C. In that case you have to ensure that the HAT Brick will be provided with stable 5V, 
 for example by using the official Raspberry Pi universal power supply.
 The USB/DC supply voltages are measured and accessible through the API.
 
