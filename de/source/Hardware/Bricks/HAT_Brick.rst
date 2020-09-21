@@ -55,7 +55,7 @@ Der Raspberry Pi kann über den HAT Brick mit einer externen 5,3V-28V DC Stromve
 Die integrierte Stromversorgung liefert auch unter großer Last stabile 5V für den Raspberry Pi. Somit können
 auch angeschlossene Bricklets und verbundene USB-Geräte versorgt werden. Das HAT Brick liefert hierfür eine etwas erhöhte Spannung von 5,3V.
 
-Alternativ können HAT Brick und Raspberry Pi auch über Micro-USB versorgt werden. In diesem Fall muss allerdings sichergestellt werden,
+Alternativ können HAT Brick und Raspberry Pi auch über USB-C versorgt werden. In diesem Fall muss allerdings sichergestellt werden,
 dass die Stromversorgung stabile 5V bietet. Dies ist zum Beispiel mit dem offiziellen Raspberry Pi
 Universal-Netzteil möglich.
 Die USB/DC Versorgungsspannungen werden vom HAT gemessen und sind über die API zugänglich.
