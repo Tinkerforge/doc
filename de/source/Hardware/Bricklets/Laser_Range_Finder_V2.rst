@@ -59,6 +59,9 @@ Stromverbrauch                        | 230mW (46mA bei 5V, Laser aus)
 ------------------------------------  ------------------------------------------------------------
 Entfernung (Bereich, Auflösung)       0-40m, 1cm
 Abtastrate                            bis zu 500Hz (abhängig von Entfernung)
+Genauigkeit <5m                       ±2.5cm (zusätzliche Nichtlinearität unter 1m)
+Genauigkeit ≥5m                       ±10cm
+Rauschen                              ±1% der Entfernung
 ------------------------------------  ------------------------------------------------------------
 ------------------------------------  ------------------------------------------------------------
 Abmessungen (B x T x H)               49 x 45 x 36mm (1,93 x 1,77 x 1,42")

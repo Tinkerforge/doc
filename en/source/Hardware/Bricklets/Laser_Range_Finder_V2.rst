@@ -60,6 +60,9 @@ Current Consumption               | 230mW (46mA at 5V, Laser off)
 --------------------------------  ------------------------------------------------------------
 Distance (Range, Resolution)      0-40m, 1cm
 Sample Rate                       up to 500Hz (depends on measured range)
+Accuracy <5m                      ±2.5cm (nonlinearity present below 1m)
+Accuracy ≥5m                      ±10cm
+Ripple                            ±1% of distance
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)            49 x 45 x 36mm (1.93 x 1.77 x 1.42")
