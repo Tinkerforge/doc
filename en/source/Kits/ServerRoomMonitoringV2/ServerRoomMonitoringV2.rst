@@ -17,7 +17,7 @@ Starter Kit: Server Room Monitoring 2.0
 	Kits/server_room_monitoring_v2_complete_back_left_[100|800].jpg           Server Room Monitoring Kit 2.0
 	Kits/server_room_monitoring_v2_complete_front_left_[100|800].jpg          Server Room Monitoring Kit 2.0
 	Kits/server_room_monitoring_v2_complete_front_left_rasppi_[100|800].jpg   Server Room Monitoring Kit 2.0
-	Kits/server_room_monitoring_v2_complete_front_left_zoom[100|800].jpg      Server Room Monitoring Kit 2.0
+	Kits/server_room_monitoring_v2_complete_front_left_zoom_[100|800].jpg      Server Room Monitoring Kit 2.0
 	Kits/server_room_monitoring_v2_exploded_[100|800].jpg                     Server Room Monitoring Kit 2.0
 	Kits/server_room_monitoring_v2_rasp_back_[100|800].jpg                    Server Room Monitoring Kit 2.0
 	Kits/server_room_monitoring_v2_rasp_front_ethernet_[100|800].jpg          Server Room Monitoring Kit 2.0
