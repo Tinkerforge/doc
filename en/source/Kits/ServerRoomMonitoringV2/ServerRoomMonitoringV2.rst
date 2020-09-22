@@ -94,7 +94,7 @@ The kit can be ordered in three different variations:
    :ref:`Nagios/Icinga <starter_kit_server_room_monitoring_v2_nagios_or_icinga_index>`
    demonstrate different possibilities.
 
-2. **Stand-alone monitoring for Raspberry Pi** (Standard kit + HAT Brick, Stand-alone with own Raspberry Pi)
+2. **Standalone monitoring for Raspberry Pi** (Standard kit + HAT Brick, Standalone with own Raspberry Pi)
 
    The Kit can be used with your Raspberry Pi. Just mount the HAT Brick on 
    the RaspPi and connect the Bricklets with it. In this option the Ethernet 
@@ -104,7 +104,7 @@ The kit can be ordered in three different variations:
    To get started quickly you can use our example python script for
    Raspberry PI.
 
-2. **Stand-alone monitoring with RED Brick** (Standard kit + HAT Brick, Stand-alone with own Raspberry Pi)
+2. **Standalone monitoring with RED Brick** (Standard kit + HAT Brick, Standalone with own Raspberry Pi)
 
    With an additional :ref:`RED Brick <red_brick>` external control 
    by another computer is not necessary anymore. You can configure your own 
