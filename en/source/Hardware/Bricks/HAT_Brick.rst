@@ -14,15 +14,16 @@ HAT Brick
 
 	{% tfgallery %}
 
-	Bricks/brick_hat_tilted_top_[?|?].jpg          HAT Brick top
-	Bricks/brick_hat_tilted_bottom_[?|?].jpg       HAT Brick bottom
-	Bricks/brick_hat_tilted_w_rpi_[?|?].jpg        HAT Brick with Raspberry Pi 4
-	Bricks/brick_hat_top_w_rpi_[?|?].jpg           HAT Brick
-	Bricks/brick_hat_w_bricklets_[?|?].jpg         HAT Brick with Bricklets
-	Bricks/brick_hat_w_hat_zero_[?|?].jpg          HAT Brick and HAT Zero Brick
-	Bricks/brick_hat_caption_[?|?].jpg             HAT Brick with function blocks
-	Bricks/brick_hat_brickv_[100|].jpg             HAT Brick in Brick Viewer
-	Dimensions/hat_brick_dimensions_[100|600].png  Outline and drilling plan
+	Bricks/brick_hat_c_tilted_top_[?|?].jpg          HAT Brick top
+	Bricks/brick_hat_tilted_bottom_[?|?].jpg         HAT Brick bottom
+	Bricks/brick_hat_c_tilted_w_rpi_[?|?].jpg        HAT Brick with Raspberry Pi 4
+	Bricks/brick_hat_c_tilted_w_rpi_right_[?|?].jpg  HAT Brick with Raspberry Pi 4
+	Bricks/brick_hat_c_top_w_rpi_[?|?].jpg           HAT Brick
+	Bricks/brick_hat_w_bricklets_[?|?].jpg           HAT Brick with Bricklets
+	Bricks/brick_hat_w_hat_zero_[?|?].jpg            HAT Brick and HAT Zero Brick
+	Bricks/brick_hat_c_caption_[?|?].jpg             HAT Brick with function blocks
+	Bricks/brick_hat_brickv_[100|].jpg               HAT Brick in Brick Viewer
+	Dimensions/hat_brick_dimensions_[100|600].png    Outline and drilling plan
 
 	{% tfgalleryend %}
 
@@ -375,7 +376,7 @@ So we decided to go ahead anyway and fix the bugs post-production.
 
 .. image:: /Images/Bricks/brick_hat_c_bug_fix_350.jpg
    :scale: 100 %
-   :alt: HAT Brick with bugs fixes
+   :alt: HAT Brick with bug fixes
    :align: center
    :target: ../../_images/Bricks/brick_hat_c_bug_fix_600.jpg
 

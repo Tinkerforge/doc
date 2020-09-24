@@ -12,15 +12,16 @@ HAT Brick
 .. raw:: html
 
 	{% tfgallery %}
-	Bricks/brick_hat_tilted_top_[?|?].jpg          HAT Brick Oberseite
-	Bricks/brick_hat_tilted_bottom_[?|?].jpg       HAT Brick Unterseite
-	Bricks/brick_hat_tilted_w_rpi_[?|?].jpg        HAT Brick mit Raspberry Pi 4
-	Bricks/brick_hat_top_w_rpi_[?|?].jpg           HAT Brick
-	Bricks/brick_hat_w_bricklets_[?|?].jpg         HAT Brick mit Bricklets
-	Bricks/brick_hat_w_hat_zero_[?|?].jpg          HAT Brick und HAT Zero Brick
-	Bricks/brick_hat_caption_[?|?].jpg             HAT Brick mit Funktionsblöcken
-	Bricks/brick_hat_brickv_[100|].jpg             HAT Brick im Brick Viewer
-	Dimensions/hat_brick_dimensions_[100|600].png  Umriss und Bohrplan
+	Bricks/brick_hat_c_tilted_top_[?|?].jpg          HAT Brick Oberseite
+	Bricks/brick_hat_tilted_bottom_[?|?].jpg         HAT Brick Unterseite
+	Bricks/brick_hat_c_tilted_w_rpi_[?|?].jpg        HAT Brick mit Raspberry Pi 4
+	Bricks/brick_hat_c_tilted_w_rpi_right_[?|?].jpg  HAT Brick mit Raspberry Pi 4
+	Bricks/brick_hat_c_top_w_rpi_[?|?].jpg           HAT Brick
+	Bricks/brick_hat_w_bricklets_[?|?].jpg           HAT Brick mit Bricklets
+	Bricks/brick_hat_w_hat_zero_[?|?].jpg            HAT Brick und HAT Zero Brick
+	Bricks/brick_hat_c_caption_[?|?].jpg             HAT Brick mit Funktionsblöcken
+	Bricks/brick_hat_brickv_[100|].jpg               HAT Brick im Brick Viewer
+	Dimensions/hat_brick_dimensions_[100|600].png    Umriss und Bohrplan
 
 	{% tfgalleryend %}
 
