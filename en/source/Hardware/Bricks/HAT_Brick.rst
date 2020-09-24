@@ -128,11 +128,11 @@ Resources
 Getting Started
 ---------------
 
-.. image:: /Images/Bricks/brick_hat_caption_800.jpg
+.. image:: /Images/Bricks/brick_hat_c_caption_800.jpg
    :scale: 100 %
    :alt: HAT Brick with function blocks
    :align: center
-   :target: ../../_images/Bricks/brick_hat_caption_1200.jpg
+   :target: ../../_images/Bricks/brick_hat_c_caption_1200.jpg
 
 To get started with the HAT Brick, you first have to install :ref:`Brick Daemon <brickd>`
 on the Raspberry Pi. Brick Daemon acts as a proxy between the Bricklet ports

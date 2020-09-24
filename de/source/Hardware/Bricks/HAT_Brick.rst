@@ -123,11 +123,11 @@ Ressourcen
 Erste Schritte
 --------------
 
-.. image:: /Images/Bricks/brick_hat_caption_800.jpg
+.. image:: /Images/Bricks/brick_hat_c_caption_800.jpg
    :scale: 100 %
    :alt: HAT Brick mit Funktionsblöcken
    :align: center
-   :target: ../../_images/Bricks/brick_hat_caption_1200.jpg
+   :target: ../../_images/Bricks/brick_hat_c_caption_1200.jpg
 
 Um den HAT Brick verwenden zu können, muss zuerst der :ref:`Brick Daemon <brickd>`
 auf dem Raspberry Pi installiert werden. Der Brick Daemon agiert als Proxy zwischen 
