@@ -351,6 +351,33 @@ Wird ein komplett anderes Board genutzt, so kann der Schaltplan des Boards
 Aufschlüsse darüber bieten, wie die Konfiguration angepasst werden muss. `tinkerunity.org <https://www.tinkerunity.org>`__ bietet eine Möglichkeit, Hilfe zu finden.
 
 
+Errata Hardware Version 1.5
+---------------------------
+
+Peinlicherweise haben sich in HAT Brick hardware version 1.5 zwei Bugs eingeschlichen.
+
+Diese Bugs wurden erst nach der ersten Produktion gefunden und wir hatten zu der Zeit bereits keinen Lagerbestand mehr.
+Daher haben wir uns dazu entschieden die Fehler nach der Produktion zu beheben.
+
+.. image:: /Images/Bricks/brick_hat_c_bug_fix_350.jpg
+   :scale: 100 %
+   :alt: HAT Brick mit Bug fixes
+   :align: center
+   :target: ../../_images/Bricks/brick_hat_c_bug_fix_600.jpg
+
+Wie in dem Foto zu sehen ist gibt es zwei "Mod Wire" auf der Unterseite des Bricks.
+
+Ohne diese Fixes
+
+* Funktionieren USB-C- nach USB-C-Kabel nicht (USB-C nach USB-A funktionieren immer).
+* Schlägt dar Batteriepuffer der Echtzeituhr sporadisch fehl wenn das Brick vom Strom getrennt wird.
+
+Wenn bei einem HAT Brick 1.5 eines dieser Feature genutzt werden soll die "Mod Wires" auf der Unterseite fehlen,
+bitte einfach bei uns melden, wir ersetzen das HAT Brick dann.
+
+Seit dem 24. September 2020 haben alle verschickten HAT Bricks beide Fixes!
+
+
 .. _hat_brick_programming_interface:
 
 Programmierschnittstelle

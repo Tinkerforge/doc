@@ -365,6 +365,33 @@ the best place to ask is probably in the forums at
 `tinkerunity.org <https://www.tinkerunity.org>`__.
 
 
+Errata Hardware Version 1.5
+---------------------------
+
+Embarrassingly we introduced two hardware bugs in hardware version 1.5.
+
+These bugs were only found after the production run and at the time we were already out of stock.
+So we decided to go ahead anyway and fix the bugs post-production.
+
+.. image:: /Images/Bricks/brick_hat_c_bug_fix_350.jpg
+   :scale: 100 %
+   :alt: HAT Brick with bugs fixes
+   :align: center
+   :target: ../../_images/Bricks/brick_hat_c_bug_fix_600.jpg
+
+As you can see in the photo above there are two mod wires at the bottom of the Brick.
+
+Without these fixes
+
+* The USB will not work with a USB-C to USB-C cable. It works with USB-C to USB-A cable.
+* The battery backup of the real-time clock can sporadically fail if the power is unplugged.
+
+If you have a HAT Brick 1.5 and you need one of these features and the mod wires are missing
+please contact us, we will replace your HAT Brick.
+
+As of September 24th 2020 all shipped HAT Bricks will come with these fixes!
+
+
 .. _hat_brick_programming_interface:
 
 Programming Interface
