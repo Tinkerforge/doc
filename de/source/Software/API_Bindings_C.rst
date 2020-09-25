@@ -19,7 +19,7 @@ die Bindings beinhaltet:
 Voraussetzungen
 ---------------
 
-* C Compiler (C99 kompatible) oder C++ Compiler
+* C-Compiler (C99-kompatibel) oder C++-Compiler
 
 
 .. _api_bindings_c_install:
