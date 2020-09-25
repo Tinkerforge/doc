@@ -21,6 +21,12 @@ Requirements
 * Node.js 0.10 or newer, or any recent browser with WebSocket support (tested
   with Chrome, Firefox and Internet Explorer)
 
+.. note:
+ Support for 64 bit integers was only recently added to Node.js as well as the browsers.
+ Functions and callbacks that requre 64 bit integer support will return the
+ error code 91 (``IPConnection.ERROR_INT64_NOT_SUPPORTED``)
+ when called in older browsers or versions of Node.js.
+
 .. _api_bindings_javascript_install:
 
 Installation

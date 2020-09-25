@@ -23,6 +23,11 @@ Voraussetzungen
 * Node.js 0.10 oder neuer oder jeder aktuelle Browser mit
   WebSocket Unterstützung (getestet mit Chrome, Firefox und Internet Explorer)
 
+.. note:
+  Unterstützung für 64-Bit-Ganzzahlen wurde erst kürzlich zu Node.js und den Browsern hinzugefügt.
+  Funktionen und Callbacks, die Unterstützung von 64-Bit-Zahlen benötigen geben den Fehlercode 91
+  (`IPConnection.ERROR_INT64_NOT_SUPPORTED``) zurück, wenn sie in älteren Node.js-Versionen
+  oder Browsern aufgerufen werden.
 
 .. _api_bindings_javascript_install:
 

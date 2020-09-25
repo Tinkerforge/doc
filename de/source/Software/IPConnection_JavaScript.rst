@@ -89,6 +89,7 @@ folgenden Werte sein:
 * IPConnection.\ **ERROR**\ _WRONG_DEVICE_TYPE = 81
 * IPConnection.\ **ERROR**\ _DEVICE_REPLACED = 82
 * IPConnection.\ **ERROR**\ _WRONG_RESPONSE_LENGTH = 83
+* IPConnection.\ **ERROR**\ _INT64_NOT_SUPPORTED = 91
 
 Der Namespace der JavaScript Bindings ist ``Tinkerforge.*``.
 
