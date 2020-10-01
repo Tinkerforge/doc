@@ -62,6 +62,9 @@ Das ZIP für die jeweilige Programmiersprache beinhaltet Bindings für alle Bric
 und Bricklets sowie alle verfügbaren Beispiele. Ein Tutorial wie die Bindings zu
 benutzen sind ist :ref:`hier <api_bindings>` zu finden.
 
+Für Debian basierte Linux Distributionen stehen die Bindings auch in unserem
+:ref:`APT Repository <apt_repository>` bereit.
+
 .. include:: Downloads_bindings.table
 
 

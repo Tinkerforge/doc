@@ -56,6 +56,9 @@ The ZIP for each programming language contains bindings for all Bricks and
 Bricklets and all available examples for the language. A tutorial on how to use
 the API bindings can be found :ref:`here <api_bindings>`.
 
+For Debian based Linux distributions the API bindings are also available in our
+:ref:`APT repository <apt_repository>`.
+
 .. include:: Downloads_bindings.table
 
 
