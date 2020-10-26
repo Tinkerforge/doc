@@ -85,7 +85,7 @@ Maximaler Eingangsstrom           Jede RGB LED kann bis zu 20mA pro Farbe verbra
                                   führt zu maximal 3,83A, wenn alle LEDs auf weiß gesetzt werden
 --------------------------------  -------------------------------------------------------------
 --------------------------------  -------------------------------------------------------------
-Abmessungen (B x T x H)           75 x 55 x 14mm (2.95 x 2.17 x 0.55")
+Abmessungen (B x T x H)           75 x 55 x 14mm (2,95 x 2,17 x 0,55")
 Gewicht                           23g
 ================================  =============================================================
 

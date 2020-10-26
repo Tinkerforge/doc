@@ -77,21 +77,21 @@ Eigenschaft                       Wert
 Stromverbrauch                    100mW (20mA bei 5V)
 --------------------------------  --------------------------------------------------------------
 --------------------------------  --------------------------------------------------------------
-Eingangstyp                       Vier Optokoppler-Eingänge (mit 2.7kΩ Serienwiderstand)
-Eingangsstrom                     Abhängig von der Eingangsspannung, ca. 3.85mA/12V, 8.3mA/24V
+Eingangstyp                       Vier Optokoppler-Eingänge (mit 2,7kΩ Serienwiderstand)
+Eingangsstrom                     Abhängig von der Eingangsspannung, ca. 3,85mA/12V, 8,3mA/24V
 Maximale Eingangsspannung         26V (DC)
 Low Level Spannung                0-2V
 High Level Spannung               10-26V
 Isolation                         3750Vrms (Optokoppler-Wert)
 --------------------------------  --------------------------------------------------------------
 --------------------------------  --------------------------------------------------------------
-Minimale Eingangsfrequenz         0.03MHz
+Minimale Eingangsfrequenz         0,03MHz
 Maximale Eingangsfrequenz         4MHz
 Zeit-Auflösung                    bis zu 10.4ns (Duty Cycle Prescaler auf 1 gesetzt)
 Frequenz-Auflösung                bis zu 0.03Hz (Frequenz-Integrationsszeit auf 32768ms gesetzt)
 --------------------------------  --------------------------------------------------------------
 --------------------------------  --------------------------------------------------------------
-Abmessungen (B x T x H)           40 x 40 x 11mm (1.57 x 1.57 x 0.43")
+Abmessungen (B x T x H)           40 x 40 x 11mm (1,57 x 1,57 x 0,43")
 Gewicht                           8.4g
 ================================  ==============================================================
 
