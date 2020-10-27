@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/imu-v3-bricklet.html
+:shoplink: ../../../shop/bricklets/imu-v3-bricklet.html
 
 .. include:: IMU_V3.substitutions
    :start-after: >>>substitutions
@@ -10,18 +10,13 @@
 IMU Bricklet 3.0
 ================
 
-.. note::
-  This Bricklet is currently work-in-progress!
-
-..
-    .. raw:: html
+.. raw:: html
 
 	{% tfgallery %}
 
 	Bricklets/bricklet_imu_v3_tilted_[?|?].jpg           IMU Bricklet 3.0
+	Bricklets/bricklet_imu_v3_tilted2_[?|?].jpg          IMU Bricklet 3.0
 	Bricklets/bricklet_imu_v3_horizontal_[?|?].jpg       IMU Bricklet 3.0
-	Bricklets/bricklet_imu_v3_master_[100|600].jpg       IMU Bricklet 3.0 with Master Brick
-	Cases/bricklet_imu_v3_case_[100|600].jpg             IMU Bricklet 3.0 with case
 	Bricklets/bricklet_imu_v3_brickv_[100|].jpg          IMU Bricklet 3.0 in Brick Viewer
 	Dimensions/imu_v3_bricklet_dimensions_[100|600].png  Outline and drilling plan
 
@@ -66,6 +61,15 @@ as known from Euler angles.
 
 The IMU Bricklet 3.0 has a 7 pole Bricklet connector and is connected to a
 Brick with a ``7p-10p`` Bricklet cable.
+
+.. raw:: html
+
+	<video class="align-center" max-width="100%" width="100%" height="auto" controls autoplay loop>
+	  <source src="../../_images/Videos/bricklet_imu_v3_video.mp4"  type="video/mp4">
+	  <source src="../../_images/Videos/bricklet_imu_v3_video.ogg" type="video/ogg">
+	  <source src="../../_images/Videos/bricklet_imu_v3_video.webm" type="video/webm">
+	</video>
+
 
 Technical Specifications
 ------------------------
