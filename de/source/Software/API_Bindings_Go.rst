@@ -2,7 +2,7 @@
 .. _api_bindings_go:
 
 Go - API Bindings
-===================
+=================
 
 Die Go Bindings ermöglichen es :ref:`Bricks <primer_bricks>` und
 :ref:`Bricklets <primer_bricklets>` aus selbst erstellen Go Programmen
@@ -15,7 +15,7 @@ die Bindings beinhaltet:
 Voraussetzungen
 ---------------
 
-* Go Compiler
+* Go Compiler 1.11 oder neuer
 
 .. _api_bindings_go_install:
 

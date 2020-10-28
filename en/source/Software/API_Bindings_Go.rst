@@ -2,7 +2,7 @@
 .. _api_bindings_go:
 
 Go - API Bindings
-===================
+=================
 
 The Go bindings allow you to control :ref:`Bricks <primer_bricks>` and
 :ref:`Bricklets <primer_bricklets>` from your Go programs. The
@@ -14,7 +14,7 @@ The Go bindings allow you to control :ref:`Bricks <primer_bricks>` and
 Requirements
 ------------
 
-* Go compiler
+* Go compiler 1.11 or newer
 
 .. _api_bindings_go_install:
 
