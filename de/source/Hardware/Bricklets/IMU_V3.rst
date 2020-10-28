@@ -101,7 +101,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/imu-v3-bricklet/raw/master/hardware/imu-v3-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/imu_v3_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/imu-v3-bricklet/zipball/master>`__)
-* 3D Modell (`Online ansehen <https://autode.sk/TBD>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricklets/imu_v3/imu-v3.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricklets/imu_v3/imu-v3.FCStd>`__)
+* 3D Modell (`Online ansehen <https://a360.co/3e7CIDZ>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricklets/imu_v3/imu-v3.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricklets/imu_v3/imu-v3.FCStd>`__)
 
 
 .. _imu_v3_bricklet_test:
