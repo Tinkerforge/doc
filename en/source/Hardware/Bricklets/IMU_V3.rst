@@ -99,7 +99,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/imu-v3-bricklet/raw/master/hardware/imu-v3-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/imu_v3_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/imu-v3-bricklet/zipball/master>`__)
-* 3D model (`View online <https://autode.sk/TBD>`__ | Download: `STEP <https://download.tinkerforge.com/3d/TBD/TBD.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/TBD/TBD.FCStd>`__)
+* 3D model (`View online <https://autode.sk/TBD>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricklets/imu_v3/imu-v3.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricklets/imu_v3/imu-v3.FCStd>`__)
 
 
 .. _imu_v3_bricklet_test:
