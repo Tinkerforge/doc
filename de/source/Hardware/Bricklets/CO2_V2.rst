@@ -117,6 +117,30 @@ Wir empfehlen das Bricklet im Gehäuse für mindestens 24 Stunden laufen zu
 lassen bis die Temperatur ein Gleichgewicht erreicht hat.
 
 
+.. _co2_v2_bricklet_calibration:
+CO2 Kalibrierung
+----------------
+
+Gassensoren müssen in regelmäßigen Abständen kalibriert werden. Normalerweise
+wird dies über ein Prüfgas mit einer spezifizierten Menge CO2 durchgeführt.
+Da dies für Sensoren zu Hause unpraktisch ist kalibriert sich der
+Sensor dieses Bricklets (Sensirion SCD30) permanent automatisch selbst
+(ASC).
+
+Dies schreibt Sensirion darüber:
+
+.. note::
+
+ To work properly SCD30 has to see fresh air on a regular basis. Optimal 
+ working conditions are given when the sensor sees fresh air for one hour 
+ every day so that ASC can constantly re-calibrate. ASC only works in 
+ continuous measurement mode.
+
+Das bedeutet, dass wenn der Sensor keine Frischluft in der Zeit sieht,
+er sich mit falschen Werten neu kalibriert. Die Genauigkeit des Sensors
+nimmt dadurch ab.
+
+
 .. _co2_v2_bricklet_test:
 
 Erster Test
