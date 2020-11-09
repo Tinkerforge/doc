@@ -127,7 +127,6 @@ calibration (ASC).
 Here is what Sensirion is writing about it:
 
 .. note::
-
  To work properly SCD30 has to see fresh air on a regular basis. Optimal 
  working conditions are given when the sensor sees fresh air for one hour 
  every day so that ASC can constantly re-calibrate. ASC only works in 

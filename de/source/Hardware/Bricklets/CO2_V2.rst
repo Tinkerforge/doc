@@ -99,14 +99,14 @@ Ressourcen
 * 3D Modell (`Online ansehen <https://autode.sk/2VEHtyN>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricklets/co2_v2/co2-v2.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricklets/co2_v2/co2-v2.FCStd>`__)
 
 
-Luftdruck-Kompoensation und Temperatur-Offset
----------------------------------------------
+Luftdruck-Kompensation und Temperatur-Offset
+--------------------------------------------
 
 Das CO2 Bricklet 2.0 besitzt eine API um den Umgebungsluftdruck für eine
 zusätzliche interne Kompensation zu setzen, um dadurch die Genauigkeit
 der CO2-Konzentration zu erhöhen.
 
-Dafür kann das:ref:`Barometer Bricklet 2.0 <barometer_v2_bricklet>` oder
+Dafür kann das :ref:`Barometer Bricklet 2.0 <barometer_v2_bricklet>` oder
 :ref:`Air Quality Bricklet <air_quality_bricklet>` genutzt werden um
 den Luftdruck zu messen und periodisch zu setzen.
 
@@ -130,7 +130,6 @@ Sensor dieses Bricklets (Sensirion SCD30) permanent automatisch selbst
 Dies schreibt Sensirion darüber:
 
 .. note::
-
  To work properly SCD30 has to see fresh air on a regular basis. Optimal 
  working conditions are given when the sensor sees fresh air for one hour 
  every day so that ASC can constantly re-calibrate. ASC only works in 
