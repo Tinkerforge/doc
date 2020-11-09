@@ -115,6 +115,7 @@ We recommend that you leave the parts in the enclosure running for at least
 
 
 .. _co2_v2_bricklet_calibration:
+
 CO2 Calibration
 ---------------
 
