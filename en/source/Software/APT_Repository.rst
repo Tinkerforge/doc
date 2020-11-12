@@ -9,8 +9,8 @@ for installation as Debian packages in our `APT repository <https://download.tin
 
 Currently, these distributions and architectures are supported:
 
-* `Debian <https://www.debian.org>`__: amd64, i386, armhf
-* `Ubuntu <https://ubuntu.com>`__: amd64, i386, armhf
+* `Debian <https://www.debian.org>`__: amd64, i386, armhf, arm64
+* `Ubuntu <https://ubuntu.com>`__: amd64, i386, armhf, arm64
 * `Raspberry Pi OS <https://www.raspberrypi.org/downloads/raspberry-pi-os/>`__ (previously Raspbian): armhf
 
 .. _apt_repository_setup:
