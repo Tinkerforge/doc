@@ -609,18 +609,18 @@ def make_download_tools_table():
     'en': """.. csv-table::
  :header: "Tool", "Downloads", "Version", "Archive", "Changelog"
  :delim: |
- :widths: 25, 50, 7, 7, 10
+ :widths: 22, 55, 7, 7, 9
 
 """,
     'de': """.. csv-table::
  :header: "Tool", "Downloads", "Version", "Archiv", "Changelog"
  :delim: |
- :widths: 25, 50, 7, 7, 10
+ :widths: 22, 55, 7, 7, 9
 
 """
     }
 
-    row_brickd = ' :ref:`{0} <{1}>` | Linux (`amd64 <https://download.tinkerforge.com/tools/{1}/linux/{1}-{4}.{5}.{6}_amd64.deb>`__, `i386 <https://download.tinkerforge.com/tools/{1}/linux/{1}-{4}.{5}.{6}_i386.deb>`__, `armhf <https://download.tinkerforge.com/tools/{1}/linux/{1}-{4}.{5}.{6}_armhf.deb>`__, `RED Brick <https://download.tinkerforge.com/tools/{1}/linux/{1}-{4}.{5}.{6}+redbrick_armhf.deb>`__), `Windows <https://download.tinkerforge.com/tools/{1}/windows/{1}_windows_{4}_{5}_{6}.exe>`__, `macOS <https://download.tinkerforge.com/tools/{1}/macos/{1}_macos_{4}_{5}_{6}.dmg>`__, `{2} <https://github.com/Tinkerforge/{1}/archive/v{4}.{5}.{6}.zip>`__ | {4}.{5}.{6} | `{3} <https://download.tinkerforge.com/tools/{1}/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/{1}/master/src/changelog>`__'
+    row_brickd = ' :ref:`{0} <{1}>` | Linux (`amd64 <https://download.tinkerforge.com/tools/{1}/linux/{1}-{4}.{5}.{6}_amd64.deb>`__, `i386 <https://download.tinkerforge.com/tools/{1}/linux/{1}-{4}.{5}.{6}_i386.deb>`__, `armhf <https://download.tinkerforge.com/tools/{1}/linux/{1}-{4}.{5}.{6}_armhf.deb>`__, `arm64 <https://download.tinkerforge.com/tools/{1}/linux/{1}-{4}.{5}.{6}_arm64.deb>`__, `RED Brick <https://download.tinkerforge.com/tools/{1}/linux/{1}-{4}.{5}.{6}+redbrick_armhf.deb>`__), `Windows <https://download.tinkerforge.com/tools/{1}/windows/{1}_windows_{4}_{5}_{6}.exe>`__, `macOS <https://download.tinkerforge.com/tools/{1}/macos/{1}_macos_{4}_{5}_{6}.dmg>`__, `{2} <https://github.com/Tinkerforge/{1}/archive/v{4}.{5}.{6}.zip>`__ | {4}.{5}.{6} | `{3} <https://download.tinkerforge.com/tools/{1}/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/{1}/master/src/changelog>`__'
     row_brick_flash = ' :ref:`{0} <{1}>` | `Linux <https://download.tinkerforge.com/tools/{1}/linux/{1}-{4}.{5}.{6}_all.deb>`__, `{2} <https://github.com/Tinkerforge/brickv/archive/brick-flash-{4}.{5}.{6}.zip>`__ | {4}.{5}.{6} | `{3} <https://download.tinkerforge.com/tools/{1}/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/brickv/master/src/changelog.brick-flash>`__'
     row_brick_logger = ' :ref:`{0} <{1}>` | `Linux, Windows, macOS <https://download.tinkerforge.com/tools/{1}/{1}_{4}_{5}_{6}.zip>`__, `RED Brick <https://download.tinkerforge.com/tools/{1}/{1}_{4}_{5}_{6}.tfrba>`__, `{2} <https://github.com/Tinkerforge/brickv/archive/brick-logger-{4}.{5}.{6}.zip>`__ | {4}.{5}.{6} | `{3} <https://download.tinkerforge.com/tools/{1}/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/brickv/master/src/changelog.brick-logger>`__'
     row_other = ' :ref:`{0} <{1}>` | `Linux <https://download.tinkerforge.com/tools/{1}/linux/{1}-{4}.{5}.{6}_all.deb>`__, `Windows <https://download.tinkerforge.com/tools/{1}/windows/{1}_windows_{4}_{5}_{6}.exe>`__, `macOS <https://download.tinkerforge.com/tools/{1}/macos/{1}_macos_{4}_{5}_{6}.dmg>`__, `{2} <https://github.com/Tinkerforge/{1}/archive/v{4}.{5}.{6}.zip>`__ | {4}.{5}.{6} | `{3} <https://download.tinkerforge.com/tools/{1}/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/{1}/master/src/changelog>`__'
@@ -659,13 +659,13 @@ def make_download_bindings_table():
     'en': """.. csv-table::
  :header: "Language", "Downloads", "Version", "Archive", "Changelog"
  :delim: |
- :widths: 25, 50, 7, 7, 10
+ :widths: 22, 55, 7, 7, 9
 
 """,
     'de': """.. csv-table::
  :header: "Sprache", "Downloads", "Version", "Archiv", "Changelog"
  :delim: |
- :widths: 25, 50, 7, 7, 10
+ :widths: 22, 55, 7, 7, 9
 
 """
     }
@@ -695,13 +695,13 @@ def make_download_red_images_table():
     'en': """.. csv-table::
  :header: "Type", "Downloads", "Version", "Archive", "Changelog"
  :delim: |
- :widths: 25, 50, 7, 7, 10
+ :widths: 22, 55, 7, 7, 9
 
 """,
     'de': """.. csv-table::
  :header: "Typ", "Downloads", "Version", "Archiv", "Changelog"
  :delim: |
- :widths: 25, 50, 7, 7, 10
+ :widths: 22, 55, 7, 7, 9
 
 """
     }
@@ -731,13 +731,13 @@ def make_download_brick_firmwares_table():
     'en': """.. csv-table::
  :header: "Brick", "Downloads", "Version", "Archive", "Changelog"
  :delim: |
- :widths: 25, 50, 7, 7, 10
+ :widths: 22, 55, 7, 7, 9
 
 """,
     'de': """.. csv-table::
  :header: "Brick", "Downloads", "Version", "Archiv", "Changelog"
  :delim: |
- :widths: 25, 50, 7, 7, 10
+ :widths: 22, 55, 7, 7, 9
 
 """
     }
@@ -783,13 +783,13 @@ def make_download_bricklet_plugins_table():
     'en': """.. csv-table::
  :header: "Bricklet", "Downloads", "Version", "Archive", "Changelog"
  :delim: |
- :widths: 25, 50, 7, 7, 10
+ :widths: 22, 55, 7, 7, 9
 
 """,
     'de': """.. csv-table::
  :header: "Bricklet", "Downloads", "Version", "Archiv", "Changelog"
  :delim: |
- :widths: 25, 50, 7, 7, 10
+ :widths: 22, 55, 7, 7, 9
 
 """
     }
@@ -836,13 +836,13 @@ def make_download_extension_firmwares_table():
     'en': """.. csv-table::
  :header: "Brick", "Downloads", "Version", "Archive", "Changelog"
  :delim: |
- :widths: 25, 50, 7, 7, 10
+ :widths: 22, 55, 7, 7, 9
 
 """,
     'de': """.. csv-table::
  :header: "Brick", "Downloads", "Version", "Archiv", "Changelog"
  :delim: |
- :widths: 25, 50, 7, 7, 10
+ :widths: 22, 55, 7, 7, 9
 
 """
     }
@@ -879,13 +879,13 @@ def make_download_kits_table():
     'en': """.. csv-table::
  :header: "Kit", "Downloads", "Version", "Archive", "Changelog"
  :delim: |
- :widths: 25, 50, 7, 7, 10
+ :widths: 22, 55, 7, 7, 9
 
 """,
     'de': """.. csv-table::
  :header: "Kit", "Downloads", "Version", "Archiv", "Changelog"
  :delim: |
- :widths: 25, 50, 7, 7, 10
+ :widths: 22, 55, 7, 7, 9
 
 """
     }
