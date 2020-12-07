@@ -85,7 +85,7 @@ High Level Spannung               10-26V
 Isolation                         3750Vrms (Optokoppler-Wert)
 --------------------------------  --------------------------------------------------------------
 --------------------------------  --------------------------------------------------------------
-Minimale Eingangsfrequenz         0,03MHz
+Minimale Eingangsfrequenz         0,03Hz
 Maximale Eingangsfrequenz         4MHz
 Zeit-Auflösung                    bis zu 10.4ns (Duty Cycle Prescaler auf 1 gesetzt)
 Frequenz-Auflösung                bis zu 0.03Hz (Frequenz-Integrationsszeit auf 32768ms gesetzt)
