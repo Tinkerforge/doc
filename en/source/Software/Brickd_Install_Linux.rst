@@ -69,7 +69,7 @@ instead)::
 To install Brick Daemon from the console use the following command (depending on
 the platform):
 
-* 64bit x86 (e.g. most PCs and labtops)::
+* 64bit x86 (e.g. most PCs and laptops)::
 
    wget --backups=1 https://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_amd64.deb
    sudo dpkg -i brickd_linux_latest_amd64.deb

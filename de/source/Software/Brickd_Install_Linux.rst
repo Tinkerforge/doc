@@ -72,7 +72,7 @@ ist, dann ``libudev0`` installieren)::
 Der Brick Daemon kann von der Konsole mit folgendem Befehl installiert
 werden, abhängig von der verwendeten Plattform:
 
-* 64-bit x86 (z.B. die meisten PCs und Labtops)::
+* 64-bit x86 (z.B. die meisten PCs und Laptops)::
 
    wget --backups=1 https://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_amd64.deb
    sudo dpkg -i brickd_linux_latest_amd64.deb
