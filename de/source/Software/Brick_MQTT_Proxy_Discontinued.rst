@@ -23,7 +23,7 @@ heruntergeladen werden:
 
 .. code-block:: bash
 
-  wget https://raw.githubusercontent.com/Tinkerforge/brick-mqtt-proxy/master/brick-mqtt-proxy.py
+  wget --backups=1 https://raw.githubusercontent.com/Tinkerforge/brick-mqtt-proxy/master/brick-mqtt-proxy.py
 
 Als Abhängigkeiten müssen der :ref:`Brick Daemon <brickd>`, die
 :ref:`Python API Bindings <api_bindings_python>` und die `Eclipse Paho MQTT

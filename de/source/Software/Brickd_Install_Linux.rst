@@ -64,27 +64,38 @@ Auf Ubuntu kann auch das Ubuntu Software Center benutzt werden. Andere
 Desktopumgebungen haben ähnliche Werkzeuge die praktisch genauso
 funktionieren.
 
+Zuerst benötige Abhängigkeiten installieren (falls ``libudev1`` nicht vorhanden
+ist, dann ``libudev0`` installieren)::
+
+ sudo apt-get install libusb-1.0-0 libudev1 procps
+
 Der Brick Daemon kann von der Konsole mit folgendem Befehl installiert
-werden::
+werden, abhängig von der verwendeten Plattform::
 
- # Use libudev1 instead of libudev0 in Ubuntu 13.04
- sudo apt-get install libusb-1.0-0 libudev0 pm-utils
+* 64-bit x86 (z.B. die meisten PCs und Labtops)::
 
- # On ARM (e.g. Raspberry Pi)
- wget https://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_armhf.deb
- sudo dpkg -i brickd_linux_latest_armhf.deb
+   wget --backups=1 https://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_amd64.deb
+   sudo dpkg -i brickd_linux_latest_amd64.deb
 
- # On 64bit x86
- wget https://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_amd64.deb
- sudo dpkg -i brickd_linux_latest_amd64.deb
+* 32-bit x86::
 
- # On 32bit x86
- wget https://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_i386.deb
- sudo dpkg -i brickd_linux_latest_i386.deb
+   wget --backups=1 https://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_i386.deb
+   sudo dpkg -i brickd_linux_latest_i386.deb
 
- # On RED Brick
- wget https://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest+redbrick_armhf.deb
- sudo dpkg -i brickd_linux_latest+redbrick_armhf.deb
+* 32-bit ARM (z.B. Raspberry Pi)::
+
+   wget --backups=1 https://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_armhf.deb
+   sudo dpkg -i brickd_linux_latest_armhf.deb
+
+* 64-bit ARM (z.B. NVIDIA Jetson)::
+
+   wget --backups=1 https://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_arm64.deb
+   sudo dpkg -i brickd_linux_latest_arm64.deb
+
+* RED Brick::
+
+   wget --backups=1 https://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest+redbrick_armhf.deb
+   sudo dpkg -i brickd_linux_latest+redbrick_armhf.deb
 
 Der Brick Daemon wird nach der Installation und beim Hochfahren des Systems
 automatisch gestartet.

@@ -7,7 +7,7 @@ Brick Daemon Installation on Linux
 **Requirements**: libusb 1.0.6 or newer
 
 The :ref:`Brick Daemon <brickd>` can be installed on Debian based distribution
-(Ubuntu, Mint, etc.) from a ``.deb`` file. For Arch Linux the package 
+(Ubuntu, Mint, etc.) from a ``.deb`` file. For Arch Linux the package
 `brickd <https://aur.archlinux.org/packages/brickd/>`_ is available in the AUR.
 On other distributions the Brick Daemon can be installed from source.
 
@@ -61,26 +61,38 @@ Ready:
 On Ubuntu you can also use the Ubuntu Software Center, other Desktop
 environments have very similar tools that practically work the same way.
 
-To install Brick Daemon from the console use the following::
+Install dependencies first (if ``libudev1`` isn't available install ``libudev0``
+instead)::
 
- # Use libudev1 instead of libudev0 in Ubuntu 13.04
- sudo apt-get install libusb-1.0-0 libudev0 pm-utils
+ sudo apt-get install libusb-1.0-0 libudev1 procps
 
- # On ARM (e.g. Raspberry Pi)
- wget https://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_armhf.deb
- sudo dpkg -i brickd_linux_latest_armhf.deb
+To install Brick Daemon from the console use the following command (depending on
+the platform)::
 
- # On 64bit x86
- wget https://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_amd64.deb
- sudo dpkg -i brickd_linux_latest_amd64.deb
+* 64bit x86 (e.g. most PCs and labtops)::
 
- # On 32bit x86
- wget https://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_i386.deb
- sudo dpkg -i brickd_linux_latest_i386.deb
+   wget --backups=1 https://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_amd64.deb
+   sudo dpkg -i brickd_linux_latest_amd64.deb
 
- # On RED Brick
- wget https://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest+redbrick_armhf.deb
- sudo dpkg -i brickd_linux_latest+redbrick_armhf.deb
+* 32bit x86::
+
+   wget --backups=1 https://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_i386.deb
+   sudo dpkg -i brickd_linux_latest_i386.deb
+
+* 32bit ARM (e.g. Raspberry Pi)::
+
+   wget --backups=1 https://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_armhf.deb
+   sudo dpkg -i brickd_linux_latest_armhf.deb
+
+* 64bit ARM (e.g. NVIDIA Jetson)::
+
+   wget --backups=1 https://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_arm64.deb
+   sudo dpkg -i brickd_linux_latest_arm64.deb
+
+* RED Brick::
+
+   wget --backups=1 https://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest+redbrick_armhf.deb
+   sudo dpkg -i brickd_linux_latest+redbrick_armhf.deb
 
 The Brick Daemon will be started after the installation and at startup
 automatically.
@@ -91,4 +103,3 @@ From Source
 
 To install Brick Daemon from source follow the steps described in this
 `README <https://github.com/Tinkerforge/brickd/blob/master/README.rst>`__.
-

@@ -51,11 +51,11 @@ Raspbian (armhf)
 
 Wurde Debian **mit** Hardware Floating Point Unit Unterstützung (Raspbian)
 installiert, so kann der :ref:`Brick Daemon <brickd>` einfach mit folgenden
-Befehlen installiert werden (falls ``libudev0`` nicht verfügbar ist ``libudev1``
+Befehlen installiert werden (falls ``libudev1`` nicht verfügbar ist ``libudev0``
 installieren)::
 
- sudo apt-get install libusb-1.0-0 libudev0 pm-utils
- wget https://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_armhf.deb
+ sudo apt-get install libusb-1.0-0 libudev1 procps
+ wget --backups=1 https://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_armhf.deb
  sudo dpkg -i brickd_linux_latest_armhf.deb
 
 Der Brick Daemon wird nach der Installation und beim Hochfahren des Systems
@@ -63,7 +63,7 @@ automatisch gestartet.
 
 Updates können durch Wiederholen der letzten beiden Befehle installiert werden::
 
- wget https://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_armhf.deb
+ wget --backups=1 https://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_armhf.deb
  sudo dpkg -i brickd_linux_latest_armhf.deb
 
 
@@ -78,7 +78,7 @@ heruntergeladen werden und im ``home`` Verzeichnis platziert werden.
 
 Danach müssen folgende Schritte ausgeführt werden::
 
- sudo apt-get install build-essential pkg-config libusb-1.0-0-dev libudev-dev pm-utils
+ sudo apt-get install build-essential pkg-config libusb-1.0-0-dev libudev-dev procps
  unzip Tinkerforge-brickd-vX.Y.Z-W-***.zip (Dateiname anpassen)
  cd Tinkerforge-brickd-vX.Y.Z-W-*** (Ordnername anpassen)
  cd src/brickd
@@ -94,7 +94,7 @@ Brick Viewer installieren
 Der :ref:`Brick Viewer <brickv>` kann mit folgenden Befehlen installiert werden::
 
  sudo apt-get install python3 python3-pyqt5 python3-pyqt5.qtopengl python3-serial python3-tz python3-tzlocal
- wget https://download.tinkerforge.com/tools/brickv/linux/brickv_linux_latest.deb
+ wget --backups=1 https://download.tinkerforge.com/tools/brickv/linux/brickv_linux_latest.deb
  sudo dpkg -i brickv_linux_latest.deb
 
 Es kann vorkommen, dass ``apt-get`` meldet, dass bestimmte Abhängigkeiten nicht
@@ -104,7 +104,7 @@ die benötigten Abhängigkeiten installieren.
 
 Updates können durch Wiederholen der letzten beiden Befehle installiert werden::
 
- wget https://download.tinkerforge.com/tools/brickv/linux/brickv_linux_latest.deb
+ wget --backups=1 https://download.tinkerforge.com/tools/brickv/linux/brickv_linux_latest.deb
  sudo dpkg -i brickv_linux_latest.deb
 
 

@@ -142,8 +142,8 @@ You can install Brick Daemon from the Raspberry Pi's terminal with the following
 
 .. code-block:: shell
 
-	sudo apt-get install libusb-1.0-0 libudev0 pm-utils
-	wget https://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_armhf.deb
+	sudo apt-get install libusb-1.0-0 libudev1 procps
+	wget --backups=1 https://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_armhf.deb
 	sudo dpkg -i brickd_linux_latest_armhf.deb
 
 After Brick Daemon is installed you can put the HAT Brick on top of the

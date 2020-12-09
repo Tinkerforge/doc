@@ -205,7 +205,7 @@ Linux Rechnern ohne graphische Benutzeroberfläche geflasht werden sollen kann
 <https://download.tinkerforge.com/tools/brick_flash/linux/brick-flash_linux_latest.deb>`__
 zum Download bereit::
 
- wget https://download.tinkerforge.com/tools/brick_flash/linux/brick-flash_linux_latest.deb
+ wget --backups=1 https://download.tinkerforge.com/tools/brick_flash/linux/brick-flash_linux_latest.deb
  sudo dpkg -i brick-flash_linux_latest.deb
 
 Im Gegensatz zum Brick Viewer lädt ``brick-flash`` die Firmware nicht
@@ -213,7 +213,7 @@ automatisch herunter. Die jeweils neusten Firmwares sind :ref:`hier
 <downloads_brick_firmwares>` zu finden. Lade die zu flashende Firmware
 herunter, z.B. die neuste Master Brick Firmware::
 
- wget https://download.tinkerforge.com/firmwares/bricks/master/brick_master_firmware_latest.bin
+ wget --backups=1 https://download.tinkerforge.com/firmwares/bricks/master/brick_master_firmware_latest.bin
 
 Stelle sicher, dass sich der Brick im Bootloader Modus befindet (siehe Brick
 Viewer Abschnitt weiter oben) und bestimme die serielle Schnittstelle des

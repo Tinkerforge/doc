@@ -49,10 +49,10 @@ Raspbian (armhf)
 
 If you have installed an Debian **with** hardware floating point unit support
 (Raspbian) you can simply install the :ref:`Brick Daemon <brickd>` package by
-executing (if ``libudev0`` isn't available install ``libudev1`` instead)::
+executing (if ``libudev1`` isn't available install ``libudev0`` instead)::
 
- sudo apt-get install libusb-1.0-0 libudev0 pm-utils
- wget https://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_armhf.deb
+ sudo apt-get install libusb-1.0-0 libudev1 procps
+ wget --backups=1 https://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_armhf.deb
  sudo dpkg -i brickd_linux_latest_armhf.deb
 
 The Brick Daemon will be started after the installation and at startup
@@ -60,7 +60,7 @@ automatically.
 
 Updates can be installed by repeating the last two commands::
 
- wget https://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_armhf.deb
+ wget --backups=1 https://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_armhf.deb
  sudo dpkg -i brickd_linux_latest_armhf.deb
 
 
@@ -75,7 +75,7 @@ and put it under the ``home`` directory.
 
 After this you have to execute the following steps::
 
- sudo apt-get install build-essential pkg-config libusb-1.0-0-dev libudev-dev pm-utils
+ sudo apt-get install build-essential pkg-config libusb-1.0-0-dev libudev-dev procps
  unzip Tinkerforge-brickd-vX.Y.Z-W-***.zip (modify filename)
  cd Tinkerforge-brickd-vX.Y.Z-W-*** (modify folder name)
  cd src/brickd
@@ -92,7 +92,7 @@ To install the :ref:`Brick Viewer <brickv>` software execute the following
 commands::
 
  sudo apt-get install python3 python3-pyqt5 python3-pyqt5.qtopengl python3-serial python3-tz python3-tzlocal
- wget https://download.tinkerforge.com/tools/brickv/linux/brickv_linux_latest.deb
+ wget --backups=1 https://download.tinkerforge.com/tools/brickv/linux/brickv_linux_latest.deb
  sudo dpkg -i brickv_linux_latest.deb
 
 ``apt-get`` might complain about dependencies that are not going to be installed.
@@ -101,7 +101,7 @@ should resolve this problem and install re required dependencies.
 
 Updates can be installed by repeating the last two commands::
 
- wget https://download.tinkerforge.com/tools/brickv/linux/brickv_linux_latest.deb
+ wget --backups=1 https://download.tinkerforge.com/tools/brickv/linux/brickv_linux_latest.deb
  sudo dpkg -i brickv_linux_latest.deb
 
 

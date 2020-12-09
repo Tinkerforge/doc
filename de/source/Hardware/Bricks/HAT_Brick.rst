@@ -139,8 +139,8 @@ installiert werden:
 
 .. code-block:: shell
 
-	sudo apt-get install libusb-1.0-0 libudev0 pm-utils
-	wget https://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_armhf.deb
+	sudo apt-get install libusb-1.0-0 libudev1 procps
+	wget --backups=1 https://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_armhf.deb
 	sudo dpkg -i brickd_linux_latest_armhf.deb
 
 Nachdem der Brick Daemon installiert wurde, kann der HAT Brick auf den Raspberry Pi gesteckt

@@ -68,7 +68,7 @@ or in a terminal with::
 To install Brick Viewer from the terminal use the following::
 
  sudo apt-get install python3 python3-pyqt5 python3-pyqt5.qtopengl python3-serial python3-tz python3-tzlocal
- wget https://download.tinkerforge.com/tools/brickv/linux/brickv_linux_latest.deb
+ wget --backups=1 https://download.tinkerforge.com/tools/brickv/linux/brickv_linux_latest.deb
  sudo dpkg -i brickv_linux_latest.deb
 
 
