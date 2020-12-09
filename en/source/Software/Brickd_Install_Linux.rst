@@ -67,7 +67,7 @@ instead)::
  sudo apt-get install libusb-1.0-0 libudev1 procps
 
 To install Brick Daemon from the console use the following command (depending on
-the platform)::
+the platform):
 
 * 64bit x86 (e.g. most PCs and labtops)::
 

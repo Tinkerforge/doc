@@ -70,7 +70,7 @@ ist, dann ``libudev0`` installieren)::
  sudo apt-get install libusb-1.0-0 libudev1 procps
 
 Der Brick Daemon kann von der Konsole mit folgendem Befehl installiert
-werden, abhängig von der verwendeten Plattform::
+werden, abhängig von der verwendeten Plattform:
 
 * 64-bit x86 (z.B. die meisten PCs und Labtops)::
 
