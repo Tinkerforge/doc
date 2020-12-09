@@ -1,6 +1,4 @@
 
-:shoplink: ../../../shop/bricklets/dual-relay-bricklet.html
-
 .. include:: Dual_Relay.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
@@ -26,7 +24,7 @@ Dual Relay Bricklet
 
 .. note::
 
- Das Dual Relay Bricklet ist abgekündigt. Wir verkaufen noch unseren restlichen Lagerbestand.
+ Das Dual Relay Bricklet ist abgekündigt und wird nicht mehr verkauft.
  Als Ersatz wird das :ref:`Industrial Dual Relay Bricklet <industrial_dual_relay_bricklet>`
  empfohlen.
 
