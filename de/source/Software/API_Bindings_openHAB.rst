@@ -11,7 +11,7 @@ openHAB - Bindings
 
 The openHAB bindings allow you to control :ref:`Bricks <primer_bricks>` and
 :ref:`Bricklets <primer_bricklets>` from your openHAB installation. The
-:ref:`ZIP file <downloads_bindings_examples>` for the bindings contains:
+`ZIP file <https://www.tinkerunity.org/topic/4901-betaversion-der-openhab-bindings/>`__ for the bindings contains:
 
 * ``org.openhab.binding.tinkerforge-[version].jar``, a precompiled version of the bindings
 * in ``org.openhab.binding.tinkerforge/`` the source code of the bindings
