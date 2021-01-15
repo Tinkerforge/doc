@@ -18,7 +18,7 @@ Support for authentication was added in these software versions:
 
 * Brick Daemon: 2.1.0
 * Brick Viewer: 2.1.0
-* Go, JavaScript, MATLAB/Octave, MQTT asnd Rust API Bindings: 2.0.0
+* Go, JavaScript, MATLAB/Octave, MQTT and Rust API Bindings: 2.0.0
 * All other API Bindings: 2.1.0
 * Master Brick firmware (Ethernet/WIFI Extension): 2.2.0
 
