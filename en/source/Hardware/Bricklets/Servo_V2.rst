@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/servo-v2-bricklet.html
+:shoplink: ../../../shop/bricklets/servo-v2-bricklet.html
 
 .. include:: Servo_V2.substitutions
    :start-after: >>>substitutions
@@ -10,18 +10,15 @@
 Servo Bricklet 2.0
 ==================
 
-.. note::
-  This Bricklet is currently work-in-progress!
-
-..
-    .. raw:: html
+.. raw:: html
 
 	{% tfgallery %}
 
-	Bricklets/bricklet_servo_v2_tilted_[?|?].jpg           Servo Bricklet 2.0
-	Bricklets/bricklet_servo_v2_horizontal_[?|?].jpg       Servo Bricklet 2.0
-	Bricklets/bricklet_servo_v2_master_[100|600].jpg       Servo Bricklet 2.0 with Master Brick
-	Cases/bricklet_servo_v2_case_[100|600].jpg             Servo Bricklet 2.0 with case
+	Bricklets/bricklet_servo_v2_tilted_[100|600].jpg       Servo Bricklet 2.0
+	Bricklets/bricklet_servo_v2_tilted2_[100|600].jpg      Servo Bricklet 2.0
+	Bricklets/bricklet_servo_v2_top_[100|600].jpg          Servo Bricklet 2.0
+	Bricklets/bricklet_servo_v2_w_servo_[100|600].jpg      Servo Bricklet 2.0 with two servos
+	Bricklets/bricklet_servo_v2_caption_[100|600].jpg      Servo Bricklet 2.0 connectivity
 	Bricklets/bricklet_servo_v2_brickv_[100|].jpg          Servo Bricklet 2.0 in Brick Viewer
 	Dimensions/servo_v2_bricklet_dimensions_[100|600].png  Outline and drilling plan
 
@@ -95,11 +92,11 @@ Connectivity
 The following picture depicts the different connection possibilities of the
 Servo Bricklet 2.0.
 
-.. image:: /Images/Bricks/bricklet_servo_v2_caption_600.jpg
+.. image:: /Images/Bricklets/bricklet_servo_v2_caption_600.jpg
    :scale: 100 %
    :alt: Servo Bricklet 2.0 with caption
    :align: center
-   :target: ../../_images/Bricks/bricklet_servo_v2_caption_800.jpg
+   :target: ../../_images/Bricklets/bricklet_servo_v2_caption_800.jpg
 
 
 .. _servo_v2_bricklet_test:
@@ -110,13 +107,6 @@ Test your Servo Bricklet 2.0
 |test_intro|
 
 Connect a RC servo to a port of the Brick and a suitable power supply.
-Your setup should look as shown below.
-
-.. image:: /Images/Bricks/bricklet_servo_v2_setup_600.jpg
-   :scale: 100 %
-   :alt: Servo Bricklet 2.0 with servo
-   :align: center
-   :target: ../../_images/Bricks/bricklet_servo_v2_setup_1200.jpg
 
 |test_tab|
 
@@ -205,7 +195,7 @@ accept 0V low level und 5V high level. The majority of 12V/24V PWM
 controllable fans work this way, but check the datasheet of of the fan
 before you connect it.
 
-TODO: Image/video + example configuration
+Coming Soon: Image/Video + example configuration
 
 
 .. _servo_v2_bricklet_case:

@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/servo-v2-bricklet.html
+:shoplink: ../../../shop/bricklets/servo-v2-bricklet.html
 
 .. include:: Servo_V2.substitutions
    :start-after: >>>substitutions
@@ -10,18 +10,15 @@
 Servo Bricklet 2.0
 ==================
 
-.. note::
-  Dieses Bricklet befindet sich aktuell noch in der Entwicklung!
-
-..
-    .. raw:: html
+.. raw:: html
 
 	{% tfgallery %}
 
-	Bricklets/bricklet_servo_v2_tilted_[?|?].jpg           Servo Bricklet 2.0
-	Bricklets/bricklet_servo_v2_horizontal_[?|?].jpg       Servo Bricklet 2.0
-	Bricklets/bricklet_servo_v2_master_[100|600].jpg       Servo Bricklet 2.0 mit Master Brick
-	Cases/bricklet_servo_v2_case_[100|600].jpg             Servo Bricklet 2.0 im Gehäuse
+	Bricklets/bricklet_servo_v2_tilted_[100|600].jpg       Servo Bricklet 2.0
+	Bricklets/bricklet_servo_v2_tilted2_[100|600].jpg      Servo Bricklet 2.0
+	Bricklets/bricklet_servo_v2_top_[100|600].jpg          Servo Bricklet 2.0
+	Bricklets/bricklet_servo_v2_w_servo_[100|600].jpg      Servo Bricklet 2.0 mit zwei Servos
+	Bricklets/bricklet_servo_v2_caption_[100|600].jpg      Servo Bricklet 2.0 Anschlüsse
 	Bricklets/bricklet_servo_v2_brickv_[100|].jpg          Servo Bricklet 2.0 im Brick Viewer
 	Dimensions/servo_v2_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
 
@@ -103,11 +100,11 @@ Anschlussmöglichkeit
 Das folgende Bild zeigt die verschiedenen Anschlussmöglichkeit des
 Servo Bricklet 2.0.
 
-.. image:: /Images/Bricks/bricklet_servo_v2_caption_600.jpg
+.. image:: /Images/Bricklets/bricklet_servo_v2_caption_600.jpg
    :scale: 100 %
    :alt: Servo Bricklet 2.0 mit Beschriftung
    :align: center
-   :target: ../../_images/Bricks/bricklet_servo_v2_caption_800.jpg
+   :target: ../../_images/Bricklets/bricklet_servo_v2_caption_800.jpg
 
 .. _servo_v2_bricklet_test:
 
@@ -118,13 +115,6 @@ Erster Test
 |test_intro|
 
 Schließe einen RC Servo und eine passende Stromversorgung an den Brick an.
-Der Aufbau sollte dem im folgenden Bild ähnlich sehen.
-
-.. image:: /Images/Bricks/bricklet_servo_v2_setup_600.jpg
-   :scale: 100 %
-   :alt: Servo Bricklet 2.0 mit Servo
-   :align: center
-   :target: ../../_images/Bricks/bricklet_servo_v2_setup_1200.jpg
 
 |test_tab|
 
@@ -227,7 +217,7 @@ des Lüfters muss allerdings einen High-Pegel von 5V und einen Low-Pegel von 0V
 unterstützen. Die meisten PWM-kontrollierbaren Lüfter unterstützen dies,
 allerdings sollte das vorher im Datenblatt des Lüfters überprüft werden.
 
-TODO: Bild/Vide + Beispielkonfiguriation
+Comming Soon: Bild/Video + Beispielkonfiguriation
 
 .. _servo_v2_bricklet_case:
 
