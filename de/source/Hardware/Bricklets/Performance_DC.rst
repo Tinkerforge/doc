@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/performance-dc-bricklet.html
+:shoplink: ../../../shop/bricklets/performance-dc-bricklet.html
 
 .. include:: Performance_DC.substitutions
    :start-after: >>>substitutions
