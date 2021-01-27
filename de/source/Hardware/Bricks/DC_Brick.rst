@@ -1,6 +1,4 @@
 
-:shoplink: ../../../shop/bricks/dc-brick.html
-
 .. include:: DC_Brick.substitutions
 
 
@@ -22,6 +20,12 @@ DC Brick
 	Dimensions/dc_brick_dimensions_[100|600].png  Umriss und Bohrplan
 
 	{% tfgalleryend %}
+
+.. note::
+
+ Das DC Brick ist abgekündigt und wird nicht mehr verkauft.
+ Als Ersatz wird das DC Bricklet 2.0 (Comming Soon) oder das
+ :ref:`Performance DC Bricklet <performance_dc_bricklet>` empfohlen.
 
 Features
 --------

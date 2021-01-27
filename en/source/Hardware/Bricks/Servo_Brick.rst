@@ -1,6 +1,4 @@
 
-:shoplink: ../../../shop/bricks/servo-brick.html
-
 .. include:: Servo_Brick.substitutions
 
 
@@ -24,6 +22,11 @@ Servo Brick
 
 	{% tfgalleryend %}
 
+.. note::
+
+ The Servo Brick is discontinued and is no longer sold. The
+ :ref:`Servo Bricklet 2.0 <servo_v2_bricklet>` is the recommended
+ replacement.
 
 Features
 --------
