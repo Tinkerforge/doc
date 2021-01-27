@@ -163,7 +163,7 @@ gefunden werden. Ausführbare Dateien stehen für Linux, macOS und Windows
 
 Es werden die Daten des Air Quality Brickelts sowie der Außenwetterstation dargestellt.
 Graphen können mit einer einstellbaren Zeitbasis angezeigt werden und die Daten werden
-in einer sqlite Datenbank geloggt. Konfigurationen können per Touch-Bedienung über die
+in einer SQLite Datenbank geloggt. Konfigurationen können per Touch-Bedienung über die
 Wetterstation selbst eingestellt werden.
 
 .. image:: /Images/Kits/tabletop_weather_station_gui_600.jpg

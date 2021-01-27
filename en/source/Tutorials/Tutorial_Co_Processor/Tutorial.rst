@@ -59,8 +59,8 @@ Additionally, we can now have Bricklets that
 While the old Bricklets with EEPROM could only be connected to a Brick, the
 new Bricklets can in theory be read out by any device that can speak SPI.
 
-This allowed us to develop the Isolator Bricklet as well as the Bricklet HAT
-(comming soon) and Bricklet HAT Zero (comming soon).
+This allowed us to develop the Isolator Bricklet as well as the HAT Brick and
+HAT Zero Brick.
 
 There are many other small technical advantages that increase the
 performance and robustness of the new Bricklets compared to the old ones.

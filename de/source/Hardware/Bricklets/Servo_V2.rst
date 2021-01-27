@@ -217,7 +217,7 @@ des Lüfters muss allerdings einen High-Pegel von 5V und einen Low-Pegel von 0V
 unterstützen. Die meisten PWM-kontrollierbaren Lüfter unterstützen dies,
 allerdings sollte das vorher im Datenblatt des Lüfters überprüft werden.
 
-Comming Soon: Bild/Video + Beispielkonfiguriation
+Coming Soon: Bild/Video + Beispielkonfiguriation
 
 .. _servo_v2_bricklet_case:
 

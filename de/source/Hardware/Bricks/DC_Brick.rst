@@ -23,8 +23,8 @@ DC Brick
 
 .. note::
 
- Das DC Brick ist abgekündigt und wird nicht mehr verkauft.
- Als Ersatz wird das DC Bricklet 2.0 (Comming Soon) oder das
+ Der DC Brick ist abgekündigt und wird nicht mehr verkauft.
+ Als Ersatz wird das DC Bricklet 2.0 (Coming Soon) oder das
  :ref:`Performance DC Bricklet <performance_dc_bricklet>` empfohlen.
 
 Features

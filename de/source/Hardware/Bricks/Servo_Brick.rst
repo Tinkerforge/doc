@@ -24,7 +24,7 @@ Servo Brick
 
 .. note::
 
- Das Servo Brick ist abgekündigt und wird nicht mehr verkauft.
+ Der Servo Brick ist abgekündigt und wird nicht mehr verkauft.
  Als Ersatz wird das :ref:`Servo Bricklet 2.0 <servo_v2_bricklet>`
  empfohlen.
 

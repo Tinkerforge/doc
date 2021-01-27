@@ -161,8 +161,8 @@ and executables for Linux, macOS and Windows are available
 `here <https://www.tinkerforge.com/en/doc/Downloads.html#kit-demos>`__.
 
 It shows the data of the Air Quality Bricklet as well as the Outdoor Weather Station.
-Graphs can be drawn for different time frames, the data is logged in a sqlite database
-with a configuratable period and the settings are configurable through the touch-interface
+Graphs can be drawn for different time frames, the data is logged in a SQLite database
+with a configurable period and the settings are configurable through the touch-interface
 of the weather station itself.
 
 .. image:: /Images/Kits/tabletop_weather_station_gui_600.jpg
@@ -240,7 +240,7 @@ to the same plate as the Master Brick:
 
 As you can see in the exploded assembly drawings, we attach the
 Air Quality Bricklet to the outside of the weather station. This ensures that the
-heat comming from the other components (LCD 128x64 Bricklet, Master Brick, perhaps a
+heat coming from the other components (LCD 128x64 Bricklet, Master Brick, perhaps a
 RED Brick) does not influence the temperature measurement of the Air Quality Bricklet.
 
 You can also screw the Air Quality Bricklet to the inside. In this case we recommend
