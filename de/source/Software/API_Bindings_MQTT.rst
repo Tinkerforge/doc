@@ -19,8 +19,8 @@ Die MQTT-Bindings basieren auf den :ref:`Python Bindings <api_bindings_python>`.
 Voraussetzungen
 ---------------
 
-* Python 2.7.9 oder neuer mit dem ``argparse`` Modul, Python 3.4 oder neuer wird auch unterstützt
-* Die Python-Bibliothek von Paho, Version 1.3.1 oder neuer
+* Python 3.4 oder neuer
+* Paho MQTT 1.3.1 oder neuer
 
 .. _api_bindings_mqtt_install:
 
