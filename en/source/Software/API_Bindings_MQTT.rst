@@ -318,6 +318,8 @@ Command line arguments
 * ``--no-debug`` hide debug output (enabled by default)
 * ``--symbolic-response`` translate constant values into string constants for responses (enabled by default)
 * ``--no-symbolic-response`` do not translate constants values for responses
+* ``--int64-string-response`` translate [u]int64 values into strings for responses
+* ``--no-int64-string-response`` do not translate [u]int64 values into strings for responses (enabled by default)
 * ``--show-payload`` show received payload if JSON parsing fails
 * ``--hide-payload`` hide received payload if JSON parsing fails (enabled by default)
 * ``--init-file <INIT_FILE>`` file from where to load initial messages to process

@@ -326,8 +326,10 @@ Kommandozeilenargumente
 * ``--global-topic-prefix <GLOBAL_TOPIC_PREFIX>`` Globaler Präfix für MQTT-Topics (Standard: tinkerforge/)
 * ``--debug`` Zeigt die Debug-Ausgabe
 * ``--no-debug`` Versteckt die Debug-Ausgabe (standardmäßig aktiv)
-* ``--symbolic-response`` Übersetzung von Antwort-Konstanten in Strings
-* ``--no-symbolic-response`` Keine Übersetzung von Antwort-Konstanten in Strings (standardmäßig aktiv)
+* ``--symbolic-response`` Übersetzung von Antwort-Konstanten in Strings (standardmäßig aktiv)
+* ``--no-symbolic-response`` Keine Übersetzung von Antwort-Konstanten in Strings
+* ``--int64-string-response`` Übersetzung von Antwort-[u]int64-Werten in Strings
+* ``--no-int64-string-response`` ÜKeine bersetzung von Antwort-[u]int64-Werten in Strings (standardmäßig aktiv)
 * ``--show-payload`` Empfangenen Payloads anzeigen falls das JSON-Parsing fehlschlägt
 * ``--hide-payload`` Empfangenen Payloads nicht anzeigen falls das JSON-Parsing fehlschlägt (standardmäßig aktiv)
 * ``--init-file <INIT_FILE>`` Lädt Nachrichten, die initial verarbeitet werden sollen, aus einer Datei
