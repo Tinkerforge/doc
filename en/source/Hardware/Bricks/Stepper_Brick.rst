@@ -1,6 +1,4 @@
 
-:shoplink: ../../../shop/bricks/stepper-brick.html
-
 .. include:: Stepper_Brick.substitutions
 
 
@@ -23,6 +21,11 @@ Stepper Brick
 
 	{% tfgalleryend %}
 
+.. note::
+
+ The Stepper Brick Brick is discontinued and is no longer sold. The
+ :ref:`Silent Stepper Brick <silent_stepper_brick>` is the recommended replacement.
+ There are also two different Stepper Bricklets currently in development.
 
 Features
 --------
