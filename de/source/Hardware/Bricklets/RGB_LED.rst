@@ -10,9 +10,6 @@
 RGB LED Bricklet
 ================
 
-Features
---------
-
 .. raw:: html
 
 	{% tfgallery %}
