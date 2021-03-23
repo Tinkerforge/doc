@@ -17,7 +17,7 @@ The Shell bindings are based on the :ref:`Python bindings <api_bindings_python>`
 Requirements
 ------------
 
-* Python 2.6 or newer with ``argparse`` module, Python 3 is also supported
+* Python 3.4 or newer
 
 .. _api_bindings_shell_install:
 
@@ -57,14 +57,14 @@ a folder that is in the ``PATH``. For example, this folder on Linux and macOS::
 
 On Windows the ``Scripts/`` folder of the Python installation is a good choice::
 
- C:\Python27\Scripts\
+ C:\Python\Scripts\
 
 To be able to call the bindings directly on Windows you have to create a
 ``tinkerforge.bat`` file in the ``Scripts/`` folder with the following content::
 
- @"C:\Python27\python.exe" "C:\Python27\Scripts\tinkerforge"
+ @"C:\Python\python.exe" "C:\Python\Scripts\tinkerforge"
 
-If your Python is not installed in ``C:\Python27\`` then you have to adapt the
+If your Python is not installed in ``C:\Python\`` then you have to adapt the
 content of the ``tinkerforge.bat`` file accordingly.
 
 Bash Completion
