@@ -1,38 +1,35 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/industrial-ptc-bricklet.html
-
-.. include:: Industrial_PTC.substitutions
+.. include:: Indutrial_PTC.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
 
 .. _industrial_ptc_bricklet:
 
-Industrial PTC Bricklet
-=======================
+Indutrial PTC Bricklet
+======================
 
-.. note::
-  This Bricklet is currently work-in-progress!
-
-..
-    .. raw:: html
+.. raw:: html
 
 	{% tfgallery %}
 
-	Bricklets/bricklet_industrial_ptc_tilted_[?|?].jpg           Industrial PTC Bricklet
-	Bricklets/bricklet_industrial_ptc_horizontal_[?|?].jpg       Industrial PTC Bricklet
-	Bricklets/bricklet_industrial_ptc_master_[100|600].jpg       Industrial PTC Bricklet with Master Brick
-	Cases/bricklet_industrial_ptc_case_[100|600].jpg             Industrial PTC Bricklet with case
-	Bricklets/bricklet_industrial_ptc_brickv_[100|].jpg          Industrial PTC Bricklet in Brick Viewer
-	Dimensions/industrial_ptc_bricklet_dimensions_[100|600].png  Outline and drilling plan
+	Bricklets/bricklet_industrial_ptc_tilted_[?|?].jpg      Indutrial PTC Bricklet
+	Bricklets/bricklet_industrial_ptc_vertical_[?|?].jpg    Indutrial PTC Bricklet
+	Bricklets/bricklet_industrial_ptc_horizontal_[?|?].jpg  Indutrial PTC Bricklet
+	Bricklets/bricklet_industrial_ptc_sensor_[100|600].jpg  Indutrial PTC Bricklet with 3-wire Pt100 RTD
+	Bricklets/bricklet_industrial_ptc_jumper_[100|600].jpg  Indutrial PTC Bricklet
+	Cases/bricklet_industrial_ptc_case_[100|600].jpg        Indutrial PTC Bricklet in Case
+	Bricklets/bricklet_industrial_ptc_brickv_[100|].jpg     Indutrial PTC Bricklet in Brick Viewer
+	Dimensions/industrial_ptc_dimensions_[100|600].png      Outline and drilling plan
 
 	{% tfgalleryend %}
-
 
 Features
 --------
 
-* TBD
-* TBD
+* Supports Pt100 and Pt1000 sensors
+* Supports 2-wire, 3-wire and 4-wire type
+* Measures temperature with 0.05% accuracy at the full scale of -246 to 849°C
+* Resolution of 0.03125°C (15bit), output in 0.01°C steps
 
 
 .. _industrial_ptc_bricklet_description:
@@ -40,8 +37,25 @@ Features
 Description
 -----------
 
-TBD
+The Indutrial PTC :ref:`Bricklet <primer_bricklets>` can be used to
+extend the features of :ref:`Bricks <primer_bricks>` by the
+capability to measure temperature with Pt100 and Pt1000 sensors.
 
+Pt100 and Pt1000 sensors of 2-wire, 3-wire or 4-wire type can be used.
+
+The measured temperature can be read out in `°C
+<https://en.wikipedia.org/wiki/Degree_Celsius>`__.
+With configurable events it is possible to react on changing
+temperatures without polling.
+
+This Bricklet ist not galvanically isolated to the Tinkerforge system. 
+This means that there is a direct electrical connection between the terminals 
+of the Bricklet and the rest of the system. Dependent of the application 
+this can lead to undesired connections, ground loops or short circuits. 
+These problems can be prevented by using the Bricklet together with a :ref:`Isolator Bricklet <isolator_bricklet>`.
+
+The Industrial PTC Bricklet has a 7 pole Bricklet connector and is connected to a
+Brick with a ``7p-10p`` Bricklet cable.
 
 Technical Specifications
 ------------------------
@@ -49,44 +63,91 @@ Technical Specifications
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
-Current Consumption               TBDmA
+RTD-to-Digital Converter          MAX31865
+Current Consumption               2mA
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-P TBD                             V TBD
+Supported Pt-Sensor Types         Pt100 and Pt1000 with 2-wire, 3-wire or 4-wire
+Accuracy                          min 0.05% full scale
+Input Protection                  +-50V
+Temperature Resolution            0.03125°C (15bit)
+Conversion Time                   21ms
+Fault Detection                   Open RTD element, RTD value out-of-range, short across RTD
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Dimensions (W x D x H)            TBD x TBD x TBDmm (TBD x TBD x TBD")
-Weight                            TBDg
+Dimensions (W x D x H)            35 x 30 x 15mm (1.38 x 1.18 x 0.59")
+Weight                            8g
 ================================  ============================================================
 
 
 Resources
 ---------
 
+* MAX31865 datasheet (`Download <https://github.com/Tinkerforge/industrial-ptc-bricklet/raw/master/datasheets/MAX31865.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/industrial-ptc-bricklet/raw/master/hardware/industrial-ptc-schematic.pdf>`__)
-* Outline and drilling plan (`Download <../../_images/Dimensions/industrial_ptc_bricklet_dimensions.png>`__)
+* Outline and drilling plan (`Download <../../_images/Dimensions/industrial_ptc_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/industrial-ptc-bricklet/zipball/master>`__)
-* 3D model (`View online <https://autode.sk/TBD>`__ | Download: `STEP <https://download.tinkerforge.com/3d/TBD/TBD.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/TBD/TBD.FCStd>`__)
+* 3D model (`View online <https://autode.sk/2knGTQP>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricklets/ptc/ptc.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricklets/ptc/ptc.FCStd>`__)
 
+.. _industrial_ptc_bricklet_jumper_configuration:
+
+Jumper Configuration
+--------------------
+
+Configure the jumper for Pt100/Pt1000 sensor and 2/3/4-wire type as
+shown below. The pins of the pin headers that are marked red have to be closed
+by a jumper for the corresponding sensor type.
+
+.. image:: /Images/Bricklets/bricklet_industrial_ptc_pt_wire_600.jpg
+   :scale: 100 %
+   :alt: Indutrial PTC Bricklet jumper configuration
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_industrial_ptc_pt_wire_1000.jpg
+
+.. _industrial_ptc_bricklet_connectivity:
+
+Connectivity
+------------
+
+See below for connection diagrams for 2/3/4-wire type resistance temperature
+device.
+
+.. image:: /Images/Bricklets/bricklet_industrial_ptc_connectivity_600.jpg
+   :scale: 100 %
+   :alt: Indutrial PTC Bricklet connection diagram
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_industrial_ptc_connectivity_1000.jpg
+
+Additionally the number of wires has to be set with the API.
 
 .. _industrial_ptc_bricklet_test:
 
-Test your Industrial PTC Bricklet
----------------------------------
+Test your Indutrial PTC Bricklet
+----------------------
 
 |test_intro|
 
-|test_connect|.
+|test_connect| and attach a Pt100/1000 sensor (see picture below).
+In this example we use a 2-wire Pt100 sensor.
+
+.. image:: /Images/Bricklets/bricklet_industrial_ptc_sensor_600.jpg
+   :scale: 100 %
+   :alt: Indutrial PTC Bricklet connected to 2-wire Pt100 sensor
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_industrial_ptc_sensor_1200.jpg
 
 |test_tab|
-If everything went as expected ... TBD.
+If everything went as expected the Brick Viewer should look as
+depicted below.
 
-..
-	.. image:: /Images/Bricklets/bricklet_industrial_ptc_brickv.jpg
-	   :scale: 100 %
-	   :alt: Industrial PTC Bricklet in Brick Viewer
-	   :align: center
-	   :target: ../../_images/Bricklets/bricklet_industrial_ptc_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_industrial_ptc_brickv.jpg
+   :scale: 100 %
+   :alt: Indutrial PTC Bricklet in Brick Viewer
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_industrial_ptc_brickv.jpg
+
+Put the sensor in your hand to see the
+temperature rising (or falling if it is extremely warm in your room).
 
 |test_pi_ref|
 
@@ -96,27 +157,24 @@ If everything went as expected ... TBD.
 Case
 ----
 
-..
-	A `laser-cut case for the Industrial PTC Bricklet
-	<https://www.tinkerforge.com/en/shop/cases/case-industrial-ptc-bricklet.html>`__ is available.
+A `laser-cut case for the Indutrial PTC Bricklet
+<https://www.tinkerforge.com/en/shop/cases/case-industria-bricklet.html>`__ is available.
 
-	.. image:: /Images/Cases/bricklet_industrial_ptc_case_350.jpg
-	   :scale: 100 %
-	   :alt: Case for Industrial PTC Bricklet
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_industrial_ptc_case_1000.jpg
+.. image:: /Images/Cases/bricklet_industrial_case_350.jpg
+   :scale: 100 %
+   :alt: Case for Indutrial PTC Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_industrial_case_1000.jpg
 
-	.. include:: Industrial_PTC.substitutions
-	   :start-after: >>>bricklet_case_steps
-	   :end-before: <<<bricklet_case_steps
+.. include:: Indutrial_PTC.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
 
-	.. image:: /Images/Exploded/industrial_ptc_exploded_350.png
-	   :scale: 100 %
-	   :alt: Exploded assembly drawing for Industrial PTC Bricklet
-	   :align: center
-	   :target: ../../_images/Exploded/industrial_ptc_exploded.png
-
-	|bricklet_case_hint|
+.. image:: /Images/Exploded/industrial_exploded_350.png
+   :scale: 100 %
+   :alt: Exploded assembly drawing for Indutrial PTC Bricklet
+   :align: center
+   :target: ../../_images/Exploded/industrial_exploded.png
 
 
 .. _industrial_ptc_bricklet_programming_interface:
@@ -126,4 +184,4 @@ Programming Interface
 
 See :ref:`Programming Interface <programming_interface>` for a detailed description.
 
-.. include:: Industrial_PTC_hlpi.table
+.. include:: Indutrial_PTC_hlpi.table
