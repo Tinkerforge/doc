@@ -65,7 +65,7 @@ Technische Spezifikation
 Eigenschaft                       Wert
 ================================  ============================================================
 RTD-zu-Digital-Wandler            MAX31865
-Stromverbrauch                    2mA
+Stromverbrauch                    50mW (10mA bei 5V)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Unterstütze Pt-Sensor Typen       Pt100 und Pt1000 mit 2-Leiter, 3-Leiter oder 4-Leiter
@@ -76,8 +76,9 @@ Konvertierungszeit                21ms
 Fehlerdetektion                   Open RTD element, RTD value out-of-range, short across RTD
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Abmessung (W x D x H)             35 x 30 x 15mm (1,38 x 1,18 x 0,59")
-Gewicht                           8g
+Abmessung (W x D x H)             40 x 40 x 12mm (1,57 x 1,57 x 0,47")
+
+Gewicht                           11g
 ================================  ============================================================
 
 
