@@ -179,7 +179,7 @@ Die rote Error-LED hat drei unterschiedliche Zustände:
 * 1s Intervall-Blinken: Eingangsspannung zu klein (unter 6V).
 * 250ms Intervall-Blinken: Übertemperatur oder Überstrom.
 
-Wenn ein Überttemperatur- oder Überstrom-Event eintritt hört
+Wenn ein Übertemperatur- oder Überstrom-Event eintritt hört
 der Motor auf zu laufen und der treiber wird deaktiviert.
 Um den Treiber wieder zu starten muss dieser explizit mit
 der Enable-Funktion wieder aktiviert werden.
