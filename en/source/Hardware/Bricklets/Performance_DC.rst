@@ -56,7 +56,8 @@ The Bricklet comes with two opto-coupled inputs that can be configured as end-st
 Six user-configurable status LEDs can be used to show the GPIO state,
 motor direction, errors and more.
 
-
+The Performance DC Bricklet has a 7 pole Bricklet connector and is connected to a
+Brick with a ``7p-10p`` Bricklet cable.
 
 Technical Specifications
 ------------------------
