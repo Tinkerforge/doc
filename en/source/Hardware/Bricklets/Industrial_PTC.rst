@@ -1,24 +1,24 @@
 
-.. include:: Indutrial_PTC.substitutions
+.. include:: Industrial_PTC.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
 
 .. _industrial_ptc_bricklet:
 
-Indutrial PTC Bricklet
+Industrial PTC Bricklet
 ======================
 
 .. raw:: html
 
 	{% tfgallery %}
 
-	Bricklets/bricklet_industrial_ptc_tilted_[?|?].jpg      Indutrial PTC Bricklet
-	Bricklets/bricklet_industrial_ptc_vertical_[?|?].jpg    Indutrial PTC Bricklet
-	Bricklets/bricklet_industrial_ptc_horizontal_[?|?].jpg  Indutrial PTC Bricklet
-	Bricklets/bricklet_industrial_ptc_sensor_[100|600].jpg  Indutrial PTC Bricklet with 3-wire Pt100 RTD
-	Bricklets/bricklet_industrial_ptc_jumper_[100|600].jpg  Indutrial PTC Bricklet
-	Cases/bricklet_industrial_ptc_case_[100|600].jpg        Indutrial PTC Bricklet in Case
-	Bricklets/bricklet_industrial_ptc_brickv_[100|].jpg     Indutrial PTC Bricklet in Brick Viewer
+	Bricklets/bricklet_industrial_ptc_tilted_[?|?].jpg      Industrial PTC Bricklet
+	Bricklets/bricklet_industrial_ptc_vertical_[?|?].jpg    Industrial PTC Bricklet
+	Bricklets/bricklet_industrial_ptc_horizontal_[?|?].jpg  Industrial PTC Bricklet
+	Bricklets/bricklet_industrial_ptc_sensor_[100|600].jpg  Industrial PTC Bricklet with 3-wire Pt100 RTD
+	Bricklets/bricklet_industrial_ptc_jumper_[100|600].jpg  Industrial PTC Bricklet
+	Cases/bricklet_industrial_ptc_case_[100|600].jpg        Industrial PTC Bricklet in Case
+	Bricklets/bricklet_industrial_ptc_brickv_[100|].jpg     Industrial PTC Bricklet in Brick Viewer
 	Dimensions/industrial_ptc_dimensions_[100|600].png      Outline and drilling plan
 
 	{% tfgalleryend %}
@@ -37,7 +37,7 @@ Features
 Description
 -----------
 
-The Indutrial PTC :ref:`Bricklet <primer_bricklets>` can be used to
+The Industrial PTC :ref:`Bricklet <primer_bricklets>` can be used to
 extend the features of :ref:`Bricks <primer_bricks>` by the
 capability to measure temperature with Pt100 and Pt1000 sensors.
 
@@ -100,7 +100,7 @@ by a jumper for the corresponding sensor type.
 
 .. image:: /Images/Bricklets/bricklet_industrial_ptc_pt_wire_600.jpg
    :scale: 100 %
-   :alt: Indutrial PTC Bricklet jumper configuration
+   :alt: Industrial PTC Bricklet jumper configuration
    :align: center
    :target: ../../_images/Bricklets/bricklet_industrial_ptc_pt_wire_1000.jpg
 
@@ -114,7 +114,7 @@ device.
 
 .. image:: /Images/Bricklets/bricklet_industrial_ptc_connectivity_600.jpg
    :scale: 100 %
-   :alt: Indutrial PTC Bricklet connection diagram
+   :alt: Industrial PTC Bricklet connection diagram
    :align: center
    :target: ../../_images/Bricklets/bricklet_industrial_ptc_connectivity_1000.jpg
 
@@ -122,7 +122,7 @@ Additionally the number of wires has to be set with the API.
 
 .. _industrial_ptc_bricklet_test:
 
-Test your Indutrial PTC Bricklet
+Test your Industrial PTC Bricklet
 ----------------------
 
 |test_intro|
@@ -132,7 +132,7 @@ In this example we use a 2-wire Pt100 sensor.
 
 .. image:: /Images/Bricklets/bricklet_industrial_ptc_sensor_600.jpg
    :scale: 100 %
-   :alt: Indutrial PTC Bricklet connected to 2-wire Pt100 sensor
+   :alt: Industrial PTC Bricklet connected to 2-wire Pt100 sensor
    :align: center
    :target: ../../_images/Bricklets/bricklet_industrial_ptc_sensor_1200.jpg
 
@@ -142,7 +142,7 @@ depicted below.
 
 .. image:: /Images/Bricklets/bricklet_industrial_ptc_brickv.jpg
    :scale: 100 %
-   :alt: Indutrial PTC Bricklet in Brick Viewer
+   :alt: Industrial PTC Bricklet in Brick Viewer
    :align: center
    :target: ../../_images/Bricklets/bricklet_industrial_ptc_brickv.jpg
 
@@ -157,22 +157,22 @@ temperature rising (or falling if it is extremely warm in your room).
 Case
 ----
 
-A `laser-cut case for the Indutrial PTC Bricklet
+A `laser-cut case for the Industrial PTC Bricklet
 <https://www.tinkerforge.com/en/shop/cases/case-industria-bricklet.html>`__ is available.
 
 .. image:: /Images/Cases/bricklet_industrial_case_350.jpg
    :scale: 100 %
-   :alt: Case for Indutrial PTC Bricklet
+   :alt: Case for Industrial PTC Bricklet
    :align: center
    :target: ../../_images/Cases/bricklet_industrial_case_1000.jpg
 
-.. include:: Indutrial_PTC.substitutions
+.. include:: Industrial_PTC.substitutions
    :start-after: >>>bricklet_case_steps
    :end-before: <<<bricklet_case_steps
 
 .. image:: /Images/Exploded/industrial_exploded_350.png
    :scale: 100 %
-   :alt: Exploded assembly drawing for Indutrial PTC Bricklet
+   :alt: Exploded assembly drawing for Industrial PTC Bricklet
    :align: center
    :target: ../../_images/Exploded/industrial_exploded.png
 
@@ -184,4 +184,4 @@ Programming Interface
 
 See :ref:`Programming Interface <programming_interface>` for a detailed description.
 
-.. include:: Indutrial_PTC_hlpi.table
+.. include:: Industrial_PTC_hlpi.table
