@@ -85,7 +85,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/dc-v2-bricklet/raw/master/hardware/dc-v2-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/dc_v2_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/dc-v2-bricklet/zipball/master>`__)
-* 3D model (`View online <https://autode.sk/TBD>`__ | Download: `STEP <https://download.tinkerforge.com/3d/TBD/TBD.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/TBD/TBD.FCStd>`__)
+* 3D model (`View online <https://a360.co/3gNZ8h1>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricklets/dc_v2/dc-v2.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricklets/dc_v2/dc-v2.FCStd>`__)
 
 
 Connectivity
