@@ -88,7 +88,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/silent-stepper-v2-bricklet/raw/master/hardware/silent-stepper-v2-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/silent_stepper_v2_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/silent-stepper-v2-bricklet/zipball/master>`__)
-* 3D model (`View online <https://autode.sk/TBD>`__ | Download: `STEP <https://download.tinkerforge.com/3d/TBD/TBD.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/TBD/TBD.FCStd>`__)
+* 3D model (`View online <https://a360.co/3aJVmBq>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricklets/silent_stepper_v2/silent-stepper-v2.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricklets/silent_stepper_v2/silent-stepper-v2.FCStd>`__)
 
 
 .. _silent_stepper_v2_bricklet_connectivity:

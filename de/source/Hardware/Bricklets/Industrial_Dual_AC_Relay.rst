@@ -82,7 +82,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/industrial-dual-ac-relay-bricklet/raw/master/hardware/industrial-dual-ac-relay-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/industrial_dual_ac_relay_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/industrial-dual-ac-relay-bricklet/zipball/master>`__)
-* 3D Modell (`Online ansehen <https://autode.sk/2ry2IS8>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricklets/industrial_dual_ac_relay/industrial-dual-ac-relay.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricklets/industrial_dual_ac_relay/industrial-dual-ac-relay.FCStd>`__)
+* 3D Modell (`Online ansehen <https://a360.co/3nvkxgh>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricklets/industrial_dual_ac_relay/industrial-dual-ac-relay.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricklets/industrial_dual_ac_relay/industrial-dual-ac-relay.FCStd>`__)
 
 
 Anschlussmöglichkeit

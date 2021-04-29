@@ -87,7 +87,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/industrial-ptc-bricklet/raw/master/hardware/industrial-ptc-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/industrial_ptc_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/industrial-ptc-bricklet/zipball/master>`__)
-* 3D model (`View online <https://autode.sk/2knGTQP>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricklets/ptc/ptc.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricklets/ptc/ptc.FCStd>`__)
+* 3D model (`View online <https://a360.co/3e42mLH>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricklets/industrial_ptc/industrial-ptc.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricklets/industrial_ptc/industrial-ptc.FCStd>`__)
 
 .. _industrial_ptc_bricklet_jumper_configuration:
 
