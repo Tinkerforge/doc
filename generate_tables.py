@@ -1,9 +1,8 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-from __future__ import print_function
-
 DEBUG = False
+
 if __name__ == "__main__" and not DEBUG:
     print("Suppressing output of generate_tables.py")
 
@@ -14,7 +13,8 @@ def debug(*args, **kwargs):
 import os
 import sys
 import re
-import urllib2
+import urllib.request
+import urllib.error
 import math
 from collections import namedtuple
 
@@ -413,9 +413,9 @@ def collect_latest_version_info():
     debug('Discovering latest versions on tinkerforge.com')
 
     try:
-        response = urllib2.urlopen(LATEST_VERSIONS_URL)
-        latest_versions_data = response.read()
-    except urllib2.URLError:
+        response = urllib.request.urlopen(LATEST_VERSIONS_URL)
+        latest_versions_data = response.read().decode('utf-8')
+    except urllib.error.URLError:
         raise Exception('Latest version information on tinkerforge.com is not available (error code 1)')
 
     for line in latest_versions_data.split('\n'):
@@ -1550,7 +1550,7 @@ def make_device_identifier_table():
     row = '   "{0}", ":ref:`{1} <{2}>`"'
     rows = []
 
-    for device_info in sorted(brick_infos + bricklet_infos, key=lambda x: x.identifier):
+    for device_info in sorted(brick_infos + bricklet_infos, key=lambda x: x.identifier if x.identifier != None else -1):
         if device_info.is_documented and device_info.identifier != None:
             rows.append(row.format(device_info.identifier, device_info.long_display_name, device_info.ref_name))
 
@@ -1635,15 +1635,14 @@ def make_software_devices_toctree(bindings_info, device_infos, category, ref_pre
 
 def write_if_changed(path, content):
     if os.path.exists(path):
-        f = open(path, 'rb')
-        existing = f.read()
-        f.close()
+        with open(path, 'r') as f:
+            existing = f.read()
+
         if existing == content:
             return
 
-    f = open(path, 'wb')
-    f.write(content)
-    f.close()
+    with open(path, 'w') as f:
+        f.write(content)
 
 def generate(path):
     global lang
@@ -1838,7 +1837,7 @@ aufgelistet. Anleitungen für weiterführende Projekte finden sich im Abschnitt
                                                     discontinued_title_parenthesis=disc_title_par[lang],
                                                     equal_signs="="*(len(disp_name) + 3 + len(dev) + len(disc_title_par[lang])),
                                                     discontinued_title_underscore="_Discontinued")
-            write_if_changed(os.path.join(path, 'source', 'Software', "{dev}_{lang}_Discontinued.rst".format(dev=dev, lang=lang_path)), discontinued.encode('utf-8'))
+            write_if_changed(os.path.join(path, 'source', 'Software', "{dev}_{lang}_Discontinued.rst".format(dev=dev, lang=lang_path)), discontinued)
 
             debug('Generating {dev}_{lang}.rst'.format(dev=dev, lang=lang_path))
             normal = template[lang].format(lang=disp_name,
@@ -1848,7 +1847,7 @@ aufgelistet. Anleitungen für weiterführende Projekte finden sich im Abschnitt
                                             discontinued_title_parenthesis="",
                                             equal_signs="="*(len(disp_name) + 3 + len(dev)),
                                             discontinued_title_underscore="")
-            write_if_changed(os.path.join(path, 'source', 'Software', "{dev}_{lang}.rst".format(dev=dev, lang=lang_path)), normal.encode('utf-8'))
+            write_if_changed(os.path.join(path, 'source', 'Software', "{dev}_{lang}.rst".format(dev=dev, lang=lang_path)), normal)
 
     for bindings_info in bindings_infos:
         if bindings_info.is_programming_language:

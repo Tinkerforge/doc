@@ -1,9 +1,8 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-from __future__ import print_function
-
 DEBUG = False
+
 if __name__ == "__main__" and not DEBUG:
     print("Suppressing output of generate_hardware_hacking_substitutions.py")
 
@@ -1223,15 +1222,14 @@ def make_power_outlet_control_substitutions():
 
 def write_if_changed(path, content):
     if os.path.exists(path):
-        f = open(path, 'rb')
-        existing = f.read()
-        f.close()
+        with open(path, 'r') as f:
+            existing = f.read()
+
         if existing == content:
             return
 
-    f = open(path, 'wb')
-    f.write(content)
-    f.close()
+    with open(path, 'w') as f:
+        f.write(content)
 
 def generate(path):
     global lang
