@@ -95,9 +95,8 @@ Resources
 Jumper Configuration
 --------------------
 
-Configure the jumper for Pt100/Pt1000 sensor and 2/3/4-wire type as
-shown below. The pins of the pin headers that are marked red have to be closed
-by a jumper for the corresponding sensor type.
+Configure the DIP switch for Pt100/Pt1000 sensor and 2/3/4-wire type as
+shown below.
 
 .. image:: /Images/Bricklets/bricklet_industrial_ptc_pt_wire_600.jpg
    :scale: 100 %

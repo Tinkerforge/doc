@@ -98,15 +98,14 @@ Ressourcen
 Jumper-Konfiguration
 --------------------
 
-Konfiguriere die Jumper für Pt100/Pt1000 Sensor und für 2/3/4-Leiter Typ
-wie unten dargestellt. Die rot markierten Stifte der Stiftleisten müssen für
-den korrespondierenden Sensortyp mit einem Jumper überbrückt werden.
+Konfiguriere DIP-Schalter für Pt100/Pt1000 Sensor und für 2/3/4-Leiter Typ
+wie unten dargestellt.
 
-.. image:: /Images/Bricklets/bricklet_industrial_ptc_w_ptc1_600.jpg
+.. image:: /Images/Bricklets/bricklet_industrial_ptc_pt_wire_600.jpg
    :scale: 100 %
    :alt: Industrial PTC Bricklet Jumper-Konfiguration
    :align: center
-   :target: ../../_images/Bricklets/bricklet_industrial_ptc_w_ptc1_1000.jpg
+   :target: ../../_images/Bricklets/bricklet_industrial_ptc_pt_wire_1000.jpg
 
 .. _industrial_ptc_bricklet_connectivity:
 
@@ -134,11 +133,11 @@ Erster Test
 |test_connect| sowie ein Pt100/1000 Sensor angeschlossen werden (siehe folgendes Bild).
 In diesem Beispiel wird ein 2-Leiter Pt100 Sensor verwendet.
 
-.. image:: /Images/Bricklets/bricklet_industrial_ptc_sensor_600.jpg
+.. image:: /Images/Bricklets/bricklet_industrial_ptc_w_ptc1_600.jpg
    :scale: 100 %
    :alt: Industrial PTC Bricklet mit 2-Leiter Pt100 Sensor
    :align: center
-   :target: ../../_images/Bricklets/bricklet_industrial_ptc_sensor_1200.jpg
+   :target: ../../_images/Bricklets/bricklet_industrial_ptc_w_ptc1_1200.jpg
 
 |test_tab|
 Wenn alles wie erwartet funktioniert sollte der Tab wie im folgenden Bild
