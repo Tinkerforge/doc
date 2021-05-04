@@ -1,4 +1,3 @@
-
 :shoplink: ../../../shop/bricklets/industrial-dual-ac-relay-bricklet.html
 
 .. include:: Industrial_Dual_AC_Relay.substitutions
@@ -126,7 +125,8 @@ Gehäuse
 -------
 
 Ein `laser-geschnittenes Gehäuse für das Industrial Dual Relay Bricklet und Industria Dual AC Relay Bricklet
-<https://www.tinkerforge.com/de/shop/cases/case-industrial-dual-ac-relay-bricklet.html>`__ ist verfügbar.
+<https://www.tinkerforge.com/de/shop/cases/case-industrial-dual-ac-relay-bricklet.html>`__ ist verfügbar
+(Bilder zeigen Industrial Dual Relay Bricklet).
 
 .. image:: /Images/Cases/bricklet_industrial_dual_relay_case_350.jpg
    :scale: 100 %

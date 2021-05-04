@@ -1,4 +1,3 @@
-
 :shoplink: ../../../shop/bricklets/industrial-dual-ac-relay-bricklet.html
 
 .. include:: Industrial_Dual_AC_Relay.substitutions
@@ -125,7 +124,7 @@ Case
 
 A `laser-cut case for the Industrial Dual Relay Bricklet and Industrial Dual AC Relay Bricklet
 <https://www.tinkerforge.com/en/shop/cases/case-industrial-dual-relay-bricklet.html>`__ 
-is available.
+is available (images show Industrial Dual Relay Bricklet).
 
 .. image:: /Images/Cases/bricklet_industrial_dual_relay_case_350.jpg
    :scale: 100 %
