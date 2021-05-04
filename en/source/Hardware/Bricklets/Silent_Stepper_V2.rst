@@ -1,5 +1,4 @@
-
-:DISABLED_shoplink: ../../../shop/bricklets/silent-stepper-v2-bricklet.html
+:shoplink: ../../../shop/bricklets/silent-stepper-v2-bricklet.html
 
 .. include:: Silent_Stepper_V2.substitutions
    :start-after: >>>substitutions

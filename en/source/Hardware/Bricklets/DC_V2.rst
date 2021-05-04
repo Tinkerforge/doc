@@ -1,5 +1,4 @@
-
-:DISABLED_shoplink: ../../../shop/bricklets/dc-v2-bricklet.html
+:shoplink: ../../../shop/bricklets/dc-v2-bricklet.html
 
 .. include:: DC_V2.substitutions
    :start-after: >>>substitutions

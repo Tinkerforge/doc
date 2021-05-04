@@ -1,3 +1,4 @@
+:shoplink: ../../../shop/bricklets/industrial-ptc-bricklet.html
 
 .. include:: Industrial_PTC.substitutions
    :start-after: >>>substitutions
