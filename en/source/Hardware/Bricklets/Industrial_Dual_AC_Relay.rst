@@ -86,11 +86,11 @@ Connectivity
 
 The following picture shows the different connection possibilities of the Industrial Dual AC Relay Bricklet.
 
-.. image:: /Images/Bricklets/bricklet_industrial_dual_ac_relay_caption_350.jpg
+.. image:: /Images/Bricklets/bricklet_industrial_dual_ac_relay_caption_front_and_top_800.jpg
    :scale: 100 %
    :alt: Industrial Dual AC Relay Bricklet connectivity
    :align: center
-   :target: ../../_images/Bricklets/bricklet_industrial_dual_ac_relay_caption_800.jpg
+   :target: ../../_images/Bricklets/bricklet_industrial_dual_ac_relay_caption_front_and_top_1200.jpg
 
 
 .. _industrial_dual_ac_relay_bricklet_test:
