@@ -131,11 +131,11 @@ Test your Industrial PTC Bricklet
 |test_connect| and attach a Pt100/1000 sensor (see picture below).
 In this example we use a 2-wire Pt100 sensor.
 
-.. image:: /Images/Bricklets/bricklet_industrial_ptc_sensor_600.jpg
+.. image:: /Images/Bricklets/bricklet_industrial_ptc_w_ptc1_600.jpg
    :scale: 100 %
    :alt: Industrial PTC Bricklet connected to 2-wire Pt100 sensor
    :align: center
-   :target: ../../_images/Bricklets/bricklet_industrial_ptc_sensor_1200.jpg
+   :target: ../../_images/Bricklets/bricklet_industrial_ptc_w_ptc1_1200.jpg
 
 |test_tab|
 If everything went as expected the Brick Viewer should look as

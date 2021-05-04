@@ -102,11 +102,11 @@ Konfiguriere die Jumper für Pt100/Pt1000 Sensor und für 2/3/4-Leiter Typ
 wie unten dargestellt. Die rot markierten Stifte der Stiftleisten müssen für
 den korrespondierenden Sensortyp mit einem Jumper überbrückt werden.
 
-.. image:: /Images/Bricklets/bricklet_industrial_ptc_pt_wire_600.jpg
+.. image:: /Images/Bricklets/bricklet_industrial_ptc_w_ptc1_600.jpg
    :scale: 100 %
    :alt: Industrial PTC Bricklet Jumper-Konfiguration
    :align: center
-   :target: ../../_images/Bricklets/bricklet_industrial_ptc_pt_wire_1000.jpg
+   :target: ../../_images/Bricklets/bricklet_industrial_ptc_w_ptc1_1000.jpg
 
 .. _industrial_ptc_bricklet_connectivity:
 
