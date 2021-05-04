@@ -15,9 +15,11 @@ Silent Stepper Bricklet 2.0
 	{% tfgallery %}
 
 	Bricklets/bricklet_silent_stepper_v2_tilted_[?|?].jpg           Silent Stepper Bricklet 2.0
+	Bricklets/bricklet_silent_stepper_v2_w_connector_[?|?].jpg      Silent Stepper Bricklet 2.0
+	Bricklets/bricklet_silent_stepper_v2_tilted2_[?|?].jpg          Silent Stepper Bricklet 2.0
 	Bricklets/bricklet_silent_stepper_v2_horizontal_[?|?].jpg       Silent Stepper Bricklet 2.0
-	Bricklets/bricklet_silent_stepper_v2_master_[100|600].jpg       Silent Stepper Bricklet 2.0 with Master Brick
-	Cases/bricklet_silent_stepper_v2_case_[100|600].jpg             Silent Stepper Bricklet 2.0 with case
+	Bricklets/bricklet_silent_stepper_v2_caption_[?|?].jpg          Silent Stepper Bricklet 2.0
+	Bricklets/bricklet_silent_stepper_v2_w_motor_[?|?].jpg          Silent Stepper Bricklet 2.0
 	Bricklets/bricklet_silent_stepper_v2_brickv_[100|].jpg          Silent Stepper Bricklet 2.0 in Brick Viewer
 	Dimensions/silent_stepper_v2_bricklet_dimensions_[100|600].png  Outline and drilling plan
 
@@ -117,11 +119,11 @@ Connect a stepper motor to the Brick and a suitable power supply
 (see :ref:`here <stepper_brick_connectivity>`). Your setup should look
 like below.
 
-.. image:: /Images/Bricklets/bricklet_silent_stepper_v2_motor_setup_600.jpg
+.. image:: /Images/Bricklets/bricklet_silent_stepper_v2_w_motor_600.jpg
    :scale: 100 %
    :alt: Silent Stepper Bricklet 2.0 with motor
    :align: center
-   :target: ../../_images/Bricklets/bricklet_silent_stepper_v2_motor_setup_1200.jpg
+   :target: ../../_images/Bricklets/bricklet_silent_stepper_v2_w_motor_1200.jpg
 
 |test_tab|
 

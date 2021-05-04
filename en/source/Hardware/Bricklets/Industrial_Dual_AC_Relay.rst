@@ -15,11 +15,9 @@ Industrial Dual AC Relay Bricklet
 	{% tfgallery %}
 
 	Bricklets/bricklet_industrial_dual_ac_relay_tilted_[?|?].jpg           Industrial Dual AC Relay Bricklet
-	Bricklets/bricklet_industrial_dual_ac_relay_front_[?|?].jpg            Industrial Dual AC Relay Bricklet
-	Bricklets/bricklet_industrial_dual_ac_relay_top_[?|?].jpg              Industrial Dual AC Relay Bricklet
-	Bricklets/bricklet_industrial_dual_ac_relay_tilted2_[?|?].jpg          Industrial Dual AC Relay Bricklet
-	Bricklets/bricklet_industrial_dual_ac_relay_side_[?|?].jpg             Industrial Dual AC Relay Bricklet
-	Cases/bricklet_industrial_dual_ac_relay_case_[100|600].jpg             Industrial Dual AC Relay Bricklet with case
+	Bricklets/bricklet_industrial_dual_ac_relay_w_connector_[?|?].jpg      Industrial Dual AC Relay Bricklet
+	Bricklets/bricklet_industrial_dual_ac_relay_horizontal_[?|?].jpg       Industrial Dual AC Relay Bricklet
+	Bricklets/bricklet_industrial_dual_ac_relay_caption_[?|?].jpg          Industrial Dual AC Relay Bricklet
 	Bricklets/bricklet_industrial_dual_ac_relay_brickv_[100|].jpg          Industrial Dual AC Relay Bricklet in Brick Viewer
 	Dimensions/industrial_dual_ac_relay_bricklet_dimensions_[100|600].png  Outline and drilling plan
 
@@ -87,13 +85,13 @@ Resources
 Connectivity
 ------------
 
-TODO
+The following picture shows the different connection possibilities of the Industrial Dual AC Relay Bricklet.
 
-.. image:: /Images/Bricklets/bricklet_industrial_dual_ac_relay_connectivity_350.jpg
+.. image:: /Images/Bricklets/bricklet_industrial_dual_ac_relay_caption_350.jpg
    :scale: 100 %
    :alt: Industrial Dual AC Relay Bricklet connectivity
    :align: center
-   :target: ../../_images/Bricklets/bricklet_industrial_dual_ac_relay_connectivity_800.jpg
+   :target: ../../_images/Bricklets/bricklet_industrial_dual_ac_relay_caption_800.jpg
 
 
 .. _industrial_dual_ac_relay_bricklet_test:

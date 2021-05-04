@@ -12,14 +12,14 @@ Industrial PTC Bricklet
 
 	{% tfgallery %}
 
-	Bricklets/bricklet_industrial_ptc_tilted_[?|?].jpg      Industrial PTC Bricklet
-	Bricklets/bricklet_industrial_ptc_vertical_[?|?].jpg    Industrial PTC Bricklet
-	Bricklets/bricklet_industrial_ptc_horizontal_[?|?].jpg  Industrial PTC Bricklet
-	Bricklets/bricklet_industrial_ptc_sensor_[100|600].jpg  Industrial PTC Bricklet with 3-wire Pt100 RTD
-	Bricklets/bricklet_industrial_ptc_jumper_[100|600].jpg  Industrial PTC Bricklet
-	Cases/bricklet_industrial_ptc_case_[100|600].jpg        Industrial PTC Bricklet im Gehäuse
-	Bricklets/bricklet_industrial_ptc_brickv_[100|].jpg     Industrial PTC Bricklet im Brick Viewer
-	Dimensions/industrial_ptc_dimensions_[100|600].png      Umriss und Bohrplan
+	Bricklets/bricklet_industrial_ptc_tilted_[?|?].jpg           Industrial PTC Bricklet
+	Bricklets/bricklet_industrial_ptc_w_connector_[?|?].jpg      Industrial PTC Bricklet
+	Bricklets/bricklet_industrial_ptc_tilted2_[?|?].jpg          Industrial PTC Bricklet
+	Bricklets/bricklet_industrial_ptc_horizontal_[?|?].jpg       Industrial PTC Bricklet
+	Bricklets/bricklet_industrial_ptc_w_ptc1_[?|?].jpg           Industrial PTC Bricklet
+	Bricklets/bricklet_industrial_ptc_w_ptc2_[?|?].jpg           Industrial PTC Bricklet
+	Bricklets/bricklet_industrial_ptc_brickv_[100|].jpg          Industrial PTC Bricklet im Brick Viewer
+	Dimensions/industrial_ptc_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
 
 	{% tfgalleryend %}
 
@@ -115,11 +115,11 @@ Anschlussmöglichkeiten
 Die folgenden Verbindungsdiagramme zeigen wie
 Widerstandsthermometer vom Typ 2/3/4-Leiter angeschlossen werden können:
 
-.. image:: /Images/Bricklets/bricklet_industrial_ptc_connectivity_600.jpg
+.. image:: /Images/Bricklets/bricklet_industrial_ptc_caption_600.jpg
    :scale: 100 %
    :alt: Industrial PTC Bricklet Verbindungsdiagramme
    :align: center
-   :target: ../../_images/Bricklets/bricklet_industrial_ptc_connectivity_1000.jpg
+   :target: ../../_images/Bricklets/bricklet_industrial_ptc_caption_1000.jpg
 
 Zusätzlich muss die Leiteranzahl mit Hilfe der API gesetzt werden.
 

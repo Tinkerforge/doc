@@ -117,7 +117,6 @@ Das folgende Bild zeigt die verschiedenen Anschlussmöglichkeiten des Silent Ste
 Erster Test
 -----------
 
-
 |test_intro|
 
 Verbinde einen Schrittmotor mit dem Brick und eine passende Stromversorgung an
