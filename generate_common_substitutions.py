@@ -59,7 +59,7 @@ brick_test_intro = {
 """,
 'de':
 """.. |test_intro| replace::
- Um einen {0} testen zu können müssen zuerst :ref:`Brick Daemon
+ Um einen {0} testen zu können, müssen zuerst :ref:`Brick Daemon
  <brickd>` und :ref:`Brick Viewer <brickv>` installiert werden. Brick Daemon
  arbeitet als Proxy zwischen der USB Schnittstelle der Bricks und den API
  Bindings. Brick Viewer kann sich mit Brick Daemon verbinden, gibt
@@ -153,7 +153,7 @@ bricklet_test_intro = {
 """,
 'de':
 """.. |test_intro| replace::
- Um ein {0} testen zu können müssen zuerst :ref:`Brick Daemon
+ Um ein {0} testen zu können, müssen zuerst :ref:`Brick Daemon
  <brickd>` und :ref:`Brick Viewer <brickv>` installiert werden. Brick Daemon
  arbeitet als Proxy zwischen der USB Schnittstelle der Bricks und den API
  Bindings. Brick Viewer kann sich mit Brick Daemon verbinden, gibt

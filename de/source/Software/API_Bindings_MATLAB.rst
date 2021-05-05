@@ -156,7 +156,7 @@ Nach Änderungen an dieser Datei muss Octave neugestartet werden.
 Test eines Beispiels
 --------------------
 
-Um ein MATLAB/Octave Beispiel testen zu können müssen zuerst :ref:`Brick Daemon
+Um ein MATLAB/Octave Beispiel testen zu können, müssen zuerst :ref:`Brick Daemon
 <brickd>` und :ref:`Brick Viewer <brickv>` installiert werden. Brick Daemon
 arbeitet als Proxy zwischen der USB Schnittstelle der Bricks und den API
 Bindings. Brick Viewer kann sich mit Brick Daemon verbinden und gibt

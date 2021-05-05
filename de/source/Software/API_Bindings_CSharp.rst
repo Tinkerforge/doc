@@ -57,7 +57,7 @@ Beispiele. Diese sind als Teil der :ref:`ZIP Datei
 Test eines Beispiels
 --------------------
 
-Um ein C# Beispiel testen zu können müssen zuerst :ref:`Brick Daemon
+Um ein C# Beispiel testen zu können, müssen zuerst :ref:`Brick Daemon
 <brickd>` und :ref:`Brick Viewer <brickv>` installiert werden. Brick Daemon
 arbeitet als Proxy zwischen der USB Schnittstelle der Bricks und den API
 Bindings. Brick Viewer kann sich mit Brick Daemon verbinden und gibt
