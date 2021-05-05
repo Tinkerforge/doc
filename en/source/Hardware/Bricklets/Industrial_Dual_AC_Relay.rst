@@ -74,8 +74,8 @@ Weight                              11g
 Resources
 ---------
 
-* AQH3213A Solid State Relay (`Download <https://github.com/Tinkerforge/industrial-dual-ac-relay-bricklet/raw/master/hardware/industrial-dual-ac-relay-schematic.pdf>`__)
-* Schematic (`Download <https://github.com/Tinkerforge/industrial-dual-ac-relay-bricklet/raw/master/datasheets/AH-Q.pdf>`__)
+* AQH3213A Solid State Relay (`Download <https://github.com/Tinkerforge/industrial-dual-ac-relay-bricklet/raw/master/datasheets/AH-Q.pdf>`__)
+* Schematic (`Download <https://github.com/Tinkerforge/industrial-dual-ac-relay-bricklet/raw/master/hardware/industrial-dual-ac-relay-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/industrial_dual_ac_relay_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/industrial-dual-ac-relay-bricklet/zipball/master>`__)
 * 3D model (`View online <https://a360.co/3nvkxgh>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricklets/industrial_dual_ac_relay/industrial-dual-ac-relay.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricklets/industrial_dual_ac_relay/industrial-dual-ac-relay.FCStd>`__)

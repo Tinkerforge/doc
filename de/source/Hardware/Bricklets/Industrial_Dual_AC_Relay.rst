@@ -75,7 +75,7 @@ Gewicht                             11g
 Ressourcen
 ----------
 
-* AQH3213A Solid State Relay (`Download <https://github.com/Tinkerforge/industrial-dual-ac-relay-bricklet/raw/master/hardware/industrial-dual-ac-relay-schematic.pdf>`__)
+* AQH3213A Solid State Relay (`Download <https://github.com/Tinkerforge/industrial-dual-ac-relay-bricklet/raw/master/datasheets/AH-Q.pdf>`__)
 * Schaltplan (`Download <https://github.com/Tinkerforge/industrial-dual-ac-relay-bricklet/raw/master/hardware/industrial-dual-ac-relay-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/industrial_dual_ac_relay_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/industrial-dual-ac-relay-bricklet/zipball/master>`__)
@@ -124,7 +124,7 @@ ist durch die LEDs neben dem Bricklet ersichtbar.
 Gehäuse
 -------
 
-Ein `laser-geschnittenes Gehäuse für das Industrial Dual Relay Bricklet und Industria Dual AC Relay Bricklet
+Ein `laser-geschnittenes Gehäuse für das Industrial Dual Relay Bricklet und Industrial Dual AC Relay Bricklet
 <https://www.tinkerforge.com/de/shop/cases/case-industrial-dual-relay-bricklet.html>`__ ist verfügbar
 (Bilder zeigen Industrial Dual Relay Bricklet).
 

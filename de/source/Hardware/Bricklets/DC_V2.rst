@@ -42,7 +42,7 @@ Beschreibung
 Mit dem DC :ref:`Bricklet <primer_bricks>` 2.0 kann ein
 `Gleichstrommotor <https://de.wikipedia.org/wiki/Gleichstrommaschine>`__
 (max. **28V** und **5A** (Peak)) gesteuert werden. Eine API für
-:ref:`viele Programmiersprachen <dc_brick_programming_interface>` ermöglicht 
+:ref:`viele Programmiersprachen <dc_v2_bricklet_programming_interface>` ermöglicht
 das Steuern der Richtung, Geschwindigkeit und Beschleunigung des Motors.
 
 Neben Methoden zum Steuern des angeschlossenen Motors bietet die API 
@@ -52,7 +52,7 @@ so dass auf diese im eigenen Programm reagiert werden kann.
 
 Zusätzlich kann der Fahrmodus zwischen Fahren/Bremsen und
 Fahren/Leerlauf umgeschaltet werden (siehe :ref:`Fahrmodus
-<dc_brick_drive_mode>`).
+<dc_v2_bricklet_drive_mode>`).
 
 Das Performance DC Bricklet hat einen 7 Pol Bricklet Stecker und wird
 mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.

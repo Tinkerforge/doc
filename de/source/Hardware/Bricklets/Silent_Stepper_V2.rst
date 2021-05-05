@@ -44,7 +44,7 @@ Das Silent Stepper :ref:`Bricklet <primer_bricklets>` 2.0 kann einen bipolaren
 `Schrittmotor <https://de.wikipedia.org/wiki/Schrittmotor>`__ mit einem 
 maximalen Phasenstrom von **1,6A** und einer maximalen Spannung von **46V**
 steuern. Die API des Bricks ist für verschiedene  
-:ref:`Programmiersprachen <silent_stepper_brick_programming_interface>` verfügbar und kann
+:ref:`Programmiersprachen <silent_stepper_v2_bricklet_programming_interface>` verfügbar und kann
 Richtung, Geschwindigkeit und Beschleunigung des angeschlossenen Schrittmotors steuern.
 Die Schrittweite kann zwischen Vollschritt und 1/256-Schrittmodus gewählt werden.
 
@@ -112,7 +112,7 @@ Erster Test
 |test_intro|
 
 Verbinde einen Schrittmotor mit dem Bricklet und eine passende Stromversorgung an
-das Bricklet an (siehe :ref:`hier <silent_stepper_brick_connectivity>`).
+das Bricklet an (siehe :ref:`hier <silent_stepper_v2_bricklet_connectivity>`).
 Der Aufbau sollte dem im folgenden Bild ähnlich sehen.
 
 .. image:: /Images/Bricklets/bricklet_silent_stepper_v2_w_motor_600.jpg
@@ -268,7 +268,7 @@ erster Tab im Brick Viewer) anzupassen.
 
 Wenn alle Eigenschaften des Treibers im Detail verstanden werden sollen, empfehlen
 wir einen Blick in das
-`TMC2130 Datenblatt <https://github.com/Tinkerforge/silent-stepper-brick/raw/master/datasheets/TMC2130_datasheet.pdf>`__.
+`TMC2130 Datenblatt <https://raw.githubusercontent.com/Tinkerforge/silent-stepper-v2-bricklet/master/datasheets/TMC2130_datasheet.pdf>`__.
 
 Um unsere API besser mit den Registern des TMC2130 vergleichen zu können haben wir folgende Tabelle erstellt:
 
