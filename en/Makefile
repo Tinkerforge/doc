@@ -37,13 +37,13 @@ clean:
 	-rm -rf $(BUILDDIR)/*
 
 generate:
-	python ../generate_tables.py
-	python ../generate_common_substitutions.py
-	python ../generate_weather_station_substitutions.py
-	python ../generate_tabletop_weather_station_substitutions.py
-	python ../generate_hardware_hacking_substitutions.py
-	python ../generate_server_room_monitoring_substitutions.py
-	python ../generate_server_room_monitoring_v2_substitutions.py
+	python3 ../generate_tables.py
+	python3 ../generate_common_substitutions.py
+	python3 ../generate_weather_station_substitutions.py
+	python3 ../generate_tabletop_weather_station_substitutions.py
+	python3 ../generate_hardware_hacking_substitutions.py
+	python3 ../generate_server_room_monitoring_substitutions.py
+	python3 ../generate_server_room_monitoring_v2_substitutions.py
 
 html: generate
 	mkdir -p $(BUILDDIR)/html/_images/
