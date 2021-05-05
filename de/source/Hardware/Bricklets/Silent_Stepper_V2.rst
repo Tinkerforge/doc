@@ -50,10 +50,10 @@ Die Schrittweite kann zwischen Vollschritt und 1/256-Schrittmodus gewählt werde
 
 Das Silent Stepper Bricklet 2.0 kann in verschiedenen Modi betrieben werden. Im Stealth Modus 
 ist der Motor vollständig lautlos, im Coolstep Modus wird Energie gespart und im Classic Modus
-bietet der Motor maximalen Drehmoment. Das Silent Stepper Bricklet 2.0 kann konfiguriert werden,
+bietet der Motor maximales Drehmoment. Das Silent Stepper Bricklet 2.0 kann konfiguriert werden,
 abhängig von der Motorgeschwindigkeit, automatisch zwischen diesen Modi zu wechseln.
 
-Das Bricklet hat zwei digitale Eingänge die für Endschalter genutzt werden können.
+Das Bricklet hat zwei digitale Eingänge, die für Endschalter genutzt werden können.
 
 Das Silent Stepper Bricklet 2.0 hat einen 7 Pol Bricklet Stecker und wird
 mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
@@ -83,7 +83,7 @@ Gewicht                           12g
 Ressourcen
 ----------
 
-* TMC2130 datasheet (`Download <https://github.com/Tinkerforge/silent-stepper-v2-bricklet/raw/master/datasheets/TMC2130_datasheet.pdf>`__)
+* TMC2130 Datenblatt (`Download <https://github.com/Tinkerforge/silent-stepper-v2-bricklet/raw/master/datasheets/TMC2130_datasheet.pdf>`__)
 * Schaltplan (`Download <https://github.com/Tinkerforge/silent-stepper-v2-bricklet/raw/master/hardware/silent-stepper-v2-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/silent_stepper_v2_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/silent-stepper-v2-bricklet/zipball/master>`__)
@@ -112,7 +112,7 @@ Erster Test
 |test_intro|
 
 Verbinde einen Schrittmotor mit dem Bricklet und eine passende Stromversorgung an
-das Bricklet an (siehe :ref:`here <silent_stepper_brick_connectivity>`).
+das Bricklet an (siehe :ref:`hier <silent_stepper_brick_connectivity>`).
 Der Aufbau sollte dem im folgenden Bild ähnlich sehen.
 
 .. image:: /Images/Bricklets/bricklet_silent_stepper_v2_w_motor_600.jpg
@@ -189,8 +189,8 @@ Nur diese Einstellungen müssen meist angepasst werden:
 
 * **Standstill Current**: Mit diesem Wert kann der Phasenstrom im Stillstand 
   reduziert werden. Dies ist zum Beispiel sinnvoll um das Aufheizen des Motors 
-  zu verringern. Wenn der Motor steht wird dieser mit dem eingestellte 
-  Phasenstrom betrieben bis die eingestellte Power Down Time um ist. Danach 
+  zu verringern. Wenn der Motor steht, wird dieser mit dem eingestellten
+  Phasenstrom betrieben, bis die eingestellte Power Down Time um ist. Danach
   wird der Phasenstrom schrittweise bis zum Standstill Current reduziert. Die 
   dafür benötigte Zeit wird mittels Power Down Time eingestellt. Die Einheit ist
   mA und der eingestellte Phasenstrom ist das Maximum für diesen Wert.
@@ -217,11 +217,11 @@ Nur diese Einstellungen müssen meist angepasst werden:
 * **Coolstep Threshold**: Setzt den unteren Grenzwert für den Coolstep Modus Schritte/s. Der Wertebereich
   ist 0-65536 Schritte/s. Der Coolstep Grenzwert muss über dem Stealth Grenzwert liegen.
 
-* **Classic Threshold**: Sets den unteren Grenzwert für den Classic Modus. Der Wertebereich ist
+* **Classic Threshold**: Setzt den unteren Grenzwert für den Classic Modus. Der Wertebereich ist
   0-65536 Schritte/s. Im Classic Modus wird der Schrittmotor geräuschvoll aber das Drehmoment wird 
   maximiert.
 
-* **High Velocity Shopper Mode**: Wenn der High Velocity Shopper Mode aktiviert wird, optimiert der 
+* **High Velocity Chopper Mode**: Wenn der High Velocity Chopper Mode aktiviert wird, optimiert der
   Schrittmotortreiber die Ansteuerung des Motors für hohe Geschwindigkeiten.
 
 
@@ -266,7 +266,7 @@ daher auch viele Modi, Features und Einstellungsmöglichkeiten. In den meisten
 Anwendungen sollte es ausreichen nur die Grundeinstellungen (Basic Configuration,
 erster Tab im Brick Viewer) anzupassen. 
 
-Wenn alle Eigenschaften des Treibers im Detail verstanden werden sollen empfehlen 
+Wenn alle Eigenschaften des Treibers im Detail verstanden werden sollen, empfehlen
 wir einen Blick in das
 `TMC2130 Datenblatt <https://github.com/Tinkerforge/silent-stepper-brick/raw/master/datasheets/TMC2130_datasheet.pdf>`__.
 

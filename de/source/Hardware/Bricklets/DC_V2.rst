@@ -123,11 +123,11 @@ Schließe einen DC Motor und eine passende Stromversorgung an das Bricklet an.
    :align: center
    :target: ../../_images/Bricklets/bricklet_dc_v2_brickv.jpg
 
-Als erstes muss das Häkchen für "Enable" gesetzt werden um die Treiberstufe
+Als erstes muss das Häkchen für "Enable" gesetzt werden, um die Treiberstufe
 zu aktivieren. Es stehen 4 Regler zur Kontrolle der Geschwindigkeit
 (vorwärts und rückwärts), der Beschleunigung und der
 `PWM <https://de.wikipedia.org/wiki/Pulsweitenmodulation>`__ Frequenz zur
-Verfügung. Letztere wird von der Treiberstufe benutzt um den angeschlossenen
+Verfügung. Letztere wird von der Treiberstufe benutzt, um den angeschlossenen
 Motor anzusteuern.
 
 Auf der rechten Seite befinden sich Anzeigen für die Spannungen der zwei

@@ -60,7 +60,7 @@ schaltet der Brick zu dieser um.
 
 Der Silent Stepper Brick kann in verschiedenen Modi betrieben werden. Im Stealth Modus 
 ist der Motor vollständig lautlos, im Coolstep Modus wird Energie gespart und im Classic Modus
-bietet der Motor maximalen Drehmoment. Der Silent Stepper Brick kann konfiguriert werden,
+bietet der Motor maximales Drehmoment. Der Silent Stepper Brick kann konfiguriert werden,
 abhängig von der Motorgeschwindigkeit, automatisch zwischen diesen Modi zu wechseln.
 
 Ein Vergleichsvideo zwischen Stepper Brick und Silent Stepper Brick ist auf Youtube verfügbar:
@@ -196,8 +196,8 @@ Nur diese Einstellungen müssen meist angepasst werden:
 
 * **Standstill Current**: Mit diesem Wert kann der Phasenstrom im Stillstand 
   reduziert werden. Dies ist zum Beispiel sinnvoll um das Aufheizen des Motors 
-  zu verringern. Wenn der Motor steht wird dieser mit dem eingestellte 
-  Phasenstrom betrieben bis die eingestellte Power Down Time um ist. Danach 
+  zu verringern. Wenn der Motor steht, wird dieser mit dem eingestellten
+  Phasenstrom betrieben, bis die eingestellte Power Down Time um ist. Danach
   wird der Phasenstrom schrittweise bis zum Standstill Current reduziert. Die 
   dafür benötigte Zeit wird mittels Power Down Time eingestellt. Die Einheit ist
   mA und der eingestellte Phasenstrom ist das Maximum für diesen Wert.
@@ -224,11 +224,11 @@ Nur diese Einstellungen müssen meist angepasst werden:
 * **Coolstep Threshold**: Setzt den unteren Grenzwert für den Coolstep Modus Schritte/s. Der Wertebereich
   ist 0-65536 Schritte/s. Der Coolstep Grenzwert muss über dem Stealth Grenzwert liegen.
 
-* **Classic Threshold**: Sets den unteren Grenzwert für den Classic Modus. Der Wertebereich ist
+* **Classic Threshold**: Setzt den unteren Grenzwert für den Classic Modus. Der Wertebereich ist
   0-65536 Schritte/s. Im Classic Modus wird der Schrittmotor geräuschvoll aber das Drehmoment wird 
   maximiert.
 
-* **High Velocity Shopper Mode**: Wenn der High Velocity Shopper Mode aktiviert wird, optimiert der 
+* **High Velocity Chopper Mode**: Wenn der High Velocity Chopper Mode aktiviert wird, optimiert der
   Schrittmotortreiber die Ansteuerung des Motors für hohe Geschwindigkeiten.
 
 
@@ -273,7 +273,7 @@ daher auch viele Modi, Features und Einstellungsmöglichkeiten. In den meisten
 Anwendungen sollte es ausreichen nur die Grundeinstellungen (Basic Configuration,
 erster Tab im Brick Viewer) anzupassen. 
 
-Wenn alle Eigenschaften des Treibers im Detail verstanden werden sollen empfehlen 
+Wenn alle Eigenschaften des Treibers im Detail verstanden werden sollen, empfehlen
 wir einen Blick in das
 `TMC2130 Datenblatt <https://github.com/Tinkerforge/silent-stepper-brick/raw/master/datasheets/TMC2130_datasheet.pdf>`__.
 
