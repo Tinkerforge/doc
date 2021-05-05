@@ -96,7 +96,7 @@ The following picture shows the different connection possibilities of the Indust
 .. _industrial_dual_ac_relay_bricklet_test:
 
 Test your Industrial Dual AC Relay Bricklet
-----------------------------------------
+-------------------------------------------
 
 |test_intro|
 

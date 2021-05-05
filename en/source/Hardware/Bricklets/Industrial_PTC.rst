@@ -7,7 +7,7 @@
 .. _industrial_ptc_bricklet:
 
 Industrial PTC Bricklet
-======================
+=======================
 
 .. raw:: html
 
@@ -123,7 +123,7 @@ Additionally the number of wires has to be set with the API.
 .. _industrial_ptc_bricklet_test:
 
 Test your Industrial PTC Bricklet
-----------------------
+---------------------------------
 
 |test_intro|
 
