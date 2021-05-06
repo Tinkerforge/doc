@@ -63,7 +63,7 @@ isolation, for example:
 * :ref:`Voltage/Current 2.0 <voltage_current_v2_bricklet>`
 
 The Isolator Bricklet has two 7 pole Bricklet connectors. It is connected to a
-Brick with a ``7p-10p`` Bricklet cable on one side and to a Bricklet with a
+Brick with a ``7p-10p`` or a ``7p-7p`` Bricklet cable on one side and to a Bricklet with a
 ``7p-7p`` Bricklet cable on the other side.
 
 
