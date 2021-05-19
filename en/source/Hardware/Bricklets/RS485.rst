@@ -111,7 +111,7 @@ other devices.
 Duplex and Termination configuration
 ------------------------------------
 
-The DIP switch on the Bricklet can be used to configure duplex and termination
+The DIP switches on the Bricklet can be used to configure duplex and termination
 configuration.
 
 You can configure between Full-Duplex and Half-Duplex and you can enable or disable
@@ -125,6 +125,17 @@ a 120 Ohm termination resistor.
 
 A legend of the different configuration possibilities can also be found in the bottom
 of the Bricklet.
+
+* DIP switch 1 connects a 120 Ohm termination resistor between TX+ and TX-
+* DIP switch 2 connects TX+ to RX+ for Half-Duplex operation
+* DIP switch 3 connects TX- to RX- for Half-Duplex operation
+* DIP switch 4 connects a 120 Ohm termination resistor between RX+ and RX-
+
+The total termination resistance in a single bus has to be 120 Ohm. Because of
+this only DIP switch 1 is on and DIP switch 4 stays off in Half-Duplex terminated
+mode. Otherwise both 120 Ohm termination resistors would be connected in parallel
+due to the TX+/RX+ and TX-/RX- connections resulting in 60 Ohm total termination
+resistance.
 
 Modbus RTU Functions
 --------------------
@@ -176,7 +187,10 @@ Test your RS485 Bricklet
 
 |test_connect|.
 Connect the RX+ to the TX+ pin and the RX- to the TX- pin with two cables to make the Bricklet read back its
-own output. Configure the DIP switches to full duplex mode, depending on the used cables, with or without termination.
+own output. Configure the DIP switches to full duplex mode, with half termination (1: on, 2: off, 3: off, 4: off).
+This is a diversion from the normal Full-Duplex terminated setting, because the Bricklet talks back to itself
+for this test. Otherwise the total termination resistance would be 60 Ohm instead of 120 Ohm if both 120 Ohm
+termination resistors would be connected in parallel.
 
 |test_tab|
 Set the mode to RS485 and the duplex option to full duplex and then click Save Configuration.

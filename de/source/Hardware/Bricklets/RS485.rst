@@ -118,7 +118,7 @@ Kette von Modbus Geräten zu verbinden.
 Duplex und Terminierung
 -----------------------
 
-Mit dem DIP-Schalter auf dem Bricklet können Duplex und Terminierung konfiguriert
+Mit den DIP-Schaltern auf dem Bricklet können Duplex und Terminierung konfiguriert
 werden.
 
 Es kann zwischen Voll- und Halb-Duplex gewählt werden und eine 120 Ohm
@@ -132,6 +132,17 @@ Terminierung kann ein- und aus-geschaltet werden.
 
 Eine Legende mit den unterschiedlichen Konfigurationsmöglichkeiten befindet sich auch
 auf der Unterseite des Bricklets.
+
+* DIP-Schalter 1 verbindet einen 120 Ohm Terminierungswiderstand zwischen TX+ und TX-
+* DIP-Schalter 2 verbindet TX+ mit RX+ für Half-Duplex-Betrieb
+* DIP-Schalter 3 verbindet TX- mit RX- für Half-Duplex-Betrieb
+* DIP-Schalter 4 verbindet einen 120 Ohm Terminierungswiderstand zwischen RX+ und RX-
+
+Der gesamte Terminierungswiderstand eines einzelnen Busses muss 120 Ohm betragen.
+Daher wird im Halb-Duplex Modus mit Terminierung nur DIP-Schalter 1 angeschaltet
+und DIP-Schalter 4 bliebt aus, da ansonsten führt die TX+/RX+ und TX-/RX- Verbindung
+dazu das beide 120 Ohm Terminierungswiderstände parallel geschaltet wären und so der
+gesamte Terminierungswiderstand bei 60 Ohm liegen würde.
 
 Modbus-RTU-Funktionen
 ---------------------
@@ -182,8 +193,12 @@ Erster Test
 
 |test_connect|.
 Verbinde dann den RX+ mit dem TX+ Pin und den RX- mit dem TX- Pin mit jeweils
-einem kleinen Kabel, damit das Bricklet seine eigene Ausgabe zurück liest. Konfiguriere
-die DIP-Schalter auf Voll-Duplex, abhängig von den Kabeln mit oder ohne Terminierung.
+einem kurzen Kabel, damit das Bricklet seine eigene Ausgabe zurück liest. Konfiguriere
+die DIP-Schalter auf Voll-Duplex, mit halber Terminierung (1: an, 2: aus, 3: aus, 4: aus).
+Dies ist eine Abweichung vom normalen Voll-Duplex Modus mit Terminierung, da das Bricklet
+mit sich selbst kommuniziert für diesen Test. Bei voller Terminierung wäre der gesamte
+Terminierungswiderstand 60 Ohm statt 120 Ohm, bedingt durch die Parallelschaltung
+beider verbundener Terminierungswiderstände.
 
 |test_tab| Konfiguriere hier den Modus RS485 und die Duplexoption Full-Duplex und drücke
 den Save Configuration-Button Wenn alles wie erwartet funktioniert, kann jetzt
