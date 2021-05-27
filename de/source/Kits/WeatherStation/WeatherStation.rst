@@ -1,6 +1,4 @@
 
-:shoplink: ../../../shop/kits/starter-kit-weather-station.html
-
 .. include:: WeatherStation.substitutions
 
 .. _starter_kit_weather_station:
@@ -23,6 +21,12 @@ Starterkit: Wetterstation
 	Kits/weather_station_buttons_assembled_[100|800].jpg   Wetterstation: Mit großen Drucktastern auf der linken Seite
 
 	{% tfgalleryend %}
+
+.. note::
+
+ Das Starterkit: Wetterstation ist abgekündigt und wird nicht mehr verkauft.
+ Als Ersatz wird die :ref:`Tisch-Wetterstation <tabletop_weather_station>`
+ empfohlen.
 
 Features
 --------
@@ -342,9 +346,7 @@ Größere Drucktaster
 
 Die Drucktaster des LCD 20x4 Bricklet sind ein wenig fummelig. Als
 Erweiterung für die Wetterstation bieten wir große Drucktaster
-mit der `Wetterstation Drucktaster-Erweiterung
-<https://www.tinkerforge.com/de/shop/kits/weather-station-push-button-add-on.html>`__ an.
-
+mit der Wetterstation Drucktaster-Erweiterung an.
 
 .. image:: /Images/Kits/weather_station_buttons_assembled_600.jpg
    :scale: 100 %

@@ -1,6 +1,4 @@
 
-:shoplink: ../../../shop/kits/starter-kit-blinkenlights.html
-
 .. _starter_kit_blinkenlights:
 
 Starter Kit: Blinkenlights
@@ -20,6 +18,10 @@ Starter Kit: Blinkenlights
 	Kits/kit_blinkenlights_rainbow_near_far_dark_[100|600].jpg  Blinkenlights: Rainbow with different Front Panel Distances
 
 	{% tfgalleryend %}
+
+.. note::
+
+ The Starter Kit: Blinkenlights is discontinued and is no longer sold.
 
 Features
 --------

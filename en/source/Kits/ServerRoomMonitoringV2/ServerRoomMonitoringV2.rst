@@ -17,7 +17,7 @@ Starter Kit: Server Room Monitoring 2.0
 	Kits/server_room_monitoring_v2_complete_back_left_[100|800].jpg           Server Room Monitoring Kit 2.0
 	Kits/server_room_monitoring_v2_complete_front_left_[100|800].jpg          Server Room Monitoring Kit 2.0
 	Kits/server_room_monitoring_v2_complete_front_left_rasppi_[100|800].jpg   Server Room Monitoring Kit 2.0
-	Kits/server_room_monitoring_v2_complete_front_left_zoom_[100|800].jpg      Server Room Monitoring Kit 2.0
+	Kits/server_room_monitoring_v2_complete_front_left_zoom_[100|800].jpg     Server Room Monitoring Kit 2.0
 	Kits/server_room_monitoring_v2_exploded_[100|800].jpg                     Server Room Monitoring Kit 2.0
 	Kits/server_room_monitoring_v2_rasp_back_[100|800].jpg                    Server Room Monitoring Kit 2.0
 	Kits/server_room_monitoring_v2_rasp_front_ethernet_[100|800].jpg          Server Room Monitoring Kit 2.0
@@ -160,7 +160,7 @@ Weight                            250g
 Resources
 ---------
 
-* Server Room Monitoring Kit 2.0 Case FreeCAD CAD files (`Download <https://github.com/Tinkerforge/server-room-monitoring-v2/tree/master/case>`__)
+* Server Room Monitoring Kit 2.0 Case FreeCAD CAD files (`Download <https://github.com/Tinkerforge/server-room-monitoring/tree/master/case>`__)
 * Example Source Code for :ref:`Simple Monitoring <starter_kit_server_room_monitoring_v2_simple_monitoring>` (Download: `Shell <https://raw.githubusercontent.com/Tinkerforge/server-room-monitoring/master/simple_monitoring/check_tf_temp_simple.sh>`__)
 * Example Source Code for :ref:`Nagios/Icinga Plugin <starter_kit_server_room_monitoring_v2_nagios_or_icinga_index>` (Download: `Python <https://raw.githubusercontent.com/Tinkerforge/server-room-monitoring/master/nagios_icinga/check_tf_temp.py>`__)
 * Example Source Code for :ref:`Nagios/Icinga Extended Plugin <starter_kit_server_room_monitoring_v2_extended_nagios_index>` (Download: `Python <https://raw.githubusercontent.com/Tinkerforge/server-room-monitoring/master/nagios_icinga/check_tf_temp_ext.py>`__)

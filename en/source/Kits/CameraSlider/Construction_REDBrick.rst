@@ -13,7 +13,7 @@ add-on for the camera slider contains the following parts:
 * 1x `M3 Self Locking Nuts, 100pcs <https://www.tinkerforge.com/en/shop/makerbeam/nuts-bolts/100-m3-self-locking-nuts.html>`__
 * 1x `MakerBeam Corner Brackets, 12pcs <https://www.tinkerforge.com/en/shop/makerbeam/brackets/makerbeam-corner-brackets-12pcs.html>`__
 * 1x `MakerBeam 45° Brackets, 12pcs <https://www.tinkerforge.com/en/shop/makerbeam/brackets/makerbeam-45-brackets-12pcs.html>`__
-* 1x `RED Brick <https://www.tinkerforge.com/en/shop/bricks/red-brick.html>`__
+* 1x :ref:`RED Brick <red_brick>`
   (including `SD-Card 8GB (RED Brick Image) <https://www.tinkerforge.com/en/shop/accessories/red-brick/sd-card-8gb-full-image.html>`__,
   `Mini USB Cable 180cm <https://www.tinkerforge.com/en/shop/accessories/cable/mini-usb-cable-180cm.html>`__,
   `Micro-HDMI Cable 90cm <https://www.tinkerforge.com/en/shop/accessories/cable/micro-hdmi-cable-90cm.html>`__ and

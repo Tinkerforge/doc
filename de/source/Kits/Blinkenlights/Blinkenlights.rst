@@ -1,10 +1,8 @@
 
-:shoplink: ../../../shop/kits/starter-kit-blinkenlights.html
-
 .. _starter_kit_blinkenlights:
 
 Starterkit: Blinkenlights
-==========================
+=========================
 
 .. raw:: html
 
@@ -20,6 +18,10 @@ Starterkit: Blinkenlights
 	Kits/kit_blinkenlights_rainbow_near_far_dark_[100|600].jpg  Blinkenlights: Regenbogen mit verschiedenen Frontplatten
 
 	{% tfgalleryend %}
+
+.. note::
+
+ Das Starterkit: Blinkenlights ist abgekündigt und wird nicht mehr verkauft.
 
 Features
 --------

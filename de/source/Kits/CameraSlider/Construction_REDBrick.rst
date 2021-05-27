@@ -13,7 +13,7 @@ RED Brick Add-on für den Kameraschlitten besteht aus den folgenden Teilen:
 * 1x `Selbstsichernde M3 Muttern, 100 Stk <https://www.tinkerforge.com/de/shop/makerbeam/nuts-bolts/100-m3-self-locking-nuts.html>`__
 * 1x `MakerBeam Eck-Verbinder, 12 Stk. <https://www.tinkerforge.com/de/shop/makerbeam/brackets/makerbeam-corner-brackets-12pcs.html>`__
 * 1x `MakerBeam 45° Verbinder, 12 Stk. <https://www.tinkerforge.com/de/shop/makerbeam/brackets/makerbeam-45-brackets-12pcs.html>`__
-* 1x `RED Brick <https://www.tinkerforge.com/de/shop/bricks/red-brick.html>`__
+* 1x :ref:`RED Brick <red_brick>`
   (inklusive `SD Karte 8GB (RED Brick Image) <https://www.tinkerforge.com/de/shop/accessories/red-brick/sd-card-8gb-full-image.html>`__,
   `Mini USB Kabel 180cm <https://www.tinkerforge.com/de/shop/accessories/cable/mini-usb-cable-180cm.html>`__,
   `Micro HDMI Kabel 90cm <https://www.tinkerforge.com/de/shop/accessories/cable/micro-hdmi-cable-90cm.html>`__ und

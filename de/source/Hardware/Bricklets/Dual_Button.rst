@@ -1,6 +1,4 @@
 
-:shoplink: ../../../shop/bricklets/dual-button-bricklet.html
-
 .. include:: Dual_Button.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
@@ -25,7 +23,7 @@ Dual Button Bricklet
 
 .. note::
 
- Das Dual Button Bricklet ist abgekündigt. Wir verkaufen noch unseren restlichen Lagerbestand.
+ Das Dual Button Bricklet ist abgekündigt und wird nicht mehr verkauft.
  Als Ersatz wird das :ref:`Dual Button Bricklet 2.0 <dual_button_v2_bricklet>`
  empfohlen.
 

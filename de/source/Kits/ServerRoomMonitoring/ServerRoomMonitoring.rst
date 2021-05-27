@@ -1,6 +1,4 @@
 
-:shoplink: ../../../shop/kits/starter-kit-server-room-monitoring.html
-
 .. include:: ServerRoomMonitoring.substitutions
 
 .. _starter_kit_server_room_monitoring:
@@ -12,23 +10,29 @@ Starterkit: Serverraum-Überwachung
 
 	{% tfgallery %}
 
-	Kits/server_room_monitoring_right_basic_[100|800].jpg                  Server Room Monitoring Kit
-	Kits/server_room_monitoring_left_front_open_basic_[100|800].jpg        Server Room Monitoring Kit
-	Kits/server_room_monitoring_left_front_close_basic_[100|800].jpg       Server Room Monitoring Kit
-	Kits/server_room_monitoring_front_right_red_close_[100|800].jpg        Server Room Monitoring Kit
-	Kits/server_room_monitoring_back_right_red_open_[100|800].jpg          Server Room Monitoring Kit
-	Kits/server_room_monitoring_front_right_seg_motion_close_[100|800].jpg Server Room Monitoring Kit
-	Kits/server_room_monitoring_back_open_[100|800].jpg                    Server Room Monitoring Kit
-	Kits/server_room_monitoring_case_front_open_[100|800].jpg              Server Room Monitoring Kit
-	Kits/server_room_monitoring_side_close_[100|800].jpg                   Server Room Monitoring Kit
-	Kits/server_room_monitoring_top_[100|800].jpg                          Server Room Monitoring Kit: Inhalt
-	Kits/server_room_monitoring_alu_surface_[100|800].jpg                  Server Room Monitoring Kit: Oberfläche Aluminium
-	Kits/server_room_monitoring_alu_in_hand_[100|800].jpg                  Server Room Monitoring Kit
-	Kits/server_room_monitoring_in_rack3_[100|800].jpg                     Server Room Monitoring Kit: Im Serverrack
-	Kits/server_room_monitoring_in_rack1_[100|800].jpg                     Server Room Monitoring Kit: Im Serverrack
-	Kits/server_room_monitoring_in_rack2_[100|800].jpg                     Server Room Monitoring Kit: Im Serverrack
+	Kits/server_room_monitoring_right_basic_[100|800].jpg                  Serverraum-Überwachung
+	Kits/server_room_monitoring_left_front_open_basic_[100|800].jpg        Serverraum-Überwachung
+	Kits/server_room_monitoring_left_front_close_basic_[100|800].jpg       Serverraum-Überwachung
+	Kits/server_room_monitoring_front_right_red_close_[100|800].jpg        Serverraum-Überwachung
+	Kits/server_room_monitoring_back_right_red_open_[100|800].jpg          Serverraum-Überwachung
+	Kits/server_room_monitoring_front_right_seg_motion_close_[100|800].jpg Serverraum-Überwachung
+	Kits/server_room_monitoring_back_open_[100|800].jpg                    Serverraum-Überwachung
+	Kits/server_room_monitoring_case_front_open_[100|800].jpg              Serverraum-Überwachung
+	Kits/server_room_monitoring_side_close_[100|800].jpg                   Serverraum-Überwachung
+	Kits/server_room_monitoring_top_[100|800].jpg                          Serverraum-Überwachung: Inhalt
+	Kits/server_room_monitoring_alu_surface_[100|800].jpg                  Serverraum-Überwachung: Oberfläche Aluminium
+	Kits/server_room_monitoring_alu_in_hand_[100|800].jpg                  Serverraum-Überwachung
+	Kits/server_room_monitoring_in_rack3_[100|800].jpg                     Serverraum-Überwachung: Im Serverrack
+	Kits/server_room_monitoring_in_rack1_[100|800].jpg                     Serverraum-Überwachung: Im Serverrack
+	Kits/server_room_monitoring_in_rack2_[100|800].jpg                     Serverraum-Überwachung: Im Serverrack
 
 	{% tfgalleryend %}
+
+.. note::
+
+ Das Starterkit: Serverraum-Überwachung ist abgekündigt und wird nicht mehr verkauft.
+ Als Ersatz wird das :ref:`Starterkit: Serverraum-Überwachung 2.0 <starter_kit_server_room_monitoring_v2>`
+ empfohlen.
 
 Features
 --------
@@ -137,7 +141,6 @@ Gewicht                           250g
 Ressourcen
 ----------
 
-* Serverraum-Überwachung Kit Gehäuse FreeCAD CAD Dateien (`Download <https://github.com/Tinkerforge/server-room-monitoring/tree/master/case>`__)
 * Beispielquelltext für :ref:`Einfaches Monitoring <starter_kit_server_room_monitoring_simple_monitoring>` (Download: `Shell <https://raw.githubusercontent.com/Tinkerforge/server-room-monitoring/master/simple_monitoring/check_tf_temp_simple.sh>`__)
 * Beispielquelltext für :ref:`Nagios/Icinga Plugin <starter_kit_server_room_monitoring_nagios_or_icinga_index>` (Download: `Python <https://raw.githubusercontent.com/Tinkerforge/server-room-monitoring/master/nagios_icinga/check_tf_temp.py>`__)
 * Beispielquelltext für :ref:`Nagios/Icinga Extended Plugin <starter_kit_server_room_monitoring_extended_nagios_index>` (Download: `Python <https://raw.githubusercontent.com/Tinkerforge/server-room-monitoring/master/nagios_icinga/check_tf_temp_ext.py>`__)

@@ -22,7 +22,7 @@ Die Basisversion des Kits besteht aus den folgenden Teilen:
 * 1x `Achsreduzierstück 5mm / 3mm <https://www.tinkerforge.com/de/shop/accessories/mounting/shaft-reducer-5mm-3mm.html>`__
 * 1x `Halterungen für Kameraschlitten <https://www.tinkerforge.com/de/shop/accessories/mounting/brackets-for-camera-slider.html>`__
 * 1x `Schrittmotor, Nema 17, 0.43Nm <https://www.tinkerforge.com/de/shop/accessories/motors/stepper-motor-nema-17-043nm.html>`__
-* 1x `Stepper Brick <https://www.tinkerforge.com/de/shop/bricks/stepper-brick.html>`__
+* 1x :ref:`Stepper Brick <stepper_brick>`
   (inklusive `Mini USB Kabel 180cm <https://www.tinkerforge.com/de/shop/accessories/cable/mini-usb-cable-180cm.html>`__ und
   `Befestigungskit 12mm <https://www.tinkerforge.com/de/shop/accessories/mounting/mounting-kit-12mm.html>`__)
 * 1x `24V 4A AC/DC Netzteil <https://www.tinkerforge.com/de/shop/power-supplies/24v-4a-ac-dc-power-adapter.html>`__

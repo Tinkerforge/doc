@@ -40,7 +40,7 @@ Features
 Beschreibung
 ------------
 
-Das `Piezo Buzzer <https://de.wikipedia.org/wiki/Summer_(Elektronik)>`__
+Das `Piezo Buzzer <https://de.wikipedia.org/wiki/Summer_(Elektrik)>`__
 :ref:`Bricklet <primer_bricklets>` ermöglicht es
 einem :ref:`Bricks <primer_bricks>` akustische Signale abzugeben.
 Es können 1kHz Pieptöne in verschiedenen Längen ausgegeben werden.

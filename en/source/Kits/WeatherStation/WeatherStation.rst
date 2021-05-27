@@ -1,6 +1,4 @@
 
-:shoplink: ../../../shop/kits/starter-kit-weather-station.html
-
 .. include:: WeatherStation.substitutions
 
 .. _starter_kit_weather_station:
@@ -23,6 +21,12 @@ Starter Kit: Weather Station
 	Kits/weather_station_buttons_assembled_[100|800].jpg   Weather Station: With big buttons on the left side
 
 	{% tfgalleryend %}
+
+.. note::
+
+ The Starter Kit: Weather Station is discontinued and is no longer sold. The
+ :ref:`Tabletop Weather Station <tabletop_weather_station>` is the recommended
+ replacement.
 
 Features
 --------
@@ -344,8 +348,7 @@ Bigger Push Buttons
 
 The push buttons on the LCD 20x4 Bricklet are a bit fiddly. To extend
 the Weather Station with bigger buttons we provide the
-`Weather Station Push Button Extension
-<https://www.tinkerforge.com/en/shop/kits/weather-station-push-button-add-on.html>`__.
+Weather Station Push Button Extension.
 
 .. image:: /Images/Kits/weather_station_buttons_assembled_600.jpg
    :scale: 100 %

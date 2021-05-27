@@ -1,6 +1,4 @@
 
-:shoplink: ../../../shop/kits/starter-kit-camera-slider.html
-
 .. _starter_kit_camera_slider:
 
 Starterkit: Kameraschlitten
@@ -19,6 +17,9 @@ Starterkit: Kameraschlitten
 
 	{% tfgalleryend %}
 
+.. note::
+
+ Das Starterkit: Kameraschlitten ist abgekündigt und wird nicht mehr verkauft.
 
 Features
 --------

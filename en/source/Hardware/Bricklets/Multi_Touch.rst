@@ -152,7 +152,6 @@ inputs for the Multi Touch Bricklet without the need of creating own pads.
  * `Cursor Pad <https://www.tinkerforge.com/en/shop/cursor-pad.html>`__
  * `Key Pad 3x4 <https://www.tinkerforge.com/en/shop/key-pad-3x4.html>`__
  * `Slider Pad <https://www.tinkerforge.com/en/shop/slider-pad.html>`__
- * `Button Pad <https://www.tinkerforge.com/en/shop/button-pad.html>`__
 
 Additionally there is a pad kit especially for gaming applications:
 

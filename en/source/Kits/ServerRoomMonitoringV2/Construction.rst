@@ -140,7 +140,7 @@ Extension. Each can use the 12mm spacers (thread inside/outside) and washers.
    :scale: 100 %
    :alt: Construction Step 7
    :align: center
-   :target: ../../_images/Kits/server_room_monitoring_v2_construction_7_1000.png
+   :target: ../../_images/Kits/server_room_monitoring_v2_construction_7_1000.jpg
 
 Raspberry Pi und HAT Brick (optional)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -157,19 +157,19 @@ depending on your preference.
    :scale: 100 %
    :alt: Construction Step 8
    :align: center
-   :target: ../../_images/Kits/server_room_monitoring_v2_construction_8_1000.png
+   :target: ../../_images/Kits/server_room_monitoring_v2_construction_8_1000.jpg
 
 .. image:: /Images/Kits/server_room_monitoring_v2_construction_9_350.jpg
    :scale: 100 %
    :alt: Construction Step 9
    :align: center
-   :target: ../../_images/Kits/server_room_monitoring_v2_construction_9_1000.png
+   :target: ../../_images/Kits/server_room_monitoring_v2_construction_9_1000.jpg
 
 .. image:: /Images/Kits/server_room_monitoring_v2_construction_10_350.jpg
    :scale: 100 %
    :alt: Construction Step 10
    :align: center
-   :target: ../../_images/Kits/server_room_monitoring_v2_construction_10_1000.png
+   :target: ../../_images/Kits/server_room_monitoring_v2_construction_10_1000.jpg
 
 PTC, Temperature and Humidity Bricklet
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

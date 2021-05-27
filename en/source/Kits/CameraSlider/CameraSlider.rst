@@ -1,6 +1,4 @@
 
-:shoplink: ../../../shop/kits/starter-kit-camera-slider.html
-
 .. _starter_kit_camera_slider:
 
 Starter Kit: Camera Slider
@@ -18,6 +16,10 @@ Starter Kit: Camera Slider
 	Kits/kit_camera_slider_w_lcd2_[100|800].jpg     Camera Slider: With LCD
 
 	{% tfgalleryend %}
+
+.. note::
+
+ The Starter Kit: Camera Slider is discontinued and is no longer sold.
 
 Features
 --------

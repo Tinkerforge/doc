@@ -149,7 +149,7 @@ und Unterlegscheiben befestigt werden.
    :scale: 100 %
    :alt: Arbeitsschritt 7
    :align: center
-   :target: ../../_images/Kits/server_room_monitoring_v2_construction_7_1000.png
+   :target: ../../_images/Kits/server_room_monitoring_v2_construction_7_1000.jpg
 
 Raspberry Pi und HAT Brick (optional)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -168,19 +168,19 @@ Raspberry Pi nach vorne oder nach hinten auszurichten.
    :scale: 100 %
    :alt: Arbeitsschritt 8
    :align: center
-   :target: ../../_images/Kits/server_room_monitoring_v2_construction_8_1000.png
+   :target: ../../_images/Kits/server_room_monitoring_v2_construction_8_1000.jpg
 
 .. image:: /Images/Kits/server_room_monitoring_v2_construction_9_350.jpg
    :scale: 100 %
    :alt: Arbeitsschritt 9
    :align: center
-   :target: ../../_images/Kits/server_room_monitoring_v2_construction_9_1000.png
+   :target: ../../_images/Kits/server_room_monitoring_v2_construction_9_1000.jpg
 
 .. image:: /Images/Kits/server_room_monitoring_v2_construction_10_350.jpg
    :scale: 100 %
    :alt: Arbeitsschritt 10
    :align: center
-   :target: ../../_images/Kits/server_room_monitoring_v2_construction_10_1000.png
+   :target: ../../_images/Kits/server_room_monitoring_v2_construction_10_1000.jpg
 
 PTC, Temperature und Humidity Bricklet
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

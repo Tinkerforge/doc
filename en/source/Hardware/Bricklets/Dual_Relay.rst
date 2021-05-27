@@ -166,7 +166,7 @@ Case
 ----
 
 A `laser-cut case for the Dual Relay Bricklet
-<https://www.tinkerforge.com/en/shop/cases/case-dual-relay-bricklet.html>`__ is available.
+<https://www.tinkerforge.com/en/shop/cases/case-industrial-dual-relay-bricklet.html>`__ is available.
 
 .. image:: /Images/Cases/bricklet_dual_relay_case_350.jpg
    :scale: 100 %

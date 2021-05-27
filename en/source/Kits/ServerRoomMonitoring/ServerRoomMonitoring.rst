@@ -1,6 +1,4 @@
 
-:shoplink: ../../../shop/kits/starter-kit-server-room-monitoring.html
-
 .. include:: ServerRoomMonitoring.substitutions
 
 .. _starter_kit_server_room_monitoring:
@@ -29,6 +27,12 @@ Starter Kit: Server Room Monitoring
 	Kits/server_room_monitoring_in_rack2_[100|800].jpg                     Server Room Monitoring Kit: In Rack
 
 	{% tfgalleryend %}
+
+.. note::
+
+ The Starter Kit: Server Room Monitoring is discontinued and is no longer sold. The
+ :ref:`Starter Kit: Server Room Monitoring 2.0 <starter_kit_server_room_monitoring_v2>` is the recommended
+ replacement.
 
 
 Features
@@ -134,7 +138,6 @@ Weight                            250g
 Resources
 ---------
 
-* Server Room Monitoring Kit Case FreeCAD CAD files (`Download <https://github.com/Tinkerforge/server-room-monitoring/tree/master/case>`__)
 * Example Source Code for :ref:`Simple Monitoring <starter_kit_server_room_monitoring_simple_monitoring>` (Download: `Shell <https://raw.githubusercontent.com/Tinkerforge/server-room-monitoring/master/simple_monitoring/check_tf_temp_simple.sh>`__)
 * Example Source Code for :ref:`Nagios/Icinga Plugin <starter_kit_server_room_monitoring_nagios_or_icinga_index>` (Download: `Python <https://raw.githubusercontent.com/Tinkerforge/server-room-monitoring/master/nagios_icinga/check_tf_temp.py>`__)
 * Example Source Code for :ref:`Nagios/Icinga Extended Plugin <starter_kit_server_room_monitoring_extended_nagios_index>` (Download: `Python <https://raw.githubusercontent.com/Tinkerforge/server-room-monitoring/master/nagios_icinga/check_tf_temp_ext.py>`__)

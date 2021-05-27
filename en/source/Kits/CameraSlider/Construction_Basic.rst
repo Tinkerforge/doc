@@ -22,7 +22,7 @@ The basic kit contains the following parts:
 * 1x `Shaft Reducer 5mm / 3mm <https://www.tinkerforge.com/en/shop/accessories/mounting/shaft-reducer-5mm-3mm.html>`__
 * 1x `Brackets for Camera Slider <https://www.tinkerforge.com/en/shop/accessories/mounting/brackets-for-camera-slider.html>`__
 * 1x `Stepper Motor, Nema 17, 0.43Nm <https://www.tinkerforge.com/en/shop/accessories/motors/stepper-motor-nema-17-043nm.html>`__
-* 1x `Stepper Brick <https://www.tinkerforge.com/en/shop/bricks/stepper-brick.html>`__
+* 1x :ref:`Stepper Brick <stepper_brick>`
   (including `Mini USB Cable 180cm <https://www.tinkerforge.com/en/shop/accessories/cable/mini-usb-cable-180cm.html>`__ and
   `Mounting Kit 12mm <https://www.tinkerforge.com/en/shop/accessories/mounting/mounting-kit-12mm.html>`__)
 * 1x `24V 4A AC/DC Power Adapter <https://www.tinkerforge.com/en/shop/power-supplies/24v-4a-ac-dc-power-adapter.html>`__

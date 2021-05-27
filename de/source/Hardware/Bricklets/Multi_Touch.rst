@@ -156,7 +156,6 @@ hergestellt werden müssen.
  * `Cursor Pad <https://www.tinkerforge.com/de/shop/cursor-pad.html>`__
  * `Key Pad 3x4 <https://www.tinkerforge.com/de/shop/key-pad-3x4.html>`__
  * `Slider Pad <https://www.tinkerforge.com/de/shop/slider-pad.html>`__
- * `Button Pad <https://www.tinkerforge.com/de/shop/button-pad.html>`__
 
 Für Spiele-Anwendungen gibt es ein spezielles Pad-Kit:
 
