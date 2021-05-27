@@ -81,7 +81,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/servo-v2-bricklet/raw/master/hardware/servo-v2-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/servo_v2_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/servo-v2-bricklet/zipball/master>`__)
-* 3D model (`View online <https://autode.sk/TBD>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricklets/servo_v2/servo-bricklet.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/TBD/TBD.FCStd>`__)
+* 3D model (`View online <https://autode.sk/TBD>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricklets/servo_v2/servo.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/TBD/TBD.FCStd>`__)
 
 
 .. _servo_v2_bricklet_connectivity:
