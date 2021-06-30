@@ -124,4 +124,4 @@ Windows 8, 8.1 and 10
 ^^^^^^^^^^^^^^^^^^^^^
 
 Since Windows 8 no driver for Bricks is needed anymore. Windows 8 and later
-recognizes Bricks automatically.
+recognizes Bricks automatically. **You still have to install Brick Daemon itself.**

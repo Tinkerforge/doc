@@ -130,4 +130,4 @@ Windows 8, 8.1 und 10
 ^^^^^^^^^^^^^^^^^^^^^
 
 Ab Windows 8 wird kein Treiber für Bricks mehr benötigt, Windows 8 und neuer
-erkennt Bricks automatisch.
+erkennt Bricks automatisch. **Brick Daemon selbst muss dennoch installiert werden.**
