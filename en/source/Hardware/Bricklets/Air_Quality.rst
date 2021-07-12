@@ -118,13 +118,6 @@ Resources
 IAQ Accuracy and Automatic Calibration
 --------------------------------------
 
-.. note::
-
- The currently released firmware (2.0.4) does not save the calibration every
- 12 hours. We had to disable this because of a bug in the proprietary load/save
- mechanism that we can't fix. We will release a new firmware that has this enabled
- again as soon as this bug is fixed.
-
 The Bricklet is building a database of measurements and uses this data to do an
 automatic background calibration and calculate an accurate IAQ index over time.
 It will take a few days until the IAQ index has a high reliability.

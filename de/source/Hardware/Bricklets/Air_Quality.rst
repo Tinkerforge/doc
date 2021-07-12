@@ -112,14 +112,6 @@ Ressourcen
 IAQ-Genauigkeit und automatische Kalibrierung
 ---------------------------------------------
 
-.. note::
-
- In der aktuell veröffentlichen Firmware (2.0.4) wird die Kalibrierung nicht alle
- 12 Stunden gespeichert. Wir mussten dies leider deaktivieren, da der proprietäre
- Lade-/Speichermechanismus aktuell einen Bug hat den wir nicht fixen können.
- Eine neue Firmware in der das speichern der Kalibrierung wieder aktiviert ist
- gibt es sobald dieser Bug gefixt wird.
-
 Das Bricklet baut über längere Zeit eine Datenbank an Messwerten auf, um über
 eine automatische Hintergrundkalibrierung einen genaueren IAQ Index bestimmen zu
 können. Es dauert ein paar Tage bis der IAQ Index eine hohe Genauigkeit erreicht.
