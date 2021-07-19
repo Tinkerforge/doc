@@ -45,9 +45,6 @@ Dieses Bricklet kann auch verwendet werden um die Systemzeit eines
 <https://github.com/Tinkerforge/red-brick/tree/master/programs/rtc_time>`__) oder
 :ref:`Raspberry Pis <embedded_raspberry_pi>` zu halten.
 
-Das Real-Time Clock Bricklet 2.0 hat einen 7 Pol Bricklet Stecker und wird
-mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
-
 Technische Spezifikation
 ------------------------
 

@@ -44,9 +44,6 @@ um :ref:`Bricks <primer_bricks>` mit einem 12Bit `Digital-Analog-Wandler
 Mit diesem können gekoppelte elektrische Spannungen und Ströme generiert werden.
 Die Spannung kann in mV und der Strom in µA angegeben werden.
 
-Das Industrial Analog Out Bricklet 2.0 hat einen 7 Pol Bricklet Stecker und wird
-mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
-
 
 Technische Spezifikation
 ------------------------

@@ -62,9 +62,6 @@ für viele andere Anwendungen genutzt werden. Zum Beispiel können diese Sensore
 wie eine Lichtschranke benutzt werden um zum Beispiel den Zugang zu einem
 Raum zu kontrollieren.
 
-Das Distance IR Bricklet 2.0 hat einen 7 Pol Bricklet Stecker und wird
-mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
-
 .. raw:: html
 
 	<video class="align-center" max-width="100%" width="100%" height="auto" controls autoplay loop>

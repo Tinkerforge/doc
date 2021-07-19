@@ -54,9 +54,6 @@ Eine weitere Kompensation kann über den Luftdruck geschehen. Dieser
 kann extern gemessen und über die API gesetzt werden um weitere
 Kompensationen durchzuführen und die CO2-Messung noch zu verbessern.
 
-Das CO2 Bricklet 2.0 hat einen 7 Pol Bricklet Stecker und wird
-mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
-
 Technische Spezifikation
 ------------------------
 

@@ -53,9 +53,6 @@ Eine Dreifarb-Aktualisierung des Bildschirminhalts dauert ungefähr 7,5 Sekunden
 unterschiedlichen Aktualisierungs-Modi ist es möglich Aktualisierungsraten von bis zu
 1Hz zu erreichen wenn nur Schwarz und Weiß genutzt wird.
 
-Das E-Paper 296x128 Bricklet 2.0 hat einen 7 Pol Bricklet Stecker und wird
-mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
-
 .. raw:: html
  
 	<video class="align-center" max-width="100%" width="100%" height="auto" controls loop>

@@ -50,9 +50,6 @@ zu schalten.
  Spannungen sollte das Dual AC Relay Bricklet in ein Gehäuse verbaut werden.
  Das Berühren der Kontakte ist potentiell lebensgefährlich!
 
-Das Industrial Dual AC Relay Bricklet hat einen 7 Pol Bricklet Stecker
-und wird mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
-
 Technische Spezifikation
 ------------------------
 

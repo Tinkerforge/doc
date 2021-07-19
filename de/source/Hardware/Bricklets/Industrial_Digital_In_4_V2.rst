@@ -50,9 +50,6 @@ Typische Anwendungen lassen sich in der Steuerung von industriellen Produkten,
 wie z.B. SPS oder Frequenzumrichter, finden. Darüber hinaus ist eine Nutzung in Bereichen,
 bei denen verschiedene Massepotentiale nicht verbunden werden dürfen sinnvoll.
 
-Das Industrial Digital In 4 Bricklet 2.0 hat einen 7 Pol Bricklet Stecker
-und wird mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
-
 .. raw:: html
  
 	<video class="align-center" max-width="100%" width="100%" height="auto" controls autoplay loop>

@@ -47,9 +47,6 @@ Eine mögliche Lösung um die Genauigkeit und Stabilität der Höhenmessung zu
 steigern ist Sensorfusion mit den Sensordaten eines :ref:`IMU Brick 2.0 <imu_v2_brick>`
 durchzuführen (siehe `Youtube Video <https://www.youtube.com/watch?v=TaqtzG7lyp0>`__).
 
-Das Barometer Bricklet 2.0 hat einen 7 Pol Bricklet Stecker und wird
-mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
-
 
 Technische Spezifikation
 ------------------------

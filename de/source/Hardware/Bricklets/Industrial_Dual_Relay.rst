@@ -57,9 +57,6 @@ Das Schalten induktiver Lasten kann besondere Vorkehrungen erfordern, siehe:
  Spannungen sollte das Dual Relay Bricklet in ein Gehäuse verbaut werden.
  Das Berühren der Kontakte ist potentiell lebensgefährlich!
 
-Das Industrial Dual Relay Bricklet hat einen 7 Pol Bricklet Stecker
-und wird mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
-
 Technische Spezifikation
 ------------------------
 

@@ -63,7 +63,7 @@ Trennung profitieren, zum Beispiel:
 * :ref:`Voltage/Current 2.0 <voltage_current_v2_bricklet>`
 
 Das Isolator Bricklet hat zwei 7 Pol Bricklet Stecker. Es wird zum Brick mit
-einem ``7p-10p`` bzw. ``7p-7p`` Bricklet Kabel verbunden und zum galvanisch zu trennenden
+einem ``7p-7p`` Bricklet Kabel verbunden und zum galvanisch zu trennenden
 Bricklet mit einem ``7p-7p`` Bricklet Kabel verbunden.
 
 

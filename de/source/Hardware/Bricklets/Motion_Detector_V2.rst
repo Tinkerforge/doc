@@ -52,9 +52,6 @@ Bewegungserkennung zu reagieren ohne zu pollen.
 Die Fresnel Linse kann über blaue LEDs beleuchtet werden. Die Helligkeit ist per API 
 einstellbar und kann dazu genutzt werden um eine erkannte Bewegung anzuzeigen.
 
-Das Motion Detector Bricklet 2.0 hat einen 7 Pol Bricklet Stecker und wird
-mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
-
 Hintergrundbeleuchting im Einsatz: 
 
 .. raw:: html

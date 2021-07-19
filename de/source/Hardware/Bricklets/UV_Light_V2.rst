@@ -42,9 +42,6 @@ reagieren ohne die Werte laufend abzufragen (kein Polling notwendig).
 Dieses Bricklet kann z.B. als UV Warner und zur Umweltdatenmessung
 genutzt werden.
 
-Das UV Light Bricklet 2.0 hat einen 7 Pol Bricklet Stecker und wird
-mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
-
 Technische Spezifikation
 ------------------------
 

@@ -69,9 +69,6 @@ wird genutzt um Positionsinformationen zu speichern wenn die Stromversorgung
 wegfällt. Mit den gespeicherten Informationen kann ein Fix schneller wieder
 hergestellt werden, wenn die Stromversorgung wieder zur Verfügung steht.
 
-Das GPS Bricklet 2.0 hat einen 7 Pol Bricklet Stecker und wird
-mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
-
 .. note::
 
  Hardwareversion 2.0 funktioniert nicht korrekt zusammen mit einem HAT (Zero)

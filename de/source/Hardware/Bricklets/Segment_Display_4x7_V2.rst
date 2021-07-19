@@ -47,9 +47,6 @@ möglich die Helligkeit der Segmente einzustellen. Neben der Möglichkeit des
 Schaltens einzelner Segmente bietet die API auch einen Anwender-konfigurierbaren
 Zähler.
 
-Das Segment Display 4x7 Bricklet 2.0 hat einen 7 Pol Bricklet Stecker und wird
-mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
-
 .. raw:: html
  
 	<video class="align-center" max-width="100%" width="600px" height="auto" controls loop>

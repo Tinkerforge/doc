@@ -48,9 +48,6 @@ Zusätzlich hat das Bricklet Unterstützung für Alarm und Sirenen-Töne. In die
 wird ein *sweep* erzeugt der einen Frequenzbereich mit konfigurierbarer
 Schrittgröße und Länge abläuft.
 
-Das Piezo Speaker Bricklet 2.0 hat einen 7 Pol Bricklet Stecker und wird
-mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
-
 Die folgende Audiodatei besteht aus Beispielen von Piep und Alarm-Tönen die mit
 einem Piezo Speaker Bricklet 2.0 erzeugt wurden:
 

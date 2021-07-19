@@ -59,9 +59,6 @@ konfiguriert werden können.
 Sechs nutzerkonfigurierbare Status-KEDs zeigen den GPIO-Status, die Motorichtung,
 Fehlerzustände und mehr.
 
-Das Performance DC Bricklet hat einen 7 Pol Bricklet Stecker und wird
-mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
-
 Technische Spezifikation
 ------------------------
 

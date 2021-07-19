@@ -45,9 +45,6 @@ ausgestattet. :ref:`Bricks <primer_bricks>` können hiermit Entfernungen zwische
 Mit konfigurierbaren Events ist es möglich, auf veränderte Distanzmessung
 zu reagieren, ohne die Werte laufend abzufragen (kein Polling notwendig).
 
-Das Distance US Bricklet 2.0 hat einen 7 Pol Bricklet Stecker und wird
-mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
-
 
 Technische Spezifikation
 ------------------------

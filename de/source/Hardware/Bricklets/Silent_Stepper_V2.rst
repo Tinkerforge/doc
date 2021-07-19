@@ -55,9 +55,6 @@ abhängig von der Motorgeschwindigkeit, automatisch zwischen diesen Modi zu wech
 
 Das Bricklet hat zwei digitale Eingänge, die für Endschalter genutzt werden können.
 
-Das Silent Stepper Bricklet 2.0 hat einen 7 Pol Bricklet Stecker und wird
-mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
-
 
 Technische Spezifikation
 ------------------------

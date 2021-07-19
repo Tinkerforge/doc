@@ -61,9 +61,6 @@ sollte so angebracht sein, dass es den Regen/Wind messen kann). Der TH-6148 Sens
 kann im Innen- sowie im Außenbereich verwendet werden. Es können die Daten von bis zu 
 255 Außen-Wetterstationen und bis zu 255 Sensoren gleichzeitig empfangen werden.
 
-Das Outdoor Weather Bricklet hat einen 7 Pol Bricklet Stecker und wird
-mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
-
 .. raw:: html
  
 	<video class="align-center" max-width="100%" width="100%" height="auto" controls autoplay loop>

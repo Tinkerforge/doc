@@ -46,9 +46,6 @@ nach CIE 1931 korrigiert. Das bedeutet, dass jeder Wechsel einer Farbe von aus
 zu voller Helligkeit für das menschliche Auge wie ein gleichmäßiger Farbverlauf
 erscheint.
 
-Das RGB LED Bricklet 2.0 hat einen 7 Pol Bricklet Stecker und wird
-mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
-
 .. raw:: html
  
 	<video class="align-center" max-width="100%" width="400px" height="auto" controls loop>

@@ -56,9 +56,6 @@ Anschlussklemmen des Bricklets und dem restlichen System. Sollte dies in der
 jeweiligen Anwendung zu ungewollten Verbindungen, Masseschleifen oder 
 Kurzschlüssen führen, so ist der Einsatz zusammen mit einem :ref:`Isolator Bricklet <isolator_bricklet>` ratsam.
 
-Das Analog Out Bricklet 3.0 hat einen 7 Pol Bricklet Stecker und wird
-mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
-
 Technische Spezifikation
 ------------------------
 

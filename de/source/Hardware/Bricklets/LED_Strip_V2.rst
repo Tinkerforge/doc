@@ -72,9 +72,6 @@ findet man im :ref:`Starterkit: Blinkenlights <starter_kit_blinkenlights>`:
 .. note::
  Die maximale Aktualisierungsrate hängt von Typ und Anzahl der verwendeten LEDs ab (:ref:`siehe hier <led_strip_v2_bricklet_fixed_frame_rate>`).
 
-Das LED Strip Bricklet 2.0 hat einen 7 Pol Bricklet Stecker und wird
-mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
-
 .. raw:: html
  
 	<video class="align-center" max-width="100%" width="100%" height="auto" controls autoplay loop>

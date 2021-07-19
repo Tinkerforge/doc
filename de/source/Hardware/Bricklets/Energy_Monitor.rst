@@ -62,9 +62,6 @@ und der `5A Stromwandler <https://www.tinkerforge.com/de/shop/5a-1v-current-tran
 `30A Stromwandler <https://www.tinkerforge.com/de/shop/30a-1v-current-transformer-clamp.html>`__.
 Das Bricklet liefern wir kalibriert für diese Wandler aus.
 
-Das Energy Monitor Bricklet hat einen 7 Pol Bricklet Stecker und wird
-mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
-
 .. raw:: html
 
  <div style="position: relative; height: 0; padding-bottom: 56.25%;">

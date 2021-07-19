@@ -62,9 +62,6 @@ benutzt wird, ist das IMU Bricklet 3.0
 `Gimbal Lock <https://de.wikipedia.org/wiki/Gimbal_Lock>`__ frei (im Gegensatz
 zur Euler-Winkel Darstellung).
 
-Das IMU Bricklet 3.0 hat einen 7 Pol Bricklet Stecker und wird
-mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
-
 .. raw:: html
 
 	<video class="align-center" max-width="100%" width="100%" height="auto" controls autoplay loop>

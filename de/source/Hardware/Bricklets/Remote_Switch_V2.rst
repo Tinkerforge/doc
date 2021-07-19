@@ -47,9 +47,6 @@ API konfiguriert werden.
 
 Das Bricklet kann auch als Empfänger der Fernbedienungen genutzt werden.
 
-Das Remote Switch Bricklet 2.0 hat einen 7 Pol Bricklet Stecker und wird
-mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
-
 Technische Spezifikation
 ------------------------
 

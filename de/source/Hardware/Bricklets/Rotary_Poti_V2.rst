@@ -45,9 +45,6 @@ spezifizierte Position erreicht wird.
 Dieses Bricklet kann für Steueraufgaben benutzt werden, wie z.B. das Steuern
 einer Lautstärke.
 
-Das Rotary Poti Bricklet 2.0 hat einen 7 Pol Bricklet Stecker und wird
-mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
-
 
 Technische Spezifikation
 ------------------------

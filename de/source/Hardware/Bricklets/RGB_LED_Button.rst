@@ -53,9 +53,6 @@ Taster zum Beispiel mit einem Pfeil oder ähnliches beschriftet werden.
 Um nicht den Zustand des Tasters dauernd abfragen zu müssen (pollen) können
 auch Event genutzt werden.
 
-Das RGB LED Button Bricklet hat einen 7 Pol Bricklet Stecker und wird
-mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
-
 .. raw:: html
  
 	<video class="align-center" max-width="100%" width="100%" height="auto" controls autoplay loop>

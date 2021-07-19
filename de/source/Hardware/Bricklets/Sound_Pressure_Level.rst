@@ -49,9 +49,6 @@ Das Bricklet kann genutzt werden um die Lautstärke zum Beispiel von Musik, Baus
 und von anderen Umgebungsgeräuschen in verschiedenen Gewichtungen zu messen. Zusätzlich ist es möglich die 
 Frequenzzusammensetzung zu bestimmen (Spektrum).
 
-Das Sound Pressure Level Bricklet hat einen 7 Pol Bricklet Stecker und wird mit einem ``7p-10p`` Bricklet 
-Kabel mit einem Brick verbunden.
-
 Technische Spezifikation
 ------------------------
 

@@ -47,9 +47,6 @@ vorhanden. Alle zur Verfügung stehenden Pins sind nach außen geführt und kön
 Wenn ein eigenes Bricklet entwickelt werden soll, kann das Board als Einstieg dienen,
 da nicht direkt eigene Hardware entwickelt werden muss.
 
-Das XMC1400 Breakout Bricklet hat einen 7 Pol Bricklet Stecker und wird
-mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
-
 
 Technische Spezifikation
 ------------------------
