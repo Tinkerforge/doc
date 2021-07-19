@@ -13,21 +13,22 @@ Master Brick
 
 	{% tfgallery %}
 
-	Bricks/brick_master21_tilted_front_[?|?].jpg      Master Brick
-	Bricks/brick_master_stack_front_big_[?|?].jpg     Master Brick in Stapel
-	Bricks/brick_master_stack_back_big_[?|?].jpg      Master Brick im Stapel
-	Bricks/brick_master_caption_[?|?].jpg             Master Brick mit Beschriftung
-	Bricks/brick_master21_top_[?|?].jpg               Master Brick Oberseite
-	Bricks/brick_master21_bottom_[?|?].jpg            Master Brick Unterseite
+	Bricks/brick_master3_tilted_front_[?|?].jpg       Master Brick
+	Bricks/brick_master3_tilted_back_[?|?].jpg        Master Brick
+	Bricks/brick_master3_tilted_front2_[?|?].jpg      Master Brick
+	Bricks/brick_master3_stack_front_big_[?|?].jpg    Master Brick im Stapel
+	Bricks/brick_master3_stack_back_big_[?|?].jpg     Master Brick im Stapel
+	Bricks/brick_master3_caption_[?|?].jpg            Master Brick mit Beschriftung
+	Bricks/brick_master3_top_[?|?].jpg                Master Brick Oberseite
+	Bricks/brick_master3_bottom_[?|?].jpg             Master Brick Unterseite
 	Dimensions/master_brick_dimensions_[100|600].png  Umriss und Bohrplan
-
 	{% tfgalleryend %}
 
 
 Features
 --------
 
-* Bis zu **vier** Bricklets per USB steuerbar
+* Bis zu **vier** 7-Pol Bricklets per USB-C steuerbar
 * Ist Grundlage um Stapel zu bauen
 * Benutzbar mit kabelgebundenen und drahtlosen Master Extensions
 
@@ -39,8 +40,8 @@ Beschreibung
 
 Der Master :ref:`Brick <primer_bricks>` besitzt zwei Aufgaben:
 Als erstes besitzt er **vier** :ref:`Bricklet <primer_bricklets>`
-Anschlüsse und ist daher ideal geeignet für Anwendungen bei denen viele
-Bricklets genutzt werden. Diese können dann direkt über die **USB** 
+Anschlüsse (7-Pol) und ist daher ideal geeignet für Anwendungen bei denen viele
+Bricklets genutzt werden. Diese können dann direkt über die **USB-C** 
 Schnittstelle des Master Bricks gesteuert werden. Somit können USB Sensoren, 
 zum Beispiel zur Messung der Luftfeuchtigkeit und Temperatur, aber auch USB 
 Aktoren, wie Relais, ganz nach den eigenen Bedürfnissen aufgebaut werden.
@@ -68,6 +69,9 @@ andere Bricks (ausgenommen RED Brick),
 2x Master Extensions. Wenn alle Bricks im Stapel Master Bricks sind können bis 
 zu 9 Master Bricks x je 4 Bricklets = 36 Bricklets an einem Stapel 
 angeschlossen werden.
+
+Die aktuelle Hardwareversion des Master Bricks lautet 3.1. Die Unterschiede
+zu älteren Versionen sind im :ref:`Legacy-Abschnitt <master_brick_legacy>` beschrieben.
 
 
 Technische Spezifikation
@@ -99,11 +103,11 @@ Anschlussmöglichkeit
 Das folgende Bild zeigt die verschiedenen Anschlussmöglichkeit des
 Master Bricks.
 
-.. image:: /Images/Bricks/brick_master_caption_600.jpg
+.. image:: /Images/Bricks/brick_master3_caption_600.jpg
    :scale: 100 %
-   :alt: Master Brick mit Beschriftung
+   :alt: Master Brick 3.1 mit Beschriftung
    :align: center
-   :target: ../../_images/Bricks/brick_master_caption_800.jpg
+   :target: ../../_images/Bricks/brick_master3_caption_800.jpg
 
 
 .. _master_brick_test:
@@ -128,6 +132,34 @@ Stapel gesteckt wurde, dann wird hier die angelegte Spannung und der
 Stromverbrauch des Stapels angezeigt.
 
 |test_pi_ref|
+
+
+.. _master_brick_legacy:
+
+Legacy Master Bricks
+--------------------
+
+Der Master Brick 3.1 (aktuelle Version) hat USB-C und vier 7-Pol Bricklet-Stecker
+
+.. image:: /Images/Bricks/brick_master3_tilted_front_350.jpg
+   :scale: 100 %
+   :alt: Master Brick 3.1
+   :align: center
+   :target: ../../_images/Bricks/brick_master3_tilted_front_800.jpg
+
+Master Bricks mit Hardwareversion 1.0, 1.1, 2.0 und 2.1 haben Mini-USB und vier 10-Pol Bricklet-Stecker.
+
+Die alten Master Bricks können zusammen mit den alten 10-Pol Brickltes (per 10p-10p Bricklet-Kabel)
+sowie den neuen 7-Pol Bricklets (per 7p-10p Bricklet-Kabel) verwendet werden. Der neue Master Brick
+ist nur kompatibel zu 7-Pol Bricklets (per 7p-7p Bricklet-Kabel).
+
+Master Brick 2.1 steht noch in unserem Shop zur Verfügung.
+
+.. image:: /Images/Bricks/brick_master21_tilted_front_350.jpg
+   :scale: 100 %
+   :alt: Master Brick 2.1
+   :align: center
+   :target: ../../_images/Bricks/brick_master21_tilted_front_800.jpg
 
 
 .. _master_brick_programming_interface:

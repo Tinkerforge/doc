@@ -13,12 +13,14 @@ Master Brick
 
 	{% tfgallery %}
 
-	Bricks/brick_master21_tilted_front_[?|?].jpg      Master Brick
-	Bricks/brick_master_stack_front_big_[?|?].jpg     Master Brick in stack
-	Bricks/brick_master_stack_back_big_[?|?].jpg      Master Brick in stack
-	Bricks/brick_master_caption_[?|?].jpg             Master Brick with caption
-	Bricks/brick_master21_top_[?|?].jpg               Master Brick top
-	Bricks/brick_master21_bottom_[?|?].jpg            Master Brick bottom
+	Bricks/brick_master3_tilted_front_[?|?].jpg       Master Brick
+	Bricks/brick_master3_tilted_back_[?|?].jpg        Master Brick
+	Bricks/brick_master3_tilted_front2_[?|?].jpg      Master Brick
+	Bricks/brick_master3_stack_front_big_[?|?].jpg    Master Brick in stack
+	Bricks/brick_master3_stack_back_big_[?|?].jpg     Master Brick in stack
+	Bricks/brick_master3_caption_[?|?].jpg            Master Brick with caption
+	Bricks/brick_master3_top_[?|?].jpg                Master Brick top
+	Bricks/brick_master3_bottom_[?|?].jpg             Master Brick bottom
 	Dimensions/master_brick_dimensions_[100|600].png  Outline and drilling plan
 
 	{% tfgalleryend %}
@@ -27,7 +29,7 @@ Master Brick
 Features
 --------
 
-* Up to **four** Bricklets usable over USB
+* Up to **four** 7-pole Bricklets usable over USB-C
 * Is the basis to build stacks
 * Usable with cable based and wireless Master Extensions
 
@@ -38,9 +40,9 @@ Description
 -----------
 
 The Master :ref:`Brick <primer_bricks>` can be used for two purposes:
-First of all it has **four** :ref:`Bricklet <primer_bricklets>` ports
+First of all it has **four** :ref:`Bricklet <primer_bricklets>` ports (7-pole)
 and therefore is ideally suited for applications where a many Bricklets are 
-used. These can be directly controlled over the **USB** interface of the Master
+used. These can be directly controlled over the **USB-C** interface of the Master
 Brick. This way USB sensors, like temperature or humidity sensors, or USB 
 actors, like relays, can be created according to your individual needs.
 
@@ -66,6 +68,9 @@ The maximum stack consists of (bottom to top): 1x Step-Down Power Supply,
 2x Master Extensions. With all Bricks
 being Master Bricks in a stack up to 9 Master Bricks x 4 Bricklets each = 36 
 Bricklets can be connected to a single stack.
+
+The current Master Brick has hardware version 3.1. The differences to
+older version are described in the :ref:`legacy section <master_brick_lagecy>`.
 
 
 Technical Specifications
@@ -98,11 +103,11 @@ Connectivity
 The following picture depicts the different connection possibilities of the
 Master Brick.
 
-.. image:: /Images/Bricks/brick_master_caption_600.jpg
+.. image:: /Images/Bricks/brick_master3_caption_600.jpg
    :scale: 100 %
-   :alt: Master Brick with caption
+   :alt: Master Brick 3.1 with caption
    :align: center
-   :target: ../../_images/Bricks/brick_master_caption_800.jpg
+   :target: ../../_images/Bricks/brick_master3_caption_800.jpg
 
 
 .. _master_brick_test:
@@ -127,6 +132,34 @@ such a board you should see the voltage applied to your stack and the current
 flowing in.
 
 |test_pi_ref|
+
+.. _master_brick_legacy:
+
+Legacy Master Bricks
+--------------------
+
+The Master Brick 3.1 (current version) has USB-C and four 7-pole Bricklet connectors.
+
+.. image:: /Images/Bricks/brick_master3_tilted_front_350.jpg
+   :scale: 100 %
+   :alt: Master Brick 3.1
+   :align: center
+   :target: ../../_images/Bricks/brick_master3_tilted_front_800.jpg
+
+Master Bricks with hardware version 1.0, 1.1, 2.0 and 2.1 have Mini-USB and four 10-pole Bricklet connectors.
+
+The old Master Bricks can be used together with legacy 10-pole Bricklets as (10p-10p Bricklet cable
+as well as new 7-pole Bricklets (7p-10 Bricklet cable). The new Master Brick is only compatible
+to 7-pole Bricklets (with a 7p-7p Bricklet cable).
+
+Master Brick 2.1 is still available in our shop.
+
+.. image:: /Images/Bricks/brick_master21_tilted_front_350.jpg
+   :scale: 100 %
+   :alt: Master Brick 2.1
+   :align: center
+   :target: ../../_images/Bricks/brick_master21_tilted_front_800.jpg
+
 
 
 .. _master_brick_programming_interface:
