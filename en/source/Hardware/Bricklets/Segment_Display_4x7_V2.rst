@@ -49,9 +49,6 @@ It is also possible to configure the brightness of the segments.
 Besides the possibility of controlling each segment
 independently, the API offers a user configurable counter.
 
-The Segment Display 4x7 Bricklet 2.0 has a 7 pole Bricklet connector and is connected to a
-Brick with a ``7p-10p`` Bricklet cable.
-
 .. raw:: html
  
 	<video class="align-center" max-width="100%" width="600px" height="auto" controls loop>

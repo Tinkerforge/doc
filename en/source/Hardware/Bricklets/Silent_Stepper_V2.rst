@@ -58,9 +58,6 @@ these modes automatically dependent on motor velocity.
 
 The Bricklet comes with two inputs that can be configured as end-stops.
 
-The Silent Stepper Bricklet 2.0 has a 7 pole Bricklet connector and is connected to a
-Brick with a ``7p-10p`` Bricklet cable.
-
 Technical Specifications
 ------------------------
 

@@ -43,9 +43,6 @@ capability to measure distances and velocity. The distance is measured with
 the help of a laser pulse and the `time-of-flight
 <https://en.wikipedia.org/wiki/Time_of_flight>`__ principle.
 
-The Laser Range Finder Bricklet 2.0 has a 7 pole Bricklet connector and is connected to a
-Brick with a ``7p-10p`` Bricklet cable.
-
 
 Technical Specifications
 ------------------------

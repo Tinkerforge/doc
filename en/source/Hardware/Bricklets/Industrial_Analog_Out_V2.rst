@@ -45,9 +45,6 @@ The voltage can be given in mV and the current in µA.
 The device is equipped with a 12-bit `Digital-to-Analog Converter (DAC)
 <https://en.wikipedia.org/wiki/Digital-to-analog_converter>`__.
 
-The Industrial Analog Out Bricklet 2.0 has a 7 pole Bricklet connector and is connected to a
-Brick with a ``7p-10p`` Bricklet cable.
-
 Technical Specifications
 ------------------------
 

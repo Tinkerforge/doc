@@ -49,9 +49,6 @@ Consider the maximum voltage and current.
  to switch higher voltages, consider to put the Dual AC Relay Bricklet
  in a casing. Touching the contacts is potentially life-threatening!
 
-The Industrial Dual AC Relay Bricklet has a 7 pole Bricklet connector and
-is connected to a Brick with a ``7p-10p`` Bricklet cable.
-
 Technical Specifications
 ------------------------
 

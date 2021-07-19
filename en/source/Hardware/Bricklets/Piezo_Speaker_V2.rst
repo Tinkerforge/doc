@@ -48,9 +48,6 @@ Additionally the Bricklet has support for alarm/siren sounds. In this mode
 it will sweep through a frequency range with configurable range, step size and
 duration.
 
-The Piezo Speaker Bricklet 2.0 has a 7 pole Bricklet connector and is connected to a
-Brick with a ``7p-10p`` Bricklet cable.
-
 Below you can find an audio file with samples of different sounds and alarams 
 that have been generated with a Piezo Speaker Bricklet 2.0:
 

@@ -48,9 +48,6 @@ The difference between the :ref:`Rotary Poti Bricklet <rotary_poti_bricklet>`
 and the Rotary Encoder Bricklet 2.0 is that the encoder has full rotation without
 limits.
 
-The Rotary Encoder Bricklet 2.0 has a 7 pole Bricklet connector and is connected to a
-Brick with a ``7p-10p`` Bricklet cable.
-
 
 Technical Specifications
 ------------------------

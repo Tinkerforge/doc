@@ -72,9 +72,6 @@ of up to 100Hz. A possible application can be found in the
 .. note::
  The maximum update rate depends on type and number of attached LEDs (:ref:`see here <led_strip_v2_bricklet_fixed_frame_rate>`).
 
-The LED Strip Bricklet 2.0 has a 7 pole Bricklet connector and is connected to a
-Brick with a ``7p-10p`` Bricklet cable.
-
 .. raw:: html
  
 	<video class="align-center" max-width="100%" width="100%" height="auto" controls autoplay loop>

@@ -56,9 +56,6 @@ All 4 channels are galvanically isolated.
 Example applications for the Bricklet are reading of a PWM signal and
 reading of sensors that have edge counts or frequency as output.
 
-The Industrial Counter Bricklet has a 7 pole Bricklet connector and
-is connected to a Brick with a ``7p-10p`` Bricklet cable.
-
 .. raw:: html
  
     <video class="align-center" max-width="100%" width="100%" height="auto" controls autoplay loop>

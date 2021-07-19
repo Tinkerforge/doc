@@ -52,9 +52,6 @@ Typical applications are the interfacing of industrial controllers, such as
 PLC's or frequency converters, or the usage in environments were electrical 
 ground levels can not be connected.
 
-The Industrial Digital In 4 Bricklet 2.0 has a 7 pole Bricklet connector and
-is connected to a Brick with a ``7p-10p`` Bricklet cable.
-
 .. raw:: html
  
 	<video class="align-center" max-width="100%" width="100%" height="auto" controls autoplay loop>

@@ -59,9 +59,6 @@ used, the IMU Bricklet 3.0 does not have a
 `gimbal lock <https://en.wikipedia.org/wiki/Gimbal_lock>`__,
 as known from Euler angles.
 
-The IMU Bricklet 3.0 has a 7 pole Bricklet connector and is connected to a
-Brick with a ``7p-10p`` Bricklet cable.
-
 .. raw:: html
 
 	<video class="align-center" max-width="100%" width="100%" height="auto" controls autoplay loop>

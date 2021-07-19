@@ -52,9 +52,6 @@ The sensor can be used to measure loudness of music, construction sites, street 
 other environmental noises in a variety of weighting standards. It is also possible to
 determine the frequency composition (spectrum).
 
-The Sound Pressure Level Bricklet has a 7 pole Bricklet connector and is connected to a
-Brick with a ``7p-10p`` Bricklet cable.
-
 Technical Specifications
 ------------------------
 

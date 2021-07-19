@@ -58,9 +58,6 @@ of the Bricklet and the rest of the system. Dependent of the application
 this can lead to undesired connections, ground loops or short circuits. 
 These problems can be prevented by using the Bricklet together with a :ref:`Isolator Bricklet <isolator_bricklet>`.
 
-The One Wire Bricklet has a 7 pole Bricklet connector and is connected to a
-Brick with a ``7p-10p`` Bricklet cable.
-
 
 Technical Specifications
 ------------------------

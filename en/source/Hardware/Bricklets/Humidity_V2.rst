@@ -51,9 +51,6 @@ can be used to dry the sensor in extremely wet environments.
 A weather station is a typical application for this sensor. It can also be
 used in drying applications, environment monitoring etc.
 
-The Humidity Bricklet 2.0 has a 7 pole Bricklet connector and is connected to a
-Brick with a ``7p-10p`` Bricklet cable.
-
 Technical Specifications
 ------------------------
 

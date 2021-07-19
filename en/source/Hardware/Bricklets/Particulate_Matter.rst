@@ -47,9 +47,6 @@ The Bricklet supports the size classes PM1.0, PM2.5 and PM10. Additionally it is
 possible to measure the count of particles in 100ml of air with the supported sizes of 
 0.3µm, 0.5µm, 1.0µm, 2.5µm, 5.0µm and 10.0µm.
 
-The Particulate Matter Bricklet has a 7 pole Bricklet connector and is connected to a
-Brick with a ``7p-10p`` Bricklet cable.
-
 Technical Specifications
 ------------------------
 

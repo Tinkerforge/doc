@@ -53,9 +53,6 @@ used internally for compensation and can additionally be read out.
 It is possible to apply an ambient air pressure value to achieve
 further compensation and better CO2 concentration measurement.
 
-The CO2 Bricklet 2.0 has a 7 pole Bricklet connector and is connected to a
-Brick with a ``7p-10p`` Bricklet cable.
-
 Technical Specifications
 ------------------------
 

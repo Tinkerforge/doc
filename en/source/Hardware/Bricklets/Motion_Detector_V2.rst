@@ -53,9 +53,6 @@ The fresnel lens has a blue backlight with controllable intensity. The backlight
 can be used as an indicator for detected motion or as a general purpose indication
 light.
 
-The Motion Detector Bricklet 2.0 has a 7 pole Bricklet connector and is connected to a
-Brick with a ``7p-10p`` Bricklet cable.
-
 Backlight in action:
 
 .. raw:: html

@@ -47,9 +47,6 @@ House code as well as receiver code can be configured with the API.
 
 The Bricklet can also be used as a receiver for the remotes.
 
-The Remote Switch Bricklet 2.0 has a 7 pole Bricklet connector and is connected to a
-Brick with a ``7p-10p`` Bricklet cable.
-
 Technical Specifications
 ------------------------
 

@@ -45,9 +45,6 @@ With configurable events it is possible to react on changing distances without
 polling. Typical applications can be found in robotics, usage as light barrier
 alternative and so on.
 
-The Distance US Bricklet 2.0 has a 7 pole Bricklet connector and is connected to a
-Brick with a ``7p-10p`` Bricklet cable.
-
 Technical Specifications
 ------------------------
 

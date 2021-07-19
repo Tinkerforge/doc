@@ -52,9 +52,6 @@ Example applications are:
 * Reading out water/electricity meters
 * Counting RPM of motors
 
-The Hall Effect Bricklet 2.0 has a 7 pole Bricklet connector and is connected to a
-Brick with a ``7p-10p`` Bricklet cable.
-
 
 Technical Specifications
 ------------------------

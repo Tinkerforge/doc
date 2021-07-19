@@ -67,9 +67,6 @@ A CR1025 coin cell battery is also included. It is used as a battery backup for
 the last satellite position data. With this information a fix can be obtained faster
 if the power was lost.
 
-The GPS Bricklet 2.0 has a 7 pole Bricklet connector and is connected to a
-Brick with a ``7p-10p`` Bricklet cable.
-
 .. note::
 
  Hardware version 2.0 does not work properly with a HAT (Zero) Brick, due to a

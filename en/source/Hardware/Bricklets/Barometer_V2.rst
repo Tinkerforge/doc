@@ -47,9 +47,6 @@ solution to achieve higher accuracy and stability of the altitude measurement is
 to perform sensor fusion with the sensor data of an :ref:`IMU Brick 2.0 <imu_v2_brick>`
 (see `Youtube video <https://www.youtube.com/watch?v=TaqtzG7lyp0>`__).
 
-The Barometer Bricklet 2.0 has a 7 pole Bricklet connector and is connected to a
-Brick with a ``7p-10p`` Bricklet cable.
-
 Technical Specifications
 ------------------------
 

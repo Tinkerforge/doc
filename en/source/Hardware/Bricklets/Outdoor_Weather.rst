@@ -58,9 +58,6 @@ The Outdoor Weather Station WS-6147 is meant to be put outside (somewhere where 
 The TH-6148 sensor can be used inside or outside. You can use up to 255 Outdoor Weather Stations and up to
 255 Sensors simultaneously.
 
-The Outdoor Weather Bricklet has a 7 pole Bricklet connector and is connected to a
-Brick with a ``7p-10p`` Bricklet cable.
-
 .. raw:: html
  
 	<video class="align-center" max-width="100%" width="100%" height="auto" controls autoplay loop>

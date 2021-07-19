@@ -60,9 +60,6 @@ The IAQ index has a range of 0-500:
 Typical applications for this Bricklet are the monitoring of air quality,
 environmental statistics, home automation and similar.
 
-The Air Quality Bricklet has a 7 pole Bricklet connector and is connected to a
-Brick with a ``7p-10p`` Bricklet cable.
-
 .. raw:: html
 
 	<video class="align-center" max-width="100%" width="100%" height="auto" controls autoplay loop>

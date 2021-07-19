@@ -47,8 +47,6 @@ without polling.
 Typical applications are illuminance dependent switching of backlights, motors
 etc.
 
-The Ambient Light Bricklet 3.0 has a 7 pole Bricklet connector and is connected to a
-Brick with a ``7p-10p`` Bricklet cable.
 
 Technical Specifications
 ------------------------

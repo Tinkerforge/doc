@@ -56,9 +56,6 @@ If you want to switch inductive loads, please see:
  to switch higher voltages, consider to put the Dual Relay Bricklet
  in a casing. Touching the contacts is potentially life-threatening!
 
-The Industrial Dual Relay Bricklet has a 7 pole Bricklet connector and
-is connected to a Brick with a ``7p-10p`` Bricklet cable.
-
 Technical Specifications
 ------------------------
 

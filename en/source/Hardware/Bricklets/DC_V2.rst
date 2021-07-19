@@ -52,9 +52,6 @@ These can be used to react properly in your own program to these events.
 The drive  mode can be switched between Drive/Brake and Drive/Coast 
 (see :ref:`Drive Modes <dc_brick_drive_mode>`).
 
-The DC Bricklet 2.0 has a 7 pole Bricklet connector and is connected to a
-Brick with a ``7p-10p`` Bricklet cable.
-
 
 Technical Specifications
 ------------------------

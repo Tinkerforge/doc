@@ -45,9 +45,6 @@ This Bricklet can also be used to keep the system time of a :ref:`RED Brick
 <red_brick>` (using this `example program <https://github.com/Tinkerforge/red-brick/tree/master/programs/rtc_time>`__)
 or a :ref:`Raspberry Pi <embedded_raspberry_pi>`.
 
-The Real-Time Clock Bricklet 2.0 has a 7 pole Bricklet connector and is connected to a
-Brick with a ``7p-10p`` Bricklet cable.
-
 Technical Specifications
 ------------------------
 

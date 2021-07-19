@@ -54,9 +54,6 @@ similar.
 With the Multi Touch Bricklet it is possible to build custom touch panels
 by gluing a cover onto the electrodes.
 
-The Multi Touch Bricklet 2.0 has a 7 pole Bricklet connector and is connected to a
-Brick with a ``7p-10p`` Bricklet cable.
-
 
 Technical Specifications
 ------------------------
