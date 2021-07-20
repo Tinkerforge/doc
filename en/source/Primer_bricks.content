@@ -1,16 +1,19 @@
-Bricks are 4 x 4cm (1.57 x 1.57") modules that can be controlled by devices, 
-such as (embedded) PCs, over their Mini-USB connector. Every Brick basically 
-performs one task. There are Bricks that perform complex sensor tasks (e.g. the
-:ref:`IMU Brick 2.0 <imu_v2_brick>`), communicate (e.g. the
-:ref:`Master Brick <master_brick>`) and drive motors 
-(e.g. the :ref:`DC Brick <dc_brick>`).
+Bricks are the base modules of each Tinkerforge system. Different Bricks can be
+used in one system, but each system requires one Brick as a minimum. Bricks can have
+their own features (sensors, actuators), but the main purpose of Bricks is to
+attach :ref:`Bricklets <primer_bricklets>` to the system. For that each Brick
+has multiple Bricklet connectors.
 
-With :ref:`Bricklets <primer_bricklets>` the features of Bricks can
-be extended. Dependent on the Brick it has none, two or four connectors for Bricklets.
+Many Bricks can be remotely controlled by external devices, 
+such as (embedded) PCs, over interfaces such as USB-C, WIFI or Ethernet. The external device than
+runs your program which controls the system by our offered :ref:`API <api_bindings>`.
 
-Bricks can be assembled into a stack (see 
-:ref:`description of stack concept <primer_stack>`). The USB interface of a 
-Master Brick can be replaced by Wi-Fi, Ethernet or RS485 using
+There are Bricks that can be attached to a Raspberry Pi (:ref:`HAT Brick <hat_brick>`, :ref:`HAT Zero Brick <hat_zero_brick>`), 
+such that that your software on the Raspberry Pi can control the attached hardware directly.
+
+:ref:`Master Bricks <master_brick>`, a special type of Bricks with USB-C interface, 
+can be assembled into a stack (see :ref:`description of stack concept <primer_stack>`). 
+The USB interface of a Master Brick can be replaced by Wi-Fi, Ethernet or RS485 using
 :ref:`Master Extensions <primer_master_extensions>`. In conjunction with the 
 stack concept all Bricks and Bricklets can be controlled by Wi-Fi or Ethernet
 instead of by USB.

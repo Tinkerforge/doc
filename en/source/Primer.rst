@@ -17,9 +17,9 @@ Products
 Our products are divided into five different categories:
 
 * :ref:`Bricks <primer_bricks>`:
-  Stackable microcontroller modules for sensing and controlling over USB.
+  Base modules of each Tinkerforge system with individual functions.
 * :ref:`Bricklets <primer_bricklets>`:
-  Non-stackable sensor/actuator modules that extend the features of a Brick.
+  Sensor/actuator modules that extend the features of a Brick. These modules are connected to a Brick by cable. 
 * :ref:`Master Extensions <primer_master_extensions>`:
   Modules that offers alternatives to the USB interface of 
   :ref:`Master Bricks <master_brick>` (Wi-Fi, Ethernet, RS485).
@@ -27,7 +27,7 @@ Our products are divided into five different categories:
   Modules to power a stack of Bricks, plugged below the stack.
 * :ref:`Accessories <primer_accessories>`
 
-This :ref:`tutorial <tutorial_first_steps>` explains of how everything works 
+This :ref:`tutorial <tutorial_first_steps>` explains of how Bricks and Bricklets are working
 together.
 
 
@@ -220,8 +220,8 @@ Concepts
 
 .. _primer_stack:
 
-Stack of Bricks
-^^^^^^^^^^^^^^^
+Stack of Master Bricks
+^^^^^^^^^^^^^^^^^^^^^^
 
 .. image:: /Images/Bricks/brick_master_stack_front_big_350.jpg
     :scale: 100 %
@@ -229,8 +229,12 @@ Stack of Bricks
     :align: center
     :target: _images/Bricks/brick_master_stack_front_big_800.jpg
 
-:ref:`Bricks <primer_bricks>` can be stacked. A 
-:ref:`Master Brick <master_brick>` (as the lowermost Brick) is responsible for 
+A :ref:`Master Brick <master_brick>` is a 4x4cm Brick. This Brick and
+all to it connected Bricklets can be controlled by the USB-C interface 
+of the Master Brick. Master Bricks can be stacked such that more connector
+for Bricklets can be added.
+
+One Master Brick (as the lowermost Brick) is responsible for 
 the communication between all boards within the stack. This master routes the 
 messages between the boards in the stack and the controlling device. This way 
 only one USB connection is necessary to control all Bricks and Bricklets of a

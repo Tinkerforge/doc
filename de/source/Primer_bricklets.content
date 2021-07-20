@@ -4,8 +4,7 @@ elektrischen Strom, Umgebungshelligkeit oder Umgebungstemperatur zu messen.
 Es gibt auch Bricklets für Steuerungsaufgaben wie Relais, digitale Ein- und
 Ausgänge sowie alphanumerische Ausgaben auf LCDs.
 
-Im Gegensatz zu Bricks haben Bricklets keine feste Größe. Jedes Bricklet hat
-die kleinste mögliche Größe. Jeder Brick hat bis zu vier Anschlüsse für
-Bricklets. Über seine USB Verbindung können diese gesteuert werden.
+Jedes Bricklet hat die kleinste mögliche Größe. Jeder Brick hat typischerweise mehrere Anschlüsse für
+Bricklets. Über den Brick werden die angeschlossenen Bricks gesteuert.
 
 Es gibt einen extra Abschnitt für :ref:`abgekündigte Bricklets<bricklets_discontinued>`.

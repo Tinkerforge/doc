@@ -1,19 +1,18 @@
-Bricks sind 4 x 4 cm (1,57 x 1,57") große Module, die über einen Mini-USB 
-Anschluss verfügen. Über diesen können sie von Geräten, wie zum Beispiel einem 
-(Embedded-)PC, gesteuert werden. Jeder Brick besitzt eine Aufgabe: Es 
-gibt Bricks für Messaufgaben (z.B. den :ref:`IMU Brick 2.0 <imu_v2_brick>`), zur 
-Kommunikation (z.B. den :ref:`Master Brick <master_brick>`) und um Motoren zu
-steuern (z.B. den :ref:`DC Brick <dc_brick>`).
+Bricks sind die Basismodule von jedem Tinkerforge System. Es können verschiedene Bricks
+in einem System genutzt werden. Minimal ist aber immer mindestens ein Brick notwendig. 
+Bricks können eigene Fähigkeiten besitzen (zum Beispiel Motoren steuern oder über einen Sensor verfügen), 
+hauptsächlich können an Bricks aber sogenannte :ref:`Bricklets <primer_bricklets>` angeschlossen werden. Jeder Brick
+verfügt über mehrere Brickletanschlüsse.
 
-Über :ref:`Bricklets <primer_bricklets>` können die Fähigkeiten von
-Bricks erweitert werden. Abhängig vom Modell verfügt jeder Brick über keine, zwei oder
-vier Anschlüsse für Bricklets.
+Viele Bricks können über ein externes Gerät ferngesteuert werden, wie zum Beispiel über einen 
+(Embedded-)PC, mittels Schnittstellen wie USB-C, WIFI oder Ethernet. Das externe Gerät
+führt dann dein Programm aus, welches das System über unsere :ref:`API <api_bindings>` steuert.
 
-Bricks können, wie die :ref:`Beschreibung zum Stapelkonzept <primer_stack>` erklärt, gestapelt werden.
-Die USB-Schnittstelle eines Master Bricks kann mit 
-:ref:`Master Extensions <primer_master_extensions>` durch
-WLAN, Ethernet oder RS485 ersetzt werden. Durch das Stapelkonzept können 
-somit alle Bricks und Bricklets anstatt per USB auch per WLAN oder Ethernet 
-gesteuert werden.
+Es gibt Bricks, welche auf ein Raspberry Pi gesteckt werden können (:ref:`HAT Brick <hat_brick>`, :ref:`HAT Zero Brick <hat_zero_brick>`), so dass deine Software
+auf dem Raspberry Pi die angeschlossene Hardware direkt steuert.
+
+:ref:`Master Bricks <master_brick>`, ein spezieller Typ von Bricks mit USB-C Schnittstelle, können gestapelt werden (:ref:`Beschreibung zum Stapelkonzept <primer_stack>`).
+Die USB-C Schnittstelle eines Master Bricks kann mit sogenannten :ref:`Master Extensions <primer_master_extensions>` durch WIFI, Ethernet oder RS485 ersetzt werden. 
+Durch das Stapelkonzept können somit alle Bricks und Bricklets anstatt per USB auch per WLAN oder Ethernet ferngesteuert werden.
 
 Es gibt einen extra Abschnitt für :ref:`abgekündigte Bricks<bricks_discontinued>`.

@@ -4,8 +4,8 @@ physical quantities such as rotation, voltage, current and ambient light
 as well as Bricklets for control purposes such as switching relays, digital
 input/output and alphanumeric output on LCDs.
 
-Unlike Bricks, Bricklets have no fixed size. Each Bricklet has the minimum
-size possible. Each Brick has up to four connectors for Bricklets. Bricklets
-can be controlled over the USB connection of the connected Brick.
+Bricklets have no fixed size. Each Bricklet has the minimum
+size possible. Each Brick has typically multiple connectors for Bricklets. Bricklets
+are controlled by the connected Brick.
 
 There is an extra section for :ref:`discontinued Bricklets <bricklets_discontinued>`.

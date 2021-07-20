@@ -17,10 +17,10 @@ Produkte
 Unsere Produkte gliedern sich in fünf verschiedene Kategorien:
 
 * :ref:`Bricks <primer_bricks>`:
-  Stapelbare Module zum Messen und Steuern über USB.
+  Basismodule des Tinkerforge Systems mit eigenen Funktionen.
 * :ref:`Bricklets <primer_bricklets>`:
-  Nicht stapelbare Sensor-/Aktormodule, die die Fähigkeiten von Bricks
-  erweitern.
+  Sensor-/Aktormodule, die die Fähigkeiten von Bricks
+  erweitern und per Kabel an Bricks angeschlossen werden.
 * :ref:`Master Extensions <primer_master_extensions>`:
   Module, die Alternativen zur USB-Schnittstelle des
   :ref:`Master Bricks <master_brick>` bieten (WIFI, Ethernet, RS485).
@@ -220,8 +220,8 @@ Konzepte
 
 .. _primer_stack:
 
-Stapel aus Bricks
-^^^^^^^^^^^^^^^^^
+Stapel aus Master Bricks
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. image:: /Images/Bricks/brick_master_stack_front_big_350.jpg
     :scale: 100 %
@@ -229,8 +229,12 @@ Stapel aus Bricks
     :align: center
     :target: _images/Bricks/brick_master_stack_front_big_800.jpg
 
-:ref:`Bricks <primer_bricks>` können zu einem Stapel zusammengesteckt werden. 
-Ein :ref:`Master Brick<master_brick>` (als unterster Brick) kümmert sich 
+Ein spezieller Brick ist der :ref:`Master Brick<master_brick>`. Dieser 4x4cm Brick verfügt
+über eine USB-C Schnittstelle über die er und seine angeschlossenen Bricklets gesteuert
+werden können. Master Bricks können gestapelt werden, so dass mehr Anschlüsse für Bricklets
+zur Verfügung stehen.
+
+Der unterste Master Brick kümmert sich 
 um die Kommunikation aller anderen Teilnehmer im Stapel: Er routet Nachrichten 
 zwischen den Teilnehmern und dem steuernden Gerät. Es ist also nur eine
 USB-Verbindung notwendig, um die Bricks und Bricklets eines Stapels zu steuern.
