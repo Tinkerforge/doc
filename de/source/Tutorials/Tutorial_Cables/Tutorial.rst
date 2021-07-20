@@ -6,7 +6,7 @@ Tutorial - Bricklet Kabel
 
 :ref:`Bricklets <primer_bricklets>` werden mit einem Kabel an ein :ref:`Brick <primer_bricks>` angeschlossen.
 Im aktuellen Tinkerforge System besitzen sowohl die Bricks als auch die Bricklets 7 polige Anschlüsse,
-so dass dazu 7-pol Stecker nach 7-pol Stecker Kabel eingesetzt werden.
+so dass dazu 7-Pol Stecker nach 7-Pol Stecker Kabel eingesetzt werden.
 
 .. image:: /Images/Misc/cable_7p7p_connector_350.jpg
    :scale: 100 %

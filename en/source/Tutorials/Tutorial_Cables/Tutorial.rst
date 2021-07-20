@@ -5,8 +5,8 @@ Tutorial - Bricklet Cables
 ==========================
 
 :ref:`Bricklets <primer_bricklets>` are connected by a cable to :ref:`Bricks <primer_bricks>`.
-The current Tinkerforge system is using 7 pole connectors for Bricks and Bricklets, such that
-a 7 pole to 7 pole cable is used.
+The current Tinkerforge system is using 7-pole connectors for Bricks and Bricklets, such that
+a 7-pole to 7-pole cable is used.
 
 
 .. image:: /Images/Misc/cable_7p7p_connector_350.jpg
@@ -53,7 +53,7 @@ the remaining offered stock of older modules:
    :align: center
    :target: ../../_images/Misc/cable_7p10p_connector_backfront_1000.jpg
 
-The 7p-10p cables can be used to connect older Bricks (10 pole) with new Bricklets with 7 pole connector.
+The 7p-10p cables can be used to connect older Bricks (10-pole) with new Bricklets with 7-pole connector.
 
 Available cables:
 
@@ -65,11 +65,11 @@ Available cables:
 
 .. warning::
 
-  Important! These cables are intended to connect a 10 pole Brick with a 7 pole Bricklet. It is not working the other way round!
-  You will not be able to connect a 7 pole Brick with a 10 pole Bricklet with these cables!
+  Important! These cables are intended to connect a 10-pole Brick with a 7-pole Bricklet. It is not working the other way round!
+  You will not be able to connect a 7-pole Brick with a 10-pole Bricklet with these cables!
 
 
-**Bricklet Cable 10 pole - 10 pole (10p-10p)**
+**Bricklet Cable 10-pole - 10-pole (10p-10p)**
 
 .. image:: /Images/Misc/cable_10p10p_front_350.jpg
    :scale: 100 %
@@ -77,7 +77,7 @@ Available cables:
    :align: center
    :target: ../../_images/Misc/cable_10p10p_front_1000.jpg
 
-The 10p-10p cables can be used to connect old Bricks (10 pole) with old Bricklets (10 pole). 
+The 10p-10p cables can be used to connect old Bricks (10-pole) with old Bricklets (10-pole). 
 
 Available cables:
 
