@@ -1,8 +1,32 @@
 
 .. _tutorial_bricklet_cables:
 
-Tutorial - Bricklet Kabel (7-Pol vs 10-Pol) 
+Tutorial - Bricklet Kabel 
 ===========================================
+
+:ref:`Bricklets <primer_bricklets>` werden mit einem Kabel an ein :ref:`Brick <primer_bricks>` angeschlossen.
+Im aktuellen Tinkerforge System besitzen sowohl die Bricks als auch die Bricklets 7 polige Anschlüsse,
+so dass dazu 7-pol Stecker nach 7-pol Stecker Kabel eingesetzt werden.
+
+.. image:: /Images/Misc/cable_7p7p_connector_350.jpg
+   :scale: 100 %
+   :alt: Front- und Rückseite eines 7p-7p Kabel
+   :align: center
+   :target: ../../_images/Misc/cable_7p7p_connector_1000.jpg
+
+Die Kabel werden in verschiedenen Längen angeboten:
+
+* `Bricklet Kabel 6cm (7p-7p) <https://www.tinkerforge.com/en/shop/accessories/bricklet-cable-6cm-7p-7p.html>`__
+* `Bricklet Kabel 15cm (7p-7p) <https://www.tinkerforge.com/en/shop/accessories/bricklet-cable-15cm-7p-7p.html>`__
+* `Bricklet Kabel 50cm (7p-7p) <https://www.tinkerforge.com/en/shop/accessories/bricklet-cable-50cm-7p-7p.html>`__
+* `Bricklet Kabel 100cm (7p-7p) <https://www.tinkerforge.com/en/shop/accessories/bricklet-cable-100cm-7p-7p.html>`__
+* `Bricklet Kabel 200cm (7p-7p) <https://www.tinkerforge.com/en/shop/accessories/bricklet-cable-200cm-7p-7p.html>`__
+
+
+
+
+Kabel für ältere Bricks/Bricklets
+---------------------------------
 
 Anfang 2017 haben wir angefangen alle existierenden Bricklets durch neue
 Versionen zu ersetzen. Diese neuen Versionen haben einen 
@@ -10,7 +34,8 @@ Versionen zu ersetzen. Diese neuen Versionen haben einen
 sowie einen anderen Stecker.
 
 Der alte Stecker hatte 10 Pole und wurde nur durch Reibung in der Buchse
-gehalten. Leider war es möglich diesen Stecker in einem Winkel einzustecken,
+gehalten. Sowohl Bricks als auch Bricklets waren mit diesen 10 Pin Stecker 
+ausgestattet. Leider war es möglich diesen Stecker in einem Winkel einzustecken,
 sodass sich Pinne in der Buchse verbogen. Dies war mit Abstand die
 häufigste Reklamation die wir von Kunden bekommen haben. Daher trafen
 wir die Entscheidung den Stecker durch einen neuen auszutauschen während
@@ -19,27 +44,35 @@ der Umstellung von EEPROMs auf Co-Prozessoren.
 Der neue Stecker hat 7 Pole, er hat einen Sicherungshaken und kann nicht
 schief eingesteckt werden.
 
-Auf Grund dieser Änderungen bieten wir aktuell drei unterschiedliche
-Kabeltypen an:
+Auf Grund dieser Änderungen bieten wir aktuell noch zwei andere Kabeltypen
+für die ältere Module an. Diese dienen als Ersatzteil oder zur Nutzung mit
+den Restbeständen an älteren Modulen, die wir in unserem Shop noch verkaufen:
 
-* 10-Pol - 10-Pol (10p-10p),
-* 7-Pol - 10-Pol (7p-10p) und
-* 7-Pol - 7-Pol (7p-7p).
+**Bricklet Kabel 7-Pol - 10-Pol (7p-10p)**
 
-Altes Bricklet mit 10p Stecker und neues Bricklet mit 7p Stecker:
-
-.. image:: /Images/Misc/cable_10p10p_and_7p10p_connect_800.jpg
+.. image:: /Images/Misc/cable_7p10p_connector_backfront_600.jpg
    :scale: 100 %
-   :alt: Bricklet mit 10p/7p Stecker
+   :alt: Front- und Rückseite eines 7p-10p Kabels
    :align: center
-   :target: ../../_images/Misc/cable_10p10p_and_7p10p_connect_1200.jpg
+   :target: ../../_images/Misc/cable_7p10p_connector_backfront_1000.jpg
 
-Im weiteren beschreiben wir wie die einzelnen Kabeltypen benutzt werden
-können.
+Die 7p-10p Kabel können genutzt werden um ältere Bricks (10-Pol) mit den aktuellen Bricklets (7-Pol) zu verbinden. 
+
+Verfügbare Kabel:
+
+* `Bricklet Kabel 6cm (7p-10p) <https://www.tinkerforge.com/en/shop/accessories/bricklet-cable-black-6cm-7p-10p.html>`__
+* `Bricklet Kabel 15cm (7p-10p) <https://www.tinkerforge.com/en/shop/accessories/bricklet-cable-black-15cm-7p-10p.html>`__
+* `Bricklet Kabel 50cm (7p-10p) <https://www.tinkerforge.com/en/shop/accessories/bricklet-cable-black-50cm-7p-10p.html>`__
+* `Bricklet Kabel 100cm (7p-10p) <https://www.tinkerforge.com/en/shop/accessories/bricklet-cable-black-100cm-7p-10p.html>`__
+* `Bricklet Kabel 200cm (7p-10p) <https://www.tinkerforge.com/en/shop/accessories/bricklet-cable-black-200cm-7p-10p.html>`__
+
+.. warning::
+
+  Wichtig! Die Kabel dienen dazu ein 10-Pol Brick mit einem 7-Pol Bricklet zu verbinden. Die Kabel können NICHT umgekehrt eingesetzt werden,
+  um ein 10-Pol Bricklet an einem 7-Pol Brick zu bereiben!
 
 
-Bricklet Kabel 10-Pol - 10-Pol (10p-10p)
-----------------------------------------
+**Bricklet Kabel 10-Pol - 10-Pol (10p-10p)**
 
 .. image:: /Images/Misc/cable_10p10p_front_350.jpg
    :scale: 100 %
@@ -47,14 +80,7 @@ Bricklet Kabel 10-Pol - 10-Pol (10p-10p)
    :align: center
    :target: ../../_images/Misc/cable_10p10p_front_1000.jpg
 
-Das 10p-10p Kabel kann genutzt werden um Bricks mit
-
-* alten Bricklets mit 10-Pol Stecker
-
-zu verbinden.
-
-Diese Brickelts werden durch neue Bricklets mit 7-Pol Stecker ersetzt,
-daher werden diese Kabel in der Zukunft nicht mehr gebraucht werden.
+Das 10p-10p Kabel kann genutzt werden um ältere Bricks (10-Pol) mit älteren Bricklets (10-Pol) Stecker zu verbinden.
 
 Verfügbare Kabel:
 
@@ -68,74 +94,3 @@ Verfügbare Kabel:
 * `Bricklet Kabel Shielded 100cm (10p-10p) <https://www.tinkerforge.com/de/shop/accessories/bricklet-cable-black-100cm.html>`__
 * `Bricklet Kabel Shielded 200cm (10p-10p) <https://www.tinkerforge.com/de/shop/accessories/bricklet-cable-black-200cm.html>`__
 
-
-Bricklet Kabel 7-Pol - 10-Pol (7p-10p)
---------------------------------------
-
-.. image:: /Images/Misc/cable_7p10p_connector_backfront_600.jpg
-   :scale: 100 %
-   :alt: Front- und Rückseite eines 7p-10p Kabels
-   :align: center
-   :target: ../../_images/Misc/cable_7p10p_connector_backfront_1000.jpg
-
-Die 7p-10p Kabel können genutzt werden um Bricks mit
-
-* neuen Bricklets mit 7-Pol Stecker
-
-zu verbinden. Verfügbare Kabel:
-
-* `Bricklet Kabel 6cm (7p-10p) <https://www.tinkerforge.com/en/shop/accessories/bricklet-cable-black-6cm-7p-10p.html>`__
-* `Bricklet Kabel 15cm (7p-10p) <https://www.tinkerforge.com/en/shop/accessories/bricklet-cable-black-15cm-7p-10p.html>`__
-* `Bricklet Kabel 50cm (7p-10p) <https://www.tinkerforge.com/en/shop/accessories/bricklet-cable-black-50cm-7p-10p.html>`__
-* `Bricklet Kabel 100cm (7p-10p) <https://www.tinkerforge.com/en/shop/accessories/bricklet-cable-black-100cm-7p-10p.html>`__
-* `Bricklet Kabel 200cm (7p-10p) <https://www.tinkerforge.com/en/shop/accessories/bricklet-cable-black-200cm-7p-10p.html>`__
-
-Bricklet Kabel 7-Pol - 7-Pol (7p-7p)
-------------------------------------
-
-.. image:: /Images/Misc/cable_7p7p_connector_350.jpg
-   :scale: 100 %
-   :alt: Front- und Rückseite eines 7p-7p Kabel
-   :align: center
-   :target: ../../_images/Misc/cable_7p7p_connector_1000.jpg
-
-Die 7p-7p Kabel können genutz werden um die neuem Bricklets mit 7-Pol
-Stecker mit
-
-* :ref:`Isolator Bricklet <isolator_bricklet>`,
-* :ref:`HAT Brick <hat_brick>` und
-* :ref:`HAT Zero Brick <hat_zero_brick>`.
-
-zu verbinden. Es ist nicht möglich alte 10-Pol Bricklets mit dem Isolator oder
-einem HAT zu verbinden.
-
-Auf dem Bild unten ist ein Isolator Bricklet abgebildet welches auf der einen Seite
-mit einem Master Brick und auf der anderen Seite mit einem Voltage/Current Bricklet
-verbunden ist. In dieser Konfiguration wird links ein 7p-10p Kabel und rechts
-ein 7p-7p Kabel benötigt.
-
-.. image:: /Images/Bricklets/bricklet_isolator_cables_800.jpg
-   :scale: 100 %
-   :alt: Isolator Bricklet mit 7p-10p und 7p-7p Kabel
-   :align: center
-   :target: ../../_images/Bricklets/bricklet_isolator_cables_1200.jpg
-
-
-Verfügbare Kabel:
-
-* `Bricklet Kabel 6cm (7p-7p) <https://www.tinkerforge.com/en/shop/accessories/bricklet-cable-6cm-7p-7p.html>`__
-* `Bricklet Kabel 15cm (7p-7p) <https://www.tinkerforge.com/en/shop/accessories/bricklet-cable-15cm-7p-7p.html>`__
-* `Bricklet Kabel 50cm (7p-7p) <https://www.tinkerforge.com/en/shop/accessories/bricklet-cable-50cm-7p-7p.html>`__
-* `Bricklet Kabel 100cm (7p-7p) <https://www.tinkerforge.com/en/shop/accessories/bricklet-cable-100cm-7p-7p.html>`__
-* `Bricklet Kabel 200cm (7p-7p) <https://www.tinkerforge.com/en/shop/accessories/bricklet-cable-200cm-7p-7p.html>`__
-
-
-Zukunftsaussichten
-------------------
-
-In der Zukunft werden alle Buchsen auf den neuen 7-Pol Stecker umgestellt
-(inklusive Bricks). Daher werden die 7p-7p Kabel auf Dauer als einzige
-Kategorie übrig bleiben.
-
-Keine Sorge falls du alte Bricklets mit 10-Pol Stecker verwendest, wir
-werden kompatible Bricks wieterhin im Shop behalten.
