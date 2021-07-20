@@ -64,7 +64,7 @@ bietet der Motor maximales Drehmoment. Der Silent Stepper Brick kann konfigurier
 abhängig von der Motorgeschwindigkeit, automatisch zwischen diesen Modi zu wechseln.
 
 Der Silent Stepper Brick nutzt aktuell immernoch 10-Pol Bricklet-Stecker.
-Um Bricklets mit dem Brick zu verbinden werden 10p-7p Bricklet-Kabel benötigt.
+:ref:`Um Bricklets mit dem Brick zu verbinden werden 10p-7p Bricklet-Kabel benötigt <tutorial_bricklet_cables>`.
 
 Ein Vergleichsvideo zwischen Stepper Brick und Silent Stepper Brick ist auf Youtube verfügbar:
 

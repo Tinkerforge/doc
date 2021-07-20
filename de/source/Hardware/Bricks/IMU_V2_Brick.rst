@@ -78,7 +78,7 @@ um die USB Verbindung durch andere kabelgebundene Schnittstellen
 oder drahtlose Schnittstellen (:ref:`WLAN <wifi_extension>`) zu ersetzen.
 
 Der IMU Brick 2.0 nutzt aktuell immernoch 10-Pol Bricklet-Stecker.
-Um Bricklets mit dem Brick zu verbinden werden 10p-7p Bricklet-Kabel benötigt.
+:ref:`Um Bricklets mit dem Brick zu verbinden werden 10p-7p Bricklet-Kabel benötigt <tutorial_bricklet_cables>`.
 
 Ein Vergleichsvideo zwischen IMU Brick 1.0 und IMU Brick 2.0 ist auf Youtube verfügbar:
 

@@ -66,7 +66,7 @@ smart energy optimizations (Coolstep Mode) or with maximized torque
 these modes automatically dependent on motor velocity.
 
 The Silent Stepper Brick currently still uses 10-pole Bricklet connectors.
-You need 10p-7p Bricklet cables to connect Bricklets to it.
+:ref:`You need 10p-7p Bricklet cables to connect Bricklets to it <tutorial_bricklet_cables>`.
 
 A comparison video between Stepper Brick and Silent Stepper Brick is available on Youtube:
 

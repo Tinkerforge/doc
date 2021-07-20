@@ -75,7 +75,7 @@ connection by other cable based (:ref:`RS485 <rs485_extension>`,
 connections.
 
 The IMU Brick 2.0 currently still uses 10-pole Bricklet connectors.
-You need 10p-7p Bricklet cables to connect Bricklets to it.
+:ref:`You need 10p-7p Bricklet cables to connect Bricklets to it <tutorial_bricklet_cables>`.
 
 A comparison video between IMU Brick 1.0 and IMU Brick 2.0 is available on Youtube:
 
