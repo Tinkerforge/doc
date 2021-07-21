@@ -25,7 +25,7 @@ DC Brick
 .. note::
 
  The DC Brick is discontinued and is no longer sold. The
- DC Bricklet 2.0 (coming soon) or the :ref:`Performance DC Bricklet <performance_dc_bricklet>`
+ :ref:`DC Bricklet 2.0 <dc_v2_bricklet>` or the :ref:`Performance DC Bricklet <performance_dc_bricklet>`
  can be used as a replacement.
 
 Features
