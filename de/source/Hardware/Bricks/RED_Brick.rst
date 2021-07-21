@@ -30,7 +30,7 @@ RED Brick
 	{% tfgalleryend %}
 
 .. warning::
- Das RED Brick ist leider abgekündigt. Mehrere ICs die auf dem
+ Der RED Brick ist leider abgekündigt. Mehrere ICs die auf dem
  RED Brick verwendet werden sind aktuell nicht mehr verfügbar oder
  haben extrem lange Lieferzeiten. Daher können wir keine neuen
  RED Bricks mehr fertigen.

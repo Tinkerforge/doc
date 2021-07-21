@@ -1,4 +1,11 @@
 
+.. warning::
+ Unfortunately the RED Brick is discontinued. Because of severe chip shortages
+ of serveral of the ICs that are used on the RED Brick it is not possible
+ for us to produce it anymore.
+
+ As a replacement we recommend a Raspberry Pi (Zero) together with a HAT (Zero) Brick.
+
 .. _tutorial_red_brick:
 
 Tutorial - RED Brick
