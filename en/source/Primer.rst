@@ -25,8 +25,6 @@ Our products are divided into five different categories:
   :ref:`Master Bricks <master_brick>` (Wi-Fi, Ethernet, RS485).
 * :ref:`Power Supplies <primer_power_supplies>`:
   Modules to power a stack of Bricks, plugged below the stack.
-* Accessories:
-  A wide variety of accessories is available for Bricks and Bricklets.
 
 This :ref:`tutorial <tutorial_first_steps>` explains of how Bricks and Bricklets are working
 together.
@@ -211,11 +209,10 @@ Stack of Master Bricks
     :target: _images/Bricks/brick_master_stack_front_big_800.jpg
 
 A :ref:`Master Brick <master_brick>` is a 4x4cm Brick. This Brick and
-all to it connected Bricklets can be controlled by the USB-C interface 
-of the Master Brick. Master Bricks can be stacked such that more connector
-for Bricklets can be added.
+all Bricklets that are connected to it can be controlled over the USB-C interface 
+of the Master Brick. Master Bricks can be stacked to add more Bricklet ports.
 
-One Master Brick (as the lowermost Brick) is responsible for 
+One Master Brick (the lowermost Brick in the stack) is responsible for 
 the communication between all boards within the stack. This master routes the 
 messages between the boards in the stack and the controlling device. This way 
 only one USB connection is necessary to control all Bricks and Bricklets of a

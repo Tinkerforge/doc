@@ -26,8 +26,6 @@ Unsere Produkte gliedern sich in fünf verschiedene Kategorien:
   :ref:`Master Bricks <master_brick>` bieten (WIFI, Ethernet, RS485).
 * :ref:`Stromversorgungen <primer_power_supplies>`:
   Module, die einen Stapel aus Bricks mit Strom versorgen.
-* Zubehör:
-  Für Bricks und Bricklets bieten wir diverse Zubehörprodukte.
 
 Die Verwendung von Bricks und Bricklets demonstriert :ref:`dieses Tutorial <tutorial_first_steps>`.
 

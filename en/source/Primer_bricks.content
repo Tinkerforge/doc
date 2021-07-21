@@ -6,7 +6,7 @@ has multiple Bricklet connectors.
 
 Many Bricks can be remotely controlled by external devices, 
 such as (embedded) PCs, over interfaces such as USB-C, WIFI or Ethernet. The external device than
-runs your program which controls the system by our offered :ref:`API <api_bindings>`.
+runs your program which controls the system by our :ref:`API <api_bindings>`.
 
 There are Bricks that can be attached to a Raspberry Pi (:ref:`HAT Brick <hat_brick>`, :ref:`HAT Zero Brick <hat_zero_brick>`), 
 such that that your software on the Raspberry Pi can control the attached hardware directly.
