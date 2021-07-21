@@ -26,7 +26,8 @@ Unsere Produkte gliedern sich in fünf verschiedene Kategorien:
   :ref:`Master Bricks <master_brick>` bieten (WIFI, Ethernet, RS485).
 * :ref:`Stromversorgungen <primer_power_supplies>`:
   Module, die einen Stapel aus Bricks mit Strom versorgen.
-* :ref:`Zubehör <primer_accessories>`
+* Zubehör:
+  Für Bricks und Bricklets bieten wir diverse Zubehörprodukte.
 
 Die Verwendung von Bricks und Bricklets demonstriert :ref:`dieses Tutorial <tutorial_first_steps>`.
 
@@ -193,26 +194,6 @@ Stromversorgungen
 .. include:: Primer_power_supplies.content
 
 .. include:: Primer_power_supplies.table
-
-
-.. _primer_accessories:
-
-Zubehör
-^^^^^^^
-
-.. container:: tfdocimages
-
- .. list-table::
-
-  * - .. image:: /Images/Accessories/dc_jack_adapter_tilted_100.jpg
-       :scale: 100 %
-       :alt: DC Jack Adapter
-       :align: center
-       :target: _images/Accessories/dc_jack_adapter_tilted_800.jpg
-
-.. include:: Primer_accessories.content
-
-.. include:: Primer_accessories.table
 
 
 Konzepte

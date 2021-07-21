@@ -1,10 +1,19 @@
-:ref:`Bricks <primer_bricks>` and :ref:`Bricklets <primer_bricklets>` can be
-powered by the USB connector of the Brick. :ref:`Stacks <primer_stack>` can 
-also be powered by the master of the stack over its USB connection. This option 
+Nearly all :ref:`Bricklets <primer_bricklets>` are powered by the
+:ref:`Brick <primer_bricks>` where they are connected to, over the Bricklet cable. 
+If you have a Bricklet which needs some other kind of power supply, there is a
+description how to power the Bricklet in its documentation.
+
+How it is possible to power a Brick and its connected Bricklets is documented in the respective documentation.
+For many Bricks it is possible to power the system by USB-C or a DC input.
+
+If you use a :ref:`Master Brick <master_brick>` and you have build a :ref:`Stack <primer_stack>`,
+this stack can be powered by the Master of the stack over its USB-C connection. This option 
 is limited by the USB specification to 500mA. A large stack may need more power.
 
-To provide greater currents, Power Supplies are available.
-These modules power the stack and can additionally be used to supply the power
-for driver Bricks (e.g. the :ref:`DC Brick <dc_brick>`). Power Supplies
-have the same size as :ref:`Bricks <primer_bricks>` and are
-stacked in at the bottom of the stack.
+To provide greater currents, the :ref:`Step Down Power Supply <step_down_power_supply>` is available.
+It has the same size as the Master Brick, has a wide range DC input
+and is stacked in at the bottom of the stack.
+
+When using a stack with Ethernet, there is the possibility to power the stack by PoE.
+With Power-over-Ethernet (PoE) you can power the stack by the network cable. For that
+you have to choose the :ref:`Ethernet Extension <ethernet_extension>` in its PoE variant.

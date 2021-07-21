@@ -380,13 +380,6 @@ power_supply_infos = \
                 'de': 'Versorgt einen Stapel von Bricks mit 5V'})
 ]
 
-accessory_infos = \
-[
-    DeviceInfo(None, 'Accessory', 'DC Jack Adapter', 'DC Jack Adapter', 'dc_jack_adapter', 'DC_Jack_Adapter', None, 'dc-adapter', None, False, True, True, False, False,
-               {'en': 'Adapter between a 5mm DC jack and 2 Pole Black Connector',
-                'de': 'Adapter zwischen einem 5mm DC Stecker und 2 Pin Stecker Schwarz'})
-]
-
 KitInfo = namedtuple('KitInfo', 'display_name url_part prefix released')
 
 kit_infos = \
@@ -566,7 +559,6 @@ def make_discontinued_products_table():
     bricklet_rows = []
     extension_rows = []
     power_supply_rows = []
-    accessory_rows = []
 
     for brick_info in sorted(brick_infos, key=lambda x: x.short_display_name.lower()):
         if brick_info.is_documented and brick_info.is_discontinued:
@@ -584,15 +576,10 @@ def make_discontinued_products_table():
         if power_supply_info.is_documented and power_supply_info.is_discontinued:
             power_supply_rows.append(row.format(power_supply_info.short_display_name, power_supply_info.ref_name, power_supply_info.description[lang].replace('"', "inch")))
 
-    for accessory_info in sorted(accessory_infos, key=lambda x: x.short_display_name.lower()):
-        if accessory_info.is_documented and accessory_info.is_discontinued:
-            accessory_rows.append(row.format(accessory_info.short_display_name, accessory_info.ref_name, accessory_info.description[lang].replace('"', "inch")))
-
     return table_head[lang].format('\n'.join(brick_rows),
                                    '\n'.join(bricklet_rows),
                                    '\n'.join(extension_rows),
-                                   '\n'.join(power_supply_rows),
-                                   '\n'.join(accessory_rows))
+                                   '\n'.join(power_supply_rows))
 
 def make_download_tools_table():
     source_code = {
@@ -1159,9 +1146,6 @@ def make_source_code_gits_table():
  | |
  **Power Supplies** | |
 {3}
- | |
- **Accessories** | |
-{4}
 
 """,
     'de': """.. csv-table::
@@ -1189,9 +1173,6 @@ def make_source_code_gits_table():
  | |
  **Stromversorgungen** | |
 {3}
- | |
- **Zubehör** | |
-{4}
 
 """
     }
@@ -1205,7 +1186,6 @@ def make_source_code_gits_table():
     bricklet_rows = []
     extension_rows = []
     power_supply_rows = []
-    accessory_rows = []
 
     for brick_info in sorted(brick_infos, key=lambda x: x.short_display_name.lower()):
         if brick_info.is_documented:
@@ -1223,15 +1203,10 @@ def make_source_code_gits_table():
         if power_supply_info.is_documented:
             power_supply_rows.append(row[lang].format(power_supply_info.short_display_name, power_supply_info.git_name))
 
-    for accessory_info in sorted(accessory_infos, key=lambda x: x.short_display_name.lower()):
-        if accessory_info.is_documented:
-            accessory_rows.append(row[lang].format(accessory_info.short_display_name, accessory_info.git_name))
-
     return table_head[lang].format('\n'.join(brick_rows),
                                    '\n'.join(bricklet_rows),
                                    '\n'.join(extension_rows),
-                                   '\n'.join(power_supply_rows),
-                                   '\n'.join(accessory_rows))
+                                   '\n'.join(power_supply_rows))
 
 def make_index_hardware_device(device_infos, category):
     hardware_li = """<li><a class="reference internal" href="Hardware/{1}/{2}.html">{0}</a></li>"""
@@ -1275,8 +1250,6 @@ def make_index_hardware():
             {2}
             <h3>Power Supplies</h3>
             {3}
-            <h3>Accesories</h3>
-            {4}
         </div>
     </div>
 </div>
@@ -1285,14 +1258,13 @@ def make_index_hardware():
 
     index_html = {
     'en': index_html_en,
-    'de': index_html_en.replace('Power Supplies', 'Stromversorgungen').replace('Accesories', 'Zubehör')
+    'de': index_html_en.replace('Power Supplies', 'Stromversorgungen')
     }
 
     return index_html[lang].format(make_index_hardware_device(brick_infos, 'Bricks'),
                                    make_index_hardware_device(bricklet_infos, 'Bricklets'),
                                    make_index_hardware_device(extension_infos, 'Master_Extensions'),
-                                   make_index_hardware_device(power_supply_infos, 'Power_Supplies'),
-                                   make_index_hardware_device(accessory_infos, 'Accessories'))
+                                   make_index_hardware_device(power_supply_infos, 'Power_Supplies'))
 
 def make_index_api_device(device_infos, category, language):
     li = '<li><a class="reference internal" href="Software/{1}/{2}_{3}.html">{0}</a></li>'
@@ -1676,9 +1648,6 @@ def generate(path):
     debug('Generating Primer_power_supplies.table')
     write_if_changed(os.path.join(path, 'source', 'Primer_power_supplies.table'), make_primer_table(power_supply_infos))
 
-    debug('Generating Primer_accessories.table')
-    write_if_changed(os.path.join(path, 'source', 'Primer_accessories.table'), make_primer_table(accessory_infos))
-
     debug('Generating Downloads_tools.table')
     write_if_changed(os.path.join(path, 'source', 'Downloads_tools.table'), make_download_tools_table())
 
@@ -1727,12 +1696,6 @@ def generate(path):
     debug('Generating Power_Supplies_Discontinued.toctree')
     write_if_changed(os.path.join(path, 'source', 'Hardware', 'Power_Supplies', 'Power_Supplies_Discontinued.toctree'), make_hardware_devices_toctree(power_supply_infos, True))
 
-    debug('Generating Accessories.toctree')
-    write_if_changed(os.path.join(path, 'source', 'Hardware', 'Accessories', 'Accessories.toctree'), make_hardware_devices_toctree(accessory_infos, False))
-
-    debug('Generating Accessories_Discontinued.toctree')
-    write_if_changed(os.path.join(path, 'source', 'Hardware', 'Accessories', 'Accessories_Discontinued.toctree'), make_hardware_devices_toctree(accessory_infos, True))
-
     debug('Generating Bricks.table')
     write_if_changed(os.path.join(path, 'source', 'Hardware', 'Bricks', 'Bricks.table'), make_hardware_devices_table(brick_infos, False))
 
@@ -1756,12 +1719,6 @@ def generate(path):
 
     debug('Generating Power_Supplies_Discontinued.table')
     write_if_changed(os.path.join(path, 'source', 'Hardware', 'Power_Supplies', 'Power_Supplies_Discontinued.table'), make_hardware_devices_table(power_supply_infos, True))
-
-    debug('Generating Accessories.table')
-    write_if_changed(os.path.join(path, 'source', 'Hardware', 'Accessories', 'Accessories.table'), make_hardware_devices_table(accessory_infos, False))
-
-    debug('Generating Accessories_Discontinued.table')
-    write_if_changed(os.path.join(path, 'source', 'Hardware', 'Accessories', 'Accessories_Discontinued.table'), make_hardware_devices_table(accessory_infos, True))
 
     debug('Generating Discontinued_Products_table')
     write_if_changed(os.path.join(path, 'source', 'Hardware', 'Discontinued_Products.table'), make_discontinued_products_table())
