@@ -18,7 +18,7 @@ Die Rust-Bindings sind auch auf `crates.io <https://crates.io/crates/tinkerforge
 Voraussetzungen
 ---------------
 
-* Der Rust-Compiler in Version 1.31 oder neuer.
+* Der Rust-Compiler in Version 1.41 oder neuer.
 
 
 .. _api_bindings_rust_install:

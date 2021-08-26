@@ -17,7 +17,7 @@ The Rust bindings are also hosted on `crates.io <https://crates.io/crates/tinker
 Requirements
 ------------
 
-* The Rust compiler version 1.31 or greater.
+* The Rust compiler version 1.41 or greater.
 
 
 .. _api_bindings_rust_install:
