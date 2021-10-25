@@ -208,7 +208,7 @@ Schematic and Layout Files
 
 You can view or modify Brick/Bricklet schematics and PCB layouts. All of
 our hardware designs are made with the open source EDA tool 
-`KiCad <http://kicad-pcb.org/>`__.
+`KiCad <http://kicad.org/>`__.
 
 To open a KiCad project file you first have to link in the ``kicad-libraries``
 git (e.g. for the Master Brick)::

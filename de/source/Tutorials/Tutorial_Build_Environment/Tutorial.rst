@@ -222,7 +222,7 @@ Schaltpläne und Layouts
 
 Brick/Bricklet Schaltpläne und Layouts können angesehen und modifiziert werden.
 Die komplette Hardwareentwicklung der Bricks und Bricklets wurde mit dem
-Open Source EDA-Werkzeug `KiCad <http://kicad-pcb.org/>`__ bewerkstelligt.
+Open Source EDA-Werkzeug `KiCad <http://kicad.org/>`__ bewerkstelligt.
 
 Um eine KiCad-Projektdatei zu öffnen muss zuerst ein Symlink auf das
 ``kicad-libraries``-git gesetzt werden (zum Beispiel für den Master Brick)::
