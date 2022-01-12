@@ -161,6 +161,17 @@ Master Brick 2.1 is still available in our shop.
    :target: ../../_images/Bricks/brick_master21_tilted_front_800.jpg
 
 
+Errata Hardware Version 3.1
+---------------------------
+
+Embarrassingly we introduced a hardware bug in hardware version 3.1.
+
+In hardware version 3.1 we mixed up two pins on the stack connector that are used with the RS485 Extension.
+This bug was introduced in a last-minute change that we did between version 3.0 and 3.1 (3.0 was just used internally and was never released).
+Because of this error the RS485 Extension does not work with the Master Brick 3.1.
+
+This will be fixed in the soon to be released Master Brick 3.2.
+
 
 .. _master_brick_programming_interface:
 
