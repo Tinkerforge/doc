@@ -62,7 +62,7 @@ On Windows the ``Scripts/`` folder of the Python installation is a good choice::
 To be able to call the bindings directly on Windows you have to create a
 ``tinkerforge.bat`` file in the ``Scripts/`` folder with the following content::
 
- @"C:\Python\python.exe" "C:\Python\Scripts\tinkerforge"
+ @"C:\Python\python.exe" "C:\Python\Scripts\tinkerforge" %*
 
 If your Python is not installed in ``C:\Python\`` then you have to adapt the
 content of the ``tinkerforge.bat`` file accordingly.

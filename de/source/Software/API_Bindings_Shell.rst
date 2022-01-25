@@ -65,7 +65,7 @@ Damit die Bindings unter Windows direkt aufgerufen werden können muss noch eine
 ``tinkerforge.bat`` Datei im ``Scripts/`` Ordner mit folgendem Inhalt angelegt
 werden::
 
- @"C:\Python\python.exe" "C:\Python\Scripts\tinkerforge"
+ @"C:\Python\python.exe" "C:\Python\Scripts\tinkerforge" %*
 
 Wenn sich die Python Installation nicht im ``C:\Python\`` Ordner befindet,
 dann ist natürlich der Inhalt der ``tinkerforge.bat`` Datei entsprechend

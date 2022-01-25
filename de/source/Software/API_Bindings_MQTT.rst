@@ -66,15 +66,15 @@ sich im PATH befindet. Das kann unter Linux und macOS folgender Ordner sein::
 
 Unter Windows bietet sich der ``Scripts/`` Ordner der Python Installation an::
 
- C:\Python27\Scripts\
+ C:\Python\Scripts\
 
 Damit die Bindings unter Windows direkt aufgerufen werden können muss noch eine
 ``tinkerforge_mqtt.bat`` Datei im ``Scripts/`` Ordner mit folgendem Inhalt angelegt
 werden::
 
- @"C:\Python27\python.exe" "C:\Python27\Scripts\tinkerforge_mqtt"
+ @"C:\Python\python.exe" "C:\Python\Scripts\tinkerforge_mqtt" %*
 
-Wenn sich die Python-Installation nicht im ``C:\Python27\`` Ordner befindet,
+Wenn sich die Python-Installation nicht im ``C:\Python\`` Ordner befindet,
 dann ist natürlich der Inhalt der ``tinkerforge_mqtt.bat`` Datei entsprechend
 abzuändern.
 

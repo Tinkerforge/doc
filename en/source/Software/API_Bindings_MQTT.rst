@@ -61,14 +61,14 @@ that is in the ``PATH``. For example, this folder on Linux and macOS::
 
 On Windows the ``Scripts\`` folder of the Python installation is a good choice::
 
- C:\Python27\Scripts\
+ C:\Python\Scripts\
 
 To be able to call the bindings directly on Windows you have to create a
 ``tinkerforge_mqtt.bat`` file in the ``Scripts\`` folder with the following content::
 
- @"C:\Python27\python.exe" "C:\Python27\Scripts\tinkerforge_mqtt"
+ @"C:\Python\python.exe" "C:\Python\Scripts\tinkerforge_mqtt" %*
 
-If your Python is not installed in ``C:\Python27\`` then you have to adapt the
+If your Python is not installed in ``C:\Python\`` then you have to adapt the
 content of the ``tinkerforge_mqtt.bat`` file accordingly.
 
 Testing an Example
