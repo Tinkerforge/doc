@@ -1,6 +1,4 @@
 
-:shoplink: ../../../shop/bricklets/uv-light-bricklet.html
-
 .. include:: UV_Light.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
@@ -23,7 +21,7 @@ UV Light Bricklet
 
 .. note::
 
- Das UV Light Bricklet ist abgekündigt. Wir verkaufen noch unseren restlichen Lagerbestand.
+ Das UV Light Bricklet ist abgekündigt und wird nicht mehr verkauft.
  Als Ersatz wird das :ref:`UV Light Bricklet 2.0 <uv_light_v2_bricklet>`
  empfohlen.
 
