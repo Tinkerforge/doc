@@ -108,16 +108,6 @@ machines of the bindings are in states, that do not support sending other
 packets. Because of this,
 **calling getters, setters or tick functions inside a callback handler is not allowed**.
 
-To keep the bindings allocation-free, no high level callbacks are supported.
-High level callbacks are those, that use the streaming concept, I.e. send a
-payload of dynamic length or one that does not fit in a single TFP packet.
-You can instead use the low level callbacks and reassemble the payload yourself
-if you need the complete payload at the same time. For some use cases, for
-example if you want to find the pixel with the highest temperature in the
-:ref:`Thermal Imaging Bricklet <thermal_imaging_bricklet>` linear temperature
-image, you don't need to reassemble the payload, as you can just search over
-each chunk one after another.
-
 .. _api_bindings_uc_thread_safety:
 
 Thread safety

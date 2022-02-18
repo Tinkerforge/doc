@@ -33,30 +33,30 @@ Funktionen wie Zeitmessung und Logging.
 
 Um einen HAL zu implementieren müssen die folgenden Schritte durchgeführt werden:
 
-* Definition der ``TF_HalContext``- und ``TF_Port``-Strukturen
+* Definition der ``TF_HAL``- und ``TF_Port``-Strukturen
 * Implementierung der ``tf_hal_create`` und ``tf_hal_destroy``-Funktionen für die definierte Struktur
 * Implementierung der notwendigen HAL-Funktionen
 
 Die folgenden Funktionen aus :file:`bindings/hal_common.h` werden verwendet:
 
-.. c:function:: int tf_hal_common_create(TF_HalContext *hal)
+.. c:function:: int tf_hal_common_create(TF_HAL *hal)
 
- Initialisiert die ``TF_HalCommon``-Instanz die zum übergebenen ``TF_HalContext`` gehört.
+ Initialisiert die ``TF_HALCommon``-Instanz die zum übergebenen ``TF_HAL`` gehört.
  Diese Funktion muss bei der HAL-Initialisierung so früh wie möglich aufgerufen werden.
 
-.. c:function:: int tf_hal_common_prepare(TF_HalContext *hal, uint8_t port_count, uint32_t port_discovery_timeout_us)
+.. c:function:: int tf_hal_common_prepare(TF_HAL *hal, uint8_t port_count, uint32_t port_discovery_timeout_us)
 
- Schließt die Initialisierung der ``TF_HalCommon``-Instanz, die zum übergebenen ``TF_HalContext`` gehört,
+ Schließt die Initialisierung der ``TF_HALCommon``-Instanz, die zum übergebenen ``TF_HAL`` gehört,
  ab. Das ist typischerweise der letzte Schritt der HAL-Initialisierung. SPI-Kommunikation muss hier bereits
  möglich sein. Diese FUnktion erwartet die Anzahl verwendbarer Ports, sowie einen Timeout in Mikrosekunden,
  der angibt, wie lange die Bindings versuchen sollen, ein Gerät an einem der Ports zu erreichen.
- :c:func:`tf_hal_common_prepare` baut dann eine Liste der erreichbaren Geräte und speichert diese in der ``TF_HalCommon``-Instanz.
+ :c:func:`tf_hal_common_prepare` baut dann eine Liste der erreichbaren Geräte und speichert diese in der ``TF_HALCommon``-Instanz.
 
-Definition einer ``TF_HalContext``-Struktur
--------------------------------------------
+Definition einer ``TF_HAL``-Struktur
+------------------------------------
 
-Die ``TF_HalContext``-Struktur hält alle Informationen, die für die SPI-Kommunikation
-notwendig sind. Sie speichert außerdem eine Instanz von ``TF_HalCommon``,
+Die ``TF_HAL``-Struktur hält alle Informationen, die für die SPI-Kommunikation
+notwendig sind. Sie speichert außerdem eine Instanz von ``TF_HALCommon``,
 einem internen Typen, der pro HAL-Instanz einmal von den Bindings benötigt wird,
 sowie einen Pointer auf ein Array von Port-Mapping-Informationen (``TF_Port``).
 
@@ -74,12 +74,12 @@ Diese ist typischerweise der Index in ein ``TF_Port``-Array.
 Implemetierung der ``tf_hal_create`` und ``tf_hal_destroy``-Funktionen
 ----------------------------------------------------------------------
 
-Nachdem die ``TF_HalContext``-Funktion definiert wurde, muss deren Initialisierungsfunktion
+Nachdem die ``TF_HAL``-Funktion definiert wurde, muss deren Initialisierungsfunktion
 ``tf_hal_create`` implementiert werden. Sie hat folgende Aufgaben:
 
-* Die ``TF_HalContext``-Struktur in einen definierten Zustand bringen
+* Die ``TF_HAL``-Struktur in einen definierten Zustand bringen
 
-* Die ``TF_HalCommon``-Instanz mit :c:func:`tf_hal_common_create` initialisieren
+* Die ``TF_HALCommon``-Instanz mit :c:func:`tf_hal_common_create` initialisieren
 
 * Vorbereiten der SPI-Kommunikation
   Wenn die Initialisierungs-Funktion beendet ist, muss die SPI-Kommunikation mit allen angeschlossenen
@@ -112,7 +112,7 @@ definiert sind.
 Alle Funktionen, die einen int zurückgeben, sollten ``TF_E_OK`` zurückgeben, wenn
 kein Fehler aufgetreten ist.
 
-.. c:function:: int tf_hal_chip_select(TF_HalContext *hal, uint8_t port_id, bool enable)
+.. c:function:: int tf_hal_chip_select(TF_HAL *hal, uint8_t port_id, bool enable)
 
  Wenn ``enable`` true ist, wählt diese Funktion den Port mit der übergebenen ID für die folgende
  SPI-Kommunikation aus. Wenn ``enable`` false ist, wird der Port nicht mehr ausgewählt.
@@ -127,7 +127,7 @@ kein Fehler aufgetreten ist.
 
  Die Bindings stellen sicher, dass immer nur ein Port gleichzeitig ausgewählt wird.
 
-.. c:function:: int tf_hal_transceive(TF_HalContext *hal, uint8_t port_id, const uint8_t *write_buffer, uint8_t *read_buffer, uint32_t length)
+.. c:function:: int tf_hal_transceive(TF_HAL *hal, uint8_t port_id, const uint8_t *write_buffer, uint8_t *read_buffer, uint32_t length)
 
  Überträgt ``length`` Bytes an Daten aus dem ``write_buffer`` zum Bricklet und empfängt währenddessen
  die selbe Menge an Bytes vom Bricklet in den ``read_buffer`` (da SPI bidirektional ist). Die übergebenen
@@ -145,7 +145,7 @@ kein Fehler aufgetreten ist.
 
  .. code-block:: c
 
-  TF_HalCommon *common = tf_hal_get_common(hal);
+  TF_HALCommon *common = tf_hal_get_common(hal);
   common->locked = true
 
  Nachdem der Transfer abgeschlossen ist, sollten die Bindings wieder entsperrt werden, damit sie weiter
@@ -158,12 +158,12 @@ kein Fehler aufgetreten ist.
   Falls ein größerer Timeout verwendet wird, wird ``tf_hal_callback_tick`` nach dem Pollen :c:func:`tf_hal_sleep_us`
   aufrufen. Dort kann dann ``yield`` aufgerufen werden.
 
-.. c:function:: uint32_t tf_hal_current_time_us(TF_HalContext *hal)
+.. c:function:: uint32_t tf_hal_current_time_us(TF_HAL *hal)
 
  Gibt die aktuelle Zeit in Mikrosekunden zurück. Diese Zeit muss keine Relation zu einer "echten" Zeit haben,
  aber monoton außer bei Überläufen sein.
 
-.. c:function:: void tf_hal_sleep_us(TF_HalContext *hal, uint32_t us)
+.. c:function:: void tf_hal_sleep_us(TF_HAL *hal, uint32_t us)
 
  Blockiert für die übergebene Zeit in Mikrosekunden. Falls die Plattform kooperatives
  Multitasking unterstützt, können die Bindings hier gesperrt und danach durch ``yield``
@@ -173,11 +173,11 @@ kein Fehler aufgetreten ist.
   Die Zeit muss nur ungefähr eingehalten werden, falls deutlich länger als die übergebene Zeit
   blockiert wird, kann die Performance allerdings schlechter ausfallen.
 
-.. c:function:: TF_HalCommon *tf_hal_get_common(TF_HalContext *hal)
+.. c:function:: TF_HALCommon *tf_hal_get_common(TF_HAL *hal)
 
- Gibt die ``TF_HalCommon``-Instanz zurück, die zum übergebenen ``TF_HalContext`` gehört.
+ Gibt die ``TF_HALCommon``-Instanz zurück, die zum übergebenen ``TF_HAL`` gehört.
 
-.. c:function:: char tf_hal_get_port_name(TF_HalContext *hal, uint8_t port_id)
+.. c:function:: char tf_hal_get_port_name(TF_HAL *hal, uint8_t port_id)
 
  Gibt den Port-Namen (typischerweise ein Buchstabe zwischen 'A' and 'Z') für die übergebene Port-ID zurück.
  Der Name wird in ``get_identity``-Rückgaben eingefügt, falls das Gerät direkt mit dem Host

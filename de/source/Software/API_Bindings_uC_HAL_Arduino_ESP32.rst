@@ -118,7 +118,7 @@ Mit :cpp:func:`tf_hal_strerror` kann eine Fehlerbeschreibung zu einem Fehlercode
 Grundfunktionen
 ^^^^^^^^^^^^^^^
 
-.. cpp:function:: int tf_hal_create(TF_HalContext *hal, TF_Port *ports, uint8_t port_count)
+.. cpp:function:: int tf_hal_create(TF_HAL *hal, TF_Port *ports, uint8_t port_count)
 
  Erstellt ein HAL-Objekt, das verwendet werden kann um die verfügbaren Geräte aufzulisten.
  Es wird außerdem für den Konstruktor von Bricks und Bricklets benötigt.
@@ -130,9 +130,9 @@ Grundfunktionen
    Wenn das konfigurierte Log-Level nicht ``TF_LOG_LEVEL_NONE`` ist,
    muss die serielle Konsole initialisiert werden, bevor diese Funktion aufgerufen wird.
 
-.. cpp:function:: int tf_hal_destroy(TF_HalContext *hal)
+.. cpp:function:: int tf_hal_destroy(TF_HAL *hal)
 
- Zerstört den übergebenen ``TF_HalContext``.
+ Zerstört den übergebenen ``TF_HAL``.
 
 .. include:: API_Bindings_uC_HAL_Common.inc
 

@@ -45,7 +45,7 @@ stören. Falls mehrere Bricklets eingesetzt werden sollen, müssen deshalb vom
 Chip-Select-Signal kontrollierte Trenner-Chips eingesetzt werden.
 
 In naher Zukunft wird es eine neue Version des Breakout Bricklets geben, die sowohl
-einen 5V<->3,3V Pegelwandler, als auch einen Trenner für das MOSI-Signal mitbringt.
+einen 5V zu 3,3V Pegelwandler, als auch einen Trenner für das MOSI-Signal mitbringt.
 
 Voraussetzungen
 ---------------
@@ -61,21 +61,23 @@ Installation
  C/C++ Bindings für Mikrocontroller sind während der Beta-Phase im
  `TinkerUnity <https://www.tinkerunity.org/topic/5463-betaversion-der-cc-bindings-f%C3%BCr-mikrocontroller/>`__ verfügbar.
 
-Da es keine vorkompilierte Bibliothek für die C/C++ Bindings gibt, gibt es in
-diese Sinne auch nichts zu installieren. Die empfohlene Art und Weise die
-Bindings zu verwenden, ist ihren Quelltext direkt in das jeweilige C/C++ Projekt
-mit einzubinden.
-
-Testing an Example
-------------------
-
-The examples for each supported Brick and Bricklet are not self-contained, as they
-depend on the host hardware (and its HAL) you want to use. Many HALs contain an example driver that can run any example. See the specific HAL documentation for examples.
-
-.. _api_bindings_uc_hal:
+Da es keine vorkompilierte Bibliothek für die C/C++ Bindings für Mikrocontroller
+gibt, gibt es in diese Sinne auch nichts zu installieren. Die empfohlene Art und
+Weise die Bindings zu verwenden, ist ihren Quelltext direkt in das jeweilige C/C++
+Projekt mit einzubinden.
 
 Test eines Beispiels
 --------------------
+
+Die Beispiele für jeden unterstützten Brick und Bricklet sind nicht vollständig,
+da diese von der verwendeten Host-Hardware (und deren HAL) abhängen. Viele
+HALs beinhalten einen Beispiel-Treiber der jegliches Beispiel ausführen kann.
+Weitere Details sind in den spezifischen HAL Dokumentationen zu finden.
+
+.. _api_bindings_uc_hal:
+
+Hardware Abstraction Layer
+--------------------------
 
 Die C/C++ Bindings für Mikrocontroller funktionieren anders als die anderen verfügbaren Bindings.
 Während andere Bindings, die über TCP/IP mit einem Brick Daemon kommunizieren, eine IP Connection verwenden,
@@ -117,22 +119,13 @@ ausgeführt wird. Die Bindings sind deshalb während der Ausführung eines
 Callback-Handlers in einem Zustand, der es nicht erlaubt weitere Pakete zu schicken.
 **Es ist nicht erlaubt, Getter, Setter oder Tick-Funktionen aus einem Callback-Handler aufzurufen**
 
-Damit die Bindings allokationsfrei bleiben, werden keine High-Level-Callbacks unterstützt.
-Das sind diese, die das Streaming-Konzept verweden, also Daten mit dynamischer Länge,
-oder so großer Länge, dass sie nicht in ein einziges TFP-Paket passen, verschicken.
-Anstatt der High-Level-Callbacks können die entsprechenden Low-Level-Varianten verwendet werden.
-Die Nutzdaten können dann selbst wieder zusammengebaut werden. Für einige Anwendungsfälle
-ist das allerdings nicht notwendig. Wenn zum Beispiel der Pixel mit der höchsten Temperatur
-aus dem linearen Temperatur-Bild des :ref:`Thermal Imaging Bricklets <thermal_imaging_bricklet>`
-gesucht werden muss, kann jeder Bild-Block einzeln durchsucht werden und es muss nie
-der ganze Payload im Speicher gehalten werden.
 .. _api_bindings_uc_thread_safety:
 
 Threadsicherheit
 ----------------
 
 Die primäre Zielplatform für die Bindings sind Mikrocontroller,
-deshalb sind sie **nicht** thread-sicher. Einige HALS unterstützen
+deshalb sind sie **nicht** thread-sicher. Einige HALs unterstützen
 kooperatives Multitasking, es sind aber keine Aufrufe der Bindings-API
 erlaubt, während sie pausiert sind. Alle Funktionen geben während
 die Bindings pausiert sind, oder gerade ein Callback ausgeliefert wird,
@@ -200,7 +193,7 @@ in :file:`bindings/config.h` angepasst werden:
   * ``TF_LOG_LEVEL_NONE``: Deaktiviert das Logging komplett
   * ``TF_LOG_LEVEL_ERROR``: Loggt nur HAL-spezifische Fehler wenn sie auftreten
   * ``TF_LOG_LEVEL_INFO``: Loggt zusätzlich die Liste der gefundenen Geräte bei der HAL-Initialisierung
-  * ``TF_LOG_LEVEL_DEBUG``: Loggt zusätzlich alle interen Zustandsänderungen der SPITFP-Zustandsmaschine
+  * ``TF_LOG_LEVEL_DEBUG``: Loggt zusätzlich alle internen Zustandsänderungen der SPITFP-Zustandsmaschine
 
 * ``TF_IMPLEMENT_STRERROR``:
   Wenn dieses define entfernt wird, wird die ``tf_hal_strerror``-Funktion nicht implementiert.

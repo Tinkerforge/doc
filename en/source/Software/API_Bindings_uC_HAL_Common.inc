@@ -1,21 +1,21 @@
-.. cpp:function:: void tf_hal_set_timeout(TF_HalContext *hal, uint32_t timeout_us)
+.. cpp:function:: void tf_hal_set_timeout(TF_HAL *hal, uint32_t timeout_us)
 
  Sets the timeout in microseconds for getters and for setters for which the
  response expected flag is activated.
 
  The default timeout is 2500000 (2.5 seconds).
 
-.. cpp:function:: uint32_t tf_hal_get_timeout(TF_HalContext *hal)
+.. cpp:function:: uint32_t tf_hal_get_timeout(TF_HAL *hal)
 
  Returns the timeout as set by :cpp:func:`tf_hal_set_timeout`.
 
-.. cpp:function:: int tf_hal_get_device_info(TF_HalContext *hal, size_t index, char ret_uid[7], char *ret_port_name, uint16_t *ret_device_id)
+.. cpp:function:: int tf_hal_get_device_info(TF_HAL *hal, size_t index, char ret_uid[7], char *ret_port_name, uint16_t *ret_device_id)
 
  Returns the UID, port and :ref:`device identifier <device_identifier>` of the nth (=index) detected device.
  This function returns ``TF_E_DEVICE_NOT_FOUND`` if the index was equal or higher than the number of detected devices.
  To list all devices you can call this function in a loop with growing index until ``TF_E_DEVICE_NOT_FOUND`` is returned once.
 
-.. cpp:function:: int tf_hal_callback_tick(TF_HalContext *hal, uint32_t timeout_us)
+.. cpp:function:: int tf_hal_callback_tick(TF_HAL *hal, uint32_t timeout_us)
 
  Polls for callbacks on all devices with an registered callback handler. Will block for the given
  timeout in microseconds.
@@ -29,12 +29,12 @@
  of 0, all devices will be polled as fairly as possble.
 
 
-.. cpp:function:: bool tf_hal_deadline_elapsed(TF_HalContext *hal, uint32_t deadline_us)
+.. cpp:function:: bool tf_hal_deadline_elapsed(TF_HAL *hal, uint32_t deadline_us)
 
  Returns true if the deadline in microseconds is elapsed, false otherwise. Robust against
  overflows up to ``UINT32_MAX / 2``.
 
-.. cpp:function:: int tf_hal_get_error_counters(TF_HalContext *hal, char port_name, uint32_t *ret_spitfp_error_count_checksum, uint32_t *ret_spitfp_error_count_frame, uint32_t *ret_tfp_error_count_frame, uint32_t *ret_tfp_error_count_unexpected)
+.. cpp:function:: int tf_hal_get_error_counters(TF_HAL *hal, char port_name, uint32_t *ret_spitfp_error_count_checksum, uint32_t *ret_spitfp_error_count_frame, uint32_t *ret_tfp_error_count_frame, uint32_t *ret_tfp_error_count_unexpected)
 
  Returns the error counters for the given port. The following errors are counted:
 

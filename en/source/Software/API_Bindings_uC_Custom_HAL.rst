@@ -32,30 +32,30 @@ such as time keeping and logging.
 
 To implement a HAL, the following steps are necessary:
 
-* Definition of a ``TF_HalContext`` and ``TF_Port`` struct
+* Definition of a ``TF_HAL`` and ``TF_Port`` struct
 * Implementation of the ``tf_hal_create`` and ``tf_hal_destroy`` functions for the defined struct
 * Implementation of the required HAL functions
 
 The following functions defined in :file:`bindings/hal_common.h` will be used:
 
-.. c:function:: int tf_hal_common_create(TF_HalContext *hal)
+.. c:function:: int tf_hal_common_create(TF_HAL *hal)
 
- Initializes the ``TF_HalCommon`` instance associated with the given ``TF_HalContext``.
+ Initializes the ``TF_HALCommon`` instance associated with the given ``TF_HAL``.
  This function must be called while initializing your HAL as early as possible.
 
-.. c:function:: int tf_hal_common_prepare(TF_HalContext *hal, uint8_t port_count, uint32_t port_discovery_timeout_us)
+.. c:function:: int tf_hal_common_prepare(TF_HAL *hal, uint8_t port_count, uint32_t port_discovery_timeout_us)
 
- Finishes initializing the ``TF_HalCommon`` instance associated with the given ``TF_HalContext``.
+ Finishes initializing the ``TF_HALCommon`` instance associated with the given ``TF_HAL``.
  This is normally the last step in the initialization. SPI communication must be possible here.
  The function expects the number of usable ports as well as a timeout in microseconds, for how long
  the bindungs should try to reach a device under one of the ports.
- :c:func:`tf_hal_common_prepare` then builds a list of reachable devices and stores it in the ``TF_HalCommon`` instance.
+ :c:func:`tf_hal_common_prepare` then builds a list of reachable devices and stores it in the ``TF_HALCommon`` instance.
 
-Defining a ``TF_HalContext`` struct
------------------------------------
+Defining a ``TF_HAL`` struct
+----------------------------
 
-The ``TF_HalContext`` struct holds all data necessary for the SPI
-communication. It also stores an instance of ``TF_HalCommon``, an internal type required
+The ``TF_HAL`` struct holds all data necessary for the SPI
+communication. It also stores an instance of ``TF_HALCommon``, an internal type required
 once per HAL by the bindings, as well as as well as a Pointer to
 an array of port mapping information (``TF_Port``).
 
@@ -72,12 +72,12 @@ into an array of ``TF_Port``.
 Implementation of ``tf_hal_create`` and ``tf_hal_destroy``
 ----------------------------------------------------------
 
-The next step after defining the ``TF_HalContext`` struct is implementing its initialization function
+The next step after defining the ``TF_HAL`` struct is implementing its initialization function
 ``tf_hal_create``, that handles the following tasks:
 
-* Set the ``TF_HalContext`` struct to a defined state.
+* Set the ``TF_HAL`` struct to a defined state.
 
-* Initialize the ``TF_HalCommon`` instance with :c:func:`tf_hal_common_create`
+* Initialize the ``TF_HALCommon`` instance with :c:func:`tf_hal_common_create`
 
 * Prepare the SPI communication
   When your initialization function returns, SPI communication must be possible to all attached devices.
@@ -107,7 +107,7 @@ and
 ``// END - To be implemented by the specific HAL``
 All functions returning an int should return ``TF_E_OK`` on success.
 
-.. c:function:: int tf_hal_chip_select(TF_HalContext *hal, uint8_t port_id, bool enable)
+.. c:function:: int tf_hal_chip_select(TF_HAL *hal, uint8_t port_id, bool enable)
 
  If enable is true, this function selects the port with the given ID for the following SPI communication.
  If enable is false, this function deselects the port with the given ID.
@@ -120,7 +120,7 @@ All functions returning an int should return ``TF_E_OK`` on success.
  .. note:
   ``enable`` is true when the chip select pin is to be set to LOW. See below for details.
 
-.. c:function:: int tf_hal_transceive(TF_HalContext *hal, uint8_t port_id, const uint8_t *write_buffer, uint8_t *read_buffer, uint32_t length)
+.. c:function:: int tf_hal_transceive(TF_HAL *hal, uint8_t port_id, const uint8_t *write_buffer, uint8_t *read_buffer, uint32_t length)
 
  Transmits length bytes of data from the ``write_buffer`` to the bricklet while receiving the same
  amount of bytes (as SPI is bi-directional) into the ``read_buffer``. The buffers are always big enough
@@ -137,7 +137,7 @@ All functions returning an int should return ``TF_E_OK`` on success.
 
  .. code-block:: c
 
-  TF_HalCommon *common = tf_hal_get_common(hal);
+  TF_HALCommon *common = tf_hal_get_common(hal);
   common->locked = true
 
  Don't forget to unlock the bindings again when the transfer is done.
@@ -149,22 +149,22 @@ All functions returning an int should return ``TF_E_OK`` on success.
   should be ommited here. If a longer timeout is used, ``tf_hal_callback_tick``
   will call :c:func:`tf_hal_sleep_us` after polling. ``yield`` can then be called there.
 
-.. c:function:: uint32_t tf_hal_current_time_us(TF_HalContext *hal)
+.. c:function:: uint32_t tf_hal_current_time_us(TF_HAL *hal)
 
  Returns the current time in microseconds. This time has no relation to any "real" time,
  but is monotonic except for overflows.
 
-.. c:function:: void tf_hal_sleep_us(TF_HalContext *hal, uint32_t us)
+.. c:function:: void tf_hal_sleep_us(TF_HAL *hal, uint32_t us)
 
  Blocks for the given time in microseconds. If your platform supports cooperative
  multitasking, lock the bindings and yield if the time to sleep for is large enough.
  See :c:func:`tf_hal_transceive` for details.
 
-.. c:function:: TF_HalCommon *tf_hal_get_common(TF_HalContext *hal)
+.. c:function:: TF_HALCommon *tf_hal_get_common(TF_HAL *hal)
 
- Returns the ``TF_HalCommon`` instance associated with the given ``TF_HalContext``.
+ Returns the ``TF_HALCommon`` instance associated with the given ``TF_HAL``.
 
-.. c:function:: char tf_hal_get_port_name(TF_HalContext *hal, uint8_t port_id)
+.. c:function:: char tf_hal_get_port_name(TF_HAL *hal, uint8_t port_id)
 
  Returns the port name (typically a letter between 'A' and 'Z') for the given port ID.
  This name will be patched into ``get_identity`` results for devices directly connected

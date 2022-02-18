@@ -1,22 +1,22 @@
-.. cpp:function:: void tf_hal_set_timeout(TF_HalContext *hal, uint32_t timeout_us)
+.. cpp:function:: void tf_hal_set_timeout(TF_HAL *hal, uint32_t timeout_us)
 
  Setzt den Timeout in Mikrosekunden für Getter und Setter für die das Response-Expected-Flag
  gesetzt ist.
 
  Der Standard-Timeout ist 2500000 (2,5 Sekunden).
 
-.. cpp:function:: uint32_t tf_hal_get_timeout(TF_HalContext *hal)
+.. cpp:function:: uint32_t tf_hal_get_timeout(TF_HAL *hal)
 
  Gibt den Timeout zurück, der von :cpp:func:`tf_hal_set_timeout` gesetzt wurde.
 
-.. cpp:function:: int tf_hal_get_device_info(TF_HalContext *hal, size_t index, char ret_uid[7], char *ret_port_name, uint16_t *ret_device_id)
+.. cpp:function:: int tf_hal_get_device_info(TF_HAL *hal, size_t index, char ret_uid[7], char *ret_port_name, uint16_t *ret_device_id)
 
  Gibt die UID, den Port und den :ref:`Device-Identifier <device_identifier>` für das n-te (=index)
  gefundene Gerät zurück. Diese Funktion gibt ``TF_E_DEVICE_NOT_FOUND`` zurück, wenn der index größer
  oder gleich der Anzahl gefundener Geräte ist. Damit alle Geräte aufgelistet werden, kann diese Funktion
  in einer Schleife mit wachsendem index aufgerufen werden, bis einmal ``TF_E_DEVICE_NOT_FOUND`` zurückgegeben wird.
 
-.. cpp:function:: int tf_hal_callback_tick(TF_HalContext *hal, uint32_t timeout_us)
+.. cpp:function:: int tf_hal_callback_tick(TF_HAL *hal, uint32_t timeout_us)
 
  Pollt auf allen Geräten mit registriertem Callback-Handler nach Callbacks. Blockiert für
  die übergebene Zeit in Mikrosekunden.
@@ -30,12 +30,12 @@
  Diese Funktion pollt mit einem Round-Robin-Scheduler über mehrere Aufrufe. Das heißt dass selbst
  wenn immer mit einem Timeout von 0 gepollt wird, alle Geräte so fair wie möglich abgefragt werden.
 
-.. cpp:function:: bool tf_hal_deadline_elapsed(TF_HalContext *hal, uint32_t deadline_us)
+.. cpp:function:: bool tf_hal_deadline_elapsed(TF_HAL *hal, uint32_t deadline_us)
 
  Gibt true zurück, wenn die übergebene Deadline in Mikrosekunden abgelaufen ist, ansonsten false.
  Robust gegen Überläufe bis zu ``UINT32_MAX / 2``.
 
-.. cpp:function:: int tf_hal_get_error_counters(TF_HalContext *hal, char port_name, uint32_t *ret_spitfp_error_count_checksum, uint32_t *ret_spitfp_error_count_frame, uint32_t *ret_tfp_error_count_frame, uint32_t *ret_tfp_error_count_unexpected)
+.. cpp:function:: int tf_hal_get_error_counters(TF_HAL *hal, char port_name, uint32_t *ret_spitfp_error_count_checksum, uint32_t *ret_spitfp_error_count_frame, uint32_t *ret_tfp_error_count_frame, uint32_t *ret_tfp_error_count_unexpected)
 
  Gibt die Fehlerzähler für den übergebenen Port zurück. Folgende Fehler werden gezählt:
 

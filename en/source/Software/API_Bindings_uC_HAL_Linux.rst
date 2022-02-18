@@ -162,9 +162,7 @@ an error string for an error code.
 Basic Functions
 ^^^^^^^^^^^^^^^
 
-
-
-.. cpp:function:: int tf_hal_create(TF_HalContext *hal, const char *spidev_path, TF_Port *ports, uint8_t port_count)
+.. cpp:function:: int tf_hal_create(TF_HAL *hal, const char *spidev_path, TF_Port *ports, uint8_t port_count)
 
  Creates a HAL object that can be used to list the available devices.
  It is also requred for the constructor of Bricks and Bricklets.
@@ -173,9 +171,9 @@ Basic Functions
  * ``ports`` is an array of port specifications, as described :ref:`here <api_bindings_uc_hal_linux_port_spec>`
  * ``port_count`` is the length of the ``ports`` array.
 
-.. cpp:function:: int tf_hal_destroy(TF_HalContext *hal)
+.. cpp:function:: int tf_hal_destroy(TF_HAL *hal)
 
- Destroys the given ``TF_HalContext``.
+ Destroys the given ``TF_HAL``.
 
 .. include:: API_Bindings_uC_HAL_Common.inc
 
