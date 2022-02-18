@@ -82,7 +82,7 @@ Ressourcen
 * 3D Modell (`Online ansehen <https://autode.sk/2Xh7HUf>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricks/hat_zero/hat-zero.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricks/hat_zero/hat-zero.FCStd>`__)
 
 
-.. _hat_zero_brick_erste_schritte:
+.. _hat_zero_brick_getting_started:
 
 Erste Schritte
 --------------
