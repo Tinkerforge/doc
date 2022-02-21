@@ -57,10 +57,17 @@ Ressourcen
 .. _esp32_brick_getting_started:
 
 Erste Schritte
----------------
+--------------
+
+TODO: Wie konfiguriert man die WLAN Verbindung des ESP32 Brick mit Standard-Firmware
+um diesen als Ersatz für einen Master Brick mit WIFI Extension zu verwenden?
 
 
-.. _esp32_brick_programming_interface:
+.. _esp32_brick_firmware:
 
-Programmierschnittstelle
-------------------------
+Firmware
+--------
+
+TODO: Welche Firmware-Varianten exisieren und wie verwendet man diese?
+
+:ref:`esp32_firmware`

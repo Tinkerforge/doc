@@ -8,6 +8,9 @@ with Bricks and Bricklets, as well as their firmwares and plugins:
 * :ref:`Brick Logger <brick_logger>`
 * :ref:`API Bindings <api_bindings>`
 
+..
+ * :ref:`ESP32 Firmware <esp32_firmware>`
+
 All software is available in the :ref:`downloads section <downloads>` and is
 also hosted in our :ref:`APT repository <apt_repository>` for Debian based Linux
 distributions. The :ref:`source code and links for bug trackers <source_code>`

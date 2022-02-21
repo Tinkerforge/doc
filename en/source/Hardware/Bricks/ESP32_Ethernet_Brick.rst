@@ -59,8 +59,15 @@ Resources
 Getting Started
 ---------------
 
+TODO: How to configure the WIFI/Ethernet connection of the default firmware of the
+ESP32 Ethernet Brick to use it as replacement for Master Brick with WIFI/Ethernet Extension?
 
-.. _esp32_ethernet_brick_programming_interface:
 
-Programming Interface
----------------------
+.. _esp32_ethernet_brick_firmware:
+
+Firmware
+--------
+
+TODO: What firmware variations exists and how to use them?
+
+:ref:`esp32_firmware`

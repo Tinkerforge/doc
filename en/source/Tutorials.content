@@ -8,3 +8,6 @@ and their concepts:
 * :ref:`RED Brick <tutorial_red_brick>`
 * :ref:`Build Environment Setup <tutorial_build_environment_setup>` (for firmware development)
 * :ref:`Bricklet Cables (7 pole vs 10 pole) <tutorial_bricklet_cables>`
+
+..
+ * :ref:`ESP32 Brick Firmware <tutorial_esp32_firmware>`

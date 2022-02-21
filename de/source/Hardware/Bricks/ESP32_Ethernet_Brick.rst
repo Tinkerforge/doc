@@ -59,8 +59,15 @@ Ressourcen
 Erste Schritte
 --------------
 
+TODO: Wie konfiguriert man die WLAN/LAN Verbindung des ESP32 Ethernet Brick mit Standard-Firmware
+um diesen als Ersatz für einen Master Brick mit WIFI/Ethernet Extension zu verwenden?
 
-.. _esp32_ethernet_brick_programming_interface:
 
-Programmierschnittstelle
-------------------------
+.. _esp32_ethernet_brick_firmware:
+
+Firmware
+--------
+
+TODO: Welche Firmware-Varianten exisieren und wie verwendet man diese?
+
+:ref:`esp32_firmware`
