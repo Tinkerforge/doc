@@ -148,7 +148,7 @@ We provide examples for:
 Font
 ----
 
-The Bricklet has an embedded font (ASCII subset in green) that allows fast and
+The Bricklet has an embedded font (code page 437, ASCII subset in green) that allows fast and
 easy text rendering (up to 26x8 characters):
 
 .. image:: /Images/Bricklets/bricklet_oled_font.png

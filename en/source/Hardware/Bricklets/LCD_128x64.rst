@@ -200,7 +200,7 @@ effect of the button during a click will not permanently overwrite your custom i
 Font
 ----
 
-The Bricklet has an embedded font (ASCII subset in green) that allows fast and
+The Bricklet has an embedded font (code page 437, ASCII subset in green) that allows fast and
 easy text rendering (up to 22x8 characters):
 
 .. image:: /Images/Bricklets/bricklet_lcd_128x64_font.png

@@ -201,7 +201,7 @@ erzeugt, da der Effekt das Icon nicht permanent überschreibt.
 Zeichensatz
 -----------
 
-Das Bricklet beinhaltet folgenden Zeichensatz (ASCII ist grün markiert), mit
+Das Bricklet beinhaltet folgenden Zeichensatz (Codepage 437, ASCII ist grün markiert), mit
 dem schnell und einfach Text (bis zu 22x8 Zeichen) auf dem Display angezeigt
 werden kann:
 

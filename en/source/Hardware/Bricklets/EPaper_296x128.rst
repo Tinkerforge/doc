@@ -194,7 +194,7 @@ go back to the delta mode with flicker-free updates.
 Font
 ----
 
-The Bricklet has an embedded font (ASCII subset in green) that allows fast and
+The Bricklet has an embedded font (code page 437, ASCII subset in green) that allows fast and
 easy text rendering:
 
 .. image:: /Images/Bricklets/bricklet_e_paper_296x128_font.png

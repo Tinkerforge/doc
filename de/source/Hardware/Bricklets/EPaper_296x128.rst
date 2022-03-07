@@ -197,7 +197,7 @@ flackerfreie Aktualisierungen.
 Zeichensatz
 -----------
 
-Das Bricklet beinhaltet folgenden Zeichensatz (ASCII ist grün markiert), mit
+Das Bricklet beinhaltet folgenden Zeichensatz (Codepage 437, ASCII ist grün markiert), mit
 dem schnell und einfach Text auf dem Display angezeigt werden kann:
 
 .. image:: /Images/Bricklets/bricklet_e_paper_296x128_font.png

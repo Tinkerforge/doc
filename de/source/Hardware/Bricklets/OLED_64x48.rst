@@ -157,7 +157,7 @@ Wir haben Beispiele für
 Zeichensatz
 -----------
 
-Das Bricklet beinhaltet folgenden Zeichensatz (ASCII ist grün markiert), mit
+Das Bricklet beinhaltet folgenden Zeichensatz (Codepage 437, ASCII ist grün markiert), mit
 dem schnell und einfach Text (bis zu 13x6 Zeichen) auf dem Display angezeigt
 werden kann:
 
