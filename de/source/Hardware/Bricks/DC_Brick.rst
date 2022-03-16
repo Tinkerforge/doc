@@ -158,7 +158,7 @@ Motorgeschwindigkeit. Ganz unten kann die Mindestspannung des Motors eingestellt
 werden. Wird diese unterschritten wird der Undervoltage Callback ausgelöst.
 
 Unterhalb der Regler befinden sich Knöpfe für "Full Break" und die verschiedenen
-Fahrmodi (siehe :ref:`here <dc_brick_drive_mode>` für weiterführende Information).
+Fahrmodi (siehe :ref:`hier <dc_brick_drive_mode>` für weiterführende Information).
 
 |test_pi_ref|
 

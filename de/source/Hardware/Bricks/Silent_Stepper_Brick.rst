@@ -123,7 +123,7 @@ Erster Test
 |test_intro|
 
 Verbinde einen Schrittmotor mit dem Brick und eine passende Stromversorgung an
-den Brick an (siehe :ref:`here <silent_stepper_brick_connectivity>`).
+den Brick an (siehe :ref:`hier <silent_stepper_brick_connectivity>`).
 Der Aufbau sollte dem im folgenden Bild ähnlich sehen.
 
 .. image:: /Images/Bricks/brick_silent_stepper_motor_setup_600.jpg
