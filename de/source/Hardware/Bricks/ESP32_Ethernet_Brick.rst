@@ -108,7 +108,7 @@ Adresskonfiguration aktiviert.
 Änderungen werden erst nach einem Druck auf den Speichern-Knopf und einem
 Neustart des Bricks übernommen.
 
-.. image:: /Images/Bricks/brick_esp32_ethernet_lan_config_de.png
+.. image:: /Images/Bricks/brick_esp32_ethernet_lan_config_de_450.png
    :scale: 100 %
    :alt: ESP32 Ethernet Brick LAN-Verbindung konfigurieren
    :align: center
@@ -134,7 +134,7 @@ Netzwerk aus dem Menü ausgewählt wurde.
 Änderungen werden erst nach einem Druck auf den Speichern-Knopf und einem
 Neustart des Bricks übernommen.
 
-.. image:: /Images/Bricks/brick_esp32_ethernet_wifi_config_de.png
+.. image:: /Images/Bricks/brick_esp32_ethernet_wifi_config_de_450.png
    :scale: 100 %
    :alt: ESP32 Ethernet Brick WLAN-Verbindung konfigurieren
    :align: center
@@ -160,7 +160,7 @@ auf den Auslieferungszustand.
 Änderungen werden erst nach einem Druck auf den Speichern-Knopf und einem
 Neustart des Bricks übernommen.
 
-.. image:: /Images/Bricks/brick_esp32_ethernet_ap_config_de.png
+.. image:: /Images/Bricks/brick_esp32_ethernet_ap_config_de_450.png
    :scale: 100 %
    :alt: ESP32 Ethernet Brick WLAN-Access-Point konfigurieren
    :align: center
