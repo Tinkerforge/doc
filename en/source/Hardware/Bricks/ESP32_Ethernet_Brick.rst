@@ -49,7 +49,7 @@ Resources
 
 * Schematic (`Download <https://github.com/Tinkerforge/esp32-ethernet-brick/raw/master/hardware/esp32-ethernet-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/esp32_ethernet_brick_dimensions.png>`__)
-* Source code (`Download <https://github.com/Tinkerforge/esp32-fimrware/zipball/master>`__)
+* Source code (`Download <https://github.com/Tinkerforge/esp32-firmware/zipball/master>`__)
 * Design files (`Download <https://github.com/Tinkerforge/esp32-ethernet-brick/zipball/master>`__)
 * 3D model (`View online <https://autode.sk/TBD>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricks/esp32_ethernet/esp32-ethernet.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricks/esp32_ethernet/esp32-ethernet.FCStd>`__)
 
