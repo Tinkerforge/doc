@@ -14,6 +14,8 @@ ESP32 Ethernet Brick
 
 	{% tfgallery %}
 
+	Bricks/brick_esp32_ethernet_brickv_[100|].jpg     ESP32 Ethernet Brick im Brick Viewer
+
 	{% tfgalleryend %}
 
 
@@ -182,11 +184,11 @@ WLAN-Zugangsdaten-Aufkleber auf der Rückseite des Bricks vermerkt.
 Nach dem Klick auf den Connect-Knopf sollte im Brick Viewer ein neuer Tab namens
 "ESP32 Ethernet Brick" auftauchen. Wähle diesen Tab aus.
 
-.. image:: /Images/Bricks/esp32_ethernet_brickv.jpg
+.. image:: /Images/Bricks/brick_esp32_ethernet_brickv.jpg
    :scale: 100 %
    :alt: ESP32 Ethernet Brick im Brick Viewer
    :align: center
-   :target: ../../_images/Bricks/esp32_ethernet_brickv.jpg
+   :target: ../../_images/Bricks/brick_esp32_ethernet_brickv.jpg
 
 Im Brick Viewer stellt der ESP32 Ethernet Brick keine weitere Funktionalität
 bereit, sondern dient nur dazu Zugriff auf die angeschlossenen Bricklets bieten.
