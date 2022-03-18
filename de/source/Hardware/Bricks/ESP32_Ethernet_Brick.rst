@@ -75,7 +75,11 @@ LED in der LAN-Buchse des Bricks zu blinken beginnen und der Brick unter
 Der individuelle Hostname (z.B. ``esp32-ABC``) ist auf dem
 WLAN-Zugangsdaten-Aufkleber auf der Rückseite des Bricks vermerkt.
 
-TODO: Bild von einem WLAN-Zugangsdaten-Aufkleber
+.. image:: /Images/Bricks/brick_esp32_ethernet_label_350.jpg
+   :scale: 100 %
+   :alt: WLAN-Zugangsdaten-Aufkleber
+   :align: center
+   :target: ../../_images/Bricks/brick_esp32_ethernet_label_800.jpg
 
 Für eine LAN-Verbindung mit statischer Adresskonfiguration oder die
 Verbindung zu einem bestehenden WLAN-Netzwerk muss zunächst eine Verbindung zum
@@ -191,7 +195,7 @@ Nach dem Klick auf den Connect-Knopf sollte im Brick Viewer ein neuer Tab namens
    :target: ../../_images/Bricks/brick_esp32_ethernet_brickv.jpg
 
 Im Brick Viewer stellt der ESP32 Ethernet Brick keine weitere Funktionalität
-bereit, sondern dient nur dazu Zugriff auf die angeschlossenen Bricklets bieten.
+bereit, sondern dient nur dazu Zugriff auf die angeschlossenen Bricklets zu bieten.
 Jegliche Einstellungen des Bricks werden über dessen Webinterface vorgenommen.
 
 .. _esp32_ethernet_brick_firmware:
@@ -199,6 +203,25 @@ Jegliche Einstellungen des Bricks werden über dessen Webinterface vorgenommen.
 Firmware
 --------
 
-TODO: Welche Firmware-Varianten existieren und wie verwendet man diese?
+Für den ESP32 Ethernet Brick stehen verschiedenen Firmware-Optionen zur Verfügung:
 
-:ref:`esp32_firmware`
+* **Standard-Firmware**:
+  Der ESP32 Ethernet Brick ist im Auslieferungszustand mit der
+  `Standard-Firmware <https://github.com/Tinkerforge/esp32-firmware>`__
+  geflasht. Diese ermöglicht es die Netzwerkkonfiguration über das Webinterface
+  vorzunehmen und über die Netzwerkverbindung des Bricks ist der Zugriff auf
+  angeschlossene Bricklets über :ref:`Brick Viewer <brickv>` und die
+  :ref:`API Bindings <api_bindings>` möglich, ähnlich zu einem
+  :ref:`Master Brick <master_brick>` mit :ref:`Ethernet <ethernet_extension>`
+  oder :ref:`WIFI Master Extension 2.0 <wifi_v2_extension>`.
+* **Erweiterung der Standard-Firmware:**:
+  Die Funktionalität und das Webinterface der Standard-Firmware sind aus Modulen
+  zusammengesetzt. Dieses :ref:`Tutorial zur ESP32 Firmware <tutorial_esp32_firmware>`
+  erklärt Schritt für Schritt wie die Standard-Firmware um ein eigenes Modul
+  erweitert werden kann.
+* **Eigene Firmware auf Basis der C/C++ Bindings für Mikrocontroller**:
+  Die :ref:`C/C++ Bindings für Mikrocontroller <api_bindings_uc>` erlauben es von unterstützten
+  Mikrocontrollern aus direkt mit Bricklets zu kommunizieren. Diese API Bindings
+  können z.B. zusammen mit dem `Arduino ESP32 Projekt <https://docs.espressif.com/projects/arduino-esp32/>`__
+  verwendet werden, um eine eigene Firmware für den ESP32 Ethernet Brick zu
+  erstellen.
