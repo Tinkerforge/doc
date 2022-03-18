@@ -75,7 +75,7 @@ LED in der LAN-Buchse des Bricks zu blinken beginnen und der Brick unter
 Der individuelle Hostname (z.B. ``esp32-ABC``) ist auf dem
 WLAN-Zugangsdaten-Aufkleber auf der Rückseite des Bricks vermerkt.
 
-.. image:: /Images/Bricks/brick_esp32_ethernet_label_350.jpg
+.. image:: /Images/Bricks/brick_esp32_ethernet_label_200.jpg
    :scale: 100 %
    :alt: WLAN-Zugangsdaten-Aufkleber
    :align: center
