@@ -214,7 +214,7 @@ Für den ESP32 Ethernet Brick stehen verschiedenen Firmware-Optionen zur Verfüg
   :ref:`API Bindings <api_bindings>` möglich, ähnlich zu einem
   :ref:`Master Brick <master_brick>` mit :ref:`Ethernet <ethernet_extension>`
   oder :ref:`WIFI Master Extension 2.0 <wifi_v2_extension>`.
-* **Erweiterung der Standard-Firmware:**:
+* **Erweiterung der Standard-Firmware**:
   Die Funktionalität und das Webinterface der Standard-Firmware sind aus Modulen
   zusammengesetzt. Dieses :ref:`Tutorial zur ESP32 Firmware <tutorial_esp32_firmware>`
   erklärt Schritt für Schritt wie die Standard-Firmware um ein eigenes Modul
