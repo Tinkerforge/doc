@@ -14,6 +14,9 @@ ESP32 Brick
 
 	{% tfgallery %}
 
+	Bricks/brick_esp32_tilted_front_[?|?].jpg        ESP32 Brick
+	Bricks/brick_esp32_brickv_[100|].jpg             ESP32 Ethernet Brick im Brick Viewer
+
 	{% tfgalleryend %}
 
 
@@ -54,14 +57,18 @@ Ressourcen
 * 3D Modell (`View online <https://autode.sk/TBD>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricks/esp32/esp32.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricks/esp32/esp32.FCStd>`__)
 
 
-.. _esp32_brick_getting_started:
+.. _esp32_brick_setup:
 
-Erste Schritte
---------------
+Ersteinrichtung
+---------------
 
 TODO: Wie konfiguriert man die WLAN Verbindung des ESP32 Brick mit Standard-Firmware
 um diesen als Ersatz für einen Master Brick mit WIFI Extension zu verwenden?
 
+.. _esp32_brick_test:
+
+Erster Test
+-----------
 
 .. _esp32_brick_firmware:
 

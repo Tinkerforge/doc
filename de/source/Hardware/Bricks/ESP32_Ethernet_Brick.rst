@@ -14,7 +14,9 @@ ESP32 Ethernet Brick
 
 	{% tfgallery %}
 
-	Bricks/brick_esp32_ethernet_brickv_[100|].jpg     ESP32 Ethernet Brick im Brick Viewer
+
+	Bricks/brick_esp32_ethernet_tilted_front_[?|?].jpg        ESP32 Ethernet Brick
+	Bricks/brick_esp32_ethernet_brickv_[100|].jpg             ESP32 Ethernet Brick im Brick Viewer
 
 	{% tfgalleryend %}
 
@@ -96,7 +98,7 @@ Wenn die WLAN-Verbindung zum Access-Point des Bricks hergestellt ist, dann ist
 das Webinterface unter ``http://10.0.0.1`` erreichbar. Eventuell muss auf dem
 Smartphone dazu die mobile Datenverbindung deaktiviert werden.
 
-Der auf Samsung Smartphones vorinstallierte Browser *Samsung Internet* scheint
+Der auf Samsung Smartphones vorinstallierte Browser "Samsung Internet" scheint
 Probleme mit WebSockets aufzuweisen, so dass in diesem Browser das Webinterface
 nicht richtig funktioniert. In diesem Fall bitte einen anderen Browser, z.B.
 Firefox oder Chrome, verwenden.
@@ -105,7 +107,7 @@ LAN-Verbindung konfigurieren
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Auf der Unterseite **Netzwerk > LAN-Verbindung** kann die LAN-Verbindung de/-aktiviert
-und die Adresskonfiguration zwischen *automatisch (DHCP)* und *statisch* umgestellt
+und die Adresskonfiguration zwischen "automatisch (DHCP)" und "statisch" umgestellt
 werden. Im Auslieferungszustand ist die LAN-Verbindung mit automatischer
 Adresskonfiguration aktiviert.
 
