@@ -35,18 +35,31 @@ muss:
 
 Um das jeweilige Tutorial-Modul zu aktivieren muss dessen Name am Ende der
 Optionen ``backend_modules`` und ``frontend_modules`` des entsprechenden
-Abschnitts hinzufügt werden.
+Abschnitts hinzufügt werden und die Firmware mittels "Upload and Monitor"
+Ausgabe in Visual Studio Code neu gebaut und auf den Brick geflasht werden.
 
 Phase 1: Leeres Modul anlegen
 -----------------------------
 
 Modulname für die ``platformio.ini`` Datei: ``Tutorial Phase 1``
 
-.. image:: /Images/Tutorial/tutorial_esp32_phase_1_de_600.png
+Mit diesem Modul aktiviert taucht im Webinterface eine leere Unterseite namens
+"Tutorial (Phase 1)" auf:
+
+.. image:: /Images/Tutorial/tutorial_esp32_phase_1_frontend_de_600.png
    :scale: 100 %
-   :alt: Webinterface Phase 1
+   :alt: Webinterface (Phase 1)
    :align: center
-   :target: ../../_images/Tutorial/tutorial_esp32_phase_1_de_1200.png
+   :target: ../../_images/Tutorial/tutorial_esp32_phase_1_frontend_de_1200.png
+
+Auf der seriellen Konsole wird die Meldung ``Tutorial (Phase 1) module initialized``
+ausgegeben:
+
+.. image:: /Images/Tutorial/tutorial_esp32_phase_1_backend_600.png
+   :scale: 100 %
+   :alt: Serielle Konsole (Phase 1)
+   :align: center
+   :target: ../../_images/Tutorial/tutorial_esp32_phase_1_backend_600.png
 
 Module teilen sich in zwei Gruppen auf:
 
@@ -59,7 +72,8 @@ Module teilen sich in zwei Gruppen auf:
   Modulverzeichnis: ``web/src/modules/``
 
 Typischerweise treten Module in Backend/Frontend-Paaren auf, dies ist aber nicht
-zwingend. Es kann Backend-Module ohne Frontend-Module geben und anders herum.
+zwingend. Es kann Backend-Module ohne entsprechendes Frontend-Modul geben und
+anders herum.
 
 Aus dem Modulname in der ``platformio.ini`` Datei leitet sich der Verzeichnisname
 für das Modul ab. Aus ``Tutorial Phase 1`` wird ``tutorial_phase_1`` (alle
@@ -94,5 +108,354 @@ Jedes Frontend-Modul kann optional folgende Dateien beinhalten:
 * **api.ts**: TypeScript-Definition der Backend-API die dieses Frontend-Modul
   nutzt.
 * **main.ts**: TypeScript-Code der für dieses Modul ausgeführt wird.
-* **translation_en.json**: Englische Übersetzung der Texte des Moduls.
 * **translation_de.json**: Deutsche Übersetzung der Texte des Moduls.
+* **translation_en.json**: Englische Übersetzung der Texte des Moduls.
+
+Phase 2: Kommunikation Backend zu Frontend
+------------------------------------------
+
+Modulname für die ``platformio.ini`` Datei: ``Tutorial Phase 2``
+
+Mit diesem Modul aktiviert taucht im Webinterface eine Unterseite mit Farbanzeige
+namens "Tutorial (Phase 2)" auf:
+
+.. image:: /Images/Tutorial/tutorial_esp32_phase_2_frontend_red_de_600.png
+   :scale: 100 %
+   :alt: Webinterface (Phase 2), Farbe Rot
+   :align: center
+   :target: ../../_images/Tutorial/tutorial_esp32_phase_2_frontend_red_de_1200.png
+
+Die Farbe wird dabei durch das Backend-Modul festgelegt und an das Frontend-Modul
+kommuniziert.
+
+Backend-Teil der Kommunikation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Das Backend-Modul repräsentiert die Daten, die zum Frontend-Modul kommuniziert
+werden sollen, strukturiert als ``ConfigRoot`` Objekt. In diesem Fall ist nur
+ein Element namens ``color`` vorhanden, das als Wert einen String mit exakt 7 Byte
+Länge hat, um eine Farbe in HTML Notation ``#RRGGBB`` zu speichern. Der Wert
+``#FF0000`` stellt die Farbe Rot dar. Auszug aus ``tutorial_phase_2.cpp`` dazu:
+
+.. code-block:: cpp
+
+    void TutorialPhase2::setup()
+    {
+        tutorial_config = Config::Object({
+            {"color", Config::Str("#FF0000", 7, 7)}
+        });
+
+        logger.printfln("Tutorial (Phase 2) module initialized");
+
+        initialized = true;
+    }
+
+Damit die Farbe an das Frontend-Modul kommuniziert wird, muss das ``ConfigRoot``
+Objekt dem API Manager als Zustand bekannt gemacht werden. Dafür wird der Name
+``tutorial_phase_2/config`` verwendet. Der API Manager überprüft dann alle 1000
+Millisekunden das ``ConfigRoot`` Objekt auf Änderungen und schickt diese
+automatisch an das Frontend-Modul. Auszug aus ``tutorial_phase_2.cpp`` dazu:
+
+.. code-block:: cpp
+
+    void TutorialPhase2::register_urls()
+    {
+        api.addState("tutorial_phase_2/config", &tutorial_config, {}, 1000);
+    }
+
+Frontend-Teil der Kommunikation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Das Frontend-Modul legt in seiner ``api.ts`` Datei die Struktur der Daten fest,
+die es vom Backend-Modul empfangen will:
+
+.. code-block:: ts
+
+    export interface config
+    {
+        color: string
+    }
+
+In der ``main.ts`` Datei wird ein Event-Listener für den Zustand
+``tutorial_phase_2/config`` erzeugt, damit die lokale Funktion ``update_config``
+aufgerufen wird, wenn vom API Manager Änderungen mitgeteilt werden:
+
+.. code-block:: ts
+
+    export function add_event_listeners(source: API.APIEventTarget)
+    {
+        source.addEventListener("tutorial_phase_2/config", update_config);
+    }
+
+In der ``update_config`` Funktion wird der aktuelle Wert des
+``tutorial_phase_2/config`` Zustand abgefragt und der enthaltene Farbwert zur
+Anzeige an das HTML Element ``#tutorial_phase_2_color`` zugewiesen:
+
+.. code-block:: ts
+
+    function update_config()
+    {
+        let config = API.get("tutorial_phase_2/config");
+
+        $("#tutorial_phase_2_color").val(config.color);
+    }
+
+Test der Kommunikation
+^^^^^^^^^^^^^^^^^^^^^^
+
+Als Test kann der Farbwert in ``tutorial_phase_2.cpp`` von ``#FF0000`` (Rot) zu
+``#0000FF`` (Blau) geändert werden:
+
+.. code-block:: cpp
+   :emphasize-lines: 4
+
+    void TutorialPhase2::setup()
+    {
+        tutorial_config = Config::Object({
+            {"color", Config::Str("#0000FF", 7, 7)}
+        });
+
+        logger.printfln("Tutorial (Phase 2) module initialized");
+
+        initialized = true;
+    }
+
+Jetzt wird im Webinterface Blau angezeigt:
+
+.. image:: /Images/Tutorial/tutorial_esp32_phase_2_frontend_blue_de_600.png
+   :scale: 100 %
+   :alt: Webinterface (Phase 2), Farbe Blau
+   :align: center
+   :target: ../../_images/Tutorial/tutorial_esp32_phase_2_frontend_blue_de_1200.png
+
+Phase 3: Kommunikation Frontend zu Backend
+------------------------------------------
+
+Modulname für die ``platformio.ini`` Datei: ``Tutorial Phase 3``
+
+Mit diesem Modul aktiviert taucht im Webinterface eine Unterseite mit Farbanzeige
+namens "Tutorial (Phase 3)" auf:
+
+.. image:: /Images/Tutorial/tutorial_esp32_phase_3_frontend_red_de_600.png
+   :scale: 100 %
+   :alt: Webinterface (Phase 3), Farbe Rot
+   :align: center
+   :target: ../../_images/Tutorial/tutorial_esp32_phase_3_frontend_red_de_1200.png
+
+Die Farbe kann jetzt über den Auswahldialog geändert und an das Backend-Modul
+kommuniziert werden.
+
+Frontend-Teil der Kommunikation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+In der ``main.ts`` Datei wird dem ``change`` Events des HTML Elements die
+lokale Funktion ``save_config`` zugewiesen. Diese wird dann bei Änderung der
+Farbe aufgerufen:
+
+.. code-block:: ts
+
+    export function init()
+    {
+        $("#tutorial_phase_3_color").on("change", save_config);
+    }
+
+In der ``save_config`` Funktion wird der aktuelle Farbwert des HTML Elements
+abgefragt, damit ein neuer Wert für den ``tutorial_phase_3/config`` Zustand
+erstellt und dieser an das Backend-Modul übertragen:
+
+.. code-block:: ts
+
+    function save_config()
+    {
+        let config = {"color": $("#tutorial_phase_3_color").val().toString()}
+        API.save("tutorial_phase_3/config", config, __("tutorial_phase_3.script.save_config_failed"));
+    }
+
+Backend-Teil der Kommunikation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Das Backend-Modul repräsentiert die Daten, die vom Frontend-Modul empfangen
+werden können, strukturiert als ``ConfigRoot`` Objekt. Dies wird einfach
+als Kopie ``tutorial_config_update`` des ersten ``ConfigRoot`` Objekts angelegt,
+da es die gleiche Struktur hat. Auszug aus ``tutorial_phase_3.cpp`` dazu:
+
+.. code-block:: cpp
+   :emphasize-lines: 7
+
+    void TutorialPhase3::setup()
+    {
+        tutorial_config = Config::Object({
+            {"color", Config::Str("#FF0000", 7, 7)}
+        });
+
+        tutorial_config_update = tutorial_config;
+
+        logger.printfln("Tutorial (Phase 3) module initialized");
+
+        initialized = true;
+    }
+
+Damit die Farbe vom Frontend-Modul empfangen werden kann, muss das zweite
+``ConfigRoot`` Objekt dem API Manager als Kommando bekannt gemacht werden.
+Dafür wird der Name ``tutorial_phase_3/config_update`` verwendet. Der API Manager
+empfängt die Daten vom Frontend-Modul und ruft die Lambda-Funktion auf, um die
+Daten zu behandeln. Es wird eine Meldung auf die serielle Konsole ausgegeben und
+die neue Farbe gespeichert. Auszug aus ``tutorial_phase_3.cpp`` dazu:
+
+.. code-block:: cpp
+   :emphasize-lines: 5,6,8,9,10
+
+    void TutorialPhase3::register_urls()
+    {
+        api.addState("tutorial_phase_3/config", &tutorial_config, {}, 1000);
+
+        api.addCommand("tutorial_phase_3/config_update", &tutorial_config_update, {}, [this]() {
+            String color = tutorial_config_update.get("color")->asString();
+
+            logger.printfln("Tutorial (Phase 3) module received color update: %s", color.c_str());
+            tutorial_config.get("color")->updateString(color);
+        }, false);
+    }
+
+Test der Kommunikation
+^^^^^^^^^^^^^^^^^^^^^^
+
+Als Test kann der Farbwert im Webinterface von ``#FF0000`` (Rot) zu
+``#00FF00`` (Grün) geändert werden:
+
+.. image:: /Images/Tutorial/tutorial_esp32_phase_3_frontend_green_de_600.png
+   :scale: 100 %
+   :alt: Webinterface (Phase 3), Farbe Grün
+   :align: center
+   :target: ../../_images/Tutorial/tutorial_esp32_phase_3_frontend_green_de_1200.png
+
+Auf der seriellen Konsole wird die Meldung ``Tutorial (Phase 3) module received
+color update: #00ff00`` ausgegeben:
+
+.. image:: /Images/Tutorial/tutorial_esp32_phase_3_backend_600.png
+   :scale: 100 %
+   :alt: Serielle Konsole (Phase 3)
+   :align: center
+   :target: ../../_images/Tutorial/tutorial_esp32_phase_3_backend_600.png
+
+Phase 4: Kommunikation Backend zu Bricklet
+------------------------------------------
+
+Modulname für die ``platformio.ini`` Datei: ``Tutorial Phase 4``
+
+Diese Phase setzt voraus, dass am Brick ein
+:ref:`RGB LED Button Bricklet <rgb_led_button_bricklet>` angeschlossen ist. Der
+Bricklet-Anschluss kann dabei frei gewählt werden.
+
+Mit diesem Modul aktiviert taucht im Webinterface eine Unterseite mit Farbanzeige
+namens "Tutorial (Phase 4)" auf:
+
+.. image:: /Images/Tutorial/tutorial_esp32_phase_4_frontend_de_600.png
+   :scale: 100 %
+   :alt: Webinterface (Phase 4)
+   :align: center
+   :target: ../../_images/Tutorial/tutorial_esp32_phase_4_frontend_de_1200.png
+
+Die Farbe kann jetzt über den Auswahldialog geändert und an das Backend-Modul
+und dadurch an das RGB LED Button Bricklet kommuniziert werden.
+
+Die Kommunikation von Frontend zu Backend ist gleichgeblieben. Es wird jetzt
+zusätzlich im Backend mit dem RGB LED Button Bricklet kommuniziert. Dazu wird
+ein RGB LED Button Bricklet Objekt angelegt. Das zweite Parameter der
+``tf_rgb_led_button_create`` Funktion kann verwendet werden, um per UID oder
+Port-Namen anzugeben welches RGB LED Button Bricklet gemeint ist. Wird dieser
+Parameter auf ``nullptr`` gesetzt, dann wird das erste verfügbare RGB LED Button
+Bricklet verwendet. Falls das RGB LED Button Bricklet Objekt nicht erzeugt
+werden kann, dann wird der Aufruf der ``setup`` Funktion vorzeitig beendet,
+bevor ``initialized`` auf true gesetzt wird. Dadurch blendet sich das
+Frontend-Modul auf dem Webinterface aus, da das benötige Backend-Modul nicht
+zur Verfügung steht. Auszug aus ``tutorial_phase_4.cpp`` dazu:
+
+.. code-block:: cpp
+   :emphasize-lines: 9,10,11,12,14
+
+    void TutorialPhase4::setup()
+    {
+        tutorial_config = Config::Object({
+            {"color", Config::Str("#FF0000", 7, 7)}
+        });
+
+        tutorial_config_update = tutorial_config;
+
+        if (tf_rgb_led_button_create(&rgb_led_button, nullptr, &hal) != TF_E_OK) {
+            logger.printfln("No RGB LED Button Bricklet found, disabling Tutorial (Phase 4) module");
+            return;
+        }
+
+        set_bricklet_color(tutorial_config.get("color")->asString());
+
+        logger.printfln("Tutorial (Phase 4) module initialized");
+
+        initialized = true;
+    }
+
+Initial und bei Änderung der Farbe durch das Frontend-Modul wird die
+``set_bricklet_color`` Funktion aufgerufen, um die LED Farbe des Bricklets zu
+ändern. Auszug aus ``tutorial_phase_4.cpp`` dazu:
+
+.. code-block:: cpp
+   :emphasize-lines: 10
+
+    void TutorialPhase4::register_urls()
+    {
+        api.addState("tutorial_phase_4/config", &tutorial_config, {}, 1000);
+
+        api.addCommand("tutorial_phase_4/config_update", &tutorial_config_update, {}, [this]() {
+            String color = tutorial_config_update.get("color")->asString();
+
+            logger.printfln("Tutorial (Phase 4) module received color update: %s", color.c_str());
+            tutorial_config.get("color")->updateString(color);
+            set_bricklet_color(color);
+        }, false);
+    }
+
+Die ``set_bricklet_color`` Funktion nimmt die Farbe in HTML Notation
+``#RRGGBB`` entgegen und zerlegt diese in die Rot-, Grün- und Blau-Anteile, um
+diese dann per ``tf_rgb_led_button_set_color`` Funktion and das Bricklet zu
+senden. Auszug aus ``tutorial_phase_4.cpp`` dazu:
+
+.. code-block:: cpp
+
+    void TutorialPhase4::set_bricklet_color(String color)
+    {
+        uint8_t red = hex2num(color.substring(1, 3));
+        uint8_t green = hex2num(color.substring(3, 5));
+        uint8_t blue = hex2num(color.substring(5, 7));
+
+        if (tf_rgb_led_button_set_color(&rgb_led_button, red, green, blue) != TF_E_OK) {
+            logger.printfln("Tutorial (Phase 4) module could not set RGB LED Button Bricklet color");
+        }
+    }
+
+Test der Kommunikation
+^^^^^^^^^^^^^^^^^^^^^^
+
+Als Test kann der Farbwert im Webinterface von ``#FF0000`` (Rot) zu
+``#00FF00`` (Grün) geändert werden.
+
+Vor der Änderung zu Grün:
+
+.. image:: /Images/Tutorial/tutorial_esp32_phase_4_hardware_red_600.jpg
+   :scale: 100 %
+   :alt: RGB LED Button Bricklet, Farbe Rot
+   :align: center
+   :target: ../../_images/Tutorial/tutorial_esp32_phase_4_hardware_red_1200.jpg
+
+Nach der Änderung zu Grün:
+
+.. image:: /Images/Tutorial/tutorial_esp32_phase_4_hardware_green_600.jpg
+   :scale: 100 %
+   :alt: RGB LED Button Bricklet, Farbe Grün
+   :align: center
+   :target: ../../_images/Tutorial/tutorial_esp32_phase_4_hardware_green_1200.jpg
+
+
+Phase 5: Kommunikation Bricklet zu Backend
+------------------------------------------
+
+Modulname für die ``platformio.ini`` Datei: ``Tutorial Phase 5``
