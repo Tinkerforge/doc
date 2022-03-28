@@ -1,6 +1,4 @@
 
-:shoplink: ../../../shop/bricks/red-brick.html
-
 .. include:: RED_Brick.substitutions
 
 .. |c| unicode:: 0x2713
