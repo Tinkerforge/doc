@@ -1,5 +1,5 @@
 
-:shoplink: ../../../shop/kits/starter-kit-hardware-hacking.html
+:DISABLED_shoplink: ../../../shop/kits/starter-kit-hardware-hacking.html
 
 .. include:: HardwareHacking.substitutions
 
@@ -22,6 +22,11 @@ Starter Kit: Hardware Hacking
 	Kits/hardware_hacking_remote_soldered_closeup_iqr_top_[?|?].jpg     Hardware Hacking: Quad Relay wiring
 
 	{% tfgalleryend %}
+
+.. note::
+
+ The Starter Kit: Hardware Hacking is currently not sold due to the
+ unavailabilty of simple remote control mains switches.
 
 
 Features

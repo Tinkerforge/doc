@@ -1,5 +1,5 @@
 
-:shoplink: ../../../shop/kits/starter-kit-hardware-hacking.html
+:DISABLED_shoplink: ../../../shop/kits/starter-kit-hardware-hacking.html
 
 .. include:: HardwareHacking.substitutions
 
@@ -23,6 +23,10 @@ Starterkit: Hardware Hacking
 
 	{% tfgalleryend %}
 
+.. note::
+
+ Das Starterkit: Hardware Hacking wird aktuell nicht mehr verkauft, da einfache
+ Funksteckdosen nicht mehr verfügbar sind.
 
 Features
 --------
