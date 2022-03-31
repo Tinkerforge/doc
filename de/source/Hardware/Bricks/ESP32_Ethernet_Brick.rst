@@ -24,12 +24,43 @@ ESP32 Ethernet Brick
 Features
 --------
 
+* Anschlüsse für **sechs** 7-pol Bricklets
+* Ausführung vom eigenem Code direkt auf diesem Brick (**Stand Alone Betrieb**)
+* Nutzung des vorprogrammierten Bricks um Bricklets per **LAN/WLAN** zu steuern
 
 .. _esp32_ethernet_brick_description:
 
 Beschreibung
 ------------
 
+Der ESP32 Ethernet Brick bietet **sechs** :ref:`Bricklet <primer_bricklets>` 
+Anschlüsse und ist mit einem leistungsstarken ESP32 Mikrocontroller 
+ausgestattet. Der ESP32 verfügt über zwei CPU Kerne (bis zu 240MHz), 16MB SPI 
+Flash, WIFI (802.11b/g/n) und Bluetooth (V4.2 BR/EDR, BLE).
+
+Der Brick kann für zwei Anwendungsfälle eingesetzt werden:
+
+Bei **Stand Alone** Anwendungen kann auf dem Brick die eigene Software
+geflasht und ausgeführt werden. Eine Steuerung von außen ist nicht notwendig.
+Um auf die angeschlossenen Bricklets im eigenen Code zuzugreifen, werden 
+einfach die 
+:ref:`C/C++ API Bindings für Mikrocontroller <api_bindings_uc>` Bibliotheken
+eingebunden. Unterstützung für LAN/WIFI, Bluetooth und andere ESP32 Features
+ist über die offiziellen Espressif ESP32 Plattform Bibliotheken gegeben.
+Die eigene Software kann auf den Brick über den integrierten USB nach UART 
+Wandler geflasht werden oder per LAN/WIFI wenn eine entsprechende Firmware 
+eingesetzt wird.
+
+Für Anwendungen bei denen das System von außen gesteuert werden soll, kann 
+der Brick ohne eigene Software eingesetzt werden. Der Brick wird mit einer
+Standard Firmware ausgeliefert. Über diese Firmware kann auf die
+angeschlossenen Bricklets per LAN/WIFI zugegriffen werden. Die Firmware bietet 
+ein Webinterface um die Konfiguration von LAN und WIFI Schnittstelle vornehmen 
+zu können. Für das initiale Setup kann der **WIFI Accesspoint** des Bricks 
+genutzt werden. Nach der Konfiguration kann der Accesspoint deaktiviert werden.
+
+Die Stromversorgung des Bricks erfolgt über seinen USB-C Stecker oder über eine
+optionale :ref:`ESP32 Power Supply <todo>` über den GPIO Stecker des Bricks.
 
 
 Technische Spezifikation
@@ -38,10 +69,14 @@ Technische Spezifikation
 ================================  ============================================================
 Eigenschaft                       Wert
 ================================  ============================================================
+Stromversorgung                   Mittels USB-C Stecker, optional per ESP32 Power Supply Modul
 Stromverbrauch                    TBDmW (TBDmA bei 5V)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Bricklet-Anschlüsse               6
+Bricklet-Anschlüsse               6 (7-pol)
+ESP32 Variante                    ESP32WROOM32E mit 16MB Flash (ESP32WRM32E128PH)
+WIFI                              802.11b/g/n (mit bis zu 150 Mbps)
+Bluetooth                         V4.2 BR/EDR und Bluetooth LE
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Abmessungen (B x T x H)           88 x 45 x 12mm (3,46 x 1,77 x 0,47")
