@@ -63,8 +63,9 @@ Ressourcen
 Ersteinrichtung
 ---------------
 
-Der ESP32 Ethernet Brick muss über den USB Abschluss mit Strom versorgt werden.
-Sobald die blaue Status-LED langsam blinkt ist der Brick betriebsbereit.
+Zur Ersteinrichtung muss der ESP32 Ethernet Brick über den USB-C Anschluss 
+mit Strom versorgt werden. Sobald die blaue Status-LED langsam blinkt ist der 
+Brick betriebsbereit.
 
 Die Kommunikation mit dem Brick erfolgt über LAN oder WLAN. LAN und WLAN können
 auch gleichzeitig verwendet werden. Der USB Abschluss dient nur zur Stromversorgung
@@ -183,9 +184,10 @@ gibt Informationen über die angeschlossenen Bricklets aus und ermöglicht es
 diese zu testen.
 
 Im Brick Viewer muss vor dem Klick auf den Connect-Knopf die Host-Einstellung
-von ``localhost`` auf den Hostname des ESP32 Ethernet Bricks geändert werden.
-Der voreingestellte individuelle Hostname (z.B. ``esp32-ABC``) ist auf dem
-WLAN-Zugangsdaten-Aufkleber auf der Rückseite des Bricks vermerkt.
+von ``localhost`` auf den Hostname oder IP Adresse des ESP32 Ethernet Bricks 
+geändert werden. Der voreingestellte individuelle Hostname 
+(z.B. ``esp32-ABC``) ist auf dem WLAN-Zugangsdaten-Aufkleber auf der Rückseite 
+des Bricks vermerkt.
 
 Nach dem Klick auf den Connect-Knopf sollte im Brick Viewer ein neuer Tab namens
 "ESP32 Ethernet Brick" auftauchen. Wähle diesen Tab aus.
