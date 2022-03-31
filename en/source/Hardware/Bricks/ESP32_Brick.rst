@@ -39,16 +39,18 @@ You can use this Brick for two purposes:
 The Brick can be used for **stand-alone** applications where you want to flash 
 and execute your own code on this device. By integrating the
 :ref:`C/C++ API Bindings for Microcontrollers <api_bindings_uc>` libraries in 
-your code, you can simply access our Bricklets. Support for WIFI, Bluetooth and 
-other ESP32 features is available by the Espressif ESP32 plattform libraries.
-Your software can be flashed to the Brick by an onboard USB to UART converter 
-directly connected to the ESP32 or by WIFI when using a appropriate firmware.
+your code, you can simply access the connected Bricklets. Support for WIFI, 
+Bluetooth and other ESP32 features is available by the Espressif ESP32 
+plattform libraries. Your software can be flashed to the Brick by an onboard 
+USB to UART converter directly connected to the ESP32 or by WIFI when using a 
+appropriate firmware.
 
 For non stand-alone applications the Brick can be used as it is. The Brick 
 comes preprogrammed with its standard firmware. With that firmware you can 
 access the connected Bricklets by the **WIFI** connection of the Brick. 
 The standard firmware offers a webinterface to manage the WIFI settings. 
-For the initial setup the **WIFI access point** feature ot the ESP32 is used.
+For the initial setup the **WIFI access point** feature ot the ESP32 is used. 
+After the setup process this access point can be disabled.
 
 The Brick is powered over its USB-C connector, or can be powered by the 
 :ref:`ESP32 Power Supply <todo>` over its GPIO connector with a DC voltage.
@@ -61,11 +63,11 @@ Technical Specifications
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
-Power Supply                      By USB-C jack or additional ESP32 Power Supply module
+Power Supply                      By USB-C jack or optional ESP32 Power Supply module
 Current Consumption               TBDmW (TBDmA at 5V)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Bricklet Ports                    6
+Bricklet Ports                    6 (7-pole)
 ESP32 Variant                     ESP32WROOM32E with 16MB Flash (ESP32WRM32E128PH)
 WIFI                              802.11b/g/n (with up to 150 Mbps)
 Bluetooth                         V4.2 BR/EDR and Bluetooth LE
