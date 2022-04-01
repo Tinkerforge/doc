@@ -25,7 +25,7 @@ Features
 --------
 
 * Anschlüsse für **sechs** 7-pol Bricklets
-* Ausführung vom eigenem Code direkt auf diesem Brick (**Stand Alone Betrieb**)
+* Ausführung von eigener Software direkt auf diesem Brick (**Stand Alone Betrieb**)
 * Nutzung des vorprogrammierten Bricks um Bricklets per **LAN/WLAN** zu steuern
 
 .. _esp32_ethernet_brick_description:
