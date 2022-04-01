@@ -90,7 +90,7 @@ Ressourcen
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/esp32_ethernet_brick_dimensions.png>`__)
 * Quelltexte (`Download <https://github.com/Tinkerforge/esp32-firmware/zipball/master>`__)
 * Platinenlayout (`Download <https://github.com/Tinkerforge/esp32-ethernet-brick/zipball/master>`__)
-* 3D Modell (`View online <https://autode.sk/TBD>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricks/esp32_ethernet/esp32-ethernet.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricks/esp32_ethernet/esp32-ethernet.FCStd>`__)
+* 3D Modell (`View online <https://a360.co/3iVsZUI>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricks/esp32_ethernet/esp32-ethernet.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricks/esp32_ethernet/esp32-ethernet.FCStd>`__)
 
 
 .. _esp32_ethernet_brick_setup:

@@ -54,7 +54,7 @@ Ressourcen
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/esp32_brick_dimensions.png>`__)
 * Quelltexte (`Download <https://github.com/Tinkerforge/esp32-firmware/zipball/master>`__)
 * Platinenlayout (`Download <https://github.com/Tinkerforge/esp32-brick/zipball/master>`__)
-* 3D Modell (`View online <https://autode.sk/TBD>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricks/esp32/esp32.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricks/esp32/esp32.FCStd>`__)
+* 3D Modell (`View online <https://a360.co/3tXfWIt>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricks/esp32/esp32.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricks/esp32/esp32.FCStd>`__)
 
 
 .. _esp32_brick_setup:
