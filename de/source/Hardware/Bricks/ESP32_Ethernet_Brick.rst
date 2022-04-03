@@ -59,6 +59,12 @@ ein Webinterface um die Konfiguration von LAN und WIFI Schnittstelle vornehmen
 zu können. Für das initiale Setup kann der **WIFI Accesspoint** des Bricks 
 genutzt werden. Nach der Konfiguration kann der Accesspoint deaktiviert werden.
 
+Eine zeitgleiche Nutzung von Standalone-Anwendungen und die zusätzliche externe
+Steuerung über die High-Level-APIs von Tinkerforge ist möglich.
+Dadurch sind Anwendungen möglich in denen auf einzelne Events sofort
+reagiert wird (closed loop) während gleichzeitig eine Steuerung von
+außen stattfindet (open loop).
+
 Die Stromversorgung des Bricks erfolgt über seinen USB-C Stecker oder über eine
 optionale :ref:`ESP32 Power Supply <todo>` über den GPIO Stecker des Bricks.
 
