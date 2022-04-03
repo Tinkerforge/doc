@@ -25,7 +25,7 @@ Features
 --------
 
 * Anschlüsse für **sechs** 7-pol Bricklets
-* Ausführung von eigener Software direkt auf diesem Brick (**Stand Alone Betrieb**)
+* Ausführung von eigener Software direkt auf diesem Brick (**Standalone-Betrieb**)
 * Nutzung des vorprogrammierten Bricks um Bricklets per **LAN/WLAN** zu steuern
 
 .. _esp32_ethernet_brick_description:
@@ -40,7 +40,7 @@ Flash, WIFI (802.11b/g/n) und Bluetooth (V4.2 BR/EDR, BLE).
 
 Der Brick kann für zwei Anwendungsfälle eingesetzt werden:
 
-Bei **Stand Alone** Anwendungen kann auf dem Brick die eigene Software
+Bei **Standalone**-Anwendungen kann auf dem Brick die eigene Software
 geflasht und ausgeführt werden. Eine Steuerung von außen ist nicht notwendig.
 Um auf die angeschlossenen Bricklets im eigenen Code zuzugreifen, werden 
 einfach die 
