@@ -21,7 +21,7 @@ Features
 --------
 
 * Ports for **six** 7-pole Bricklets
-* Execute your own code directly on this Brick (**stand alone**)
+* Execute your own code directly on this Brick (**stand-alone**)
 * Use the preprogrammed Brick to control Bricklets via **WIFI**
 
 .. _esp32_brick_description:
@@ -34,28 +34,32 @@ equipped with a powerful ESP32 microcontroller. The ESP32 is equipped with two C
 (up to 240MHz), 16MB SPI Flash, WIFI (802.11b/g/n) and Bluetooth (V4.2 BR/EDR, 
 BLE). 
 
-You can use this Brick for two purposes:
+You can use this Brick for two use cases:
 
-The Brick can be used for **stand alone** applications where you want to flash 
-and execute your own code on this device. Control from outside is not 
-necessary. By integrating the
+The Brick can be used for **stand-alone** applications where you want to flash
+and execute your own code on the device. By integrating the
 :ref:`C/C++ API Bindings for Microcontrollers <api_bindings_uc>` libraries in 
-your code, you can simply access the connected Bricklets. Support for WIFI, 
+your code, you can easily access the connected Bricklets. Support for WIFI,
 Bluetooth and other ESP32 features is available by the official Espressif ESP32 
 plattform libraries. Your software can be flashed to the Brick by an onboard 
 USB to UART converter directly connected to the ESP32 or by WIFI when using a 
 appropriate firmware.
 
-For non stand-alone applications the Brick can be used as it is without
-your own software. The Brick 
-comes preprogrammed with its standard firmware. With that firmware you can 
-access the connected Bricklets by the **WIFI** connection of the Brick. 
-The standard firmware offers a webinterface to manage the WIFI settings. 
-For the initial setup the **WIFI access point** feature ot the ESP32 is used. 
+If you want to control the Brick with the high-level APIs from Tinkerforge
+you can use the pre-programmed standard firmware that is flashed by default.
+With this firmware you can access the connected Bricklets through the **WIFI**
+connection of the Brick.
+The standard firmware offers a web interface to manage the WIFI settings.
+For the initial setup a **WIFI access point** is opened by the ESP32.
 After the setup process this access point can be disabled.
 
-The Brick is powered over its USB-C connector, or can be powered by the 
-:ref:`ESP32 Power Supply <todo>` over the GPIO connector of the Brick.
+A simultaneous use of stand-alone applications and an additional external
+control through the high-level API is possible. As a consequence you
+can react on specific events immediately (closed loop) while while
+having other parts of the system controlled externally (open loop).
+
+The Brick can eitehr be powered over its USB-C connector, by the
+:ref:`ESP32 Power Supply <todo>` through the GPIO connector of the Brick.
 
 
 Technical Specifications
