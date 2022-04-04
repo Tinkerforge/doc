@@ -91,14 +91,100 @@ Resources
 * Design files (`Download <https://github.com/Tinkerforge/esp32-brick/zipball/master>`__)
 * 3D model (`View online <https://autode.sk/TBD>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricks/esp32/esp32.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricks/esp32/esp32.FCStd>`__)
 
+.. _esp32_brick_setup:
 
-.. _esp32_brick_getting_started:
+First Setup
+-----------
 
-Getting Started
----------------
+First the ESP32 Brick has to be powered by its USB-C connector.
+After a short while the blue status LED will blink slowly. The Brick is now
+operational.
 
-TODO: How to configure the WIFI connection of the default firmware of the
-ESP32 Brick to use it as replacement for Master Brick with WIFI Extension?
+The Brick can be accessed by WIFI. The USB
+connector is only used as power source and to bring the Brick in factory condition.
+
+The webinterface can be accessed by the WIFI access point of the Brick.
+
+The individual credentials of your Brick are noted on the WIFI login credential
+sticker of the bottom of the Brick. The QR code can be scanned with a smartphone to setup
+the WIFI connection automatically. It is also possible to enter SSID and passphrase manually
+on your smartphone or laptop.
+
+When the WIFI connection to the access point of the Brick is established, the webinterface
+can be accessed by ``http://10.0.0.1``. On a smartphone the mobile data connection might
+be deactivated to access it.
+
+On Samsung phones the preinstalled browser "Samsung Internet" seems to have problems
+with websockets. The webinterface might not work as expected. Please try another
+Browser, e.g. Firefox or Chrome.
+
+WIFI Configuration
+^^^^^^^^^^^^^^^^^^
+
+At the webinterface below **Network > WIFI-Connection** the WIFI connection
+can be configured. In factory condition the connection to a WIFI network is 
+deactivated.
+
+To connect the Brick to an existing network the WIFI connection has to be activated and 
+the SSID and passphrase of the network has to be entered. You can search for existing 
+networks with a press on the "Search for networks" button.
+
+After changing any configuration press "Save". The Brick will reboot and apply the new configuration.
+
+.. image:: /Images/Bricks/brick_esp32_wifi_config_en_450.png
+   :scale: 100 %
+   :alt: ESP32 Brick WIFI configuration
+   :align: center
+   :target: ../../_images/Bricks/brick_esp32_wifi_config_en.png
+
+WIFI-Access-Point Configuration
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+At the webinterface below **Network > WLAN-Access-Point** the WIFI access point
+can be configured. In factory configuration the access point is active
+and configured with the individual SSID and passphrase noted on the sticker
+of the bottom side of the Brick.
+
+The access point can be configured as fallback, such that it is only active
+when WIFI is not connected.
+
+It also can be completely disabled. We don't recommand this setting, since
+it might be possible that you are unable to access the webinterface of the 
+Brick when there is a problem with your WIFI settings. In that case the 
+only solution is to factory reset the Brick.
+
+After changing any configuration press "Save". The Brick will reboot and apply the new configuration.
+
+.. image:: /Images/Bricks/brick_esp32_ap_config_en_450.png
+   :scale: 100 %
+   :alt: ESP32 Brick WIFI access point configuration
+   :align: center
+   :target: ../../_images/Bricks/brick_esp32_ap_config_en.png
+
+.. _esp32_brick_test:
+
+First Test
+----------
+
+To test a ESP32 Brick install :ref:`Brick Viewer <brickv>`.
+With Brick Viewer you can connect to the ESP32 Brick and get
+information about the connected Bricklets. You also can test the connected Bricklets.
+
+To do that change the host name from ``localhost`` to the hostname or IP address of
+the Brick. The preconfigured hostname (e.g. ``esp32-ABC``) is noted at the WIFI credential 
+sticker at the bottom side of the Brick.
+
+After clicking the connect-button a new tab named "ESP32 Brick" should appear.
+Select this tab.
+
+.. image:: /Images/Bricks/brick_esp32_brickv.jpg
+   :scale: 100 %
+   :alt: ESP32 Brick in Brick Viewer
+   :align: center
+   :target: ../../_images/Bricks/brick_esp32_brickv.jpg
+
+ESP32 Brick can only be configured by its webinterface. By Brick Viewer nothing can be
+configured. It is only intended to give access to the connected Bricklets.
 
 
 .. _esp32_brick_firmware:
@@ -106,6 +192,22 @@ ESP32 Brick to use it as replacement for Master Brick with WIFI Extension?
 Firmware
 --------
 
-TODO: What firmware variations exists and how to use them?
+For ESP32 Brick the following firmwares are available:
 
-:ref:`esp32_firmware`
+* **Standard-Firmware**:
+  ESP32 Brick comes with the
+  `Standard-Firmware <https://github.com/Tinkerforge/esp32-firmware>`__
+  as factory default. This firmware could be used to configure network settings
+  by the webinterface and access to the connected Bricklets by
+  :ref:`Brick Viewer <brickv>` and
+  :ref:`API Bindings <api_bindings>`. This is similar to a
+  :ref:`Master Brick <master_brick>` with :ref:`WIFI Master Extension 2.0 <wifi_v2_extension>`.
+* **Extension of Standard-Firmware**:
+  The functionality and the webinterface of the Standard-Firmware consists of modules.
+  This :ref:`Tutorial for ESP32 Firmware <tutorial_esp32_firmware>`
+  explains step by step how the firmware can be extended by your own module.
+* **Your own Firmware based on C/C++ Bindings for Microcontroller**:
+  With the :ref:`C/C++ Bindings for Microcontroller <api_bindings_uc>` supported microcontroller
+  can directly communicate with Bricklets. These API bindings can be used together with
+  `Arduino ESP32 Project <https://docs.espressif.com/projects/arduino-esp32/>`__
+  to build your own firmware for ESP32 Brick.

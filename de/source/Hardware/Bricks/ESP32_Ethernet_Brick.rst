@@ -81,6 +81,7 @@ Stromverbrauch                    TBDmW (TBDmA bei 5V)
 --------------------------------  ------------------------------------------------------------
 Bricklet-Anschlüsse               6 (7-pol)
 ESP32 Variante                    ESP32WROOM32E mit 16MB Flash (ESP32WRM32E128PH)
+LAN                               10BASE-T, 100BASE-TX (KSZ8091 Ethernet PHY)
 WIFI                              802.11b/g/n (mit bis zu 150 Mbps)
 Bluetooth                         V4.2 BR/EDR und Bluetooth LE
 --------------------------------  ------------------------------------------------------------
@@ -133,7 +134,7 @@ Auslieferungszustand aktivierten WLAN-Access-Point des Bricks.
 Die individuellen Zugangsdaten des Access-Points sind auf dem
 WLAN-Zugangsdaten-Aufkleber auf der Rückseite des Bricks vermerkt. Der QR-Code des
 Aufklebers kann mit dem Smartphone direkt gescannt werden, um automatisch eine
-WLAN-Verbindung zum Brick herzustellen. Alternative können SSID und Passphrase auch
+WLAN-Verbindung zum Brick herzustellen. Alternativ können SSID und Passphrase auch
 von Hand auf dem Smartphone oder Laptop eingegeben werden.
 
 Wenn die WLAN-Verbindung zum Access-Point des Bricks hergestellt ist, dann ist
@@ -174,10 +175,6 @@ aktiviert und die SSID und Passphrase des bestehenden Netzwerks angegeben werden
 Ein Druck auf den Netzwerksuche-Knopf öffnet nach einem kurzen Moment ein Menü
 mit den gefundenen bestehenden Netzwerken, aus dem das gewünschte Netzwerk
 ausgewählt werden kann.
-
-Falls eine Verbindung zu einem versteckten WLAN-Netzwerk hergestellt werden soll,
-dann muss die entsprechend SSID von Hand eingegeben werden, nachdem das versteckte
-Netzwerk aus dem Menü ausgewählt wurde.
 
 Änderungen werden erst nach einem Druck auf den Speichern-Knopf und einem
 Neustart des Bricks übernommen.
