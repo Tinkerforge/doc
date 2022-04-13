@@ -342,7 +342,7 @@ Phase 4: Kommunikation Backend zu Bricklet
 
 Modulname für die ``platformio.ini`` Datei: ``Tutorial Phase 4``
 
-Diese Phase setzt voraus, dass am Brick ein
+Ab dieser Phase wird vorausgesetzt, dass am Brick ein
 :ref:`RGB LED Button Bricklet <rgb_led_button_bricklet>` angeschlossen ist. Der
 Bricklet-Anschluss kann dabei frei gewählt werden.
 
@@ -361,7 +361,8 @@ und dadurch an das RGB LED Button Bricklet kommuniziert werden.
 Die Kommunikation von Frontend zu Backend ist gleichgeblieben. Es wird jetzt
 zusätzlich im Backend mit dem RGB LED Button Bricklet kommuniziert. Dazu wird
 ein RGB LED Button Bricklet Objekt angelegt. Das zweite Parameter der
-``tf_rgb_led_button_create`` Funktion kann verwendet werden, um per UID oder
+:c:func:`tf_rgb_led_button_create <tf_rgb_led_button_create>` Funktion kann
+verwendet werden, um per UID oder
 Port-Namen anzugeben welches RGB LED Button Bricklet gemeint ist. Wird dieser
 Parameter auf ``nullptr`` gesetzt, dann wird das erste verfügbare RGB LED Button
 Bricklet verwendet. Falls das RGB LED Button Bricklet Objekt nicht erzeugt
@@ -415,8 +416,8 @@ Initial und bei Änderung der Farbe durch das Frontend-Modul wird die
 
 Die ``set_bricklet_color`` Funktion nimmt die Farbe in HTML Notation
 ``#RRGGBB`` entgegen und zerlegt diese in die Rot-, Grün- und Blau-Anteile, um
-diese dann per ``tf_rgb_led_button_set_color`` Funktion and das Bricklet zu
-senden. Auszug aus ``tutorial_phase_4.cpp`` dazu:
+diese dann per :c:func:`tf_rgb_led_button_set_color <tf_rgb_led_button_set_color>`
+Funktion an das Bricklet zu senden. Auszug aus ``tutorial_phase_4.cpp`` dazu:
 
 .. code-block:: cpp
 

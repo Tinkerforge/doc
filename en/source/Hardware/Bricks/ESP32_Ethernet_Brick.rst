@@ -102,14 +102,15 @@ First the ESP32 Ethernet Brick has to be powered by its USB-C connector.
 After a short while the blue status LED will blink slowly. The Brick is now
 operational.
 
-The Brick can be accessed by LAN or WIFI. Both can be used simultaneously. The USB
-connector is only used as power source and to bring the Brick in factory condition.
+The Brick can be accessed by LAN or WIFI. Both can be used simultaneously.
+he USB connector is only used as power source and to perform a factory reset on
+the Brick.
 
 By default the Brick uses automatic IP addresses (DHCP) for its LAN connection.
 Simply connect the Brick with a LAN cable. The orange LED at the LAN jack should
 start blinking and the Brick should be accessible by
 ``http://[Hostname]`` (e.g. ``http://esp32-ABC``) in your browser.
-The individual hostname (e.g. ``esp32-ABC``) is noted at the WIFI login credential 
+The individual hostname (e.g. ``esp32-ABC``) is noted on the WIFI credential
 sticker on the bottom of the Brick.
 
 .. image:: /Images/Bricks/brick_esp32_ethernet_label_200.jpg
@@ -119,26 +120,26 @@ sticker on the bottom of the Brick.
    :target: ../../_images/Bricks/brick_esp32_ethernet_label_800.jpg
 
 If you want to use the LAN connection with a static IP or if you want to use
-the Brick with a existing WIFI you first have to access the webinterface of the Brick.
-The webinterface can be accessed by the WIFI access point of the Brick.
+the Brick with a existing WIFI you first have to access the web interface of the Brick.
+The web interface can be accessed by the WIFI access point of the Brick.
 
-The individual credentials of your Brick are noted on the WIFI login credential
-sticker of the bottom of the Brick. The QR code can be scanned with a smartphone to setup
+The individual credentials of your Brick are noted on the WIFI credential
+sticker on the backside of the Brick. The QR code can be scanned with a smartphone to setup
 the WIFI connection automatically. It is also possible to enter SSID and passphrase manually
 on your smartphone or laptop.
 
-When the WIFI connection to the access point of the Brick is established, the webinterface
+When the WIFI connection to the access point of the Brick is established, the web interface
 can be accessed by ``http://10.0.0.1``. On a smartphone the mobile data connection might
-be deactivated to access it.
+has to be deactivated to access it.
 
 On Samsung phones the preinstalled browser "Samsung Internet" seems to have problems
-with websockets. The webinterface might not work as expected. Please try another
-Browser, e.g. Firefox or Chrome.
+with websockets. The web interface might not work as expected. Please try another
+browser, e.g. Firefox or Chrome.
 
 LAN Configuration
 ^^^^^^^^^^^^^^^^^
 
-At the webinterface below **Network > LAN-Connection** the LAN connection can be de-/activated
+At the web interface below **Network > LAN-Connection** the LAN connection can be de-/activated
 and the IP address configuration can be configured as "automatic (DHCP)" or "static". In factory
 condition automatic IP is set.
 
@@ -153,7 +154,7 @@ After changing any configuration press "Save". The Brick will reboot and apply t
 WIFI Configuration
 ^^^^^^^^^^^^^^^^^^
 
-At the webinterface below **Network > WIFI-Connection** the WIFI connection
+At the web interface below **Network > WIFI-Connection** the WIFI connection
 can be configured. In factory condition the connection to a WIFI network is
 deactivated.
 
@@ -172,16 +173,16 @@ After changing any configuration press "Save". The Brick will reboot and apply t
 WIFI-Access-Point Configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-At the webinterface below **Network > WLAN-Access-Point** the WIFI access point
+At the web interface below **Network > WLAN-Access-Point** the WIFI access point
 can be configured. In factory configuration the access point is active
 and configured with the individual SSID and passphrase noted on the sticker
-of the bottom side of the Brick.
+on the backside of the Brick.
 
 The access point can be configured as fallback, such that it is only active
 when WIFI and LAN are not connected.
 
 It also can be completely disabled. We don't recommand this setting, since
-it might be possible that you are unable to access the webinterface of the 
+it might be possible that you are unable to access the web interface of the
 Brick when there is a problem with your LAN or WIFI settings. In that case the
 only solution is to factory reset the Brick.
 
@@ -204,7 +205,7 @@ information about the connected Bricklets. You also can test the connected Brick
 
 To do that change the host name from ``localhost`` to the hostname or IP address of
 the Brick. The preconfigured hostname (e.g. ``esp32-ABC``) is noted on the WIFI credential
-sticker at the bottom side of the Brick.
+sticker on the backside of the Brick.
 
 After clicking the connect-button a new tab named "ESP32 Ethernet Brick" should appear.
 Select this tab.
@@ -215,7 +216,7 @@ Select this tab.
    :align: center
    :target: ../../_images/Bricks/brick_esp32_ethernet_brickv.jpg
 
-ESP32 Ethernet Brick can only be configured by its webinterface. By Brick Viewer nothing can be
+ESP32 Ethernet Brick can only be configured by its web interface. By Brick Viewer nothing can be
 configured. It is only intended to give access to the connected Bricklets.
 
 
@@ -230,13 +231,13 @@ For ESP32 Ethernet Brick the following firmwares are available:
   ESP32 Ethernet Brick comes with the
   `Standard-Firmware <https://github.com/Tinkerforge/esp32-firmware>`__
   as factory default. This firmware could be used to configure network settings
-  by the webinterface and access to the connected Bricklets by
+  by the web interface and access to the connected Bricklets by
   :ref:`Brick Viewer <brickv>` and
   :ref:`API Bindings <api_bindings>`. This is similar to a
   :ref:`Master Brick <master_brick>` with :ref:`Ethernet <ethernet_extension>`
   or :ref:`WIFI Master Extension 2.0 <wifi_v2_extension>`.
 * **Extension of Standard-Firmware**:
-  The functionality and the webinterface of the Standard-Firmware consists of modules.
+  The functionality and the web interface of the Standard-Firmware consists of modules.
   This :ref:`Tutorial for ESP32 Firmware <tutorial_esp32_firmware>`
   explains step by step how the firmware can be extended by your own module.
 * **Your own Firmware based on C/C++ Bindings for Microcontroller**:
