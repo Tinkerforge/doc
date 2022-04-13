@@ -29,20 +29,20 @@ Features
 Description
 -----------
 
-The ESP32 Brick offers **six** :ref:`Bricklet <primer_bricklets>` ports and is 
-equipped with a powerful ESP32 microcontroller. The ESP32 is equipped with two CPU cores 
-(up to 240MHz), 16MB SPI Flash, WIFI (802.11b/g/n) and Bluetooth (V4.2 BR/EDR, 
-BLE). 
+The ESP32 Brick offers **six** :ref:`Bricklet <primer_bricklets>` ports and is
+equipped with a powerful ESP32 microcontroller. The ESP32 is equipped with two CPU cores
+(up to 240MHz), 16MB SPI Flash, WIFI (802.11b/g/n) and Bluetooth (V4.2 BR/EDR,
+BLE).
 
 You can use this Brick for two use cases:
 
 The Brick can be used for **stand-alone** applications where you want to flash
 and execute your own code on the device. By integrating the
-:ref:`C/C++ API Bindings for Microcontrollers <api_bindings_uc>` libraries in 
+:ref:`C/C++ API Bindings for Microcontrollers <api_bindings_uc>` libraries in
 your code, you can easily access the connected Bricklets. Support for WIFI,
-Bluetooth and other ESP32 features is available by the official Espressif ESP32 
-plattform libraries. Your software can be flashed to the Brick by an onboard 
-USB to UART converter directly connected to the ESP32 or by WIFI when using a 
+Bluetooth and other ESP32 features is available by the official Espressif ESP32
+plattform libraries. Your software can be flashed to the Brick by an onboard
+USB to UART converter directly connected to the ESP32 or by WIFI when using a
 appropriate firmware.
 
 If you want to control the Brick with the high-level APIs from Tinkerforge
@@ -79,7 +79,7 @@ Bluetooth                         V4.2 BR/EDR and Bluetooth LE
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)            66 x 40 x 9mm (2.60 x 1.57 x 0.35")
-Weight                            TBDg 
+Weight                            TBDg
 ================================  ============================================================
 
 Resources
@@ -125,8 +125,8 @@ At the webinterface below **Network > WIFI-Connection** the WIFI connection
 can be configured. In factory condition the connection to a WIFI network is 
 deactivated.
 
-To connect the Brick to an existing network the WIFI connection has to be activated and 
-the SSID and passphrase of the network has to be entered. You can search for existing 
+To connect the Brick to an existing network the WIFI connection has to be activated and
+the SSID and passphrase of the network has to be entered. You can search for existing
 networks with a press on the "Search for networks" button.
 
 After changing any configuration press "Save". The Brick will reboot and apply the new configuration.
@@ -150,7 +150,7 @@ when WIFI is not connected.
 
 It also can be completely disabled. We don't recommand this setting, since
 it might be possible that you are unable to access the webinterface of the 
-Brick when there is a problem with your WIFI settings. In that case the 
+Brick when there is a problem with your WIFI settings. In that case the
 only solution is to factory reset the Brick.
 
 After changing any configuration press "Save". The Brick will reboot and apply the new configuration.

@@ -32,20 +32,20 @@ Features
 Description
 -----------
 
-The ESP32 Ethernet Brick offers **six** :ref:`Bricklet <primer_bricklets>` ports and is 
-equipped with a powerful ESP32 microcontroller. The ESP32 is equipped with two CPU cores 
-(up to 240MHz), 16MB SPI Flash, WIFI (802.11b/g/n) and Bluetooth (V4.2 BR/EDR, 
-BLE). 
+The ESP32 Ethernet Brick offers **six** :ref:`Bricklet <primer_bricklets>` ports and is
+equipped with a powerful ESP32 microcontroller. The ESP32 is equipped with two CPU cores
+(up to 240MHz), 16MB SPI Flash, WIFI (802.11b/g/n) and Bluetooth (V4.2 BR/EDR,
+BLE).
 
 You can use this Brick for two use cases:
 
 The Brick can be used for **stand-alone** applications where you want to flash
 and execute your own code on the device. By integrating the
-:ref:`C/C++ API Bindings for Microcontrollers <api_bindings_uc>` libraries in 
+:ref:`C/C++ API Bindings for Microcontrollers <api_bindings_uc>` libraries in
 your code, you can easily access the connected Bricklets. Support for LAN/WIFI,
-Bluetooth and other ESP32 features is available by the official Espressif ESP32 
-plattform libraries. Your software can be flashed to the Brick by an onboard 
-USB to UART converter directly connected to the ESP32 or by WIFI when using a 
+Bluetooth and other ESP32 features is available by the official Espressif ESP32
+plattform libraries. Your software can be flashed to the Brick by an onboard
+USB to UART converter directly connected to the ESP32 or by WIFI when using a
 appropriate firmware.
 
 If you want to control the Brick with the high-level APIs from Tinkerforge
@@ -81,7 +81,7 @@ Bluetooth                         V4.2 BR/EDR and Bluetooth LE
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)            88 x 45 x 12mm (3.46 x 1.77 x 0.47")
-Weight                            TBDg 
+Weight                            TBDg
 ================================  ============================================================
 
 Resources
@@ -154,11 +154,11 @@ WIFI Configuration
 ^^^^^^^^^^^^^^^^^^
 
 At the webinterface below **Network > WIFI-Connection** the WIFI connection
-can be configured. In factory condition the connection to a WIFI network is 
+can be configured. In factory condition the connection to a WIFI network is
 deactivated.
 
-To connect the Brick to an existing network the WIFI connection has to be activated and 
-the SSID and passphrase of the network has to be entered. You can search for existing 
+To connect the Brick to an existing network the WIFI connection has to be activated and
+the SSID and passphrase of the network has to be entered. You can search for existing
 networks with a press on the "Search for networks" button.
 
 After changing any configuration press "Save". The Brick will reboot and apply the new configuration.
@@ -182,7 +182,7 @@ when WIFI and LAN are not connected.
 
 It also can be completely disabled. We don't recommand this setting, since
 it might be possible that you are unable to access the webinterface of the 
-Brick when there is a problem with your LAN or WIFI settings. In that case the 
+Brick when there is a problem with your LAN or WIFI settings. In that case the
 only solution is to factory reset the Brick.
 
 After changing any configuration press "Save". The Brick will reboot and apply the new configuration.
@@ -203,7 +203,7 @@ With Brick Viewer you can connect to the ESP32 Ethernet Brick and get
 information about the connected Bricklets. You also can test the connected Bricklets.
 
 To do that change the host name from ``localhost`` to the hostname or IP address of
-the Brick. The preconfigured hostname (e.g. ``esp32-ABC``) is noted at the WIFI credential 
+the Brick. The preconfigured hostname (e.g. ``esp32-ABC``) is noted on the WIFI credential
 sticker at the bottom side of the Brick.
 
 After clicking the connect-button a new tab named "ESP32 Ethernet Brick" should appear.

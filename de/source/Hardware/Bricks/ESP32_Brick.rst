@@ -3,12 +3,10 @@
 
 .. include:: ESP32_Brick.substitutions
 
-
 .. _esp32_brick:
 
 ESP32 Brick
 ===========
-
 
 .. raw:: html
 
@@ -18,7 +16,6 @@ ESP32 Brick
 	Bricks/brick_esp32_brickv_[100|].jpg             ESP32 Brick im Brick Viewer
 
 	{% tfgalleryend %}
-
 
 Features
 --------

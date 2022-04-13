@@ -3,12 +3,10 @@
 
 .. include:: ESP32_Ethernet_Brick.substitutions
 
-
 .. _esp32_ethernet_brick:
 
 ESP32 Ethernet Brick
 ====================
-
 
 .. raw:: html
 
@@ -19,7 +17,6 @@ ESP32 Ethernet Brick
 	Bricks/brick_esp32_ethernet_brickv_[100|].jpg             ESP32 Ethernet Brick im Brick Viewer
 
 	{% tfgalleryend %}
-
 
 Features
 --------

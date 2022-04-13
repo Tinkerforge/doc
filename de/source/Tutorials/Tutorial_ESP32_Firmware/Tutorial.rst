@@ -196,7 +196,6 @@ Anzeige an das HTML Element ``#tutorial_phase_2_color`` zugewiesen:
     function update_config()
     {
         let config = API.get("tutorial_phase_2/config");
-
         $("#tutorial_phase_2_color").val(config.color);
     }
 
