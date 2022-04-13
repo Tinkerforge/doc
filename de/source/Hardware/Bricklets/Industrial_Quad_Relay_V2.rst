@@ -7,7 +7,7 @@
 
 .. _industrial_quad_relay_v2_bricklet:
 
-Industrial Quad Relay Bricklet 2.0
+Industrial Quad Relay Bricklet 2.1
 ==================================
 
 .. raw:: html
@@ -28,7 +28,7 @@ Features
 --------
 
 * 4 Solid State Relais
-* Schaltet bis zu 30V mit 1,2A
+* Schaltet bis zu 30V mit 0,6A
 * Galvanisch getrennt
 
 
@@ -37,9 +37,9 @@ Features
 Beschreibung
 ------------
 
-Das Industrial Quad Relay :ref:`Bricklet <primer_bricklets>` 2.0 kann benutzt werden
+Das Industrial Quad Relay :ref:`Bricklet <primer_bricklets>` 2.1 kann benutzt werden
 um :ref:`Bricks <primer_bricks>` mit vier galvanisch getrennten Solid State Relais
-zu erweitern. Jedes Relais kann bis zu 1,2 `Ampere <https://en.wikipedia.org/wiki/Ampere>`__
+zu erweitern. Jedes Relais kann bis zu 0,6 `Ampere <https://en.wikipedia.org/wiki/Ampere>`__
 mit 30 `Volt <https://en.wikipedia.org/wiki/Volt>`__ schalten.
 Die Isolierung des Ausgangs erlaubt eine Nutzung ohne eine direkte elektrische Verbindung,
 so dass Masseschleifen vermieden werden können und eine zusätzliche Sicherheit gewährleistet wird.
@@ -59,7 +59,7 @@ Stromverbrauch                    | 31mW (6.2mA bei 5V)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Ausgangstyp                       Vier galvanisch getrennte Solid State Relais
-Maximaler Schaltstrom             1,2A
+Maximaler Schaltstrom             0,6A
 Maximale Schaltspannung           30V
 Isolation                         1500Vrms (Datenblattangabe)
 --------------------------------  ------------------------------------------------------------
@@ -72,7 +72,7 @@ Gewicht                           9g
 Ressourcen
 ----------
 
-* CPC1020N Datenblatt (`Download <https://github.com/Tinkerforge/industrial-quad-relay-v2-bricklet/raw/master/datasheets/CPC1020N.pdf>`__)
+* CPC1002N Datenblatt (`Download <https://github.com/Tinkerforge/industrial-quad-relay-v2-bricklet/raw/master/datasheets/CPC1002N.pdf>`__)
 * Schaltplan (`Download <https://github.com/Tinkerforge/industrial-quad-relay-v2-bricklet/raw/master/hardware/industrial-quad-relay-v2-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/industrial_quad_relay_v2_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/industrial-quad-relay-v2-bricklet/zipball/master>`__)
@@ -84,6 +84,9 @@ Anschlussmöglichkeiten
 
 Das Industrial Quad Relay Bricklet besitzt eine 8 Pol Anschlussklemme.
 Das nachfolgende Bild erklärt die Pinbelegung:
+
+.. note::
+   Ab Version 2.1 muss die Polarität der Last beachtet werden.
 
 .. image:: /Images/Bricklets/bricklet_industrial_quad_relay_v2_caption_600.jpg
    :scale: 100 %
@@ -155,6 +158,27 @@ Ein `laser-geschnittenes Gehäuse für das Industrial Quad Relay Bricklet 2.0
    :target: ../../_images/Exploded/industrial_exploded.png
 
 |bricklet_case_hint|
+
+
+Änderungen zwischen Version 2.0 und 2.1
+---------------------------------------
+
+Version 2.0 war mit vier CPC1020N Solid State Relais ausgestattet,
+die über eine maximale Spannung von 30V und einen maximalen Strom von 1.2A
+verfügten. Diese Relais waren bidirektional, das heißt eine Polarität musste 
+nicht beachtet werden. AC Spannungen konnten diese Relais aber nicht schalten.
+
+Das Industrial Quad Relay Bricklet wurde oft eingesetzt um 24V Ventile o.ä. zu 
+schalten. Hierbei handelt es sich um induktive Lasten, die beim Schalten eine 
+hohe Spannung erzeugen. Die Maximalspannung von 30V konnte daher überschritten 
+werden, ohne das die auf dem Bricklet verbauten Varistoren dies verhindern konnten.
+
+Daher haben wir auf Version 2.1 den Relaistyp geändert. Es kommen nun unipolare 60V
+Relais mit einem maximalen Schaltstrom von 0.6A zum Einsatz. Der kleinere Maximalstrom
+ist in der Praxis meist nicht relevant, da damit dennoch die meisten Lasten geschaltet 
+werden können. Die verdoppelte Maximalspannung macht aber den Unterschied, dass die 
+verbauten Varistoren die Spannung wirkungsvoll begrenzen können und somit Ausfälle verhindert
+werden.
 
 
 .. _industrial_quad_relay_v2_bricklet_programming_interface:
