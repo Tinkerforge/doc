@@ -39,18 +39,18 @@ Der Brick kann für zwei Anwendungsfälle eingesetzt werden:
 
 Bei **Standalone**-Anwendungen kann auf dem Brick die eigene Software
 geflasht und ausgeführt werden. Eine Steuerung von außen ist nicht notwendig.
-Um auf die angeschlossenen Bricklets im eigenen Code zuzugreifen, werden 
-einfach die 
-:ref:`C/C++ API Bindings für Mikrocontroller <api_bindings_uc>` Bibliotheken
-eingebunden. Unterstützung für LAN/WIFI, Bluetooth und andere ESP32 Features
+Um auf die angeschlossenen Bricklets im eigenen Code zuzugreifen, wird
+einfach die
+:ref:`C/C++ API Bindings für Mikrocontroller <api_bindings_uc>` Bibliothek
+eingebunden. Unterstützung für LAN/WLAN, Bluetooth und andere ESP32 Features
 ist über die offiziellen Espressif ESP32 Plattform Bibliotheken gegeben.
-Die eigene Software kann auf den Brick über den integrierten USB nach UART 
-Wandler geflasht werden oder per LAN/WIFI wenn eine entsprechende Firmware 
+Die eigene Software kann auf den Brick über den integrierten USB nach UART
+Wandler geflasht werden oder per LAN/WLAN wenn eine entsprechende Firmware
 eingesetzt wird.
 
 Für Anwendungen bei denen das System von außen gesteuert werden soll, kann
 der Brick ohne eigene Software eingesetzt werden. Der Brick wird mit einer
-Standard Firmware ausgeliefert. Über diese Firmware kann auf die
+Standard-Firmware ausgeliefert. Über diese Firmware kann auf die
 angeschlossenen Bricklets per LAN/WLAN zugegriffen werden. Die Firmware bietet
 ein Webinterface um die Konfiguration von LAN und WLAN Schnittstelle vornehmen
 zu können. Für das initiale Setup kann der **WLAN-Access-Point** des Bricks
