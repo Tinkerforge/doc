@@ -44,7 +44,7 @@ and execute your own code on the device. By integrating the
 :ref:`C/C++ API Bindings for Microcontrollers <api_bindings_uc>` libraries in
 your code, you can easily access the connected Bricklets. Support for LAN/WIFI,
 Bluetooth and other ESP32 features is available by the official Espressif ESP32
-plattform libraries. Your software can be flashed to the Brick by an onboard
+platform libraries. Your software can be flashed to the Brick by an onboard
 USB to UART converter directly connected to the ESP32 or by WIFI when using a
 appropriate firmware.
 
@@ -61,7 +61,7 @@ control through the high-level API is possible. As a consequence you
 can react on specific events immediately (closed loop) while while
 having other parts of the system controlled externally (open loop).
 
-The Brick can eitehr be powered over its USB-C connector, by the
+The Brick can either be powered over its USB-C connector, by the
 :ref:`ESP32 Power Supply <todo>` through the GPIO connector of the Brick.
 
 Technical Specifications
@@ -106,7 +106,7 @@ The Brick can be accessed by LAN or WIFI. Both can be used simultaneously.
 he USB connector is only used as power source and to perform a factory reset on
 the Brick.
 
-By default the Brick uses automatic IP addresses (DHCP) for its LAN connection.
+By default the Brick uses automatic IP address configuration (DHCP) for its LAN connection.
 Simply connect the Brick with a LAN cable. The orange LED at the LAN jack should
 start blinking and the Brick should be accessible by
 ``http://[Hostname]`` (e.g. ``http://esp32-ABC``) in your browser.
@@ -119,7 +119,7 @@ sticker on the bottom of the Brick.
    :align: center
    :target: ../../_images/Bricks/brick_esp32_ethernet_label_800.jpg
 
-If you want to use the LAN connection with a static IP or if you want to use
+If you want to use the LAN connection with a static IP address configuration or if you want to use
 the Brick with a existing WIFI you first have to access the web interface of the Brick.
 The web interface can be accessed by the WIFI access point of the Brick.
 
@@ -133,7 +133,7 @@ can be accessed by ``http://10.0.0.1``. On a smartphone the mobile data connecti
 has to be deactivated to access it.
 
 On Samsung phones the preinstalled browser "Samsung Internet" seems to have problems
-with websockets. The web interface might not work as expected. Please try another
+with WebSockets. The web interface might not work as expected. Please try another
 browser, e.g. Firefox or Chrome.
 
 LAN Configuration
@@ -181,7 +181,7 @@ on the backside of the Brick.
 The access point can be configured as fallback, such that it is only active
 when WIFI and LAN are not connected.
 
-It also can be completely disabled. We don't recommand this setting, since
+It also can be completely disabled. We don't recommend this setting, since
 it might be possible that you are unable to access the web interface of the
 Brick when there is a problem with your LAN or WIFI settings. In that case the
 only solution is to factory reset the Brick.
@@ -245,4 +245,3 @@ For ESP32 Ethernet Brick the following firmwares are available:
   can directly communicate with Bricklets. These API bindings can be used together with
   `Arduino ESP32 Project <https://docs.espressif.com/projects/arduino-esp32/>`__
   to build your own firmware for ESP32 Ethernet Brick.
-

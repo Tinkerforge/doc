@@ -33,7 +33,7 @@ Beschreibung
 Der ESP32 Ethernet Brick bietet **sechs** :ref:`Bricklet <primer_bricklets>` 
 Anschlüsse und ist mit einem leistungsstarken ESP32 Mikrocontroller 
 ausgestattet. Der ESP32 verfügt über zwei CPU Kerne (bis zu 240MHz), 16MB SPI 
-Flash, WIFI (802.11b/g/n) und Bluetooth (V4.2 BR/EDR, BLE).
+Flash, WLAN (802.11b/g/n) und Bluetooth (V4.2 BR/EDR, BLE).
 
 Der Brick kann für zwei Anwendungsfälle eingesetzt werden:
 
@@ -51,10 +51,10 @@ eingesetzt wird.
 Für Anwendungen bei denen das System von außen gesteuert werden soll, kann 
 der Brick ohne eigene Software eingesetzt werden. Der Brick wird mit einer
 Standard Firmware ausgeliefert. Über diese Firmware kann auf die
-angeschlossenen Bricklets per LAN/WIFI zugegriffen werden. Die Firmware bietet 
-ein Webinterface um die Konfiguration von LAN und WIFI Schnittstelle vornehmen 
-zu können. Für das initiale Setup kann der **WIFI Accesspoint** des Bricks 
-genutzt werden. Nach der Konfiguration kann der Accesspoint deaktiviert werden.
+angeschlossenen Bricklets per LAN/WLAN zugegriffen werden. Die Firmware bietet
+ein Webinterface um die Konfiguration von LAN und WLAN Schnittstelle vornehmen
+zu können. Für das initiale Setup kann der **WLAN-Access-Point** des Bricks
+genutzt werden. Nach der Konfiguration kann der Access-Point deaktiviert werden.
 
 Eine zeitgleiche Nutzung von Standalone-Anwendungen und die zusätzliche externe
 Steuerung über die High-Level-APIs von Tinkerforge ist möglich.
@@ -79,7 +79,7 @@ Stromverbrauch                    TBDmW (TBDmA bei 5V)
 Bricklet-Anschlüsse               6 (7-pol)
 ESP32 Variante                    ESP32WROOM32E mit 16MB Flash (ESP32WRM32E128PH)
 LAN                               10BASE-T, 100BASE-TX (KSZ8091 Ethernet PHY)
-WIFI                              802.11b/g/n (mit bis zu 150 Mbps)
+WLAN                              802.11b/g/n (mit bis zu 150 Mbps)
 Bluetooth                         V4.2 BR/EDR und Bluetooth LE
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
@@ -110,7 +110,7 @@ Die Kommunikation mit dem Brick erfolgt über LAN oder WLAN. LAN und WLAN könne
 auch gleichzeitig verwendet werden. Der USB Abschluss dient nur zur Stromversorgung
 und um den Brick in den Auslieferungszustand zurückversetzen zu können.
 
-Für eine LAN-Verbindung mit automatischer Adresskonfiguration (DHCP) genügt
+Für eine LAN-Verbindung mit automatischer IP-Adresskonfiguration (DHCP) genügt
 es im einfachsten Fall ein LAN-Kabel einzustecken. Darauf hin sollte die orange
 LED in der LAN-Buchse des Bricks zu blinken beginnen und der Brick unter
 ``http://[Hostname]`` (z.B. ``http://esp32-ABC``) im Browser erreichbar sein.
@@ -123,7 +123,7 @@ WLAN-Zugangsdaten-Aufkleber auf der Rückseite des Bricks vermerkt.
    :align: center
    :target: ../../_images/Bricks/brick_esp32_ethernet_label_800.jpg
 
-Für eine LAN-Verbindung mit statischer Adresskonfiguration oder die
+Für eine LAN-Verbindung mit statischer IP-Adresskonfiguration oder die
 Verbindung zu einem bestehenden WLAN-Netzwerk muss zunächst eine Verbindung zum
 Webinterface des Bricks hergestellt werden. Dies erfolgt über den im
 Auslieferungszustand aktivierten WLAN-Access-Point des Bricks.

@@ -41,7 +41,7 @@ and execute your own code on the device. By integrating the
 :ref:`C/C++ API Bindings for Microcontrollers <api_bindings_uc>` libraries in
 your code, you can easily access the connected Bricklets. Support for WIFI,
 Bluetooth and other ESP32 features is available by the official Espressif ESP32
-plattform libraries. Your software can be flashed to the Brick by an onboard
+platform libraries. Your software can be flashed to the Brick by an onboard
 USB to UART converter directly connected to the ESP32 or by WIFI when using a
 appropriate firmware.
 
@@ -58,7 +58,7 @@ control through the high-level API is possible. As a consequence you
 can react on specific events immediately (closed loop) while while
 having other parts of the system controlled externally (open loop).
 
-The Brick can eitehr be powered over its USB-C connector, by the
+The Brick can either be powered over its USB-C connector, by the
 :ref:`ESP32 Power Supply <todo>` through the GPIO connector of the Brick.
 
 
@@ -110,12 +110,12 @@ sticker on the backside of the Brick. The QR code can be scanned with a smartpho
 the WIFI connection automatically. It is also possible to enter SSID and passphrase manually
 on your smartphone or laptop.
 
-When the WIFI connection to the access point of the Brick is established, the webinterface
+When the WIFI connection to the access point of the Brick is established, the web interface
 can be accessed by ``http://10.0.0.1``. On a smartphone the mobile data connection might
 has to be deactivated to access it.
 
 On Samsung phones the preinstalled browser "Samsung Internet" seems to have problems
-with websockets. The webinterface might not work as expected. Please try another
+with WebSockets. The web interface might not work as expected. Please try another
 browser, e.g. Firefox or Chrome.
 
 WIFI Configuration
@@ -148,7 +148,7 @@ on the backside of the Brick.
 The access point can be configured as fallback, such that it is only active
 when WIFI is not connected.
 
-It also can be completely disabled. We don't recommand this setting, since
+It also can be completely disabled. We don't recommend this setting, since
 it might be possible that you are unable to access the web interface of the
 Brick when there is a problem with your WIFI settings. In that case the
 only solution is to factory reset the Brick.
