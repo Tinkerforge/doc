@@ -120,7 +120,7 @@ sticker on the bottom of the Brick.
    :target: ../../_images/Bricks/brick_esp32_ethernet_label_800.jpg
 
 If you want to use the LAN connection with a static IP address configuration or if you want to use
-the Brick with a existing WIFI you first have to access the web interface of the Brick.
+the Brick with an existing WIFI network you first have to access the web interface of the Brick.
 The web interface can be accessed by the WIFI access point of the Brick.
 
 The individual credentials of your Brick are noted on the WIFI credential

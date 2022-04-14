@@ -109,6 +109,12 @@ Für eine Verbindung zu einem bestehenden WLAN-Netzwerk muss zunächst eine Verb
 Webinterface des Bricks hergestellt werden. Dies erfolgt über den im
 Auslieferungszustand aktivierten WLAN-Access-Point des Bricks.
 
+.. image:: /Images/Bricks/brick_esp32_label_200.jpg
+   :scale: 100 %
+   :alt: WLAN-Zugangsdaten-Aufkleber
+   :align: center
+   :target: ../../_images/Bricks/brick_esp32_label_800.jpg
+
 Die individuellen Zugangsdaten des Access-Points sind auf dem
 WLAN-Zugangsdaten-Aufkleber auf der Rückseite des Bricks vermerkt. Der QR-Code des
 Aufklebers kann mit dem Smartphone direkt gescannt werden, um automatisch eine

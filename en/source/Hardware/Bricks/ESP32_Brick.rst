@@ -103,7 +103,15 @@ operational.
 The Brick can be accessed by WIFI. The USB connector is only used as power source
 and to perform a factory reset on the Brick.
 
-The webinterface can be accessed by the WIFI access point of the Brick.
+If you want to use the Brick with an existing WIFI network you first have to
+access the web interface of the Brick. The web interface can be accessed by the
+WIFI access point of the Brick.
+
+.. image:: /Images/Bricks/brick_esp32_label_200.jpg
+   :scale: 100 %
+   :alt: WIFI credential sticker
+   :align: center
+   :target: ../../_images/Bricks/brick_esp32_label_800.jpg
 
 The individual credentials of your Brick are noted on the WIFI credential
 sticker on the backside of the Brick. The QR code can be scanned with a smartphone to setup
