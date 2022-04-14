@@ -14,7 +14,8 @@ ESP32 Ethernet Brick
 
 	{% tfgallery %}
 
-	Bricks/brick_esp32_ethernet_brickv_[100|].jpg     ESP32 Ethernet Brick in Brick Viewer
+	Bricks/brick_esp32_ethernet_tilted_front_[?|?].jpg        ESP32 Ethernet Brick
+	Bricks/brick_esp32_ethernet_brickv_[100|].jpg             ESP32 Ethernet Brick in Brick Viewer
 
 	{% tfgalleryend %}
 
