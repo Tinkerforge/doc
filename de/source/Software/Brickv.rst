@@ -120,14 +120,17 @@ zu beachten:
   richtig funktioniert. Diese Problem wurde in Hardware Version 2.1 korrigiert.
 
 Zum Flashen einer neuen Firmware muss der Brick in den Bootloader Modus
-versetzt werden. Dazu folgende Schritte anwenden:
+versetzt werden. Der **ESP32 Brick** und **ESP32 Ethernet Brick** werden dazu
+einfach per USB an den PC angeschlossen.
+
+Für alle anderen 4x4cm Brick müssen dazu folgende Schritte durchgeführt:
 
 1. Brick per USB an PC anschließen.
 2. Erase Knopf drücken und gedrückt halten.
 3. Reset Knopf drücken und wieder loslassen.
 4. Erase Knopf wieder loslassen.
 
-Jetzt sollten alle LEDs am Brick aus sein, der Brick sich im Bootloader
+Jetzt sollten alle LEDs am 4x4cm Brick aus sein, der Brick sich im Bootloader
 Modus befinden und am PC sollte eine neue seriellen Schnittstelle auftauchen.
 
 Serielle Schnittstelle

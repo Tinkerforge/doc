@@ -117,15 +117,17 @@ Brick Viewer. Depending on the type of Brick the following hints may apply:
   to be disconnected from the stack to make the bootloader mode work correctly.
   This problem is fixed in hardware version 2.1.
 
-To flash a new firmware the Brick has to be into bootloader mode. Follow
-this steps:
+To flash a new firmware the Brick has to be in bootloader mode. For **ESP32 Brick**
+and **ESP32 Ethernet Brick** just connect them via USB to the PC.
+
+For all other 4x4cm sized Bricks follow these steps:
 
 1. Connect the Brick via USB to the PC.
 2. Press and hold the Erase button.
 3. Press and release the Reset button.
 4. Release the Erase button.
 
-Now all LEDs on the Brick should be off, the Brick should be in
+Now all LEDs on the 4x4cm Brick should be off, the Brick should be in
 bootloader mode and a new serial port device should be detected on your PC.
 
 Serial Port
