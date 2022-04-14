@@ -359,8 +359,9 @@ Die Farbe kann jetzt über den Auswahldialog geändert und an das Backend-Modul
 und dadurch an das RGB LED Button Bricklet kommuniziert werden.
 
 Die Kommunikation von Frontend zu Backend ist gleichgeblieben. Es wird jetzt
-zusätzlich im Backend mit dem RGB LED Button Bricklet kommuniziert. Dazu wird
-ein RGB LED Button Bricklet Objekt angelegt. Das zweite Parameter der
+zusätzlich im Backend mit dem RGB LED Button Bricklet über die
+:ref:`C/C++ Bindings für Mikrocontroller <api_bindings_uc>` kommuniziert. Dazu
+wird ein RGB LED Button Bricklet Objekt angelegt. Das zweite Parameter der
 :c:func:`tf_rgb_led_button_create <tf_rgb_led_button_create>` Funktion kann
 verwendet werden, um per UID oder
 Port-Namen anzugeben welches RGB LED Button Bricklet gemeint ist. Wird dieser
@@ -455,7 +456,239 @@ Nach der Änderung zu Grün:
    :target: ../../_images/Tutorial/tutorial_esp32_phase_4_hardware_green_1200.jpg
 
 
-Phase 5: Kommunikation Bricklet zu Backend
-------------------------------------------
+Phase 5: Kommunikation Bricklet zu Backend/Frontend
+---------------------------------------------------
 
 Modulname für die ``platformio.ini`` Datei: ``Tutorial Phase 5``
+
+Mit diesem Modul aktiviert taucht im Webinterface eine Unterseite mit Farb- und
+Tasteranzeige namens "Tutorial (Phase 5)" auf:
+
+.. image:: /Images/Tutorial/tutorial_esp32_phase_5_frontend_released_de_600.png
+   :scale: 100 %
+   :alt: Webinterface (Phase 5)
+   :align: center
+   :target: ../../_images/Tutorial/tutorial_esp32_phase_5_frontend_released_de_1200.png
+
+Neben der Farbe wird auch der Zustand des Tasters angezeigt.
+
+Zustand des Tasters übertragen
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Die ``api.ts`` Datei des Frontend-Moduls wird erweitert, um den Zustand des
+Tasters vom Backend-Modul abfragen zu können. Die neue ``button`` Variable kann
+nicht dem existierenden ``config`` Zustand hinzugefügt werden, da der ``config``
+Zustand vom Frontend-Modul geändert werden kann, die ``button`` Variable im
+Frontend-Modul aber nur lesend zugegriffen werden können soll:
+
+.. code-block:: ts
+   :emphasize-lines: 6,7,8,9
+
+    export interface config
+    {
+        color: string
+    }
+
+    export interface state
+    {
+        button: boolean
+    }
+
+Entsprechend muss auch ein neues ``ConfigRoot`` Objekt angelegt werden. Auszug
+aus ``tutorial_phase_5.cpp`` dazu:
+
+.. code-block:: cpp
+   :emphasize-lines: 9,10,11
+
+    void TutorialPhase5::setup()
+    {
+        tutorial_config = Config::Object({
+            {"color", Config::Str("#FF0000", 7, 7)}
+        });
+
+        tutorial_config_update = tutorial_config;
+
+        tutorial_state = Config::Object({
+            {"button", Config::Bool(false)}
+        });
+
+        if (tf_rgb_led_button_create(&rgb_led_button, nullptr, &hal) != TF_E_OK) {
+            logger.printfln("No RGB LED Button Bricklet found, disabling Tutorial (Phase 5) module");
+            return;
+        }
+
+        set_bricklet_color(tutorial_config.get("color")->asString());
+
+        logger.printfln("Tutorial (Phase 5) module initialized");
+
+        initialized = true;
+    }
+
+Dieses neue ``ConfigRoot`` Objekt muss dann auch dem API Manager als weiterer
+Zustand bekannt gemacht werden. Dafür wird der Name ``tutorial_phase_5/state``
+verwendet, entsprechend der Änderung der ``api.ts`` im Frontend-Modul. Auszug
+aus ``tutorial_phase_5.cpp`` dazu:
+
+.. code-block:: cpp
+   :emphasize-lines: 13
+
+    void TutorialPhase5::register_urls()
+    {
+        api.addState("tutorial_phase_5/config", &tutorial_config, {}, 1000);
+
+        api.addCommand("tutorial_phase_5/config_update", &tutorial_config_update, {}, [this]() {
+            String color = tutorial_config_update.get("color")->asString();
+
+            logger.printfln("Tutorial (Phase 5) module received color update: %s", color.c_str());
+            tutorial_config.get("color")->updateString(color);
+            set_bricklet_color(color);
+        }, false);
+
+        api.addState("tutorial_phase_5/state", &tutorial_state, {}, 100);
+    }
+
+Um auf einen Tasterdruck reagieren zu können wird die Funktion
+``button_state_changed_handler`` als Handler für den Button-State-Changed-Callback
+des RGB LED Button Bricklets registriert. Dadurch wird diese Funktion beim Drücken
+und Loslassen des Tasters automatisch aufgerufen und die Zustandsänderung kann
+entsprechend behandelt werden. Auszug aus ``tutorial_phase_5.cpp`` dazu:
+
+.. code-block:: cpp
+   :emphasize-lines: 1,2,3,4,5,26,27,29,30,31,32,33
+
+    static void button_state_changed_handler(TF_RGBLEDButton *rgb_led_button, uint8_t state, void *user_data)
+    {
+        TutorialPhase5 *tutorial = (TutorialPhase5 *)user_data;
+        tutorial->tutorial_state.get("button")->updateBool(state == TF_RGB_LED_BUTTON_BUTTON_STATE_PRESSED);
+    }
+
+    void TutorialPhase5::setup()
+    {
+        tutorial_config = Config::Object({
+            {"color", Config::Str("#FF0000", 7, 7)}
+        });
+
+        tutorial_config_update = tutorial_config;
+
+        tutorial_state = Config::Object({
+            {"button", Config::Bool(false)}
+        });
+
+        if (tf_rgb_led_button_create(&rgb_led_button, nullptr, &hal) != TF_E_OK) {
+            logger.printfln("No RGB LED Button Bricklet found, disabling Tutorial (Phase 5) module");
+            return;
+        }
+
+        set_bricklet_color(tutorial_config.get("color")->asString());
+
+        tf_rgb_led_button_register_button_state_changed_callback(&rgb_led_button, button_state_changed_handler, this);
+        uint8_t state;
+
+        if (tf_rgb_led_button_get_button_state(&rgb_led_button, &state) != TF_E_OK) {
+            logger.printfln("Could not get RGB LED Button Bricklet button state");
+        } else {
+            tutorial_state.get("button")->updateBool(state == TF_RGB_LED_BUTTON_BUTTON_STATE_PRESSED);
+        }
+
+        logger.printfln("Tutorial (Phase 5) module initialized");
+
+        initialized = true;
+    }
+
+In der ``main.ts`` Datei des Frontend-Moduls muss dann auf die Änderung des
+neuen Zustands ``tutorial_phase_5/state`` für den Tasterzustand genau so
+reagiert werden, wie auf die Änderung des bisherigen ``tutorial_phase_5/config``
+Zustand für die Farbe:
+
+.. code-block:: ts
+   :emphasize-lines: 1,2,3,4,5,10
+
+    function update_state()
+    {
+        let state = API.get("tutorial_phase_5/state");
+        $("#tutorial_phase_5_button").val(state.button ? __("tutorial_phase_5.script.button_pressed") : __("tutorial_phase_5.script.button_released"));
+    }
+
+    export function add_event_listeners(source: API.APIEventTarget)
+    {
+        source.addEventListener("tutorial_phase_5/config", update_config);
+        source.addEventListener("tutorial_phase_5/state", update_state);
+    }
+
+Ein Druck auf den Taster wird im Webinterface angezeigt:
+
+.. image:: /Images/Tutorial/tutorial_esp32_phase_5_frontend_pressed_de_600.png
+   :scale: 100 %
+   :alt: Webinterface (Phase 5), Taster gedrückt
+   :align: center
+   :target: ../../_images/Tutorial/tutorial_esp32_phase_5_frontend_pressed_de_1200.png
+
+
+Auf externe Farbänderungen reagieren
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Die Standard-Firmware macht die angeschlossenen Bricklets durch das
+``Proxy``-Modul extern über die :ref:`API Bindings <api_bindings>` und damit
+auch :ref:`Brick Viewer <brickv>` zugänglich. Farbänderungen des RGB LED Button
+Bricklets über diesen Weg werden vom Tutorial-Modul bisher nicht wahrgenommen.
+
+Damit externe Farbänderungen vom Tutorial-Modul auch wahrgenommen werden können
+wird die Farbe alle 1000 Millisekunden vom RGB LED Button Bricklet abgefragt und
+bei Änderung automatisch über den API Manager an das Webinterface übertragen.
+Auszug aus ``tutorial_phase_5.cpp`` dazu:
+
+.. code-block:: cpp
+   :emphasize-lines: 13,14,15,22,23,24,26,27,28,29,31,32,33
+
+    void TutorialPhase5::setup()
+    {
+        // ...
+
+        uint8_t state;
+
+        if (tf_rgb_led_button_get_button_state(&rgb_led_button, &state) != TF_E_OK) {
+            logger.printfln("Could not get RGB LED Button Bricklet button state");
+        } else {
+            tutorial_state.get("button")->updateBool(state == TF_RGB_LED_BUTTON_BUTTON_STATE_PRESSED);
+        }
+
+        task_scheduler.scheduleWithFixedDelay([this]() {
+            poll_bricklet_color();
+        }, 0, 1000);
+
+        logger.printfln("Tutorial (Phase 5) module initialized");
+
+        initialized = true;
+    }
+
+    void TutorialPhase5::poll_bricklet_color()
+    {
+        uint8_t red, green, blue;
+
+        if (tf_rgb_led_button_get_color(&rgb_led_button, &red, &green, &blue) != TF_E_OK) {
+            logger.printfln("Could not get RGB LED Button Bricklet color");
+            return;
+        }
+
+        String color = "#" + num2hex(red) + num2hex(green) + num2hex(blue);
+        tutorial_config.get("color")->updateString(color);
+    }
+
+Änderung der Farbe von Rot auf Gelb in Brick Viewer:
+
+.. image:: /Images/Tutorial/tutorial_esp32_phase_5_brickv_600.png
+   :scale: 100 %
+   :alt: Brick Viewer (Phase 5), Gelb
+   :align: center
+   :target: ../../_images/Tutorial/tutorial_esp32_phase_5_brickv_1200.png
+
+Jetzt wird im Webinterface Gelb angezeigt:
+
+.. image:: /Images/Tutorial/tutorial_esp32_phase_5_frontend_yellow_de_600.png
+   :scale: 100 %
+   :alt: Webinterface (Phase 5), Gelb
+   :align: center
+   :target: ../../_images/Tutorial/tutorial_esp32_phase_5_frontend_yellow_de_1200.png
+
+Damit ist der gesamte Kommunikationsweg von Hardware durch Firmware zum Webinterface
+und zurück durchlaufen und dieses Tutorial abgeschlossen.
