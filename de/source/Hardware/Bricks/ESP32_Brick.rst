@@ -29,9 +29,9 @@ Features
 Beschreibung
 ------------
 
-Der ESP32 Brick bietet **sechs** :ref:`Bricklet <primer_bricklets>` 
-Anschlüsse und ist mit einem leistungsstarken ESP32 Mikrocontroller 
-ausgestattet. Der ESP32 verfügt über zwei CPU Kerne (bis zu 240MHz), 16MB SPI 
+Der ESP32 Brick bietet **sechs** :ref:`Bricklet <primer_bricklets>`
+Anschlüsse und ist mit einem leistungsstarken ESP32 Mikrocontroller
+ausgestattet. Der ESP32 verfügt über zwei CPU Kerne (bis zu 240MHz), 16MB SPI
 Flash, WLAN (802.11b/g/n) und Bluetooth (V4.2 BR/EDR, BLE).
 
 Der Brick kann für zwei Anwendungsfälle eingesetzt werden:
@@ -43,11 +43,11 @@ einfach die
 :ref:`C/C++ API Bindings für Mikrocontroller <api_bindings_uc>` Bibliotheken
 eingebunden. Unterstützung für WLAN, Bluetooth und andere ESP32 Features
 ist über die offiziellen Espressif ESP32 Plattform Bibliotheken gegeben.
-Die eigene Software kann auf den Brick über den integrierten USB nach UART 
+Die eigene Software kann auf den Brick über den integrierten USB nach UART
 Wandler geflasht werden oder per WLAN wenn eine entsprechende Firmware
 eingesetzt wird.
 
-Für Anwendungen bei denen das System von außen gesteuert werden soll, kann 
+Für Anwendungen bei denen das System von außen gesteuert werden soll, kann
 der Brick ohne eigene Software eingesetzt werden. Der Brick wird mit einer
 Standard Firmware ausgeliefert. Über diese Firmware kann auf die
 angeschlossenen Bricklets per WLAN zugegriffen werden. Die Firmware bietet
@@ -80,7 +80,7 @@ Bluetooth                         V4.2 BR/EDR und Bluetooth LE
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Abmessungen (B x T x H)           66 x 40 x 9mm (2,60 x 1,57 x 0,35")
-Gewicht                           TBDg 
+Gewicht                           TBDg
 ================================  ============================================================
 
 Ressourcen
@@ -92,14 +92,13 @@ Ressourcen
 * Platinenlayout (`Download <https://github.com/Tinkerforge/esp32-brick/zipball/master>`__)
 * 3D Modell (`View online <https://a360.co/3tXfWIt>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricks/esp32/esp32.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricks/esp32/esp32.FCStd>`__)
 
-
 .. _esp32_brick_setup:
 
 Ersteinrichtung
 ---------------
 
-Zur Ersteinrichtung muss der ESP32 Brick über den USB-C Anschluss 
-mit Strom versorgt werden. Sobald die blaue Status-LED langsam blinkt ist der 
+Zur Ersteinrichtung muss der ESP32 Brick über den USB-C Anschluss
+mit Strom versorgt werden. Sobald die blaue Status-LED langsam blinkt ist der
 Brick betriebsbereit.
 
 Die Kommunikation mit dem Brick erfolgt über WLAN.
@@ -184,9 +183,9 @@ gibt Informationen über die angeschlossenen Bricklets aus und ermöglicht es
 diese zu testen.
 
 Im Brick Viewer muss vor dem Klick auf den Connect-Knopf die Host-Einstellung
-von ``localhost`` auf den Hostname oder IP Adresse des ESP32 Bricks 
-geändert werden. Der voreingestellte individuelle Hostname 
-(z.B. ``esp32-ABC``) ist auf dem WLAN-Zugangsdaten-Aufkleber auf der Rückseite 
+von ``localhost`` auf den Hostname oder IP Adresse des ESP32 Bricks
+geändert werden. Der voreingestellte individuelle Hostname
+(z.B. ``esp32-ABC``) ist auf dem WLAN-Zugangsdaten-Aufkleber auf der Rückseite
 des Bricks vermerkt.
 
 Nach dem Klick auf den Connect-Knopf sollte im Brick Viewer ein neuer Tab namens

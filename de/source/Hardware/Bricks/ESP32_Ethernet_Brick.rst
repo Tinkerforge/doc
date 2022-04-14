@@ -30,9 +30,9 @@ Features
 Beschreibung
 ------------
 
-Der ESP32 Ethernet Brick bietet **sechs** :ref:`Bricklet <primer_bricklets>` 
-Anschlüsse und ist mit einem leistungsstarken ESP32 Mikrocontroller 
-ausgestattet. Der ESP32 verfügt über zwei CPU Kerne (bis zu 240MHz), 16MB SPI 
+Der ESP32 Ethernet Brick bietet **sechs** :ref:`Bricklet <primer_bricklets>`
+Anschlüsse und ist mit einem leistungsstarken ESP32 Mikrocontroller
+ausgestattet. Der ESP32 verfügt über zwei CPU Kerne (bis zu 240MHz), 16MB SPI
 Flash, WLAN (802.11b/g/n) und Bluetooth (V4.2 BR/EDR, BLE).
 
 Der Brick kann für zwei Anwendungsfälle eingesetzt werden:
@@ -48,7 +48,7 @@ Die eigene Software kann auf den Brick über den integrierten USB nach UART
 Wandler geflasht werden oder per LAN/WIFI wenn eine entsprechende Firmware 
 eingesetzt wird.
 
-Für Anwendungen bei denen das System von außen gesteuert werden soll, kann 
+Für Anwendungen bei denen das System von außen gesteuert werden soll, kann
 der Brick ohne eigene Software eingesetzt werden. Der Brick wird mit einer
 Standard Firmware ausgeliefert. Über diese Firmware kann auf die
 angeschlossenen Bricklets per LAN/WLAN zugegriffen werden. Die Firmware bietet
@@ -64,7 +64,6 @@ außen stattfindet (open loop).
 
 Die Stromversorgung des Bricks erfolgt über seinen USB-C Stecker oder über eine
 optionale :ref:`ESP32 Power Supply <todo>` über den GPIO Stecker des Bricks.
-
 
 Technische Spezifikation
 ------------------------
@@ -96,14 +95,13 @@ Ressourcen
 * Platinenlayout (`Download <https://github.com/Tinkerforge/esp32-ethernet-brick/zipball/master>`__)
 * 3D Modell (`View online <https://a360.co/3iVsZUI>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricks/esp32_ethernet/esp32-ethernet.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricks/esp32_ethernet/esp32-ethernet.FCStd>`__)
 
-
 .. _esp32_ethernet_brick_setup:
 
 Ersteinrichtung
 ---------------
 
-Zur Ersteinrichtung muss der ESP32 Ethernet Brick über den USB-C Anschluss 
-mit Strom versorgt werden. Sobald die blaue Status-LED langsam blinkt ist der 
+Zur Ersteinrichtung muss der ESP32 Ethernet Brick über den USB-C Anschluss
+mit Strom versorgt werden. Sobald die blaue Status-LED langsam blinkt ist der
 Brick betriebsbereit.
 
 Die Kommunikation mit dem Brick erfolgt über LAN oder WLAN. LAN und WLAN können
@@ -219,9 +217,9 @@ gibt Informationen über die angeschlossenen Bricklets aus und ermöglicht es
 diese zu testen.
 
 Im Brick Viewer muss vor dem Klick auf den Connect-Knopf die Host-Einstellung
-von ``localhost`` auf den Hostname oder IP Adresse des ESP32 Ethernet Bricks 
-geändert werden. Der voreingestellte individuelle Hostname 
-(z.B. ``esp32-ABC``) ist auf dem WLAN-Zugangsdaten-Aufkleber auf der Rückseite 
+von ``localhost`` auf den Hostname oder IP Adresse des ESP32 Ethernet Bricks
+geändert werden. Der voreingestellte individuelle Hostname
+(z.B. ``esp32-ABC``) ist auf dem WLAN-Zugangsdaten-Aufkleber auf der Rückseite
 des Bricks vermerkt.
 
 Nach dem Klick auf den Connect-Knopf sollte im Brick Viewer ein neuer Tab namens
