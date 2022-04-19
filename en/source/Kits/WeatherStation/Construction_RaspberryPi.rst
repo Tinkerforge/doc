@@ -9,8 +9,8 @@ the :ref:`Raspberry Pi <embedded_raspberry_pi>`. You can put the Raspberry Pi
 in the case, despite it is a bit tricky to get everything in the case.
 
 We will put a :ref:`Master Brick <master_brick>`,
-a :ref:`Step-Down Power Supply <step_down_power_supply>`, a :ref:`DC Jack
-Adapter <dc_jack_adapter>` and
+a :ref:`Step-Down Power Supply <step_down_power_supply>`, a `DC Jack
+Adapter <https://www.tinkerforge.com/en/shop/accessories/dc-adapter.html>`__ and
 the Raspberry Pi in the case. The Raspberry Pi (and the Master Brick) will
 be powered over the DC Jack Adapter by the Step-Down Power Supply.
 To power the Raspberry Pi we have used an Micro USB cable, removed the jack

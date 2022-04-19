@@ -10,8 +10,9 @@ werden wir eine `USB Netzteil
 <https://www.tinkerforge.com/de/shop/power-supplies/usb-power-supply.html>`__
 nutzen, um die Station mit Strom zu versorgen. Als Alternative ist es auch
 möglich die Station über eine :ref:`Step-Down Power Supply
-<step_down_power_supply>` zusammen mit einem :ref:`DC Jack Adapter
-<dc_jack_adapter>` zu versorgen. Details dazu finden sich in der
+<step_down_power_supply>` zusammen mit einem `DC Jack Adapter
+<https://www.tinkerforge.com/de/shop/accessories/dc-adapter.html>`__
+zu versorgen. Details dazu finden sich in der
 Aufbauanleitung für die :ref:`WLAN Wetterstation
 <starter_kit_weather_station_construction_wifi>`.
 

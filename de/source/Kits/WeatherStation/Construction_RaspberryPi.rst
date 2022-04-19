@@ -10,8 +10,9 @@ gesteuert werden. Das Raspberry Pi kann direkt in das Gehäuse eingebaut werden
 auch wenn es nicht einfach ist alles zu integrieren.
 
 Wir installieren einen :ref:`Master Brick <master_brick>`,
-eine :ref:`Step-Down Power Supply <step_down_power_supply>`, einen :ref:`DC Jack
-Adapter <dc_jack_adapter>` und das Raspberry Pi im Gehäuse.
+eine :ref:`Step-Down Power Supply <step_down_power_supply>`, einen `DC Jack
+Adapter <https://www.tinkerforge.com/de/shop/accessories/dc-adapter.html>`__
+und das Raspberry Pi im Gehäuse.
 Das Raspberry Pi (und der Master Brick) werden über den DC Jack Adapter durch
 die Step-Down Power Supply versorgt. Zur Stromversorgung des Raspberry Pi haben
 wir den Stecker eines Micro USB Kabel abgeschnitten und die 

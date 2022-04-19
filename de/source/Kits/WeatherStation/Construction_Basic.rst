@@ -8,8 +8,9 @@ Die Basisversion des Starterkits Wetterstation besteht aus :ref:`Ambient
 Light 2.0 <ambient_light_v2_bricklet>`, :ref:`Barometer <barometer_bricklet>`,
 :ref:`Humidity <humidity_bricklet>` und :ref:`LCD 20x4 Bricklet
 <lcd_20x4_bricklet>`, :ref:`Master Brick <master_brick>`, dem
-Wetterstationsgehäuse inklusive Austauschseitenteil für einen :ref:`DC Jack
-Adapter <dc_jack_adapter>`, Bricklet und USB Kabeln sowie jede Menge Schrauben,
+Wetterstationsgehäuse inklusive Austauschseitenteil für einen `DC Jack
+Adapter <https://www.tinkerforge.com/de/shop/accessories/dc-adapter.html>`__,
+Bricklet und USB Kabeln sowie jede Menge Schrauben,
 Abstandsbolzen, Muttern und Unterlegscheiben.
 
 .. image:: /Images/Kits/weather_station_content_350.jpg

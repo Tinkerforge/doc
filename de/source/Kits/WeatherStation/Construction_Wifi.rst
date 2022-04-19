@@ -9,7 +9,8 @@ Konstruktion - WLAN Wetterstation
 Die Wetterstation ist groß genug um eine :ref:`WIFI Extension <wifi_extension>`
 einzubauen um die Station drahtlos zu steuern. In dieser Anleitung werden wir
 eine :ref:`Step-Down Power Supply <step_down_power_supply>` zusammen mit
-einem :ref:`DC Jack Adapter <dc_jack_adapter>` nutzen um die Station mit Strom
+einem `DC Jack Adapter <https://www.tinkerforge.com/de/shop/accessories/dc-adapter.html>`__
+nutzen um die Station mit Strom
 zu versorgen. Als Alternative ist es auch möglich die Station über ein
 `USB Netzteil <https://www.tinkerforge.com/de/shop/power-supplies/usb-power-supply.html>`__
 zu versorgen, dann sind DC Jack Adapter und Step-Down Power Supply nicht

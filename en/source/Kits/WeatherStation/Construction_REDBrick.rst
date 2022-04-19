@@ -10,7 +10,7 @@ In this tutorial we well use a `USB Power Supply
 <https://www.tinkerforge.com/en/shop/power-supplies/usb-power-supply.html>`__
 to power the stack. It is also possible to power the stack with a
 :ref:`Step-Down Power Supply <step_down_power_supply>` together with
-a :ref:`DC Jack Adapter <dc_jack_adapter>` to power the stack. For details
+a `DC Jack Adapter <https://www.tinkerforge.com/en/shop/accessories/dc-adapter.html>`__ to power the stack. For details
 about this see the :ref:`Wi-Fi Weather Station
 <starter_kit_weather_station_construction_wifi>` construction section.
 
