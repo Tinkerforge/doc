@@ -377,7 +377,10 @@ power_supply_infos = \
 [
     DeviceInfo(None, 'PowerSupply', 'Step-Down Power Supply', 'Step-Down', 'step_down_power_supply', 'Step_Down', None, 'step-down-powersupply', None, False, False, True, True, False, False,
                {'en': 'Powers a stack of Bricks with 5V',
-                'de': 'Versorgt einen Stapel von Bricks mit 5V'})
+                'de': 'Versorgt einen Stapel von Bricks mit 5V'}),
+    DeviceInfo(None, 'PowerSupply', 'ESP32 Power Supply', 'ESP32', 'esp32_power_supply', 'ESP32', None, 'esp32-power-supply', None, False, False, False, False, False, False,
+               {'en': 'Powers a ESP32 Brick or ESP32 Ethernet Brick with 5V',
+                'de': 'Versorgt einen ESP32 Brick oder ESP32 Ethernet Brick mit 5V'})
 ]
 
 KitInfo = namedtuple('KitInfo', 'display_name url_part prefix released')
