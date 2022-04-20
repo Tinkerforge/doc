@@ -10,4 +10,4 @@ and their concepts:
 * :ref:`Bricklet Cables (7 pole vs 10 pole) <tutorial_bricklet_cables>`
 
 ..
- * :ref:`ESP32 Brick Firmware <tutorial_esp32_firmware>`
+ * :ref:`ESP32 Firmware <tutorial_esp32_firmware>`
