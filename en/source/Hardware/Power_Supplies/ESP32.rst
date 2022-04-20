@@ -10,7 +10,7 @@ ESP32 Power Supply
 
 	{% tfgallery %}
 
-	Power_Supplies/esp32powersupply_tilted_[?|?].jpg                       Step-Down Power Supply
+	Power_Supplies/esp32_tilted_[?|?].jpg                   ESP32 Power Supply
 
 	{% tfgalleryend %}
 
@@ -25,13 +25,13 @@ Features
 Description
 -----------
 
-The ESP32 Power Supply can be used to power :ref:`ESP32 Brick <esp32_brick>` 
-or a :ref:`ESP32 Ethernet Brick <esp32_ethernet_brick>` and its connected 
+The ESP32 Power Supply can be used to power :ref:`ESP32 Brick <esp32_brick>`
+or a :ref:`ESP32 Ethernet Brick <esp32_ethernet_brick>` and its connected
 :ref:`Bricklets <primer_bricklets>`. The power supply generates 5VDC from an
 input voltage between 7V and 27V DC.
 
-The power supply module is 40 x 40mm in size and can be mounted directly over 
-the Bricklet connectors of the Brick with 10mm bolts. Electrical connection 
+The power supply module is 40 x 40mm in size and can be mounted directly over
+the Bricklet connectors of the Brick with 10mm bolts. Electrical connection
 is established by the GPIO header of the ESP32 (Ethernet) Brick.
 
 
@@ -65,18 +65,18 @@ Resources
 Connectivity and Mounting
 -------------------------
 
-To attach the ESP32 Power Supply to an ESP32 Brick or ESP32 Ethernet Brick 
+To attach the ESP32 Power Supply to an ESP32 Brick or ESP32 Ethernet Brick
 you have to solder in the male header and female headers. The male header
-has to go on the top side of the ESP32 (Ethernet) Brick, the female header 
+has to go on the top side of the ESP32 (Ethernet) Brick, the female header
 on the bottom side of the ESP32 Power Supply.
 
 Afterwards the power supply is attached to the Brick with four 10mm bolts.
 
-The following picture depicts the electrical connection to the ESP32 Power 
+The following picture depicts the electrical connection to the ESP32 Power
 Supply.
 
-.. image:: /Images/Power_Supplies/esp32_power_supply_caption_600.jpg
+.. image:: /Images/Power_Supplies/esp32_caption_600.jpg
    :scale: 100 %
    :alt: ESP32 Power Supply with caption
    :align: center
-   :target: ../../_images/Power_Supplies/esp32_power_supply_caption_800.jpg
+   :target: ../../_images/Power_Supplies/esp32_caption_800.jpg
