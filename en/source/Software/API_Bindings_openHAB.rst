@@ -4,8 +4,8 @@
 openHAB - API Bindings
 ======================
 
-.. note::
- The openHAB bindings are currently still in beta.
+.. warning::
+ The openHAB bindings are still in beta, but the development was stopped.
 
 The openHAB bindings allow you to control :ref:`Bricks <primer_bricks>` and
 :ref:`Bricklets <primer_bricklets>` from your openHAB installation. The
