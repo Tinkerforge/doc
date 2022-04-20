@@ -1,8 +1,8 @@
 
 .. _api_bindings_openhab:
 
-openHAB - Bindings
-==================
+openHAB - API Bindings
+======================
 .. note::
  Zur Zeit ist nur die englische openHAB-Dokumentation verfügbar.
 
@@ -56,9 +56,9 @@ output channels. Sometimes PaperUI needs to be refreshed by pressing F5
 to show new channels.
 
 Changing device configuration is only supported, if it is stored in the RAM of the device.
-Persistant configuration has to be set externally (e.g. by using Brick Viewer),
+Persistent configuration has to be set externally (e.g. by using Brick Viewer),
 because openHAB will often reconfigure devices, for example on startup or when
-reconnected to a Brick Daemon. Writing persistant configuration every time would use up
+reconnected to a Brick Daemon. Writing persistent configuration every time would use up
 too many write-cycles.
 
 Actions
@@ -116,7 +116,7 @@ Nearly the complete API of devices can be used as actions. Functions that
 change the state of a channel will refresh it automatically. Alternatively
 you can use items associated to the channels with .sendCommand to change those.
 Not supported are operations, that would write EEPROM or Flash Storage, to
-avoid unneccesary write-cycles.
+avoid unnecessary write-cycles.
 
 API Reference and Examples
 --------------------------
