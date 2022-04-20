@@ -212,7 +212,7 @@ bindings_infos = \
                  ],
                  tutorial={'en': 'FIXME',
                            'de': 'FIXME'},
-                 is_hardware_supported=lambda device_info: True),
+                 is_hardware_supported=lambda device_info: device_info.has_openhab),
     BindingsInfo(display_name={'en': 'Perl', 'de': 'Perl'},
                  url_part='perl',
                  software_doc_suffix='Perl',
@@ -356,26 +356,26 @@ bindings_infos = \
 
 extension_infos = \
 [
-    DeviceInfo(None, 'Extension', 'Chibi Extension', 'Chibi', 'chibi_extension', 'Chibi_Extension', None, 'chibi-extension', None, False, True, True, True, False,
+    DeviceInfo(None, 'Extension', 'Chibi Extension', 'Chibi', 'chibi_extension', 'Chibi_Extension', None, 'chibi-extension', None, False, False, True, True, True, False,
                {'en': 'Wireless Chibi connection between stacks',
                 'de': 'Drahtlose Chibi Verbindung zwischen Stapeln'}),
-    DeviceInfo(None, 'Extension', 'Ethernet Extension', 'Ethernet', 'ethernet_extension', 'Ethernet_Extension', None, 'ethernet-extension', None, False, True, True, False, False,
+    DeviceInfo(None, 'Extension', 'Ethernet Extension', 'Ethernet', 'ethernet_extension', 'Ethernet_Extension', None, 'ethernet-extension', None, False, False, True, True, False, False,
                {'en': 'Cable based Ethernet connection between stack and PC',
                 'de': 'Kabelgebundene Ethernet Verbindung zwischen Stapel und PC'}),
-    DeviceInfo(None, 'Extension', 'RS485 Extension', 'RS485', 'rs485_extension', 'RS485_Extension', None, 'rs485-extension', None, False, True, True, False, False,
+    DeviceInfo(None, 'Extension', 'RS485 Extension', 'RS485', 'rs485_extension', 'RS485_Extension', None, 'rs485-extension', None, False, False, True, True, False, False,
                {'en': 'Cable based RS485 connection between stacks',
                 'de': 'Kabelgebundene RS485 Verbindung zwischen Stapeln'}),
-    DeviceInfo(None, 'Extension', 'WIFI Extension', 'WIFI', 'wifi_extension', 'WIFI_Extension', None, 'wifi-extension', None, False, True, True, False, False,
+    DeviceInfo(None, 'Extension', 'WIFI Extension', 'WIFI', 'wifi_extension', 'WIFI_Extension', None, 'wifi-extension', None, False, False, True, True, False, False,
                {'en': 'Wireless Wi-Fi connection between stack and PC',
                 'de': 'Drahtlose WLAN Verbindung zwischen Stapel und PC'}),
-    DeviceInfo(None, 'Extension', 'WIFI Extension 2.0', 'WIFI 2.0', 'wifi_v2_extension', 'WIFI_V2_Extension', None, 'wifi-v2-extension', 'wifi_v2', False, True, True, False, False,
+    DeviceInfo(None, 'Extension', 'WIFI Extension 2.0', 'WIFI 2.0', 'wifi_v2_extension', 'WIFI_V2_Extension', None, 'wifi-v2-extension', 'wifi_v2', False, False, True, True, False, False,
                {'en': 'Wireless Wi-Fi connection between stack and PC',
                 'de': 'Drahtlose WLAN Verbindung zwischen Stapel und PC'})
 ]
 
 power_supply_infos = \
 [
-    DeviceInfo(None, 'PowerSupply', 'Step-Down Power Supply', 'Step-Down', 'step_down_power_supply', 'Step_Down', None, 'step-down-powersupply', None, False, True, True, False, False,
+    DeviceInfo(None, 'PowerSupply', 'Step-Down Power Supply', 'Step-Down', 'step_down_power_supply', 'Step_Down', None, 'step-down-powersupply', None, False, False, True, True, False, False,
                {'en': 'Powers a stack of Bricks with 5V',
                 'de': 'Versorgt einen Stapel von Bricks mit 5V'})
 ]
