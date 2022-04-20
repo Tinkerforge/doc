@@ -20,7 +20,7 @@ Als erster Schritt muss das Bauen der ESP32 Standard-Firmware
 Alle Pfade und Dateinamen in diesem Tutorial beziehen sich auf das ``software/``
 Verzeichnis der ESP32 Firmware.
 
-Dieses Tutorial ist in vier Phasen unterteilt. Die jeweiligen Ausbaustufen des
+Dieses Tutorial ist in fünf Phasen unterteilt. Die jeweiligen Ausbaustufen des
 neuen Moduls liegen unbenutzt der ESP32 Firmware bereits bei und werden hier
 Schritt für Schritt erklärt.
 
