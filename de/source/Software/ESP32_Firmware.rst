@@ -32,7 +32,7 @@ Für PlatformIO empfehlen wir die PlatformIO IDE Erweiterung für
 
 Dann das `esp32-firmware <https://github.com/Tinkerforge/esp32-firmware>`__
 Repository von GitHub als
-`ZIP <https://github.com/Tinkerforge/esp32-firmware/archive/refs/heads/master.zip>`__
+`ZIP Datei <https://github.com/Tinkerforge/esp32-firmware/archive/refs/heads/master.zip>`__
 herunterladen und entpacken oder mittels `git <https://www.git-scm.com/>`__ clonen.
 
 Die ``platformio.ini`` Datei befindet sich im ``software/`` Unterverzeichnis.
@@ -55,9 +55,9 @@ PlatformIO Umgebung gewählt werden:
 ..
  * WARP Energy Manager: ``energy_manager``
 
-Um die entsprechende Firmware zu bauen muss dann die "Build" Aufgabe ausgeführt
+Um die entsprechende Firmware zu bauen muss dann die PlatformIO "Build" Aufgabe ausgeführt
 werden. Um die Firmware in einem Schritt zu bauen, auf den Brick hochzuladen
-und eine Verbindung zur seriellen Konsole herzustellen kann die "Upload and Monitor"
+und eine Verbindung zur seriellen Konsole herzustellen kann die PlatformIO "Upload and Monitor"
 Aufgabe ausgeführt werden. Dazu muss der Brick vorher per USB angeschlossen werden.
 
 Struktur der Firmware
