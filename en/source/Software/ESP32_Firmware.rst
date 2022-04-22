@@ -28,7 +28,11 @@ Preparation
 First, `PlatformIO <https://platformio.org/>`__ and `Node.js <https://nodejs.org/>`__
 have to be installed according to their installation manuals. For PlatformIO we
 recommend using the PlatformIO IDE extension for
-`Visual Studio Code <https://code.visualstudio.com/>`__.
+`Visual Studio Code <https://code.visualstudio.com/>`__, but you can also use
+PlatformIO Core instead.
+
+In general you should always use the latest version of PlatformIO and Node.js.
+For the Node.js package manager ``npm`` version 8 or newer is required.
 
 Next, download the `esp32-firmware <https://github.com/Tinkerforge/esp32-firmware>`__
 repository from GitHub as
@@ -37,7 +41,8 @@ and unpack it or clone the repository using `git <https://www.git-scm.com/>`__.
 
 The ``platformio.ini`` file is located in the ``software/`` subdirectory. Open
 this subdirectory in Visual Studio Code and build the ``prepare`` environment
-to prepare the build of other environments.
+to prepare the build of other environments. In general this has to be done only
+once and not before every build of other environments
 
 .. _esp32_firmware_build:
 
