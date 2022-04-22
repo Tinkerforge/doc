@@ -2,7 +2,7 @@
 .. _api_bindings_uc_hal_arduino:
 
 C/C++ für Mikrocontroller - Arduino HAL
-============================================
+=======================================
 
 Der Arduino Hardware Abstraction Layer (HAL)
 wird mit den C/C++ Bindings für Mikrocontroller verwendet

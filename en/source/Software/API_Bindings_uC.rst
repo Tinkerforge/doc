@@ -1,7 +1,7 @@
 
 .. _api_bindings_uc:
 
-C/C++ - API Bindings for Microcontrollers
+C/C++ for Microcontrollers - API Bindings
 =========================================
 
 .. note::

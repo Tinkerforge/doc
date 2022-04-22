@@ -2,7 +2,7 @@
 .. _api_bindings_uc_hal_linux:
 
 C/C++ für Mikrocontroller - Linux HAL
-============================================
+=====================================
 
 Der Linux Hardware Abstraction Layer (HAL)
 wird mit den C/C++ Bindings für Mikrocontroller verwendet
