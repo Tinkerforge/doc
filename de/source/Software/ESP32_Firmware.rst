@@ -47,13 +47,13 @@ Firmware bauen
 Abhängig von der zu bauenden Variante der Firmware muss die entsprechenden
 PlatformIO Umgebung gewählt werden:
 
-* ESP32 Brick: ``esp32``
-* ESP32 Ethernet Brick: ``esp32_ethernet``
-* WARP Charger Smart und Pro: ``warp``
-* WARP2 Charger Smart und Pro: ``warp2``
+* ESP32 Brick: ``esp32`` definiert in ``esp32.ini``
+* ESP32 Ethernet Brick: ``esp32_ethernet`` definiert in ``esp32_ethernet.ini``
+* WARP Charger Smart und Pro: ``warp`` definiert in ``warp.ini``
+* WARP2 Charger Smart und Pro: ``warp2`` definiert in ``warp2.ini``
 
 ..
- * WARP Energy Manager: ``energy_manager``
+ * WARP Energy Manager: ``energy_manager`` definiert in ``energy_manager.ini``
 
 Um die entsprechende Firmware zu bauen muss dann die PlatformIO "Build" Aufgabe ausgeführt
 werden. Um die Firmware in einem Schritt zu bauen, auf den Brick hochzuladen
@@ -65,7 +65,7 @@ Struktur der Firmware
 
 Die Funktionalität und das Webinterface der Firmware sind aus Modulen zusammengesetzt.
 Die verschiedenen Varianten der Firmware unterscheiden sich hauptsächlich durch
-die aktiven Module. Die Liste der aktiven Module wird in der ``platformio.ini``
+die aktiven Module. Die Liste der aktiven Module wird in der jeweligen ``.ini``
 Datei für jede Umgebung durch die Optionen ``backend_modules`` und ``frontend_modules``
 festgelegt.
 
