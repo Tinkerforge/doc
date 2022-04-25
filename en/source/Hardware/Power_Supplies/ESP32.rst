@@ -30,7 +30,7 @@ or a :ref:`ESP32 Ethernet Brick <esp32_ethernet_brick>` and its connected
 :ref:`Bricklets <primer_bricklets>`. The power supply generates 5VDC from an
 input voltage between 7V and 27V DC.
 
-The power supply module is 40 x 40mm in size and can be mounted directly over
+The power supply module is 40 x 40mm in size and can be directly mounted on top of
 the Bricklet connectors of the Brick with 10mm bolts. Electrical connection
 is established by the GPIO header of the ESP32 (Ethernet) Brick.
 
