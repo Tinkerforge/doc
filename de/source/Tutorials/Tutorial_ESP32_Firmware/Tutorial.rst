@@ -4,9 +4,11 @@
 Tutorial - ESP32 Firmware
 =========================
 
-Dieses Tutorial zeigt wie die ESP32 Firmware um ein eigenes Modul zur
+Die :ref:`ESP32 Firmware <esp32_firmware>` ist modular aufgebaut und nutzt
+`PlatformIO <https://platformio.org/>`. Dieses Tutorial zeigt wie die ESP32 
+Firmware um ein eigenes Modul erweitert werden kann. Exemplarisch wird ein Modul zur
 Interaktion mit einem :ref:`RGB LED Button Bricklet <rgb_led_button_bricklet>`
-erweitert werden kann.
+entwickelt. Als Editor wird Visual Studio Code verwendet.
 
 .. image:: /Images/Tutorial/tutorial_esp32_hardware_600.jpg
    :scale: 100 %
@@ -15,7 +17,9 @@ erweitert werden kann.
    :target: ../../_images/Tutorial/tutorial_esp32_hardware_1200.jpg
 
 Als erster Schritt muss das Bauen der ESP32 Standard-Firmware
-:ref:`vorbereitet <esp32_firmware_setup>` werden.
+vorbereitet werden. Dazu sollte die Schritte aus der 
+:ref:`ESP32 Firmware Dokumentation <esp32_firmware_setup>`
+durchgeführt werden.
 
 Alle Pfade und Dateinamen in diesem Tutorial beziehen sich auf das ``software/``
 Verzeichnis der ESP32 Firmware.
@@ -41,10 +45,11 @@ Ausgabe in Visual Studio Code neu gebaut und auf den Brick geflasht werden.
 Phase 1: Leeres Modul anlegen
 -----------------------------
 
-Modulname für die ``platformio.ini`` Datei: ``Tutorial Phase 1``
+Am Ende der Datei ``platformio.ini`` wird wie oben beschrieben ``Tutorial Phase 1``
+in die backend und frontend Module eingetragen.
 
-Mit diesem Modul aktiviert taucht im Webinterface eine leere Unterseite namens
-"Tutorial (Phase 1)" auf:
+Nachdem das Projekt neu compiliert und geflasht wurde taucht im Webinterface 
+das neue Modul als eine leere Unterseite namens "Tutorial (Phase 1)" auf:
 
 .. image:: /Images/Tutorial/tutorial_esp32_phase_1_frontend_de_600.png
    :scale: 100 %
@@ -65,11 +70,11 @@ Module teilen sich in zwei Gruppen auf:
 
 * **Backend**: Diese sind Teil der Firmware und werden in C/C++ programmiert.
   Backend-Module stellen die eigentliche Funktionalität bereit und können mit
-  der Hardware kommunizieren. Modulverzeichnis: ``src/modules/``
+  der Hardware kommunizieren. Backend-Module befinden sich unter: ``src/modules/``
 * **Frontend**: Diese sind Teil des Webinterfaces und werden in
   HTML/Sass/TypeScript programmiert. Frontend-Module stellen die
   Benutzerschnittstelle bereit und können mit den Backend-Modulen kommunizieren.
-  Modulverzeichnis: ``web/src/modules/``
+  Frontend-Module befinden sich unter: ``web/src/modules/``
 
 Typischerweise treten Module in Backend/Frontend-Paaren auf, dies ist aber nicht
 zwingend. Es kann Backend-Module ohne entsprechendes Frontend-Modul geben und
@@ -115,6 +120,8 @@ Phase 2: Kommunikation Backend zu Frontend
 ------------------------------------------
 
 Modulname für die ``platformio.ini`` Datei: ``Tutorial Phase 2``
+(Änderung des Eintrags von ``Phase 1`` zu ``Phase 2`` sowohl bei den Backend- als auch
+bei den Frontend-Modulen).
 
 Mit diesem Modul aktiviert taucht im Webinterface eine Unterseite mit Farbanzeige
 namens "Tutorial (Phase 2)" auf:
@@ -126,7 +133,7 @@ namens "Tutorial (Phase 2)" auf:
    :target: ../../_images/Tutorial/tutorial_esp32_phase_2_frontend_red_de_1200.png
 
 Die Farbe wird dabei durch das Backend-Modul festgelegt und an das Frontend-Modul
-kommuniziert.
+kommuniziert. Dies funktioniert wie folgt:
 
 Backend-Teil der Kommunikation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -241,8 +248,7 @@ namens "Tutorial (Phase 3)" auf:
    :align: center
    :target: ../../_images/Tutorial/tutorial_esp32_phase_3_frontend_red_de_1200.png
 
-Die Farbe kann jetzt über den Auswahldialog geändert und an das Backend-Modul
-kommuniziert werden.
+Die Farbe kann jetzt über den Auswahldialog geändert werden.
 
 Frontend-Teil der Kommunikation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -630,7 +636,8 @@ Auf externe Farbänderungen reagieren
 Die Standard-Firmware macht die angeschlossenen Bricklets durch das
 ``Proxy``-Modul extern über die :ref:`API Bindings <api_bindings>` und damit
 auch :ref:`Brick Viewer <brickv>` zugänglich. Farbänderungen des RGB LED Button
-Bricklets über diesen Weg werden vom Tutorial-Modul bisher nicht wahrgenommen.
+Bricklets über diesen Weg werden vom Tutorial-Modul bisher nicht wahrgenommen
+und daher nicht auf dem Webinterface angezeigt.
 
 Damit externe Farbänderungen vom Tutorial-Modul auch wahrgenommen werden können
 wird die Farbe alle 1000 Millisekunden vom RGB LED Button Bricklet abgefragt und

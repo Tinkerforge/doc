@@ -37,7 +37,7 @@ herunterladen und entpacken oder mittels `git <https://www.git-scm.com/>`__ clon
 
 Die ``platformio.ini`` Datei befindet sich im ``software/`` Unterverzeichnis.
 Dieses Verzeichnis in Visual Studio Code öffnen und die ``prepare`` Umgebung
-bauen, um das Bauen der anderen Umgebungen vorzubereiten.
+bauen (``build``), um das Bauen der anderen Umgebungen vorzubereiten.
 
 .. _esp32_firmware_build:
 
