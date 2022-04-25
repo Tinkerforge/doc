@@ -19,7 +19,7 @@ Hardware-Anforderungen
 ----------------------
 
 Um die Bindings auszuführen, wird ein Mikrocontroller benötigt,
-der in etwa vergleichbar zum, oder besser als der ATmeta328 ist.
+der in etwa vergleichbar zum, oder besser als der ATmega328 ist.
 Der Bindings-Code benötigt mindestens 2k RAM und 16k Flash. Außerdem
 muss die Host-Hardware SPI mit mindestens 400 kHz kommunizieren können.
 Für maximale Performance wird eine SPI-Taktfrequenz von 2 MHz empfohlen.
@@ -48,7 +48,7 @@ Die folgenden Funktionen aus :file:`bindings/hal_common.h` werden verwendet:
 
  Schließt die Initialisierung der ``TF_HALCommon``-Instanz, die zum übergebenen ``TF_HAL`` gehört,
  ab. Das ist typischerweise der letzte Schritt der HAL-Initialisierung. SPI-Kommunikation muss hier bereits
- möglich sein. Diese FUnktion erwartet die Anzahl verwendbarer Ports, sowie einen Timeout in Mikrosekunden,
+ möglich sein. Diese Funktion erwartet die Anzahl verwendbarer Ports, sowie einen Timeout in Mikrosekunden,
  der angibt, wie lange die Bindings versuchen sollen, ein Gerät an einem der Ports zu erreichen.
  :c:func:`tf_hal_common_prepare` baut dann eine Liste der erreichbaren Geräte und speichert diese in der ``TF_HALCommon``-Instanz.
 
@@ -61,13 +61,13 @@ einem internen Typen, der pro HAL-Instanz einmal von den Bindings benötigt wird
 sowie einen Pointer auf ein Array von Port-Mapping-Informationen (``TF_Port``).
 
 Die ``TF_Port``-Struktur kann komplett auf den HAL angepasst werden,
-um zum Beispiel den Chip-Select-Pin eines Ports, sowie dessen Namen, zu verwendente
+um zum Beispiel den Chip-Select-Pin eines Ports, sowie dessen Namen, zu verwendende
 SPI-Einheit usw. abzuspeichern. Beispiele finden sich in :file:`hal_arduino_esp32/hal_arduino_esp32.h`
 und :file:`hal_linux/hal_linux.h`.
 
 Bricklets werden anhand ihrer UID und des Ports unter dem sie erreichbar sind identifiziert.
 Ein Port mappt typischerweise auf den Chip-Select-Pin der gesetzt werden muss, damit Daten über SPI
-an das Bricklet übertragne werden. Manche HAL-Funktionen bekommen eine Port-ID übergeben.
+an das Bricklet übertragen werden. Manche HAL-Funktionen bekommen eine Port-ID übergeben.
 Diese ist typischerweise der Index in ein ``TF_Port``-Array.
 
 

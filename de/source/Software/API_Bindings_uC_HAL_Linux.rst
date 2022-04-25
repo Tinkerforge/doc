@@ -85,7 +85,7 @@ Möglicherweise muss nun im Beispiel-Treiber der Pfad zum spidev geändert werde
 ``"/dev/spidev0.0"`` ist für den ::ref:`HAT Brick <hat_brick>` und den
 :ref:`HAT Zero Brick <hat_zero_brick>` korrekt.
 
-Als letzer Schritt muss die UID im verwendeten Beispiel angepasst werden. Die UID
+Als letzter Schritt muss die UID im verwendeten Beispiel angepasst werden. Die UID
 wird im Brick Viewer angezeigt, wenn das Gerät mit einem PC verbunden wird. Außerdem
 geben die Bindings eine Liste verbundener Geräte aus, wenn mit unverändertem Log-Level
 :c:func:`tf_hal_create` aufgerufen wird.

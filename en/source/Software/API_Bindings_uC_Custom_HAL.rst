@@ -76,14 +76,11 @@ The next step after defining the ``TF_HAL`` struct is implementing its initializ
 ``tf_hal_create``, that handles the following tasks:
 
 * Set the ``TF_HAL`` struct to a defined state.
-
 * Initialize the ``TF_HALCommon`` instance with :c:func:`tf_hal_common_create`
-
 * Prepare the SPI communication
   When your initialization function returns, SPI communication must be possible to all attached devices.
   All chip select pins must be set to HIGH (e.g. disabled).
   :ref:`See here <api_bindings_uc_custom_hal_spi_details>` for details about the SPI communication.
-
 * Call :c:func:`tf_hal_common_prepare`
   This is typically the last step in the initialization. SPI communication must be possible here.
 

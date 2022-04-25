@@ -77,7 +77,7 @@ Der :ref:`HAT Brick <hat_brick>` und :ref:`HAT Zero Brick <hat_zero_brick>` bein
 bereits den benötigten Trenner-Chip und die korrekte Port-Zuweisung ist im Beispiel-Treiber
 aufgeführt.
 
-Als letzer Schritt muss die UID im verwendeten Beispiel angepasst werden. Die UID
+Als letzter Schritt muss die UID im verwendeten Beispiel angepasst werden. Die UID
 wird im Brick Viewer angezeigt, wenn das Gerät mit einem PC verbunden wird. Außerdem
 geben die Bindings eine Liste verbundener Geräte aus, wenn mit unverändertem Log-Level
 :c:func:`tf_hal_create` aufgerufen wird.

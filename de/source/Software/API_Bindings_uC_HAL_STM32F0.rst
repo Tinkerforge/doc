@@ -34,7 +34,7 @@ von eigenem Code aufgerufen werden.
 Der Beispiel-Treiber definiert vier Bricklet-Ports, die mit zwei verschiedenen SPI-Hardware-Einheiten verbunden sind.
 Die Definitionen im Beispiel-Treiber müssen für das verwendete Board angepasst werden.
 
-Als letzer Schritt muss die UID im verwendeten Beispiel angepasst werden. Die UID
+Als letzter Schritt muss die UID im verwendeten Beispiel angepasst werden. Die UID
 wird im Brick Viewer angezeigt, wenn das Gerät mit einem PC verbunden wird. Außerdem
 geben die Bindings eine Liste verbundener Geräte aus, wenn mit unverändertem Log-Level
 :c:func:`tf_hal_create` aufgerufen wird.
