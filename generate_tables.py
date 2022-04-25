@@ -63,11 +63,13 @@ bindings_infos = \
                  has_download=False,
                  misc_docs=[
                      MiscDoc('API_Bindings_{suffix}', 'api_bindings_{suffix}',  {'en': 'Usage', 'de': 'Benutzung'}, False, False),
-                     MiscDoc('API_Bindings_{suffix}_HAL_Arduino', 'api_bindings_{suffix}_hal_arduino', {'en': 'HAL Arduino', 'de': 'HAL Arduino'}, True, True),
-                     MiscDoc('API_Bindings_{suffix}_HAL_Arduino_ESP32', 'api_bindings_{suffix}_hal_arduino_esp32', {'en': 'HAL Arduino ESP32', 'de': 'HAL Arduino ESP32'}, True, True),
-                     MiscDoc('API_Bindings_{suffix}_HAL_Linux', 'api_bindings_{suffix}_hal_linux', {'en': 'HAL Linux', 'de': 'HAL Linux'}, True, True),
-                     MiscDoc('API_Bindings_{suffix}_HAL_Raspberry_Pi', 'api_bindings_{suffix}_hal_raspberry_pi', {'en': 'HAL Raspberry Pi', 'de': 'HAL Raspberry Pi'}, True, True),
-                     MiscDoc('API_Bindings_{suffix}_HAL_STM32F0', 'api_bindings_{suffix}_hal_stm32f0', {'en': 'HAL STM32F0', 'de': 'HAL STM32F0'}, True, True),
+                     #MiscDoc('API_Bindings_{suffix}_HAL_Arduino', 'api_bindings_{suffix}_hal_arduino', {'en': 'HAL Arduino', 'de': 'HAL Arduino'}, True, True),
+                     #MiscDoc('API_Bindings_{suffix}_HAL_Arduino_ESP32', 'api_bindings_{suffix}_hal_arduino_esp32', {'en': 'HAL Arduino ESP32', 'de': 'HAL Arduino ESP32'}, True, True),
+                     MiscDoc('API_Bindings_{suffix}_HAL_Arduino_ESP32_Brick', 'api_bindings_{suffix}_hal_arduino_esp32_brick', {'en': 'HAL Arduino ESP32 Brick', 'de': 'HAL Arduino ESP32 Brick'}, True, True),
+                     MiscDoc('API_Bindings_{suffix}_HAL_Arduino_ESP32_Ethernet_Brick', 'api_bindings_{suffix}_hal_arduino_esp32_ethernet_brick', {'en': 'HAL Arduino ESP32 Ethernet Brick', 'de': 'HAL Arduino ESP32 Ethernet Brick'}, True, True),
+                     #MiscDoc('API_Bindings_{suffix}_HAL_Linux', 'api_bindings_{suffix}_hal_linux', {'en': 'HAL Linux', 'de': 'HAL Linux'}, True, True),
+                     #MiscDoc('API_Bindings_{suffix}_HAL_Raspberry_Pi', 'api_bindings_{suffix}_hal_raspberry_pi', {'en': 'HAL Raspberry Pi', 'de': 'HAL Raspberry Pi'}, True, True),
+                     #MiscDoc('API_Bindings_{suffix}_HAL_STM32F0', 'api_bindings_{suffix}_hal_stm32f0', {'en': 'HAL STM32F0', 'de': 'HAL STM32F0'}, True, True),
                  ],
                  tutorial={'en': 'https://www.cprogramming.com/',
                            'de': 'https://www.cprogramming.com/'}, # http://www.c-howto.de/

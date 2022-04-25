@@ -40,8 +40,8 @@ as well as a Makefile to compile any example. To use the Makefile, create the fo
 
 * [your main folder]/
 
-  * example_driver.c
-  * [copy the example C file here]
+  * example_driver.c [from the hal_raspberry_pi folder]
+  * [copy the example .c file here]
   * Makefile
   * src/
 
@@ -75,11 +75,6 @@ want to communicate with the Bricklets yet. This makes sure the signals are corr
 
 The :ref:`HAT Brick <hat_brick>` or :ref:`HAT Zero Brick <hat_zero_brick>` already
 contain the required buffer chip and their port assignment is listed in the example driver.
-
-As last step, you have to change the UID in the example C file to the UID of your device.
-The UID is shown in Brick Viewer if you connect the device to your PC. Also the bindings
-will print a list of connected devices to the standard output when calling :c:func:`tf_hal_create`,
-if the log level is unchanged.
 
 You can then compile the program with ``make``.
 If you want to cross-compile from another machine, use ``make CROSS_COMPILE=[compiler-prefix]``

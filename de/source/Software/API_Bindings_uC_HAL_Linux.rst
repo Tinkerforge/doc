@@ -46,7 +46,7 @@ muss folgende Orderstruktur erstellt werden:
 
 * [Hauptordner]/
 
-  * example_driver.c
+  * example_driver.c [aus dem hal_linux-Ordner]
   * [hier die gewünschte Beispiel .c-Datei ablegen]
   * Makefile
   * src/
@@ -65,14 +65,14 @@ zum Beispiel für das Industrial Digital In 4 Bricklet 2.0:
 
 .. code-block:: make
 
-  SOURCES_DEVICES :=  bricklet_industrial_digital_in_4_v2.c
+  SOURCES_DEVICES := bricklet_industrial_digital_in_4_v2.c
 
 Der Quellcode des Beispiels selbst muss zu den ``SOURCES`` hinzugefügt werden,
 zum Beispiel:
 
 .. code-block:: make
 
-  SOURCES :=  example_edge_count.c
+  SOURCES := example_edge_count.c
 
 Als nächstes muss die Port-Zuweisung im Beispiel-Treiber auf den Aufbau angepasst werden.
 (:ref:`siehe dieser Abschnitt <api_bindings_uc_hal_linux_port_spec>`).
@@ -89,11 +89,6 @@ aufgeführt.
 Möglicherweise muss nun im Beispiel-Treiber der Pfad zum spidev geändert werden. Der Standardwert
 ``"/dev/spidev0.0"`` ist für den ::ref:`HAT Brick <hat_brick>` und den
 :ref:`HAT Zero Brick <hat_zero_brick>` korrekt.
-
-Als letzter Schritt muss die UID im verwendeten Beispiel angepasst werden. Die UID
-wird im Brick Viewer angezeigt, wenn das Gerät mit einem PC verbunden wird. Außerdem
-geben die Bindings eine Liste verbundener Geräte aus, wenn mit unverändertem Log-Level
-:c:func:`tf_hal_create` aufgerufen wird.
 
 Das Programm kann jetzt mit ``make`` kompiliert werden. Wenn von einem anderen
 Rechner aus cross-kompiliert werden soll, kann ``make CROSS_COMPILE=[compiler-prefix]``
@@ -112,20 +107,19 @@ Ein Port wird als Instanz der ``TF_Port``-Struktur spezifiziert:
 .. code-block:: c
 
   struct TF_Port {
-      //external
+      // external
       int chip_select_pin;
       char port_name;
 
-      //internal
-      int _cs_pin_fd;
+      // internal
+      int cs_pin_fd;
   }
 
 Relevante Member sind ``int chip_select_pin`` und ``char port_name``.
 Der ``chip_select_pin`` ist der Pin, der gesetzt werden muss, um mit dem Port zu kommunizieren.
 Der ``port_name`` ist ein Zeichen, das den Port identifiziert. Der Name wird in die
 Ergebnisse von ``tf_[device]_get_identity`` aufrufen eingefügt, falls das Gerät direkt mit dem Host
-verbunden ist.
-``_cs_pin_fd`` muss nicht initialisiert werden.
+verbunden ist. ``cs_pin_fd`` muss nicht initialisiert werden.
 
 Im Beispiel-Treiber :file:`example_driver.c` sind Port-Spezifikationen für den
 :ref:`HAT Brick <hat_brick>` und :ref:`HAT Zero Brick <hat_zero_brick>` enthalten.

@@ -2,7 +2,7 @@
 .. _api_bindings_uc_hal_stm32f0:
 
 C/C++ für Mikrocontroller - STM32F0 HAL
-========================================
+=======================================
 
 .. warning::
  Diese Dokumentation ist möglicherweise veraltet.
@@ -36,11 +36,6 @@ von eigenem Code aufgerufen werden.
 
 Der Beispiel-Treiber definiert vier Bricklet-Ports, die mit zwei verschiedenen SPI-Hardware-Einheiten verbunden sind.
 Die Definitionen im Beispiel-Treiber müssen für das verwendete Board angepasst werden.
-
-Als letzter Schritt muss die UID im verwendeten Beispiel angepasst werden. Die UID
-wird im Brick Viewer angezeigt, wenn das Gerät mit einem PC verbunden wird. Außerdem
-geben die Bindings eine Liste verbundener Geräte aus, wenn mit unverändertem Log-Level
-:c:func:`tf_hal_create` aufgerufen wird.
 
 .. note::
   Der HAL verwendet die `bricklib2 <https://github.com/Tinkerforge/bricklib2>`__ um Timer-, Sleep- und Log-Funktionen zu implementieren.

@@ -37,11 +37,6 @@ function from your code after you did the initial setup for your board.
 The example driver defines four Bricklet ports that are connected to two different SPI hardware units.
 You need to change the defines at the top of the example driver to fit to your board layout.
 
-As last step, you have to change the UID in the example C file to the UID of your device.
-The UID is shown in Brick Viewer if you connect the device to your PC. Also the bindings
-will print a list of connected devices to the serial console when calling :c:func:`tf_hal_create`,
-if the log level is unchanged.
-
 .. note::
   The HAL uses the `bricklib2 <https://github.com/Tinkerforge/bricklib2>`__ to implement the timer, sleep and log functions.
   If you make your own board you will likely have to replace these implementations with

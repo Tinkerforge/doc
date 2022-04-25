@@ -9,7 +9,7 @@
 
  Returns the timeout as set by :cpp:func:`tf_hal_set_timeout`.
 
-.. cpp:function:: int tf_hal_get_device_info(TF_HAL *hal, size_t index, char ret_uid[7], char *ret_port_name, uint16_t *ret_device_id)
+.. cpp:function:: int tf_hal_get_device_info(TF_HAL *hal, uint16_t index, char ret_uid[7], char *ret_port_name, uint16_t *ret_device_id)
 
  Returns the UID, port and :ref:`device identifier <device_identifier>` of the nth (=index) detected device.
  This function returns ``TF_E_DEVICE_NOT_FOUND`` if the index was equal or higher than the number of detected devices.

@@ -73,7 +73,6 @@ Ein Port mappt typischerweise auf den Chip-Select-Pin der gesetzt werden muss, d
 an das Bricklet übertragen werden. Manche HAL-Funktionen bekommen eine Port-ID übergeben.
 Diese ist typischerweise der Index in ein ``TF_Port``-Array.
 
-
 Implemetierung der ``tf_hal_create`` und ``tf_hal_destroy``-Funktionen
 ----------------------------------------------------------------------
 

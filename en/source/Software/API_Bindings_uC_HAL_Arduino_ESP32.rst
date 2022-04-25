@@ -24,21 +24,27 @@ This HAL was tested with the following devices:
 But the HAL should work with all modules and boards using the ESP32,
 as listed for example `here <https://en.wikipedia.org/wiki/ESP32#Printed_circuit_boards>`__.
 
-The HAL requires usage of the `Arduino ESP32 core <https://github.com/espressif/arduino-esp32>`__.
+The HAL requires usage of the Arduino ESP32 core.
 
 .. _api_bindings_uc_hal_arduino_esp32_examples:
 
 Testing an Example
 ------------------
 
-This HAL includes an example driver sketch that can be used to run any example provided with the bindings.
+These examples are made to be used with `Arduino ESP32 core <https://docs.espressif.com/projects/arduino-esp32/>`__
+in the `Arduino IDE <https://www.arduino.cc/>`__. Start by installing both projects
+according to their manuals.
+Then select the correct board in Arduino IDE. If you are using an ESP32 Brick or
+ESP32 Ethernet Brick then select "ESP32 Dev Module".
+
+This HAL includes an example driver Arduino sketch that can be used to run any example provided with the bindings.
 
 The Arduino IDE has specific requirements to the sketch folder layout. A valid folder looks like this:
 
 * example_driver/
 
-  * example_driver.ino
-  * [copy the example C file here]
+  * example_driver.ino [from the hal_arduino_esp32 folder]
+  * [copy the example .c file here]
   * src/
 
     * bindings/
@@ -58,10 +64,8 @@ to fit to your set-up (see :ref:`this section <api_bindings_uc_hal_arduino_esp32
 chip select pins to the Arduino and list them in the port assignment, even if you don't
 want to communicate with the Bricklets yet. This makes sure the signals are correctly separated.
 
-As last step, you have to change the UID in the example C file to the UID of your device.
-The UID is shown in Brick Viewer if you connect the device to your PC. Also the bindings
-will print a list of connected devices to the serial console when calling :c:func:`tf_hal_create`,
-if the log level is unchanged.
+Now connect the board to the PC then build and upload the sketch. The prints
+of the example should be listed in the serial console.
 
 .. _api_bindings_uc_hal_arduino_esp32_port_spec:
 

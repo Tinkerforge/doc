@@ -44,8 +44,8 @@ as well as a Makefile to compile any example. To use the Makefile, create the fo
 
 * [your main folder]/
 
-  * example_driver.c
-  * [copy the example C file here]
+  * example_driver.c [from the hal_linux folder]
+  * [copy the example .c file here]
   * Makefile
   * src/
 
@@ -62,13 +62,13 @@ List the device used in your selected example under ``SOURCES_DEVICES``, for exa
 
 .. code-block:: make
 
-  SOURCES_DEVICES :=  bricklet_industrial_digital_in_4_v2.c
+  SOURCES_DEVICES := bricklet_industrial_digital_in_4_v2.c
 
 and add the example source file itself to ``SOURCES``, for example
 
 .. code-block:: make
 
-  SOURCES :=  example_edge_count.c
+  SOURCES := example_edge_count.c
 
 Next you have to modify the port assignment in the sketch
 to fit to your set-up (see :ref:`this section <api_bindings_uc_hal_linux_port_spec>`).
@@ -83,11 +83,6 @@ contain the required buffer chip and their port assignment is listed in the exam
 Then you maybe have to change the path to the spidev in the example driver.
 The default ``"/dev/spidev0.0"`` is correct for the ::ref:`HAT Brick <hat_brick>` and the
 :ref:`HAT Zero Brick <hat_zero_brick>`.
-
-As last step, you have to change the UID in the example C file to the UID of your device.
-The UID is shown in Brick Viewer if you connect the device to your PC. Also the bindings
-will print a list of connected devices to the standard output when calling :c:func:`tf_hal_create`,
-if the log level is unchanged.
 
 You can then compile the program with ``make``.
 If you want to cross-compile from another machine, use ``make CROSS_COMPILE=[compiler prefix]``
@@ -106,20 +101,19 @@ A port is specified as an instance of the ``TF_Port`` structure:
 .. code-block:: c
 
   struct TF_Port {
-      //external
+      // external
       int chip_select_pin;
       char port_name;
 
-      //internal
-      int _cs_pin_fd;
+      // internal
+      int cs_pin_fd;
   }
-
 
 Revelant members are ``int chip_select_pin`` and ``char port_name``.
 The chip select pin is the pin that has to be pulled to be able to communicate to the port.
 The port name is a single character that identifies the port. The name is injected into the
 result of ``tf_[device]_get_identity`` calls if the device is connected directly to the host.
-You don't have to initialize ``_cs_pin_fd``.
+You don't have to initialize ``cs_pin_fd``.
 
 The :file:`example_driver.c` contains an example port specification.
 

@@ -42,7 +42,7 @@ muss folgende Orderstruktur erstellt werden:
 
 * [Hauptordner]/
 
-  * example_driver.c
+  * example_driver.c [aus dem hal_raspberry_pi-Ordner]
   * [hier die gewünschte Beispiel .c-Datei ablegen]
   * Makefile
   * src/
@@ -81,11 +81,6 @@ Das stellt sicher, dass die Signale korrekt getrennt werden.
 Der :ref:`HAT Brick <hat_brick>` und :ref:`HAT Zero Brick <hat_zero_brick>` beinhalten
 bereits den benötigten Trenner-Chip und die korrekte Port-Zuweisung ist im Beispiel-Treiber
 aufgeführt.
-
-Als letzter Schritt muss die UID im verwendeten Beispiel angepasst werden. Die UID
-wird im Brick Viewer angezeigt, wenn das Gerät mit einem PC verbunden wird. Außerdem
-geben die Bindings eine Liste verbundener Geräte aus, wenn mit unverändertem Log-Level
-:c:func:`tf_hal_create` aufgerufen wird.
 
 Das Programm kann jetzt mit ``make`` kompiliert werden. Wenn von einem anderen
 Rechner aus cross-kompiliert werden soll, kann ``make CROSS_COMPILE=[compiler-prefix]``

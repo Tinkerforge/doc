@@ -4,15 +4,12 @@
 C/C++ for Microcontrollers - API Bindings
 =========================================
 
-.. note::
- The C/C++ bindings for microcontrollers are currently in beta.
-
 The C/C++ bindings for microcontrollers allow you to control :ref:`Bricks <primer_bricks>` and
 :ref:`Bricklets <primer_bricklets>` with a C/C++ programm running on a microcontroller. The
-`ZIP file <https://www.tinkerunity.org/topic/5468-beta-version-of-the-cc-bindings-for-microcontrollers/>`__ for the bindings contains:
+:ref:`ZIP file <downloads_bindings_examples>` for the bindings contains:
 
 * in ``source/bindings`` the source code of the bindings
-* in ``source/hal*`` the source code of HALs for common platforms.
+* in ``source/hal_*`` the source code of HALs for common platforms.
 * in ``examples/`` the examples for every supported Brick and Bricklet
 
 .. _api_bindings_uc_supported_hardware:
@@ -24,20 +21,26 @@ The C/C++ bindings for microcontrollers support Co-processor Bricklets (i.e. tho
 as well as the HAT Brick and HAT Zero Brick. The older 10-pole Bricklets and other Bricks are not supported.
 :ref:`See here <api_bindings_uc_api_reference>` for a complete list of supported devices.
 
-As host (i.e. the device running your C/C++ program that uses the bindings), you can use a microcontroller
-that is able to communicate over SPI or an Raspberry Pi with a :ref:`HAT Brick <hat_brick>` or :ref:`HAT Zero Brick <hat_zero_brick>`.
+As host (i.e. the device running your C/C++ program that uses the bindings), you can currently
+use the :ref:`ESP32 Brick <esp32_brick>` and :ref:`ESP32 Ethernet Brick <esp32_ethernet_brick>`.
+Support for other hosts will be added in the future.
+
+..
+ you can use a microcontroller
+ that is able to communicate over SPI or an Raspberry Pi with a :ref:`HAT Brick <hat_brick>` or :ref:`HAT Zero Brick <hat_zero_brick>`.
 
 The bindings require a hardware abstraction layer (HAL). :ref:`See here <api_bindings_uc_hal>` for details.
 
-If you use a microcontroller, you have to make sure, that its logic level is 3.3V. If you want to use
-an AVR-based Arduino (such as the Arduino Uno or Mega), a level shifter is required.
+..
+ If you use a microcontroller, you have to make sure, that its logic level is 3.3V. If you want to use
+ an AVR-based Arduino (such as the Arduino Uno or Mega), a level shifter is required.
 
-Due to a bug with the XMC microcontroller used by the Bricklets, they don't correctly
-go into a floating state on the MISO signal. This results in interference when multiple
-Bricklets are used on the same SPI bus. To be able to use multiple bricklets, a
-tri-state buffer chip controlled by the chip select signal has to be used.
-In the near future, there will be a new version of the Breakout Bricklet that allows you to use
-multiple bricklets without interference on the MISO signal.
+ Due to a bug with the XMC microcontroller used by the Bricklets, they don't correctly
+ go into a floating state on the MISO signal. This results in interference when multiple
+ Bricklets are used on the same SPI bus. To be able to use multiple Bricklets, a
+ tri-state buffer chip controlled by the chip select signal has to be used.
+ In the near future, there will be a new version of the Breakout Bricklet that allows you to use
+ multiple Bricklets without interference on the MISO signal.
 
 Requirements
 ------------
@@ -61,7 +64,26 @@ Testing an Example
 ------------------
 
 The examples for each supported Brick and Bricklet are not self-contained, as they
-depend on the host hardware (and its HAL) you want to use. Many HALs contain an example driver that can run any example. See the specific HAL documentation for examples.
+depend on the host hardware (and its HAL) you want to use. Many HALs contain an
+example driver that can run any example. See the specific HAL documentation for examples.
+
+.. _api_bindings_uc_uid_or_port_name:
+
+UID or Port Name
+----------------
+
+All device ``*_create`` functions take a ``uid_or_port_name`` parameter allowing
+the program to specify which device to communicate with. This can be done in three
+ways:
+
+* Passing ``NULL`` selects the first unused device with matching type, regardless of UID or port name.
+* Passing a UID such as "XyZ" selects the first unused device with matching UID and type.
+* Passing a port name such as "A" selects the first unused device with matching port name and type.
+
+In this case unused means the device is not attached to a device object. For example,
+there are two Temperature Bricklet 2.0, one connected to port A and one to port B.
+With passing ``NULL`` the first ``tf_temperature_v2_create`` call picks the one on
+port A, the second call picks the one on port B, because the one on port A is in use already.
 
 .. _api_bindings_uc_hal:
 
@@ -76,15 +98,20 @@ The HAL is an abstraction over the platform specific way to communicate over SPI
 The bindings already contain HALs for the following platforms.
 For other platforms, a custom HAL must be implemented (see below).
 
-* :ref:`HAL Arduino <api_bindings_uc_hal_arduino>` for Arduino compatible boards with an AVR or ARM processor
-* :ref:`HAL Arduino ESP32 <api_bindings_uc_hal_arduino_esp32>` for Arduino compatible boards with ESP32 processor
-* :ref:`HAL Linux <api_bindings_uc_hal_linux>` for Linux systems with spidev-support
-* :ref:`HAL Raspberry Pi <api_bindings_uc_hal_raspberry_pi>` for Raspberry Pi 2, 3, 4, and Zero with the BCM2835 chip.
-* :ref:`HAL STM32F0 <api_bindings_uc_hal_stm32f0>` for the STM32F0 microcontroller.
+..
+ * :ref:`HAL Arduino <api_bindings_uc_hal_arduino>` for Arduino compatible boards with an AVR or ARM processor
+ * :ref:`HAL Arduino ESP32 <api_bindings_uc_hal_arduino_esp32>` for Arduino compatible boards with ESP32 processor
 
+* :ref:`HAL Arduino ESP32 Brick <api_bindings_uc_hal_arduino_esp32_brick>` for :ref:`ESP32 Brick <esp32_brick>` with Arduino base
+* :ref:`HAL Arduino ESP32 Ethernet Brick <api_bindings_uc_hal_arduino_esp32_ethernet_brick>` for :ref:`ESP32 Ethernet Brick <esp32_ethernet_brick>` with Arduino base
+
+..
+ * :ref:`HAL Linux <api_bindings_uc_hal_linux>` for Linux systems with spidev-support
+ * :ref:`HAL Raspberry Pi <api_bindings_uc_hal_raspberry_pi>` for Raspberry Pi 2, 3, 4, and Zero with the BCM2835 chip
+ * :ref:`HAL STM32F0 <api_bindings_uc_hal_stm32f0>` for the STM32F0 microcontroller
 
 Implementing a Custom HAL
--------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 If you want to use the bindings on another platform, you have to implement
 a custom HAL. :ref:`This guide <api_bindings_uc_custom_hal>` shows how.
@@ -201,12 +228,14 @@ following table. Further project descriptions can be found in the
 .. toctree::
    :hidden:
 
-   HAL Arduino <API_Bindings_uC_HAL_Arduino>
-   HAL Arduino ESP32 <API_Bindings_uC_HAL_Arduino_ESP32>
-   HAL Linux <API_Bindings_uC_HAL_Linux>
-   HAL Raspberry Pi <API_Bindings_uC_HAL_Raspberry_Pi>
-   HAL STM32F0 <API_Bindings_uC_HAL_STM32F0>
-   Custom HAL <API_Bindings_uC_Custom_HAL>
+   ~HAL Arduino <API_Bindings_uC_HAL_Arduino>
+   ~HAL Arduino ESP32 <API_Bindings_uC_HAL_Arduino_ESP32>
+   HAL Arduino ESP32 Brick <API_Bindings_uC_HAL_Arduino_ESP32_Brick>
+   HAL Arduino ESP32 Ethernet Brick <API_Bindings_uC_HAL_Arduino_ESP32_Ethernet_Brick>
+   ~HAL Linux <API_Bindings_uC_HAL_Linux>
+   ~HAL Raspberry Pi <API_Bindings_uC_HAL_Raspberry_Pi>
+   ~HAL STM32F0 <API_Bindings_uC_HAL_STM32F0>
+   ~Custom HAL <API_Bindings_uC_Custom_HAL>
    Bricks <Bricks_uC>
    Bricks (Discontinued) <Bricks_uC_Discontinued>
    Bricklets <Bricklets_uC>

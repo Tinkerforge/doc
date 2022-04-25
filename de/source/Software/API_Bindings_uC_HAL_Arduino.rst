@@ -37,6 +37,10 @@ aufgelistet sind. Eine weniger vollständige deutsche Liste findet sich `hier <h
 Test eines Beispiels
 --------------------
 
+Die Beispiele sind für die Verwendung in der `Arduino IDE <https://www.arduino.cc/>`__ gemacht. Daher muss diese zuerst
+entsprechend ihrer Installationsanleitung installiert werden.
+Danach in Arduino IDE das passende Board auswählen.
+
 Dieser HAL beinhaltet einen Beispiel-Treiber, mit dem alle Beispiele, die den Bindings beigelegt sind, ausgeführt werden können.
 
 Die Arduino IDE hat spezifische Anforderungen an das Order-Layout des Sketch-Ordners. Ein gültiges Layout
@@ -44,7 +48,7 @@ sieht aus wie folgt:
 
 * example_driver/
 
-  * example_driver.ino
+  * example_driver.ino [aus dem hal_arduino-Ordner]
   * [hier die gewünschte Beispiel .c-Datei ablegen]
   * src/
 
@@ -67,10 +71,8 @@ müssen alle Chip-Select-Pins mit dem Arduino verbunden und in der Port-Zuweisun
 selbst wenn noch keine Kommunikation mit den Bricklets gewünscht ist.
 Das stellt sicher, dass die Signale korrekt getrennt werden.
 
-Als letzter Schritt muss die UID im verwendeten Beispiel angepasst werden. Die UID
-wird im Brick Viewer angezeigt, wenn das Gerät mit einem PC verbunden wird. Außerdem
-geben die Bindings eine Liste verbundener Geräte aus, wenn mit unverändertem Log-Level
-:c:func:`tf_hal_create` aufgerufen wird.
+Jetzt das Board mit dem PC verbinden und den Sketch bauen und hochladen. Die
+Ausgaben des Beispiels sollten in der seriellen Konsole zu sehen sein.
 
 .. _api_bindings_uc_hal_arduino_port_spec:
 

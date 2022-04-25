@@ -28,7 +28,7 @@ as listed for example `here <https://en.wikipedia.org/wiki/List_of_Arduino_board
   of 5 Volt (i.e. all AVR based boards).
 
 .. note::
-  Some Arduino Boards only have a small amout of flash and RAM available. :ref:`See here <api_bindings_uc_flash_size>`
+  Some Arduino Boards only have a small amount of flash and RAM available. :ref:`See here <api_bindings_uc_flash_size>`
   for some size optimizations.
 
 .. _api_bindings_uc_hal_arduino_examples:
@@ -36,14 +36,18 @@ as listed for example `here <https://en.wikipedia.org/wiki/List_of_Arduino_board
 Testing an Example
 ------------------
 
+These examples are made to be used in the `Arduino IDE <https://www.arduino.cc/>`__. Start by installing it
+according to its manual.
+Then select the correct board in Arduino IDE.
+
 This HAL includes an example driver sketch that can be used to run any example provided with the bindings.
 
 The Arduino IDE has specific requirements to the sketch folder layout. A valid folder looks like this:
 
 * example_driver/
 
-  * example_driver.ino
-  * [copy the example C file here]
+  * example_driver.ino [from the hal_arduino folder]
+  * [copy the example .c file here]
   * src/
 
     * bindings/
@@ -63,10 +67,8 @@ to fit to your set-up (see :ref:`this section <api_bindings_uc_hal_arduino_port_
 chip select pins to the Arduino and list them in the port assignment, even if you don't
 want to communicate with the Bricklets yet. This makes sure the signals are correctly separated.
 
-As last step, you have to change the UID in the example C file to the UID of your device.
-The UID is shown in Brick Viewer if you connect the device to your PC. Also the bindings
-will print a list of connected devices to the serial console when calling :c:func:`tf_hal_create`,
-if the log level is unchanged.
+Now connect the board to the PC then build and upload the sketch. The prints
+of the example should be listed in the serial console.
 
 .. _api_bindings_uc_hal_arduino_port_spec:
 
