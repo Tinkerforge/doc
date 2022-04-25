@@ -4,6 +4,9 @@
 C/C++ for Microcontrollers - Raspberry Pi HAL
 =============================================
 
+.. warning::
+ This documentation might be outdated.
+
 The Raspberry Pi Hardware Abstraction Layer (HAL) is used
 with the C/C++ bindings for microcontrollers to communicate
 with Bricklets over SPI.

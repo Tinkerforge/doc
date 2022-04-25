@@ -4,6 +4,9 @@
 C/C++ für Mikrocontroller - Eigener HAL
 =======================================
 
+.. warning::
+ Diese Dokumentation ist möglicherweise veraltet.
+
 Um die C/C++ für Mikrocontroller verwenden zu können
 ist ein hardware-spezifischer HAL notwendig.
 Falls für die Zielplattform kein HAL verfügbar ist,

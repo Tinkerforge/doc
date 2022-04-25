@@ -4,6 +4,9 @@
 C/C++ für Mikrocontroller - Arduino ESP32 HAL
 =============================================
 
+.. warning::
+ Diese Dokumentation ist möglicherweise veraltet.
+
 Der Arduino ESP32 Hardware Abstraction Layer (HAL)
 wird mit den C/C++ Bindings für Mikrocontroller verwendet
 um mit Bricklets über SPI zu kommunizieren.
