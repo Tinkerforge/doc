@@ -4,6 +4,9 @@
 C/C++ for Microcontrollers - STM32F0 HAL
 ========================================
 
+.. warning::
+ This documentation might be outdated.
+
 The STM32F0 Hardware Abstraction Layer (HAL) is used
 with the C/C++ bindings for microcontrollers to communicate
 with Bricklets over SPI.
@@ -15,7 +18,7 @@ This HAL was tested with the following devices:
 
 * TNG-Bricklet4
 
-but should work with all projects that use a STM32F0 microcontroller and the stm32cubef0 library from STM.
+But the HAL should work with all projects that use a STM32F0 microcontroller and the stm32cubef0 library from STM.
 
 .. note::
   Some STM32F0 microcontroller only have a small amout of flash and RAM available. :ref:`See here <api_bindings_uc_flash_size>`

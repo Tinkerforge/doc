@@ -15,9 +15,10 @@ This HAL was tested with the following devices:
 
 * ESP32 Brick
 * NodeMCU ESP32
-* The ESP32-WROOM-32 module itself
+* ESP32-WROOM-32 module
+* ESP32-WROVER-32 module
 
-but should work with all modules and boards using the ESP32,
+But the HAL should work with all modules and boards using the ESP32,
 as listed for example `here <https://en.wikipedia.org/wiki/ESP32#Printed_circuit_boards>`__.
 
 The HAL requires usage of the `Arduino ESP32 core <https://github.com/espressif/arduino-esp32>`__.
@@ -34,9 +35,9 @@ The Arduino IDE has specific requirements to the sketch folder layout. A valid f
 * example_driver/
 
   * example_driver.ino
+  * [copy the example C file here]
   * src/
 
-    * [copy the example C file here]
     * bindings/
 
       * [copy the content of the bindings folder here]
@@ -46,7 +47,7 @@ The Arduino IDE has specific requirements to the sketch folder layout. A valid f
       * [copy hal_arduino_esp32.cpp and hal_arduino_esp32.h here]
 
 Note that the top-level folder has to have the same name as the sketch,
-i.e. if you rename example_driver.ino, you have to rename the folder as well.
+i.e. if you rename :file:`example_driver.ino`, you have to rename the folder as well.
 
 After creating the folder structure, you have to modify the port assignment in the sketch
 to fit to your set-up (see :ref:`this section <api_bindings_uc_hal_arduino_esp32_port_spec>`). If you connect multiple Bricklets to the same SPI bus
@@ -73,7 +74,6 @@ A port is specified as an instance of the ``TF_Port`` structure:
       uint8_t spi;
       char port_name;
   }
-
 
 The chip select pin is the pin that has to be pulled to be able to communicate to the port.
 SPI is the SPI hardware unit to use, valid values are ``VSPI`` and ``HSPI``.

@@ -17,7 +17,7 @@ Dieser HAL wurde mit den folgenden Boards getestet:
 * Arduino MEGA (benötigt einen Pegelwandler)
 * Teensy 3.1
 
-sollte aber mit allen Arduino-kompatiblen Boards funktionieren
+Der HAL sollte aber mit allen Arduino-kompatiblen Boards funktionieren
 die zum Beispiel `hier <https://en.wikipedia.org/wiki/List_of_Arduino_boards_and_compatible_systems>`__
 aufgelistet sind. Eine weniger vollständige deutsche Liste findet sich `hier <https://de.wikipedia.org/wiki/Liste_von_Arduino-Boards>`__.
 
@@ -42,9 +42,9 @@ sieht aus wie folgt:
 * example_driver/
 
   * example_driver.ino
+  * [hier die gewünschte Beispiel .c-Datei ablegen]
   * src/
 
-    * [hier die gewünschte Beispiel .c-Datei ablegen]
     * bindings/
 
       * [hier den Inhalt des bindings-Ordners ablegen]

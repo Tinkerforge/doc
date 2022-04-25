@@ -40,13 +40,15 @@ as well as a Makefile to compile any example. To use the Makefile, create the fo
   * example_driver.c
   * [copy the example C file here]
   * Makefile
-  * bindings/
+  * src/
 
-    * [copy the contents of the bindings folder here]
+    * bindings/
 
-  * hal_raspberry_pi/
+      * [copy the contents of the bindings folder here]
 
-    * [copy the contents of the hal_raspberry_pi folder here]
+    * hal_raspberry_pi/
+
+      * [copy the contents of the hal_raspberry_pi folder here]
 
 After creating the folder structure, you have to modify the Makefile for your example:
 List the device used in your selected example under ``SOURCES_DEVICES``, for example for the Industrial Digital In 4 2.0 Bricklet

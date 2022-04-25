@@ -15,7 +15,7 @@ Dieser HAL wurde mit den folgenden Geräten getestet:
 
 * TNG-Bricklet4
 
-sollte aber mit allen Projekten, die den STM32F0-Mikrocontroller und die stm32cubef0-Bibliothek von STM verwenden, funktionieren.
+Der HAL sollte aber mit allen Projekten, die den STM32F0-Mikrocontroller und die stm32cubef0-Bibliothek von STM verwenden, funktionieren.
 
 .. note::
   Manche STM32F0-Mikrocontroller haben nur eine kleine Menge Flash und RAM verfügbar. :ref:`Siehe hier <api_bindings_uc_flash_size>`

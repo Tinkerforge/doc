@@ -17,7 +17,7 @@ This HAL was tested with the following devices:
 * Arduino MEGA (requires level shifter)
 * Teensy 3.1
 
-but should work with all Arduino compatible boards,
+But the HAL should work with all Arduino compatible boards,
 as listed for example `here <https://en.wikipedia.org/wiki/List_of_Arduino_boards_and_compatible_systems>`__.
 
 .. note::
@@ -40,9 +40,9 @@ The Arduino IDE has specific requirements to the sketch folder layout. A valid f
 * example_driver/
 
   * example_driver.ino
+  * [copy the example C file here]
   * src/
 
-    * [copy the example C file here]
     * bindings/
 
       * [copy the content of the bindings folder here]

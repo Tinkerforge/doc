@@ -15,9 +15,10 @@ Dieser HAL wurde mit den folgenden Boards getestet:
 
 * ESP32 Brick
 * NodeMCU ESP32
-* dem ESP32-WROOM-32-Modul selbst
+* ESP32-WROOM-32-Modul
+* ESP32-WROVER-32-Modul
 
-sollte aber mit allen Modulen und Boards, die einen ESP32 verwenden, funktionieren.
+Der HAL sollte aber mit allen Modulen und Boards, die einen ESP32 verwenden, funktionieren.
 Eine Liste findet sich `hier <https://en.wikipedia.org/wiki/ESP32#Printed_circuit_boards>`__.
 
 Dieser HAL benötigt den `Arduino ESP32 Core <https://github.com/espressif/arduino-esp32>`__.
@@ -35,9 +36,9 @@ sieht aus wie folgt:
 * example_driver/
 
   * example_driver.ino
+  * [hier die gewünschte Beispiel .c-Datei ablegen]
   * src/
 
-    * [hier die gewünschte Beispiel .c-Datei ablegen]
     * bindings/
 
       * [hier den Inhalt des bindings-Ordners ablegen]

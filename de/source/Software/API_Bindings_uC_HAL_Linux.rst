@@ -46,13 +46,15 @@ muss folgende Orderstruktur erstellt werden:
   * example_driver.c
   * [hier die gewünschte Beispiel .c-Datei ablegen]
   * Makefile
-  * bindings/
+  * src/
 
-    * [hier den Inhalt des bindings-Ordners ablegen]
+    * bindings/
 
-  * hal_linux/
+      * [hier den Inhalt des bindings-Ordners ablegen]
 
-    * [hier den Inhalt des hal_linux-Ordners ablegen]
+    * hal_linux/
+
+      * [hier den Inhalt des hal_linux-Ordners ablegen]
 
 Nachdem die Orderstruktur abgelegt wurde, muss das Makefile für das Beispiel abgeändert werden:
 Unter ``SOURCES_DEVICES`` muss das Gerät, das verwendet werden soll aufgeführt werden,
