@@ -1,7 +1,7 @@
 
 .. _api_bindings_uc:
 
-C/C++ - API Bindings für Mikrocontroller
+C/C++ für Mikrocontroller - API Bindings
 ========================================
 
 .. note::
@@ -21,7 +21,7 @@ Die `ZIP Datei <https://www.tinkerunity.org/topic/5463-betaversion-der-cc-bindin
 Unterstützte Hardware
 ---------------------
 
-Die C/C++ Bindings für Mikrocontroller unterstützen Koprozessor-Bricklets, also diese mit einem
+Die C/C++ Bindings für Mikrocontroller unterstützen Co-Prozessor-Bricklets, also diese mit einem
 :ref:`7-Pol-Anschluss <tutorial_bricklet_cables>`,
 sowie das :ref:`HAT Brick <hat_brick>` und das :ref:`HAT Zero Brick <hat_zero_brick>`.
 Die älteren Brickets mit 10-Pol-Anschluss, sowie andere Bricks werden nicht unterstützt.

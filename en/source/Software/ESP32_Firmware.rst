@@ -28,7 +28,11 @@ Preparation
 First, `PlatformIO <https://platformio.org/>`__ and `Node.js <https://nodejs.org/>`__
 have to be installed according to their installation manuals. For PlatformIO we
 recommend using the PlatformIO IDE extension for
-`Visual Studio Code <https://code.visualstudio.com/>`__.
+`Visual Studio Code <https://code.visualstudio.com/>`__, but you can also use
+PlatformIO Core instead.
+
+In general you should always use the latest version of PlatformIO and Node.js.
+For the Node.js package manager ``npm`` version 8 or newer is required.
 
 Next, download the `esp32-firmware <https://github.com/Tinkerforge/esp32-firmware>`__
 repository from GitHub as
@@ -37,7 +41,8 @@ and unpack it or clone the repository using `git <https://www.git-scm.com/>`__.
 
 The ``platformio.ini`` file is located in the ``software/`` subdirectory. Open
 this subdirectory in Visual Studio Code and build the ``prepare`` environment
-to prepare the build of other environments.
+to prepare the build of other environments. In general this has to be done only
+once and not before every build of other environments
 
 .. _esp32_firmware_build:
 
@@ -47,17 +52,17 @@ Firmware Building
 Choose the PlatformIO environment corresponding to the firmware variation you
 want to build:
 
-* ESP32 Brick: ``esp32``
-* ESP32 Ethernet Brick: ``esp32_ethernet``
-* WARP Charger Smart and Pro: ``warp``
-* WARP2 Charger Smart and Pro: ``warp2``
+* ESP32 Brick: ``esp32`` defined in ``esp32.ini``
+* ESP32 Ethernet Brick: ``esp32_ethernet`` defined in ``esp32_ethernet.ini``
+* WARP Charger Smart and Pro: ``warp`` defined in ``warp.ini``
+* WARP2 Charger Smart and Pro: ``warp2`` defined in ``warp2.ini``
 
 ..
- * WARP Energy Manager: ``energy_manager``
+ * WARP Energy Manager: ``energy_manager`` defined in ``energy_manager.ini``
 
 To build a specific firmware run its corresponding PlatformIO "Build" task.
 To build a firmware, upload it to a Brick and connect to its serial console all
-in on step you can run the PlatformIO "Upload and Monitor" task. This requires
+in one step you can run the PlatformIO "Upload and Monitor" task. This requires
 that the Brick is connected to USB beforehand.
 
 Firmware Structure
@@ -65,8 +70,8 @@ Firmware Structure
 
 The functionality and the web interface of the firmware are put together from
 modules. The variations of the firmware differ mostly in their list of active
-modules. This list is specified per environment in the ``platformio.ini`` file
-using the ``backend_modules`` and ``frontend_modules`` options.
+modules. This list is specified per environment in the corresponding ``.ini``
+file using the ``backend_modules`` and ``frontend_modules`` options.
 
 The tutorial regarding the :ref:`ESP32 firmware <tutorial_esp32_firmware>`
 shows step by step how to add a custom module to the firmware.
