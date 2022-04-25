@@ -61,7 +61,7 @@ muss folgende Orderstruktur erstellt werden:
 
 Nachdem die Orderstruktur abgelegt wurde, muss das Makefile für das Beispiel abgeändert werden:
 Unter ``SOURCES_DEVICES`` muss das Gerät, das verwendet werden soll aufgeführt werden,
-zum Beispiel für das Industrial Digital In 4 2.0 Bricklet:
+zum Beispiel für das Industrial Digital In 4 Bricklet 2.0:
 
 .. code-block:: make
 

@@ -155,7 +155,7 @@ Liste von Optimierungen gefolgt werden:
 * Bevorzugung von Callbacks. Die Bindings können ein angeschlossenes Gerät nach
   verfügbaren Callbacks fragen, indem ein einzelnes Byte über SPI geschickt wird.
   Wenn Getter verwendet werden um schnell veränderlichen Zustand abzufragen, muss jedes
-  Mal eine komplette TFP-Anfrage, deren Antwort und ein Acknowledgement über SPI verschickt werden,
+  Mal eine komplette TFP-Anfrage, deren Antwort und ein Acknowledgment über SPI verschickt werden,
   was mindestens 23 Byte Datenverkehr bedeutet.
 
 * Wenn exakt bekannt ist, welche Callbacks in welchen Intervallen eintreffen werden,

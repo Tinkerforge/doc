@@ -140,7 +140,7 @@ of optimizations:
 
 * Prefer to use callbacks. The bindings can poll a device for an available callback
   by clocking out a single byte. If you use getters to poll for rapidly changing state,
-  a complete TFP request, response and acknowledgement must be sent over SPI, resulting
+  a complete TFP request, response and acknowledgment must be sent over SPI, resulting
   in at least 23 bytes of data to send.
 
 * If you know exactly what callbacks to expect in what intervals,

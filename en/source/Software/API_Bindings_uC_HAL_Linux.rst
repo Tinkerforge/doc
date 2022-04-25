@@ -58,7 +58,7 @@ as well as a Makefile to compile any example. To use the Makefile, create the fo
       * [copy the contents of the hal_linux folder here]
 
 After creating the folder structure, you have to modify the Makefile for your example:
-List the device used in your selected example under ``SOURCES_DEVICES``, for example for the Industrial Digital In 4 2.0 Bricklet
+List the device used in your selected example under ``SOURCES_DEVICES``, for example for the Industrial Digital In 4 Bricklet 2.0
 
 .. code-block:: make
 
@@ -174,7 +174,7 @@ Basic Functions
 .. cpp:function:: int tf_hal_create(TF_HAL *hal, const char *spidev_path, TF_Port *ports, uint8_t port_count)
 
  Creates a HAL object that can be used to list the available devices.
- It is also requred for the constructor of Bricks and Bricklets.
+ It is also required for the constructor of Bricks and Bricklets.
 
  * ``spidev_path`` is the path to the spidev to use, for example "/dev/spidev0.0".
  * ``ports`` is an array of port specifications, as described :ref:`here <api_bindings_uc_hal_linux_port_spec>`
