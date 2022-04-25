@@ -150,6 +150,10 @@ Mögliche Fehlercodes sind:
 * TF\_\ **E**\ _WRONG_DEVICE_TYPE = -11
 * TF\_\ **E**\ _LOCKED = -12
 * TF\_\ **E**\ _PORT_NOT_FOUND = -13
+* TF\_\ **E**\ _NULL = -14
+* TF\_\ **E**\ _DEVICE_ALREADY_IN_USE = -15
+* TF\_\ **E**\ _WRONG_RESPONSE_LENGTH = -16
+* TF\_\ **E**\ _NOT_INITIALIZED = -17
 
 (as defined in :file:`errors.h`).
 Der HAL definiert die folgenden weiteren Fehlercodes:
@@ -157,7 +161,6 @@ Der HAL definiert die folgenden weiteren Fehlercodes:
 * TF\_\ **E**\ _EXPORT_GPIO_FAILED = -100
 * TF\_\ **E**\ _SET_GPIO_DIRECTION_FAILED = -101
 * TF\_\ **E**\ _OPEN_GPIO_FAILED = -102
-
 * TF\_\ **E**\ _OPEN_SPI_DEV_FAILED = -103
 * TF\_\ **E**\ _SPI_DEV_CONFIG_FAILED = -104
 * TF\_\ **E**\ _CHIP_SELECT_FAILED = -105

@@ -108,6 +108,10 @@ Possible error codes are:
 * TF\_\ **E**\ _WRONG_DEVICE_TYPE = -11
 * TF\_\ **E**\ _LOCKED = -12
 * TF\_\ **E**\ _PORT_NOT_FOUND = -13
+* TF\_\ **E**\ _NULL = -14
+* TF\_\ **E**\ _DEVICE_ALREADY_IN_USE = -15
+* TF\_\ **E**\ _WRONG_RESPONSE_LENGTH = -16
+* TF\_\ **E**\ _NOT_INITIALIZED = -17
 
 .. cpp:namespace-push:: hal_arduino
 
