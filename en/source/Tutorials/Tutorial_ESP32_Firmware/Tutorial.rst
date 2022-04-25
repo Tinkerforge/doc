@@ -29,10 +29,10 @@ step by step.
 
 A :ref:`ESP32 Brick <esp32_brick>` and the :ref:`ESP32 Ethernet Brick <esp32_ethernet_brick>` 
 can be used for this tutorial. The only difference between these two Bricks is the 
-following section in ``platformio.ini`` file:
+``.ini`` file that will be modified during this tutorial:
 
-* ESP32 Brick: ``[env:esp32]``
-* ESP32 Ethernet Brick: ``[env:esp32_ethernet]``
+* ESP32 Brick: ``esp32.ini``
+* ESP32 Ethernet Brick: ``esp32_ethernet.ini``
 
 To enable the respective stage the name of it
 has to be added at the end of the ``backend_modules`` and ``frontend_modules`` options.
@@ -42,7 +42,7 @@ in Visual Studio Code.
 Phase 1: Create empty module
 ----------------------------
 
-Append ``Tutorial Phase 1`` in file ``platformio.ini`` as mentioned above 
+Append ``Tutorial Phase 1`` in file ``esp32.ini`` or``esp32_ethernet.ini`` as mentioned above
 at the end of backend and frontend modules section.
 
 After building and uploading the project again this module shows up in the webinterface
@@ -76,7 +76,7 @@ Modules are seperated in two different groups:
 Typically modules appear in backend/frontend pairs. But this is not mandatory. It is possible
 that there are backend modules without corresponding frontend modules and vice versa.
 
-The module name in ``platformio.ini`` deviates the directory name of the module.
+The module name in ``esp32.ini`` or``esp32_ethernet.ini`` deviates the directory name of the module.
 ``Tutorial Phase 1`` lead to ``tutorial_phase_1`` (all letters will be converted to lowercase 
 and spaces will be converted to underscores).
 
@@ -113,7 +113,7 @@ Each frontend module can contain the following files (optional):
 Phase 2: Communication from Backend to Frontend
 -----------------------------------------------
 
-Module name for ``platformio.ini`` file is: ``Tutorial Phase 2`` 
+Module name for ``esp32.ini`` or``esp32_ethernet.ini`` file is: ``Tutorial Phase 2``
 (change backend and frontend entry from ``Phase 1`` to ``Phase 2``).
 
 When this module is activated a subwebsite named "Tutorial (Phase 2)"
@@ -229,8 +229,7 @@ Now in the webinterface blue should be shown:
 Phase 3: Communication from Frontend to Backend
 -----------------------------------------------
 
-
-Module name for ``platformio.ini`` file is: ``Tutorial Phase 3``
+Module name for ``esp32.ini`` or``esp32_ethernet.ini`` file is: ``Tutorial Phase 3``
 
 When this module is active in the webinterface a subwebsite named
 "Tutorial (Phase 3)" shows up:
@@ -336,8 +335,7 @@ You will find the following message in the serial console:
 Phase 4: Communication Backend to Bricklet
 ------------------------------------------
 
-
-Module name for ``platformio.ini`` file is: ``Tutorial Phase 4``
+Module name for ``esp32.ini`` or``esp32_ethernet.ini`` file is: ``Tutorial Phase 4``
 
 Now you have to connect a
 :ref:`RGB LED Button Bricklet <rgb_led_button_bricklet>` to your Brick. You can choose
@@ -451,12 +449,10 @@ After changing the color to green:
    :align: center
    :target: ../../_images/Tutorial/tutorial_esp32_phase_4_hardware_green_1200.jpg
 
-
 Phase 5: Communication Bricklet to Backend/Frontend
 ---------------------------------------------------
 
-
-Module name for ``platformio.ini`` file is: ``Tutorial Phase 5``
+Module name for ``esp32.ini`` or``esp32_ethernet.ini`` file is: ``Tutorial Phase 5``
 
 When this module is active a subwebsite with a color and button state view will show 
 up named "Tutorial (Phase 5)":

@@ -30,23 +30,22 @@ Schritt für Schritt erklärt.
 
 Es können der :ref:`ESP32 Brick <esp32_brick>` und der
 :ref:`ESP32 Ethernet Brick <esp32_ethernet_brick>` für dieses Tutorial verwendet
-werden. Der einzige Unterschied zwischen den beiden Bricks ist der Abschnitt
-in der ``platformio.ini`` Datei, die im Laufe des Tutorial abgeändert werden
-muss:
+werden. Der einzige Unterschied zwischen den beiden Bricks ist welche ``.ini``
+Datei im Laufe des Tutorial abgeändert werden muss:
 
-* ESP32 Brick: ``[env:esp32]``
-* ESP32 Ethernet Brick: ``[env:esp32_ethernet]``
+* ESP32 Brick: ``esp32.ini``
+* ESP32 Ethernet Brick: ``esp32_ethernet.ini``
 
 Um das jeweilige Tutorial-Modul zu aktivieren muss dessen Name am Ende der
-Optionen ``backend_modules`` und ``frontend_modules`` des entsprechenden
-Abschnitts hinzufügt werden und die Firmware mittels "Upload and Monitor"
+Optionen ``backend_modules`` und ``frontend_modules`` der entsprechenden
+``.ini`` Datei hinzufügt werden und die Firmware mittels "Upload and Monitor"
 Ausgabe in Visual Studio Code neu gebaut und auf den Brick geflasht werden.
 
 Phase 1: Leeres Modul anlegen
 -----------------------------
 
-Am Ende der Datei ``platformio.ini`` wird wie oben beschrieben ``Tutorial Phase 1``
-in die backend und frontend Module eingetragen.
+Am Ende der ``esp32.ini`` bzw.``esp32_ethernet.ini`` Datei wird wie oben
+beschrieben ``Tutorial Phase 1`` den Backend- und Frontend-Modulen hinzugefügt.
 
 Nachdem das Projekt neu compiliert und geflasht wurde taucht im Webinterface 
 das neue Modul als eine leere Unterseite namens "Tutorial (Phase 1)" auf:
@@ -80,9 +79,10 @@ Typischerweise treten Module in Backend/Frontend-Paaren auf, dies ist aber nicht
 zwingend. Es kann Backend-Module ohne entsprechendes Frontend-Modul geben und
 anders herum.
 
-Aus dem Modulname in der ``platformio.ini`` Datei leitet sich der Verzeichnisname
-für das Modul ab. Aus ``Tutorial Phase 1`` wird ``tutorial_phase_1`` (alle
-Zeichen zu Kleinbuchstaben umwandeln und Leerzeichen durch Unterstriche ersetzen).
+Aus dem Modulname in der ``esp32.ini`` bzw. ``esp32_ethernet.ini`` Datei leitet
+sich der Verzeichnisname für das Modul ab. Aus ``Tutorial Phase 1`` wird
+``tutorial_phase_1`` (alle Zeichen zu Kleinbuchstaben umwandeln und Leerzeichen
+durch Unterstriche ersetzen).
 
 Dateien eines Backend-Moduls
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -119,7 +119,7 @@ Jedes Frontend-Modul kann optional folgende Dateien beinhalten:
 Phase 2: Kommunikation Backend zu Frontend
 ------------------------------------------
 
-Modulname für die ``platformio.ini`` Datei: ``Tutorial Phase 2``
+Modulname für die ``esp32.ini`` bzw.``esp32_ethernet.ini`` Datei: ``Tutorial Phase 2``
 (Änderung des Eintrags von ``Phase 1`` zu ``Phase 2`` sowohl bei den Backend- als auch
 bei den Frontend-Modulen).
 
@@ -237,7 +237,7 @@ Jetzt wird im Webinterface Blau angezeigt:
 Phase 3: Kommunikation Frontend zu Backend
 ------------------------------------------
 
-Modulname für die ``platformio.ini`` Datei: ``Tutorial Phase 3``
+Modulname für die ``esp32.ini`` bzw.``esp32_ethernet.ini`` Datei: ``Tutorial Phase 3``
 
 Mit diesem Modul aktiviert taucht im Webinterface eine Unterseite mit Farbanzeige
 namens "Tutorial (Phase 3)" auf:
@@ -346,7 +346,7 @@ color update: #00ff00`` ausgegeben:
 Phase 4: Kommunikation Backend zu Bricklet
 ------------------------------------------
 
-Modulname für die ``platformio.ini`` Datei: ``Tutorial Phase 4``
+Modulname für die ``esp32.ini`` bzw.``esp32_ethernet.ini`` Datei: ``Tutorial Phase 4``
 
 Ab dieser Phase wird vorausgesetzt, dass am Brick ein
 :ref:`RGB LED Button Bricklet <rgb_led_button_bricklet>` angeschlossen ist. Der
@@ -465,7 +465,7 @@ Nach der Änderung zu Grün:
 Phase 5: Kommunikation Bricklet zu Backend/Frontend
 ---------------------------------------------------
 
-Modulname für die ``platformio.ini`` Datei: ``Tutorial Phase 5``
+Modulname für die ``esp32.ini`` bzw.``esp32_ethernet.ini`` Datei: ``Tutorial Phase 5``
 
 Mit diesem Modul aktiviert taucht im Webinterface eine Unterseite mit Farb- und
 Tasteranzeige namens "Tutorial (Phase 5)" auf:
