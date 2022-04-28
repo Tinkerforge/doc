@@ -19,10 +19,7 @@ Installation and usage instructions for each supported programming language:
 
 * :ref:`C/C++ <api_bindings_c>`
 * :ref:`C/C++ (iOS) <api_bindings_c_ios>`
-
-..
- * :ref:`C/C++ for Microcontrollers <api_bindings_uc>`
-
+* :ref:`C/C++ for Microcontrollers <api_bindings_uc>`
 * :ref:`C# <api_bindings_csharp>`
 * :ref:`C# (Windows Phone) <api_bindings_csharp_windows_phone>`
 * :ref:`Delphi/Lazarus <api_bindings_delphi>`
@@ -48,7 +45,7 @@ Installation and usage instructions for each supported programming language:
 
    C/C++ <API_Bindings_C>
    C/C++ (iOS) <API_Bindings_C_iOS>
-   ~C/C++ for Microcontrollers <API_Bindings_uC>
+   C/C++ for Microcontrollers <API_Bindings_uC>
    C# <API_Bindings_CSharp>
    C# (Windows Phone) <API_Bindings_CSharp_Windows_Phone>
    Delphi/Lazarus <API_Bindings_Delphi>
