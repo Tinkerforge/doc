@@ -14,7 +14,11 @@ ESP32 Brick
 
 	{% tfgallery %}
 
-	Bricks/brick_esp32_tilted_front_[?|?].jpg        ESP32 Brick
+	Bricks/brick_esp32_tilted_[?|?].jpg              ESP32 Brick
+	Bricks/brick_esp32_top_[?|?].jpg                 ESP32 Brick
+	Bricks/brick_esp32_tilted2_[?|?].jpg             ESP32 Brick
+	Bricks/brick_esp32_bottom_[?|?].jpg              ESP32 Brick
+	Bricks/brick_esp32_tilted_bottom_[?|?].jpg       ESP32 Brick
 	Bricks/brick_esp32_brickv_[100|].jpg             ESP32 Brick in Brick Viewer
 
 	{% tfgalleryend %}
