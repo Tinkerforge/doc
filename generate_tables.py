@@ -60,7 +60,7 @@ bindings_infos = \
                  is_programming_language=True,
                  is_released=True,
                  has_authentication_example=False,
-                 has_download=False,
+                 has_download=True,
                  misc_docs=[
                      MiscDoc('API_Bindings_{suffix}', 'api_bindings_{suffix}',  {'en': 'Usage', 'de': 'Benutzung'}, False, False),
                      #MiscDoc('API_Bindings_{suffix}_HAL_Arduino', 'api_bindings_{suffix}_hal_arduino', {'en': 'HAL Arduino', 'de': 'HAL Arduino'}, True, True),
