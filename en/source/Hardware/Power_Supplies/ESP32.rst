@@ -10,7 +10,10 @@ ESP32 Power Supply
 
 	{% tfgallery %}
 
-	Power_Supplies/esp32_tilted_[?|?].jpg                   ESP32 Power Supply
+	Power_Supplies/psu_esp32_tilted_[?|?].jpg                  ESP32 Power Supply
+	Power_Supplies/psu_esp32_tilted_bottom_[?|?].jpg           ESP32 Power Supply
+	Power_Supplies/psu_esp32_w_esp_[?|?].jpg                   ESP32 Power Supply
+	Power_Supplies/psu_esp32_w_esp_ethernet_[?|?].jpg          ESP32 Power Supply
 
 	{% tfgalleryend %}
 
