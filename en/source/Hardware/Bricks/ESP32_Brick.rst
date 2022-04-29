@@ -73,9 +73,9 @@ The Brick can either be powered over its USB-C connector, by the
 Technical Specifications
 ------------------------
 
-===================================   ============================================================
+===================================  ============================================================
 Property                             Value
-===================================   ============================================================
+===================================  ============================================================
 Power Supply                         By USB-C jack, optional ESP32 Power Supply module
 Current Consumption (WIFI enabled)   740mW (185mA at 5V)
 Current Consumption (WIFI disabled)  420mW (84mA at 5V)
