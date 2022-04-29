@@ -11,6 +11,6 @@ Tutorials
    RED Brick <Tutorials/Tutorial_RED_Brick/Tutorial>
    Build-Umgebung aufsetzen <Tutorials/Tutorial_Build_Environment/Tutorial>
    Bricklet Kabel (7-Pol vs 10-Pol) <Tutorials/Tutorial_Cables/Tutorial>
-   ~ESP32 Firmware <Tutorials/Tutorial_ESP32_Firmware/Tutorial>
+   ESP32 Firmware <Tutorials/Tutorial_ESP32_Firmware/Tutorial>
 
 .. include:: Tutorials.content

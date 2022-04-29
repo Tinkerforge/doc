@@ -99,6 +99,19 @@ Ressourcen
 * Platinenlayout (`Download <https://github.com/Tinkerforge/esp32-brick/zipball/master>`__)
 * 3D Modell (`View online <https://a360.co/3tXfWIt>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricks/esp32/esp32.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricks/esp32/esp32.FCStd>`__)
 
+.. _esp32_brick_hardware:
+
+Hardwarebeschreibung
+--------------------
+
+.. image:: /Images/Bricks/brick_esp32_caption_600.jpg
+   :scale: 100 %
+   :alt: ESP32 Brick Beschreibung
+   :align: center
+   :target: ../../_images/Bricks/brick_esp32_caption_1000.jpg
+
+
+
 .. _esp32_brick_setup:
 
 Ersteinrichtung
