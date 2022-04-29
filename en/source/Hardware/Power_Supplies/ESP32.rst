@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/power-supplies/esp32-power-supply.html
+:shoplink: ../../../shop/power-supplies/esp32-power-supply.html
 
 .. _esp32_power_supply:
 
