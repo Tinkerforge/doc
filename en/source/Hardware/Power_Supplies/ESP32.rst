@@ -17,13 +17,11 @@ ESP32 Power Supply
 
 	{% tfgalleryend %}
 
-
 Features
 --------
 
 * Powers a ESP32 Brick or ESP32 Ethernet Brick with 5V
 * Input voltage 7V to 27V DC
-
 
 Description
 -----------
@@ -36,7 +34,6 @@ input voltage between 7V and 27V DC.
 The power supply module is 40 x 40mm in size and can be mounted on top of
 the Bricklet connectors of the Brick with 10mm standoffs. Electrical connection
 is established by the GPIO header of the ESP32 (Ethernet) Brick.
-
 
 Technical Specifications
 ------------------------
@@ -55,7 +52,6 @@ Dimensions (W x D x H)            40 x 40 x 11mm (1.57 x 1.57 x 0.43")
 Weight                            9g
 ================================  ============================================================
 
-
 Resources
 ---------
 
@@ -63,7 +59,6 @@ Resources
 * Outline and drilling plan (`Download <../../_images/Dimensions/esp32_power_supply_dimensions.png>`__)
 * Project design files (`Download <https://github.com/Tinkerforge/esp32-power-supply/zipball/master>`__)
 * 3D model (`View online <https://autode.sk/x>`__ | Download: `STEP <https://download.tinkerforge.com/3d/power_supplies/esp32_power_supply/esp32-power-supply.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/power_supplies/esp32_power_supply/esp32-power-supply.FCStd>`__)
-
 
 Connectivity and Mounting
 -------------------------
@@ -73,11 +68,12 @@ you have to solder in the male header for the Brick.
 
 Afterwards the power supply is attached to the Brick with four 10mm standoffs.
 
-The following picture shows the electrical connection to the ESP32 Power
-Supply.
+..
+ The following picture shows the electrical connection to the ESP32 Power
+ Supply.
 
-.. image:: /Images/Power_Supplies/esp32_caption_600.jpg
-   :scale: 100 %
-   :alt: ESP32 Power Supply with caption
-   :align: center
-   :target: ../../_images/Power_Supplies/esp32_caption_800.jpg
+ .. image:: /Images/Power_Supplies/esp32_caption_600.jpg
+    :scale: 100 %
+    :alt: ESP32 Power Supply with caption
+    :align: center
+    :target: ../../_images/Power_Supplies/esp32_caption_800.jpg
