@@ -50,7 +50,7 @@ and execute your own code on the device. By integrating the
 your code, you can easily access the connected Bricklets. Support for LAN/WIFI,
 Bluetooth and other ESP32 features is available by the official Espressif ESP32
 platform libraries. Your software can be flashed to the Brick by an onboard
-USB to UART converter directly connected to the ESP32 or by WIFI when using a
+USB to UART converter directly connected to the ESP32 or by WIFI when using an
 appropriate firmware.
 
 If you want to control the Brick with the high-level APIs from Tinkerforge
@@ -58,36 +58,38 @@ you can use the pre-programmed standard firmware that is flashed by default.
 With this firmware you can access the connected Bricklets through the **LAN/WIFI**
 connection of the Brick.
 The standard firmware offers a web interface to manage the LAN and WIFI settings.
-For the initial setup a **WIFI access point** is opened by the ESP32.
+For the initial setup a **WIFI access point** is opened through the ESP32.
 After the setup process this access point can be disabled.
 
 A simultaneous use of stand-alone applications and an additional external
 control through the high-level API is possible. As a consequence you
-can react on specific events immediately (closed loop) while while
+can react on specific events immediately (closed loop) while
 having other parts of the system controlled externally (open loop).
 
 The Brick can either be powered over its USB-C connector, by the
-:ref:`ESP32 Power Supply <todo>` through the GPIO connector of the Brick.
+:ref:`ESP32 Power Supply <esp32_power_supply>` through the GPIO connector of the Brick.
 
 Technical Specifications
 ------------------------
 
-================================  ============================================================
-Property                          Value
-================================  ============================================================
-Current Consumption               TBDmW (TBDmA at 5V)
---------------------------------  ------------------------------------------------------------
---------------------------------  ------------------------------------------------------------
-Bricklet Ports                    6 (7-pole)
-ESP32 Variant                     ESP32WROOM32E with 16MB Flash (ESP32WRM32E128PH)
-LAN                               10BASE-T, 100BASE-TX (KSZ8091 Ethernet PHY)
-WIFI                              802.11b/g/n (with up to 150 Mbps)
-Bluetooth                         V4.2 BR/EDR and Bluetooth LE
---------------------------------  ------------------------------------------------------------
---------------------------------  ------------------------------------------------------------
-Dimensions (W x D x H)            88 x 45 x 12mm (3.46 x 1.77 x 0.47")
-Weight                            TBDg
-================================  ============================================================
+===================================  ============================================================
+Property                             Value
+===================================  ============================================================
+Power Supply                         By USB-C jack, optional ESP32 Power Supply module
+Current Consumption (WIFI enabled)   925mW (185mA at 5V)
+Current Consumption (WIFI disabled)  520mW (104mA at 5V)
+-----------------------------------  ------------------------------------------------------------
+-----------------------------------  ------------------------------------------------------------
+Bricklet Ports                       6 (7-pole)
+ESP32 Variant                        ESP32WROOM32E with 16MB Flash (ESP32WRM32E128PH)
+LAN                                  10BASE-T, 100BASE-TX (KSZ8091 Ethernet PHY)
+WIFI                                 802.11b/g/n (with up to 150 Mbps)
+Bluetooth                            V4.2 BR/EDR and Bluetooth LE
+-----------------------------------  ------------------------------------------------------------
+-----------------------------------  ------------------------------------------------------------
+Dimensions (W x D x H)               88 x 45 x 12mm (3.46 x 1.77 x 0.47")
+Weight                               20g
+===================================  ============================================================
 
 Resources
 ---------

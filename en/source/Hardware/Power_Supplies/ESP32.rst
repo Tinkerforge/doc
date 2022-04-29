@@ -12,8 +12,8 @@ ESP32 Power Supply
 
 	Power_Supplies/psu_esp32_tilted_[?|?].jpg                  ESP32 Power Supply
 	Power_Supplies/psu_esp32_tilted_bottom_[?|?].jpg           ESP32 Power Supply
-	Power_Supplies/psu_esp32_w_esp_[?|?].jpg                   ESP32 Power Supply
-	Power_Supplies/psu_esp32_w_esp_ethernet_[?|?].jpg          ESP32 Power Supply
+	Power_Supplies/psu_esp32_w_esp_[?|?].jpg                   ESP32 Power Supply with ESP32 Brick
+	Power_Supplies/psu_esp32_w_esp_ethernet_[?|?].jpg          ESP32 Power Supply with ESP32 Ethernet Brick
 
 	{% tfgalleryend %}
 
@@ -33,8 +33,8 @@ or a :ref:`ESP32 Ethernet Brick <esp32_ethernet_brick>` and its connected
 :ref:`Bricklets <primer_bricklets>`. The power supply generates 5VDC from an
 input voltage between 7V and 27V DC.
 
-The power supply module is 40 x 40mm in size and can be directly mounted on top of
-the Bricklet connectors of the Brick with 10mm bolts. Electrical connection
+The power supply module is 40 x 40mm in size and can be mounted on top of
+the Bricklet connectors of the Brick with 10mm standoffs. Electrical connection
 is established by the GPIO header of the ESP32 (Ethernet) Brick.
 
 
@@ -44,15 +44,15 @@ Technical Specifications
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
-Current Consumption               TBDmA, depending on Input Voltage
+Current Consumption               20-30mA, depending on Input Voltage
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Minimum/Maximum Input Voltage     7V/27V DC
-Maximum Output Current            | 5V Supply: TBDA
+Maximum Output Current            | 5V Supply: 1A
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Dimensions (W x D x H)            40 x 40 x TBDmm (1.57 x 1.57 x TBD")
-Weight                            TBDg
+Dimensions (W x D x H)            40 x 40 x 11mm (1.57 x 1.57 x 0.43")
+Weight                            9g
 ================================  ============================================================
 
 
@@ -69,13 +69,11 @@ Connectivity and Mounting
 -------------------------
 
 To attach the ESP32 Power Supply to an ESP32 Brick or ESP32 Ethernet Brick
-you have to solder in the male header and female headers. The male header
-has to go on the top side of the ESP32 (Ethernet) Brick, the female header
-on the bottom side of the ESP32 Power Supply.
+you have to solder in the male header for the Brick.
 
-Afterwards the power supply is attached to the Brick with four 10mm bolts.
+Afterwards the power supply is attached to the Brick with four 10mm standoffs.
 
-The following picture depicts the electrical connection to the ESP32 Power
+The following picture shows the electrical connection to the ESP32 Power
 Supply.
 
 .. image:: /Images/Power_Supplies/esp32_caption_600.jpg

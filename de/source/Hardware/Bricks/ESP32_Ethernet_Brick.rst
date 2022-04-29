@@ -24,7 +24,7 @@ ESP32 Ethernet Brick
 Features
 --------
 
-* Anschlüsse für **sechs** 7-pol Bricklets
+* Anschlüsse für **sechs** 7-Pol Bricklets
 * Ausführung von eigener Software direkt auf diesem Brick (**Standalone-Betrieb**)
 * Nutzung des vorprogrammierten Bricks um Bricklets per **LAN/WLAN** zu steuern
 
@@ -66,28 +66,29 @@ reagiert wird (closed loop) während gleichzeitig eine Steuerung von
 außen stattfindet (open loop).
 
 Die Stromversorgung des Bricks erfolgt über seinen USB-C Stecker oder über eine
-optionale :ref:`ESP32 Power Supply <todo>` über den GPIO Stecker des Bricks.
+optionale :ref:`ESP32 Power Supply <esp32_power_supply>` über den GPIO Stecker des Bricks.
 
 Technische Spezifikation
 ------------------------
 
-================================  ============================================================
-Eigenschaft                       Wert
-================================  ============================================================
-Stromversorgung                   Mittels USB-C Stecker, optional per ESP32 Power Supply Modul
-Stromverbrauch                    TBDmW (TBDmA bei 5V)
---------------------------------  ------------------------------------------------------------
---------------------------------  ------------------------------------------------------------
-Bricklet-Anschlüsse               6 (7-pol)
-ESP32 Variante                    ESP32WROOM32E mit 16MB Flash (ESP32WRM32E128PH)
-LAN                               10BASE-T, 100BASE-TX (KSZ8091 Ethernet PHY)
-WLAN                              802.11b/g/n (mit bis zu 150 Mbps)
-Bluetooth                         V4.2 BR/EDR und Bluetooth LE
---------------------------------  ------------------------------------------------------------
---------------------------------  ------------------------------------------------------------
-Abmessungen (B x T x H)           88 x 45 x 12mm (3,46 x 1,77 x 0,47")
-Gewicht                           TBDg
-================================  ============================================================
+=================================  ============================================================
+Eigenschaft                        Wert
+=================================  ============================================================
+Stromversorgung                    Mittels USB-C Stecker, optional per ESP32 Power Supply Modul
+Stromverbrauch (WLAN aktiviert)    925mW (185mA bei 5V)
+Stromverbrauch (WLAN deaktiviert)  520mW (104mA bei 5V)
+---------------------------------  ------------------------------------------------------------
+---------------------------------  ------------------------------------------------------------
+Bricklet-Anschlüsse                6 (7-pol)
+ESP32 Variante                     ESP32WROOM32E mit 16MB Flash (ESP32WRM32E128PH)
+LAN                                10BASE-T, 100BASE-TX (KSZ8091 Ethernet PHY)
+WLAN                               802.11b/g/n (mit bis zu 150 Mbps)
+Bluetooth                          V4.2 BR/EDR und Bluetooth LE
+---------------------------------  ------------------------------------------------------------
+---------------------------------  ------------------------------------------------------------
+Abmessungen (B x T x H)            88 x 45 x 12mm (3,46 x 1,77 x 0,47")
+Gewicht                            20g
+=================================  ============================================================
 
 Ressourcen
 ----------

@@ -12,8 +12,8 @@ ESP32 Power Supply
 
 	Power_Supplies/psu_esp32_tilted_[?|?].jpg                  ESP32 Power Supply
 	Power_Supplies/psu_esp32_tilted_bottom_[?|?].jpg           ESP32 Power Supply
-	Power_Supplies/psu_esp32_w_esp_[?|?].jpg                   ESP32 Power Supply
-	Power_Supplies/psu_esp32_w_esp_ethernet_[?|?].jpg          ESP32 Power Supply
+	Power_Supplies/psu_esp32_w_esp_[?|?].jpg                   ESP32 Power Supply mit ESP32 Brick
+	Power_Supplies/psu_esp32_w_esp_ethernet_[?|?].jpg          ESP32 Power Supply mit ESP32 Ethernet Brick
 
 	{% tfgalleryend %}
 
@@ -51,8 +51,8 @@ Minimale/Maximale Eingangsspannung           7V/27V DC
 Maximaler Ausgangsstrom                      5V Versorgung: 1A
 -------------------------------------------  ------------------------------------------------------------
 -------------------------------------------  ------------------------------------------------------------
-Abmessungen (B x T x H)                      40 x 40 x TBDmm  (1,57 x 1,57 x TBD")
-Gewicht                                      TBDg
+Abmessungen (B x T x H)                      40 x 40 x 11mm  (1,57 x 1,57 x 0,43")
+Gewicht                                      9g
 ===========================================  ============================================================
 
 
@@ -70,10 +70,8 @@ Elektrischer Anschluss und Befestigung
 --------------------------------------
 
 Um die ESP32 Power Supply auf einen ESP32 Brick oder ESP32 Ethernet Brick
-aufzustecken müssen zuerst Stift- und Buchsenleiste eingelötet werden.
-Die Stiftleiste muss auf der Oberseite des ESP32 (Ethernet) Bricks 
-eingelötet werden. Die Buchsenleiste auf die Unterseite der ESP32
-Power Supply.
+aufzustecken mussen zuerst die Stiftleiste auf der Oberseite des ESP32 (Ethernet) Bricks 
+eingelötet werden.
 
 Anschließend kann die Power Supply auf den Brick mit vier
 10mm Abstandsbolzen befestigt werden.

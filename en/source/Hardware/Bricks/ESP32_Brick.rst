@@ -47,9 +47,9 @@ The Brick can be used for **stand-alone** applications where you want to flash
 and execute your own code on the device. By integrating the
 :ref:`C/C++ API Bindings for Microcontrollers <api_bindings_uc>` libraries in
 your code, you can easily access the connected Bricklets. Support for WIFI,
-Bluetooth and other ESP32 features is available by the official Espressif ESP32
+Bluetooth and other ESP32 features is available through the official Espressif ESP32
 platform libraries. Your software can be flashed to the Brick by an onboard
-USB to UART converter directly connected to the ESP32 or by WIFI when using a
+USB to UART converter directly connected to the ESP32 or by WIFI when using an
 appropriate firmware.
 
 If you want to control the Brick with the high-level APIs from Tinkerforge
@@ -62,32 +62,33 @@ After the setup process this access point can be disabled.
 
 A simultaneous use of stand-alone applications and an additional external
 control through the high-level API is possible. As a consequence you
-can react on specific events immediately (closed loop) while while
+can react on specific events immediately (closed loop) while
 having other parts of the system controlled externally (open loop).
 
 The Brick can either be powered over its USB-C connector, by the
-:ref:`ESP32 Power Supply <todo>` through the GPIO connector of the Brick.
+:ref:`ESP32 Power Supply <esp32_power_supply>` through the GPIO connector of the Brick.
 
 
 Technical Specifications
 ------------------------
 
-================================  ============================================================
-Property                          Value
-================================  ============================================================
-Power Supply                      By USB-C jack, optional ESP32 Power Supply module
-Current Consumption               TBDmW (TBDmA at 5V)
---------------------------------  ------------------------------------------------------------
---------------------------------  ------------------------------------------------------------
-Bricklet Ports                    6 (7-pole)
-ESP32 Variant                     ESP32WROOM32E with 16MB Flash (ESP32WRM32E128PH)
-WIFI                              802.11b/g/n (with up to 150 Mbps)
-Bluetooth                         V4.2 BR/EDR and Bluetooth LE
---------------------------------  ------------------------------------------------------------
---------------------------------  ------------------------------------------------------------
-Dimensions (W x D x H)            66 x 40 x 9mm (2.60 x 1.57 x 0.35")
-Weight                            TBDg
-================================  ============================================================
+==================================   ============================================================
+Property                             Value
+==================================   ============================================================
+Power Supply                         By USB-C jack, optional ESP32 Power Supply module
+Current Consumption (WIFI enabled)   740mW (185mA at 5V)
+Current Consumption (WIFI disabled)  420mW (84mA at 5V)
+-----------------------------------  ------------------------------------------------------------
+-----------------------------------  ------------------------------------------------------------
+Bricklet Ports                       6 (7-pole)
+ESP32 Variant                        ESP32WROOM32E with 16MB Flash (ESP32WRM32E128PH)
+WIFI                                 802.11b/g/n (with up to 150 Mbps)
+Bluetooth                            V4.2 BR/EDR and Bluetooth LE
+-----------------------------------  ------------------------------------------------------------
+-----------------------------------  ------------------------------------------------------------
+Dimensions (W x D x H)               66 x 40 x 9mm (2.60 x 1.57 x 0.35")
+Weight                               14g
+===================================  ============================================================
 
 Resources
 ---------
