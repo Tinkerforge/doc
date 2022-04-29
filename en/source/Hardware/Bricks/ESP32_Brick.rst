@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricks/esp32-brick.html
+:shoplink: ../../../shop/bricks/esp32-brick.html
 
 .. include:: ESP32_Brick.substitutions
 

@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricks/esp32-ethernet-brick.html
+:shoplink: ../../../shop/bricks/esp32-ethernet-brick.html
 
 .. include:: ESP32_Ethernet_Brick.substitutions
 
