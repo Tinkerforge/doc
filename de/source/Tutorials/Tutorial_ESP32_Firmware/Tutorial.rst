@@ -5,7 +5,7 @@ Tutorial - ESP32 Firmware
 =========================
 
 Die :ref:`ESP32 Firmware <esp32_firmware>` ist modular aufgebaut und nutzt
-`PlatformIO <https://platformio.org/>`. Dieses Tutorial zeigt wie die ESP32 
+`PlatformIO <https://platformio.org/>`__. Dieses Tutorial zeigt wie die ESP32
 Firmware um ein eigenes Modul erweitert werden kann. Exemplarisch wird ein Modul zur
 Interaktion mit einem :ref:`RGB LED Button Bricklet <rgb_led_button_bricklet>`
 entwickelt. Als Editor wird Visual Studio Code verwendet.
@@ -44,7 +44,7 @@ Ausgabe in Visual Studio Code neu gebaut und auf den Brick geflasht werden.
 Phase 1: Leeres Modul anlegen
 -----------------------------
 
-Am Ende der ``esp32.ini`` bzw.``esp32_ethernet.ini`` Datei wird wie oben
+Am Ende der ``esp32.ini`` bzw. ``esp32_ethernet.ini`` Datei wird wie oben
 beschrieben ``Tutorial Phase 1`` den Backend- und Frontend-Modulen hinzugefügt.
 
 Nachdem das Projekt neu compiliert und geflasht wurde taucht im Webinterface 
@@ -119,7 +119,7 @@ Jedes Frontend-Modul kann optional folgende Dateien beinhalten:
 Phase 2: Kommunikation Backend zu Frontend
 ------------------------------------------
 
-Modulname für die ``esp32.ini`` bzw.``esp32_ethernet.ini`` Datei: ``Tutorial Phase 2``
+Modulname für die ``esp32.ini`` bzw. ``esp32_ethernet.ini`` Datei: ``Tutorial Phase 2``
 (Änderung des Eintrags von ``Phase 1`` zu ``Phase 2`` sowohl bei den Backend- als auch
 bei den Frontend-Modulen).
 
@@ -237,7 +237,7 @@ Jetzt wird im Webinterface Blau angezeigt:
 Phase 3: Kommunikation Frontend zu Backend
 ------------------------------------------
 
-Modulname für die ``esp32.ini`` bzw.``esp32_ethernet.ini`` Datei: ``Tutorial Phase 3``
+Modulname für die ``esp32.ini`` bzw. ``esp32_ethernet.ini`` Datei: ``Tutorial Phase 3``
 
 Mit diesem Modul aktiviert taucht im Webinterface eine Unterseite mit Farbanzeige
 namens "Tutorial (Phase 3)" auf:
@@ -346,7 +346,7 @@ color update: #00ff00`` ausgegeben:
 Phase 4: Kommunikation Backend zu Bricklet
 ------------------------------------------
 
-Modulname für die ``esp32.ini`` bzw.``esp32_ethernet.ini`` Datei: ``Tutorial Phase 4``
+Modulname für die ``esp32.ini`` bzw. ``esp32_ethernet.ini`` Datei: ``Tutorial Phase 4``
 
 Ab dieser Phase wird vorausgesetzt, dass am Brick ein
 :ref:`RGB LED Button Bricklet <rgb_led_button_bricklet>` angeschlossen ist. Der
@@ -465,7 +465,7 @@ Nach der Änderung zu Grün:
 Phase 5: Kommunikation Bricklet zu Backend/Frontend
 ---------------------------------------------------
 
-Modulname für die ``esp32.ini`` bzw.``esp32_ethernet.ini`` Datei: ``Tutorial Phase 5``
+Modulname für die ``esp32.ini`` bzw. ``esp32_ethernet.ini`` Datei: ``Tutorial Phase 5``
 
 Mit diesem Modul aktiviert taucht im Webinterface eine Unterseite mit Farb- und
 Tasteranzeige namens "Tutorial (Phase 5)" auf:
