@@ -765,7 +765,9 @@ def make_download_brick_firmwares_table():
                                    archive[lang],
                                    category,
                                    extension,
-                                   *firmware_version,
+                                   firmware_version[0],
+                                   firmware_version[1],
+                                   firmware_version[2],
                                    git_tag_prefix,
                                    changelog_suffix))
 
@@ -829,7 +831,9 @@ def make_download_bricklet_plugins_table():
                                        git_name,
                                        archive[lang],
                                        'zbin' if bricklet_info.has_comcu else 'bin',
-                                       *plugin_version,
+                                       plugin_version[0],
+                                       plugin_version[1],
+                                       plugin_version[2],
                                        git_tag_prefix,
                                        changelog_suffix))
 
