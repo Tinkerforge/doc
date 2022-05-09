@@ -358,29 +358,29 @@ bindings_infos = \
 
 extension_infos = \
 [
-    DeviceInfo(None, 'Extension', 'Chibi Extension', 'Chibi', 'chibi_extension', 'Chibi_Extension', None, 'chibi-extension', None, False, False, True, True, True, False,
+    DeviceInfo(None, 'Extension', 'Chibi Extension', 'Chibi', 'chibi_extension', 'Chibi_Extension', None, 'chibi-extension', None, False, False, True, True, True, False, None,
                {'en': 'Wireless Chibi connection between stacks',
                 'de': 'Drahtlose Chibi Verbindung zwischen Stapeln'}),
-    DeviceInfo(None, 'Extension', 'Ethernet Extension', 'Ethernet', 'ethernet_extension', 'Ethernet_Extension', None, 'ethernet-extension', None, False, False, True, True, False, False,
+    DeviceInfo(None, 'Extension', 'Ethernet Extension', 'Ethernet', 'ethernet_extension', 'Ethernet_Extension', None, 'ethernet-extension', None, False, False, True, True, False, False, None,
                {'en': 'Cable based Ethernet connection between stack and PC',
                 'de': 'Kabelgebundene Ethernet Verbindung zwischen Stapel und PC'}),
-    DeviceInfo(None, 'Extension', 'RS485 Extension', 'RS485', 'rs485_extension', 'RS485_Extension', None, 'rs485-extension', None, False, False, True, True, False, False,
+    DeviceInfo(None, 'Extension', 'RS485 Extension', 'RS485', 'rs485_extension', 'RS485_Extension', None, 'rs485-extension', None, False, False, True, True, False, False, None,
                {'en': 'Cable based RS485 connection between stacks',
                 'de': 'Kabelgebundene RS485 Verbindung zwischen Stapeln'}),
-    DeviceInfo(None, 'Extension', 'WIFI Extension', 'WIFI', 'wifi_extension', 'WIFI_Extension', None, 'wifi-extension', None, False, False, True, True, False, False,
+    DeviceInfo(None, 'Extension', 'WIFI Extension', 'WIFI', 'wifi_extension', 'WIFI_Extension', None, 'wifi-extension', None, False, False, True, True, False, False, None,
                {'en': 'Wireless Wi-Fi connection between stack and PC',
                 'de': 'Drahtlose WLAN Verbindung zwischen Stapel und PC'}),
-    DeviceInfo(None, 'Extension', 'WIFI Extension 2.0', 'WIFI 2.0', 'wifi_v2_extension', 'WIFI_V2_Extension', None, 'wifi-v2-extension', 'wifi_v2', False, False, True, True, False, False,
+    DeviceInfo(None, 'Extension', 'WIFI Extension 2.0', 'WIFI 2.0', 'wifi_v2_extension', 'WIFI_V2_Extension', None, 'wifi-v2-extension', 'wifi_v2', False, False, True, True, False, False, None,
                {'en': 'Wireless Wi-Fi connection between stack and PC',
                 'de': 'Drahtlose WLAN Verbindung zwischen Stapel und PC'})
 ]
 
 power_supply_infos = \
 [
-    DeviceInfo(None, 'PowerSupply', 'Step-Down Power Supply', 'Step-Down', 'step_down_power_supply', 'Step_Down', None, 'step-down-powersupply', None, False, False, True, True, False, False,
+    DeviceInfo(None, 'PowerSupply', 'Step-Down Power Supply', 'Step-Down', 'step_down_power_supply', 'Step_Down', None, 'step-down-powersupply', None, False, False, True, True, False, False, None,
                {'en': 'Powers a stack of Bricks with 5V',
                 'de': 'Versorgt einen Stapel von Bricks mit 5V'}),
-    DeviceInfo(None, 'PowerSupply', 'ESP32 Power Supply', 'ESP32', 'esp32_power_supply', 'ESP32', None, 'esp32-power-supply', None, False, False, True, True, False, False,
+    DeviceInfo(None, 'PowerSupply', 'ESP32 Power Supply', 'ESP32', 'esp32_power_supply', 'ESP32', None, 'esp32-power-supply', None, False, False, True, True, False, False, None,
                {'en': 'Powers a ESP32 Brick or ESP32 Ethernet Brick with 5V',
                 'de': 'Versorgt einen ESP32 Brick oder ESP32 Ethernet Brick mit 5V'})
 ]
@@ -734,7 +734,7 @@ def make_download_brick_firmwares_table():
 """
     }
 
-    row = ' :ref:`{0} <{1}>` | `Firmware <https://download.tinkerforge.com/firmwares/{6}s/{2}/{6}_{2}_firmware_{8}_{9}_{10}.{7}>`__, `{3} <https://github.com/Tinkerforge/{4}/archive/v{8}.{9}.{10}.zip>`__ | {8}.{9}.{10} | `{5} <https://download.tinkerforge.com/firmwares/{6}s/{2}/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/{4}/master/software/changelog>`__'
+    row = ' :ref:`{0} <{1}>` | `Firmware <https://download.tinkerforge.com/firmwares/{6}s/{2}/{6}_{2}_firmware_{8}_{9}_{10}.{7}>`__, `{3} <https://github.com/Tinkerforge/{4}/archive/{11}{8}.{9}.{10}.zip>`__ | {8}.{9}.{10} | `{5} <https://download.tinkerforge.com/firmwares/{6}s/{2}/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/{4}/master/software/changelog{12}>`__'
     rows = []
 
     for brick_info in sorted(brick_infos, key=lambda x: x.short_display_name.lower()):
@@ -748,15 +748,26 @@ def make_download_brick_firmwares_table():
                 category = 'brick'
                 extension = 'bin'
 
+            if brick_info.esp32_firmware != None:
+                git_name = 'esp32-firmware'
+                git_tag_prefix = brick_info.esp32_firmware + '-'
+                changelog_suffix = '_' + brick_info.esp32_firmware + '.txt'
+            else:
+                git_name = brick_info.git_name
+                git_tag_prefix = 'v'
+                changelog_suffix = ''
+
             rows.append(row.format(brick_info.short_display_name,
                                    brick_info.ref_name,
                                    brick_info.firmware_url_part,
                                    source_code[lang],
-                                   brick_info.git_name,
+                                   git_name,
                                    archive[lang],
                                    category,
                                    extension,
-                                   *firmware_version))
+                                   *firmware_version,
+                                   git_tag_prefix,
+                                   changelog_suffix))
 
     return table_head[lang] + '\n'.join(rows) + '\n'
 
@@ -786,7 +797,7 @@ def make_download_bricklet_plugins_table():
 """
     }
 
-    row = ' :ref:`{0} <{1}>` | `Plugin <https://download.tinkerforge.com/firmwares/bricklets/{2}/bricklet_{2}_firmware_{7}_{8}_{9}.{6}>`__, `{3} <https://github.com/Tinkerforge/{4}/archive/v{7}.{8}.{9}.zip>`__ | {7}.{8}.{9} | `{5} <https://download.tinkerforge.com/firmwares/bricklets/{2}/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/{4}/master/software/changelog>`__'
+    row = ' :ref:`{0} <{1}>` | `Plugin <https://download.tinkerforge.com/firmwares/bricklets/{2}/bricklet_{2}_firmware_{7}_{8}_{9}.{6}>`__, `{3} <https://github.com/Tinkerforge/{4}/archive/{10}{7}.{8}.{9}.zip>`__ | {7}.{8}.{9} | `{5} <https://download.tinkerforge.com/firmwares/bricklets/{2}/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/{4}/master/software/changelog{11}>`__'
     rows = []
 
     for bricklet_info in sorted(bricklet_infos, key=lambda x: x.short_display_name.lower()):
@@ -799,17 +810,28 @@ def make_download_bricklet_plugins_table():
             else:
                 subversion.append((bricklet_info.short_display_name, bricklet_info.firmware_url_part))
 
+            if bricklet_info.esp32_firmware != None:
+                git_name = 'esp32-firmware'
+                git_tag_prefix = bricklet_info.esp32_firmware + '-'
+                changelog_suffix = '_' + bricklet_info.esp32_firmware + '.txt'
+            else:
+                git_name = bricklet_info.git_name
+                git_tag_prefix = 'v'
+                changelog_suffix = ''
+
             for short_display_name, firmware_url_part in subversion:
-                plugin_version = plugin_versions.get(firmware_url_part, (0,0,0))
+                plugin_version = plugin_versions.get(firmware_url_part, (0, 0, 0))
 
                 rows.append(row.format(short_display_name,
                                        bricklet_info.ref_name,
                                        firmware_url_part,
                                        source_code[lang],
-                                       bricklet_info.git_name,
+                                       git_name,
                                        archive[lang],
                                        'zbin' if bricklet_info.has_comcu else 'bin',
-                                       *plugin_version))
+                                       *plugin_version,
+                                       git_tag_prefix,
+                                       changelog_suffix))
 
     return table_head[lang] + '\n'.join(rows) + '\n'
 
