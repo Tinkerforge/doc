@@ -21,7 +21,8 @@ First the ESP32 firmware setup to build the standard firmware has to be
 prepared. Please follow the steps of the :ref:`ESP32 Firmware documentation <esp32_firmware_setup>`.
 
 All paths and file names in this tutorial are related to the ``software/``
-directory of the ESP32 firmware.
+directory of the ESP32 firmware. Also make sure to open the ``software/``
+directory in Visual Studio Code as the PlatformIO project directory.
 
 This tutorial consists of five phases. Each stage of expansion of the new module
 are already included at the ESP32 firmware but not used. We explain these stages in the following

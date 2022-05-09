@@ -22,7 +22,8 @@ vorbereitet werden. Dazu sollte die Schritte aus der
 durchgeführt werden.
 
 Alle Pfade und Dateinamen in diesem Tutorial beziehen sich auf das ``software/``
-Verzeichnis der ESP32 Firmware.
+Verzeichnis der ESP32 Firmware. Achte bitte auch darauf das ``software/``
+Verzeichnis in Visual Studio Code als PlatformIO Projekt-Verzeichnis zu öffnen.
 
 Dieses Tutorial ist in fünf Phasen unterteilt. Die jeweiligen Ausbaustufen des
 neuen Moduls liegen unbenutzt der ESP32 Firmware bereits bei und werden hier

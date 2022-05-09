@@ -40,8 +40,9 @@ Repository von GitHub als
 `ZIP Datei <https://github.com/Tinkerforge/esp32-firmware/archive/refs/heads/master.zip>`__
 herunterladen und entpacken oder mittels `git <https://www.git-scm.com/>`__ clonen.
 
-Die ``platformio.ini`` Datei befindet sich im ``software/`` Unterverzeichnis.
-Dieses Verzeichnis in Visual Studio Code öffnen und die ``prepare`` Umgebung
+Die ``platformio.ini`` Datei befindet sich im ``software/`` Verzeichnis.
+Achte darauf das ``software/`` Verzeichnis in Visual Studio Code als
+Projekt-Verzeichnis zu öffnen und die ``prepare`` Umgebung
 bauen (``build``), um das Bauen der anderen Umgebungen vorzubereiten. Allgemein muss dies
 nur einmal durchgeführt werden und nicht vor jedem Bauen anderer Umgebungen.
 

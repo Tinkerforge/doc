@@ -39,8 +39,9 @@ repository from GitHub as
 `ZIP file <https://github.com/Tinkerforge/esp32-firmware/archive/refs/heads/master.zip>`__
 and unpack it or clone the repository using `git <https://www.git-scm.com/>`__.
 
-The ``platformio.ini`` file is located in the ``software/`` subdirectory. Open
-this subdirectory in Visual Studio Code and build the ``prepare`` environment
+The ``platformio.ini`` file is located in the ``software/`` directory. Make sure
+to open the ``software/`` directory in Visual Studio Code as the PlatformIO
+project directory and build the ``prepare`` environment
 to prepare the build of other environments. In general this has to be done only
 once and not before every build of other environments
 
