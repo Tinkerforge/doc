@@ -1,6 +1,4 @@
 
-:shoplink: ../../../shop/bricklets/ptc-v2-bricklet.html
-
 .. include:: PTC_V2.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
@@ -24,6 +22,12 @@ PTC Bricklet 2.0
 	Dimensions/ptc_v2_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
 
 	{% tfgalleryend %}
+
+.. note::
+
+ Das PTC Bricklet 2.0 ist abgekündigt und wird nicht mehr verkauft.
+ Als Ersatz wird das :ref:`Industrial PTC Bricklet <industrial_ptc_bricklet>`
+ empfohlen.
 
 
 Features

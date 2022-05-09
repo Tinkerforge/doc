@@ -26,7 +26,7 @@ PTC Bricklet
 .. note::
 
  Das PTC Bricklet ist abgekündigt und wird nicht mehr verkauft.
- Als Ersatz wird das :ref:`PTC Bricklet 2.0 <ptc_v2_bricklet>`
+ Als Ersatz wird das :ref:`Industrial PTC Bricklet <industrial_ptc_bricklet>`
  empfohlen.
 
 Features
