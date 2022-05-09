@@ -37,7 +37,7 @@ Datei im Laufe des Tutorial abgeändert werden muss:
 * ESP32 Ethernet Brick: ``esp32_ethernet.ini``
 
 Um das jeweilige Tutorial-Modul zu aktivieren muss dessen Name am Ende der
-Optionen ``backend_modules`` und ``frontend_modules`` der entsprechenden
+Optionen ``custom_backend_modules`` und ``custom_frontend_modules`` der entsprechenden
 ``.ini`` Datei hinzufügt werden und die Firmware mittels "Upload and Monitor"
 Ausgabe in Visual Studio Code neu gebaut und auf den Brick geflasht werden.
 

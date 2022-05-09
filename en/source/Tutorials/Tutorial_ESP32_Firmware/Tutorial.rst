@@ -35,7 +35,7 @@ can be used for this tutorial. The only difference between these two Bricks is t
 * ESP32 Ethernet Brick: ``esp32_ethernet.ini``
 
 To enable the respective stage the name of it
-has to be added at the end of the ``backend_modules`` and ``frontend_modules`` options.
+has to be added at the end of the ``custom_backend_modules`` and ``custom_frontend_modules`` options.
 After that the firmware has to be build and uploaded to the Brick by "Upload and Monitor" 
 in Visual Studio Code.
 

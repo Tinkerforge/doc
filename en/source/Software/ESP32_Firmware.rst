@@ -71,7 +71,7 @@ Firmware Structure
 The functionality and the web interface of the firmware are put together from
 modules. The variations of the firmware differ mostly in their list of active
 modules. This list is specified per environment in the corresponding ``.ini``
-file using the ``backend_modules`` and ``frontend_modules`` options.
+file using the ``custom_backend_modules`` and ``custom_frontend_modules`` options.
 
 The tutorial regarding the :ref:`ESP32 firmware <tutorial_esp32_firmware>`
 shows step by step how to add a custom module to the firmware.

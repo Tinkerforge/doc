@@ -72,7 +72,7 @@ Struktur der Firmware
 Die Funktionalität und das Webinterface der Firmware sind aus Modulen zusammengesetzt.
 Die verschiedenen Varianten der Firmware unterscheiden sich hauptsächlich durch
 die aktiven Module. Die Liste der aktiven Module wird in der jeweligen ``.ini``
-Datei für jede Umgebung durch die Optionen ``backend_modules`` und ``frontend_modules``
+Datei für jede Umgebung durch die Optionen ``custom_backend_modules`` und ``custom_frontend_modules``
 festgelegt.
 
 Das Tutorial zur :ref:`ESP32 Firmware <tutorial_esp32_firmware>` zeigt Schritt
