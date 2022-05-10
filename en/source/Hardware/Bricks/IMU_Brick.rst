@@ -309,7 +309,7 @@ orientation.
 For this process often a
 `Kalman Filter <https://en.wikipedia.org/wiki/Kalman_filter>`__ is used.
 The filter that is used in the IMU Brick is based on
-`this paper <http://www.x-io.co.uk/res/doc/madgwick_internal_report.pdf>`__
+`this paper <https://github.com/Tinkerforge/imu-brick/blob/master/datasheets/madgwick_internal_report.pdf>`__
 by `S. O. Madgwick <http://www.x-io.co.uk/open-source-imu-and-ahrs-algorithms/>`__.
 In our tests this new state of the art filter
 could achieve significantly better results than a Kalman Filter. Madgwick
