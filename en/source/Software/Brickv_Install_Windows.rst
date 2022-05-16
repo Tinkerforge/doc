@@ -26,8 +26,11 @@ You can choose the actions of the installer:
 
 * **Install Brick Viewer** will copy the program files.
 * **Install/Update Brick Bootloader Driver** will install/update the USB driver
-  for Bricks in bootloader mode. This is driver is necessary to do Brick
+  for Bricks in bootloader mode. This driver is necessary to do Brick
   firmware updates using Brick Viewer.
+* **Install/Update ESP32 Bootloader Driver** will install/update the USB bootloader
+  driver for ESP32 (Ethernet) Bricks. This driver is necessary to do ESP32
+  (Ethernet) Brick firmware updates using Brick Viewer.
 
 Typically you want the installer to perform all tasks.
 Click on "Next" to start the installation process.

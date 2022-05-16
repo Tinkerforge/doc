@@ -25,10 +25,13 @@ sollte einen Installer starten:
 
 Verschiedene Aktionen können ausgewählt werden:
 
-* **Install Brick Daemon** kopiert die Programmdateien.
+* **Install Brick Viewer** kopiert die Programmdateien.
 * **Install/Update Brick Bootloader Driver** installiert/aktualisiert den USB
   Treiber für Bricks im Bootloader Modus. Dieser Treiber ist notwendig um
   Brick Firmware Updates in Brick Viewer durchführen zu können.
+* **Install/Update ESP32 Bootloader Driver** installiert/aktualisiert den USB
+  Bootloader Treiber für ESP32 (Ethernet) Bricks. Dieser Treiber ist notwendig um
+  ESP32 (Ethernet) Brick Firmware Updates in Brick Viewer durchführen zu können.
 
 Typischerweise sollen alle Schritte ausgeführt werden. Ein Klick auf
 "Next" startet den Installationsprozess.
