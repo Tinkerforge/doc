@@ -34,6 +34,9 @@ PlatformIO Core instead.
 In general you should always use the latest version of PlatformIO and Node.js.
 For the Node.js package manager ``npm`` version 8 or newer is required.
 
+For Windows the `Silicon Labs CP210x Universal Windows Driver <https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers>`__
+has to be installed. Linux and macOS have this driver already build in.
+
 Next, download the `esp32-firmware <https://github.com/Tinkerforge/esp32-firmware>`__
 repository from GitHub as
 `ZIP file <https://github.com/Tinkerforge/esp32-firmware/archive/refs/heads/master.zip>`__
