@@ -4,9 +4,6 @@
 C/C++ for Microcontrollers - Raspberry Pi HAL
 =============================================
 
-.. warning::
- This documentation might be outdated.
-
 The Raspberry Pi Hardware Abstraction Layer (HAL) is used
 with the C/C++ bindings for microcontrollers to communicate
 with Bricklets over SPI.
@@ -58,13 +55,13 @@ List the device used in your selected example under ``SOURCES_DEVICES``, for exa
 
 .. code-block:: make
 
-  SOURCES_DEVICES :=  bricklet_industrial_digital_in_4_v2.c
+  SOURCES_DEVICES := src/bindings/bricklet_industrial_digital_in_4_v2.c
 
-and add the example source file itself to ``SOURCES``, for example
+and add the example source file itself to ``SOURCES_EXAMPLE``, for example
 
 .. code-block:: make
 
-  SOURCES :=  example_edge_count.c
+  SOURCES_EXAMPLE := example_edge_count.c
 
 Next you have to modify the port assignment in the example driver
 to fit to your set-up (:ref:`see this section <api_bindings_uc_hal_linux_port_spec>`).
