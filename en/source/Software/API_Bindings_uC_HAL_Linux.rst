@@ -4,9 +4,6 @@
 C/C++ for Microcontrollers - Linux HAL
 ======================================
 
-.. warning::
- This documentation might be outdated.
-
 The Linux Hardware Abstraction Layer (HAL) is used
 with the C/C++ bindings for microcontrollers to communicate
 with Bricklets over SPI.
@@ -62,13 +59,13 @@ List the device used in your selected example under ``SOURCES_DEVICES``, for exa
 
 .. code-block:: make
 
-  SOURCES_DEVICES := bricklet_industrial_digital_in_4_v2.c
+  SOURCES_DEVICES := src/bindings/bricklet_industrial_digital_in_4_v2.c
 
-and add the example source file itself to ``SOURCES``, for example
+and add the example source file itself to ``SOURCES_EXAMPLE``, for example
 
 .. code-block:: make
 
-  SOURCES := example_edge_count.c
+  SOURCES_EXAMPLE := example_edge_count.c
 
 Next you have to modify the port assignment in the sketch
 to fit to your set-up (see :ref:`this section <api_bindings_uc_hal_linux_port_spec>`).
@@ -101,19 +98,14 @@ A port is specified as an instance of the ``TF_Port`` structure:
 .. code-block:: c
 
   struct TF_Port {
-      // external
       int chip_select_pin;
       char port_name;
-
-      // internal
-      int cs_pin_fd;
   }
 
 Revelant members are ``int chip_select_pin`` and ``char port_name``.
 The chip select pin is the pin that has to be pulled to be able to communicate to the port.
 The port name is a single character that identifies the port. The name is injected into the
 result of ``tf_[device]_get_identity`` calls if the device is connected directly to the host.
-You don't have to initialize ``cs_pin_fd``.
 
 The :file:`example_driver.c` contains an example port specification.
 

@@ -4,9 +4,6 @@
 C/C++ für Mikrocontroller - Linux HAL
 =====================================
 
-.. warning::
- Diese Dokumentation ist möglicherweise veraltet.
-
 Der Linux Hardware Abstraction Layer (HAL)
 wird mit den C/C++ Bindings für Mikrocontroller verwendet
 um mit Bricklets über SPI zu kommunizieren.
@@ -65,16 +62,16 @@ zum Beispiel für das Industrial Digital In 4 Bricklet 2.0:
 
 .. code-block:: make
 
-  SOURCES_DEVICES := bricklet_industrial_digital_in_4_v2.c
+  SOURCES_DEVICES := src/bindings/bricklet_industrial_digital_in_4_v2.c
 
-Der Quellcode des Beispiels selbst muss zu den ``SOURCES`` hinzugefügt werden,
+Der Quellcode des Beispiels selbst muss zu den ``SOURCES_EXAMPLE`` hinzugefügt werden,
 zum Beispiel:
 
 .. code-block:: make
 
-  SOURCES := example_edge_count.c
+  SOURCES_EXAMPLE := example_edge_count.c
 
-Als nächstes muss die Port-Zuweisung im Beispiel-Treiber auf den Aufbau angepasst werden.
+Als nächstes muss die Port-Zuweisung im Beispiel-Treiber auf den Aufbau angepasst werden
 (:ref:`siehe dieser Abschnitt <api_bindings_uc_hal_linux_port_spec>`).
 Wenn mehrere Bricklets am selben SPI-Bus verbunden werden sollen
 (das ist nur mit einem Trenner-Chip möglich),
@@ -107,19 +104,15 @@ Ein Port wird als Instanz der ``TF_Port``-Struktur spezifiziert:
 .. code-block:: c
 
   struct TF_Port {
-      // external
       int chip_select_pin;
       char port_name;
-
-      // internal
-      int cs_pin_fd;
   }
 
 Relevante Member sind ``int chip_select_pin`` und ``char port_name``.
 Der ``chip_select_pin`` ist der Pin, der gesetzt werden muss, um mit dem Port zu kommunizieren.
 Der ``port_name`` ist ein Zeichen, das den Port identifiziert. Der Name wird in die
 Ergebnisse von ``tf_[device]_get_identity`` aufrufen eingefügt, falls das Gerät direkt mit dem Host
-verbunden ist. ``cs_pin_fd`` muss nicht initialisiert werden.
+verbunden ist.
 
 Im Beispiel-Treiber :file:`example_driver.c` sind Port-Spezifikationen für den
 :ref:`HAT Brick <hat_brick>` und :ref:`HAT Zero Brick <hat_zero_brick>` enthalten.
