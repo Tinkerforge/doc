@@ -125,7 +125,8 @@ operational.
 
 The Brick can be accessed by LAN or WIFI. Both can be used simultaneously.
 he USB connector is only used as power source and to perform a factory reset on
-the Brick.
+the Brick. In contrast to other Bricks, an ESP32 Brick connected to USB will
+not show up as Brick in a Brick Viewer connected to localhost.
 
 By default the Brick uses automatic IP address configuration (DHCP) for its LAN connection.
 Simply connect the Brick with a LAN cable. The orange LED at the LAN jack should

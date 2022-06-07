@@ -124,6 +124,8 @@ Brick betriebsbereit.
 Die Kommunikation mit dem Brick erfolgt über WLAN.
 Der USB Abschluss dient nur zur Stromversorgung
 und um den Brick in den Auslieferungszustand zurückversetzen zu können.
+Im Gegensatz zu anderen Bricks taucht ein ESP32 Brick verbunden mit USB nicht
+in einem zu localhost verbundenen Brick Viewer auf.
 
 Für eine Verbindung zu einem bestehenden WLAN-Netzwerk muss zunächst eine Verbindung zum
 Webinterface des Bricks hergestellt werden. Dies erfolgt über den im

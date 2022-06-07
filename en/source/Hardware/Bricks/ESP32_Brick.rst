@@ -123,7 +123,8 @@ After a short while the blue status LED will blink slowly. The Brick is now
 operational.
 
 The Brick can be accessed by WIFI. The USB connector is only used as power source
-and to perform a factory reset on the Brick.
+and to perform a factory reset on the Brick. In contrast to other Bricks, an ESP32
+Brick connected to USB will not show up as Brick in a Brick Viewer connected to localhost.
 
 If you want to use the Brick with an existing WIFI network you first have to
 access the web interface of the Brick. The web interface can be accessed by the
