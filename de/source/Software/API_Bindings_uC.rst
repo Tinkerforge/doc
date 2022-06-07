@@ -116,8 +116,8 @@ Für andere Plattformen muss ein eigener HAL implementiert werden (siehe unten).
 
 ..
  * :ref:`HAL Arduino <api_bindings_uc_hal_arduino>` für Arduino-kompatible Boards mit AVR- oder ARM-Prozessor
- * :ref:`HAL Arduino ESP32 <api_bindings_uc_hal_arduino_esp32>` für Arduino-kompatible Boards mit ESP32-Prozessor
 
+* :ref:`HAL Arduino ESP32 <api_bindings_uc_hal_arduino_esp32>` für Arduino-kompatible Boards mit ESP32-Prozessor
 * :ref:`HAL Arduino ESP32 Brick <api_bindings_uc_hal_arduino_esp32_brick>` für :ref:`ESP32 Brick <esp32_brick>` auf Arduino-Basis
 * :ref:`HAL Arduino ESP32 Ethernet Brick <api_bindings_uc_hal_arduino_esp32_ethernet_brick>` für :ref:`ESP32 Ethernet Brick <esp32_ethernet_brick>` auf Arduino-Basis
 
@@ -247,7 +247,7 @@ aufgelistet. Anleitungen für weiterführende Projekte finden sich im Abschnitt
    :hidden:
 
    ~HAL Arduino <API_Bindings_uC_HAL_Arduino>
-   ~HAL Arduino ESP32 <API_Bindings_uC_HAL_Arduino_ESP32>
+   HAL Arduino ESP32 <API_Bindings_uC_HAL_Arduino_ESP32>
    HAL Arduino ESP32 Brick <API_Bindings_uC_HAL_Arduino_ESP32_Brick>
    HAL Arduino ESP32 Ethernet Brick <API_Bindings_uC_HAL_Arduino_ESP32_Ethernet_Brick>
    ~HAL Linux <API_Bindings_uC_HAL_Linux>

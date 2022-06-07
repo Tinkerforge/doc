@@ -4,9 +4,6 @@
 C/C++ for Microcontrollers - Arduino ESP32 HAL
 ==============================================
 
-.. warning::
- This documentation might be outdated.
-
 The Arduino ESP32 Hardware Abstraction Layer (HAL) is used
 with the C/C++ bindings for microcontrollers to communicate
 with Bricklets over SPI.
@@ -16,7 +13,8 @@ Supported Hardware
 
 This HAL was tested with the following devices:
 
-* ESP32 Brick
+* ESP32 Brick (the customized :ref:`Arduino ESP32 Brick HAL <api_bindings_uc_hal_arduino_esp32_brick>` should be used instead)
+* ESP32 Ethernet Brick (the customized :ref:`Arduino ESP32 Ethernet Brick HAL <api_bindings_uc_hal_arduino_esp32_ethernet_brick>` should be used instead)
 * NodeMCU ESP32
 * ESP32-WROOM-32 module
 * ESP32-WROVER-32 module
@@ -87,7 +85,7 @@ SPI is the SPI hardware unit to use, valid values are ``VSPI`` and ``HSPI``.
 The port name is a single character that identifies the port. The name is injected into the
 result of ``tf_[device]_get_identity`` calls if the device is connected directly to the host.
 
-The :file:`example_driver.c` contains an example port specification.
+The :file:`example_driver.ino` contains an example port specification for the ESP32 Brick.
 
 .. _api_bindings_uc_hal_arduino_esp32_api:
 

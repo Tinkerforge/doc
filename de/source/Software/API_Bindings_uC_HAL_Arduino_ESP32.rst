@@ -4,9 +4,6 @@
 C/C++ für Mikrocontroller - Arduino ESP32 HAL
 =============================================
 
-.. warning::
- Diese Dokumentation ist möglicherweise veraltet.
-
 Der Arduino ESP32 Hardware Abstraction Layer (HAL)
 wird mit den C/C++ Bindings für Mikrocontroller verwendet
 um mit Bricklets über SPI zu kommunizieren.
@@ -16,8 +13,8 @@ Unterstützte Hardware
 
 Dieser HAL wurde mit den folgenden Boards getestet:
 
-* ESP32 Brick
-* ESP32 Ethernet Brick
+* ESP32 Brick (es sollte jedoch der angepasste :ref:`Arduino ESP32 Brick HAL <api_bindings_uc_hal_arduino_esp32_brick>` verwendet werden)
+* ESP32 Ethernet Brick (es sollte jedoch der angepasste :ref:`Arduino ESP32 Ethernet Brick HAL <api_bindings_uc_hal_arduino_esp32_ethernet_brick>` verwendet werden)
 * NodeMCU ESP32
 * ESP32-WROOM-32-Modul
 * ESP32-WROVER-32-Modul
@@ -61,7 +58,7 @@ sieht aus wie folgt:
 Der Hauptordner muss zwingend den selben Namen wie die Sketch-Datei haben.
 Wenn also :file:`example_driver.ino` umbenannt werden soll, muss auch der Ordner umbenannt werden.
 
-Als nächstes muss die Port-Zuweisung im Beispiel-Treiber auf den Aufbau angepasst werden.
+Als nächstes muss die Port-Zuweisung im Beispiel-Treiber auf den Aufbau angepasst werden
 (:ref:`siehe dieser Abschnitt <api_bindings_uc_hal_arduino_esp32_port_spec>`).
 Wenn mehrere Bricklets am selben SPI-Bus verbunden werden sollen
 (das ist nur mit einem Trenner-Chip möglich),
@@ -94,7 +91,7 @@ Der ``port_name`` ist ein Zeichen, das den Port identifiziert. Der Name wird in 
 Ergebnisse von ``tf_[device]_get_identity`` aufrufen eingefügt, falls das Gerät direkt mit dem Host
 verbunden ist.
 
-Im Beispiel-Treiber :file:`example_driver.c` ist eine Beispiel-Port-Spezifikation enthalten.
+Im Beispiel-Treiber :file:`example_driver.ino` ist eine Beispiel-Port-Spezifikation für den ESP32 Brick enthalten.
 
 .. _api_bindings_uc_hal_arduino_esp32_api:
 
