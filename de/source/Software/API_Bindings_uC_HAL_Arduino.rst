@@ -4,9 +4,6 @@
 C/C++ für Mikrocontroller - Arduino HAL
 =======================================
 
-.. warning::
- Diese Dokumentation ist möglicherweise veraltet.
-
 Der Arduino Hardware Abstraction Layer (HAL)
 wird mit den C/C++ Bindings für Mikrocontroller verwendet
 um mit Bricklets über SPI zu kommunizieren.

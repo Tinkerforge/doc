@@ -13,8 +13,8 @@ Unterstützte Hardware
 
 Dieser HAL wurde mit den folgenden Boards getestet:
 
-* ESP32 Brick (es sollte jedoch der angepasste :ref:`Arduino ESP32 Brick HAL <api_bindings_uc_hal_arduino_esp32_brick>` verwendet werden)
-* ESP32 Ethernet Brick (es sollte jedoch der angepasste :ref:`Arduino ESP32 Ethernet Brick HAL <api_bindings_uc_hal_arduino_esp32_ethernet_brick>` verwendet werden)
+* :ref:`ESP32 Brick <esp32_brick>` (es sollte jedoch der angepasste :ref:`Arduino ESP32 Brick HAL <api_bindings_uc_hal_arduino_esp32_brick>` verwendet werden)
+* :ref:`ESP32 Ethernet Brick <esp32_ethernet_brick>` (es sollte jedoch der angepasste :ref:`Arduino ESP32 Ethernet Brick HAL <api_bindings_uc_hal_arduino_esp32_ethernet_brick>` verwendet werden)
 * NodeMCU ESP32
 * ESP32-WROOM-32-Modul
 * ESP32-WROVER-32-Modul

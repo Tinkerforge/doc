@@ -98,9 +98,7 @@ The HAL is an abstraction over the platform specific way to communicate over SPI
 The bindings already contain HALs for the following platforms.
 For other platforms, a custom HAL must be implemented (see below).
 
-..
- * :ref:`HAL Arduino <api_bindings_uc_hal_arduino>` for Arduino compatible boards with an AVR or ARM processor
-
+* :ref:`HAL Arduino <api_bindings_uc_hal_arduino>` for Arduino compatible boards with an AVR or ARM processor
 * :ref:`HAL Arduino ESP32 <api_bindings_uc_hal_arduino_esp32>` for Arduino compatible boards with ESP32 processor
 * :ref:`HAL Arduino ESP32 Brick <api_bindings_uc_hal_arduino_esp32_brick>` for :ref:`ESP32 Brick <esp32_brick>` with Arduino base
 * :ref:`HAL Arduino ESP32 Ethernet Brick <api_bindings_uc_hal_arduino_esp32_ethernet_brick>` for :ref:`ESP32 Ethernet Brick <esp32_ethernet_brick>` with Arduino base
@@ -228,7 +226,7 @@ following table. Further project descriptions can be found in the
 .. toctree::
    :hidden:
 
-   ~HAL Arduino <API_Bindings_uC_HAL_Arduino>
+   HAL Arduino <API_Bindings_uC_HAL_Arduino>
    HAL Arduino ESP32 <API_Bindings_uC_HAL_Arduino_ESP32>
    HAL Arduino ESP32 Brick <API_Bindings_uC_HAL_Arduino_ESP32_Brick>
    HAL Arduino ESP32 Ethernet Brick <API_Bindings_uC_HAL_Arduino_ESP32_Ethernet_Brick>
