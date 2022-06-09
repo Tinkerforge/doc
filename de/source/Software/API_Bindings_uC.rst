@@ -251,7 +251,7 @@ aufgelistet. Anleitungen für weiterführende Projekte finden sich im Abschnitt
    HAL Linux <API_Bindings_uC_HAL_Linux>
    HAL Raspberry Pi <API_Bindings_uC_HAL_Raspberry_Pi>
    ~HAL STM32F0 <API_Bindings_uC_HAL_STM32F0>
-   ~Eigener HAL <API_Bindings_uC_Custom_HAL>
+   Eigener HAL <API_Bindings_uC_Custom_HAL>
    Bricks <Bricks_uC>
    Bricks (Abgekündigt) <Bricks_uC_Discontinued>
    Bricklets <Bricklets_uC>

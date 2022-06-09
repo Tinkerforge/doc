@@ -4,9 +4,6 @@
 C/C++ for Microcontrollers - Custom HAL
 =======================================
 
-.. warning::
- This documentation might be outdated.
-
 Using the C/C++ bindings for microcontrollers
 requires a hardware specific HAL. If no HAL for
 your platform is available, you can write your own
@@ -80,11 +77,11 @@ The next step after defining the ``TF_HAL`` struct is implementing its initializ
 
 * Set the ``TF_HAL`` struct to a defined state.
 * Initialize the ``TF_HALCommon`` instance with :c:func:`tf_hal_common_create`
-* Prepare the SPI communication
+* Prepare the SPI communication.
   When your initialization function returns, SPI communication must be possible to all attached devices.
-  All chip select pins must be set to HIGH (e.g. disabled).
+  All chip select pins must be set to high (e.g. disabled).
   :ref:`See here <api_bindings_uc_custom_hal_spi_details>` for details about the SPI communication.
-* Call :c:func:`tf_hal_common_prepare`
+* Call :c:func:`tf_hal_common_prepare`.
   This is typically the last step in the initialization. SPI communication must be possible here.
 
 By convention, ``tf_hal_create`` returns an int that is set to ``TF_E_OK`` on success.
@@ -122,7 +119,7 @@ All functions returning an int should return ``TF_E_OK`` on success.
 
 .. c:function:: int tf_hal_transceive(TF_HAL *hal, uint8_t port_id, const uint8_t *write_buffer, uint8_t *read_buffer, uint32_t length)
 
- Transmits length bytes of data from the ``write_buffer`` to the bricklet while receiving the same
+ Transmits ``length`` bytes of data from the ``write_buffer`` to the Bricklet while receiving the same
  amount of bytes (as SPI is bi-directional) into the ``read_buffer``. The buffers are always big enough
  to read/write ``length`` bytes.
 
@@ -143,7 +140,7 @@ All functions returning an int should return ``TF_E_OK`` on success.
  Don't forget to unlock the bindings again when the transfer is done.
 
  .. note:
-  If `length` is one, this function should not yield even if DMA is used.
+  If ``length`` is one, this function should not yield even if DMA is used.
   Single byte transfers are usually triggered by the callback polling logic.
   To be as fast as possible when polling with a timeout of 0, the ``yield``
   should be ommited here. If a longer timeout is used, ``tf_hal_callback_tick``
@@ -195,7 +192,7 @@ All functions returning an int should return ``TF_E_OK`` on success.
 
  .. code-block:: c
 
-  #ifdef TF_IMPLEMENT_STRERROR
+  #if TF_IMPLEMENT_STRERROR != 0
   const char *tf_hal_strerror(int e_code) {
       switch(e_code) {
           #include "../bindings/error_cases.h"
@@ -209,6 +206,15 @@ All functions returning an int should return ``TF_E_OK`` on success.
   }
   #endif
 
+.. c:function:: char tf_hal_get_port_name(TF_HAL *hal, uint8_t port_id)
+
+ Returns the 1-character name associated with the given port ID.
+
+.. c:function:: TF_PortCommon *tf_hal_get_port_common(TF_HAL *hal, uint8_t port_id)
+
+ Returns the ``TF_PortCommon`` instance associated with the given port ID.
+
+
 .. _api_bindings_uc_custom_hal_spi_details:
 
 Details about the SPI communication
@@ -216,8 +222,8 @@ Details about the SPI communication
 
 The communication between the Host and the Bricks and Bricklets uses SPI Mode 3:
 
- * CPOL=1: Clock polarity is inverted: HIGH when inactive
- * CPHA=1: Clock phase is shifted: Data is read on falling edge
+* CPOL=1: clock polarity is inverted, high when inactive
+* CPHA=1: clock phase is shifted, data is read on falling edge
 
 Data is transmitted MSB first.
 The default clock frequency is 1.4 MHz, but Bricks and Bricklets support

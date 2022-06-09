@@ -233,7 +233,7 @@ following table. Further project descriptions can be found in the
    HAL Linux <API_Bindings_uC_HAL_Linux>
    HAL Raspberry Pi <API_Bindings_uC_HAL_Raspberry_Pi>
    ~HAL STM32F0 <API_Bindings_uC_HAL_STM32F0>
-   ~Custom HAL <API_Bindings_uC_Custom_HAL>
+   Custom HAL <API_Bindings_uC_Custom_HAL>
    Bricks <Bricks_uC>
    Bricks (Discontinued) <Bricks_uC_Discontinued>
    Bricklets <Bricklets_uC>

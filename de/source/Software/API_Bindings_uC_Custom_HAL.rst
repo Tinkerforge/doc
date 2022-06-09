@@ -4,9 +4,6 @@
 C/C++ für Mikrocontroller - Eigener HAL
 =======================================
 
-.. warning::
- Diese Dokumentation ist möglicherweise veraltet.
-
 Um die C/C++ für Mikrocontroller verwenden zu können
 ist ein hardware-spezifischer HAL notwendig.
 Falls für die Zielplattform kein HAL verfügbar ist,
@@ -22,7 +19,7 @@ Hardware-Anforderungen
 ----------------------
 
 Um die Bindings auszuführen, wird ein Mikrocontroller benötigt,
-der in etwa vergleichbar zum, oder besser als der ATmega328 ist.
+der in etwa vergleichbar zum, oder besser als der ATmega328 (Arduino Uno) ist.
 Der Bindings-Code benötigt mindestens 2k RAM und 16k Flash. Außerdem
 muss die Host-Hardware SPI mit mindestens 400 kHz kommunizieren können.
 Für maximale Performance wird eine SPI-Taktfrequenz von 2 MHz empfohlen.
@@ -80,15 +77,12 @@ Nachdem die ``TF_HAL``-Funktion definiert wurde, muss deren Initialisierungsfunk
 ``tf_hal_create`` implementiert werden. Sie hat folgende Aufgaben:
 
 * Die ``TF_HAL``-Struktur in einen definierten Zustand bringen
-
 * Die ``TF_HALCommon``-Instanz mit :c:func:`tf_hal_common_create` initialisieren
-
-* Vorbereiten der SPI-Kommunikation
+* Vorbereiten der SPI-Kommunikation.
   Wenn die Initialisierungs-Funktion beendet ist, muss die SPI-Kommunikation mit allen angeschlossenen
   Geräten möglich sein. Alle Chip-Select-Pins müssen auf HIGH (also deaktiviert) stehen.
   :ref:`Siehe hier <api_bindings_uc_custom_hal_spi_details>` für Details über die SPI-Kommunikation.
-
-* Aufrufen von :c:func:`tf_hal_common_prepare`
+* Aufrufen von :c:func:`tf_hal_common_prepare`.
   Das ist typischerweise der letzte Initialisierungsschritt. SPI-Kommunikation muss hier möglich sein.
 
 Nach Konvention gibt ``tf_hal_create`` einen int zurück, der bei Erfolg auf ``TF_E_OK``
@@ -212,7 +206,7 @@ kein Fehler aufgetreten ist.
 
  .. code-block:: c
 
-  #ifdef TF_IMPLEMENT_STRERROR
+  #if TF_IMPLEMENT_STRERROR != 0
   const char *tf_hal_strerror(int e_code) {
       switch(e_code) {
           #include "../bindings/error_cases.h"
@@ -226,6 +220,15 @@ kein Fehler aufgetreten ist.
   }
   #endif
 
+.. c:function:: char tf_hal_get_port_name(TF_HAL *hal, uint8_t port_id)
+
+ Gibt den 1-Zeichen Namen zurück, der zur übergebenen Port ID gehört.
+
+.. c:function:: TF_PortCommon *tf_hal_get_port_common(TF_HAL *hal, uint8_t port_id)
+
+ Gibt die ``TF_PortCommon``-Instanz zurück, die zur übergebenen Port ID gehört.
+
+
 .. _api_bindings_uc_custom_hal_spi_details:
 
 Details über die SPI-Kommunikation
@@ -233,8 +236,8 @@ Details über die SPI-Kommunikation
 
 Die Kommunikation zwischen dem Host und den Bricks/Bricklets verwendet SPI Modus 3:
 
- * CPOL=1: Clock-Polarität ist invertiert, HIGH wenn inaktiv
- * CPHA=1: Clock-Phase ist verschoben: Daten werden zur fallenden Taktflanke gelesen
+* CPOL=1: Clock-Polarität ist invertiert, high wenn inaktiv
+* CPHA=1: Clock-Phase ist verschoben, Daten werden zur fallenden Taktflanke gelesen
 
 Daten werden mit dem MSB (most significant bit) zuerst übertragen.
 Die Standardtaktfrequenz ist 1,4 MHz, Bricks und Bricklets unterstützen aber
