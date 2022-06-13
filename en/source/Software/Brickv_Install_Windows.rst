@@ -4,7 +4,7 @@
 Brick Viewer Installation on Windows
 ====================================
 
-**Requirements**: Windows 7 or newer
+**Requirements**: Windows 8.1 or newer
 
 The :ref:`Brick Viewer <brickv>` can be installed from a setup ``.exe`` file.
 
@@ -25,9 +25,6 @@ installer:
 You can choose the actions of the installer:
 
 * **Install Brick Viewer** will copy the program files.
-* **Install/Update Brick Bootloader Driver** will install/update the USB driver
-  for Bricks in bootloader mode. This driver is necessary to do Brick
-  firmware updates using Brick Viewer.
 * **Install/Update ESP32 Bootloader Driver** will install/update the USB bootloader
   driver for ESP32 (Ethernet) Bricks. This driver is necessary to do ESP32
   (Ethernet) Brick firmware updates using Brick Viewer.
