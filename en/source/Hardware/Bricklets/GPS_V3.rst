@@ -14,13 +14,9 @@ GPS Bricklet 3.0
 
 	{% tfgallery %}
 
-	Bricklets/bricklet_gps_v3_tilted_[?|?].jpg           GPS Bricklet 3.0
-	Bricklets/bricklet_gps_v3_tilted_back_[?|?].jpg      GPS Bricklet 3.0
+	Bricklets/bricklet_gps_v3_tilted1_[?|?].jpg          GPS Bricklet 3.0
+	Bricklets/bricklet_gps_v3_tilted2_[?|?].jpg          GPS Bricklet 3.0
 	Bricklets/bricklet_gps_v3_top_[?|?].jpg              GPS Bricklet 3.0 top
-	Bricklets/bricklet_gps_v3_bottom_[?|?].jpg           GPS Bricklet 3.0 bottom
-	Cases/bricklet_gps_v3_case_built_up1_[?|?].jpg       GPS Bricklet 3.0 in Case
-	Cases/bricklet_gps_v3_case_built_up2_[?|?].jpg       GPS Bricklet 3.0 in Case
-	Cases/bricklet_gps_v3_case_built_up3_[?|?].jpg       GPS Bricklet 3.0 in Case
 	Bricklets/bricklet_gps_v3_brickv_[100|].jpg          GPS Bricklet 3.0 in Brick Viewer
 	Dimensions/gps_v3_bricklet_dimensions_[100|600].png  Outline and drilling plan
 
