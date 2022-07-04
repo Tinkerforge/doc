@@ -94,7 +94,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/gps-v3-bricklet/raw/master/hardware/gps-v3-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/gps_v3_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/gps-v3-bricklet/zipball/master>`__)
-* 3D Modell (`Online ansehen <https://autode.sk/2BgLPRK>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricklets/gps_v3/gps-v3.1.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricklets/gps_v3/gps-v3.1.FCStd>`__)
+* 3D Modell (`Online ansehen <https://autode.sk/2BgLPRK>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricklets/gps_v3/gps-v3.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricklets/gps_v3/gps-v3.FCStd>`__)
 
 Externe Antenne
 ---------------
