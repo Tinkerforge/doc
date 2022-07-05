@@ -97,13 +97,7 @@ Resources
 External Antenna
 ----------------
 
-The GPS Bricklet 3.0 does not have an internal antenna. An external antenna has to be connected to the 
-`U.FL <https://en.wikipedia.org/wiki/Hirose_U.FL>`__ connector.
-
-The connector is short-circuit protected and supplies the antenna with 
-3.3V/20mA. 
-
-The Bricklet has an internal antenna that is used by default. You can connect an external antenna
+The GPS Bricklet 3.0 has an internal antenna that is used by default. You can connect an external antenna
 to the U.FL connector. If an external antenna is connected the Bricklet will auomatically switch
 to the external antenna und the internal antenna is not used anymore. A compatible antenna with a long
 lead is `available in the shop <https://www.tinkerforge.com/en/shop/gps-antenna-sma-300cm.html>`__.

@@ -99,13 +99,7 @@ Ressourcen
 Externe Antenne
 ---------------
 
-Das GPS Bricklet 3.0 hat keine interne Antenne. Eine externe Antenne muss 
-über einen `U.FL <https://en.wikipedia.org/wiki/Hirose_U.FL>`__ Stecker 
-angeschlossen werden.
-
-Der Stecker ist Kurzschlussfest und versorgt die Antenne mit 3.3V/20mA
-
-Das Bricklet hat eine interne GPS-Antenne. Es ist zusätzlich möglich eine externe
+Das GPS Bricklet 3.0 hat eine interne GPS-Antenne. Es ist zusätzlich möglich eine externe
 Antenne  den U.FL Stecker anzuschließen. Wenn eine externe Antenna angeschlossen wird,
 nutzt das Bricklet diese automatisch und die interne Antenne wird deaktiviert. Eine kompatible
 Antenne mit langem Kabel gibt es `bei uns im Shop <https://www.tinkerforge.com/de/shop/gps-antenna-sma-300cm.html>`__.
