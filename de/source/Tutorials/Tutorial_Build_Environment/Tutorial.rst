@@ -72,6 +72,15 @@ Beispiel für den Master Brick)::
  cd ~/tf/master-brick/software/src/
  ln -sf ../../../bricklib/ .
 
+Die Verzeichnisstruktur sollte jetzt so aussehen::
+
+ ~/tf/
+   +- bricklib/
+   +- master-bricklet/
+       +- software/
+           +- src/
+               +- bricklib -> ../../../bricklib/
+
 Dann kann der Quellcode mit einem normalen ``make`` Aufruf gebaut werden::
 
  cd ~/tf/master-brick/software
@@ -94,6 +103,17 @@ und ``brickletlib`` gesetzt werden sowie eine ``Makefile`` generiert werden
  cd ~/tf/temperature-bricklet/software/src/
  ln -sf ../../../bricklib/ .
  ln -sf ../../../brickletlib/ .
+
+Die Verzeichnisstruktur sollte jetzt so aussehen::
+
+ ~/tf/
+   +- bricklib/
+   +- brickletlib/
+   +- temperature-bricklet/
+       +- software/
+           +- src/
+               +- bricklib -> ../../../bricklib/
+               +- brickletlib -> ../../../brickletlib/
 
 Dann kann der Quellcode mit einem normalen ``make`` Aufruf gebaut werden::
 
@@ -134,6 +154,23 @@ Für diese gits muss auch ein Symlink auf die ``bricklib2`` gesetzt werden::
  ln -sf ../../../bricklib2/ .
  cd ~/tf/bootstrapper_xmc/software/src/
  ln -sf ../../../bricklib2/ .
+
+Die Verzeichnisstruktur sollte jetzt so aussehen::
+
+ ~/tf/
+   +- bricklib2/
+   +- humidity-v2-bricklet/
+       +- software/
+           +- src/
+               +- bricklib2 -> ../../../bricklib2/
+   +- brickletboot_xmc/
+       +- software/
+           +- src/
+               +- bricklib2 -> ../../../bricklib2/
+   +- bootstrapper_xmc/
+       +- software/
+           +- src/
+               +- bricklib2 -> ../../../bricklib2/
 
 Dann kann der Quellcode mit einem normalen ``make`` Aufruf gebaut werden::
 

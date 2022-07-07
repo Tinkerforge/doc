@@ -68,6 +68,15 @@ and generate the ``Makefile`` (e.g. for the Master Brick)::
  cd ~/tf/master-brick/software/src/
  ln -sf ../../../bricklib/ .
 
+Now the directory structure should look like this::
+
+ ~/tf/
+   +- bricklib/
+   +- master-bricklet/
+       +- software/
+           +- src/
+               +- bricklib -> ../../../bricklib/
+
 Then you can build the source with a normal ``make`` call::
 
  cd ~/tf/master-brick/software
@@ -88,6 +97,17 @@ and the ``brickletlib`` and generate the ``Makefile``
  cd ~/tf/temperature-bricklet/software/src/
  ln -sf ../../../bricklib/ .
  ln -sf ../../../brickletlib/ .
+
+Now the directory structure should look like this::
+
+ ~/tf/
+   +- bricklib/
+   +- brickletlib/
+   +- temperature-bricklet/
+       +- software/
+           +- src/
+               +- bricklib -> ../../../bricklib/
+               +- brickletlib -> ../../../brickletlib/
 
 Then you can build the source with a normal ``make`` call::
 
@@ -125,6 +145,23 @@ environment this is in ``~/tf/``. Please make sure to also symlink the
  ln -sf ../../../bricklib2/ .
  cd ~/tf/bootstrapper_xmc/software/src/
  ln -sf ../../../bricklib2/ .
+
+Now the directory structure should look like this::
+
+ ~/tf/
+   +- bricklib2/
+   +- humidity-v2-bricklet/
+       +- software/
+           +- src/
+               +- bricklib2 -> ../../../bricklib2/
+   +- brickletboot_xmc/
+       +- software/
+           +- src/
+               +- bricklib2 -> ../../../bricklib2/
+   +- bootstrapper_xmc/
+       +- software/
+           +- src/
+               +- bricklib2 -> ../../../bricklib2/
 
 Then you can build the source with a normal ``make`` call::
 
