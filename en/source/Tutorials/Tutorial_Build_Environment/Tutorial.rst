@@ -21,7 +21,7 @@ It should work as-is on most current Debian based Linux distribution. For
 non-Debian based distribution you have to replace the ``apt-get`` calls with the
 respective counterpart (``yum``, ``emerge``, ``packman``, etc). If your
 distribution does not have a package for the ``arm-none-eabi-gcc`` you
-can use the ``gcc-arm-embedded`` compiler 
+can use the ``gcc-arm-embedded`` compiler
 `from launchpad <https://launchpad.net/gcc-arm-embedded>`__.
 
 If you have an environment set-up with the script above, you can:
@@ -56,7 +56,7 @@ You can install the docker container with::
                                   # through docker. You have to log in/out once after this
  docker pull tinkerforge/build_environment_c
 
-If you want to compile Brick/Bricklet firmware with the docker container, the only 
+If you want to compile Brick/Bricklet firmware with the docker container, the only
 dependency for the host system is GNU make.
 
 Brick Firmwares
@@ -82,7 +82,7 @@ Bricklet Plugins
 ----------------
 
 To compile a Bricklet plugin you first have to link in the ``bricklib``
-and the ``brickletlib`` and generate the ``Makefile`` 
+and the ``brickletlib`` and generate the ``Makefile``
 (e.g. for the Temperature Bricklet)::
 
  cd ~/tf/temperature-bricklet/software/src/
@@ -95,7 +95,7 @@ Then you can build the source with a normal ``make`` call::
  make
 
 The build firmware will be available in the ``software/build/`` directory.
-In this case ``temperature-bricklet.bin``. It can be flashed to the Bricklet 
+In this case ``temperature-bricklet.bin``. It can be flashed to the Bricklet
 with the :ref:`Brick Viewer <brickv_flash_brick_firmware>`. Just select "Custom..."
 in the Updates/Flashing dialog and pick the newly compiled firmware file.
 
@@ -108,14 +108,14 @@ Bricks from an EEPROM (see above).
 
 The new Bricklets have to be setup differently.
 
-To compile a Co-Processor Bricklet firmware you first have to link in the 
+To compile a Co-Processor Bricklet firmware you first have to link in the
 ``bricklib2`` and generate the ``Makefile`` (e.g. for the Humidity Bricklet 2.0)::
 
  cd ~/tf/humidity-v2-bricklet/software/src/
  ln -sf ../../../bricklib2/ .
 
 The Co-Processor Bricklets automatically compile there own bootstrapper and
-bootloader. You have to clone the ``brickletboot_xmc`` and 
+bootloader. You have to clone the ``brickletboot_xmc`` and
 ``bootstrapper_xmc`` gits. The build files assume that they are available
 at the same directory level as the bricklet git itself. In the standard build
 environment this is in ``~/tf/``. Please make sure to also symlink the
@@ -132,7 +132,7 @@ Then you can build the source with a normal ``make`` call::
  make
 
 The build firmware will be available in the ``software/build/`` directory.
-In this case ``humidity-v2-bricklet.zbin``. It can be flashed to the Bricklet 
+In this case ``humidity-v2-bricklet.zbin``. It can be flashed to the Bricklet
 with the :ref:`Brick Viewer <brickv_flash_brick_firmware>`. Just select "Custom..."
 in the Updates/Flashing dialog and pick the newly compiled firmware file.
 
@@ -152,7 +152,7 @@ The configs can be found in ``~/tf/generators/configs/``.
 Lets pretend that we want to add a ``SetBreakCondition`` API function to
 the RS232 Bricklet to be used in Java.
 
-To achieve that we first have to add the function to 
+To achieve that we first have to add the function to
 ``bricklet_rs232_config.py`` in ``~/tf/generators/configs/``:
 
 * `Add function to config <https://github.com/Tinkerforge/generators/commit/dc4dd52c24ab470c5582cfaa0d67690490ec5d0c>`__.
@@ -207,7 +207,7 @@ Schematic and Layout Files
 --------------------------
 
 You can view or modify Brick/Bricklet schematics and PCB layouts. All of
-our hardware designs are made with the open source EDA tool 
+our hardware designs are made with the open source EDA tool
 `KiCad <http://kicad.org/>`__.
 
 To open a KiCad project file you first have to link in the ``kicad-libraries``
@@ -250,8 +250,8 @@ Before using the script a few things have to be adapted:
 
 The script creates a ``*.step`` and a ``*.FCStd`` -project file.
 
-The FreeCAD Macro ``kicad-StepUp-tools.FCMacro`` can be opened directly in FreeCAD for generating the required ``*.wrl`` und ``*.step`` - files. The (*.wrl) file is needed for displaying the model in KiCad 3D Viewer and the (*.step) file for 
-running the script. It is very easy to align the X/Y/Z axis with the macro. It is also possible to load KiCad footprints which can be used as starting point for self made 3d models. 
+The FreeCAD Macro ``kicad-StepUp-tools.FCMacro`` can be opened directly in FreeCAD for generating the required ``*.wrl`` und ``*.step`` - files. The (*.wrl) file is needed for displaying the model in KiCad 3D Viewer and the (*.step) file for
+running the script. It is very easy to align the X/Y/Z axis with the macro. It is also possible to load KiCad footprints which can be used as starting point for self made 3d models.
 
 The complete documentation can be found `here <https://github.com/Tinkerforge/kicad-libraries/raw/master/3d/Scripts/kicadStepUp-starter-Guide.pdf>`__. A cheat-sheet with a short overview about
 the most important functions can be found `here <https://github.com/Tinkerforge/kicad-libraries/raw/master/3d/Scripts/kicadStepUp-cheat-sheet.pdf>`__.
@@ -260,10 +260,10 @@ Case CAD Files
 --------------
 
 Our laser-cut acrylic cases are designed with
-`FreeCAD <https://www.freecadweb.org/>`__. The cases are in the 
+`FreeCAD <https://www.freecadweb.org/>`__. The cases are in the
 ``cases``-git which is in ``~/tf/cases``.
 
-As an example, you can open the case project file of the Ambient Light 
+As an example, you can open the case project file of the Ambient Light
 Bricklet with::
 
  freecad ~/tf/cases/ambient_light/ambient_light.fcstd

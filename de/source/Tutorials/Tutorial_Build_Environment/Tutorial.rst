@@ -1,7 +1,7 @@
 
 .. _tutorial_build_environment_setup:
 
-Tutorial - Build-Umgebung aufsetzen 
+Tutorial - Build-Umgebung aufsetzen
 ===================================
 
 Fast alles was wir bei Tinkerforge machen ist Open Source. Inklusive aller
@@ -21,7 +21,7 @@ Das Skript wurde mit einem Ubuntu 15.04 VirtualBox Image von `osboxes.org
 basierten Linux Distributionen funktionieren. Für nicht-Debian basierende
 Distribution müssen die Aufrufe von ``apt-get`` mit Aufrufen
 der entsprechenden Gegenstücke (``yum``, ``emerge``, ``packman``, etc)
-ausgetauscht werden. Falls die Distribution kein Paket für den 
+ausgetauscht werden. Falls die Distribution kein Paket für den
 ``arm-none-eabi-gcc`` besitzt, kann auch der ``gcc-arm-embedded`` Compiler
 `von Launchpad <https://launchpad.net/gcc-arm-embedded>`__ genutzt
 werden.
@@ -49,7 +49,7 @@ sicher, dass die Builds auf allen PCs und auch auf dem Jenkins Build/Test Server
 reproduzierbar sind.
 
 Wenn der ``tinkerforge/build_environment_c`` Docker-Container installiert ist, wird
-dies von den Makefiles der Firmwares automatisch erkannt und die Kompilierung findet 
+dies von den Makefiles der Firmwares automatisch erkannt und die Kompilierung findet
 über den Docker-Container statt.
 
 Unser Docker-Container kann wie folgt installiert werden::
@@ -78,7 +78,7 @@ Dann kann der Quellcode mit einem normalen ``make`` Aufruf gebaut werden::
  make
 
 Die gebaute Firmware liegt im ``software/build/`` Verzeichnis. In diesem
-Fall ``master-brick.bin``. Sie kann mit dem 
+Fall ``master-brick.bin``. Sie kann mit dem
 :ref:`Brick Viewer <brickv_flash_brick_firmware>` auf ein Brick geflasht werden.
 Einfach auf "Custom..." im Updates/Flashing-Dialog klicken und die frisch
 kompilierte Firmware auswählen.
@@ -88,7 +88,7 @@ Bricklet Plugins
 ----------------
 
 Zum kompilieren von Bricklet Plugins muss zuerst ein Symlink zur ``bricklib``
-und ``brickletlib`` gesetzt werden sowie eine ``Makefile`` generiert werden 
+und ``brickletlib`` gesetzt werden sowie eine ``Makefile`` generiert werden
 (als Beispiel für das Temperature Bricklet)::
 
  cd ~/tf/temperature-bricklet/software/src/
@@ -101,7 +101,7 @@ Dann kann der Quellcode mit einem normalen ``make`` Aufruf gebaut werden::
  make
 
 Das gebaute Plugin liegt im ``software/build/`` Verzeichnis. In diesem
-Fall ``temperature-bricklet.bin``. Es kann mit dem 
+Fall ``temperature-bricklet.bin``. Es kann mit dem
 :ref:`Brick Viewer <brickv_flash_brick_firmware>` auf ein Bricklet geflasht werden.
 Einfach auf "Custom..." im Updates/Flashing-Dialog klicken und das frisch
 kompilierte Plugin auswählen.
@@ -116,15 +116,15 @@ einem EEPROM geladen wurden (siehe oben).
 
 Die neuen Bricklets werden anders gehandhabt.
 
-Zum kompilieren von Co-Prozessor Bricklet Firmwares muss zuerst ein Symlink 
-zur ``bricklib2`` gesetzt sowie eine ``Makefile`` generiert werden 
+Zum kompilieren von Co-Prozessor Bricklet Firmwares muss zuerst ein Symlink
+zur ``bricklib2`` gesetzt sowie eine ``Makefile`` generiert werden
 (als Beispiel für das Humidity Bricklet 2.0)::
 
  cd ~/tf/humidity-v2-bricklet/software/src/
  ln -sf ../../../bricklib2/ .
 
 Das Co-Prozessor Bricklet baut automatisch seinen eigenen Bootloader sowie
-Bootstrapper mit. Dafür müssen die gits ``brickletboot_xmc`` und 
+Bootstrapper mit. Dafür müssen die gits ``brickletboot_xmc`` und
 ``bootstrapper_xmc`` geklont werden. Die Buildumgebung geht davon aus das
 diese gits auf dem selben Verzeichnislevel liegen wie die gits der
 Bricks aund Bricklets. In der Standardumgebung ist dies ``~/tf/``.
@@ -141,7 +141,7 @@ Dann kann der Quellcode mit einem normalen ``make`` Aufruf gebaut werden::
  make
 
 Das gebaute Plugin liegt im ``software/build/`` Verzeichnis. In diesem
-Fall ``humidity-v2-bricklet.zbin``. Es kann mit dem 
+Fall ``humidity-v2-bricklet.zbin``. Es kann mit dem
 :ref:`Brick Viewer <brickv_flash_brick_firmware>` auf ein Bricklet geflasht werden.
 Einfach auf "Custom..." im Updates/Flashing-Dialog klicken und das frisch
 kompilierte Plugin auswählen.
@@ -180,7 +180,7 @@ Jetzt können die Bindings regeneriert werden::
  python generate_all.py
  python copy_all.py
 
-Das ist alles! Die neuen Java Bindings stehen nun in 
+Das ist alles! Die neuen Java Bindings stehen nun in
 ``~/tf/generators/java/tinkerforge_java_bindings_2_x_y.zip``.
 zur Verfpgung. Da wir zusätzlich das ``copy_all.py``-Skript aufgerufen
 haben, sind die neuen Bindings automatisch auch im Brick Viewer
@@ -264,16 +264,16 @@ Um das Skript benutzen zu können, müssen einige Änderungen vorgenommen werden
 
 Das Skript erzeugt eine ``*.step`` und eine ``*.FCStd`` - Projektdatei.
 
-Das FreeCAD Makro ``kicad-StepUp-tools.FCMacro`` kann auch direkt in FreeCAD geöffnet werden um damit die erforderlichen ``*.wrl`` und ``*.step`` - Dateien zu erzeugen, die benötigt werden um im 3d Viewer von KiCad korrekt angezeigt zu werden (*.wrl) sowie die (*.step) für die 
+Das FreeCAD Makro ``kicad-StepUp-tools.FCMacro`` kann auch direkt in FreeCAD geöffnet werden um damit die erforderlichen ``*.wrl`` und ``*.step`` - Dateien zu erzeugen, die benötigt werden um im 3d Viewer von KiCad korrekt angezeigt zu werden (*.wrl) sowie die (*.step) für die
 Ausführung des Scriptes. Mithilfe des Makros kann auch einfach die X/Y/Z-Achsen Ausrichtung vorgenommen werden sowie KiCad footprints laden, die als Basis dienen können für selbst erstellte 3D-Modelle.
 
-Die vollständige Dokumentation findet sich `hier <https://github.com/Tinkerforge/kicad-libraries/raw/master/3d/Scripts/kicadStepUp-starter-Guide.pdf>`__. Desweiteren gibt es `hier <https://github.com/Tinkerforge/kicad-libraries/raw/master/3d/Scripts/kicadStepUp-cheat-sheet.pdf>`__ 
+Die vollständige Dokumentation findet sich `hier <https://github.com/Tinkerforge/kicad-libraries/raw/master/3d/Scripts/kicadStepUp-starter-Guide.pdf>`__. Desweiteren gibt es `hier <https://github.com/Tinkerforge/kicad-libraries/raw/master/3d/Scripts/kicadStepUp-cheat-sheet.pdf>`__
 ein Cheat-Sheet mit einer Kurzübersicht über die wichtigsten Funktionen.
 
 Gehäuse CAD Dateien
 -------------------
 
-Unsere lasergeschnittenen Acrylgehäuse wurden mit 
+Unsere lasergeschnittenen Acrylgehäuse wurden mit
 `FreeCAD <https://www.freecadweb.org/>`__ erstellt. Die Gehöuse
 sind im ``cases``-git welches in ``~/tf/cases`` zu finden ist.
 
@@ -299,6 +299,6 @@ Die komplette Dokumentation kann gebaut werden mit::
 Die Dokumentation der API ist autogeneriert von den Generatoren (siehe oben).
 Diese kann also nicht händisch im ``doc``-git angepasst werden.
 
-Nach dem bauen befindet sich die Startseite der englischen Dokumentation in 
-``~/tf/doc/en/build/html/index.html`` und die Startseite der deutschen 
+Nach dem bauen befindet sich die Startseite der englischen Dokumentation in
+``~/tf/doc/en/build/html/index.html`` und die Startseite der deutschen
 Dokumentation in ``~/tf/doc/de/build/html/index.html``.
