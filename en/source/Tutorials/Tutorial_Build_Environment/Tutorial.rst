@@ -128,6 +128,15 @@ Bricks from an EEPROM (see above).
 
 The new Bricklets have to be setup differently.
 
+The XMC microcontroller series from Infineon is used as Co-Prozessor.
+Therefore, the `XMC Peripheral Library v2.1.16 (xmclib) <http://dave.infineon.com/Libraries/XMCLib/XMC_Peripheral_Library_v2.1.16.zip>`__
+from Infineon is required. Download, unpack and symlink it into ``bricklib2``.
+In the standard build environment ``xmclib`` is unpacked to
+``~/tf/XMC_Peripheral_Library_v2.1.16``::
+
+ cd ~/tf/bricklib2/
+ ln -sf ../XMC_Peripheral_Library_v2.1.16/ xmclib
+
 To compile a Co-Processor Bricklet firmware you first have to link in the
 ``bricklib2`` and generate the ``Makefile`` (e.g. for the Humidity Bricklet 2.0)::
 
@@ -149,7 +158,9 @@ environment this is in ``~/tf/``. Please make sure to also symlink the
 Now the directory structure should look like this::
 
  ~/tf/
+   +- XMC_Peripheral_Library_v2.1.16/
    +- bricklib2/
+       +- xmclib -> ../XMC_Peripheral_Library_v2.1.16/
    +- humidity-v2-bricklet/
        +- software/
            +- src/

@@ -136,6 +136,15 @@ einem EEPROM geladen wurden (siehe oben).
 
 Die neuen Bricklets werden anders gehandhabt.
 
+Als Co-Prozessor wird die XMC Mikrocontroller Serie von Infineon verwendet.
+Daher wird die `XMC Peripheral Library v2.1.16 (xmclib) <http://dave.infineon.com/Libraries/XMCLib/XMC_Peripheral_Library_v2.1.16.zip>`__
+von Infineon benötigt. Diese herunterladen, entpacken und einen Symlink
+in ``bricklib2`` anlegen. In der Standardumgebung wid die ``xmclib`` nach
+``~/tf/XMC_Peripheral_Library_v2.1.16`` entpackt::
+
+ cd ~/tf/bricklib2/
+ ln -sf ../XMC_Peripheral_Library_v2.1.16/ xmclib
+
 Zum kompilieren von Co-Prozessor Bricklet Firmwares muss zuerst ein Symlink
 zur ``bricklib2`` gesetzt sowie eine ``Makefile`` generiert werden
 (als Beispiel für das Humidity Bricklet 2.0)::
@@ -158,7 +167,9 @@ Für diese gits muss auch ein Symlink auf die ``bricklib2`` gesetzt werden::
 Die Verzeichnisstruktur sollte jetzt so aussehen::
 
  ~/tf/
+   +- XMC_Peripheral_Library_v2.1.16/
    +- bricklib2/
+       +- xmclib -> ../XMC_Peripheral_Library_v2.1.16/
    +- humidity-v2-bricklet/
        +- software/
            +- src/
