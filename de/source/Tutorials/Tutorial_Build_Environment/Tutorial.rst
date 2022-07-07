@@ -137,7 +137,7 @@ einem EEPROM geladen wurden (siehe oben).
 Die neuen Bricklets werden anders gehandhabt.
 
 Als Co-Prozessor wird die XMC Mikrocontroller Serie von Infineon verwendet.
-Daher wird die `XMC Peripheral Library v2.1.16 (xmclib) <http://dave.infineon.com/Libraries/XMCLib/XMC_Peripheral_Library_v2.1.16.zip>`__
+Daher wird die `XMC Peripheral Library v2.1.16 (xmclib) <https://dave.infineon.com/Libraries/XMCLib/XMC_Peripheral_Library_v2.1.16.zip>`__
 von Infineon benötigt. Diese herunterladen, entpacken und einen Symlink
 in ``bricklib2`` anlegen. In der Standardumgebung wid die ``xmclib`` nach
 ``~/tf/XMC_Peripheral_Library_v2.1.16`` entpackt::
