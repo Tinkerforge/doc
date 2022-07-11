@@ -212,8 +212,8 @@ Die Konfigurationsdateien können in ``~/tf/generators/configs/`` gefunden werde
 Im folgenden gehen wir davon aus, das wir die Funktion ``SetBreakCondition``
 zur API des RS232 Bricklets hinzufügen und per Java nutzen wollen.
 
-Dazu muss erst die Funktion erst zur Datei
-``bricklet_rs232_config.py`` in ``~/tf/generators/configs/`` hinzufügen:
+Dazu muss zuerst die Funktion zur Datei
+``bricklet_rs232_config.py`` in ``~/tf/generators/configs/`` hinzufügt werden:
 
 * `Funktion zur Konfiration hinzufügen <https://github.com/Tinkerforge/generators/commit/dc4dd52c24ab470c5582cfaa0d67690490ec5d0c>`__.
 
@@ -230,7 +230,7 @@ Jetzt können die Bindings regeneriert werden::
 
 Das ist alles! Die neuen Java Bindings stehen nun in
 ``~/tf/generators/java/tinkerforge_java_bindings_2_x_y.zip``.
-zur Verfpgung. Da wir zusätzlich das ``copy_all.py``-Skript aufgerufen
+zur Verfügung. Da wir zusätzlich das ``copy_all.py``-Skript aufgerufen
 haben, sind die neuen Bindings automatisch auch im Brick Viewer
 Quelltext verfügbar. Zusätzlich wurde die API Dokumentation automatisch
 zum ``doc``-git hinzugefügt.
