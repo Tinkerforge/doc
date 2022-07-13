@@ -66,17 +66,15 @@ From NPM Package
 
 There is a NPM package available for using the Bindings with Node.js. It is
 available from the `Node.js Package Repository
-<https://www.npmjs.com/package/tinkerforge>`__ and can be installed globally
-with the following command which might has to execute with ``sudo`` or as
-administrator::
+<https://www.npmjs.com/package/tinkerforge>`__ and can be installed
+with the following command::
 
- npm -g install tinkerforge
+ npm install tinkerforge
 
 Alternatively, the NPM Package is also part of the ZIP file of the bindings. It
-can be installed globally from there as well with the following command which
-might has to execute with ``sudo`` or as administrator::
+can be installed from there as well::
 
- npm -g install nodejs/tinkerforge.tgz
+ npm install nodejs/tinkerforge.tgz
 
 Now you're ready to test an example. The NPM package does not include the
 examples. Those are available as part of the bindings :ref:`ZIP file

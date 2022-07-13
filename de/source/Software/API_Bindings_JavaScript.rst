@@ -70,14 +70,12 @@ Vom NPM Package
 
 Für die Verwendung der Bindings mit Node.js steht in NPM Package bereit. Dies
 ist im `Node.js Package Repository <https://www.npmjs.com/package/tinkerforge>`__
-verfügbar und kann von dort mit folgendem Befehl global installiert werden.
-Möglicherweise muss dies mit ``sudo`` bzw. als Administrator ausgeführt werden::
+verfügbar und kann von dort mit folgendem Befehl installiert werden::
 
- npm -g install tinkerforge
+ npm install tinkerforge
 
 Alternativ ist das NPM Package auch in der ZIP Datei der Bindings enthalten und
-kann mit folgendem Befehl global installiert werden. Möglicherweise muss dies
-mit ``sudo`` bzw. als Administrator ausgeführt werden::
+kann mit folgendem Befehl installiert werden::
 
  npm -g install nodejs/tinkerforge.tgz
 
