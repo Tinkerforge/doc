@@ -25,11 +25,11 @@ and PlatformIO are used as basis.
 Preparation
 -----------
 
-First, `PlatformIO <https://platformio.org/>`__ and `Node.js <https://nodejs.org/>`__
-have to be installed according to their installation manuals. For PlatformIO we
-recommend using the PlatformIO IDE extension for
-`Visual Studio Code <https://code.visualstudio.com/>`__, but you can also use
-PlatformIO Core instead.
+First, `PlatformIO <https://platformio.org/>`__, `Node.js <https://nodejs.org/>`__
+and `Git <https://git-scm.com/>`__ have to be installed according to their
+installation manuals. For PlatformIO we recommend using the PlatformIO IDE
+extension for `Visual Studio Code <https://code.visualstudio.com/>`__, but you
+can also use PlatformIO Core instead.
 
 In general you should always use the latest version of PlatformIO and Node.js.
 For the Node.js package manager ``npm`` version 8 or newer is required.
