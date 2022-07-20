@@ -29,7 +29,9 @@ Zuerst müssen `PlatformIO <https://platformio.org/>`__,
 Anleitung des jeweiligen Projekts installiert werden.
 Für PlatformIO empfehlen wir die PlatformIO IDE Erweiterung für
 `Visual Studio Code <https://code.visualstudio.com/>`__ zu verwenden. Es kann
-aber auch PlatformIO Core verwendet werden.
+aber auch PlatformIO Core verwendet werden. Node.js und Git müssen aber immer
+außerhalb von Visual Studio Code installiert werden und nicht als Visual Studio
+Code Erweiterung.
 
 Allgemein sollte immer die neueste Version von PlatformIO und Node.js verwendet
 werden. Der Node.js Package Manager ``npm`` muss mindestens in Version 8

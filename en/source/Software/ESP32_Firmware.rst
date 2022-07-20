@@ -29,7 +29,8 @@ First, `PlatformIO <https://platformio.org/>`__, `Node.js <https://nodejs.org/>`
 and `Git <https://git-scm.com/>`__ have to be installed according to their
 installation manuals. For PlatformIO we recommend using the PlatformIO IDE
 extension for `Visual Studio Code <https://code.visualstudio.com/>`__, but you
-can also use PlatformIO Core instead.
+can also use PlatformIO Core instead. Node.js and Git have to be installed
+outside of Visual Studio Code, not as Visual Studio Code extension.
 
 In general you should always use the latest version of PlatformIO and Node.js.
 For the Node.js package manager ``npm`` version 8 or newer is required.
