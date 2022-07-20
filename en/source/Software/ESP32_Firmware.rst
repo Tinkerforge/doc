@@ -69,6 +69,12 @@ To build a specific firmware run its corresponding PlatformIO "Build" task.
 To build a firmware, upload it to a Brick and connect to its serial console all
 in one step you can run the PlatformIO "Upload and Monitor" task. This requires
 that the Brick is connected to USB beforehand.
+You can also upload the built firmware via the web interface.
+
+The firmware file can be found in ``software/build`` and its name ends with ``_merged.bin``
+The file name has the form ``[environment]_firmware_[version]_[build timestamp][extension]``.
+For example ``warp2_firmware_2_0_7_62d7d0b1_merged.bin`` is a WARP2 Charger firmware
+version 2.0.7 that was built at the unix timestamp 0x62d7d0b1 = 1658310833, (i.e. 2022-07-20 13:27:02).
 
 Firmware Structure
 ------------------

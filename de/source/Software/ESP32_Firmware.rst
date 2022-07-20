@@ -71,6 +71,12 @@ Um die entsprechende Firmware zu bauen muss dann die PlatformIO "Build" Aufgabe 
 werden. Um die Firmware in einem Schritt zu bauen, auf den Brick hochzuladen
 und eine Verbindung zur seriellen Konsole herzustellen kann die PlatformIO "Upload and Monitor"
 Aufgabe ausgeführt werden. Dazu muss der Brick vorher per USB angeschlossen werden.
+Alternativ kann die gebaute Firmware über das Webinterface hochgeladen werden.
+
+Die Firmware-Datei befindet sich im Verzeichnis ``software/build`` und endet auf ``_merged.bin``.
+Der Aufbau des Dateinamens ist wie folgt: ``[Umgebung]_firmware_[Versionsnummer]_[Bauzeitpunkt][Endung]``,
+zum Beispiel ist ``warp2_firmware_2_0_7_62d7d0b1_merged.bin`` eine Firmware für den WARP2 Charger mit
+der Version 2.0.7, die am Unix Timestamp 0x62d7d0b1 = 1658310833, also am 20.07.2022 13:27:02 gebaut wurde.
 
 Struktur der Firmware
 ---------------------
