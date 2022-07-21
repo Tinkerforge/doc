@@ -45,9 +45,7 @@ and unpack it or clone the repository using `git <https://www.git-scm.com/>`__.
 
 The ``platformio.ini`` file is located in the ``software/`` directory. Make sure
 to open the ``software/`` directory in Visual Studio Code as the PlatformIO
-project directory and build the ``prepare`` environment
-to prepare the build of other environments. In general this has to be done only
-once and not before every build of other environments
+project directory to build any of the environment environments.
 
 .. _esp32_firmware_build:
 
