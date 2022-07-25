@@ -25,7 +25,7 @@ and PlatformIO are used as basis.
 Preparation
 -----------
 
-First, `PlatformIO <https://platformio.org/>`__ (version 6 or newer), `Node.js <https://nodejs.org/>`__
+First, `PlatformIO <https://platformio.org/>`__ (version 6 or newer), `Node.js <https://nodejs.org/>`__ (version 14 or newer)
 and `Git <https://git-scm.com/>`__ have to be installed according to their
 installation manuals. For PlatformIO we recommend using the PlatformIO IDE
 extension for `Visual Studio Code <https://code.visualstudio.com/>`__, but you

@@ -24,8 +24,8 @@ und PlatformIO.
 Vorbereitung
 ------------
 
-Zuerst müssen `PlatformIO <https://platformio.org/>`__ (mindestens in Version 6),
-`Node.js <https://nodejs.org/>`__ und `Git <https://git-scm.com/>`__ anhand der
+Zuerst müssen `PlatformIO <https://platformio.org/>`__ (mindestens Version 6),
+`Node.js <https://nodejs.org/>`__ (mindestens Version 14) und `Git <https://git-scm.com/>`__ anhand der
 Anleitung des jeweiligen Projekts installiert werden.
 Für PlatformIO empfehlen wir die PlatformIO IDE Erweiterung für
 `Visual Studio Code <https://code.visualstudio.com/>`__ zu verwenden. Es kann
