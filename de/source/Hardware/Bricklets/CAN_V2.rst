@@ -55,18 +55,19 @@ Technische Spezifikation
 ================================  ============================================================
 Eigenschaft                       Wert
 ================================  ============================================================
-Stromverbrauch                    72mW (14.4mA bei 5V, Idle)
+Stromverbrauch                    72mW (14,4mA bei 5V, Idle)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Baudrate                          10kbit/s - 1Mbit/s
-Maximaler Durchsatz               1000 Frames pro Sekunden*
+Maximaler Durchsatz               1000 Frames pro Sekunde*
 Filter                            Disabled / Accept All / Match / Match Data / Match Extended
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Abmessungen (B x T x H)           45 x 35 x 14mm (1,77 x 1,38 x 0,55")
-Gewicht                           8.6g
+Gewicht                           8,6g
 ================================  ============================================================
 
+\* 1000 Frames pro Sekunde entspricht 44kbit/s bis 128kbit/s abhängig von der Größe der Frames.
 
 Ressourcen
 ----------
