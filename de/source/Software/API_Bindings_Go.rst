@@ -22,45 +22,9 @@ Voraussetzungen
 Installation
 ------------
 
-Die Go Bindings können auf drei Weisen installiert werden:
-von unserem :ref:`APT Repository <api_bindings_go_install_apt>` für Debian
-basierte Linux Distributionen oder von
-:ref:`GitHub <api_bindings_go_install_github>` oder vom
+Die Go Bindings können auf zwei Weisen installiert werden:
+von :ref:`GitHub <api_bindings_go_install_github>` oder vom
 :ref:`Quelltext <api_bindings_go_install_source>`.
-
-.. _api_bindings_go_install_apt:
-
-Vom APT Repository
-^^^^^^^^^^^^^^^^^^
-
-.. note::
-  Gemäß den `Debian Go Packaging Richtlinien
-  <https://go-team.pages.debian.net/packaging.html#_library_or_binary_library_packages>`__
-  steht der Inhalt diese Paketes normale Entwicklern standardmäßig nicht zur
-  Verfügung. Der einzige Zweck dieses Paketes is es als Abhängigkeit für andere
-  Debian Pakete zu dienen. Die Richtlinien empfehlen normalen Entwickler das
-  ``go get`` Tool verwenden, um die Bindings von von :ref:`GitHub
-  <api_bindings_go_install_github>` herunterzuladen.
-
-Die Bindings stehen in unserem APT Repository für Debian basierte Linux
-Distributionen bereit (dazu wird die ZIP Datei der Bindings nicht benötigt).
-Zuerst das :ref:`APT Repository einrichten <apt_repository_setup>` dann
-die Bindings installieren::
-
- sudo apt install golang-tinkerforge-dev
-
-Die Bindings werden hier installiert::
-
- /usr/share/gocode/src/github.com/Tinkerforge/go-api-bindings
-
-Um diese Bindings entgegen der Debian Richtlinien dennoch verwenden zu können
-muss ``/usr/share/gocode`` dem `GOPATH
-<https://golang.org/cmd/go/#hdr-GOPATH_environment_variable>`__ hinzugefügt
-werden.
-
-Dann ist auch schon alles bereit, um Beispiele testen zu können. Das Debian
-Package beinhaltet keine Beispiele. Diese sind als Teil der :ref:`ZIP Datei
-<downloads_bindings_examples>` der Bindings verfügbar.
 
 .. _api_bindings_go_install_github:
 
@@ -83,9 +47,16 @@ Repository beinhaltet keine Beispiele. Diese sind als Teil der :ref:`ZIP Datei
 Vom Quelltext
 ^^^^^^^^^^^^^
 
-Dazu muss das ``github.com`` Verzeichnis aus der ZIP Datei in das ``src``
-Verzeichnis des `GOPATH <https://golang.org/cmd/go/#hdr-GOPATH_environment_variable>`__
-entpackt werden.
+Dazu muss das ``github.com`` Verzeichnis aus der ZIP Datei in ein beliebiges
+Verzeichnis entpackt werden.
+
+In die ``go.mod`` Datei des Go Programms muss dann diese Zeile eingefügt werden,
+um dem Go Compiler mitzuteilen wo die Go Bindings zu finden sind::
+
+ replace github.com/Tinkerforge/go-api-bindings => /path/to/your/github.com/Tinkerforge/go-api-bindings
+
+Dabei muss der ``/path/to/your`` Teil durch das Verzeichnis ersetzt werden,
+in die das ``github.com`` Verzeichnis aus der ZIP Datei entpackt wurde.
 
 Dann ist auch schon alles bereit, um Beispiele testen zu können.
 
