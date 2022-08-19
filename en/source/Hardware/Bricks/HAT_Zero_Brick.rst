@@ -167,7 +167,7 @@ Compatibility to other Boards and Images
 If you use Raspbian, the HAT Zero Brick will automatically be detected and usable. The pins
 that are used for the communication with the Bricklets are configured automatically.
 
-This is done through a configuration that is read by Raspian from an EEPROM on the HAT.
+This is done through a configuration that is read by Raspbian from an EEPROM on the HAT.
 
 If you use a non-standard Linux image that does not have the ``raspi-config`` framework or
 a different board that has a compatible pin header but a different processor this will
