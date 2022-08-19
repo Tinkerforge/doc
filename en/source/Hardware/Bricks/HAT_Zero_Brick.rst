@@ -169,8 +169,8 @@ that are used for the communication with the Bricklets are configured automatica
 
 This is done through a configuration that is read by Raspian from an EEPROM on the HAT.
 
-If you use a non-standard linux image that does not have the ``raspi-config`` framework or
-a different board that has a compatible pin header but  adifferent processor this will
+If you use a non-standard Linux image that does not have the ``raspi-config`` framework or
+a different board that has a compatible pin header but a different processor this will
 not work automatically.
 
 In this case the Brick Daemon can do the necessary configuration to the SPI and GPIO 
@@ -200,7 +200,7 @@ For a standard Raspberry Pi with non-standard image you can add the following::
 	bricklet.group0.cs4.name = gpio25
 	bricklet.group0.cs4.num = 25
 
-First you have to define the spi device that is used (``/dev/spidev0.0`` for the
+First you have to define the SPI device that is used (``/dev/spidev0.0`` for the
 Raspberry Pi). Then you have to define the GPIO driver, name and number for each
 chip select pin. There are four chip selects for the four Bricklet ports and one 
 additional chip select for the HAT Zero Brick itself.
