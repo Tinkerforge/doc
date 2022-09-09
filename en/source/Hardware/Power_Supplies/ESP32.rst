@@ -58,7 +58,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/esp32-power-supply/raw/master/hardware/esp32-power-supply-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/esp32_power_supply_dimensions.png>`__)
 * Project design files (`Download <https://github.com/Tinkerforge/esp32-power-supply/zipball/master>`__)
-* 3D model (`View online <https://autode.sk/x>`__ | Download: `STEP <https://download.tinkerforge.com/3d/power_supplies/esp32_power_supply/esp32-power-supply.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/power_supplies/esp32_power_supply/esp32-power-supply.FCStd>`__)
+* 3D model (`View online <https://autode.sk/x>`__ | Download: `STEP <https://download.tinkerforge.com/3d/power_supplies/esp32_power/esp32-power-supply.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/power_supplies/esp32_power/esp32-power-supply.FCStd>`__)
 
 Connectivity and Mounting
 -------------------------
