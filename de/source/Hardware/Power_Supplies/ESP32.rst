@@ -52,13 +52,13 @@ Abmessungen (B x T x H)                      40 x 40 x 11mm  (1,57 x 1,57 x 0,43
 Gewicht                                      9g
 ===========================================  ============================================================
 
-Resources
----------
+Ressourcen
+----------
 
-* Schematic (`Download <https://github.com/Tinkerforge/esp32-power-supply/raw/master/hardware/esp32-power-supply-schematic.pdf>`__)
-* Outline and drilling plan (`Download <../../_images/Dimensions/esp32_power_supply_dimensions.png>`__)
-* Project design files (`Download <https://github.com/Tinkerforge/esp32-power-supply/zipball/master>`__)
-* 3D model (`View online <https://autode.sk/x>`__ | Download: `STEP <https://download.tinkerforge.com/3d/power_supplies/esp32/esp32-power-supply.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/power_supplies/esp32/esp32-power-supply.FCStd>`__)
+* Schaltplan (`Download <https://github.com/Tinkerforge/esp32-power-supply/raw/master/hardware/esp32-power-supply-schematic.pdf>`__)
+* Umriss und Bohrplan (`Download <../../_images/Dimensions/esp32_power_supply_dimensions.png>`__)
+* Platinenlayout (`Download <https://github.com/Tinkerforge/esp32-power-supply/zipball/master>`__)
+* 3D Modell (`Online ansehen <https://autode.sk/x>`__ | Download: `STEP <https://download.tinkerforge.com/3d/power_supplies/esp32/esp32-power-supply.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/power_supplies/esp32/esp32-power-supply.FCStd>`__)
 
 Elektrischer Anschluss und Befestigung
 --------------------------------------
