@@ -22,7 +22,7 @@ The openHAB bindings allow you to control :ref:`Bricks <primer_bricks>` and
 Requirements
 ------------
 
-* openHAB 2.5.0 or newer, openHAB 3 is currently not supported. openHAB 3 support will be added in the future.
+* openHAB 2.5.0 or newer, openHAB 3 is currently not supported.
 
 
 .. _api_bindings_openhab_install:
