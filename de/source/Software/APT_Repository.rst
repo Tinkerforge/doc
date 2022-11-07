@@ -21,11 +21,11 @@ Einrichtung
 
 **Schritt 1:** Öffentlichen GPG Schlüssel importieren::
 
- wget https://download.tinkerforge.com/apt/$(lsb_release -is | tr [A-Z] [a-z])/archive.key -q -O - | sudo apt-key add -
+ wget https://download.tinkerforge.com/apt/$(. /etc/os-release; echo $ID)/archive.key -q -O - | sudo tee /etc/apt/trusted.gpg.d/tinkerforge.gpg
 
 **Schritt 2:** APT Repository hinzufügen::
 
- sudo sh -c "echo 'deb https://download.tinkerforge.com/apt/$(lsb_release -is | tr [A-Z] [a-z]) $(lsb_release -cs) main' > /etc/apt/sources.list.d/tinkerforge.list"
+ echo "deb https://download.tinkerforge.com/apt/$(. /etc/os-release; echo $ID $VERSION_CODENAME) main" | sudo tee /etc/apt/sources.list.d/tinkerforge.list
 
 **Schritt 3:** APT Paketliste aktualisieren::
 
