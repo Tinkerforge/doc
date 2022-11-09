@@ -21,7 +21,7 @@ Einrichtung
 
 **Schritt 1:** Öffentlichen GPG Schlüssel importieren::
 
- wget https://download.tinkerforge.com/apt/$(. /etc/os-release; echo $ID)/archive.key -q -O - | sudo tee /etc/apt/trusted.gpg.d/tinkerforge.gpg
+ wget https://download.tinkerforge.com/apt/$(. /etc/os-release; echo $ID)/tinkerforge.gpg -q -O - | sudo tee /etc/apt/trusted.gpg.d/tinkerforge.gpg > /dev/null
 
 **Schritt 2:** APT Repository hinzufügen::
 

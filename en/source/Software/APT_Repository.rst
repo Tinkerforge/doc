@@ -20,7 +20,7 @@ Setup
 
 **Step 1:** Import public GPG key::
 
- wget https://download.tinkerforge.com/apt/$(. /etc/os-release; echo $ID)/archive.key -q -O - | sudo tee /etc/apt/trusted.gpg.d/tinkerforge.gpg
+ wget https://download.tinkerforge.com/apt/$(. /etc/os-release; echo $ID)/tinkerforge.gpg -q -O - | sudo tee /etc/apt/trusted.gpg.d/tinkerforge.gpg > /dev/null
 
 **Step 2:** Add APT repository::
 
