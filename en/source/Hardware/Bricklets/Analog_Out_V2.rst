@@ -1,6 +1,4 @@
 
-:shoplink: ../../../shop/bricklets/analog-out-v2-bricklet.html
-
 .. include:: Analog_Out_V2.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
@@ -25,7 +23,7 @@ Analog Out Bricklet 2.0
 
 .. note::
 
- The Analog Out Bricklet 2.0 is discontinued. We are selling our remaining stock. The
+ The Analog Out Bricklet 2.0 is discontinued and is no longer sold. The
  :ref:`Analog Out Bricklet 3.0 <analog_out_v3_bricklet>` is the recommended
  replacement.
 
