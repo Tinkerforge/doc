@@ -79,8 +79,8 @@ Stromverbrauch                    50mW (10mA bei 5V)
 --------------------------------  ------------------------------------------------------------
 Eingangsspannung                  Max 12V AC vom Spannungswandler
 Eingangsstrom                     Max 1V AC vom Stromwandler
-Anschluss Spannungsmessung        3,5mm Buchse (Kopfhörerbuchse)
-Anschluss Strommessung            3,5mm Buchse (Außendurchmesser),  1,35mm Innendurchmesser 
+Anschluss Spannungsmessung        3,5mm Buchse (Außendurchmesser),  1,35mm Innendurchmesser 
+Anschluss Strommessung            3,5mm Buchse (Kopfhörerbuchse) 
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Abmessungen (B x T x H)           40 x 40 x 5mm (1,57 x 1,57 x 0,2")
