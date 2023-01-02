@@ -274,6 +274,10 @@ Master Extension Firmware Flashing
 Brick ADC Calibration
 ---------------------
 
+.. note::
+  This is might only be necessary for legacy Bricks with 10p Bricklet connectors.
+  It is not nececessary nor possible for Bricks with 7p Bricklet connectors.
+
 If you have problems with inaccurate measurements (e.g. Linear Poti Bricklet
 does not reach the maximum or the voltage measurements in a stack is slightly off)
 it is possible that the calibration of the ADC is to blame.

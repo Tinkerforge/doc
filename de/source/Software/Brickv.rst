@@ -289,6 +289,10 @@ Master Extension Firmware Flashing
 Brick AD-Wandler Kalibrierung
 -----------------------------
 
+.. note::
+  Dies ist höchstens für alte Bricks mit 10p Bricklet Anschluss notwendig. Es ist
+  nicht notwendig und auch nicht möglich für Bricks mit 7p Bricklet Anschluss.
+
 Bei Problemen mit ungenauen Messungen (z.B. erreicht das Linear Poti Bricklet
 nicht den Maximalwert oder die Spannungsmessung im Stapel ist ungenau) kann
 die Kalibrierung des AD-Wandlers Schuld sein.
