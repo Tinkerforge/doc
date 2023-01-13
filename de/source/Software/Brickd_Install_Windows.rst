@@ -4,7 +4,7 @@
 Brick Daemon Installation auf Windows
 =====================================
 
-**Voraussetzungen**: Windows XP oder neuer
+**Voraussetzungen**: Windows Vista oder neuer
 
 Der :ref:`Brick Daemon <brickd>` kann mittels einer Setup ``.exe`` Datei
 installiert werden.
@@ -31,10 +31,10 @@ Verschiedene Aktionen können ausgewählt werden:
   werden. Manueller Start ist nur für fortgeschrittene Debugging-Zwecke
   sinnvoll.
 * **Install/Update Brick Driver** installiert/aktualisiert den USB Treiber für
-  Bricks (nur Windows XP, Vista, 7). Dieser Treiber ist notwendig, um über
+  Bricks (nur Windows Vista und 7). Dieser Treiber ist notwendig, um über
   USB angeschlossene Bricks nutzen zu können.
 * **Install/Update RED Brick Driver** installiert/aktualisiert den USB Treiber
-  für RED Bricks (nur Windows XP, Vista, 7). Dieser Treiber ist notwendig, um
+  für RED Bricks (nur Windows Vista und 7). Dieser Treiber ist notwendig, um
   über USB angeschlossene RED Bricks nutzen zu können.
 * **Install/Update RED Brick Serial Console Driver** installiert/aktualisiert
   den Treiber für die serielle Konsole von RED Bricks. Dieser Treiber ist
@@ -66,8 +66,8 @@ Fällen auch vorkommen, dass die automatische Treiberinstallation durch den
 Installer fehlschlägt. In allen diesen Fällen kann es nötig sein den
 entsprechenden Treiber manuelle zu installieren.
 
-Windows XP, Vista, 7
-^^^^^^^^^^^^^^^^^^^^
+Windows Vista und 7
+^^^^^^^^^^^^^^^^^^^
 
 Abhängig von der Windows Version ist es nötig einen Brick Treiber zu
 installieren. Dieser Treiber muss für jedes Brick einmal installiert
@@ -122,7 +122,7 @@ getestet werden.
  fehlschlagen. Falls im Brick Viewer kein Brick angezeigt wird, kann im
  Gerätemanager nachgeschaut werden ob der korrekte Treiber installiert ist.
  Falls dies nicht der Fall ist, kann dort der falsche Treiber mit dem
- richtigen aus dem ``drivers\brick\win7`` Verzeichnis vom Brickd manuell
+ richtigen aus dem ``drivers\brick`` Verzeichnis vom Brickd manuell
  überschrieben werden.
 
 

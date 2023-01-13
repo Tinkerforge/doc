@@ -4,7 +4,7 @@
 Brick Daemon Installation on Windows
 ====================================
 
-**Requirements**: Windows XP or newer
+**Requirements**: Windows Vista or newer
 
 The :ref:`Brick Daemon <brickd>` can be installed from a setup ``.exe`` file.
 
@@ -29,10 +29,10 @@ You can choose the actions of the installer:
   Windows service. Without this you need to start Brick Daemon manually. Manual
   start is only useful for advanced debugging purposes.
 * **Install/Update Brick Driver** will install/update the USB driver for
-  Bricks (only Windows XP, Vista, 7). This driver is required if you want to
+  Bricks (only Windows Vista and 7). This driver is required if you want to
   use Bricks connected to USB.
 * **Install/Update RED Brick Driver** will install/update the USB driver
-  for RED Bricks (only Windows XP, Vista, 7). This driver is required if you
+  for RED Bricks (only Windows Vista and 7). This driver is required if you
   want to use RED Bricks connected to USB.
 * **Install/Update RED Brick Serial Console Driver** will install/update
   the driver for the serial console of RED Bricks. This driver is required if
@@ -61,8 +61,8 @@ the corresponding step were deselected during installation. There are rare cases
 in which the automatic driver installation fails. In all this cases it can be
 necessary to manually install the required drivers.
 
-Windows XP, Vista, 7
-^^^^^^^^^^^^^^^^^^^^
+Windows Vista and 7
+^^^^^^^^^^^^^^^^^^^
 
 Depending on your Windows version it is necessary
 to install a Brick driver. This driver needs to be installed for each of your
@@ -116,7 +116,7 @@ After a successful installation the Brick should use a driver called
  This automatic driver installation can fail without
  your notice. If you don't see Bricks in the Brick Viewer, please check in
  the Windows "Device Manager" that the drivers for the connected Bricks are
- installed correctly. If not, please choose the ``drivers\brick\win7`` folder in
+ installed correctly. If not, please choose the ``drivers\brick`` folder in
  Brick Daemon installation and install the drivers manually.
 
 
