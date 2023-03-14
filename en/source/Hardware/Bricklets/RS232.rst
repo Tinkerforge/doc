@@ -48,7 +48,7 @@ Description
 The RS232 :ref:`Bricklet <primer_bricklets>` can be used to
 extend the features of :ref:`Bricks <primer_bricks>` by the capability to send
 and receive serial data with `RS-232 <https://en.wikipedia.org/wiki/RS-232>`__
-3.3V TTL signal level to communicate with other serial devices.
+and 3.3V TTL signal level to communicate with other serial devices.
 
 
 Technical Specifications
