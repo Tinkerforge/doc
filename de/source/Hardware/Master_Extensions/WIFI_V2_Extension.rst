@@ -421,7 +421,7 @@ Brick Daemon der als Mesh Gateway agiert.
 
 Der Mesh-Root-Node stellt eine Verbindung zum Mesh-Gateway her, gekennzeichnet
 in grün. Der "Client" verbindet sich zum Brick Daemon der als Mesh-Gateway
-agiert und kann über seine blaue gekennzeichnet Verbindung all Teilnehmer des
+agiert und kann über seine blau gekennzeichnete Verbindung alle Teilnehmer des
 Mesh-Netzwerks erreichen.
 
 Konfiguration
