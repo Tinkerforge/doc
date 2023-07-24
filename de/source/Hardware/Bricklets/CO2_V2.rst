@@ -48,7 +48,7 @@ CO2 Konzentrationsänderungen zu reagieren ohne die Werte laufend abzufragen
 (kein Polling notwendig).
 
 Das Bricklet misst Temperatur und Luftfeuchte. Diese Werte werden
-intern zur Kompensation genutzt und können zusätzlich ausgesen werden.
+intern zur Kompensation genutzt und können zusätzlich ausgelesen werden.
 
 Eine weitere Kompensation kann über den Luftdruck geschehen. Dieser
 kann extern gemessen und über die API gesetzt werden um weitere
