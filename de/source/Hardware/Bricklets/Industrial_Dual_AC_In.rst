@@ -1,6 +1,6 @@
 :shoplink: ../../../shop/bricklets/industrial-dual-ac-in-bricklet.html
 
-.. include:: Industrial_Dual_AC_In.substitutions
+.. include:: Industrial_Dual_AC_in.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
 
@@ -17,8 +17,8 @@ Industrial Dual AC In Bricklet
 	Bricklets/bricklet_industrial_dual_ac_in_w_connector_[?|?].jpg      Industrial Dual AC In Bricklet
 	Bricklets/bricklet_industrial_dual_ac_in_horizontal_[?|?].jpg       Industrial Dual AC In Bricklet
 	Bricklets/bricklet_industrial_dual_ac_in_caption_[?|?].jpg          Industrial Dual AC In Bricklet
-	Bricklets/bricklet_industrial_dual_ac_in_brickv_[100|].jpg          Industrial Dual AC In Bricklet im Brick Viewer
-	Dimensions/industrial_dual_ac_in_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
+	Bricklets/bricklet_industrial_dual_ac_in_brickv_[100|].jpg          Industrial Dual AC In Bricklet in Brick Viewer
+	Dimensions/industrial_dual_ac_in_bricklet_dimensions_[100|600].png  Outline and drilling plan
 
 	{% tfgalleryend %}
 
@@ -26,8 +26,8 @@ Industrial Dual AC In Bricklet
 Features
 --------
 
-* Zwei Eingänge die 230VAC Netzspannung erkennen können
-* Zustandsanzeige mit LED pro Eingang
+* Zwei Eingänge um 230VAC Netzspannung zu erkennen
+* Zustands-LED pro Eingang
 
 
 .. _industrial_dual_ac_in_bricklet_description:
@@ -35,17 +35,17 @@ Features
 Beschreibung
 ------------
 
-Mit dem Industrial Dual AC In :ref:`Bricklet <primer_bricklets>` können
-:ref:`Bricks <primer_bricks>` um zwei Eingänge zum erkennen von 230VAC Netzspannung
-erweitert werden. Der Zustand wird jeweils durch eine LED angezeigt.
+Das Industrial Dual AC In :ref:`Bricklet <primer_bricklets>` kann dazu genutzt werden
+um die Eigenschaften von :ref:`Bricks <primer_bricks>` um zwei Eingänge zur Erkennung
+von 230VAC Netzspannung zu erweitern. Der Zustand jedes Eingangs wird mittels einer
+LED visualisiert.
 
-Dieses Bricklet kann benutzt werden um zu erkennen ob 230V AC auf einer Leitung
-anliegen oder nicht.
+Das Bricklet kann genutzt werden um zu Erkennen ob ein Leiter 230VAC Netzspannung führt.
 
 .. warning::
- Anschlussklemmen und Kontakte sind nicht isoliert. Beim Schalten von hohen
- Spannungen sollte das Dual AC In Bricklet in ein Gehäuse verbaut werden.
- Das Berühren der Kontakte ist potentiell lebensgefährlich!
+ Die Anschlüsse und Kontakte des Bricklets sind nicht isoliert. Daher sollte dieses Bricklet
+ in ein Gehäuse verbaut werden um eine Berührung auszuschließen. Das Berühren der Kontakte
+ ist bei Netzspannung potentiell lebensgefährlich!
 
 Technische Spezifikation
 ------------------------
@@ -53,7 +53,7 @@ Technische Spezifikation
 ==================================  ============================================================
 Eigenschaft                         Wert
 ==================================  ============================================================
-Optokoppler                         Fairchild HCPL2731
+Eingangswiderstand                  249k Ohm (Optokopplereingang mit 249k Serienwiderstand
 Stromverbrauch                      TBDmW (5mA bei 5V)
 ----------------------------------  ------------------------------------------------------------
 ----------------------------------  ------------------------------------------------------------
@@ -69,17 +69,17 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/industrial-dual-ac-in-bricklet/raw/master/hardware/industrial-dual-ac-in-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/industrial_dual_ac_in_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/industrial-dual-ac-in-bricklet/zipball/master>`__)
-* 3D Modell (`Online ansehen <https://a360.co/3nvkxgh>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricklets/industrial_dual_ac_in/industrial-dual-ac-in.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricklets/industrial_dual_ac_in/industrial-dual-ac-in.FCStd>`__)
+* 3D Model (`Online ansehen <https://a360.co/3nvkxgh>`__ | Download: `STEP <https://download.tinkerforge.com/3d/bricklets/industrial_dual_ac_in/industrial-dual-ac-in.step>`__, `FreeCAD <https://download.tinkerforge.com/3d/bricklets/industrial_dual_ac_in/industrial-dual-ac-in.FCStd>`__)
 
 
 Anschlussmöglichkeit
 --------------------
 
-Das folgende Bild zeigt die verschiedenen Anschlussmöglichkeiten des Industrial Dual AC In Bricklet.
+Das nachfolgende Foto zeigt die Anschlussmöglichkeiten des Industrial Dual AC In Bricklets dar.
 
 .. image:: /Images/Bricklets/bricklet_industrial_dual_ac_in_caption_front_and_top_800.jpg
    :scale: 100 %
-   :alt: Industrial Dual AC In Bricklet Anschlussmöglichkeiten
+   :alt: Industrial Dual AC In Bricklet connectivity
    :align: center
    :target: ../../_images/Bricklets/bricklet_industrial_dual_ac_in_caption_front_and_top_1200.jpg
 
@@ -94,8 +94,7 @@ Erster Test
 |test_connect|.
 
 |test_tab|
-Wenn alles wie erwartet funktioniert sollte der Tab wie im folgenden Bild
-aussehen.
+Wenn alles wie erwartet funktioniert, sollte das Bricklet im Brick Viewer angezeigt werden.
 
 .. image:: /Images/Bricklets/bricklet_industrial_dual_ac_in_brickv.jpg
    :scale: 100 %
@@ -113,13 +112,11 @@ Gehäuse
 
 TBD
 
-
 .. _industrial_dual_ac_in_bricklet_programming_interface:
 
 Programmierschnittstelle
 ------------------------
 
-Siehe :ref:`Programmierschnittstelle <programming_interface>` für eine detaillierte
-Beschreibung.
+Siehe :ref:`Programmierschnittstelle <programming_interface>` für eine detaillierte Beschreibung.
 
-.. include:: Industrial_Dual_AC_In_hlpi.table
+.. include:: Industrial_Dual_AC_in_hlpi.table

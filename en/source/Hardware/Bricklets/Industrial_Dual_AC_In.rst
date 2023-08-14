@@ -26,7 +26,7 @@ Industrial Dual AC In Bricklet
 Features
 --------
 
-* Two inputs that can detect 230VAC mains voltage
+* Two inputs that can detect the presence of 230VAC mains voltage
 * State LED per input
 
 
@@ -37,14 +37,14 @@ Description
 
 The Industrial Dual AC In :ref:`Bricklet <primer_bricklets>` can be used to
 extend the features of :ref:`Bricks <primer_bricks>` by two inputs that
-can detect 230VAC mains voltage. The state is visualized by a LED. 
+can detect the presence of 230VAC mains voltage. 
+The state of each input is visualized by an LED. 
 
 You can use this Bricklet to detect if a conductor is live with 230V AC. 
 
 .. warning::
- Terminals and contacts are not insulated. If you want
- to switch higher voltages, consider to put the Dual AC In Bricklet
- in a casing. Touching the contacts is potentially life-threatening!
+ Terminals and contacts are not insulated. This Bricklet should be
+ placed in a casing. Touching the contacts is potentially life-threatening!
 
 Technical Specifications
 ------------------------
@@ -52,7 +52,7 @@ Technical Specifications
 ==================================  ============================================================
 Property                            Value
 ==================================  ============================================================
-Opto coupler                        Fairchild HCPL2731
+Input resistance                    249k Ohm (Photocoupler input with 249k series resistor)
 Current Consumption                 TBDmW (5mA at 5V)
 ----------------------------------  ------------------------------------------------------------
 ----------------------------------  ------------------------------------------------------------
