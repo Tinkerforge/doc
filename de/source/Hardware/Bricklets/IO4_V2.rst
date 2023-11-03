@@ -65,7 +65,7 @@ Stromverbrauch                    30mW (6mA bei 5V)
 --------------------------------  -----------------------------------------------------------------
 --------------------------------  -----------------------------------------------------------------
 I/O Spannung                      3,3V
-Maximaler Ausgangsstrom           50mA** (pro Ausgang), 100mA (fester 3,3V Ausgang)
+Port Protection                   82 Ohm Serienwiderstand
 Maximale API Aufrufe*             ``set-value`` (1kHz), ``get-value`` (0,5kHz), Callbacks (1kHz)
 --------------------------------  -----------------------------------------------------------------
 --------------------------------  -----------------------------------------------------------------
@@ -74,8 +74,6 @@ Gewicht                           15g
 ================================  =================================================================
 
 \* abhängig vom jeweiligen System (Betriebssystem, CPU etc.)
-
-\** 50mA pro Ausgang, allerdings maximal 130mA über alle Ausgänge
 
 Ressourcen
 ----------
