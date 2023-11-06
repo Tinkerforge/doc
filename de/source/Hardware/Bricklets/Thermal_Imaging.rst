@@ -117,7 +117,7 @@ Im folgenden Video ist ein Thermal Imaging Bricklet im Einsatz zu sehen.
 Wir filmen eine Küchenspühle mit einer warmen Tasse Kaffee. Dann stellen
 wir warmes wasser an und danach auf kalt und wieder zurück.
 
-Man kann sehen das anfangs der die warme Tasse Kaffe das wärmste Objekt
+Man kann sehen das anfangs die warme Tasse Kaffee das wärmste Objekt
 im Bildausschnitt ist. Nach dem wir das warme Wasser aufdrehen wird dieses
 langsam wärmer als die Tasse. Wenn wir dann den Wasserhahn wieder auf kalt
 stellen wird es wieder kälter etc.
