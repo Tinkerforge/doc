@@ -22,7 +22,7 @@ The MATLAB/Octave bindings are based on the :ref:`Java bindings
 Requirements
 ------------
 
-* MATLAB or Octave 3.6 or newer with Java support
+* MATLAB or Octave 3.6 or newer with Java 8 support
 
 
 .. _api_bindings_matlab_install:
