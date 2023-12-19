@@ -68,8 +68,9 @@ sollten die LabVIEW Bindings aktualisiert werden.
 Fehlermeldungen
 ^^^^^^^^^^^^^^^
 
-Falls LabVIEW Fehler 1386 "Die angegebene .NET-Klasse ist in LabVIEW nicht
-verfügbar." meldet, dann bitte sicherstellen, dass alle ".NET Konstruktor"
+Falls LabVIEW Fehler 1386 `"Die angegebene .NET-Klasse ist in LabVIEW nicht
+verfügbar." <https://knowledge.ni.com/KnowledgeArticleDetails?id=kA00Z0000019UnoSAE>`__
+meldet, dann bitte sicherstellen, dass alle ".NET Konstruktor"
 Knoten der .vi Datei richtig eingestellt sind. Per Doppelklick auf einen
 ".NET Konstruktor" Knoten den .NET Konstruktor Auswahldialog aufrufen und
 "Tinkerforge" als Assembly auswählen.

@@ -67,8 +67,9 @@ bindings.
 Errors
 ^^^^^^
 
-If LabVIEW reports error code 1386 "The specified .NET class is not available
-in LabVIEW." then make sure that all ".NET Constructor" nodes in the .vi file
+If LabVIEW reports error code 1386 `"The specified .NET class is not available
+in LabVIEW." <https://knowledge.ni.com/KnowledgeArticleDetails?id=kA00Z0000019UnoSAE>`__
+then make sure that all ".NET Constructor" nodes in the .vi file
 are configured correctly. Double click on a ".NET Constructor" node and select
 "Tinkerforge" as the "Assembly".
 
