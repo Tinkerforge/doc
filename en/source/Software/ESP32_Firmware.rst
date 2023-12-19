@@ -10,10 +10,8 @@ devices:
 * :ref:`ESP32 Brick <esp32_brick>`
 * :ref:`ESP32 Ethernet Brick <esp32_ethernet_brick>`
 * `WARP Charger <https://www.warp-charger.com/warp1.html>`__ Smart and Pro
-* `WARP2 Charger <https://www.warp-charger.com/>`__ Smart and Pro
-
-..
- * WARP Energy Manager, TODO: Link zur Dokumentation hinzufügen
+* `WARP2 Charger <https://www.warp-charger.com/warp2.html>`__ Smart and Pro
+* `WARP Energy Manager <https://www.warp-charger.com/energy-manager.html>`__
 
 The firmware is written and C/C++ and the source code is freely available on
 `GitHub <https://github.com/Tinkerforge/esp32-firmware>`__. The
