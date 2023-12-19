@@ -38,10 +38,8 @@ For the Node.js package manager ``npm`` version 8 or newer is required.
 For Windows the `Silicon Labs CP210x Universal Windows Driver <https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers>`__
 has to be installed. Linux and macOS have this driver already build in.
 
-Next, download the `esp32-firmware <https://github.com/Tinkerforge/esp32-firmware>`__
-repository from GitHub as
-`ZIP file <https://github.com/Tinkerforge/esp32-firmware/archive/refs/heads/master.zip>`__
-and unpack it or clone the repository using `git <https://www.git-scm.com/>`__.
+Next, clone the `esp32-firmware <https://github.com/Tinkerforge/esp32-firmware>`__
+repository from GitHub using `git <https://www.git-scm.com/>`__.
 
 The ``platformio.ini`` file is located in the ``software/`` directory. Make sure
 to open the ``software/`` directory in Visual Studio Code as the PlatformIO
@@ -59,9 +57,7 @@ want to build:
 * ESP32 Ethernet Brick: ``esp32_ethernet`` defined in ``esp32_ethernet.ini``
 * WARP Charger Smart and Pro: ``warp`` defined in ``warp.ini``
 * WARP2 Charger Smart and Pro: ``warp2`` defined in ``warp2.ini``
-
-..
- * WARP Energy Manager: ``energy_manager`` defined in ``energy_manager.ini``
+* WARP Energy Manager: ``energy_manager`` defined in ``energy_manager.ini``
 
 To build a specific firmware run its corresponding PlatformIO "Build" task.
 To build a firmware, upload it to a Brick and connect to its serial console all

@@ -41,9 +41,7 @@ Für Windows muss der `Silicon Labs CP210x Universal Windows Driver <https://www
 installiert werden. Linux und macOS bringen diesen Treiber schon von sich aus mit.
 
 Dann das `esp32-firmware <https://github.com/Tinkerforge/esp32-firmware>`__
-Repository von GitHub als
-`ZIP Datei <https://github.com/Tinkerforge/esp32-firmware/archive/refs/heads/master.zip>`__
-herunterladen und entpacken oder mittels `git <https://www.git-scm.com/>`__ clonen.
+Repository von GitHub mittels `git <https://www.git-scm.com/>`__ clonen.
 
 Die ``platformio.ini`` Datei befindet sich im ``software/`` Verzeichnis.
 Achte darauf das ``software/`` Verzeichnis in Visual Studio Code als
@@ -61,9 +59,7 @@ PlatformIO Umgebung gewählt werden:
 * ESP32 Ethernet Brick: ``esp32_ethernet`` definiert in ``esp32_ethernet.ini``
 * WARP Charger Smart und Pro: ``warp`` definiert in ``warp.ini``
 * WARP2 Charger Smart und Pro: ``warp2`` definiert in ``warp2.ini``
-
-..
- * WARP Energy Manager: ``energy_manager`` definiert in ``energy_manager.ini``
+* WARP Energy Manager: ``energy_manager`` definiert in ``energy_manager.ini``
 
 Um die entsprechende Firmware zu bauen muss dann die PlatformIO "Build" Aufgabe ausgeführt
 werden. Um die Firmware in einem Schritt zu bauen, auf den Brick hochzuladen
