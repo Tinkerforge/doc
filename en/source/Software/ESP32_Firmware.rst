@@ -9,7 +9,7 @@ devices:
 
 * :ref:`ESP32 Brick <esp32_brick>`
 * :ref:`ESP32 Ethernet Brick <esp32_ethernet_brick>`
-* `WARP Charger <https://www.warp-charger.com/index_warp1.html>`__ Smart and Pro
+* `WARP Charger <https://www.warp-charger.com/warp1.html>`__ Smart and Pro
 * `WARP2 Charger <https://www.warp-charger.com/>`__ Smart and Pro
 
 ..

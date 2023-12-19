@@ -8,7 +8,7 @@ Die ESP32 Firmware kann in mehreren Varianten für verschiedenen Geräte gebaut 
 
 * :ref:`ESP32 Brick <esp32_brick>`
 * :ref:`ESP32 Ethernet Brick <esp32_ethernet_brick>`
-* `WARP Charger <https://www.warp-charger.com/index_warp1.html>`__ Smart und Pro
+* `WARP Charger <https://www.warp-charger.com/warp1.html>`__ Smart und Pro
 * `WARP2 Charger <https://www.warp-charger.com/>`__ Smart und Pro
 
 ..
