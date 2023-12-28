@@ -107,7 +107,7 @@ Each frontend module can contain the following files (optional):
 * **status.html**: HTML of the modules status page entry. The status page gives an 
   overview of all modules.
 * **api.ts**: TypeScript definition of the backend API used by the frontend module.
-* **main.ts**: TypeScript code of this modules which is executed.
+* **main.tsx**: TypeScript code of this modules which is executed.
 * **translation_de.json**: German text translations.
 * **translation_en.json**: English text translations.
 
@@ -140,15 +140,11 @@ color red. This is the corresponding part of ``tutorial_phase_2.cpp``:
 
 .. code-block:: cpp
 
-    void TutorialPhase2::setup()
+    void TutorialPhase2::pre_setup()
     {
         tutorial_config = Config::Object({
             {"color", Config::Str("#FF0000", 7, 7)}
         });
-
-        logger.printfln("Tutorial (Phase 2) module initialized");
-
-        initialized = true;
     }
 
 To communicate the color to the frontend module, the ``ConfigRoot`` object has to be 
@@ -208,15 +204,11 @@ from ``#FF0000`` (red) to ``#0000FF`` (blue):
 .. code-block:: cpp
    :emphasize-lines: 4
 
-    void TutorialPhase2::setup()
+    void TutorialPhase2::pre_setup()
     {
         tutorial_config = Config::Object({
             {"color", Config::Str("#0000FF", 7, 7)}
         });
-
-        logger.printfln("Tutorial (Phase 2) module initialized");
-
-        initialized = true;
     }
 
 Now in the webinterface blue should be shown:
@@ -278,17 +270,13 @@ since it has the same structure. This is the relevant part of ``tutorial_phase_3
 .. code-block:: cpp
    :emphasize-lines: 7
 
-    void TutorialPhase3::setup()
+    void TutorialPhase3::pre_setup()
     {
         tutorial_config = Config::Object({
             {"color", Config::Str("#FF0000", 7, 7)}
         });
 
         tutorial_config_update = tutorial_config;
-
-        logger.printfln("Tutorial (Phase 3) module initialized");
-
-        initialized = true;
     }
 
 To receive the color value from the frontend module a second ``ConfigRoot`` object
@@ -368,16 +356,10 @@ webinterface will not be shown, since the according backend module is not availa
 Here the important lines of ``tutorial_phase_4.cpp``:
 
 .. code-block:: cpp
-   :emphasize-lines: 9,10,11,12,14
+   :emphasize-lines: 3,4,5,6,8
 
     void TutorialPhase4::setup()
     {
-        tutorial_config = Config::Object({
-            {"color", Config::Str("#FF0000", 7, 7)}
-        });
-
-        tutorial_config_update = tutorial_config;
-
         if (tf_rgb_led_button_create(&rgb_led_button, nullptr, &hal) != TF_E_OK) {
             logger.printfln("No RGB LED Button Bricklet found, disabling Tutorial (Phase 4) module");
             return;
@@ -492,7 +474,7 @@ of ``tutorial_phase_5.cpp``:
 .. code-block:: cpp
    :emphasize-lines: 9,10,11
 
-    void TutorialPhase5::setup()
+    void TutorialPhase5::pre_setup()
     {
         tutorial_config = Config::Object({
             {"color", Config::Str("#FF0000", 7, 7)}
@@ -503,17 +485,6 @@ of ``tutorial_phase_5.cpp``:
         tutorial_state = Config::Object({
             {"button", Config::Bool(false)}
         });
-
-        if (tf_rgb_led_button_create(&rgb_led_button, nullptr, &hal) != TF_E_OK) {
-            logger.printfln("No RGB LED Button Bricklet found, disabling Tutorial (Phase 5) module");
-            return;
-        }
-
-        set_bricklet_color(tutorial_config.get("color")->asString());
-
-        logger.printfln("Tutorial (Phase 5) module initialized");
-
-        initialized = true;
     }
 
 The new ``ConfigRoot`` object has to be also introduced to the API Manager.
@@ -546,7 +517,7 @@ is pressed or released and we can react to these events.
 Here the corresponding lines of ``tutorial_phase_5.cpp``:
 
 .. code-block:: cpp
-   :emphasize-lines: 1,2,3,4,5,26,27,29,30,31,32,33
+   :emphasize-lines: 1,2,3,4,5,16,17,19,20,21,22,23
 
     static void button_state_changed_handler(TF_RGBLEDButton *rgb_led_button, uint8_t state, void *user_data)
     {
@@ -556,16 +527,6 @@ Here the corresponding lines of ``tutorial_phase_5.cpp``:
 
     void TutorialPhase5::setup()
     {
-        tutorial_config = Config::Object({
-            {"color", Config::Str("#FF0000", 7, 7)}
-        });
-
-        tutorial_config_update = tutorial_config;
-
-        tutorial_state = Config::Object({
-            {"button", Config::Bool(false)}
-        });
-
         if (tf_rgb_led_button_create(&rgb_led_button, nullptr, &hal) != TF_E_OK) {
             logger.printfln("No RGB LED Button Bricklet found, disabling Tutorial (Phase 5) module");
             return;
