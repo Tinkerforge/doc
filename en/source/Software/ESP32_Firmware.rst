@@ -48,6 +48,7 @@ project directory to build any of the environment environments.
 Firmware Building
 -----------------
 
+The default PlatformIO environment is set to ``empty`` and doesn't build a useful firmware.
 Choose the PlatformIO environment corresponding to the firmware variation you
 want to build:
 
@@ -57,7 +58,13 @@ want to build:
 * WARP2 Charger Smart and Pro: ``warp2`` defined in ``warp2.ini``
 * WARP Energy Manager: ``energy_manager`` defined in ``energy_manager.ini``
 
-To build a specific firmware run its corresponding PlatformIO "Build" task.
+To build a specific firmware run its corresponding PlatformIO "Build" task. You can also
+change the default PlatformIO environment from ``empty`` to the desired environment by
+modifying the ``platformio.ini`` file. For example, replace ``empty`` with ``esp32_ethernet``
+in this line to build the ESP32 Ethernet Brick firmware by default::
+
+ default_envs = empty
+
 To build a firmware, upload it to a Brick and connect to its serial console all
 in one step you can run the PlatformIO "Upload and Monitor" task. This requires
 that the Brick is connected to USB beforehand.

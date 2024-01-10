@@ -50,8 +50,9 @@ Projekt-Verzeichnis zu öffnen um eine der Umgebungen zu bauen (``build``).
 Firmware bauen
 --------------
 
+Die Standard-PlatformIO-Umgebung ist auf ``empty`` gesetzt und erzeugt keine nützliche Firmware.
 Abhängig von der zu bauenden Variante der Firmware muss die entsprechenden
-PlatformIO Umgebung gewählt werden:
+PlatformIO-Umgebung gewählt werden:
 
 * ESP32 Brick: ``esp32`` definiert in ``esp32.ini``
 * ESP32 Ethernet Brick: ``esp32_ethernet`` definiert in ``esp32_ethernet.ini``
@@ -60,7 +61,14 @@ PlatformIO Umgebung gewählt werden:
 * WARP Energy Manager: ``energy_manager`` definiert in ``energy_manager.ini``
 
 Um die entsprechende Firmware zu bauen muss dann die PlatformIO "Build" Aufgabe ausgeführt
-werden. Um die Firmware in einem Schritt zu bauen, auf den Brick hochzuladen
+werden. Es kann aber auch die Standard-PlatformIO-Umgebung in der ``platformio.ini`` Datei
+von ``empty`` auf die gewünschte Umgebung geändert werden. Zum Beispiel ``empty`` durch
+``esp32_ethernet`` in dieser Zeile ersetzen, um standardmäßig die ESP32 Ethernet Brick Firmware
+zu bauen::
+
+ default_envs = empty
+
+Um die Firmware in einem Schritt zu bauen, auf den Brick hochzuladen
 und eine Verbindung zur seriellen Konsole herzustellen kann die PlatformIO "Upload and Monitor"
 Aufgabe ausgeführt werden. Dazu muss der Brick vorher per USB angeschlossen werden.
 Alternativ kann die gebaute Firmware über das Webinterface hochgeladen werden.
