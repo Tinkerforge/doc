@@ -87,18 +87,9 @@ Ressourcen
 Erste Schritte
 --------------
 
-Um mit dem HAT Zero Brick zu beginnen, muss zuerst der :ref:`Brick Daemon <brickd>`
+Um mit dem HAT Zero Brick zu beginnen, muss zuerst der :ref:`Brick Daemon <brickd_install_linux>`
 auf dem Raspberry Pi installiert werden. Der Brick Daemon agiert als Proxy zwischen 
 den Bricklet-Anschlüssen des HATs und den API Bindings.
-
-Der Brick Daemon kann auf dem Raspberry Pi im Terminal mit folgenden Kommandos 
-installiert werden:
-
-.. code-block:: shell
-
-	sudo apt-get install libusb-1.0-0 libudev1 procps
-	wget --backups=1 https://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_armhf.deb
-	sudo dpkg -i brickd_linux_latest_armhf.deb
 
 Nachdem der Brick Daemon installiert ist, kann der HAT Zero Brick auf den Raspberry Pi gesteckt
 und dieser neugestartet werden.

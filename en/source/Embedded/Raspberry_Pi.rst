@@ -11,22 +11,9 @@ This section describes how to use Bricks and Bricklets with a
 Prepare SD Card
 ---------------
 
-In the first step you have to set up Debian on a SD card. There are two ways
+As the first step you have to set up Raspberry Pi OS on a SD card. It is
+recommended to use `Raspberry Pi Imager <https://www.raspberrypi.com/software/>`__
 to do this.
-
-There is the recommended `New Out of Box Software (NOOBS)
-<https://www.raspberrypi.org/downloads>`__ approach. You just download the NOOBS
-ZIP file unpack it to an SD card and boot your Raspberry Pi from it. Then
-follow the steps in the graphical installer and select "Raspbian" to be
-installed.
-
-If you don't want to use NOOBS there is also the old and more manual way to
-download one of the different Debian images. There is one called "Raspbian"
-(armhf) and the other one called "Soft-Float Debian" (armel). Raspbian uses
-the hardware floating point unit (FPU) of the board and is the recommended one.
-Download the latest `Raspbian image <https://www.raspberrypi.org/downloads>`__
-and follow the necessary steps of this `SD card setup tutorial
-<https://elinux.org/RPi_Easy_SD_Card_Setup>`__.
 
 
 Start Raspberry Pi
@@ -36,73 +23,19 @@ Connect a keyboard, a monitor and a power supply to your Raspberry Pi.
 After connecting the power supply the Raspberry Pi should start booting.
 
 At the end of the boot process you should see the a login prompt. Enter
-as user name ``pi`` and as password ``raspberry``. You should be logged in.
+the user name and password you choose in Raspberry Pi Imager. You should be logged in.
 
 
 Install Brick Daemon
 --------------------
 
-How to set up Brick Daemon depends on the Debian image you're using.
-
-Raspbian (armhf)
-^^^^^^^^^^^^^^^^
-
-If you have installed an Debian **with** hardware floating point unit support
-(Raspbian) you can simply install the :ref:`Brick Daemon <brickd>` package by
-executing (if ``libudev1`` isn't available install ``libudev0`` instead)::
-
- sudo apt-get install libusb-1.0-0 libudev1 procps
- wget --backups=1 https://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_armhf.deb
- sudo dpkg -i brickd_linux_latest_armhf.deb
-
-The Brick Daemon will be started after the installation and at startup
-automatically.
-
-Updates can be installed by repeating the last two commands::
-
- wget --backups=1 https://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_armhf.deb
- sudo dpkg -i brickd_linux_latest_armhf.deb
-
-
-Soft-Float Debian (armel)
-^^^^^^^^^^^^^^^^^^^^^^^^^
-
-If you have installed an Debian **without** hardware floating point unit support,
-you have to compile :ref:`Brick Daemon <brickd>` from source.
-
-First you have to download the source code from the :ref:`download page <downloads_tools>`
-and put it under the ``home`` directory.
-
-After this you have to execute the following steps::
-
- sudo apt-get install build-essential pkg-config libusb-1.0-0-dev libudev-dev procps
- unzip Tinkerforge-brickd-vX.Y.Z-W-***.zip (modify filename)
- cd Tinkerforge-brickd-vX.Y.Z-W-*** (modify folder name)
- cd src/brickd
- make
- sudo make install
- sudo update-rc.d brickd defaults
- sudo /etc/init.d/brickd start
+Follow the Brick Daemon :ref:`installation guide <brickd_install_linux>`.
 
 
 Install Brick Viewer
 --------------------
 
-To install the :ref:`Brick Viewer <brickv>` software execute the following
-commands::
-
- sudo apt-get install python3 python3-pyqt5 python3-pyqt5.qtopengl python3-serial python3-tz python3-tzlocal
- wget --backups=1 https://download.tinkerforge.com/tools/brickv/linux/brickv_linux_latest.deb
- sudo dpkg -i brickv_linux_latest.deb
-
-``apt-get`` might complain about dependencies that are not going to be installed.
-If this happens ``apt-get`` suggest to run ``sudo apt-get -f install`` which
-should resolve this problem and install re required dependencies.
-
-Updates can be installed by repeating the last two commands::
-
- wget --backups=1 https://download.tinkerforge.com/tools/brickv/linux/brickv_linux_latest.deb
- sudo dpkg -i brickv_linux_latest.deb
+Follow the Brick Viewer :ref:`installation guide <brickv_install_linux>`.
 
 
 Access from outside

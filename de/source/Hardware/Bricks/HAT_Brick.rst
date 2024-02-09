@@ -129,19 +129,10 @@ Erste Schritte
    :align: center
    :target: ../../_images/Bricks/brick_hat_c_caption_1200.jpg
 
-Um den HAT Brick verwenden zu können, muss zuerst der :ref:`Brick Daemon <brickd>`
+Um den HAT Brick verwenden zu können, muss zuerst der :ref:`Brick Daemon <brickd_install_linux>`
 auf dem Raspberry Pi installiert werden. Der Brick Daemon agiert als Proxy zwischen 
 den Brickletanschlüssen des HAT Brickss und den API Bindings. Er kümmert sich auch um die
 Real-Time Clock.
-
-Der Brick Daemon kann auf dem Raspberry Pi im Terminal mit folgenden Kommandos 
-installiert werden:
-
-.. code-block:: shell
-
-	sudo apt-get install libusb-1.0-0 libudev1 procps
-	wget --backups=1 https://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_armhf.deb
-	sudo dpkg -i brickd_linux_latest_armhf.deb
 
 Nachdem der Brick Daemon installiert wurde, kann der HAT Brick auf den Raspberry Pi gesteckt
 und dieser neugestartet werden.
