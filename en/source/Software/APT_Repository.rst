@@ -11,7 +11,7 @@ Currently, these distributions and architectures are supported:
 
 * `Debian <https://www.debian.org>`__: amd64, i386, armhf, arm64
 * `Ubuntu <https://ubuntu.com>`__: amd64, i386, armhf, arm64
-* `Raspberry Pi OS <https://www.raspberrypi.org/downloads/raspberry-pi-os/>`__ (previously Raspbian): armhf
+* `Raspberry Pi OS <https://www.raspberrypi.org/downloads/raspberry-pi-os/>`__ (previously Raspbian): armhf, arm64
 
 .. _apt_repository_setup:
 
