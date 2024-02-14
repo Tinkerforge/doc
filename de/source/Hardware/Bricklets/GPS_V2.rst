@@ -30,7 +30,7 @@ GPS Bricklet 2.0
 Features
 --------
 
-* Unterstützt GPS und GLONASS gleichzeitig (später auch Galileo durch Softwareupdate)
+* Unterstützt GPS und GLONASS gleichzeitig
 * Empfängt Bewegungs-, Positions-, Höhen- und Zeitdaten sowie PPS-Signal
 * Elevation, Azimuth und SNR für jeden GPS/GLONASS Satelliten abfragbar.
 * 99 Kanäle, 10Hz Update-Rate
