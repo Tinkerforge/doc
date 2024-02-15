@@ -1,6 +1,6 @@
 :shoplink: ../../../shop/bricklets/industrial-dual-ac-in-bricklet.html
 
-.. include:: Industrial_Dual_AC_in.substitutions
+.. include:: Industrial_Dual_AC_In.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
 
@@ -14,7 +14,7 @@ Industrial Dual AC In Bricklet
 	{% tfgallery %}
 
 	Bricklets/bricklet_industrial_dual_ac_in_tilted_[?|?].jpg           Industrial Dual AC In Bricklet
-	Bricklets/bricklet_industrial_dual_ac_in_w_connector_[?|?].jpg      Industrial Dual AC In Bricklet
+	Bricklets/bricklet_industrial_dual_ac_in_horizontal_w_connector_[?|?].jpg      Industrial Dual AC In Bricklet
 	Bricklets/bricklet_industrial_dual_ac_in_horizontal_[?|?].jpg       Industrial Dual AC In Bricklet
 	Bricklets/bricklet_industrial_dual_ac_in_caption_[?|?].jpg          Industrial Dual AC In Bricklet
 	Bricklets/bricklet_industrial_dual_ac_in_brickv_[100|].jpg          Industrial Dual AC In Bricklet in Brick Viewer
