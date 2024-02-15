@@ -1,6 +1,6 @@
 :shoplink: ../../../shop/bricklets/industrial-dual-ac-in-bricklet.html
 
-.. include:: Industrial_Dual_AC_in.substitutions
+.. include:: Industrial_Dual_AC_In.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
 
@@ -121,7 +121,7 @@ For the Industrial Dual AC In Bricklet the
    :align: center
    :target: ../../_images/Cases/bricklet_industrial_digital_in_4_v2_case_1000.jpg
 
-.. include:: Industrial_Digital_In_4.substitutions
+.. include:: Industrial_Dual_AC_In.substitutions
    :start-after: >>>bricklet_case_steps
    :end-before: <<<bricklet_case_steps
 
