@@ -54,11 +54,11 @@ Technische Spezifikation
 Eigenschaft                         Wert
 ==================================  ============================================================
 Eingangswiderstand                  249k Ohm (Optokopplereingang mit 249k Serienwiderstand
-Stromverbrauch                      TBDmW (5mA bei 5V)
+Stromverbrauch                      50mW (10mA bei 5V)
 ----------------------------------  ------------------------------------------------------------
 ----------------------------------  ------------------------------------------------------------
 Abmessungen (B x T x H)             40 x 40 x 16mm (1,57 x 1,57 x 0,63")
-Gewicht                             TBDg
+Gewicht                             29g
 ==================================  ============================================================
 
 
@@ -75,11 +75,13 @@ Ressourcen
 Anschlussmöglichkeit
 --------------------
 
-Das nachfolgende Foto zeigt die Anschlussmöglichkeiten des Industrial Dual AC In Bricklets dar.
+Das nachfolgende Foto stellt die Anschlussmöglichkeiten des Industrial Dual AC In Bricklets dar.
+Es können zwei Phasen (L) angeschlossen und überwacht werden. Diese verfügen über einen gemeinsamen Neutral-Anschluss (N),
+der über zwei Klemmen erreichbar ist.
 
 .. image:: /Images/Bricklets/bricklet_industrial_dual_ac_in_caption_front_and_top_800.jpg
    :scale: 100 %
-   :alt: Industrial Dual AC In Bricklet connectivity
+   :alt: Industrial Dual AC In Bricklet Steckerbelegung
    :align: center
    :target: ../../_images/Bricklets/bricklet_industrial_dual_ac_in_caption_front_and_top_1200.jpg
 

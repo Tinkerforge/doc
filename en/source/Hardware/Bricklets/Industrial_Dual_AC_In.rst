@@ -53,11 +53,11 @@ Technical Specifications
 Property                            Value
 ==================================  ============================================================
 Input resistance                    249k Ohm (Photocoupler input with 249k series resistor)
-Current Consumption                 TBDmW (5mA at 5V)
+Current Consumption                 50mW (10mA at 5V)
 ----------------------------------  ------------------------------------------------------------
 ----------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)              40 x 40 x 16mm (1.57 x 1.57 x 0.63")
-Weight                              TBDg
+Weight                              29g
 ==================================  ============================================================
 
 
@@ -74,11 +74,13 @@ Resources
 Connectivity
 ------------
 
-The following picture shows the connection possibilities of the Industrial Dual AC In Bricklet.
+The following picture shows how to connect the two inputs of the Industrial Dual AC In Bricklet.
+Two live (L) wires can be monitored. Both share a common neutral (N) connection, which can
+be accessed by two contacts.
 
 .. image:: /Images/Bricklets/bricklet_industrial_dual_ac_in_caption_front_and_top_800.jpg
    :scale: 100 %
-   :alt: Industrial Dual AC In Bricklet connectivity
+   :alt: Industrial Dual AC In Bricklet Connectivity
    :align: center
    :target: ../../_images/Bricklets/bricklet_industrial_dual_ac_in_caption_front_and_top_1200.jpg
 
@@ -109,8 +111,27 @@ depicted below.
 
 Case
 ----
+For the Industrial Dual AC In Bricklet the 
+`laser-cut case for the Industrial Bricklets
+<https://www.tinkerforge.com/en/shop/cases/case-industrial-bricklet.html>`__ can be used.
 
-TBD
+.. image:: /Images/Cases/bricklet_industrial_digital_in_4_v2_case_350.jpg
+   :scale: 100 %
+   :alt: Case for Industrial Dual AC In Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_industrial_digital_in_4_v2_case_1000.jpg
+
+.. include:: Industrial_Digital_In_4.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
+
+.. image:: /Images/Exploded/industrial_exploded_350.png
+   :scale: 100 %
+   :alt: Exploded assembly drawing for Industrial Dual AC In Bricklet
+   :align: center
+   :target: ../../_images/Exploded/industrial_exploded.png
+
+|bricklet_case_hint|
 
 .. _industrial_dual_ac_in_bricklet_programming_interface:
 
