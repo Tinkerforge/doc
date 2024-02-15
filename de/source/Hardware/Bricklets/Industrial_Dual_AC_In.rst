@@ -112,7 +112,27 @@ Wenn alles wie erwartet funktioniert, sollte das Bricklet im Brick Viewer angeze
 Gehäuse
 -------
 
-TBD
+Fürr das Industrial Dual AC In Bricklet kann das 
+`Industrial Bricklets Gehäuse
+<https://www.tinkerforge.com/en/shop/cases/case-industrial-bricklet.html>`__ genutzt werden.
+
+.. image:: /Images/Cases/bricklet_industrial_digital_in_4_v2_case_350.jpg
+   :scale: 100 %
+   :alt: Case for Industrial Dual AC In Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_industrial_digital_in_4_v2_case_1000.jpg
+
+.. include:: Industrial_Dual_AC_In.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
+
+.. image:: /Images/Exploded/industrial_exploded_350.png
+   :scale: 100 %
+   :alt: Exploded assembly drawing for Industrial Dual AC In Bricklet
+   :align: center
+   :target: ../../_images/Exploded/industrial_exploded.png
+
+|bricklet_case_hint|
 
 .. _industrial_dual_ac_in_bricklet_programming_interface:
 
