@@ -79,11 +79,11 @@ Das nachfolgende Foto stellt die Anschlussmöglichkeiten des Industrial Dual AC 
 Es können zwei Phasen (L) angeschlossen und überwacht werden. Diese verfügen über einen gemeinsamen Neutral-Anschluss (N),
 der über zwei Klemmen erreichbar ist.
 
-.. image:: /Images/Bricklets/bricklet_industrial_dual_ac_in_caption_front_and_top_800.jpg
+.. image:: /Images/Bricklets/bricklet_industrial_dual_ac_in_caption_800.jpg
    :scale: 100 %
    :alt: Industrial Dual AC In Bricklet Steckerbelegung
    :align: center
-   :target: ../../_images/Bricklets/bricklet_industrial_dual_ac_in_caption_front_and_top_1200.jpg
+   :target: ../../_images/Bricklets/bricklet_industrial_dual_ac_in_caption_1200.jpg
 
 
 .. _industrial_dual_ac_in_bricklet_test:

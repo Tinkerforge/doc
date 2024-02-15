@@ -78,11 +78,11 @@ The following picture shows how to connect the two inputs of the Industrial Dual
 Two live (L) wires can be monitored. Both share a common neutral (N) connection, which can
 be accessed by two contacts.
 
-.. image:: /Images/Bricklets/bricklet_industrial_dual_ac_in_caption_front_and_top_800.jpg
+.. image:: /Images/Bricklets/bricklet_industrial_dual_ac_in_caption_800.jpg
    :scale: 100 %
    :alt: Industrial Dual AC In Bricklet Connectivity
    :align: center
-   :target: ../../_images/Bricklets/bricklet_industrial_dual_ac_in_caption_front_and_top_1200.jpg
+   :target: ../../_images/Bricklets/bricklet_industrial_dual_ac_in_caption_1200.jpg
 
 
 .. _industrial_dual_ac_in_bricklet_test:
