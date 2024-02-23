@@ -53,6 +53,6 @@ Currently, these packages are available:
   * :ref:`Octave <api_bindings_matlab>`: ``octave-tinkerforge``
   * :ref:`Perl <api_bindings_perl>`: ``libtinkerforge-perl``
   * :ref:`PHP <api_bindings_php>`: ``php-tinkerforge``
-  * :ref:`Python <api_bindings_python>`: ``python3-tinkerforge`` (Python 3) and ``python-tinkerforge`` (Python 2)
+  * :ref:`Python <api_bindings_python>`: ``python3-tinkerforge`` (Python 3) and ``python-tinkerforge`` (Python 2, last available version is 2.1.30, no new version will be released anymore, due to Python 2 being end-of-life)
   * :ref:`Ruby <api_bindings_perl>`: ``ruby-tinkerforge``
   * :ref:`Shell <api_bindings_shell>`: ``tinkerforge-shell``
