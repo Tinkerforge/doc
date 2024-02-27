@@ -90,7 +90,7 @@ The section about testing an example has more details about this.
 As SystemFile
 ^^^^^^^^^^^^^
 
-To install the bindings as Systemfile copy the ``Tinkerforge.dll`` file to
+To install the bindings as SystemFile copy the ``Tinkerforge.dll`` file to
 Mathematica's SystemFiles folder for .NET/Link. On Windows the SystemFiles
 folder for .NET/Link for Mathematica 9 is located here (for Mathematica 10
 replace ``9.0`` by ``10.0``)::
