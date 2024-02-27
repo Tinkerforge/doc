@@ -14,7 +14,7 @@ heraus zu steuern. Die :ref:`ZIP Datei <downloads_bindings_examples>` für
 die Bindings beinhaltet:
 
 * ``Tinkerforge.dll``, eine vorkompilierte C#/.NET Bibliothek (ohne Debug-Informationen)
-* ``Tinkerforge.dll.mdb``, Debug-Informationen für ``Tinkerforge.dll``
+* ``Tinkerforge.pdb``, Debug-Informationen für ``Tinkerforge.dll``
 * ``Tinkerforge.xml``, die API Dokumentation für Visual Studio,  MonoDevelop, usw.
 * in ``source/`` den Quelltext für ``Tinkerforge.dll``
 * in ``examples/`` die Beispiele für alle Bricks und Bricklets
