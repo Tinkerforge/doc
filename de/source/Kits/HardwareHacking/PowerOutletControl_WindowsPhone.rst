@@ -27,8 +27,6 @@ Funksteckdosen mit Windows Phone fernsteuern
 Das vollständige Visual Studio Projekt kann `hier
 <https://github.com/Tinkerforge/hardware-hacking/tree/master/power_outlet_control_smart_phone/windows_phone>`__
 heruntergeladen werden. Eine Demo-App basierend auf diesem Projekt steht im
-`Windows Phone Store <https://www.windowsphone.com/s?appid=52e1f6a9-707c-4961-9e68-5736e6d29b73>`__
-zur Verfügung.
 
 
 Ziele

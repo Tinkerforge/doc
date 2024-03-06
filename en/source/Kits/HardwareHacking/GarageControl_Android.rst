@@ -26,8 +26,6 @@ Control Garage Door Openers using Android
 
 The complete Eclipse project can be downloaded `here
 <https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control_smart_phone/android>`__.
-A demo app based on this project is available in the
-`Google Play Store <https://play.google.com/store/apps/details?id=com.tinkerforge.garagecontrol>`__.
 
 
 Goals

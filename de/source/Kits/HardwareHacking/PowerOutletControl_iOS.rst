@@ -26,9 +26,7 @@ Funksteckdosen mit iOS fernsteuern
 
 Das vollständige Xcode Projekt kann `hier
 <https://github.com/Tinkerforge/hardware-hacking/tree/master/power_outlet_control_smart_phone/ios>`__
-heruntergeladen werden. Eine Demo-App basierend auf diesem Projekt steht im
-`App Store <https://itunes.apple.com/en/app/power-outlet-control/id739029826?mt=8>`__
-zur Verfügung.
+heruntergeladen werden.
 
 
 Ziele

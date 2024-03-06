@@ -26,9 +26,7 @@ Garagentor mit Android fernsteuern
 
 Das vollständige Eclipse Projekt kann `hier
 <https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control_smart_phone/android>`__
-heruntergeladen werden. Eine Demo-App basierend auf diesem Projekt steht im
-`Google Play Store <https://play.google.com/store/apps/details?id=com.tinkerforge.garagecontrol>`__
-zur Verfügung.
+heruntergeladen werden.
 
 
 Ziele

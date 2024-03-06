@@ -26,9 +26,7 @@ Garagentor mit iOS fernsteuern
 
 Das vollständige Xcode Projekt kann `hier
 <https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control_smart_phone/ios>`__
-heruntergeladen werden. Eine Demo-App basierend auf diesem Projekt steht im
-`App Store <https://itunes.apple.com/en/app/garage-control/id739047995?&mt=8>`__
-zur Verfügung.
+heruntergeladen werden.
 
 
 Ziele

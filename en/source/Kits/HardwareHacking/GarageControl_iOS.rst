@@ -26,8 +26,6 @@ Control Garage Door Openers using iOS
 
 The complete Xcode project can be downloaded `here
 <https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control_smart_phone/ios>`__.
-A demo app based on this project is available in the
-`App Store <https://itunes.apple.com/en/app/garage-control/id739047995?&mt=8>`__.
 
 
 Goals

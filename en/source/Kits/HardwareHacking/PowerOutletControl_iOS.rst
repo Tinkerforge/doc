@@ -26,8 +26,6 @@ Control Remote Mains Switches using iOS
 
 The complete Xcode project can be downloaded `here
 <https://github.com/Tinkerforge/hardware-hacking/tree/master/power_outlet_control_smart_phone/ios>`__.
-A demo app based on this project is available in the
-`App Store <https://itunes.apple.com/en/app/power-outlet-control/id739029826?mt=8>`__.
 
 
 Goals

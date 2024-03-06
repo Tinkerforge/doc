@@ -26,9 +26,7 @@ Funksteckdosen mit Android fernsteuern
 
 Das vollständige Eclipse Projekt kann `hier
 <https://github.com/Tinkerforge/hardware-hacking/tree/master/power_outlet_control_smart_phone/android>`__
-heruntergeladen werden. Eine Demo-App basierend auf diesem Projekt steht im
-`Google Play Store <https://play.google.com/store/apps/details?id=com.tinkerforge.poweroutletcontrol>`__
-zur Verfügung.
+heruntergeladen werden.
 
 
 Ziele

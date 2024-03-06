@@ -26,8 +26,6 @@ Control Garage Door Openers using Windows Phone
 
 The complete Visual Studio project can be downloaded `here
 <https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control_smart_phone/windows_phone>`__.
-A demo app based on this project is available in the
-`Windows Phone Store <https://www.windowsphone.com/s?appid=4c9a8f61-d9ed-4fd2-b4e6-a332b617c596>`__.
 
 
 Goals
