@@ -14,8 +14,8 @@ On other distributions the Brick Daemon can be installed from source.
 Debian Package
 --------------
 
-The Brick Daemon Debian package is available in our `APT repository
-<https://download.tinkerforge.com/apt/>`__, but can also be installed manually.
+The Brick Daemon Debian package is available in our APT repository,
+but can also be installed manually.
 
 
 APT Repository

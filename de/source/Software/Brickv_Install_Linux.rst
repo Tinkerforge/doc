@@ -14,9 +14,8 @@ Auf anderen Distributionen kann der Brick Viewer aus seinem Quelltext installier
 Debian Paket
 ------------
 
-Das Brick Viewer Debian Paket steht in unserem `APT Repository
-<https://download.tinkerforge.com/apt/>`__ bereit, kann aber auch händisch
-installiert werden.
+Das Brick Viewer Debian Paket steht in unserem APT Repository bereit,
+kann aber auch händisch installiert werden.
 
 APT Repository
 ^^^^^^^^^^^^^^
