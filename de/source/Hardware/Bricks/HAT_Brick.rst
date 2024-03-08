@@ -31,7 +31,7 @@ Features
 
 * Raspberry Pi HAT im Standard-HAT-Formfaktor
 * **Acht** Anschlüsse für Bricklets
-* Integrierte 5,3V Stromversorgung (6V-28V Eingang, bis zu 4A)
+* Integrierte 5,2V Stromversorgung (6V-36V Eingang, bis zu 4A)
 * Misst USB- und DC-Spannungsversorgung
 * Bietet eine Real-Time Clock für den Raspberry Pi
 * Bietet Schlafmodus (Low Power) und Watchdog
@@ -54,7 +54,7 @@ angeschlossen werden.
 
 Der Raspberry Pi kann über den HAT Brick mit einer externen 6V-28V DC Stromversorgung betrieben werden.
 Die integrierte Stromversorgung liefert auch unter großer Last stabile 5V für den Raspberry Pi. Somit können
-auch angeschlossene Bricklets und verbundene USB-Geräte versorgt werden. Das HAT Brick liefert hierfür eine etwas erhöhte Spannung von 5,3V.
+auch angeschlossene Bricklets und verbundene USB-Geräte versorgt werden. Das HAT Brick liefert hierfür eine etwas erhöhte Spannung von 5,2V.
 
 Alternativ können HAT Brick und Raspberry Pi auch über USB-C versorgt werden. In diesem Fall muss allerdings sichergestellt werden,
 dass die Stromversorgung stabile 5V bietet. Dies ist zum Beispiel mit dem offiziellen Raspberry Pi
@@ -70,8 +70,8 @@ in die Cloud geschickt werden sollen.
 Mit dem HAT Brick kann ein :ref:`Watchdog <hat_brick_watchdog>` implementiert werden, der den
 Raspberry Pi neustartet, wenn sich dieser aufhängt oder das eigene Programm steckenbleibt.
 
-Der HAT Brick ist elektronisch kompatibel zu den Raspberry Pis 2B, 3B, 3B+, 4B, Zero und Zero W. Die
-Befestigungslöcher sind kompatibel zum Raspberry Pi 2/3/4. Zusätzlich bieten wir mit dem 
+Der HAT Brick ist elektronisch kompatibel zu den Raspberry Pis 2B, 3B, 3B+, 4B, 5, Zero und Zero W. Die
+Befestigungslöcher sind kompatibel zum Raspberry Pi 2/3/4/5. Zusätzlich bieten wir mit dem 
 :ref:`HAT Zero Brick <hat_zero_brick>` eine kleinere Version, deren Befestigungslöcher zum Raspberry
 Pi Zero kompatibel sind.
 
@@ -98,8 +98,8 @@ Stromverbrauch                        100mW (20mA bei 5V)
 ------------------------------------  ------------------------------------------------------------
 ------------------------------------  ------------------------------------------------------------
 Bricklet-Anschlüsse                   8
-DC Eingangsspannungsbereich           6V-28V
-DC Ausgang                            5,3V, max. 4A
+DC Eingangsspannungsbereich           6V-36V
+DC Ausgang                            5,2V, max. 4A
 Stromverbrauch im Sleepmodus (≤1.4)*  70mW (14mA bei 5V) + 1.5mW wenn die Sleep-LED aktiv ist
 ------------------------------------  ------------------------------------------------------------
 ------------------------------------  ------------------------------------------------------------

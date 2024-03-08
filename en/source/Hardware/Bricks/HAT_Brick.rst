@@ -33,7 +33,7 @@ Features
 
 * Raspberry Pi HAT with standard HAT form factor
 * **Eight** ports for Bricklets
-* Onboard 5.3V power supply (6V-28V input, up to 4A)
+* Onboard 5.2V power supply (6V-36V input, up to 4A)
 * Measures USB and DC supply voltages
 * Adds battery backed real-time clock to Raspberry Pi
 * Adds low power sleep mode and Raspberry Pi watchdog
@@ -56,10 +56,10 @@ Raspberry Pi.
   7 pole to 7 pole cable to it. Only Bricklets with 7 pole Bricklet ports are 
   supported.
 
-You can power the Raspberry Pi through the HAT Brick by an external 6V-28V DC power supply.
+You can power the Raspberry Pi through the HAT Brick by an external 6V-36V DC power supply.
 The onboard power supply will be able to provide stable 5V, even under heavy load. You
 can power the Raspberry Pi, connected Bricklets and USB devices connected to the 
-Raspberry Pi's USB connectors as the HAT Brick delivers a slightly increased voltage of 5.3V
+Raspberry Pi's USB connectors as the HAT Brick delivers a slightly increased voltage of 5.2V
 to compensate additional load.
 
 You can still power the
@@ -75,8 +75,8 @@ applications, for example to send sensor information every hour to a cloud.
 A :ref:`watchdog <hat_brick_watchdog>` can also be implemented with the HAT, so that the Raspberry Pi will be
 restarted if it crashes or your program gets stuck.
 
-The HAT Brick is electrically compatible to the Raspberry Pi 2B, 3B, 3B+, 4B, Zero and Zero W. The mounting
-holes are compatible to the Raspberry Pi 2/3/4. We also offer a smaller :ref:`HAT Zero Brick <hat_zero_brick>`
+The HAT Brick is electrically compatible to the Raspberry Pi 2B, 3B, 3B+, 4B, 5, Zero and Zero W. The mounting
+holes are compatible to the Raspberry Pi 2/3/4/5. We also offer a smaller :ref:`HAT Zero Brick <hat_zero_brick>`
 that has mounting holes which are compatible to the Raspberry Pi Zero.
 
 
@@ -103,8 +103,8 @@ Current Consumption               100mW (20mA at 5V)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Bricklet Ports                    8
-DC Input Voltage                  6V-28V
-DC Output                         5.3V, max. 4A
+DC Input Voltage                  6V-36V
+DC Output                         5.2V, max. 4A
 Sleep Current (≤1.4)*             70mW (14mA at 5V) + 1.5mW if sleep indicator LED enabled
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
