@@ -38,8 +38,9 @@ Datei im Laufe des Tutorial abgeändert werden muss:
 * ESP32 Ethernet Brick: ``esp32_ethernet.ini``
 
 Um das jeweilige Tutorial-Modul zu aktivieren muss dessen Name am Ende der
-Optionen ``custom_backend_modules`` und ``custom_frontend_modules`` der entsprechenden
-``.ini`` Datei hinzufügt werden und die Firmware mittels "Upload and Monitor"
+Optionen ``custom_backend_modules``, ``custom_frontend_modules`` und
+``custom_frontend_components`` der entsprechenden ``.ini`` Datei hinzufügt
+werden und die Firmware mittels "Upload and Monitor"
 Ausgabe in Visual Studio Code neu gebaut und auf den Brick geflasht werden.
 
 Phase 1: Leeres Modul anlegen
@@ -104,16 +105,9 @@ Dateien eines Frontend-Moduls
 
 Jedes Frontend-Modul kann optional folgende Dateien beinhalten:
 
-* **navbar.html**: HTML des Menüeintrags des Moduls. Der Menüeintrags wird
-  dynamisch ein- und ausgeblendet, abhängig davon ob das entsprechende
-  Backend-Modul erfolgreich initialisiert werden konnte.
-* **content.html**: HTML der Unterseite des Moduls. Dies stellt die
-  Benutzerschnittstelle des Moduls dar.
-* **status.html**: HTML des Eintrags des Moduls auf der Statusseite. Die
-  Statusseite stellt einen Übersicht der Module dar.
 * **api.ts**: TypeScript-Definition der Backend-API die dieses Frontend-Modul
   nutzt.
-* **main.tsx**: TypeScript-Code der für dieses Modul ausgeführt wird.
+* **main.tsx**: TypeScript-Code für die `Preact <https://preactjs.com/>`__ Component für dieses Modul.
 * **translation_de.json**: Deutsche Übersetzung der Texte des Moduls.
 * **translation_en.json**: Englische Übersetzung der Texte des Moduls.
 
@@ -180,7 +174,7 @@ die es vom Backend-Modul empfangen will:
         color: string
     }
 
-In der ``main.ts`` Datei wird ein Event-Listener für den Zustand
+In der ``main.tsx`` Datei wird ein Event-Listener für den Zustand
 ``tutorial_phase_2/config`` erzeugt, damit die lokale Funktion ``update_config``
 aufgerufen wird, wenn vom API Manager Änderungen mitgeteilt werden:
 
@@ -246,7 +240,7 @@ Die Farbe kann jetzt über den Auswahldialog geändert werden.
 Frontend-Teil der Kommunikation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-In der ``main.ts`` Datei wird dem ``change`` Events des HTML Elements die
+In der ``main.tsx`` Datei wird dem ``change`` Events des HTML Elements die
 lokale Funktion ``save_config`` zugewiesen. Diese wird dann bei Änderung der
 Farbe aufgerufen:
 
@@ -563,7 +557,7 @@ entsprechend behandelt werden. Auszug aus ``tutorial_phase_5.cpp`` dazu:
         initialized = true;
     }
 
-In der ``main.ts`` Datei des Frontend-Moduls muss dann auf die Änderung des
+In der ``main.tsx`` Datei des Frontend-Moduls muss dann auf die Änderung des
 neuen Zustands ``tutorial_phase_5/state`` für den Tasterzustand genau so
 reagiert werden, wie auf die Änderung des bisherigen ``tutorial_phase_5/config``
 Zustand für die Farbe:

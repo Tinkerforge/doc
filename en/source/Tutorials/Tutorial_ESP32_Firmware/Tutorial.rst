@@ -36,7 +36,8 @@ can be used for this tutorial. The only difference between these two Bricks is t
 * ESP32 Ethernet Brick: ``esp32_ethernet.ini``
 
 To enable the respective stage the name of it
-has to be added at the end of the ``custom_backend_modules`` and ``custom_frontend_modules`` options.
+has to be added at the end of the ``custom_backend_modules``, ``custom_frontend_modules``
+and ``custom_frontend_components`` options.
 After that the firmware has to be build and uploaded to the Brick by "Upload and Monitor" 
 in Visual Studio Code.
 
@@ -100,14 +101,8 @@ Files of a Frontend Module
 
 Each frontend module can contain the following files (optional):
 
-* **navbar.html**: HTML of the modules menu entry. Menu entry will be dynamically
-  visible/invisible depending if the backend module could be initialized properly.
-* **content.html**: HTML of the modules subwebsite. This is the user interface of
-  the module.
-* **status.html**: HTML of the modules status page entry. The status page gives an 
-  overview of all modules.
 * **api.ts**: TypeScript definition of the backend API used by the frontend module.
-* **main.tsx**: TypeScript code of this modules which is executed.
+* **main.tsx**: TypeScript code of the `Preact <https://preactjs.com/>`__ component for this module.
 * **translation_de.json**: German text translations.
 * **translation_en.json**: English text translations.
 
@@ -172,7 +167,7 @@ specified:
         color: string
     }
 
-In file ``main.ts`` a event listener for the state of
+In file ``main.tsx`` a event listener for the state of
 ``tutorial_phase_2/config`` is created which calls the local function ``update_config``
 when API manager transmits value changes:
 
@@ -238,7 +233,7 @@ The color now can be changed by a color selection dialog.
 Frontend Communication Part
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-In ``main.ts`` the ``change`` event of the HTML element is mapped to the local function
+In ``main.tsx`` the ``change`` event of the HTML element is mapped to the local function
 ``save_config``. This function then is called when the color is changed:
 
 .. code-block:: ts
@@ -548,7 +543,7 @@ Here the corresponding lines of ``tutorial_phase_5.cpp``:
         initialized = true;
     }
 
-In ``main.ts`` any change of the ``tutorial_phase_5/state`` state will be handled
+In ``main.tsx`` any change of the ``tutorial_phase_5/state`` state will be handled
 as the color changes are handled before:
 
 .. code-block:: ts
