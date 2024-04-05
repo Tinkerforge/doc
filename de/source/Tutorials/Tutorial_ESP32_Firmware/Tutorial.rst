@@ -143,7 +143,7 @@ Länge hat, um eine Farbe in HTML Notation ``#RRGGBB`` zu speichern. Der Wert
 
     void TutorialPhase2::pre_setup()
     {
-        tutorial_config = Config::Object({
+        config = Config::Object({
             {"color", Config::Str("#FF0000", 7, 7)}
         });
     }
@@ -158,7 +158,7 @@ automatisch an das Frontend-Modul. Auszug aus ``tutorial_phase_2.cpp`` dazu:
 
     void TutorialPhase2::register_urls()
     {
-        api.addState("tutorial_phase_2/config", &tutorial_config, {}, 1000);
+        api.addState("tutorial_phase_2/config", &config);
     }
 
 Frontend-Teil der Kommunikation
@@ -175,27 +175,19 @@ die es vom Backend-Modul empfangen will:
     }
 
 In der ``main.tsx`` Datei wird ein Event-Listener für den Zustand
-``tutorial_phase_2/config`` erzeugt, damit die lokale Funktion ``update_config``
-aufgerufen wird, wenn vom API Manager Änderungen mitgeteilt werden:
+``tutorial_phase_2/config`` erzeugt, damit die Preact Component reagieren kann,
+wenn vom API Manager Änderungen mitgeteilt werden.
+In der lambda-Funktion wird der aktuelle Wert des ``tutorial_phase_2/config``
+Zustands abgefragt und der enthaltene Farbwert als ``color`` zur Anzeige an den
+Zustand der Preact Component zugewiesen:
 
 .. code-block:: ts
 
-    export function add_event_listeners(source: API.APIEventTarget)
-    {
-        source.addEventListener("tutorial_phase_2/config", update_config);
-    }
-
-In der ``update_config`` Funktion wird der aktuelle Wert des
-``tutorial_phase_2/config`` Zustand abgefragt und der enthaltene Farbwert zur
-Anzeige an das HTML Element ``#tutorial_phase_2_color`` zugewiesen:
-
-.. code-block:: ts
-
-    function update_config()
-    {
+    util.addApiEventListener('tutorial_phase_2/config', () => {
         let config = API.get("tutorial_phase_2/config");
-        $("#tutorial_phase_2_color").val(config.color);
-    }
+
+        this.setState({color: config.color});
+    });
 
 Test der Kommunikation
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -208,7 +200,7 @@ Als Test kann der Farbwert in ``tutorial_phase_2.cpp`` von ``#FF0000`` (Rot) zu
 
     void TutorialPhase2::pre_setup()
     {
-        tutorial_config = Config::Object({
+        config = Config::Object({
             {"color", Config::Str("#0000FF", 7, 7)}
         });
     }
@@ -240,35 +232,25 @@ Die Farbe kann jetzt über den Auswahldialog geändert werden.
 Frontend-Teil der Kommunikation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-In der ``main.tsx`` Datei wird dem ``change`` Events des HTML Elements die
-lokale Funktion ``save_config`` zugewiesen. Diese wird dann bei Änderung der
-Farbe aufgerufen:
-
-.. code-block:: ts
-
-    export function init()
-    {
-        $("#tutorial_phase_3_color").on("change", save_config);
-    }
-
-In der ``save_config`` Funktion wird der aktuelle Farbwert des HTML Elements
+In der ``main.tsx`` Datei wird auf den ``change`` Events des HTML Elements reagiert.
+Bei Änderung der Farbe wird der aktuelle Farbwert des HTML Elements
 abgefragt, damit ein neuer Wert für den ``tutorial_phase_3/config`` Zustand
-erstellt und dieser an das Backend-Modul übertragen:
+erstellt und dieser an das Backend-Modul übertragen wird:
 
 .. code-block:: ts
 
-    function save_config()
-    {
-        let config = {"color": $("#tutorial_phase_3_color").val().toString()}
+    <input class="form-control" type="color" value={this.state.color} onChange={(event) => {
+        let config = {color: (event.target as HTMLInputElement).value.toString()};
+
         API.save("tutorial_phase_3/config", config, __("tutorial_phase_3.script.save_config_failed"));
-    }
+    }} />
 
 Backend-Teil der Kommunikation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Das Backend-Modul repräsentiert die Daten, die vom Frontend-Modul empfangen
 werden können, strukturiert als ``ConfigRoot`` Objekt. Dies wird einfach
-als Kopie ``tutorial_config_update`` des ersten ``ConfigRoot`` Objekts angelegt,
+als Kopie ``config_update`` des ersten ``ConfigRoot`` Objekts angelegt,
 da es die gleiche Struktur hat. Auszug aus ``tutorial_phase_3.cpp`` dazu:
 
 .. code-block:: cpp
@@ -276,11 +258,11 @@ da es die gleiche Struktur hat. Auszug aus ``tutorial_phase_3.cpp`` dazu:
 
     void TutorialPhase3::pre_setup()
     {
-        tutorial_config = Config::Object({
+        config = Config::Object({
             {"color", Config::Str("#FF0000", 7, 7)}
         });
 
-        tutorial_config_update = tutorial_config;
+        config_update = config;
     }
 
 Damit die Farbe vom Frontend-Modul empfangen werden kann, muss das zweite
@@ -295,13 +277,13 @@ die neue Farbe gespeichert. Auszug aus ``tutorial_phase_3.cpp`` dazu:
 
     void TutorialPhase3::register_urls()
     {
-        api.addState("tutorial_phase_3/config", &tutorial_config, {}, 1000);
+        api.addState("tutorial_phase_3/config", &config);
 
-        api.addCommand("tutorial_phase_3/config_update", &tutorial_config_update, {}, [this]() {
-            String color = tutorial_config_update.get("color")->asString();
+        api.addCommand("tutorial_phase_3/config_update", &config_update, {}, [this]() {
+            String color = config_update.get("color")->asString();
 
             logger.printfln("Tutorial (Phase 3) module received color update: %s", color.c_str());
-            tutorial_config.get("color")->updateString(color);
+            config.get("color")->updateString(color);
         }, false);
     }
 
@@ -371,7 +353,7 @@ zur Verfügung steht. Auszug aus ``tutorial_phase_4.cpp`` dazu:
             return;
         }
 
-        set_bricklet_color(tutorial_config.get("color")->asString());
+        set_bricklet_color(config.get("color")->asString());
 
         logger.printfln("Tutorial (Phase 4) module initialized");
 
@@ -387,13 +369,13 @@ Initial und bei Änderung der Farbe durch das Frontend-Modul wird die
 
     void TutorialPhase4::register_urls()
     {
-        api.addState("tutorial_phase_4/config", &tutorial_config, {}, 1000);
+        api.addState("tutorial_phase_4/config", &config);
 
-        api.addCommand("tutorial_phase_4/config_update", &tutorial_config_update, {}, [this]() {
-            String color = tutorial_config_update.get("color")->asString();
+        api.addCommand("tutorial_phase_4/config_update", &config_update, {}, [this]() {
+            String color = config_update.get("color")->asString();
 
             logger.printfln("Tutorial (Phase 4) module received color update: %s", color.c_str());
-            tutorial_config.get("color")->updateString(color);
+            config.get("color")->updateString(color);
             set_bricklet_color(color);
         }, false);
     }
@@ -485,13 +467,13 @@ aus ``tutorial_phase_5.cpp`` dazu:
 
     void TutorialPhase5::pre_setup()
     {
-        tutorial_config = Config::Object({
+        config = Config::Object({
             {"color", Config::Str("#FF0000", 7, 7)}
         });
 
-        tutorial_config_update = tutorial_config;
+        config_update = config;
 
-        tutorial_state = Config::Object({
+        state = Config::Object({
             {"button", Config::Bool(false)}
         });
     }
@@ -506,17 +488,17 @@ aus ``tutorial_phase_5.cpp`` dazu:
 
     void TutorialPhase5::register_urls()
     {
-        api.addState("tutorial_phase_5/config", &tutorial_config, {}, 1000);
+        api.addState("tutorial_phase_5/config", &config);
 
-        api.addCommand("tutorial_phase_5/config_update", &tutorial_config_update, {}, [this]() {
-            String color = tutorial_config_update.get("color")->asString();
+        api.addCommand("tutorial_phase_5/config_update", &config_update, {}, [this]() {
+            String color = config_update.get("color")->asString();
 
             logger.printfln("Tutorial (Phase 5) module received color update: %s", color.c_str());
-            tutorial_config.get("color")->updateString(color);
+            config.get("color")->updateString(color);
             set_bricklet_color(color);
         }, false);
 
-        api.addState("tutorial_phase_5/state", &tutorial_state, {}, 100);
+        api.addState("tutorial_phase_5/state", &state, {}, 100);
     }
 
 Um auf einen Tasterdruck reagieren zu können wird die Funktion
@@ -531,7 +513,7 @@ entsprechend behandelt werden. Auszug aus ``tutorial_phase_5.cpp`` dazu:
     static void button_state_changed_handler(TF_RGBLEDButton *rgb_led_button, uint8_t state, void *user_data)
     {
         TutorialPhase5 *tutorial = (TutorialPhase5 *)user_data;
-        tutorial->tutorial_state.get("button")->updateBool(state == TF_RGB_LED_BUTTON_BUTTON_STATE_PRESSED);
+        tutorial->state.get("button")->updateBool(state == TF_RGB_LED_BUTTON_BUTTON_STATE_PRESSED);
     }
 
     void TutorialPhase5::setup()
@@ -541,7 +523,7 @@ entsprechend behandelt werden. Auszug aus ``tutorial_phase_5.cpp`` dazu:
             return;
         }
 
-        set_bricklet_color(tutorial_config.get("color")->asString());
+        set_bricklet_color(config.get("color")->asString());
 
         tf_rgb_led_button_register_button_state_changed_callback(&rgb_led_button, button_state_changed_handler, this);
         uint8_t state;
@@ -549,7 +531,7 @@ entsprechend behandelt werden. Auszug aus ``tutorial_phase_5.cpp`` dazu:
         if (tf_rgb_led_button_get_button_state(&rgb_led_button, &state) != TF_E_OK) {
             logger.printfln("Could not get RGB LED Button Bricklet button state");
         } else {
-            tutorial_state.get("button")->updateBool(state == TF_RGB_LED_BUTTON_BUTTON_STATE_PRESSED);
+            state.get("button")->updateBool(state == TF_RGB_LED_BUTTON_BUTTON_STATE_PRESSED);
         }
 
         logger.printfln("Tutorial (Phase 5) module initialized");
@@ -563,19 +545,12 @@ reagiert werden, wie auf die Änderung des bisherigen ``tutorial_phase_5/config`
 Zustand für die Farbe:
 
 .. code-block:: ts
-   :emphasize-lines: 1,2,3,4,5,10
 
-    function update_state()
-    {
+    util.addApiEventListener('tutorial_phase_5/state', () => {
         let state = API.get("tutorial_phase_5/state");
-        $("#tutorial_phase_5_button").val(state.button ? __("tutorial_phase_5.script.button_pressed") : __("tutorial_phase_5.script.button_released"));
-    }
 
-    export function add_event_listeners(source: API.APIEventTarget)
-    {
-        source.addEventListener("tutorial_phase_5/config", update_config);
-        source.addEventListener("tutorial_phase_5/state", update_state);
-    }
+        this.setState({button: state.button});
+    });
 
 Ein Druck auf den Taster wird im Webinterface angezeigt:
 
@@ -607,12 +582,12 @@ Auszug aus ``tutorial_phase_5.cpp`` dazu:
     {
         // ...
 
-        uint8_t state;
+        uint8_t button_state;
 
-        if (tf_rgb_led_button_get_button_state(&rgb_led_button, &state) != TF_E_OK) {
+        if (tf_rgb_led_button_get_button_state(&rgb_led_button, &button_state) != TF_E_OK) {
             logger.printfln("Could not get RGB LED Button Bricklet button state");
         } else {
-            tutorial_state.get("button")->updateBool(state == TF_RGB_LED_BUTTON_BUTTON_STATE_PRESSED);
+            state.get("button")->updateBool(button_state == TF_RGB_LED_BUTTON_BUTTON_STATE_PRESSED);
         }
 
         task_scheduler.scheduleWithFixedDelay([this]() {
@@ -634,7 +609,7 @@ Auszug aus ``tutorial_phase_5.cpp`` dazu:
         }
 
         String color = "#" + num2hex(red) + num2hex(green) + num2hex(blue);
-        tutorial_config.get("color")->updateString(color);
+        config.get("color")->updateString(color);
     }
 
 Änderung der Farbe von Rot auf Gelb in Brick Viewer:
