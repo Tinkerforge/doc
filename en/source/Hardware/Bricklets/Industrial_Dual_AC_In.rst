@@ -140,4 +140,4 @@ Programming Interface
 
 See :ref:`Programming Interface <programming_interface>` for a detailed description.
 
-.. include:: Industrial_Dual_AC_in_hlpi.table
+.. include:: Industrial_Dual_AC_In_hlpi.table

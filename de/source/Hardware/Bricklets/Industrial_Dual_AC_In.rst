@@ -141,4 +141,4 @@ Programmierschnittstelle
 
 Siehe :ref:`Programmierschnittstelle <programming_interface>` für eine detaillierte Beschreibung.
 
-.. include:: Industrial_Dual_AC_in_hlpi.table
+.. include:: Industrial_Dual_AC_In_hlpi.table
