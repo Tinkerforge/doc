@@ -498,7 +498,7 @@ aus ``tutorial_phase_5.cpp`` dazu:
             set_bricklet_color(color);
         }, false);
 
-        api.addState("tutorial_phase_5/state", &state, {}, 100);
+        api.addState("tutorial_phase_5/state", &state, {}, true);
     }
 
 Um auf einen Tasterdruck reagieren zu können wird die Funktion

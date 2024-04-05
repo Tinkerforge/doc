@@ -483,7 +483,7 @@ changes in ``api.ts`` in the frontend module. Here the lines of ``tutorial_phase
             set_bricklet_color(color);
         }, false);
 
-        api.addState("tutorial_phase_5/state", &state, {}, 100);
+        api.addState("tutorial_phase_5/state", &state, {}, true);
     }
 
 If the button is pressed we react to this event by introducing the function
