@@ -82,6 +82,11 @@ execute this with ``sudo`` or as administrator::
 
  python setup.py install
 
+Currently this installation method still works, but it is marked as deprecated.
+Use `pip <https://pip.pypa.io>`__ instead::
+
+ pip install .
+
 Now you're ready to test an example.
 
 .. _api_bindings_python_install_without:

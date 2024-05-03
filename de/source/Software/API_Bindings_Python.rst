@@ -87,6 +87,12 @@ ausgeführt werden::
 
  python setup.py install
 
+Aktuell funktioniert diese Installationsmethode noch. Sie ist allerdings als
+deprecated markiert. Stattdessen kann auch `pip <https://pip.pypa.io>`__
+verwendet werden::
+
+ pip install .
+
 Dann ist auch schon alles bereit, um Beispiele testen zu können.
 
 
