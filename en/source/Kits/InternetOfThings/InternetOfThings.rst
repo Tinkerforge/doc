@@ -34,6 +34,8 @@ Features
 Description
 -----------
 
+**The kit is not sold anymore. But all parts are still available in our shop.**
+
 The `Internet of Things <https://en.wikipedia.org/wiki/Internet_of_Things>`__
 is an evolution of the Internet. It interconnects not only human and computer
 as before but also physical objects (things).

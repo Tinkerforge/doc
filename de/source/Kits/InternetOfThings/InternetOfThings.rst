@@ -34,6 +34,8 @@ Features
 Beschreibung
 ------------
 
+**Das Kit wird nicht mehr verkauft. Die Einzelteile sind aber weiterhin im Shop verfügbar.**
+
 Das `Internet der Dinge <https://de.wikipedia.org/wiki/Internet_der_Dinge>`__
 (engl. Internet of Things (IoT)) stellt eine Evolution des Internets dar und 
 vernetzt nicht nur, wie bisher Menschen und Computer, sondern auch beliebige 
