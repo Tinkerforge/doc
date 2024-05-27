@@ -63,10 +63,9 @@ Auf Ubuntu kann auch das Ubuntu Software Center benutzt werden. Andere
 Desktopumgebungen haben ähnliche Werkzeuge die praktisch genauso
 funktionieren.
 
-Zuerst benötige Abhängigkeiten installieren (falls ``libudev1`` nicht vorhanden
-ist, dann ``libudev0`` installieren)::
+Zuerst benötige Abhängigkeiten installieren::
 
- sudo apt-get install libusb-1.0-0 libudev1 procps
+ sudo apt-get install libusb-1.0-0 procps
 
 Der Brick Daemon kann von der Konsole mit folgendem Befehl installiert
 werden, abhängig von der verwendeten Plattform:

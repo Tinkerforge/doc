@@ -61,10 +61,9 @@ Ready:
 On Ubuntu you can also use the Ubuntu Software Center, other Desktop
 environments have very similar tools that practically work the same way.
 
-Install dependencies first (if ``libudev1`` isn't available install ``libudev0``
-instead)::
+Install dependencies first::
 
- sudo apt-get install libusb-1.0-0 libudev1 procps
+ sudo apt-get install libusb-1.0-0 procps
 
 To install Brick Daemon from the console use the following command (depending on
 the platform):
