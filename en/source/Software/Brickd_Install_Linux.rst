@@ -4,7 +4,7 @@
 Brick Daemon Installation on Linux
 ==================================
 
-**Requirements**: libusb 1.0.20 or newer
+**Requirements**: libusb 1.0.20 and libgpiod2 1.2 or newer
 
 The :ref:`Brick Daemon <brickd>` can be installed on Debian based distribution
 (Ubuntu, Mint, etc.) from a ``.deb`` file. For Arch Linux the package
@@ -63,7 +63,7 @@ environments have very similar tools that practically work the same way.
 
 Install dependencies first::
 
- sudo apt-get install libusb-1.0-0 procps
+ sudo apt-get install libusb-1.0-0 libgpiod2 procps
 
 To install Brick Daemon from the console use the following command (depending on
 the platform):
