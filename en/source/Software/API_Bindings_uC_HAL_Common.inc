@@ -28,7 +28,6 @@
  The polling is scheduled round-robin over multiple calls, so even if you only poll with a timeout
  of 0, all devices will be polled as fairly as possble.
 
-
 .. cpp:function:: bool tf_hal_deadline_elapsed(TF_HAL *hal, uint32_t deadline_us)
 
  Returns true if the deadline in microseconds is elapsed, false otherwise. Robust against
@@ -81,3 +80,7 @@
 .. cpp:function:: const char *tf_hal_strerror(int e_code)
 
  Returns an error string for the given error code.
+
+.. cpp:function:: const char *tf_get_device_display_name(uint16_t device_id)
+
+ Returns the display name for the given device identifier.

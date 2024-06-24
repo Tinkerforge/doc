@@ -83,3 +83,7 @@
 .. cpp:function:: const char *tf_hal_strerror(int e_code)
 
  Gibt eine Beschreibung für den übergebenen Fehlercode zurück.
+
+.. cpp:function:: const char *tf_get_device_display_name(uint16_t device_id)
+
+ Gibt den Anzeigenamen für den übergebenen Device-Identifier zurück.
