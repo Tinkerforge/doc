@@ -45,7 +45,7 @@ can be used to extend :ref:`Bricks <primer_bricks>` by the possibility to read
 and write NFC tags. To do this you only have to place a NFC
 tag in the proximity (up to 10cm) of the Bricklet.
 
-NFC Forum Type 1, 2, 3, 4 and Mifare Classic tags are supported. Direct page
+NFC Forum Type 1, 2, 3, 4 (ISO 14443), NFC Forum Type 5 (ISO 15693) and Mifare Classic tags are supported. Direct page
 access is available and it is possible to directly read/write NDEF messages
 through the API.
 
@@ -61,7 +61,7 @@ NFC IC                            PN7150
 Current Consumption (idle)        24mW (~5mA at 5V)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Supported tags                    Mifare Classic, NFC Forum Type 1, 2, 3 and 4
+Supported tags                    Mifare Classic, NFC Forum Type 1, 2, 3, 4, 5
 Supported modes                   Read/Write tag, P2P, Card Emulation
 Operating Frequency               13.56 MHz
 --------------------------------  ------------------------------------------------------------
@@ -85,7 +85,7 @@ Compatibility
 -------------
 
 The Bricklet should work with every tag that is either compatible to 
-Mifare Classic, NFC Forum Type 1, 2, 3 or 4. We explicitly
+Mifare Classic, NFC Forum Type 1, 2, 3, 4 or 5. We explicitly
 tested the Bricklet with the following tags:
 
 **Mifare Classic:**
@@ -115,6 +115,10 @@ tested the Bricklet with the following tags:
 
 * Mifare DESFire
 * Mifare DESFire EV1
+
+**NFC Forum Typ 5:**
+
+* NXP ICODE SLIX
 
 Every smart phone that is capable of NFC can read NFC Forum Type 1 and 2 tags.
 Most support Type 3 and 4.
@@ -239,6 +243,9 @@ the phone.
 
 Peer-To-Peer Mode
 -----------------
+
+.. warning::
+   P2P support was removed in firmware version 2.1.0
 
 To use P2P you first have to change the mode to *MODE_P2P*.
 

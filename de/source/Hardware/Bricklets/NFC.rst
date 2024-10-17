@@ -45,8 +45,8 @@ erweitert die Funktionalität der :ref:`Bricks <primer_bricks>` indem es die Mö
 bietet NFC tags zu lesen und zu schreiben. Dafür muss lediglich ein NFC tag
 in der Nähe (bis zu 10cm) des Bricklets platziert werden.
 
-Unterstützt werden NFC Forum Type 1, 2, 3, 4 und Mifare Classic Tags. Ein direkter
-Seitenzugriff ist verfügbar und es ist möglich NDEF Mitteilungen direkt über das
+Unterstützt werden NFC Forum Type 1, 2, 3, 4 (ISO 14443), NFC Forum Type 5 (ISO 15693) und Mifare Classic Tags. Ein direkter
+Page-Zugriff ist verfügbar und es ist möglich NDEF Mitteilungen direkt über das
 API zu lesen oder zu schreiben.
 
 Das Bricklet unterstützt außerdem Kartenemulation sowie auch NFC P2P Kommunikation.
@@ -61,7 +61,7 @@ NFC IC                            PN7150
 Stromverbrauch (idle)             24mW (~5mA bei 5V)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Unterstützte Tags                 Mifare Classic, NFC Forum Type 1, 2, 3 und 4
+Unterstützte Tags                 Mifare Classic, NFC Forum Type 1, 2, 3, 4, 5
 Unterstützte Modi                 Lesen/Schreiben Tag, P2P, Kartenemulation
 Arbeitsfrequenz                   13.56 MHz
 --------------------------------  ------------------------------------------------------------
@@ -85,7 +85,7 @@ Kompatibilität
 --------------
 
 Das Bricklet sollte mit jedem Tag funktionieren das zu Mifare Classic, NFC
-Forum Typ 1, 2, 3 oder 4 kompatibel ist. Die folgenden Tags wurden von uns getestet:
+Forum Typ 1, 2, 3, 4 oder 5 kompatibel ist. Die folgenden Tags wurden von uns getestet:
 
 **Mifare Classic:**
 
@@ -115,8 +115,10 @@ Forum Typ 1, 2, 3 oder 4 kompatibel ist. Die folgenden Tags wurden von uns getes
 * Mifare DESFire
 * MIfare DESFire EV1
 
-Jedes Smartphone das NFC beherrscht, kann NFC Forum Typ 1 und 2 Tags lesen.
-Meist unterstützt wird Typ 3 und 4.
+**NFC Forum Typ 5:**
+
+* NXP ICODE SLIX
+
 
 Page Größen und andere Dinge die man wissen sollte
 --------------------------------------------------
@@ -239,6 +241,9 @@ Mit *CardemuStartTransfer* wird die zuvor festgelegte NDEF Massage auf das Telef
 
 Peer-To-Peer Modus
 ------------------
+
+.. warning::
+   P2P-Support wurde in Firmware-Version 2.1.0 entfernt.
 
 Damit das P2P genutzt werden kann, muss auf den Modus *MODE_P2P* gewechselt werden.
 
