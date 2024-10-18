@@ -164,6 +164,12 @@ verwendet wird muss diese Struktur beachtet werden, um nicht versehentlich den T
 * Page 3 auswählen, um auf das Capability Container zu zugreifen.
 * Page 4 auswählen, um auf das NDEF Record zu zugreifen.
 
+**NFC Forum Typ 5:**
+
+* Page Größe 4 Byte.
+* Basiert auf ISO 15693 anstatt ISO 14443 und hat dadurch eine größere Reichweite.
+* Verfügbar seit firmware Version 2.1.0
+
 Tags Erkennen, Lesen und Schreiben
 ----------------------------------
 

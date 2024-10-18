@@ -168,6 +168,12 @@ functions you have to keep track of this structure to not accidentally lock a ta
 * Select page 3 to access the capability container.
 * Select page 4 to access the NDEF record.
 
+**NFC Forum Typ 5:**
+
+* Page size 4 byte.
+* It has a longer range since it is is based on ISO 15693 instead of ISO 14443.
+* Available since firmware version 2.1.0
+
 Identifying, Reading and Writing tags
 -------------------------------------
 
