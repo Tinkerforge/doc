@@ -28,7 +28,7 @@ NFC Bricklet
 Features
 --------
 
-* Can read and write NFC Forum Type 1, 2, 3, 4 and Mifare Classic tags.
+* Can read and write NFC Forum Type 1, 2, 3, 4, 5 and Mifare Classic tags.
 * NDEF definitions can be directly read/written with API.
 * Supports NFC P2P mode
 * Supports card emulation mode
