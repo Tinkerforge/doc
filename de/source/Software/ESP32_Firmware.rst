@@ -38,6 +38,10 @@ vorliegen.
 Für Windows muss der `Silicon Labs CP210x Universal Windows Driver <https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers>`__
 installiert werden. Linux und macOS bringen diesen Treiber schon von sich aus mit.
 
+Die ESP32 Firmware beinhaltet einige Datein mit sehr langen Dateinamen. Diese können
+die veraltet Windows Beschänkung von maximal 260 Zeichen überschreiten. Es wird empfohlen
+die `Unterstützung für lange Dateinamen in Windows zu aktivieren <https://learn.microsoft.com/de-de/windows/win32/fileio/maximum-file-path-limitation?tabs=registry#registry-setting-to-enable-long-paths>`__.
+
 Dann das `esp32-firmware <https://github.com/Tinkerforge/esp32-firmware>`__
 Repository von GitHub mittels `git <https://www.git-scm.com/>`__ clonen.
 
