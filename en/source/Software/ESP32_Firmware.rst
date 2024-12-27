@@ -36,7 +36,7 @@ For the Node.js package manager ``npm`` version 8 or newer is required.
 For Windows the `Silicon Labs CP210x Universal Windows Driver <https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers>`__
 has to be installed. Linux and macOS have this driver already build in.
 
-The ESP32 firmware contains a few files with very long path filenames. These
+The ESP32 firmware contains a few files with very long filenames. These
 might exceed the Windows legacy limit of 260 characters. It is recommended
 to `enable long filename support for Windows <https://learn.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation?tabs=registry#registry-setting-to-enable-long-paths>`__.
 
