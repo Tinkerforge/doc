@@ -48,16 +48,17 @@ Docker-Container für alle Brick/Bricklet Firmwares und den Brick Daemon. Dies s
 sicher, dass die Builds auf allen PCs und auch auf dem Jenkins Build/Test Server
 reproduzierbar sind.
 
-Wenn der ``tinkerforge/build_environment_c`` Docker-Container installiert ist, wird
+Wenn die ``tinkerforge/build_environment_c`` und ``tinkerforge/build_environment_comcu`` Docker-Container installiert sind, wird
 dies von den Makefiles der Firmwares automatisch erkannt und die Kompilierung findet
-über den Docker-Container statt.
+über einen Docker-Container statt.
 
 Unser Docker-Container kann wie folgt installiert werden::
 
  apt-get install docker.io        # For Debian based distributions
  sudo usermod -aG docker <USER>   # Replace <USER> by the user that should be able to compile
                                   # through docker. You have to log in/out once after this
- docker pull tinkerforge/build_environment_c
+ docker pull tinkerforge/build_environment_c     # For Bricks and old Bricklets
+ docker pull tinkerforge/build_environment_comcu # For Co-Processor Bricklets
 
 Wenn die Brick/Bricklet Firmwares mit dem Docker-Container kompiliert werden, ist
 die einzige Abhängigkeit für das Host-System GNU make.

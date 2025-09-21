@@ -45,8 +45,8 @@ on the local system. Internally at Tinkerforge we use a build environment inside
 Docker container for the Brick/Bricklet firmwares and Brick Daemon. This ensures
 reproducible builds across all PCs and also the Jenkins build/test server.
 
-If you have the ``tinkerforge/build_environment_c`` docker container installed, the
-Makefiles of the firmwares will detect that and automatically compile with the docker
+If you have the ``tinkerforge/build_environment_c`` and the ``tinkerforge/build_environment_comcu`` docker container installed, the
+Makefiles of the firmwares will detect that and automatically compile with a docker
 container.
 
 You can install the docker container with::
@@ -54,7 +54,8 @@ You can install the docker container with::
  apt-get install docker.io        # For Debian based distributions
  sudo usermod -aG docker <USER>   # Replace <USER> by the user that should be able to compile
                                   # through docker. You have to log in/out once after this
- docker pull tinkerforge/build_environment_c
+ docker pull tinkerforge/build_environment_c     # For Bricks and old Bricklets
+ docker pull tinkerforge/build_environment_comcu # For Co-Processor Bricklets
 
 If you want to compile Brick/Bricklet firmware with the docker container, the only
 dependency for the host system is GNU make.
