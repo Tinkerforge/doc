@@ -16,8 +16,8 @@ komplette Tinkerforge Ökosystem aufsetzt:
 
 * `build_environment_setup.sh <https://github.com/Tinkerforge/generators/blob/master/build_environment_setup.sh>`__
 
-Das Skript wurde mit einem Ubuntu 15.04 VirtualBox Image von `osboxes.org
-<https://www.osboxes.org/>`__ getestet. Es sollte auf allen aktuellen Debian
+Das Skript wurde zuletzt mit einem Debian Trixie 13.3 getestet.
+Es sollte auf allen aktuellen Debian
 basierten Linux Distributionen funktionieren. Für nicht-Debian basierende
 Distribution müssen die Aufrufe von ``apt-get`` mit Aufrufen
 der entsprechenden Gegenstücke (``yum``, ``emerge``, ``packman``, etc)
