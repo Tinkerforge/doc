@@ -1,0 +1,20 @@
+# Sphinx documentation build dependencies
+# Requires Python 3.9+
+
+# Core Sphinx
+Sphinx>=7.0.0
+
+# Version parsing (used in conf.py)
+packaging>=21.0
+
+# Syntax highlighting
+Pygments>=2.15.0
+
+# Spell checking (optional)
+pyenchant>=3.2.0
+sphinxcontrib-spelling>=8.0.0
+
+# Custom pygments lexers (install from local directories)
+# Run after pip install:
+#   pip install ./pygments-mathematica
+#   pip install ./pygments-octave-fixed

@@ -245,10 +245,6 @@ from pygments.token import String as PygmentsString
 
 PygmentsPerlLexer.tokens.pop('balanced-regex', None)
 
-for i in reversed(range(len(PygmentsPerlLexer.tokens['root']))):
-    if PygmentsPerlLexer.tokens['root'][i][1] == PygmentsString.Regex:
-        del PygmentsPerlLexer.tokens['root'][i]
-
 # Use Rust lexer from Pygments 2.2.0 to fix some Rust parsing errors
 for i in reversed(range(len(PygmentsPerlLexer.tokens['root']))):
     if PygmentsPerlLexer.tokens['root'][i][1] == PygmentsString.Regex:
@@ -264,43 +260,42 @@ pygments.lexers.rust.RustLexer = PygmentsRustLexerFixed
 
 def setup(app):
     import os
-    import distutils
     import sphinx
-    from distutils.version import LooseVersion
+    from packaging.version import Version
     from docutils import nodes
     from sphinx import addnodes
     from sphinx.environment import BuildEnvironment
-    from sphinx.builders.html import StandaloneHTMLBuilder
+
     from sphinx.util import url_re
     from sphinx.util.nodes import clean_astext
 
-    # hook into StandaloneHTMLBuilder.add_sidebars to add the breadcrumbs function
-    old_add_sidebars = StandaloneHTMLBuilder.add_sidebars
+    # Use html-page-context event to add the breadcrumbs function to template context
+    # Note: In Sphinx 7.x, add_sidebars is defined but never called, so we use this event instead
+    def add_breadcrumbs_to_context(app, pagename, templatename, context, doctree):
+        builder = app.builder
+        env = app.env
 
-    def monkey_get_breadcrumbs(self, docname, separator): # self == StandaloneHTMLBuilder
-        if not hasattr(self.env, 'monkey_breadcrumbs'):
-            return ''
+        def get_breadcrumbs(separator):
+            if not hasattr(env, 'monkey_breadcrumbs'):
+                return ''
 
-        if docname not in self.env.monkey_breadcrumbs:
-            return ''
+            if pagename not in env.monkey_breadcrumbs:
+                return ''
 
-        links = []
-        breadcrumbs = self.env.monkey_breadcrumbs[docname]
+            links = []
+            breadcrumbs = env.monkey_breadcrumbs[pagename]
 
-        for ref, anchor, title in breadcrumbs[:-1]:
-            ref_parts = os.path.split('/' + ref)
-            links.append(u'<a href="{0}/{1}.html{2}">{3}</a>'.format(os.path.relpath(ref_parts[0], os.path.split('/' + docname)[0]), ref_parts[1], anchor, title))
+            for ref, anchor, title in breadcrumbs[:-1]:
+                ref_parts = os.path.split('/' + ref)
+                links.append('<a href="{0}/{1}.html{2}">{3}</a>'.format(os.path.relpath(ref_parts[0], os.path.split('/' + pagename)[0]), ref_parts[1], anchor, title))
 
-        links.append(breadcrumbs[-1][2])
+            links.append(breadcrumbs[-1][2])
 
-        return separator.join(links)
+            return separator.join(links)
 
-    def new_add_sidebars(self, pagename, ctx):
-        old_add_sidebars(self, pagename, ctx)
+        context['breadcrumbs'] = get_breadcrumbs
 
-        ctx['breadcrumbs'] = lambda separator: monkey_get_breadcrumbs(self, pagename, separator)
-
-    StandaloneHTMLBuilder.add_sidebars = new_add_sidebars
+    app.connect('html-page-context', add_breadcrumbs_to_context)
 
     # hook into BuildEnvironment.resolve_toctree to modify toctree generation
     def monkey_get_reverse_toctree(self): # self == BuildEnvironment
@@ -933,10 +928,67 @@ def setup(app):
                         # recurse on visible children
                         self._toctree_prune(subnode, depth + 1, maxdepth, collapse)
 
-    if LooseVersion(sphinx.__version__) < LooseVersion('1.5.0'):
+    if Version(sphinx.__version__) < Version('1.5.0'):
         BuildEnvironment.resolve_toctree = new_resolve_toctree_v122
-    else:
+    elif Version(sphinx.__version__) < Version('7.0.0'):
         from sphinx.environment.managers.toctree import Toctree
-
         Toctree.resolve_toctree = new_resolve_toctree_v153
         Toctree._toctree_prune = new_toctree_prune_v153
+    else:
+        # Sphinx 7.x: patch _toctree_copy to keep first level expanded (mindepth=2)
+        # In Sphinx 7.x, _toctree_prune was replaced by _toctree_copy
+        from sphinx.environment.adapters import toctree as toctree_module
+
+        _original_toctree_copy = toctree_module._toctree_copy
+
+        def _patched_toctree_copy(node, depth, maxdepth, collapse, tags):
+            """
+            Original logic:
+                keep = (depth <= 1 or ((depth <= maxdepth or maxdepth <= 0)
+                        and (not collapse or 'iscurrent' in node)))
+
+            Patched logic:
+                keep = (depth <= 2 or ((depth <= maxdepth or maxdepth <= 0)
+                        and (not collapse or 'iscurrent' in node)))
+            """
+            mindepth = 2
+            keep_bullet_list_sub_nodes = (depth <= mindepth
+                                          or ((depth <= maxdepth or maxdepth <= 0)
+                                              and (not collapse or 'iscurrent' in node)))
+
+            copy = node.copy()
+            for subnode in node.children:
+                if isinstance(subnode, (addnodes.compact_paragraph, nodes.list_item)):
+                    # for <p> and <li>, just recurse
+                    copy.append(_patched_toctree_copy(subnode, depth, maxdepth, collapse, tags))
+                elif isinstance(subnode, nodes.bullet_list):
+                    # for <ul>, copy if the entry is top-level
+                    # or, copy if the depth is within bounds and;
+                    # collapsing is disabled or the sub-entry's parent is 'current'.
+                    if keep_bullet_list_sub_nodes:
+                        copy.append(_patched_toctree_copy(subnode, depth + 1, maxdepth, collapse, tags))
+                elif isinstance(subnode, addnodes.toctree):
+                    # copy sub toctree nodes for later processing
+                    copy.append(subnode.copy())
+                elif isinstance(subnode, addnodes.only):
+                    # only keep children if the only node matches the tags
+                    from sphinx.util.nodes import _only_node_keep_children
+                    if _only_node_keep_children(subnode, tags):
+                        for child in subnode.children:
+                            copy.append(_patched_toctree_copy(
+                                child, depth, maxdepth, collapse, tags,
+                            ))
+                elif isinstance(subnode, (nodes.reference, nodes.title)):
+                    # deep copy references and captions
+                    sub_node_copy = subnode.copy()
+                    sub_node_copy.children = [child.deepcopy() for child in subnode.children]
+                    for child in sub_node_copy.children:
+                        child.parent = sub_node_copy
+                    copy.append(sub_node_copy)
+                else:
+                    msg = f'Unexpected node type {subnode.__class__.__name__!r}!'
+                    raise ValueError(msg)
+            return copy
+
+        # Apply the patch
+        toctree_module._toctree_copy = _patched_toctree_copy

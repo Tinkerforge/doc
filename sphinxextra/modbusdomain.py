@@ -16,11 +16,11 @@ from docutils.parsers.rst import directives
 
 from sphinx import addnodes
 from sphinx.roles import XRefRole
-from sphinx.locale import l_, _
+from sphinx.locale import _
 from sphinx.domains import Domain, ObjType, Index
 from sphinx.directives import ObjectDescription
 from sphinx.util.nodes import make_refnode
-from sphinx.util.compat import Directive
+from docutils.parsers.rst import Directive
 from sphinx.util.docfields import Field, GroupedField, TypedField
 
 from sphinxextra.utils import fixup_index_entry
@@ -467,8 +467,8 @@ class ModbusModuleIndex(Index):
     """
 
     name = 'modindex'
-    localname = l_('Modbus Module Index')
-    shortname = l_('modules')
+    localname = _('Modbus Module Index')
+    shortname = _('modules')
 
     def generate(self, docnames=None):
         content = {}
@@ -476,7 +476,7 @@ class ModbusModuleIndex(Index):
         ignores = self.domain.env.config['modindex_common_prefix']
         ignores = sorted(ignores, key=len, reverse=True)
         # list of all modules, sorted by module name
-        modules = sorted(self.domain.data['modules'].iteritems(),
+        modules = sorted(self.domain.data['modules'].items(),
                          key=lambda x: x[0].lower())
         # sort out collapsable modules
         prev_modname = ''
@@ -525,7 +525,7 @@ class ModbusModuleIndex(Index):
         collapse = len(modules) - num_toplevels < num_toplevels
 
         # sort by first letter
-        content = sorted(content.iteritems())
+        content = sorted(content.items())
 
         return content, collapse
 
@@ -535,15 +535,15 @@ class ModbusDomain(Domain):
     name = 'modbus'
     label = 'Modbus'
     object_types = {
-        'function':     ObjType(l_('function'),      'func', 'obj'),
-        'data':         ObjType(l_('data'),          'data', 'obj'),
-        'class':        ObjType(l_('class'),         'class', 'obj'),
-        'exception':    ObjType(l_('exception'),     'exc', 'obj'),
-        'method':       ObjType(l_('method'),        'meth', 'obj'),
-        'classmethod':  ObjType(l_('class method'),  'meth', 'obj'),
-        'staticmethod': ObjType(l_('static method'), 'meth', 'obj'),
-        'attribute':    ObjType(l_('attribute'),     'attr', 'obj'),
-        'module':       ObjType(l_('module'),        'mod', 'obj'),
+        'function':     ObjType(_('function'),      'func', 'obj'),
+        'data':         ObjType(_('data'),          'data', 'obj'),
+        'class':        ObjType(_('class'),         'class', 'obj'),
+        'exception':    ObjType(_('exception'),     'exc', 'obj'),
+        'method':       ObjType(_('method'),        'meth', 'obj'),
+        'classmethod':  ObjType(_('class method'),  'meth', 'obj'),
+        'staticmethod': ObjType(_('static method'), 'meth', 'obj'),
+        'attribute':    ObjType(_('attribute'),     'attr', 'obj'),
+        'module':       ObjType(_('module'),        'mod', 'obj'),
     }
 
     directives = {
@@ -578,12 +578,14 @@ class ModbusDomain(Domain):
     ]
 
     def clear_doc(self, docname):
-        for fullname, (fn, _) in self.data['objects'].items():
-            if fn == docname:
-                del self.data['objects'][fullname]
-        for modname, (fn, _, _, _) in self.data['modules'].items():
-            if fn == docname:
-                del self.data['modules'][modname]
+        to_delete = [fullname for fullname, (fn, _) in self.data['objects'].items()
+                     if fn == docname]
+        for fullname in to_delete:
+            del self.data['objects'][fullname]
+        to_delete = [modname for modname, (fn, _, _, _) in self.data['modules'].items()
+                     if fn == docname]
+        for modname in to_delete:
+            del self.data['modules'][modname]
 
     def find_obj(self, env, modname, classname, name, type, searchorder=0):
         """
@@ -669,9 +671,9 @@ class ModbusDomain(Domain):
                                 contnode, name)
 
     def get_objects(self):
-        for modname, info in self.data['modules'].iteritems():
+        for modname, info in self.data['modules'].items():
             yield (modname, modname, 'module', info[0], 'module-' + modname, 0)
-        for refname, (docname, type) in self.data['objects'].iteritems():
+        for refname, (docname, type) in self.data['objects'].items():
             yield (refname, refname, type, docname, refname, 1)
 
 

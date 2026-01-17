@@ -4,52 +4,76 @@ Doc
 This repository contains the Sphinx (https://sphinx-doc.org/) documentation for
 all Bricks and Bricklets.
 
+Requirements
+------------
+
+- Python 3.9+
+- Sphinx 7.0+
+
 Setup
 -----
 
-The following steps are necessary to be able to build the documentation
+Clone the repository::
 
-Note: Device examples are in their own repositories
-To create the complete documentation including
-all examples, all repositories from
-https://github.com/Tinkerforge have to be cloned
+    git clone https://github.com/Tinkerforge/doc
+    cd doc
 
-$ git clone https://github.com/Tinkerforge/doc
+Create and activate a virtual environment::
 
-Create virtualenv
+    python3 -m venv sphinx-virtualenv
+    source sphinx-virtualenv/bin/activate
 
-$ virtualenv sphinx-virtualenv
-$ source sphinx-virtualenv/bin/activate
+Install dependencies::
 
-Install dependencies
+    pip install -r requirements.txt
 
-$ pip install sphinx==1.4.9
-$ pip install pygments==2.0.0
-$ pip install PyEnchant==1.6.11
-$ pip install sphinxcontrib-spelling==2.2.0
+Install custom Pygments lexers::
 
-Install patched pygments packages
+    pip install ./pygments-mathematica
+    pip install ./pygments-octave-fixed
 
-$ cd doc/pygments-mathematica/
-$ python setup.py install
-$ cd pygments-octave-fixed/
-$ python setup.py install
-$ cd ../..
+Generating Documentation
+------------------------
 
-The documentation is partly auto generated, so you need to clone the
-generators (https://github.com/Tinkerforge/generators) first and execute
-the generator and copy scripts.
+The documentation is partly auto-generated. Clone the generators repository
+and run the generation scripts::
 
-$ git clone https://github.com/Tinkerforge/generators
-$ cd generators/
-$ python3 generate_all.py
-$ python3 copy_all.py
+    git clone https://github.com/Tinkerforge/generators
+    cd generators/
+    python3 generate_all.py
+    python3 copy_all.py
+    cd ..
 
-Usage
------
-You can compile the HTML for the different languages with "make html" in the doc folder.
+Note: Device examples are in their own repositories. To create the complete
+documentation including all examples, all repositories from
+https://github.com/Tinkerforge need to be cloned.
 
-To be sure the latest version is built, pull the doc and generator gits and re-run
-$ python3 generate_all.py
-$ python3 copy_all.py
-in the generators folder every time before compiling the HTML with make html.
+Building
+--------
+
+Build HTML documentation for English::
+
+    cd en
+    source ../sphinx-virtualenv/bin/activate
+    sphinx-build -j auto -b html source build/html
+
+Build HTML documentation for German::
+
+    cd de
+    source ../sphinx-virtualenv/bin/activate
+    sphinx-build -j auto -b html source build/html
+
+Alternatively, use ``make html`` in the ``en`` or ``de`` directories.
+
+Rebuilding
+----------
+
+To rebuild with the latest changes, pull the doc and generators repositories
+and re-run the generation scripts before building::
+
+    cd generators/
+    git pull
+    python3 generate_all.py
+    python3 copy_all.py
+    cd ../doc
+    git pull

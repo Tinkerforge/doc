@@ -31,3 +31,5 @@ pygments-octave-fixed/build/*
 pygments-octave-fixed/dist/*
 pygments-octave-fixed/*.egg-info
 extract_images.py
+sphinx-virtualenv
+*.rst~

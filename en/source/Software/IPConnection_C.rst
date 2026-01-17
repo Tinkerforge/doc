@@ -222,7 +222,7 @@ The available constants with corresponding callback function signatures are
 described below.
 
 
-.. c:var:: IPCON_CALLBACK_ENUMERATE
+.. c:macro:: IPCON_CALLBACK_ENUMERATE
 
  .. code-block:: c
 
@@ -271,7 +271,7 @@ described below.
  or :c:data:`AMBIENT_LIGHT_DEVICE_IDENTIFIER`.
 
 
-.. c:var:: IPCON_CALLBACK_CONNECTED
+.. c:macro:: IPCON_CALLBACK_CONNECTED
 
  .. code-block:: c
 
@@ -284,7 +284,7 @@ described below.
  * IPCON\_\ **CONNECT_REASON**\ _AUTO_RECONNECT = 1: Connection after auto-reconnect.
 
 
-.. c:var:: IPCON_CALLBACK_DISCONNECTED
+.. c:macro:: IPCON_CALLBACK_DISCONNECTED
 
  .. code-block:: c
 

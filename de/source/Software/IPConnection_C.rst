@@ -229,7 +229,7 @@ Die verfügbaren IDs mit den zugehörigen Callback Funktionssignaturen
 werden weiter unten beschrieben.
 
 
-.. c:var:: IPCON_CALLBACK_ENUMERATE
+.. c:macro:: IPCON_CALLBACK_ENUMERATE
 
  .. code-block:: c
 
@@ -279,7 +279,7 @@ werden weiter unten beschrieben.
  oder :c:data:`AMBIENT_LIGHT_DEVICE_IDENTIFIER`.
 
 
-.. c:var:: IPCON_CALLBACK_CONNECTED
+.. c:macro:: IPCON_CALLBACK_CONNECTED
 
  .. code-block:: c
 
@@ -294,7 +294,7 @@ werden weiter unten beschrieben.
    Auto-Reconnect.
 
 
-.. c:var:: IPCON_CALLBACK_DISCONNECTED
+.. c:macro:: IPCON_CALLBACK_DISCONNECTED
 
  .. code-block:: c
 

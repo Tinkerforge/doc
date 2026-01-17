@@ -16,17 +16,17 @@ from docutils import nodes
 
 from sphinx import addnodes
 from sphinx.roles import XRefRole
-from sphinx.locale import l_, _
+from sphinx.locale import _
 from sphinx.domains import Domain, ObjType
 from sphinx.directives import ObjectDescription
 from sphinx.util.nodes import make_refnode
-from sphinx.util.compat import Directive
+from docutils.parsers.rst import Directive
 from sphinx.util.docfields import TypedField
 
 from sphinxextra.utils import fixup_index_entry
 
 _identifier_re = re.compile(r'\b(~?[a-zA-Z_][a-zA-Z0-9_\.]*)')
-_whitespace_re = re.compile(r'\s+(?u)')
+_whitespace_re = re.compile(r'\s+')
 
 class DefinitionParser(object):
     def __init__(self, definition):
@@ -231,7 +231,7 @@ class OpenHABObject(ObjectDescription):
             signode['name'] = rv['name']
             signode['device'] = rv['device']
             parser.assert_end()
-        except DefinitionError, e:
+        except DefinitionError as e:
             self.env.warn(self.env.docname,
                           e.description, self.lineno)
             raise ValueError
@@ -263,7 +263,7 @@ class DefinitionError(Exception):
         return self.description
 
     def __str__(self):
-        return unicode(self.encode('utf-8'))
+        return self.__unicode__()
 
 
 class OpenHABConstantObject(OpenHABObject):
@@ -308,8 +308,8 @@ class OpenHABDomain(Domain):
     name = 'openhab'
     label = 'openHAB'
     object_types = {
-        'function': ObjType(l_('function'), 'func'),
-        'channel': ObjType(l_('channel'), 'chan')
+        'function': ObjType(_('function'), 'func'),
+        'channel': ObjType(_('channel'), 'chan')
     }
 
     directives = {
@@ -326,9 +326,10 @@ class OpenHABDomain(Domain):
     }
 
     def clear_doc(self, docname):
-        for fullname, (fn, _, _) in self.data['objects'].items():
-            if fn == docname:
-                del self.data['objects'][fullname]
+        to_delete = [fullname for fullname, (fn, _, _) in self.data['objects'].items()
+                     if fn == docname]
+        for fullname in to_delete:
+            del self.data['objects'][fullname]
 
     def _under_to_camel(self, string):
         splt = string.split("_")
@@ -350,7 +351,7 @@ class OpenHABDomain(Domain):
         return make_refnode(builder, fromdocname, name, target,
                                 contnode, target)
     def get_objects(self):
-        for refname, (docname, type, sig_node) in self.data['objects'].iteritems():
+        for refname, (docname, type, sig_node) in self.data['objects'].items():
             yield (refname, refname, type, docname, refname, 1)
 
 def setup(app):

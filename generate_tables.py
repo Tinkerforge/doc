@@ -512,7 +512,7 @@ def make_discontinued_products_table():
     table_head = {
     'en': """
 .. csv-table::
- :header: "Name", "Description"
+ :header: Name, Description
  :delim: |
  :widths: 25, 75
 
@@ -536,7 +536,7 @@ def make_discontinued_products_table():
 #"""
     'de': """
 .. csv-table::
- :header: "Name", "Beschreibung"
+ :header: Name, Beschreibung
  :delim: |
  :widths: 25, 75
 
@@ -599,13 +599,13 @@ def make_download_tools_table():
 
     table_head = {
     'en': """.. csv-table::
- :header: "Tool", "Downloads", "Version", "Archive", "Changelog"
+ :header: Brick, Downloads, Version, Archive, Changelog
  :delim: |
  :widths: 22, 55, 7, 7, 9
 
 """,
     'de': """.. csv-table::
- :header: "Tool", "Downloads", "Version", "Archiv", "Changelog"
+ :header: Brick, Downloads, Version, Archiv, Changelog
  :delim: |
  :widths: 22, 55, 7, 7, 9
 
@@ -649,13 +649,13 @@ def make_download_bindings_table():
 
     table_head = {
     'en': """.. csv-table::
- :header: "Language", "Downloads", "Version", "Archive", "Changelog"
+ :header: Language, Downloads, Version, Archive, Changelog
  :delim: |
  :widths: 22, 55, 7, 7, 9
 
 """,
     'de': """.. csv-table::
- :header: "Sprache", "Downloads", "Version", "Archiv", "Changelog"
+ :header: Sprache, Downloads, Version, Archiv, Changelog
  :delim: |
  :widths: 22, 55, 7, 7, 9
 
@@ -685,13 +685,13 @@ def make_download_red_images_table():
 
     table_head = {
     'en': """.. csv-table::
- :header: "Type", "Downloads", "Version", "Archive", "Changelog"
+ :header: Type, Downloads, Version, Archive, Changelog
  :delim: |
  :widths: 22, 55, 7, 7, 9
 
 """,
     'de': """.. csv-table::
- :header: "Typ", "Downloads", "Version", "Archiv", "Changelog"
+ :header: Typ, Downloads, Version, Archiv, Changelog
  :delim: |
  :widths: 22, 55, 7, 7, 9
 
@@ -721,13 +721,13 @@ def make_download_brick_firmwares_table():
 
     table_head = {
     'en': """.. csv-table::
- :header: "Brick", "Downloads", "Version", "Archive", "Changelog"
+ :header: Brick, Downloads, Version, Archive, Changelog
  :delim: |
  :widths: 22, 55, 7, 7, 9
 
 """,
     'de': """.. csv-table::
- :header: "Brick", "Downloads", "Version", "Archiv", "Changelog"
+ :header: Brick, Downloads, Version, Archiv, Changelog
  :delim: |
  :widths: 22, 55, 7, 7, 9
 
@@ -786,13 +786,13 @@ def make_download_bricklet_plugins_table():
 
     table_head = {
     'en': """.. csv-table::
- :header: "Bricklet", "Downloads", "Version", "Archive", "Changelog"
+ :header: Bricklet, Downloads, Version, Archive, Changelog
  :delim: |
  :widths: 22, 55, 7, 7, 9
 
 """,
     'de': """.. csv-table::
- :header: "Bricklet", "Downloads", "Version", "Archiv", "Changelog"
+ :header: Bricklet, Downloads, Version, Archiv, Changelog
  :delim: |
  :widths: 22, 55, 7, 7, 9
 
@@ -852,13 +852,13 @@ def make_download_extension_firmwares_table():
 
     table_head = {
     'en': """.. csv-table::
- :header: "Brick", "Downloads", "Version", "Archive", "Changelog"
+ :header: Brick, Downloads, Version, Archive, Changelog
  :delim: |
  :widths: 22, 55, 7, 7, 9
 
 """,
     'de': """.. csv-table::
- :header: "Brick", "Downloads", "Version", "Archiv", "Changelog"
+ :header: Brick, Downloads, Version, Archiv, Changelog
  :delim: |
  :widths: 22, 55, 7, 7, 9
 
@@ -895,13 +895,13 @@ def make_download_kits_table():
 
     table_head = {
     'en': """.. csv-table::
- :header: "Kit", "Downloads", "Version", "Archive", "Changelog"
+ :header: Kit, Downloads, Version, Archive, Changelog
  :delim: |
  :widths: 22, 55, 7, 7, 9
 
 """,
     'de': """.. csv-table::
- :header: "Kit", "Downloads", "Version", "Archiv", "Changelog"
+ :header: Kit, Downloads, Version, Archiv, Changelog
  :delim: |
  :widths: 22, 55, 7, 7, 9
 
@@ -929,14 +929,14 @@ def make_download_kits_table():
 def make_api_bindings_links_table(bindings_info):
     table_head = {
     'en': """.. csv-table::
- :header: "Name", "API", "Examples"
+ :header: Name, API, Examples
  :delim: |
  :widths: 20, 10, 10
 
 {0}
 """,
     'de': """.. csv-table::
- :header: "", "API", "Beispiele"
+ :header: , API, Beispiele
  :delim: |
  :widths: 20, 10, 10
 
@@ -1031,14 +1031,14 @@ def make_api_bindings_links_table(bindings_info):
 def make_llproto_links_table(bindings_info):
     table_head = {
     'en': """.. csv-table::
- :header: "", "API"
+ :header: , API
  :delim: |
  :widths: 20, 20
 
 {0}
 """,
     'de': """.. csv-table::
- :header: "", "API"
+ :header: , API
  :delim: |
  :widths: 20, 20
 
@@ -1075,14 +1075,14 @@ def make_llproto_links_table(bindings_info):
 def make_api_bindings_devices_table(bindings_info, device_infos, category, discontinued):
     table_head = {
     'en': """.. csv-table::
- :header: "{0}", "API", "Examples"
+ :header: {0}, API, Examples
  :delim: |
  :widths: 20, 10, 10
 
 {1}
 """,
     'de': """.. csv-table::
- :header: "{0}", "API", "Beispiele"
+ :header: {0}, API, Beispiele
  :delim: |
  :widths: 20, 10, 10
 
@@ -1119,14 +1119,14 @@ def make_api_bindings_devices_table(bindings_info, device_infos, category, disco
 def make_llproto_devices_table(bindings_info, device_infos, category, discontinued):
     table_head = {
     'en': """.. csv-table::
- :header: "{0}", "API"
+ :header: {0}, API
  :delim: |
  :widths: 20, 20
 
 {1}
 """,
     'de': """.. csv-table::
- :header: "{0}", "API"
+ :header: {0}, API
  :delim: |
  :widths: 20, 20
 
@@ -1153,7 +1153,7 @@ def make_llproto_devices_table(bindings_info, device_infos, category, discontinu
 def make_source_code_gits_table():
     table_head = {
     'en': """.. csv-table::
- :header: "Name", "Repository", "Bug Tracking"
+ :header: Name, Repository, Bug Tracking
  :delim: |
  :widths: 20, 23, 12
 
@@ -1180,7 +1180,7 @@ def make_source_code_gits_table():
 
 """,
     'de': """.. csv-table::
- :header: "", "Repository", "Bug Tracking"
+ :header: , Repository, Bug Tracking
  :delim: |
  :widths: 20, 23, 12
 
@@ -1376,7 +1376,7 @@ def make_index_api():
 <div style="clear: both;"></div>
 """
 
-    script_html = """
+    script_html = r"""
 <script type="text/javascript">
     var togglingContent = false;
 

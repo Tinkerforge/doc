@@ -16,18 +16,18 @@ from docutils import nodes
 
 from sphinx import addnodes
 from sphinx.roles import XRefRole
-from sphinx.locale import l_, _
+from sphinx.locale import _
 from sphinx.domains import Domain, ObjType
 from sphinx.directives import ObjectDescription
 from sphinx.util.nodes import make_refnode
-from sphinx.util.compat import Directive
+from docutils.parsers.rst import Directive
 from sphinx.util.docfields import TypedField
 
 from sphinxextra.utils import fixup_index_entry
 
 _module_re = re.compile(r'[a-z0-9_]+\.')
 _identifier_re = re.compile(r'\b(~?[a-zA-Z_][a-zA-Z0-9_]*[\[\]]*)')
-_whitespace_re = re.compile(r'\s+(?u)')
+_whitespace_re = re.compile(r'\s+')
 
 class DefinitionParser(object):
     def __init__(self, definition):
@@ -87,7 +87,7 @@ class DefinitionParser(object):
         array = self.skip_string("[")
         if array:
             self.skip_ws()
-            if self.match(re.compile("\d*")):
+            if self.match(re.compile(r"\d*")):
                 element_count = self.matched_text
             else:
                 self.fail('Expected element count of array type')
@@ -293,7 +293,7 @@ class GoObject(ObjectDescription):
             signode['struct'] = rv['struct']
             signode['fn'] = rv['fn']
             parser.assert_end()
-        except DefinitionError, e:
+        except DefinitionError as e:
             self.env.warn(self.env.docname,
                           e.description, self.lineno)
             raise ValueError
@@ -317,7 +317,7 @@ class DefinitionError(Exception):
         return self.description
 
     def __str__(self):
-        return unicode(self.encode('utf-8'))
+        return self.__unicode__()
 
 
 class GoConstantObject(GoObject):
@@ -362,7 +362,7 @@ class GoDomain(Domain):
     name = 'go'
     label = 'Go'
     object_types = {
-        'function': ObjType(l_('function'), 'func')
+        'function': ObjType(_('function'), 'func')
     }
 
     directives = {
@@ -378,9 +378,10 @@ class GoDomain(Domain):
     }
 
     def clear_doc(self, docname):
-        for fullname, (fn, _, _) in self.data['objects'].items():
-            if fn == docname:
-                del self.data['objects'][fullname]
+        to_delete = [fullname for fullname, (fn, _, _) in self.data['objects'].items()
+                     if fn == docname]
+        for fullname in to_delete:
+            del self.data['objects'][fullname]
 
     def _under_to_camel(self, string):
         splt = string.split("_")
@@ -392,7 +393,7 @@ class GoDomain(Domain):
         return make_refnode(builder, fromdocname, name, target, contnode, target)
 
     def get_objects(self):
-        for refname, (docname, type, sig_node) in self.data['objects'].iteritems():
+        for refname, (docname, type, sig_node) in self.data['objects'].items():
             yield (refname, refname, type, docname, refname, 1)
 
 def setup(app):
