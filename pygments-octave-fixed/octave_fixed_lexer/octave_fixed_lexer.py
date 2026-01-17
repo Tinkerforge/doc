@@ -99,8 +99,8 @@ class OctaveFixedLexer(RegexLexer):
     }
 
     def analyse_text(text):
-        if re.match('^\s*%', text, re.M): # comment
+        if re.match(r'^\s*%', text, re.M): # comment
             return 0.9
-        elif re.match('^!\w+', text, re.M): # system cmd
+        elif re.match(r'^!\w+', text, re.M): # system cmd
             return 0.9
         return 0.1
