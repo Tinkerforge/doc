@@ -939,6 +939,38 @@ def setup(app):
         # In Sphinx 7.x, _toctree_prune was replaced by _toctree_copy
         from sphinx.environment.adapters import toctree as toctree_module
 
+        # patch _entries_from_toctree to filter out entries starting with '~'
+        _original_entries_from_toctree = toctree_module._entries_from_toctree
+
+        def _patched_entries_from_toctree(
+            env,
+            prune,
+            titles_only,
+            collapse,
+            includehidden,
+            tags,
+            toctree_ancestors,
+            included,
+            excluded,
+            toctreenode,
+            parents,
+            subtree=False,
+        ):
+            # Filter out entries where title starts with '~'
+            original_entries = toctreenode['entries']
+            filtered_entries = [(title, ref) for title, ref in original_entries
+                                if title is None or not title.startswith('~')]
+            toctreenode['entries'] = filtered_entries
+            result = _original_entries_from_toctree(
+                env, prune, titles_only, collapse, includehidden, tags,
+                toctree_ancestors, included, excluded, toctreenode, parents, subtree
+            )
+            toctreenode['entries'] = original_entries
+            return result
+
+        toctree_module._entries_from_toctree = _patched_entries_from_toctree
+        # end
+
         _original_toctree_copy = toctree_module._toctree_copy
 
         def _patched_toctree_copy(node, depth, maxdepth, collapse, tags):
