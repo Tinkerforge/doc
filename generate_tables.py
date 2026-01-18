@@ -410,11 +410,20 @@ has_examples = {}
 def collect_latest_version_info():
     debug('Discovering latest versions on tinkerforge.com')
 
-    try:
-        response = urllib.request.urlopen(LATEST_VERSIONS_URL)
-        latest_versions_data = response.read().decode('utf-8')
-    except urllib.error.URLError:
-        raise Exception('Latest version information on tinkerforge.com is not available (error code 1)')
+    local_file_path = '/var/www/download/latest_versions.txt'
+
+    if os.path.exists(local_file_path):
+        try:
+            with open(local_file_path, 'r') as f:
+                latest_versions_data = f.read()
+        except Exception as e:
+            raise Exception(f'Could not read local latest versions file: {e}')
+    else:
+        try:
+            response = urllib.request.urlopen(LATEST_VERSIONS_URL)
+            latest_versions_data = response.read().decode('utf-8')
+        except urllib.error.URLError:
+            raise Exception('Latest version information on tinkerforge.com is not available (error code 1)')
 
     for line in latest_versions_data.split('\n'):
         line = line.strip()
