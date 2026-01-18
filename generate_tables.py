@@ -13,6 +13,7 @@ def debug(*args, **kwargs):
 import os
 import sys
 import re
+import ssl
 import urllib.request
 import urllib.error
 import math
@@ -411,7 +412,11 @@ def collect_latest_version_info():
     debug('Discovering latest versions on tinkerforge.com')
 
     try:
-        response = urllib.request.urlopen(LATEST_VERSIONS_URL)
+        # Allow self-signed certificates (for WAF proxy environments)
+        ssl_context = ssl.create_default_context()
+        ssl_context.check_hostname = False
+        ssl_context.verify_mode = ssl.CERT_NONE
+        response = urllib.request.urlopen(LATEST_VERSIONS_URL, context=ssl_context)
         latest_versions_data = response.read().decode('utf-8')
     except urllib.error.URLError:
         raise Exception('Latest version information on tinkerforge.com is not available (error code 1)')
