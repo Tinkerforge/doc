@@ -63,8 +63,8 @@ source_suffix = '.rst'
 # The encoding of source files.
 #source_encoding = 'utf-8'
 
-# The master toctree document.
-master_doc = 'index'
+# The root toctree document.
+root_doc = 'index'
 
 # General information about the project.
 project = u'Tinkerforge'
@@ -92,9 +92,9 @@ language = 'en_US'
 # List of documents that shouldn't be included in the build.
 #unused_docs = []
 
-# List of directories, relative to source directory, that shouldn't be searched
-# for source files.
-exclude_trees = []
+# List of patterns, relative to source directory, that match files and
+# directories to ignore when looking for source files.
+exclude_patterns = []
 
 # The reST default role (used for this markup: `text`) to use for all documents.
 #default_role = None
@@ -115,6 +115,13 @@ pygments_style = 'sphinx'
 
 # A list of ignored prefixes for module index sorting.
 #modindex_common_prefix = []
+
+# Disable smart quotes to prevent converting ASCII quotes to typographic quotes
+# (e.g., 'i' becoming ‚i' in German locale)
+smartquotes = False
+
+# Don't show domain objects (functions, classes, etc.) in the table of contents
+toc_object_entries = False
 
 
 # -- Options for HTML output ---------------------------------------------------
@@ -299,7 +306,7 @@ def setup(app):
 
     # hook into BuildEnvironment.resolve_toctree to modify toctree generation
     def monkey_get_reverse_toctree(self): # self == BuildEnvironment
-        toctrees = list(self.get_doctree(self.config.master_doc).traverse(addnodes.toctree))
+        toctrees = list(self.get_doctree(self.config.root_doc).traverse(addnodes.toctree))
         master = toctrees[0]
 
         for toctree in toctrees[1:]:
