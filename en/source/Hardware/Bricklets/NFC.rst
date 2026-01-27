@@ -247,6 +247,28 @@ the NFC Bricklet the state will change to *CARDEMU_STATE_DISCOVER_READY*.
 Call *CardemuStartTransfer* to transfer to previously set NDEF message to
 the phone.
 
+Detecting Smartphones as NFC Tags
+---------------------------------
+
+The NFC Bricklet can detect Android smartphones that support NFC Host Card Emulation
+(HCE). This allows using a smartphone instead of a physical NFC tag, for example
+for access control systems.
+
+To use this feature, the smartphone must have an app installed that registers an
+HCE service with the following Application ID (AID):
+
+* **AID:** ``54464E46434944`` (ASCII: "TFNFCID")
+
+When a tag is requested with *ReaderRequestTagID* and tag type 6 (TAG_TYPE_PHONE),
+the Bricklet sends a SELECT command with this AID. The app must respond with a
+unique device ID (typically 4-10 bytes).
+
+The returned tag ID can be read with *SimpleGetTagID* just like with other tag types.
+
+.. note::
+   This feature is only available for Android devices. Apple does not allow
+   NFC Host Card Emulation for third-party apps on iOS.
+
 Peer-To-Peer Mode
 -----------------
 
