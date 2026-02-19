@@ -43,7 +43,7 @@ Beschreibung
 
 Das Servo :ref:`Bricklet <primer_bricklets>` 2.0 kann bis zu **10**
 `RC Servos <https://de.wikipedia.org/wiki/Servo>`__ steuern. Eine API für
-:ref:`viele Programmiersprachen <servo_brick_programming_interface>` ermöglichen 
+:ref:`viele Programmiersprachen <servo_v2_bricklet_programming_interface>` ermöglichen
 das Steuern der Position, Geschwindigkeit und Beschleunigung/Verzögerng der angeschlossenen
 Servos. Motion Planning wird genutzt um neue Positionen ruckelfrei anzufahren. 
 Zusätzlich kann die PWM (Pulsweite und Preiod) jedes Servos einzeln konfiguriert werden.

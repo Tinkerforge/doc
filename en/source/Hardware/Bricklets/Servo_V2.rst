@@ -43,7 +43,7 @@ Description
 
 The Servo :ref:`Bricklet <primer_bricklets>` is able to control up to **10**
 `RC servos <https://en.wikipedia.org/wiki/Servo_(radio_control)>`__. With the 
-provided API for many :ref:`programming languages <servo_brick_programming_interface>` 
+provided API for many :ref:`programming languages <servo_v2_bricklet_programming_interface>`
 you can control the position, velocity and acceleration/deceleration of the connected 
 servos. Motion planning is used to reach a position with smooth motion.
 The current-draw of each servo can be measured independently. 
