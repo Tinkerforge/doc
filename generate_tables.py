@@ -608,13 +608,13 @@ def make_download_tools_table():
 
     table_head = {
     'en': """.. csv-table::
- :header: Brick, Downloads, Version, Archive, Changelog
+ :header: Tool, Downloads, Version, Archive, Changelog
  :delim: |
  :widths: 22, 55, 7, 7, 9
 
 """,
     'de': """.. csv-table::
- :header: Brick, Downloads, Version, Archiv, Changelog
+ :header: Tool, Downloads, Version, Archiv, Changelog
  :delim: |
  :widths: 22, 55, 7, 7, 9
 
