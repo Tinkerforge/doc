@@ -861,13 +861,13 @@ def make_download_extension_firmwares_table():
 
     table_head = {
     'en': """.. csv-table::
- :header: Brick, Downloads, Version, Archive, Changelog
+ :header: Extension, Downloads, Version, Archive, Changelog
  :delim: |
  :widths: 22, 55, 7, 7, 9
 
 """,
     'de': """.. csv-table::
- :header: Brick, Downloads, Version, Archiv, Changelog
+ :header: Extension, Downloads, Version, Archiv, Changelog
  :delim: |
  :widths: 22, 55, 7, 7, 9
 
