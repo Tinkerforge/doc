@@ -100,10 +100,8 @@ Tutorial: Add Getter Function
 
 .. note::
 
- This tutorial is unfortunately not yet ready. It is on our TODO list.
- If you are interested in it write us an email to info@tinkerforge.com,
- so we know that there is a demand for it.
-
+ There is unfortunately no tutorial available yet. It seems that there is
+ no big demand for this, such that it is not planned yet.
 
 We plan to write a tutorial that goes through the whole process
 of adding functions to the API, implementing them in the firmware

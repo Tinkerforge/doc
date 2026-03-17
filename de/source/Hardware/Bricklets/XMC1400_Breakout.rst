@@ -102,9 +102,8 @@ Tutorial: Eine Getter Funktion hinzufügen
 
 .. note::
 
- Dieses Tutorial ist leider noch nicht vollständig. Bei Interesse schreibe
- bitte eine E-Mail an info@tinkerforge.com, so wissen wir, dass Interesse
- besteht.
+ Zur Zeit gibt es kein Tutorial hierzu. Auf Grund der geringen Nachfrage
+ planen wir aktuell keine Umsetzung.
 
 Es ist geplant ein Tutorial hier zu präsentieren, indem der ganze Prozess,
 wie API Funktionen hinzugefügt werden können, dargestellt wird:
