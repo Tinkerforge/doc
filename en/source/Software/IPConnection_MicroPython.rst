@@ -216,7 +216,7 @@ described below.
 
 .. note::
  Using callbacks requires calling
- :py:func:`dispatch_callbacks() <IPConnection.dispatch_callbacks>`
+ :py:func:`dispatch_callbacks(seconds) <IPConnection.dispatch_callbacks>`
  periodically to dispatch pending callbacks.
 
 
