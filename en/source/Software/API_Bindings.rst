@@ -30,6 +30,7 @@ Installation and usage instructions for each supported programming language:
 * :ref:`LabVIEW <api_bindings_labview>`
 * :ref:`Mathematica <api_bindings_mathematica>`
 * :ref:`MATLAB/Octave <api_bindings_matlab>`
+* :ref:`MicroPython <api_bindings_micropython>`
 * :ref:`MQTT <api_bindings_mqtt>`
 * :ref:`openHAB <api_bindings_openHAB>`
 * :ref:`Perl <api_bindings_perl>`
@@ -56,6 +57,7 @@ Installation and usage instructions for each supported programming language:
    LabVIEW <API_Bindings_LabVIEW>
    Mathematica <API_Bindings_Mathematica>
    MATLAB/Octave <API_Bindings_MATLAB>
+   MicroPython <API_Bindings_MicroPython>
    MQTT <API_Bindings_MQTT>
    openHAB <API_Bindings_openHAB>
    Perl <API_Bindings_Perl>
