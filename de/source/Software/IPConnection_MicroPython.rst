@@ -223,9 +223,9 @@ Die verfügbaren IDs mit der dazugehörigen Parameteranzahl und -typen
 werden weiter unten beschrieben.
 
 .. note::
- Um Callbacks zu verwenden muss
- :py:func:`dispatch_callbacks() <IPConnection.dispatch_callbacks>`
- periodisch aufgerufen werden, um ausstehende Callbacks auszuliefern.
+ Um Callbacks zu verwenden, muss
+ :py:func:`dispatch_callbacks(seconds) <IPConnection.dispatch_callbacks>`
+ periodisch mit einem passenden Sekundenintervall aufgerufen werden, um ausstehende Callbacks auszuliefern.
 
 
 .. py:attribute:: IPConnection.CALLBACK_ENUMERATE
