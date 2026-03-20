@@ -69,8 +69,9 @@ eine ``description`` Property hat. ``value`` kann verschiedene Werte haben:
 .. note::
  Anders als die regulären Python Bindings sind die MicroPython Bindings
  single-threaded. Es gibt keinen Hintergrund-Empfangsthread. Callbacks
- werden explizit durch Aufruf von :py:func:`dispatch_callbacks()
- <IPConnection.dispatch_callbacks>` ausgeliefert.
+ werden explizit durch Aufruf von :py:func:`dispatch_callbacks(seconds)
+ <IPConnection.dispatch_callbacks>`, z.B. ``dispatch_callbacks(0)`` oder
+ ``dispatch_callbacks(-1)``, ausgeliefert.
 
 Grundfunktionen
 ^^^^^^^^^^^^^^^
