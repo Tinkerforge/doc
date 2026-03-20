@@ -5,7 +5,7 @@ MicroPython - API Bindings
 ==========================
 
 Die MicroPython Bindings ermöglichen es :ref:`Bricks <primer_bricks>` und
-:ref:`Bricklets <primer_bricklets>` aus selbst erstellen MicroPython Skripten
+:ref:`Bricklets <primer_bricklets>` aus selbst erstellten MicroPython-Skripten
 heraus zu steuern, die auf Mikrocontroller-Boards wie ESP32, Raspberry Pi Pico
 und anderen laufen. Die :ref:`ZIP Datei <downloads_bindings_examples>` für
 die Bindings beinhaltet:
