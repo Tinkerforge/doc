@@ -69,7 +69,7 @@ Generally, every method of the MicroPython bindings can throw an
 .. note::
  Unlike the regular Python bindings, the MicroPython bindings are
  single-threaded. There is no background receive thread. Callbacks are
- dispatched explicitly by calling :py:func:`dispatch_callbacks()
+ dispatched explicitly by calling :py:func:`dispatch_callbacks(0)
  <IPConnection.dispatch_callbacks>`.
 
 Basic Functions
