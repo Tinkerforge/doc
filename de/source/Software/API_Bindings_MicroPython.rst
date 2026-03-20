@@ -99,7 +99,7 @@ Netzwerkadresse der Stepper Brick zu erreichen ist. Ist er lokal per USB
 angeschlossen dann ist ``localhost`` und 4223 richtig. Wenn das Beispiel auf
 einem Mikrocontroller-Board ausgeführt wird, muss ``localhost`` durch die
 IP-Adresse des Computers ersetzt werden, auf dem der Brick Daemon läuft. Als
-``UID`` muss die UID des angeschlossen Stepper Bricks angegeben werden, diese
+``UID`` muss die UID des angeschlossenen Stepper Bricks angegeben werden, diese
 kann über den Brick Viewer ermittelt werden:
 
 .. code-block:: python
