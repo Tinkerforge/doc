@@ -25,13 +25,12 @@ and `PlatformIO <https://platformio.org/>`__ are used as basis.
 Preparation
 -----------
 
-First, `UV <https://docs.astral.sh/uv/>`__ (version 0.10 or newer),
-`Node.js <https://nodejs.org/>`__ (version 24 or newer)
-and `Git <https://git-scm.com/>`__ have to be installed according to their
+First, `uv <https://docs.astral.sh/uv/>`__ (version 0.10 or newer),
+and `git <https://git-scm.com/>`__ have to be installed according to their
 installation manuals.
 
-In general you should always use the latest version of UV and Node.js.
-For the Node.js package manager ``npm`` version 11 or newer is required.
+Additionally, on Windows `Node.js <https://nodejs.org/>`__ (version 20 or newer)
+including the Node.js package manager ``npm`` (version 11 or newer) are required.
 
 We recommend `Visual Studio Code <https://code.visualstudio.com/>`__ as IDE.
 But due to Python version conflicts, the PlatformIO IDE extension for

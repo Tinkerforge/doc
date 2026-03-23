@@ -24,13 +24,12 @@ und `PlatformIO <https://platformio.org/>`__.
 Vorbereitung
 ------------
 
-Zuerst müssen `UV <https://docs.astral.sh/uv/>`__ (mindestens Version 0.10),
-`Node.js <https://nodejs.org/>`__ (mindestens Version 24) und `Git <https://git-scm.com/>`__ anhand der
-Anleitung des jeweiligen Projekts installiert werden.
+Zuerst müssen `uv <https://docs.astral.sh/uv/>`__ (mindestens Version 0.10),
+und `git <https://git-scm.com/>`__ anhand der Anleitung des jeweiligen Projekts
+installiert werden.
 
-Allgemein sollte immer die neueste Version von UV und Node.js verwendet
-werden. Der Node.js Package Manager ``npm`` muss mindestens in Version 11
-vorliegen.
+Zusätzlich müssen auf Windows `Node.js <https://nodejs.org/>`__ (mindestens Version 20)
+und der Node.js Package Manager ``npm`` (mindestens Version 11) installiert werden.
 
 Als IDE with `Visual Studio Code <https://code.visualstudio.com/>`__ empfohlen.
 Allerdings wird die PlatformIO IDE Erweiterung für Visual Studio Code auf Windows und macOS,
