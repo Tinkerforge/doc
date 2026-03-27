@@ -30,11 +30,7 @@ and `git <https://git-scm.com/>`__ have to be installed according to their
 installation manuals.
 
 Additionally, on Windows `Node.js <https://nodejs.org/>`__ (version 20 or newer)
-including the Node.js package manager ``npm`` (version 11 or newer) are required.
-
-We recommend `Visual Studio Code <https://code.visualstudio.com/>`__ as IDE.
-But due to Python version conflicts, the PlatformIO IDE extension for
-Visual Studio Code is not supported for this project on Windows and macOS.
+including the Node.js package manager ``npm`` (version 9 or newer) are required.
 
 For Windows the `Silicon Labs CP210x Universal Windows Driver <https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers>`__
 has to be installed. Linux and macOS have this driver already build in.
@@ -46,14 +42,35 @@ to `enable long filename support for Windows <https://learn.microsoft.com/en-us/
 Next, clone the `esp32-firmware <https://github.com/Tinkerforge/esp32-firmware>`__
 repository from GitHub using `git <https://www.git-scm.com/>`__.
 
+We recommend `Visual Studio Code <https://code.visualstudio.com/>`__ as IDE
+with the PlatformIO IDE extension.
+
 For initial setup the command ``uv sync`` has to be executed in a terminal in the
 ``software/`` directory. The terminal inside Visual Studio Code can be used for this.
+
+To make Visual Studio Code use the uv environment correctly, edit the following settings (ctrl+,):
+
+* change ``python-envs.terminal.autoActivationType`` to ``shellStartup``
+* chnage ``platformio-ide.customPATH`` to the absolute path to the ``software/.venv/bin/`` directory (Linux and macOS)
+  or the absolute path to the ``software/.venv/Scripts/`` directory (Windows)
+* change ``platformio-ide.useBuiltinPIOCore`` to ``false``
+* change ``platformio-ide.useBuiltinPython`` to ``false``
+
+Then restart Visual Studio Code.
+
+If the PlatformIO IDE extension reports problems now try to delete the ``.platformio/`` directory in your
+home directory and restart Visual Studio Code.
+
+The ``platformio.ini`` file is located in the ``software/`` directory. Make sure
+to open the ``software/`` directory in Visual Studio Code as the PlatformIO
+project directory to build any of the environment environments.
 
 .. _esp32_firmware_build:
 
 Firmware Building
 -----------------
 
+The default PlatformIO environment is set to ``empty`` and doesn't build a useful firmware.
 Choose the PlatformIO environment corresponding to the firmware variation you
 want to build:
 
@@ -65,17 +82,16 @@ want to build:
 * WARP Energy Manager: ``energy_manager`` defined in ``energy_manager.ini``
 * WARP Energy Manager 2.0: ``energy_manager_v2`` defined in ``energy_manager_v2.ini``
 
-To build the ESP32 Brick Firmware (``esp32``), this command has to be executed in a terminal in the
-``software/`` directory. The terminal inside Visual Studio Code can be used for this::
+To build a specific firmware run its corresponding PlatformIO "Build" task. You can also
+change the default PlatformIO environment from ``empty`` to the desired environment by
+modifying the ``platformio.ini`` file. For example, replace ``empty`` with ``esp32_ethernet``
+in this line to build the ESP32 Ethernet Brick firmware by default::
 
-  uv run pio run -e esp32
+  default_envs = empty
 
 To build a firmware, upload it to a Brick and connect to its serial console all
-in one step you can run this command::
-
-  uv run pio run -e esp32 -t upload -t montior
-
-This requires that the Brick is connected to USB beforehand.
+in one step you can run the PlatformIO "Upload and Monitor" task. This requires
+that the Brick is connected to USB beforehand.
 You can also upload the built firmware via the web interface.
 
 The firmware file can be found in ``software/build/`` and its name ends with ``_merged.bin``

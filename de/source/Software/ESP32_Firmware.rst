@@ -29,11 +29,7 @@ und `git <https://git-scm.com/>`__ anhand der Anleitung des jeweiligen Projekts
 installiert werden.
 
 Zusätzlich müssen auf Windows `Node.js <https://nodejs.org/>`__ (mindestens Version 20)
-und der Node.js Package Manager ``npm`` (mindestens Version 11) installiert werden.
-
-Als IDE with `Visual Studio Code <https://code.visualstudio.com/>`__ empfohlen.
-Allerdings wird die PlatformIO IDE Erweiterung für Visual Studio Code auf Windows und macOS,
-bedingt durch Python Versionskonflikte, für dieses Projekt nicht unterstützt.
+und der Node.js Package Manager ``npm`` (mindestens Version 9) installiert werden.
 
 Für Windows muss der `Silicon Labs CP210x Universal Windows Driver <https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers>`__
 installiert werden. Linux und macOS bringen diesen Treiber schon von sich aus mit.
@@ -45,14 +41,35 @@ die `Unterstützung für lange Dateinamen in Windows zu aktivieren <https://lear
 Dann das `esp32-firmware <https://github.com/Tinkerforge/esp32-firmware>`__
 Repository von GitHub mittels `git <https://www.git-scm.com/>`__ clonen.
 
+Als IDE with `Visual Studio Code <https://code.visualstudio.com/>`__ mit der
+PlatformIO IDE Erweiterung empfohlen.
+
 Zur initialen Einrichtung muss z.B. im Terminal in Visual Studio Code der Befehl ``uv sync``
 im ``software/`` Verzeichnis ausgeführt werden.
+
+Damit Visual Studio Code die uv-Umgebung richtig benutzt, müssen folgende Einstellungen (Strg+,) geändert werden:
+
+* ``python-envs.terminal.autoActivationType`` auf ``shellStartup`` umstellen
+* ``platformio-ide.customPATH`` auf den absoluten Pfad zum ``software/.venv/bin/`` Verzeichnis (Linux und macOS)
+  bzw. auf den absoluter Pfad zum ``software/.venv/Scripts/`` Verzeichnis (Windows)
+* ``platformio-ide.useBuiltinPIOCore`` auf ``false``
+* ``platformio-ide.useBuiltinPython`` auf ``false``
+
+Danach einmal Visual Studio Code neustarten.
+
+Falls die PlatformIO IDE Erweiterung Fehler meldet, dann kann es helfen das ``.platformio/`` Verzeichnis
+im Home-Verzeichnis zu löschen und Visual Studio Code neuzustarten.
+
+Die ``platformio.ini`` Datei befindet sich im ``software/`` Verzeichnis.
+Achte darauf das ``software/`` Verzeichnis in Visual Studio Code als
+Projekt-Verzeichnis zu öffnen um eine der Umgebungen zu bauen (``build``).
 
 .. _esp32_firmware_build:
 
 Firmware bauen
 --------------
 
+Die Standard-PlatformIO-Umgebung ist auf ``empty`` gesetzt und erzeugt keine nützliche Firmware.
 Abhängig von der zu bauenden Variante der Firmware muss die entsprechenden
 PlatformIO-Umgebung gewählt werden:
 
@@ -64,17 +81,17 @@ PlatformIO-Umgebung gewählt werden:
 * WARP Energy Manager: ``energy_manager`` definiert in ``energy_manager.ini``
 * WARP Energy Manager 2.0: ``energy_manager_v2`` definiert in ``energy_manager_v2.ini``
 
-Um z.B. die ESP32 Brick Firmware (``esp32``) zu bauen muss z.B. im Terminal in Visual Studio Code
-dieser Befehl im ``software/`` Verzeichnis ausgeführt werden::
+Um die entsprechende Firmware zu bauen muss dann die PlatformIO "Build" Aufgabe ausgeführt
+werden. Es kann aber auch die Standard-PlatformIO-Umgebung in der ``platformio.ini`` Datei
+von ``empty`` auf die gewünschte Umgebung geändert werden. Zum Beispiel ``empty`` durch
+``esp32_ethernet`` in dieser Zeile ersetzen, um standardmäßig die ESP32 Ethernet Brick Firmware
+zu bauen::
 
-  uv run pio run -e esp32
+  default_envs = empty
 
 Um die Firmware in einem Schritt zu bauen, auf den Brick hochzuladen
-und eine Verbindung zur seriellen Konsole herzustellen kann dieser Befehl ausgeführt werden::
-
-  uv run pio run -e esp32 -t upload -t montior
-
-Dazu muss der Brick vorher per USB angeschlossen werden.
+und eine Verbindung zur seriellen Konsole herzustellen kann die PlatformIO "Upload and Monitor"
+Aufgabe ausgeführt werden. Dazu muss der Brick vorher per USB angeschlossen werden.
 Alternativ kann die gebaute Firmware über das Webinterface hochgeladen werden.
 
 Die Firmware-Datei befindet sich im Verzeichnis ``software/build/`` und endet auf ``_merged.bin``.
