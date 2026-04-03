@@ -188,6 +188,20 @@ bindings_infos = \
                  tutorial={'en': 'FIXME',
                            'de': 'FIXME'},
                  is_hardware_supported=lambda device_info: True),
+    BindingsInfo(display_name={'en': 'MicroPython', 'de': 'MicroPython'},
+                 url_part='micropython',
+                 software_doc_suffix='MicroPython',
+                 is_programming_language=True,
+                 is_released=True,
+                 has_authentication_example=True,
+                 has_download=True,
+                 misc_docs=[
+                     MiscDoc('IPConnection_{suffix}', 'ip_connection_{suffix}', {'en': 'IP Connection', 'de': 'IP Connection'}, True, True),
+                     MiscDoc('API_Bindings_{suffix}', 'api_bindings_{suffix}',  {'en': 'Usage', 'de': 'Benutzung'}, False, False)
+                 ],
+                 tutorial={'en': 'https://docs.micropython.org/en/latest/',
+                           'de': 'https://docs.micropython.org/en/latest/'},
+                 is_hardware_supported=lambda device_info: True),
     BindingsInfo(display_name={'en': 'MQTT', 'de': 'MQTT'},
                  url_part='mqtt',
                  software_doc_suffix='MQTT',
@@ -676,6 +690,9 @@ def make_download_bindings_table():
 
     for bindings_info in bindings_infos:
         if not bindings_info.is_released or not bindings_info.has_download:
+            continue
+
+        if bindings_info.url_part not in bindings_versions:
             continue
 
         rows.append(row.format(bindings_info.display_name[lang],
